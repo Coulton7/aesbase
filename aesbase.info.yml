@@ -1,0 +1,47 @@
+name: 'AES Base'
+type: theme
+description: 'Base theme for AES sites'
+core_version_requirement: ^9 || ^10
+base theme: ui_suite_bootstrap
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  preface: 'Preface'
+  wavelower: 'Wavelower'
+  preface_lower: 'Preface Lower'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  base: 'Base'
+  suffix: 'Suffix'
+  postscript_fir: 'Postscript First'
+  postscript_mid: 'Postscript Middle'
+  postscript_last: 'Postscript Last'
+  footer_banner: 'Footer Banner'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+ckeditor5-stylesheets:
+  - assets/css/ckeditor5.css
+
+libraries-override:
+  ui_suite_bootstrap/bootstrap:
+    css:
+      theme:
+        /libraries/bootstrap/dist/css/bootstrap.min.css: false
+
+libraries-extend:
+  ui_suite_bootstrap/bootstrap:
+    - aesbase/bootstrap
+  ui_suite_bootstrap/form:
+    - aesbase/form
+
+# Information added by Drupal.org packaging script on 2023-04-05
+version: '5.0.0-alpha6'
+project: 'ui_suite_bootstrap'
+datestamp: 1680707371
