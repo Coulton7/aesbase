@@ -104,22 +104,20 @@
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-sm-3 gx-0" role="complementary">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="primary" aria-labelledby="primary">
+          <div class="offcanvas-title" id="primary">
+            <h3>Menu</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
             {{ page.sidebar_first }}
-          </aside>
+          </div>
+        </div>
         {% endblock %}
       {% endif %}
 
       {# Content #}
-      {%
-        set content_classes = [
-        page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-        page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-        page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-        page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-      ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
+      <section class="col-sm-12">
 
         {# Highlighted #}
         {% if page.highlighted %}
