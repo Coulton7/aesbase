@@ -1,7 +1,6 @@
 name: 'AES Base'
 type: theme
 description: 'Base theme for AES sites'
-version: 1.0
 core_version_requirement: ^9 || ^10
 base theme: ui_suite_bootstrap
 
