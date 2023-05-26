@@ -1,20 +1,20 @@
 // Adapt path to libraries depending on your installation.
 
 // Import Bootstrap minimum requirements to import Bootstrap variables.
-@import "/web/libraries/bootstrap/scss/mixins/banner";
+@import "{}/web/libraries/bootstrap/scss/mixins/banner";
 
 @include bsBanner("");
 
-@import "/web/libraries/bootstrap/scss/functions";
+@import "{}/web/libraries/bootstrap/scss/functions";
 
 // Import Bootstrap variables overrides.
 @import "bootstrap-variables";
 
 // Import Bootstrap remaining configuration.
-@import "/web/libraries/bootstrap/scss/variables";
-@import "/web/libraries/bootstrap/scss/maps";
-@import "/web/libraries/bootstrap/scss/mixins";
-@import "/web/libraries/bootstrap/scss/utilities";
+@import "{}/web/libraries/bootstrap/scss/variables";
+@import "{}/web/libraries/bootstrap/scss/maps";
+@import "{}/web/libraries/bootstrap/scss/mixins";
+@import "{}/web/libraries/bootstrap/scss/utilities";
 
 // Import Fontawesome.
 //@import "../../../../../../../libraries/fontawesome/scss/functions";
