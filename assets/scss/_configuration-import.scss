@@ -6,7 +6,7 @@
 @use "../web/libraries/bootstrap/scss/functions";
 
 // Import Bootstrap variables overrides.
-@import "bootstrap-variables";
+@use "bootstrap-variables";
 
 // Import Bootstrap remaining configuration.
 @use "../web/libraries/bootstrap/scss/variables";
@@ -20,6 +20,6 @@
 //@import "../../../../../../../libraries/fontawesome/scss/mixins";
 
 // Import custom variables.
-@import "custom-variables";
+@use "custom-variables";
 
 @include bsBanner("");
