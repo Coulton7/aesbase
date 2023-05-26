@@ -1,18 +1,20 @@
 // Adapt path to libraries depending on your installation.
 
 // Import Bootstrap minimum requirements to import Bootstrap variables.
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins/banner";
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins/banner";
 
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/functions";
+@include bsBanner("");
+
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/functions";
 
 // Import Bootstrap variables overrides.
-@use "bootstrap-variables";
+@import "bootstrap-variables";
 
 // Import Bootstrap remaining configuration.
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/variables";
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/maps";
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins";
-@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/utilities";
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/variables";
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/maps";
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins";
+@import "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/utilities";
 
 // Import Fontawesome.
 //@import "../../../../../../../libraries/fontawesome/scss/functions";
@@ -20,6 +22,4 @@
 //@import "../../../../../../../libraries/fontawesome/scss/mixins";
 
 // Import custom variables.
-@use "custom-variables";
-
-@include bsBanner("");
+@import "custom-variables";
