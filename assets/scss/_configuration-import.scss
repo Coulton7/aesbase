@@ -1,18 +1,18 @@
 // Adapt path to libraries depending on your installation.
 
 // Import Bootstrap minimum requirements to import Bootstrap variables.
-@use "/../../../../web/libraries/bootstrap/scss/mixins/banner";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins/banner";
 
-@use "web/libraries/bootstrap/scss/functions";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/functions";
 
 // Import Bootstrap variables overrides.
 @use "bootstrap-variables";
 
 // Import Bootstrap remaining configuration.
-@use "web/libraries/bootstrap/scss/variables";
-@use "web/libraries/bootstrap/scss/maps";
-@use "web/libraries/bootstrap/scss/mixins";
-@use "web/libraries/bootstrap/scss/utilities";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/variables";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/maps";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/mixins";
+@use "/Users/coultoma/Sites/test-d10/web/libraries/bootstrap/scss/utilities";
 
 // Import Fontawesome.
 //@import "../../../../../../../libraries/fontawesome/scss/functions";
