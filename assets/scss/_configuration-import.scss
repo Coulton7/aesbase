@@ -3,8 +3,6 @@
 // Import Bootstrap minimum requirements to import Bootstrap variables.
 @use "../web/libraries/bootstrap/scss/mixins/banner";
 
-@include bsBanner("");
-
 @use "../web/libraries/bootstrap/scss/functions";
 
 // Import Bootstrap variables overrides.
@@ -23,3 +21,5 @@
 
 // Import custom variables.
 @import "custom-variables";
+
+@include bsBanner("");
