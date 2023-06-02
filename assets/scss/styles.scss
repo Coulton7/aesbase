@@ -3,6 +3,10 @@
 @import "variables";
 /* custom.scss */
 
+a {
+    color: $danger;
+}
+
 .text-bg-primary {
     background-color: $primary;
     color: $white;

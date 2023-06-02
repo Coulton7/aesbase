@@ -8,6 +8,10 @@
 /* custom.scss */
 /* end custom.scss */
 /* custom.scss */
+a {
+  color: #dd1e25;
+}
+
 .text-bg-primary {
   background-color: #002a5b;
   color: #fff;
