@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #002a5b;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -28,20 +28,20 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
+  --bs-primary: #002a5b;
+  --bs-secondary: #b5b6b9;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --bs-danger: #dd1e25;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 0, 42, 91;
+  --bs-secondary-rgb: 181, 182, 185;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-danger-rgb: 221, 30, 37;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -213,11 +213,11 @@
   top: -0.5em;
 }
 .ck-content a {
-  color: #0d6efd;
+  color: #002a5b;
   text-decoration: underline;
 }
 .ck-content a:hover {
-  color: #0a58ca;
+  color: #002249;
 }
 .ck-content a:not([href]):not([class]), .ck-content a:not([href]):not([class]):hover {
   color: inherit;
@@ -1663,26 +1663,26 @@ a > .ck-content code {
   color: var(--bs-table-hover-color);
 }
 .ck-content .table-primary {
-  --bs-table-bg: #cfe2ff;
-  --bs-table-striped-bg: #c5d7f2;
+  --bs-table-bg: #ccd4de;
+  --bs-table-striped-bg: #c2c9d3;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bacbe6;
+  --bs-table-active-bg: #b8bfc8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bfd1ec;
+  --bs-table-hover-bg: #bdc4cd;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bacbe6;
+  border-color: #b8bfc8;
 }
 .ck-content .table-secondary {
-  --bs-table-bg: #e2e3e5;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #f0f0f1;
+  --bs-table-striped-bg: #e4e4e5;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #d8d8d9;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #dededf;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cbccce;
+  border-color: #d8d8d9;
 }
 .ck-content .table-success {
   --bs-table-bg: #d1e7dd;
@@ -1718,15 +1718,15 @@ a > .ck-content code {
   border-color: #e6dbb9;
 }
 .ck-content .table-danger {
-  --bs-table-bg: #f8d7da;
-  --bs-table-striped-bg: #eccccf;
+  --bs-table-bg: #f8d2d3;
+  --bs-table-striped-bg: #ecc8c8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfc2c4;
+  --bs-table-active-bg: #dfbdbe;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5c7ca;
+  --bs-table-hover-bg: #e5c2c3;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #dfc2c4;
+  border-color: #dfbdbe;
 }
 .ck-content .table-light {
   --bs-table-bg: #f8f9fa;
@@ -1790,16 +1790,16 @@ a > .ck-content code {
   content: "";
 }
 .ck-content .link-primary {
-  color: #0d6efd;
+  color: #002a5b;
 }
 .ck-content .link-primary:hover, .ck-content .link-primary:focus {
-  color: #0a58ca;
+  color: #002249;
 }
 .ck-content .link-secondary {
-  color: #6c757d;
+  color: #b5b6b9;
 }
 .ck-content .link-secondary:hover, .ck-content .link-secondary:focus {
-  color: #565e64;
+  color: #c4c5c7;
 }
 .ck-content .link-success {
   color: #198754;
@@ -1820,10 +1820,10 @@ a > .ck-content code {
   color: #ffcd39;
 }
 .ck-content .link-danger {
-  color: #dc3545;
+  color: #dd1e25;
 }
 .ck-content .link-danger:hover, .ck-content .link-danger:focus {
-  color: #b02a37;
+  color: #b1181e;
 }
 .ck-content .link-light {
   color: #f8f9fa;
@@ -2152,10 +2152,10 @@ a > .ck-content code {
   border-left: 0 !important;
 }
 .ck-content .border-primary {
-  border-color: #0d6efd !important;
+  border-color: #002a5b !important;
 }
 .ck-content .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #b5b6b9 !important;
 }
 .ck-content .border-success {
   border-color: #198754 !important;
@@ -2167,7 +2167,7 @@ a > .ck-content code {
   border-color: #ffc107 !important;
 }
 .ck-content .border-danger {
-  border-color: #dc3545 !important;
+  border-color: #dd1e25 !important;
 }
 .ck-content .border-light {
   border-color: #f8f9fa !important;
