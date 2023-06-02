@@ -133,13 +133,14 @@
           {% endblock %}
         {% endif %}
 
-        <div class="position-fixed bottom-0">
+        
           {% if page.admin %}
+          <div class="position-fixed bottom-0">
             {% block admin %}
               {{ page.admin }}
             {% endblock %}
+          </div>
           {% endif %}
-        </div>
 
         {# Content #}
         {% block content %}
