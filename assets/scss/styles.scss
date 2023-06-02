@@ -8,7 +8,25 @@
     color: $white;
 }
 
-$custom-theme-colors: map-merge($theme-colors, ("primary": $primary, "danger" :$danger, "secondary": $secondary, "blue": $blue) );
+.breadcrumb li {
+    transform: skew(-25deg);
+    color: $bc-blue;
+    background-color: $lightblue;
+    display: inline-block;
+    margin: 0.3em 0 0 0.4em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.breadcrumb li>a{
+    transform: skew(25deg);
+    color: $bc-blue;
+    display: inline-block;
+    padding-right: 9px;
+    padding-left: 9px;
+}
+
+$custom-theme-colors: map-merge($theme-colors, ("primary": $primary, "danger" :$danger, "secondary": $secondary, "blue": $blue, "lightblue": $lightblue, "bc-blue": $bc-blue) );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
