@@ -35,6 +35,10 @@ a {
   padding-left: 9px;
 }
 
+.z-index {
+  z-index: 2;
+}
+
 /* end custom.scss */
 :root {
   --bs-blue: #0d6efd;
