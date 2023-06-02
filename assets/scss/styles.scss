@@ -6,11 +6,6 @@ $danger: #dd1e25;
 $secondary: #b5b6b9;
 $blue: #002a5b;
 
-.text-bg-primary {
-    background-color: $primary;
-    color: $white;
-}
-
 $custom-theme-colors: map-merge($theme-colors, ("primary": $primary, "danger" :$danger, "secondary": $secondary) );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
@@ -18,5 +13,10 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+.text-bg-primary {
+    background-color: $primary;
+    color: $white;
+}
 /* end custom.scss */
 @import 'bootstrap';
