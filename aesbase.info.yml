@@ -23,6 +23,7 @@ regions:
   postscript_last: 'Postscript Last'
   footer_banner: 'Footer Banner'
   footer: 'Footer'
+  admin: 'Administration Area'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
