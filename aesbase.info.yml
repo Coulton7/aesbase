@@ -5,6 +5,7 @@ core_version_requirement: ^9 || ^10
 base theme: ui_suite_bootstrap
 
 regions:
+  logo: 'logo'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   preface: 'Preface'
