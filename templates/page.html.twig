@@ -70,7 +70,11 @@
 {% if page.preface%}
 	{% block preface %}
 	<div class="preface text-bg-primary pt-5 pb-5">
-	 {{ page.preface }}
+    <div class="row">
+      <div class="col-xl-7 col-lg-7 col-md-8 offset-xl-2 offset-lg-2 offset-md-1">
+	      {{ page.preface }}
+      </div>
+    </div>
 	</div>
 	{% endblock %}
 {% endif %}
