@@ -33,3 +33,13 @@ function aesglobal_form_system_theme_settings_alter(&$form, FormStateInterface $
   );
 
 }
+
+function aesglobal_preprocess_page(&$vars) {
+  $variables['second_logo'] = theme_get_setting('secondary_logo_path');
+  $variables['secondary_logo'] = theme_get_setting('secondary_logo');
+}
+
+function aesglobal_preprocess(&$variables, $hook){
+  $variables['second_logo'] = theme_get_setting('secondary_logo_path');
+  $variables['secondary_logo'] = theme_get_setting('secondary_logo');
+}
