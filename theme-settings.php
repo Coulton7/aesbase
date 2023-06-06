@@ -1,12 +1,7 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
 
-function aesglobal_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id=NULL) {
-
-  if(isset($form_id)) {
-      return;
-  }
-
+function aesglobal_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
 
   // custom settings respective to theme
   // create setting for secondary logo
