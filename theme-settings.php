@@ -7,7 +7,6 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
       return;
   }
 
-
   // custom settings respective to theme
   // create setting for secondary logo
   $form['secondary_logo'] = array(
