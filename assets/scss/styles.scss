@@ -11,6 +11,22 @@ $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text"
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import 'bootstrap';
 
+body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-open {
+    padding-top: 79px !important;
+  }
+  
+  body.navbar-is-fixed-top {
+    padding-top: 0;
+  }
+  
+  body.navbar-is-fixed-top.navbar-administration {
+    padding-top: 39px !important;
+  }
+  
+  body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-open .navigation_col .action-menu {
+    margin-top: 4.3em;
+  }
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -209,6 +225,10 @@ a {
   
   /* sm */
   @media screen and (min-width: 768px) {
+    .navbar-nav {
+        padding-left: 11em;
+    }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0.95em 0.95em;
     }
@@ -293,6 +313,11 @@ a {
   
   /* md */
   @media screen and (min-width: 992px) {
+    .navbar-nav {
+        width: 100%;
+        padding-left: 16em;
+      }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0.95em 1.1em;
     }
