@@ -1,7 +1,6 @@
 // Default variables.
 @import "configuration-import";
 @import "variables";
-@import 'bootstrap';
 /* custom.scss */
 html {
     scroll-behavior: smooth;
@@ -445,4 +444,4 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
     }
   }
 /* end custom.scss */
-
+@import 'bootstrap';
