@@ -208,7 +208,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   
   /* sm */
   @media screen and (min-width: 768px) {
-    .nav li a {
+    .navbar-nav li a {
         padding: 0.95em 0.95em;
     }
 
@@ -292,7 +292,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   
   /* md */
   @media screen and (min-width: 992px) {
-    .nav li a {
+    .navbar-nav li a {
         padding: 0.95em 1.1em;
     }
 

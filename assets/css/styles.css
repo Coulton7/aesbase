@@ -191,7 +191,7 @@ a {
 }
 /* sm */
 @media screen and (min-width: 768px) {
-  .nav li a {
+  .navbar-nav li a {
     padding: 0.95em 0.95em;
   }
   .banner-title {
@@ -259,7 +259,7 @@ a {
 }
 /* md */
 @media screen and (min-width: 992px) {
-  .nav li a {
+  .navbar-nav li a {
     padding: 0.95em 1.1em;
   }
   .banner-title {
