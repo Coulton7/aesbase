@@ -8,6 +8,43 @@
 /* custom.scss */
 /* end custom.scss */
 /* custom.scss */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #e5e5e7;
+}
+
+.wavelogo {
+  height: 10.3em;
+  background: #ffffff;
+  position: absolute;
+  border-bottom-right-radius: 4%;
+  z-index: 1032;
+  width: 11.7em;
+  opacity: 1;
+}
+
+.textlogo {
+  background: #ffffff;
+  position: fixed;
+  width: 9.75em !important;
+  height: auto;
+  border-bottom: none;
+  z-index: 1031;
+}
+
+.uppercurve {
+  height: 7.35em;
+  left: 11em;
+  z-index: 1032;
+  position: relative;
+  top: 2.95em;
+}
+
 a {
   color: #dd1e25;
 }
@@ -37,6 +74,40 @@ a {
 
 .z-index {
   z-index: 2;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.navbar-nav li a {
+  display: block;
+  color: #535454;
+  padding: 0.95em 1.1em;
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+  color: #dd1e25;
+  margin-bottom: 0;
+  border-bottom: 1px dashed #dd1e25;
+  text-decoration: none;
+  background-color: #e5e5e7;
+}
+
+.navbar-nav li a.active {
+  color: #002a5b;
+  background-color: #e5e5e7;
+}
+
+.navbar-nav > li > a {
+  border-top: 4px solid transparent;
+  border-bottom: none;
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 4px solid #dd1e25;
+  border-bottom: none;
 }
 
 /* end custom.scss */
