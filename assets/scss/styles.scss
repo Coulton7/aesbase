@@ -81,7 +81,7 @@ a {
     text-decoration: none;
 }
   
-  .navbar-nav li a:hover {
+.navbar-nav li a:hover {
     color: $danger;
     margin-bottom: 0;
     border-bottom: 1px dashed $danger;
@@ -89,17 +89,17 @@ a {
     background-color: #e5e5e7;
 }
   
-  .navbar-nav li a.active {
+.navbar-nav li a.active {
     color: $primary;
     background-color: #e5e5e7;
 }
 
-  .navbar-nav>li>a {
+.navbar-nav>li>a {
     border-top: 4px solid transparent;
     border-bottom: none;
 }
   
-  .navbar-nav>li>a:hover {
+.navbar-nav>li>a:hover {
     border-top: 4px solid $danger;
     border-bottom: none;
 }
