@@ -208,6 +208,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   
   /* sm */
   @media screen and (min-width: 768px) {
+    .nav li a {
+        padding: 0.95em 0.95em;
+    }
+
     .banner-title {
       font-size: 44px;
       line-height: 71px;
@@ -288,6 +292,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   
   /* md */
   @media screen and (min-width: 992px) {
+    .nav li a {
+        padding: 0.95em 1.1em;
+    }
+
     .banner-title {
       font-size: 49px;
       line-height: 79px;
