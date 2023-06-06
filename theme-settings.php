@@ -32,13 +32,3 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   );
 
 }
-
-function aesbase_preprocess_page(&$vars) {
-  $variables['second_logo'] = theme_get_setting('secondary_logo_path');
-  $variables['secondary_logo'] = theme_get_setting('secondary_logo');
-}
-
-function aesbase_preprocess(&$variables, $hook){
-  $variables['second_logo'] = theme_get_setting('secondary_logo_path');
-  $variables['secondary_logo'] = theme_get_setting('secondary_logo');
-}
