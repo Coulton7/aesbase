@@ -1,7 +1,12 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
 
-function aesglobal_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id=NULL) {
+
+  if(isset($form_id)) {
+      return;
+  }
+
 
   // custom settings respective to theme
   // create setting for secondary logo
@@ -29,12 +34,12 @@ function aesglobal_form_system_theme_settings_alter(&$form, FormStateInterface $
 
 }
 
-function aesglobal_preprocess_page(&$vars) {
+function aesbase_preprocess_page(&$vars) {
   $variables['second_logo'] = theme_get_setting('secondary_logo_path');
   $variables['secondary_logo'] = theme_get_setting('secondary_logo');
 }
 
-function aesglobal_preprocess(&$variables, $hook){
+function aesbase_preprocess(&$variables, $hook){
   $variables['second_logo'] = theme_get_setting('secondary_logo_path');
   $variables['secondary_logo'] = theme_get_setting('secondary_logo');
 }
