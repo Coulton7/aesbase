@@ -63,7 +63,6 @@
     {% if page.navigation or page.navigation_collapsible %}
     <div class="col-md-10 col-xs-11 col-11">
       {% block navbar %}
-        <div class="container-fluid">
           {{ pattern('navbar', {
           placement: 'default',
           toggler_position: 'end',
@@ -76,7 +75,6 @@
             ]
           }),
           }, 'expand_lg') }}
-        </div>
       {% endblock %}
     </div>
     {% endif %}
