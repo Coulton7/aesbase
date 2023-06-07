@@ -24,7 +24,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   padding: 0;
 }
   
-  body .fixed-top.navbar-administration {
+  .toolbar-fixed .fixed-top {
   padding-top: 39px !important;
 }
   

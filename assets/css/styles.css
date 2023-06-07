@@ -11228,7 +11228,7 @@ body .fixed-top {
   padding: 0;
 }
 
-body .fixed-top.navbar-administration {
+.toolbar-fixed .fixed-top {
   padding-top: 39px !important;
 }
 
