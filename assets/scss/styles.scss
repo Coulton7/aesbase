@@ -12,201 +12,201 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 /* custom.scss */
 
 .toolbar-tray-open .fixed-top {
-    padding-top: 79px !important;
-  }
+  padding-top: 79px !important;
+}
   
   body .fixed-top {
-    padding-top: 0;
-  }
+  padding-top: 0;
+}
   
   body .fixed-top.navbar-administration {
-    padding-top: 39px !important;
-  }
+  padding-top: 39px !important;
+}
   
   .toolbar-tray-open .fixed-top .navigation_col .action-menu {
-    margin-top: 4.3em;
-  }
+  margin-top: 4.3em;
+}
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
-    font-size: 16px;
-    line-height: 1.618rem;
-    color: #535454;
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
-    font-weight: 300;
-  }
+  font-size: 16px;
+  line-height: 1.618rem;
+  color: #535454;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 300;
+}
   
   .lead {
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
-    font-weight: 300;
-    color: #002A5B;
-  }
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 300;
+  color: #002A5B;
+}
 
 .navbar-nav>li>a.is-active, .navbar-nav>li>a.is-active:hover, .navbar-nav>li>a.is-active:focus {
-    background-color: #e5e5e7;
+  background-color: #e5e5e7;
 }
 
 .wavelogo {
-    height: 10.3em;
-    background: #ffffff;
-    position: absolute;
-    border-bottom-right-radius: 4%;
-    z-index: 1032;
-    width: 11.7em;
-    opacity: 1;
+  height: 10.3em;
+  background: #ffffff;
+  position: absolute;
+  border-bottom-right-radius: 4%;
+  z-index: 1032;
+  width: 11.7em;
+  opacity: 1;
 }
 
 .textlogo {
-    background: #ffffff;
-    position: fixed;
-    width: 9.75em !important;
-    height: auto;
-    border-bottom: none;
-    z-index: 1031;
-  }
+  background: #ffffff;
+  position: fixed;
+  width: 9.75em !important;
+  height: auto;
+  border-bottom: none;
+  z-index: 1031;
+}
 
 .uppercurve {
-    height: 7.35em;
-    left: 11em;
-    z-index: 1032;
-    position: relative;
-    top: 2.95em;
+  height: 7.35em;
+  left: 11em;
+  z-index: 1032;
+  position: relative;
+  top: 2.95em;
 }
 
 a {
-    color: $danger;
+  color: $danger;
 }
 
 .text-bg-primary {
-    background-color: $primary;
-    color: $white;
+  background-color: $primary;
+  color: $white;
 }
 
 .breadcrumb li {
-    transform: skew(-25deg);
-    color: $bc-blue;
-    background-color: $lightblue;
-    display: inline-block;
-    margin: 0.3em 0 0 0.4em;
-    word-break: break-word;
-    overflow-wrap: break-word;
+  transform: skew(-25deg);
+  color: $bc-blue;
+  background-color: $lightblue;
+  display: inline-block;
+  margin: 0.3em 0 0 0.4em;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .breadcrumb li>a{
-    transform: skew(25deg);
-    color: $bc-blue;
-    display: inline-block;
-    padding-right: 9px;
-    padding-left: 9px;
-    border-bottom: none;
+  transform: skew(25deg);
+  color: $bc-blue;
+  display: inline-block;
+  padding-right: 9px;
+  padding-left: 9px;
+  border-bottom: none;
 }
 
 .z-index {
-    z-index: 2;
+  z-index: 2;
 }
 
 .no-padding {
-    padding: 0;
+  padding: 0;
 }
 
 .navbar-nav li a {
-    display: block;
-    color: #535454;
-    padding: 0.95em 1.1em;
-    text-decoration: none;
+  display: block;
+  color: #535454;
+  padding: 0.95em 1.1em;
+  text-decoration: none;
 }
   
 .navbar-nav li a:hover {
-    color: $danger;
-    margin-bottom: 0;
-    border-bottom: 1px dashed $danger;
-    text-decoration: none;
-    background-color: #e5e5e7;
+  color: $danger;
+  margin-bottom: 0;
+  border-bottom: 1px dashed $danger;
+  text-decoration: none;
+  background-color: #e5e5e7;
 }
   
 .navbar-nav li a.active {
-    color: $primary;
-    background-color: #e5e5e7;
+  color: $primary;
+  background-color: #e5e5e7;
 }
 
 .navbar-nav>li>a {
-    border-top: 4px solid transparent;
-    border-bottom: none;
+  border-top: 4px solid transparent;
+  border-bottom: none;
 }
   
 .navbar-nav>li>a:hover {
-    border-top: 4px solid $danger;
-    border-bottom: none;
+  border-top: 4px solid $danger;
+  border-bottom: none;
 }
 
 @media screen and (max-width: 767px) {
-    .textlogo {
-      top: 0.5em;
-    }
+  .textlogo {
+    top: 0.5em;
   }
+}
   
   /* sm */
-  @media screen and (min-width: 768px) {
-    .textlogo {
-      top: 0em;
-    }
-
-    .navbar-nav {
-        padding-left: 11em;
-    }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0.95em 0.95em;
-    }
+@media screen and (min-width: 768px) {
+  .textlogo {
+    top: 0em;
   }
+
+  .navbar-nav {
+    padding-left: 11em;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.95em 0.95em;
+  }
+}
   
   /* md */
-  @media screen and (min-width: 992px) {
-      .textlogo {
-        top: 0em;
-      }
-
-    .navbar-nav {
-        width: 100%;
-        padding-left: 16em;
-      }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0.95em 1.1em;
-    }
+@media screen and (min-width: 992px) {
+  .textlogo {
+    top: 0em;
   }
+
+  .navbar-nav {
+    width: 100%;
+    padding-left: 16em;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.95em 1.1em;
+  }
+}
   
   /* lg */
-  @media screen and (min-width: 1200px) {
-    .textlogo {
-      top: -0.1em;;
-    }
+@media screen and (min-width: 1200px) {
+  .textlogo {
+    top: -0.1em;;
   }
+}
 
-  @media (max-width: 992px) {
-    .fixed-top {
-      background: transparent;
-      border: none;
-    }
+@media (max-width: 992px) {
+  .fixed-top {
+    background: transparent;
+    border: none;
+  }
   
     /*To stop a while backround appearing behind the action-menu*/
-    .wavelogo img {
-      display: none;
-    }
-  
-    .wavelogo {
-      display: none;
-    }
-  
-    .uppercurve {
-      display: none;
-    }
-
+  .wavelogo img {
+    display: none;
   }
+  
+  .wavelogo {
+    display: none;
+  }
+  
+  .uppercurve {
+    display: none;
+  }
+
+}
 /* end custom.scss */
 @import 'bootstrap';
