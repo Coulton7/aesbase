@@ -145,6 +145,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+    .textlogo {
+      top: 0.5em;
+    }
+
     .banner-title {
       font-size: 42px;
       line-height: 67px;
@@ -225,6 +229,11 @@ a {
   
   /* sm */
   @media screen and (min-width: 768px) {
+
+    .textlogo {
+      top: 0em;
+    }
+
     .navbar-nav {
         padding-left: 11em;
     }
@@ -313,6 +322,11 @@ a {
   
   /* md */
   @media screen and (min-width: 992px) {
+
+      .textlogo {
+        top: 0em;
+      }
+
     .navbar-nav {
         width: 100%;
         padding-left: 16em;
@@ -397,6 +411,11 @@ a {
   
   /* lg */
   @media screen and (min-width: 1200px) {
+
+    .textlogo {
+      top: -0.1em;;
+    }
+
     .banner-title {
       font-size: 51px;
       line-height: 82px;
