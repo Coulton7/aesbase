@@ -469,5 +469,26 @@ a {
       line-height: 1.65em;
     }
   }
+
+  @media (max-width: 992px) {
+    .fixed-top {
+      background: transparent;
+      border: none;
+    }
+  
+    /*To stop a while backround appearing behind the action-menu*/
+    .wavelogo img {
+      display: none;
+    }
+  
+    .wavelogo {
+      display: none;
+    }
+  
+    .uppercurve {
+      display: none;
+    }
+
+  }
 /* end custom.scss */
 
