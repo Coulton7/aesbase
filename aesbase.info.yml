@@ -22,7 +22,7 @@ regions:
   postscript_fir: 'Postscript First'
   postscript_mid: 'Postscript Middle'
   postscript_last: 'Postscript Last'
-  footer_banner: 'Footer Banner'
+  footer_lower: 'Footer lower'
   footer: 'Footer'
   admin: 'Administration Area'
   page_top: 'Page top'
