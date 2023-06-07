@@ -11220,16 +11220,16 @@ textarea.form-control-lg {
   z-index: 1032;
 }
 
+.toolbar-fixed .fixed-top, .toolbar-tray-open .textlogo {
+  padding-top: 39px !important;
+}
+
 .toolbar-tray-open .fixed-top, .toolbar-tray-open .textlogo {
   padding-top: 79px !important;
 }
 
 body .fixed-top {
   padding: 0;
-}
-
-.toolbar-fixed .fixed-top, .toolbar-tray-open .textlogo {
-  padding-top: 39px !important;
 }
 
 .toolbar-tray-open .fixed-top .navigation_col .action-menu {
