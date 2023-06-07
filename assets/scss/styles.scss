@@ -11,6 +11,11 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import 'bootstrap';
 /* custom.scss */
 
+#toolbar-administration {
+  position: fixed;
+  z-index: 1032;
+}
+
 .toolbar-tray-open .fixed-top {
   padding-top: 79px !important;
 }
