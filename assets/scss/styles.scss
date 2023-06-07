@@ -109,6 +109,14 @@ a {
   color: $danger;
 }
 
+.darkgrey-background a {
+  color: $white;
+}
+
+.darkgrey-background a:hover {
+  color: $white;
+}
+
 .btn, .btn-lg, .btn-sm {
   border-radius: 2rem;
 }
