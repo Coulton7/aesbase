@@ -1,7 +1,6 @@
 bootstrap:
   css:
     theme:
-      assets/css/bootstrap-settings.css: { minified: true }
       assets/css/font.css: { minified: true }
       assets/css/styles.css: { minified: true }
 
