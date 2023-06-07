@@ -46,7 +46,7 @@ body {
   font-weight: 300;
 }
   
-  .lead {
+.lead {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
   font-weight: 300;
   color: #002A5B;
@@ -154,6 +154,26 @@ a {
     top: 0.5em;
   }
 }
+
+@media screen and (min-width:501px) and (max-width: 767px) {
+  .preface-flex-margin {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    transform-origin: none;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .preface-flex-margin {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    transform-origin: none;
+    margin-bottom: 0;
+  }
+}
   
   /* sm */
 @media screen and (min-width: 768px) {
@@ -163,6 +183,10 @@ a {
 
   .navbar-nav {
     padding-left: 11em;
+  }
+
+  .preface-flex-margin {
+    margin: 2em 0 0 0;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -183,6 +207,10 @@ a {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.95em 1.1em;
+  }
+
+  .preface-flex-margin {
+    margin: -4.3em 0 0 0;
   }
 }
   
