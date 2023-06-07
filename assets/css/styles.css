@@ -11313,6 +11313,10 @@ a {
   color: #dd1e25;
 }
 
+.btn, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn {
+  border-radius: 2rem;
+}
+
 .text-bg-primary {
   background-color: #002a5b;
   color: #fff;
