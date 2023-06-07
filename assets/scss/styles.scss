@@ -88,6 +88,17 @@ body {
   top: 3.65em;
 }
 
+.curve-down {
+  width: 8em;
+  height: 6.185em;
+  right: 6.5em;
+  position: relative;
+  bottom: -0.18em;
+  margin-top: -7.9em;
+  z-index: 10;
+  pointer-events: none;
+}
+
 .footer-curve {
   width: 100%;
   right: -1.6em;
