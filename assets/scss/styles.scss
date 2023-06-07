@@ -16,7 +16,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   z-index: 1032;
 }
 
-.toolbar-tray-open .fixed-top {
+.toolbar-tray-open .fixed-top, .toolbar-tray-open .textlogo {
   padding-top: 79px !important;
 }
   
@@ -24,7 +24,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   padding: 0;
 }
   
-  .toolbar-fixed .fixed-top {
+  .toolbar-fixed .fixed-top, .toolbar-tray-open .textlogo {
   padding-top: 39px !important;
 }
   
