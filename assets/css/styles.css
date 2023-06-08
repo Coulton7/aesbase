@@ -11351,7 +11351,7 @@ a {
   overflow-wrap: break-word;
 }
 
-.breadcrumb > li + li:before {
+.breadcrumb-item + .breadcrumb-item:before {
   padding: 0;
   color: #4c698c;
   content: " ";
