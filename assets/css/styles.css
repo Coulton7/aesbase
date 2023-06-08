@@ -11372,6 +11372,12 @@ a {
   text-decoration: none;
 }
 
+.breadcrumb li > a:hover {
+  display: inline-block;
+  color: #fff;
+  border-bottom: none;
+}
+
 .z-index {
   z-index: 2;
 }
