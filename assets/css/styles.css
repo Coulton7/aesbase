@@ -11275,6 +11275,10 @@ body {
   top: 0.5em;
 }
 
+.wavelower {
+  position: relative;
+}
+
 .textlogo {
   background: #ffffff;
   position: fixed;
@@ -11548,6 +11552,13 @@ a {
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
+  }
+  .socialmedia {
+    background-color: transparent;
+    position: initial;
+    right: 0;
+    width: 100%;
+    bottom: inherit;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
