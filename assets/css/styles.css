@@ -11549,6 +11549,11 @@ a {
   position: absolute;
 }
 
+.dotted-border {
+  outline: 1px dashed #888c8f;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
