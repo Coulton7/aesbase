@@ -387,6 +387,12 @@ a {
   max-width: 2em;
 }
 
+.social-flag {
+  height: 1em;
+  width: 1em;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
