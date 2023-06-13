@@ -11586,6 +11586,11 @@ a {
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
+.country-icon {
+  max-height: 2em;
+  max-width: 2em;
+}
+
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
