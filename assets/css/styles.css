@@ -11242,6 +11242,14 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+.w-33 {
+  width: 33% !important;
+}
+
+.w-66 {
+  width: 66% !important;
+}
+
 body {
   font-size: 16px;
   line-height: 1.618rem;
