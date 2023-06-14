@@ -11217,7 +11217,7 @@ textarea.form-control-lg {
 /* custom.scss */
 #toolbar-administration {
   position: fixed;
-  z-index: 1032;
+  z-index: 1033;
 }
 
 .toolbar-fixed .fixed-top, .toolbar-tray-open .textlogo {

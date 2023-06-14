@@ -13,7 +13,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 #toolbar-administration {
   position: fixed;
-  z-index: 1032;
+  z-index: 1033;
 }
 
 .toolbar-fixed .fixed-top, .toolbar-tray-open .textlogo {
