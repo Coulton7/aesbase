@@ -32,6 +32,9 @@ regions:
 ckeditor5-stylesheets:
   - assets/css/ckeditor5.css
 
+libraries:
+  - aesbase/global-scripts
+
 libraries-override:
   ui_suite_bootstrap/bootstrap:
     css:

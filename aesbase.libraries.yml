@@ -8,5 +8,6 @@ form:
     component:
       assets/css/form/form-required.css: { minified: true }
 
-js:
-  assets/js/nav-scroll.js: {}
+global-scripts:
+  js:
+    assets/js/nav-scroll.js: {}
