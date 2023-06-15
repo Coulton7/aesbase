@@ -11598,13 +11598,17 @@ a {
   position: relative;
 }
 
+.scroll-nav {
+  position: fixed;
+}
+
 .scrolled-down {
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: all 0.3s ease-in-out;
 }
 
 .scrolled-up {
-  transform: translateY(0);
+  transform: translateY(-100%);
   transition: all 0.3s ease-in-out;
 }
 
