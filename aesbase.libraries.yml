@@ -4,8 +4,7 @@ bootstrap:
       assets/css/styles.css: { minified: true }
     
   js:
-    theme:
-      assets/js/nav-scroll.js: {}
+    assets/js/nav-scroll.js: {}
 
 form:
   css:
