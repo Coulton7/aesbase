@@ -2,12 +2,12 @@ bootstrap:
   css:
     theme:
       assets/css/styles.css: { minified: true }
+    
+  js:
+    theme:
+      assets/js/nav-scroll.js: {}
 
 form:
   css:
     component:
       assets/css/form/form-required.css: { minified: true }
-
-global-scripts:
-  js:
-    assets/js/nav-scroll.js: {}
