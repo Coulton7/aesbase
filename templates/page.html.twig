@@ -84,6 +84,17 @@
     </div>
     {% endif %}
   </div>
+
+  {% if page.secondary_nav %}
+    {% block secondary_nav %}
+    <div class="row g-0">
+      <div class="scroll-nav">
+        {{ page.secondary_nav }}
+      </div>
+    </div>
+    {% endblock %}
+  {% endif %}
+
   <div class="row no-padding g-0">
     {% if page.preface%}
 	    {% block preface %}
