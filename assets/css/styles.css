@@ -11600,6 +11600,7 @@ a {
 
 .scroll-nav {
   position: fixed;
+  transform: translateY(-100%);
 }
 
 .scrolled-down {
