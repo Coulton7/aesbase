@@ -397,6 +397,7 @@ a {
 .scroll-nav {
   position: fixed;
   transform: translateY(-100%);
+  z-index: 3;
 }
 
 .scrolled-down {
