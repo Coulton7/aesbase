@@ -11600,7 +11600,7 @@ a {
 
 .scroll-nav {
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(-105%);
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -11608,10 +11608,11 @@ a {
 .scrolled-down {
   transform: translateY(-200%);
   transition: all 0.3s ease-in-out;
+  transition-delay: 0.75s;
 }
 
 .scrolled-up {
-  transform: translateY(-100%);
+  transform: translateY(-105%);
   transition: all 0.3s ease-in-out;
 }
 
