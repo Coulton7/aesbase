@@ -11337,12 +11337,16 @@ a {
   color: #dd1e25;
 }
 
+a.text-white {
+  color: #e5e5e5;
+}
+
 .darkgrey-background a {
   color: #fff;
 }
 
 .darkgrey-background a:hover {
-  color: #fff;
+  color: #e5e5e5;
 }
 
 .btn, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn {

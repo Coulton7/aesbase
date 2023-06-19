@@ -133,12 +133,16 @@ a {
   color: $danger;
 }
 
+a.text-white {
+  color: #e5e5e5;
+}
+
 .darkgrey-background a {
   color: $white;
 }
 
 .darkgrey-background a:hover {
-  color: $white;
+  color: #e5e5e5;
 }
 
 .btn, .btn-lg, .btn-sm {
