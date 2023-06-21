@@ -195,9 +195,14 @@
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <aside class="col-sm-3 gx-0" role="complementary">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="primary" aria-labelledby="secondary">
+          <div class="offcanvas-title" id="secondary">
+            <button type="button" class="btn-close text-reset float-end mt-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
             {{ page.sidebar_second }}
-          </aside>
+          </div>
+        </div>
         {% endblock %}
       {% endif %}
 
