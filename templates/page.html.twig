@@ -224,37 +224,40 @@
 	{% endblock %}
 {% endif %}
 
-{% if page.postscript_fir %}
+<div class="row gx-0"> 
+
+  {% if page.postscript_fir %}
     {% block postscript_fir %}
-        <aside class="col-sm-3 gx-0" role="complementary">
-          {{ page.postscript_fir }}
-        </aside>
+      <aside class="col-sm-4 gx-0" role="complementary">
+        {{ page.postscript_fir }}
+      </aside>
     {% endblock %}
-{% endif %}
+  {% endif %}
 
-{%
+  {%
     set postscript_classes = [
-    page.postscript_fir and page.postscript_last ? 'col-sm-6',
-    page.postscript_fir and page.postscript_last is empty ? 'col-sm-9',
-    page.postscript_last and page.postscript_fir is empty ? 'col-sm-9',
-    page.postscript_fir is empty and page.postscript_last is empty ? 'col-sm-12'
+      page.postscript_fir and page.postscript_last ? 'col-sm-4',
+      page.postscript_fir and page.postscript_last is empty ? 'col-sm-8',
+      page.postscript_last and page.postscript_fir is empty ? 'col-sm-8',
+      page.postscript_fir is empty and page.postscript_last is empty ? 'col-sm-12'
     ]
-%}
-<section{{ content_attributes.addClass(postscript_classes) }}>
-	{% if page.postscript_mid %}
-	  {% block postscript_mid %}
-		{{page.postscript_mid}}
-	  {% endblock %}
-	{% endif %}
-</section>
+  %}
+  <section{{ content_attributes.addClass(postscript_classes) }}>
+	  {% if page.postscript_mid %}
+	    {% block postscript_mid %}
+		  {{page.postscript_mid}}
+	    {% endblock %}
+	  {% endif %}
+  </section>
 
-{% if page.postscript_last %}
+  {% if page.postscript_last %}
     {% block postscript_last %}
-        <aside class="col-sm-3 gx-0" role="complementary">
+        <aside class="col-sm-4 gx-0" role="complementary">
           {{ page.postscript_last }}
         </aside>
     {% endblock %}
-{% endif %}
+  {% endif %}
+</div>
 
 {% if page.footer_lower %}
   {% block footer_lower %}
