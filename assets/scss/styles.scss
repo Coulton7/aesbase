@@ -663,6 +663,30 @@ ul.resource-cats a, ul.about-us-cats a {
   cursor: pointer;
 }
 
+.hover-grow {
+  transition: transform .2s ease-in-out
+}
+
+.hover-grow:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+.hover-grow-2 {
+  transition: transform .2s ease-in-out
+}
+
+.hover-grow-2:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
 .change:hover:after {
   color: $danger;
 }
