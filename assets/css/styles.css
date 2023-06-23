@@ -11934,9 +11934,6 @@ ul.resource-cats a, ul.about-us-cats a {
   .textlogo {
     top: 0em;
   }
-  .menu--main.navbar-nav {
-    padding-left: 11em;
-  }
   .preface-flex-margin {
     margin: 2em 0 0 0;
   }
@@ -11955,7 +11952,6 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .menu--main.navbar-nav {
     width: 100%;
-    padding-left: 16em;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.95em 1.1em;
