@@ -11624,6 +11624,247 @@ a.text-white {
   transition: all 0.3s ease-in-out;
 }
 
+.modal-backdrop {
+  height: 0;
+}
+
+.modal.fade {
+  transition-delay: 0.45s;
+}
+
+.modal.in.modal-dialog {
+  -webkit-transform: translate(0, 4%);
+  -ms-transform: translate(0, 4%);
+  -o-transform: translate(0, 4%);
+  transform: translate(0, 4%);
+}
+
+.modal-backdrop.in {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 100%;
+  z-index: 1028;
+}
+
+.modal .close {
+  color: #fff;
+  position: fixed;
+  font-size: 3em;
+  float: right;
+  z-index: 1032;
+  top: 1.5em;
+  right: 1.2em;
+  height: 1em;
+  width: 1em;
+  transition: 0.5s;
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 1;
+  font-weight: normal;
+}
+
+.modal .close:hover {
+  color: #dd1e25;
+  text-shadow: none;
+  opacity: 1;
+  font-weight: normal;
+}
+
+.modal-content {
+  top: 3em;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.modal-open .modal {
+  z-index: 1029;
+}
+
+.overlay-btn {
+  float: right;
+  margin-right: 1.5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: block;
+  color: #535454;
+  padding: 0.7em 1.1em;
+  text-decoration: none;
+  z-index: 1036;
+  border-top: 4px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.footer-overlay-btn {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px dashed #888c8f;
+}
+
+.overlay-btn:hover, .overlay-btn:focus {
+  border-top: 4px solid #dd1e25;
+  border-bottom: none;
+  color: #333;
+  text-decoration: none;
+}
+
+.overlay-btn:focus {
+  border-bottom: none;
+  color: #535454;
+  text-decoration: none;
+}
+
+ul.resource-cats, ul.product-cats, ul.about-us-cats {
+  background: none;
+  overflow: visible;
+}
+
+.overlay-content {
+  background-color: none;
+  position: static;
+}
+
+.overlay-main {
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.overlay-menu {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+.change {
+  color: transparent;
+  pointer-events: none;
+}
+
+.overlay-menu {
+  display: none;
+}
+
+.change:hover, .change:focus {
+  color: transparent;
+  border-bottom: none;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.overlay-menu .action-menu {
+  z-index: 1030;
+  background-color: transparent;
+}
+
+.full-menu {
+  width: 100%;
+}
+
+ul.resource-cats a, ul.about-us-cats a {
+  font-size: 1em;
+  text-align: left;
+}
+
+.overlay-content ul li {
+  float: none;
+  display: block;
+}
+
+.overlay-content h4, .overlay-content .h4 {
+  color: #fff;
+}
+
+.overlay-main.active {
+  height: 100%;
+}
+
+.overlay-main a:hover {
+  transform: scale(1.1);
+  overflow: visible;
+  color: #dd1e25;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: left;
+  height: 60vh;
+}
+
+.sitemap-icon {
+  position: absolute;
+  bottom: 0%;
+  right: 4%;
+}
+
+.overlay-search {
+  position: relative;
+  z-index: 101;
+  width: 65%;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.noscroll .action-menu {
+  position: fixed;
+  top: 3em;
+}
+
+.overlay-main a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+.change:after {
+  display: block;
+  content: "×";
+  color: #fff;
+  position: fixed;
+  font-size: 3em;
+  float: right;
+  z-index: 1032;
+  top: 2em;
+  right: 1em;
+  height: 1em;
+  width: 1em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.change:hover:after {
+  color: #dd1e25;
+}
+
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
