@@ -11273,6 +11273,10 @@ body {
   background-color: #e9ecef;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
 .wavelogo {
   height: 11em;
   background: #fff;
