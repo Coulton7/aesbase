@@ -380,7 +380,7 @@ a.text-white {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  color: $black;
   padding: 0;
 }
 
@@ -407,6 +407,8 @@ a.text-white {
   transform: translateY(-105%);
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .scrolled-down {
@@ -437,7 +439,7 @@ a.text-white {
 
 .modal-backdrop.in {
   opacity: 1;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, .5);
   transition: 0.5s;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -527,7 +529,7 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
 
 .overlay-main {
   height: 0%;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, .5);
   width: 100%;
   position: fixed;
   z-index: 100;
