@@ -11643,8 +11643,8 @@ a.text-white {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.85);
   transition: 0.5s;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   height: 100%;
   z-index: 1028;
 }
@@ -11739,8 +11739,8 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   left: 0;
   overflow-y: scroll;
   transition: 0.5s;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .overlay-menu {
