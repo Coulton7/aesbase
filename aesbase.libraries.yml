@@ -5,8 +5,6 @@ bootstrap:
     
   js:
     assets/js/nav-scroll.js: {}
-    assets/js/menu-collapse.js: {}
-    asstes/js/nav-btn.js: {}
 
 form:
   css:
