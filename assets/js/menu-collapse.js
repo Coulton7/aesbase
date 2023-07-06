@@ -33,10 +33,10 @@ function autocollapse() {
       let menuItemRight = menuItem.right;
   
       if ((menuItemRight > tabletBtnLeft)) {
-        document.querySelector('.tablet-overlay-btn').classList.add('display-none-important');
+        document.querySelector('.overlay-btn').classList.add('display-none-important');
       }
       else {
-        document.querySelector('.tablet-overlay-btn').classList.remove('display-none-important');
+        document.querySelector('.overlay-btn').classList.remove('display-none-important');
       }
     }
   }
