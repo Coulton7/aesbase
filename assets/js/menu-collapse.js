@@ -1,7 +1,7 @@
 function autocollapse() {
     var navbar = document.getElementById('autocollapse');
     navbar.classList.remove('collapsed');
-    if(navbar.innerHeight() > 100) {
+    if(navbar.innerHeight > 100) {
       navbar.classList.add('collapsed');
       document.getElementById('overlay-btn').classList.add('display-none-important');
     } else {
