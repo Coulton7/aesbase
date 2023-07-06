@@ -44,7 +44,7 @@ function autocollapse() {
   document.addEventListener("DOMContentLoaded", autocollapse);
   document.addEventListener("DOMContentLoaded", menuItemOverlay);
   window.addEventListener('resize', function() {
-    if(document.getElementById("#overlay-btn").classList.contains("change")) {
+    if(document.getElementById("overlay-btn").classList.contains("change")) {
       return;
     } else {
       autocollapse();
