@@ -11215,6 +11215,12 @@ textarea.form-control-lg {
   }
 }
 /* custom.scss */
+html, body, .dialog-off-canvas-main-canvas {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 #toolbar-administration {
   position: fixed;
   z-index: 1033;
