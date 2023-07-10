@@ -441,6 +441,7 @@ a.text-white {
 
 .blend-mode-multiply {
   mix-blend-mode: multiply;
+  transform: translate3d(0,0,0);
 }
 
 .country-icon {
