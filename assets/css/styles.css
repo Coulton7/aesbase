@@ -12785,6 +12785,10 @@ body.toolbar-tray-open {
   padding-top: 79px !important;
 }
 
+.toolbar-tray-open .overlay-btn {
+  padding-top: calc(79px + 0.95em);
+}
+
 body .fixed-top {
   padding: 0;
 }
