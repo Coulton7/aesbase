@@ -13247,7 +13247,7 @@ a.text-white {
   transform: translate(0, 4%);
 }
 
-.modal-backdrop.show {
+.modal-backdrop.show, .offcanvas-backdrop.show {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
