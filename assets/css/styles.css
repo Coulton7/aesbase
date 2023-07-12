@@ -12789,6 +12789,10 @@ body.toolbar-tray-open {
   padding-top: calc(79px + 0.95em);
 }
 
+.toolbar-tray-open .change:after {
+  padding-top: calc(79px + 3em);
+}
+
 body .fixed-top {
   padding: 0;
 }
