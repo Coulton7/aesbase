@@ -12893,6 +12893,11 @@ body {
   margin-top: -7.2em;
 }
 
+.bg-white .navbar-collapse {
+  z-index: 100;
+  background: #fff;
+}
+
 .footer-curve-block {
   width: 100%;
   height: 6.185em;
