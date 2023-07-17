@@ -12898,6 +12898,10 @@ body {
   background: #fff;
 }
 
+.carousel-caption {
+  bottom: 33%;
+}
+
 .footer-curve-block {
   width: 100%;
   height: 6.185em;

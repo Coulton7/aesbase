@@ -145,7 +145,10 @@ body {
 .bg-white .navbar-collapse {
   z-index: 100;
   background: $white;
+}
 
+.carousel-caption {
+  bottom: 33%;
 }
 
 .footer-curve-block {
