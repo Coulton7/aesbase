@@ -12,3 +12,7 @@ form:
   css:
     component:
       assets/css/form/form-required.css: { minified: true }
+
+front-library:
+  js:
+    assets/js/fade-scroll.js: {}
