@@ -12909,6 +12909,12 @@ body {
   background-attachment: fixed;
 }
 
+.bg-transparent {
+  background-color: transparent;
+  background: transparent;
+  color: #fff;
+}
+
 .overlay-btn {
   float: right;
   margin-right: 1.5em;
