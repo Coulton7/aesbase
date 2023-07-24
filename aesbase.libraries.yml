@@ -4,6 +4,7 @@ bootstrap:
       assets/css/styles.css: { minified: true }
     
   js:
+    https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js: { type: external, minified: true }
     assets/js/nav-scroll.js: {}
     assets/js/menu-collapse.js: {}
     assets/js/nav-btn.js: {}
