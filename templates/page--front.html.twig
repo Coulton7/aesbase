@@ -54,12 +54,13 @@
   <div class="row g-0 waveupper">
     <div class="col-md-2 col-xs-1 col-1">
       <div class="wavelogo">
-        {{ page.logo }}
-      </div>
-      <img class= "uppercurve" src="/themes/contrib/aesbase/assets/images/graphics/wave-upper.svg" alt="uppercurve"></img>
-        <a class="logo navbar-btn float-start" href="{{ front_page }}" title=" {{ 'Home'|t }} ">
-					<img src="{{ second_logo }}" alt="{{ 'Home'|t }}" class="textlogo img-adaptive pt-2" alt="AESSEAL text logo"/>
+        <a href="/home" title="Home" rel="home">
+          <img src="https://static.aesseal.com/graphics/AES-logo-white.svg" alt="AESSEAL Logo in White" class="img-fluid"></img>
         </a>
+      </div>
+      <a class="logo navbar-btn float-start" href="{{ front_page }}" title=" {{ 'Home'|t }} ">
+				<img src="{{ second_logo }}" alt="{{ 'Home'|t }}" class="textlogo img-adaptive pt-2" alt="AESSEAL text logo"/>
+      </a>
     </div>
 
 {# Navbar #}
@@ -73,9 +74,6 @@
           navigation: page.navigation,
           navigation_collapsible: page.navigation_collapsible,
           attributes: create_attribute({
-            'class': [
-              'bg-white'
-            ],
             'id': [
               'autocollapse'
             ]
