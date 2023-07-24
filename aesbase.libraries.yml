@@ -7,6 +7,7 @@ bootstrap:
     assets/js/nav-scroll.js: {}
     assets/js/menu-collapse.js: {}
     assets/js/nav-btn.js: {}
+    assets/js/init-bs.js: {}
 
 form:
   css:
