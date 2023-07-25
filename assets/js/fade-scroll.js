@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const textLogo = document.getElementById('textlogo');
     const sectionShadow = document.getElementById('section-shadow');
     const enquiry = document.getElementById('enq-icon');
-    const navbar = document.querySelector('.navbar-nav');
+    const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navLinks = document.querySelectorAll('.navbar-nav a');
     var socialLinks = document.querySelectorAll('.social-media a');
 
