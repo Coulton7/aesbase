@@ -11,7 +11,7 @@ search.addWidgets ([
     }),
 
     instantsearch.widgets.hits ({
-        container: 'hits',
+        container: '#hits',
     })
 ]);
 
