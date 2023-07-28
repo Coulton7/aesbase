@@ -23,7 +23,7 @@ search.addWidgets([
     instantsearch.widgets.hits ({
         container: '#hits',
         templates: {
-            item: '<div class="search-result"><h3>{{#helpers.hightlight}}{{ "attribute": "title", "attribute": "name_1"}}</h3><p class="lead">{{"attribute": "type"}}</p><p>{{"attribute":"body"}}</p></div>'
+            item: '<div class="search-result"><h3>{{#helpers.highlight}}{{ "attribute": "title", "attribute": "name_1"}}</h3><p class="lead">{{"attribute": "type"}}</p><p>{{"attribute":"body"}}</p></div>'
         }
     })
 ]);
