@@ -16,7 +16,13 @@ search.addWidgets ([
     instantsearch.widgets.searchBox({
         container: '#searchbox',
         placeholder: 'Enter Your Keywords',
-        searchAsYouType: false
+        searchAsYouType: false,
+        cssClasses: {
+            form : 'search-block',
+            input: 'form-control',
+            submit: 'btn btn-primary',
+            submitIcon: 'svg-white'
+        }
     }),
 ])
 

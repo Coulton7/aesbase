@@ -158,6 +158,10 @@ body {
   background-attachment: fixed;
 }
 
+.svg-white {
+  filter: brightness(0) invert(1);
+}
+
 .bg-transparent {
   background-color: transparent;
   background: transparent;
