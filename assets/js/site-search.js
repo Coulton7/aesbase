@@ -15,7 +15,8 @@ search.addWidgets([
 search.addWidgets ([
     instantsearch.widgets.searchBox({
         container: '#searchbox',
-        placeholder: 'Enter Your Keywords'
+        placeholder: 'Enter Your Keywords',
+        searchAsYouType: false
     }),
 ])
 
