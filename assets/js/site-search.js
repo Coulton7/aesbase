@@ -27,7 +27,7 @@ search.addWidgets([
                 return html`
                 <div class="search-result">
                     <h3>${components.Highlight({ hit, atrribute: 'title' })}</h3>
-                    <p class="lead">${components.Snippet({ hit, attribute: 'type' })}</p>
+                    <p class="lead">${components.Highlight({ hit, attribute: 'type' })}</p>
                     <p>${components.Snippet({ hit, attribute: 'body' })}</p>
                 </div>`;
             },
