@@ -2,7 +2,7 @@ const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b
 
 const search = instantsearch({
     indexName: 'aesseal',
-    searchClinet,
+    searchClient,
     routing: true,
 });
 
