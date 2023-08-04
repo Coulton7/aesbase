@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
 const search = instantsearch({
@@ -8,11 +9,17 @@ const search = instantsearch({
 
 search.addWidgets([
     instantsearch.widgets.configure({
-        hitsPerPage: 10,
-    })
-])
+        hitsPerPage: 20,
+        attributesToSnippet: ['description:40'],
+        page: 0,
+    }),
 
-search.addWidgets ([
+    instantsearch.widgets.pagination({
+        container: '#pagination',
+        totalPages: 3,
+        scrollTo: '#searchbox'
+    }),
+
     instantsearch.widgets.searchBox({
         container: '#searchbox',
         placeholder: 'Enter Your Keywords',
@@ -21,25 +28,27 @@ search.addWidgets ([
             form : 'search-block',
             input: 'form-control',
             submit: 'btn btn-primary',
-            submitIcon: 'svg-white'
+            submitIcon: 'white-text'
         }
     }),
-])
 
-search.addWidgets([
     instantsearch.widgets.hits ({
         container: '#hits',
-        templates: {
-            item(hit, {html, components}) {
-                return html`
-                <div class="search-result">
-                    <h3>${components.Highlight({ hit, atrribute: 'title' })}</h3>
-                    <p class="lead">${components.Highlight({ hit, attribute: 'type' })}</p>
-                    <p>${components.Snippet({ hit, attribute: 'body' })}</p>
-                </div>`;
-            },
+        templates:{
+            item: data => `
+            <div class="search-result">
+                <p class="h3">${data.title}</p>
+                <p class="h3">${data.name_1}</p>
+                <p class="lead">${data.type}</p>
+                <p>${data.description}</p>
+                <p>${data.body}</p>
+            </div>`,
+            empty: `<p class="h3">No results found matching {{query}}</p>
+            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
+            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
         }
     })
 ]);
 
 search.start();
+});

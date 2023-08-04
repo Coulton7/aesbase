@@ -12846,6 +12846,10 @@ body {
   opacity: 1;
 }
 
+.front .wavelogo {
+  background: transparent;
+}
+
 .wavelogo img {
   position: relative;
   top: 0.5em;
