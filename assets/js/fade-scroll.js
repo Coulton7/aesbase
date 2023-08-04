@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textLogo = document.getElementById('textlogo');
-    const sectionShadow = document.getElementById('section-shadow');
+    const sectionShadow = document.querySelector('section-shadow');
     const enquiry = document.getElementById('enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navLinks = document.querySelectorAll('.navbar-nav a');
