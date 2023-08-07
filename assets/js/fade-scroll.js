@@ -22,17 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
             for (var i = 0; i < navLinks.length; i++) {
                 navLinks[i].classList.add('normText');
             }
-            for (var y = 0; y < socialLinks.length; y++) {
-                socialLinks[y].classList.add('normText');
-            }
         }
 
         if(scroll/600 < 0.75) {
             for (var i = 0; i < navLinks.length; i++) {
                 navLinks[i].classList.remove('normText');
-            }
-            for (var y = 0; y < socialLinks.length; y++) {
-                socialLinks[y].classList.remove('normText');
             }
         }
     });
@@ -59,12 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if(scroll/600 >= 0.75) {
                     document.querySelector('.navbar-nav a').classList.add('normText');
-                    document.querySelector('.social-media a').classList.add('normText');
                 }
         
                 if(scroll/600 < 0.75) {
                     document.querySelector('.navbar-nav a').classList.remove('normText');
-                    document.querySelector('.social-media a').classList.remove('normText');
                 }
             });
         } else {
