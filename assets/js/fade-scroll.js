@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const enquiry = document.getElementById('enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navLinks = document.querySelectorAll('.navbar-nav a');
-    var socialLinks = document.querySelectorAll('.social-media a');
-
+    
     if(window.innerWidth > 992) {
         sectionShadow.style.opacity = -1.03;
         textLogo.style.opacity = -1.03;
