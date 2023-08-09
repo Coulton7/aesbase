@@ -13023,10 +13023,6 @@ a.text-white {
   z-index: 2;
 }
 
-.no-padding {
-  padding: 0;
-}
-
 .navbar-nav li a {
   display: block;
   color: #535454;
@@ -13530,6 +13526,10 @@ ul.resource-cats a, ul.about-us-cats a {
   border-bottom: 1px #f5f5f5 solid;
   overflow: hidden;
   width: 100%;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
