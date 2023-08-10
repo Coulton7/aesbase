@@ -875,6 +875,38 @@ ul.resource-cats a, ul.about-us-cats a {
   opacity: 0;
 }
 
+.banner-fade{
+  animation: bannerFadeOut 7.25s;
+  -webkit-animation: bannerFadeOut 7.25s;
+  -moz-animation: bannerFadeOut 7.25s;
+  -ms-animation: bannerFadeOut 7.25s;
+  -o-animation: bannerFadeOut 7.25s;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  background-color: #002a5b;
+  filter: grayscale(100%);
+}
+
+@keyframes bannerFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  40% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 .no-padding {
   padding: 0;
