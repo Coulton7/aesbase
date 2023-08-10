@@ -152,6 +152,17 @@ document.addEventListener("DOMContentLoaded", function() {
         autoplayButton: false,
         autoplayButtonOutput: false,
         autoplayTimeout: 7000
+    });
+
+    var base_slider = tns({
+        container: ".base-slider",
+        speed: 0,
+        loop: true,
+        nav: false,
+        controls: true,
+        controlsContainer: "#arrow-controls",
+        lazyload: true,
+        items: 1
     })
     
 });
