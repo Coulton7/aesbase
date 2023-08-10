@@ -12815,6 +12815,10 @@ html {
   width: 66% !important;
 }
 
+.min-h-100 {
+  min-height: 100%;
+}
+
 body {
   color: #535454;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
