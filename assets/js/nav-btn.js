@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(document.querySelector('#resForm').classList.contains('in')) {
               document.querySelector('#resForm').modal('hide')
             }
-            if(document.querySelector('#location-details').dialog('isOpen') === true) {
-              document.querySelector('#location-details').dialog('close');
-            }
+
             document.querySelector('.main').classList.add('active');
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-btn').classList.remove('overlay-btn');
@@ -51,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
               if(document.querySelector('#resForm').classList.contains('in')) {
                 document.querySelector('#resForm').modal('hide')
               }
-              if(document.querySelector('#location-details').dialog('isOpen') === true) {
-                document.querySelector('#location-details').dialog('close');
-              }
+
               document.querySelector('.main').classList.add('active');
               document.querySelector("body").classList.add('noscroll');
               document.querySelector('#overlay-btn').classList.remove('overlay-btn');
