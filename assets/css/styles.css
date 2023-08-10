@@ -12900,6 +12900,33 @@ body {
   background: #fff;
 }
 
+.home-slider-height {
+  height: 100%;
+  background-color: #002a5b;
+  min-height: 32em;
+  position: relative;
+}
+
+#carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+  background-repeat: no-repeat;
+  background-color: rgb(9, 107, 50);
+}
+
+#carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+  background-repeat: no-repeat;
+  background-color: #012e58;
+}
+
+#carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+  background-repeat: no-repeat;
+  background-color: #012e58;
+}
+
+#carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  background-repeat: no-repeat;
+  background-color: #012e58;
+}
+
 .carousel-caption {
   bottom: 33%;
 }
@@ -13672,6 +13699,52 @@ ul.resource-cats a, ul.about-us-cats a {
     width: 100%;
     bottom: inherit;
   }
+  .home-slider-height {
+    min-height: 45em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background: -moz-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: -webkit-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: radial-gradient(ellipse at center, #000000 0%, #4c4e4f 80%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    animation: none;
+    background-position: bottom right;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatmobile/pillar-env-soc-gov.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: center;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatmobile/pillar-adv-techhnology.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: 65%;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatmobile/pillar-customer-service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: 40%;
+    padding-top: 3em;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
@@ -13706,6 +13779,51 @@ ul.resource-cats a, ul.about-us-cats a {
     top: 15%;
     height: 100%;
   }
+  .home-slider-height {
+    min-height: 42em;
+    display: flex;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background: -moz-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: -webkit-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: radial-gradient(ellipse at center, #000000 0%, #4c4e4f 80%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-position: bottom right;
+    animation: none;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformattablet/pillar-envsoc-gov.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: center;
+    animation: none;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformattablet/pillar-adv-techhnology.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: bottom right;
+    animation: none;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformattablet/pillar-customer-service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: center;
+    animation: none;
+    padding-top: 3em;
+  }
 }
 /* md */
 @media screen and (min-width: 992px) {
@@ -13720,6 +13838,40 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .preface-flex-margin {
     margin: -4.3em 0 0 0;
+  }
+  .home-slider-height {
+    min-height: 55em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background: -moz-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: -webkit-radial-gradient(center, ellipse cover, #000000 0%, #4c4e4f 80%);
+    background: radial-gradient(ellipse at center, #000000 0%, #4c4e4f 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(8, 14, 34);
+    background-blend-mode: unset;
+    background-position: 0% 75%;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-envsoc-gov.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-adv-techhnology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-customer-service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
   }
 }
 /* lg */
