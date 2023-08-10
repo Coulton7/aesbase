@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
           } else {
             x.style.height = "100%";
             if(document.querySelector('#prodForm').classList.contains('in')) {
-              document.querySelector('#prodForm').modal('hide')
+              document.querySelector('#prodForm').modal('hide');
             }
             if(document.querySelector('#resForm').classList.contains('in')) {
-              document.querySelector('#resForm').modal('hide')
+              document.querySelector('#resForm').modal('hide');
             }
 
             document.querySelector('.main').classList.add('active');
@@ -29,8 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(y).classList.remove('fixed-top');
           }
       });
-  
-      document.querySelector("#tablet-overlay-btn").addEventListener('click',
+
+      var tabletOverlayBtn = document.querySelector("#tablet-overlay-btn");
+
+      if(tabletOverlayBtn !=null ) {
+        document.querySelector("#tablet-overlay-btn").addEventListener('click',
         function navBtn() {
           document.getElementById('tablet-overlay-btn').classList.toggle("change");
           if (x.style.height === "100%") {
@@ -44,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
               x.style.height = "100%";
               if(document.querySelector('#prodForm').classList.contains('in')) {
-                document.querySelector('#prodForm').modal('hide')
+                document.querySelector('#prodForm').modal('hide');
               }
               if(document.querySelector('#resForm').classList.contains('in')) {
-                document.querySelector('#resForm').modal('hide')
+                document.querySelector('#resForm').modal('hide');
               }
 
               document.querySelector('.main').classList.add('active');
@@ -58,5 +61,9 @@ document.addEventListener("DOMContentLoaded", function() {
               document.querySelector(y).classList.remove('fixed-top');
             }
         });
+      }
+      else {
+        return false;
+      }
   });
   
