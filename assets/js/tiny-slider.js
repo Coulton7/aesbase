@@ -156,7 +156,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var base_slider = tns({
         container: ".base-slider",
-        speed: 0,
         loop: true,
         nav: false,
         controls: true,
