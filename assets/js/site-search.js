@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="search-result">
                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                    <p class="lead">${data.type}</p>
+                    <p class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                     <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                     <p class=${data.body ? '' : 'd-none'}>${data.body}</p>
                 </div>`,
@@ -51,4 +51,4 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
     
     search.start();
-    });
+});
