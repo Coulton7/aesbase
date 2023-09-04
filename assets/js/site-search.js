@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
         indexName: 'aesseal',
         searchClient,
         routing: true,
+        searchFunction(helper) {
+            if (helper.state.query === '')
+            {
+                return;
+            }
+            helper.search();
+        }
     });
     
     search.addWidgets([
