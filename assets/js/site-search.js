@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     search.addWidgets([
         instantsearch.widgets.configure({
             hitsPerPage: 20,
-            attributesToSnippet: ['description:40'],
+            attributesToSnippet: ['description:80', 'body:80'],
             page: 0,
         }),
     
@@ -47,8 +47,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                     <p class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                    <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
-                    <p class=${data.body ? '' : 'd-none'}>${data.body}</p>
+                    <p class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                    <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                        attribute: "description",
+                        hit: data
+                    })}</p>
+                    <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                        attribute: "body",
+                        hit: data
+                    })}</p>
                 </div>`,
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
