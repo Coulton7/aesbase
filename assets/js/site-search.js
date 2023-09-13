@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    var urlArray = window.location.pathname.split('/');
+    var urlLang = urlArray[1];
+    var filterLang = "search_api_language:" + urlLang;
+
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
     const search = instantsearch({
@@ -19,6 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
             hitsPerPage: 20,
             attributesToSnippet: ['description:80', 'body:80'],
             page: 0,
+            filters: filterLang,
+        }),
+
+        instantsearch.widgets.clearRefinements({
+            container: '#clear-refinements',
+            cssClasses:{
+                button: [
+                    'btn btn-primary'
+                ]
+            }
+        }),
+
+        instantsearch.widgets.refinementList({
+            container: '#lang-list',
+            attribute: 'search_api_language'
         }),
     
         instantsearch.widgets.pagination({
@@ -35,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 form : 'search-block',
                 input: 'form-control',
                 submit: 'btn btn-primary',
-                submitIcon: 'white-text'
+                submitIcon: 'text-white'
             }
         }),
     
