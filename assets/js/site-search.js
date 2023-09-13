@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
             hitsPerPage: 20,
             attributesToSnippet: ['description:80', 'body:80'],
             page: 0,
-            filters: filterLang,
         }),
 
         instantsearch.widgets.clearRefinements({
