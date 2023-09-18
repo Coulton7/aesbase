@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
-    var filterLang = "search_api_language:" + urlLang;
+    var filterLang = urlLang;
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
@@ -37,7 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
         instantsearch.widgets.refinementList({
             container: '#lang-list',
-            attribute: 'search_api_language'
+            attribute: 'search_api_language',
+            transformItems(items) {
+                items.forEach(function(arrayItem){
+                    if (filterLang == "en"){
+                        if(arrayItem.highlighted == "en") {
+                            arrayItem.isRefined == true
+                        }
+                    }
+                    else if (filterLang == "fr") {
+                        if(arrayItem.highlighted == "fr") {
+                            arrayItem.isRefined=true;
+                        }
+                    }
+                });
+                return items;
+            },
         }),
     
         instantsearch.widgets.pagination({
