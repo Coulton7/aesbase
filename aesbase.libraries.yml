@@ -12,6 +12,7 @@ bootstrap:
     assets/js/menu-collapse.js: {}
     assets/js/nav-btn.js: {}
     assets/js/init-bs.js: {}
+    assets/js/site-search.js: {}
 
 
 form:
