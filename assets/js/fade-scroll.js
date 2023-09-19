@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textLogo = document.querySelector('.textlogo');
     const sectionShadow = document.querySelector('.section-shadow');
-    const enquiry = document.getElementById('enq-icon');
+    const enquiry = document.querySelector('.enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navLinks = document.querySelectorAll('.navbar-nav a');
     
