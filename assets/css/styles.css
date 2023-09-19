@@ -12840,6 +12840,10 @@ body {
   justify-content: center;
 }
 
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  padding: 0;
+}
+
 .wavelogo {
   height: 11em;
   background: #fff;

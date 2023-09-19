@@ -89,6 +89,10 @@ body {
   justify-content: center;
 }
 
+.navbar > .container-fluid {
+  padding: 0;
+}
+
 .wavelogo {
   height: 11em;
   background: $white;
