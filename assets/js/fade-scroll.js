@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const textLogo = document.getElementById('textlogo');
+    const textLogo = document.querySelector('.textlogo');
     const sectionShadow = document.querySelector('.section-shadow');
     const enquiry = document.getElementById('enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
