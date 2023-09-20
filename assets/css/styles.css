@@ -12766,6 +12766,7 @@ html, body, .dialog-off-canvas-main-canvas {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overscroll-behavior-y: none;
 }
 
 #toolbar-administration {
