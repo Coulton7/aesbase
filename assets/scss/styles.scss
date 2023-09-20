@@ -15,7 +15,8 @@ html, body, .dialog-off-canvas-main-canvas {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overscroll-behavior-y: none;;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 #toolbar-administration {
