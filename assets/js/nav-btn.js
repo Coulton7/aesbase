@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
           }
       });
 
-      document.querySelector('#search-btn').addEventListener('click', 
+      document.querySelector('#overlay-search').addEventListener('click', 
         function searchBtn(){
-          document.getElementById('search-btn').classList.toggle('change');
+          document.getElementById('overlay-search').classList.toggle('change');
           if (y.style.height === "100%") {
             y.style.height = "0%";
             document.querySelector("body").classList.remove('noscroll');
-            document.querySelector('#search-btn').classList.add('search-btn');
+            document.querySelector('#overlay-search').classList.add('search-btn');
           } else {
             document.querySelector("body").classList.add('noscroll');
-            document.querySelector('#search-btn').classList.remove('search-btn');
+            document.querySelector('#overlay-search').classList.remove('search-btn');
           }
 
         });
