@@ -13484,14 +13484,6 @@ ul.resource-cats a, ul.about-us-cats a {
   right: 4%;
 }
 
-.overlay-search {
-  position: relative;
-  z-index: 101;
-  width: 65%;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-
 .noscroll {
   overflow: hidden;
 }
