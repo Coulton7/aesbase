@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var x = document.getElementById('myNav');
-    var y = document.getElementById('main-nav');
+    var y = document.getElementById('overlay-search');
     document.querySelector("#overlay-btn").addEventListener('click', 
       function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
@@ -8,18 +8,28 @@ document.addEventListener("DOMContentLoaded", function() {
           x.style.height = "0%";
           document.querySelector("body").classList.remove('noscroll');
           document.querySelector('#overlay-btn').classList.add('overlay-btn');
-          document.querySelector('.search-block').classList.remove('overlay-search');
           document.querySelector('.navigation_col').classList.remove('overlay-menu');
-          document.querySelector(y).classList.add('fixed-top');
           } else {
             x.style.height = "100%";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-btn').classList.remove('overlay-btn');
-            document.querySelector('.search-block').classList.add('overlay-search');
             document.querySelector('.navigation_col').classList.add('overlay-menu');
-            document.querySelector(y).classList.remove('fixed-top');
           }
       });
+
+      document.querySelector('#search-btn').addEventListener('click', 
+        function searchBtn(){
+          document.getElementById('search-btn').classList.toggle('change');
+          if (y.style.height === "100%") {
+            y.style.height = "0%";
+            document.querySelector("body").classList.remove('noscroll');
+            document.querySelector('#search-btn').classList.add('search-btn');
+          } else {
+            document.querySelector("body").classList.add('noscroll');
+            document.querySelector('#search-btn').classList.remove('search-btn');
+          }
+
+        });
 
       var tabletOverlayBtn = document.querySelector("#tablet-overlay-btn");
 
@@ -31,16 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
               x.style.height = "0%";
               document.querySelector("body").classList.remove('noscroll');
               document.querySelector('#overlay-btn').classList.add('overlay-btn');
-              document.querySelector('.search-block').classList.remove('overlay-search');
               document.querySelector('.navigation_col').classList.remove('overlay-menu');
-              document.querySelector(y).classList.add('fixed-top');
             } else {
               x.style.height = "100%";
               document.querySelector("body").classList.add('noscroll');
               document.querySelector('#overlay-btn').classList.remove('overlay-btn');
-              document.querySelector('.search-block').classList.add('overlay-search');
               document.querySelector('.navigation_col').classList.add('overlay-menu');
-              document.querySelector(y).classList.remove('fixed-top');
             }
         });
       }
