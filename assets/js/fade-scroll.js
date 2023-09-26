@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const sectionShadow = document.querySelector('.section-shadow');
     const enquiry = document.querySelector('.enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
-    var navLinks = document.querySelectorAll('.navbar-nav a');
+    var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     
     if(window.innerWidth > 992) {
         sectionShadow.style.opacity = -1.03;
