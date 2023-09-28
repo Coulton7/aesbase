@@ -13,6 +13,7 @@ bootstrap:
     assets/js/nav-btn.js: {}
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
+    assets/js/tiny-slider.js: {}
 
 
 form:
