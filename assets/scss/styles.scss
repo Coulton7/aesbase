@@ -58,6 +58,10 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .w-33 {
   width: 33%!important;
 }
@@ -938,11 +942,6 @@ ul.resource-cats a, ul.about-us-cats a {
     opacity: 0;
     visibility: hidden;
   }
-}
-
-
-.no-padding {
-  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
