@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             sectionShadow.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
             textLogo.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
             enquiry.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
-            navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scroll / 600)); +")"
+            navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scroll / 600)); +")";
     
             if(scroll/600 >= 0.75) {
                 for (var i = 0; i < navLinks.length; i++) {
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
     
             if(scroll/600 < 0.75) {
-                for (var i = 0; i < navLinks.length; i++) {
-                    navLinks[i].classList.remove('normText');
+                for (var x = 0; x < navLinks.length; x++) {
+                    navLinks[x].classList.remove('normText');
                 }
             }
         });
