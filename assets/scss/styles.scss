@@ -230,7 +230,7 @@ body {
 }
 
 .overlay-btn:hover, .overlay-btn:focus {
-  border-top: 4px solid #dd1e25;
+  border-top: 4px solid $danger;
   border-bottom: none;
   color: #333;
   text-decoration: none;
