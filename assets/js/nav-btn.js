@@ -8,12 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
           x.style.height = "0%";
           document.querySelector("body").classList.remove('noscroll');
           document.querySelector('#overlay-btn').classList.add('overlay-btn');
-          document.querySelector('.navigation_col').classList.remove('overlay-menu');
           } else {
             x.style.height = "100%";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-btn').classList.remove('overlay-btn');
-            document.querySelector('.navigation_col').classList.add('overlay-menu');
           }
       });
 
