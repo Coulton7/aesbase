@@ -22,6 +22,10 @@ form:
       assets/css/form/form-required.css: { minified: true }
 
 front-library:
+css:
+  theme:
+    https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css: { type: external }
   js:
+    https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js: { type: external }
     assets/js/fade-scroll.js: {}
     assets/js/carousel-options.js: {}
