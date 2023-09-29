@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var x = document.getElementById('myNav');
-    var y = document.getElementById('overlay-search');
+    var y = document.getElementById('searchOverlay');
     document.querySelector("#overlay-btn").addEventListener('click', 
       function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
