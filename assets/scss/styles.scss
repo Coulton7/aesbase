@@ -12,7 +12,6 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 /* custom.scss */
 
 html, body, .dialog-off-canvas-main-canvas {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   overscroll-behavior-y: none;
