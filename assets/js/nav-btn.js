@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector("body").classList.remove('noscroll');
             document.querySelector('#overlay-search').classList.add('search-btn');
           } else {
+            y.style.height = "100%";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-search').classList.remove('search-btn');
           }
