@@ -190,8 +190,15 @@ body {
 }
 
 .carousel-caption {
-  bottom: 33%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+  display: inline-block;
 }
+
 
 .video-overlay {
   background: rgb(0,42,91);
