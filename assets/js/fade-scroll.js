@@ -8,20 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
     
     function fadeScroll() {
         window.addEventListener('scroll', function(e) {
-            var scroll = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            sectionShadow.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
-            textLogo.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
-            enquiry.style.opacity = Math.max(0, Math.min(1, +scroll / 600));
-            navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scroll / 600)); +")";
-            scrollNav.style.backgroundColor = "rgba(0,0,0,"+ Math.max(0, Math.min(0.5 +scroll / 600)); + ")";
+            var scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            sectionShadow.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
+            textLogo.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
+            enquiry.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
+            navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scrollPos / 600)); +")";
+            scrollNav.style.backgroundColor = "rgba(0,0,0,"+ Math.max(0, Math.min(0.5 +scrollPos / 600)); + ")";
     
-            if(scroll/600 >= 0.75) {
+            if(scrollPos/600 >= 0.75) {
                 for (var i = 0; i < navLinks.length; i++) {
                     navLinks[i].classList.add('normText');
                 }
             }
     
-            if(scroll/600 < 0.75) {
+            if(scrollPos/600 < 0.75) {
                 for (var x = 0; x < navLinks.length; x++) {
                     navLinks[x].classList.remove('normText');
                 }
