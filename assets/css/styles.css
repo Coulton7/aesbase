@@ -13287,6 +13287,11 @@ a.text-white {
   justify-content: center;
 }
 
+.path-frontpage .scroll-nav {
+  transform: translateY(105%);
+  background: transparent;
+}
+
 .scrolled-down {
   transform: translateY(-210%);
   transition: all 0.3s ease-in-out;
