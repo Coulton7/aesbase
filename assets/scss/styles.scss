@@ -995,6 +995,14 @@ ul.resource-cats a, ul.about-us-cats a {
     display: flex;
   }
 
+  .slider-caption {
+    top: 0em;
+    position: relative;
+    transform: translateY(0);
+    padding: 0 15px;
+    z-index: 4;
+  }
+
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid-sm.jpg);
     background-size: auto;
@@ -1088,6 +1096,13 @@ ul.resource-cats a, ul.about-us-cats a {
     display: flex;
   }
 
+  .slider-caption {
+    top: 8vh;
+    position: relative;
+    transform: translateY(0%);
+    z-index: 4;
+  }
+
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid-sm.jpg);
     background-size: auto;
@@ -1154,6 +1169,13 @@ ul.resource-cats a, ul.about-us-cats a {
     min-height: 55em;
   }
 
+  .slider-caption {
+    top: 13vh;
+    position: relative;
+    transform: translateY(24%);
+    z-index: 4;
+  }
+
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid.jpg);
     background-size: auto;
@@ -1193,6 +1215,13 @@ ul.resource-cats a, ul.about-us-cats a {
 @media screen and (min-width: 1200px) {
   .textlogo {
     top: 0.3em;;
+  }
+
+  .slider-caption {
+    top: 14vh;
+    position: relative;
+    transform: translateY(28%);
+    z-index: 4;
   }
 }
 
