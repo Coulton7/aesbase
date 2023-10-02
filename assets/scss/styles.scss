@@ -86,6 +86,14 @@ body {
   color: $primary;
 }
 
+.path-frontpage .navbar-nav .nav-link {
+  color: $white;
+}
+
+.path-frontpage .navbar-nav .nav-link.normText {
+  color: #777;
+}
+
 .navbar-nav>li>a.is-active, .navbar-nav>li>a.is-active:hover, .navbar-nav>li>a.is-active:focus {
   background-color: $gray-200;
 }
@@ -202,7 +210,6 @@ body {
   text-shadow: none;
   display: inline-block;
 }
-
 
 .video-overlay {
   background: rgb(0,42,91);

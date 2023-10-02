@@ -12837,6 +12837,14 @@ body {
   color: #002a5b;
 }
 
+.path-frontpage .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.path-frontpage .navbar-nav .nav-link.normText {
+  color: #777;
+}
+
 .navbar-nav > li > a.is-active, .navbar-nav > li > a.is-active:hover, .navbar-nav > li > a.is-active:focus {
   background-color: #e9ecef;
 }
