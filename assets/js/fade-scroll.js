@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             textLogo.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
             enquiry.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
             navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scrollPos / 600)); +")";
-            scrollNav.style.backgroundColor = "rgba(0,0,0,"+ Math.max(0.5, Math.min(0 +scrollPos / 600)); + ")";
+            scrollNav.style.backgroundColor = "rgba(0,0,0,"+ Math.max(0, Math.min(0.5 +scrollPos / 600)); + ")";
     
             if(scrollPos/600 >= 0.75) {
                 for (var i = 0; i < navLinks.length; i++) {
