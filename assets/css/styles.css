@@ -13319,13 +13319,18 @@ a.text-white {
 
 .path-frontpage .scroll-nav {
   transform: translateY(105%);
-  background: transparent;
+}
+
+.path-frontpage .scrolled-up {
+  transform: translateY(105%);
+  transition: all 0.3s ease-in-out;
 }
 
 .scrolled-down {
   transform: translateY(-210%);
   transition: all 0.3s ease-in-out;
   transition-delay: 0.75s;
+  z-index: -1;
 }
 
 .scrolled-up {
