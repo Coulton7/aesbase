@@ -13321,6 +13321,11 @@ a.text-white {
   transform: translateY(105%);
 }
 
+.path-frontpage .scrolled-down {
+  transform: translateY(-210%);
+  transition: all 0.3s ease-in-out;
+}
+
 .path-frontpage .scrolled-up {
   transform: translateY(105%);
   transition: all 0.3s ease-in-out;
