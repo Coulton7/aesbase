@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         attribute: "body",
                         hit: data
                     })}</p>
-                    <a href="${data.url}">${data.url}</a>
+                    <a href="${data.url}">Read More</a>
                 </div>`,
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
