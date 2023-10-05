@@ -153,15 +153,5 @@ document.addEventListener("DOMContentLoaded", function() {
         autoplayButtonOutput: false,
         autoplayTimeout: 7000
     });
-
-    var base_slider = tns({
-        container: ".base-slider",
-        loop: true,
-        nav: false,
-        controls: true,
-        controlsContainer: "#arrow-controls",
-        lazyload: true,
-        items: 1
-    })
     
 });
