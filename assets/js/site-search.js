@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             container: '#clear-refinements',
             cssClasses:{
                 button: [
-                    'btn btn-primary'
+                    'btn btn-primary text-white'
                 ]
             }
         }),
