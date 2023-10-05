@@ -13084,6 +13084,10 @@ a.icon-link:hover {
   z-index: 10;
 }
 
+.prev i, .next i {
+  font-size: 2.5em;
+}
+
 .footer-curve-block {
   width: 100%;
   height: 6.185em;
