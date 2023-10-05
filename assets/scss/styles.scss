@@ -86,6 +86,10 @@ body {
   color: $primary;
 }
 
+.btn, .btn-lg, .btn-sm {
+  border-radius: 2rem;
+}
+
 .path-frontpage .navbar-nav .nav-link {
   color: $white;
 }
@@ -420,10 +424,6 @@ a.text-white {
 
 .darkgrey-background a:hover {
   color: $gray-200;
-}
-
-.btn, .btn-lg, .btn-sm {
-  border-radius: 2rem;
 }
 
 .text-bg-primary {

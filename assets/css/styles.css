@@ -12837,6 +12837,10 @@ body {
   color: #002a5b;
 }
 
+.btn, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn {
+  border-radius: 2rem;
+}
+
 .path-frontpage .navbar-nav .nav-link {
   color: #fff;
 }
@@ -13171,10 +13175,6 @@ a.text-white {
 
 .darkgrey-background a:hover {
   color: #e9ecef;
-}
-
-.btn, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn {
-  border-radius: 2rem;
 }
 
 .text-bg-primary {
