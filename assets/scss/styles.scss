@@ -337,6 +337,18 @@ a.icon-link:hover {
   font-size: 2.5em;
 }
 
+.next i {
+  left: 18%;
+  position: relative;
+  top: 8%;
+}
+
+.prev i {
+  position: relative;
+  right: -28%;
+  top: 8%
+}
+
 .footer-curve-block {
   width: 100%;
   height: 6.185em;
