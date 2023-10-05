@@ -928,6 +928,10 @@ ul.resource-cats a, ul.about-us-cats a {
   cursor: pointer;
 }
 
+.social-box {
+  position: relative;
+}
+
 .overlay-red {
   background: $danger;
   left: 0;
