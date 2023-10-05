@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
             transformItems(items) {
                 items.forEach(function(arrayItem){
                     if (filterLang == "en"){
-                        if(arrayItem.highlighted == "en") {
-                            arrayItem.isRefined == true
+                        if(arrayItem.highlighted === "en") {
+                            arrayItem.isRefined = true
                         }
                     }
-                    else if (filterLang == "fr") {
-                        if(arrayItem.highlighted == "fr") {
-                            arrayItem.isRefined=true;
+                    else if (filterLang === "fr") {
+                        if(arrayItem.highlighted === "fr") {
+                            arrayItem.isRefined = true;
                         }
                     }
                 });
