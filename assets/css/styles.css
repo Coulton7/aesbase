@@ -13470,6 +13470,22 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   height: 100%;
 }
 
+.search-overlay p {
+  color: #fff;
+}
+
+.search-overlay .lead {
+  color: #002a5b;
+}
+
+.search-overlay .ais-RefinementList-label {
+  color: #fff;
+}
+
+.ais-RefinementList-checkbox {
+  margin-right: 5px;
+}
+
 .change {
   color: transparent;
   pointer-events: none;
