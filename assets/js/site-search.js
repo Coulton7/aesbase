@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlLang = urlArray[1];
     var filterLang = urlLang;
 
+    console.log(urlLang);
+
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
     const search = instantsearch({
