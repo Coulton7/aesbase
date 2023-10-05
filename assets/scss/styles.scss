@@ -177,6 +177,10 @@ body {
   position: relative;
 }
 
+.carousel-text-shadow {
+  text-shadow: 1px 1px 1px $black;
+}
+
 #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
   background-repeat: no-repeat;
   background-color: rgb(9, 107, 50);
