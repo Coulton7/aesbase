@@ -40,9 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
         instantsearch.widgets.refinementList({
             container: '#lang-list',
             attribute: 'search_api_language',
-            templates: {
-                item: '<div class="ais-refinement-header"><h4>Select your Language</h4></div><input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-            },
             transformItems(items) {
                 items.forEach(function(arrayItem){
                     if (filterLang == "en"){
