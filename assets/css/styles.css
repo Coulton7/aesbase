@@ -13607,6 +13607,11 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   color: #fff;
 }
 
+.search-result {
+  padding: 1em 0.5em;
+  border-bottom: 4px solid #e5e5e7;
+}
+
 .ais-RefinementList-checkbox {
   margin-right: 5px;
 }
