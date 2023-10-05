@@ -224,6 +224,30 @@ body {
   z-index: 4;
 }
 
+.media-carousel-block {
+  position: relative;
+  z-index: 2;
+}
+
+.shadow-container {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.slider-links {
+  padding-top: 2.5em;
+}
+
+.icons-col-placement {
+  bottom: 8em;
+  position: relative;
+}
+
 .icon-link.active {
   color: $white;
   border: 3px solid #338FBC;
@@ -1243,6 +1267,16 @@ ul.resource-cats a, ul.about-us-cats a {
     animation: none;
     padding-top: 3em;
   }
+
+  .media-carousel-block {
+    bottom: 0;
+    margin-top: -1em;
+  }
+
+  .carousel-col-placement {
+    position: relative;
+    bottom: 3.9em;
+  }
 }
   
   /* md */
@@ -1306,6 +1340,11 @@ ul.resource-cats a, ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
+  }
+
+  .carousel-col-placement {
+    position: relative;
+    bottom: 8em;
   }
 }
   
