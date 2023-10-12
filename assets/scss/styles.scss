@@ -1356,6 +1356,13 @@ ul.resource-cats a, ul.about-us-cats a {
     padding-top: 3em;
   }
 
+  .controls li {
+    width: 3em;
+    height: 3em;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 30%);
+    border: 1px solid #e5e5e7;
+  }
+
   .media-carousel-block {
     bottom: 0;
     margin-top: -1em;
