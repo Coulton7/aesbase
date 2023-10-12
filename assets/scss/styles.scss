@@ -321,6 +321,11 @@ a.icon-link:hover {
   height: 11.5%;
 }
 
+.controls li:hover {
+  color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
 .next {
   left: 1em;
   right: auto;
