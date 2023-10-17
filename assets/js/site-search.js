@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 return items;
             },
-            sortBy : ['isRefined:desc'],
         }),
     
         instantsearch.widgets.pagination({
