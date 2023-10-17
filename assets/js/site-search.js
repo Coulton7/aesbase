@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'search_api_language',
             templates: {
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                header: '<h4>Select your Language'
+                header: '<h4>Select your Language</h4>'
             },
             transformItems(items) {
                 items.forEach(function(arrayItem){
