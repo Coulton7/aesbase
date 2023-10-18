@@ -20,6 +20,45 @@ document.addEventListener("DOMContentLoaded", function() {
             helper.search();
         }
     });
+
+    search.addWidgets([{
+        init: function(options) {
+            if(filterLang == "en")
+            {
+                options.helper.toggleRefinement('search_api_language', 'en');
+            }
+            else if(filterLang == "es")
+            {
+                options.helper.toggleRefinement('search_api_language', 'es');
+            }
+            else if (filterLang === "fr") {
+                options.helper.toggleRefinement('search_api_language', 'fr');
+            }
+            else if (filterLang === "de") {
+                options.helper.toggleRefinement('search_api_language', 'de');
+            }
+            else if(filterLang == "it")
+            {
+                options.helper.toggleRefinement('search_api_language', 'iy');
+            }
+            else if(filterLang == "pl")
+            {
+                options.helper.toggleRefinement('search_api_language', 'pl');
+            }
+            else if(filterLang == "ru")
+            {
+                options.helper.toggleRefinement('search_api_language', 'ru');
+            }
+            else if(filterLang == "tr")
+            {
+                options.helper.toggleRefinement('search_api_language', 'tr');
+            }
+            else if(filterLang == "zh-hans")
+            {
+                options.helper.toggleRefinement('search_api_language', 'zh-hans');
+            }
+        }
+      }]);
     
     search.addWidgets([
         instantsearch.widgets.configure({
@@ -43,21 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
             templates: {
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 header: '<h4>Select your Language</h4>'
-            },
-            transformItems(items) {
-                items.forEach(function(arrayItem){
-                    if (filterLang == "en"){
-                        if(arrayItem.highlighted === "en") {
-                            arrayItem.isRefined = true
-                        }
-                    }
-                    else if (filterLang === "fr") {
-                        if(arrayItem.highlighted === "fr") {
-                            arrayItem.isRefined = true;
-                        }
-                    }
-                });
-                return items;
             },
         }),
     
@@ -84,15 +108,15 @@ document.addEventListener("DOMContentLoaded", function() {
             templates:{
                 item: data => `
                 <div class="search-result">
-                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                    <p class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                    <p class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                    <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                    <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
+                    <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
+                    <p class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
                     })}</p>
-                    <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                    <p class=${data.body ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "body",
                         hit: data
                     })}</p>
