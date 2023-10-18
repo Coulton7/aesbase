@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const langlistPanel = panel ({
+    const langlistPanel = instantsearch.widgets.panel ({
         template: {
             header: '<h4>Select your Language</h4>'
         }
-    })(refinementList);
+    })(instantsearch.widgets.refinementList);
 
     search.addWidgets([{
         init: function(options) {
