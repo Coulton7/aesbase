@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    const langlistPanel = panel ({
+        template: {
+            header: '<h4>Select your Language</h4>'
+        }
+    })(refinementList);
+
     search.addWidgets([{
         init: function(options) {
             if(filterLang == "en")
@@ -76,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }),
 
-        instantsearch.widgets.refinementList({
+        langlistPanel({
             container: '#lang-list',
             attribute: 'search_api_language',
             templates: {
