@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })(instantsearch.widgets.refinementList);
 
+    const typelistPanel = instantsearch.widgets.panel ({
+        template: {
+            header: '<h4>Filter by Content Type</h4>'
+        }
+    })(instantsearch.widgets.refinementList);
+
     search.addWidgets([{
         init: function(options) {
             if(filterLang == "en")
@@ -91,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         }),
 
-        instantsearch.widgets.refinementList({
+        typelistPanel({
             container: '#type-list',
             attribute: 'type',
             templates: {
