@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const enquiry = document.querySelector('.enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
+    var scrollNav = docuument.querySelector('.scroll-nav');
     
     function fadeScroll() {
         window.addEventListener('scroll', function(e) {
@@ -17,12 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 for (var i = 0; i < navLinks.length; i++) {
                     navLinks[i].classList.add('normText');
                 }
+                scrollNav.classList.add('shadow-back');
             }
     
             if(scrollPos/600 < 0.75) {
                 for (var x = 0; x < navLinks.length; x++) {
                     navLinks[x].classList.remove('normText');
                 }
+                scrollNav.classList.remove('shadow-back');
             }
         });
     };

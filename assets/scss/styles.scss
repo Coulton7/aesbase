@@ -685,6 +685,19 @@ a.text-white {
   position: relative;
 }
 
+.path-frontpage .scroll-nav {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0);
+}
+
+.shadow-back {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
 .scroll-nav {
   position: fixed;
   transform: translateY(-105%);
