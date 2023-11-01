@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     search.addWidgets([{
         init: function(options) {
-            if(filterLang == "en")
+            if(filterLang == "waves")
             {
                 options.helper.toggleRefinement('search_api_language', 'en');
             }
@@ -91,8 +91,9 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'search_api_language',
             templates: {
                 header: 'Select your Language',
-                item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
+            sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
 
         typelistPanel({
@@ -100,8 +101,12 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'type',
             templates: {
                 header: 'Filter by Content Type',
-                item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
+            cssClasses: {
+                item: ['types-item']
+            },
+            sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
     
         instantsearch.widgets.pagination({
@@ -127,15 +132,15 @@ document.addEventListener("DOMContentLoaded", function() {
             templates:{
                 item: data => `
                 <div class="search-result">
-                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                    <p class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                    <p class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                    <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                    <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
+                    <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
+                    <p id="contentCat" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p id="vocabCat" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
                     })}</p>
-                    <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                    <p class=${data.body ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "body",
                         hit: data
                     })}</p>
@@ -156,42 +161,73 @@ document.addEventListener("DOMContentLoaded", function() {
         var refineType = document.querySelectorAll(".types-item");
         for (var i = 0; i < contentType.length; i++) {
 
-            if(contentType[i].innerText == 'article') {
-                contentType[i].innerText = contentType[i].innerText.replace("article", "Article");
-            } else if (contentType[i].innerText == 'page') {
-                contentType[i].innerText = contentType[i].innerText.replace("page","Web Page");
-            } else if (contentType[i].innerText == 'apiplans') {
-                contentType[i].innerText = contentType[i].innerText.replace("apiplans","API Plans");
-            } else if (contentType[i].innerText == 'cartridgemechanicalseals') {
-                contentType[i].innerText = contentType[i].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (contentType[i].innerText == 'gasseals') {
-                contentType[i].innerText = contentType[i].innerText.replace("gasseals","Gas Seals");
-            } else if (contentType[i].innerText == 'sealsupportsystems') {
-                contentType[i].innerText = contentType[i].innerText.replace("sealsupportsystems","Seal Support Systems");
-            } else if (contentType[i].innerText == 'bearingprotection') {
-                contentType[i].innerText = contentType[i].innerText.replace("bearingprotection","Bearing Protection");
-            } else if (contentType[i].innerText == 'componentseals') {
-                contentType[i].innerText = contentType[i].innerText.replace("componentseals","Component Seals");
-            } else if (contentType[i].innerText == 'glandpacking') {
-                contentType[i].innerText = contentType[i].innerText.replace("glandpacking","Gland Packing");
-            } else if (contentType[i].innerText == 'elastomers') {
-                contentType[i].innerText = contentType[i].innerText.replace("elastomers","Elastomers");
-            } else if (contentType[i].innerText == 'video') {
-                contentType[i].innerText = contentType[i].innerText.replace("video","Video");
-            } else if (contentType[i].innerText == 'academy') {
-                contentType[i].innerText = contentType[i].innerText.replace("academy","Academy");
-            } else if (contentType[i].innerText == 'locations') {
-                contentType[i].innerText = contentType[i].innerText.replace("locations","Locations");
-            } else if (contentType[i].innerText == 'undefined') {
-                contentType[i].innerText = contentType[i].innerText.replace("undefined","");
+            if(contentType[i].textContent == 'article') {
+                contentType[i].textContent = contentType[i].textContent.replace("article", "Article");
+            } else if (contentType[i].textContent == 'page') {
+                contentType[i].textContent = contentType[i].textContent.replace("page","Web Page");
+            } else if (contentType[i].textContent == 'apiplans') {
+                contentType[i].textContent = contentType[i].textContent.replace("apiplans","API Plans");
+            } else if (contentType[i].textContent == 'cartridgemechanicalseals') {
+                contentType[i].textContent = contentType[i].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (contentType[i].textContent == 'gasseals') {
+                contentType[i].textContent = contentType[i].textContent.replace("gasseals","Gas Seals");
+            } else if (contentType[i].textContent == 'sealsupportsystems') {
+                contentType[i].textContent = contentType[i].textContent.replace("sealsupportsystems","Seal Support Systems");
+            } else if (contentType[i].textContent == 'bearingprotection') {
+                contentType[i].textContent = contentType[i].textContent.replace("bearingprotection","Bearing Protection");
+            } else if (contentType[i].textContent == 'componentseals') {
+                contentType[i].textContent = contentType[i].textContent.replace("componentseals","Component Seals");
+            } else if (contentType[i].textContent == 'glandpacking') {
+                contentType[i].textContent = contentType[i].textContent.replace("glandpacking","Gland Packing");
+            } else if (contentType[i].textContent == 'elastomers') {
+                contentType[i].textContent = contentType[i].textContent.replace("elastomers","Elastomers");
+            } else if (contentType[i].textContent == 'video') {
+                contentType[i].textContent = contentType[i].textContent.replace("video","Video");
+            } else if (contentType[i].textContent == 'academy') {
+                contentType[i].textContent = contentType[i].textContent.replace("academy","Academy");
+            } else if (contentType[i].textContent == 'locations') {
+                contentType[i].textContent = contentType[i].textContent.replace("locations","Locations");
+            } else if (contentType[i].textContent == 'undefined') {
+                contentType[i].textContent = contentType[i].textContent.replace("undefined","");
+            }
+        }
+
+        for (var x = 0; x < refineType.length; x++) {
+
+            if(refineType[x].innerHTML.includes('article')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace('article', 'Article');
+            } else if (refineType[x].innerHTML.includes('page')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("page","Web Page");
+            } else if (refineType[x].innerHTML.includes('apiplans')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("apiplans","API Plans");
+            } else if (refineType[x].innerHTML.includes('cartridgemechanicalseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (refineType[x].innerHTML.includes('gasseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("gasseals","Gas Seals");
+            } else if (refineType[x].innerHTML.includes('sealsupportsystems')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("sealsupportsystems","Seal Support Systems");
+            } else if (refineType[x].innerHTML.includes('bearingprotection')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("bearingprotection","Bearing Protection");
+            } else if (refineType[x].innerHTML.includes('componentseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("componentseals","Component Seals");
+            } else if (refineType[x].innerHTML.includes('glandpacking')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("glandpacking","Gland Packing");
+            } else if (refineType[x].innerHTML.includes('elastomers')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("elastomers","Elastomers");
+            } else if (refineType[x].innerHTML.includes('video')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("video","Video");
+            } else if (refineType[x].innerHTML.includes('academy')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("academy","Academy");
+            } else if (refineType[x].innerHTML.includes('locations')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations",'Locations');
             }
         }
 
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
-                vocabName[y].innerText = vocabName[y].innerText.replace("industry","Industry")
+                vocabName[y].textContent = vocabName[y].textContent.replace("industry","Industry")
             } else if (vocabName[y].textContent == 'undefined') {
-                vocabName.innerText = ""
+                vocabName.textContent = ""
             }
         }
     })
