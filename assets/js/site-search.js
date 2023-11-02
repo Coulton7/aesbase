@@ -117,6 +117,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 header: 'Select your Language',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
+            transformItems(items){
+                return items.map(item => ({
+                    ...item,
+                    label: item.label.toUpperCase(),
+                }));
+            },
             sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
 
