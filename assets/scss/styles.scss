@@ -1398,6 +1398,10 @@ filter: grayscale(1);
     background-position: 40%;
     padding-top: 3em;
   }
+
+  #arrowNav {
+    display: none;
+  }
 }
 
 @media screen and (min-width:501px) and (max-width: 767px) {
@@ -1517,6 +1521,10 @@ filter: grayscale(1);
   .carousel-col-placement {
     position: relative;
     bottom: 3.9em;
+  }
+
+  #arrowNav {
+    display: block;
   }
 }
   

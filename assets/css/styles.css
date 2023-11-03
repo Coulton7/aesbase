@@ -14140,6 +14140,9 @@ ul.resource-cats a, ul.about-us-cats a {
     background-position: 40%;
     padding-top: 3em;
   }
+  #arrowNav {
+    display: none;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
@@ -14242,6 +14245,9 @@ ul.resource-cats a, ul.about-us-cats a {
   .carousel-col-placement {
     position: relative;
     bottom: 3.9em;
+  }
+  #arrowNav {
+    display: block;
   }
 }
 /* md */
