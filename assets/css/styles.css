@@ -12794,6 +12794,10 @@ body.toolbar-tray-open {
   padding-top: calc(79px + 0.5em);
 }
 
+#drupal-off-canvas-wrapper {
+  z-index: 1035;
+}
+
 body .fixed-top {
   padding: 0;
 }
