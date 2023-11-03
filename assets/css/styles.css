@@ -13207,6 +13207,31 @@ a.lightblue-text {
   color: #fff;
 }
 
+blockquote::before {
+  content: url(/themes/contrib/aesbase/assets/images/graphics/blockquote-top.png);
+  margin-right: -0.75em;
+  z-index: -1;
+  position: absolute;
+  left: -2.8em;
+  top: -1.9em;
+}
+
+blockquote::after {
+  content: url(/themes/contrib/aesbase/assets/images/graphics/blockquote-bottom.png);
+  position: absolute;
+  margin-left: -0.5em;
+  z-index: -1;
+}
+
+blockquote {
+  color: #002a5b;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+  position: relative;
+  margin: 3% 15%;
+}
+
 .breadcrumb li {
   transform: skew(-25deg);
   color: #667f9c;
