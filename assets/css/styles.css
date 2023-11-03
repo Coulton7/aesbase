@@ -13170,8 +13170,28 @@ a {
   color: #dd1e25;
 }
 
+a.no-dash {
+  border-bottom: none;
+}
+
+a.no-dash:hover {
+  border-bottom: none;
+}
+
 a.text-white {
   color: #e9ecef;
+}
+
+a.black-text {
+  color: #000;
+}
+
+a.blue-text {
+  color: #002a5b;
+}
+
+a.lightblue-text {
+  color: #004a8c;
 }
 
 .darkgrey-background a {

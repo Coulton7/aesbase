@@ -419,8 +419,28 @@ a {
   color: $danger;
 }
 
+a.no-dash{
+  border-bottom: none;
+}
+
+a.no-dash:hover{
+  border-bottom: none;
+}
+
 a.text-white {
   color: $gray-200;
+}
+
+a.black-text {
+  color: $black;
+}
+
+a.blue-text {
+  color: $blue;
+}
+
+a.lightblue-text {
+  color: $lightblue;
 }
 
 .darkgrey-background a {
