@@ -14011,6 +14011,15 @@ ul.resource-cats a, ul.about-us-cats a {
   filter: grayscale(100%);
 }
 
+.mono-filter {
+  transition: 0.8s;
+  filter: grayscale(1);
+}
+
+.mono-filter:hover {
+  filter: grayscale(0);
+}
+
 @keyframes bannerFadeOut {
   0% {
     opacity: 1;
