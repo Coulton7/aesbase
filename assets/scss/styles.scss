@@ -691,6 +691,13 @@ a.text-white {
   -webkit-backdrop-filter: blur(0);
 }
 
+.path-frontpage .shadow-back {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
 .shadow-back {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
