@@ -14020,6 +14020,22 @@ ul.resource-cats a, ul.about-us-cats a {
   filter: grayscale(0);
 }
 
+.reveal[aria-expanded=true] {
+  display: none;
+}
+
+.reveal[aria-expanded=false] ~ .full-details {
+  display: none;
+}
+
+.reveal[aria-expanded=true] {
+  display: none;
+}
+
+.reveal[aria-expanded=true] ~ .full-details {
+  display: block;
+}
+
 .hover-grow {
   transition: transform 0.2s ease-in-out;
 }

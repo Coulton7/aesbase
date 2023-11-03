@@ -1269,6 +1269,22 @@ filter: grayscale(1);
   filter: grayscale(0);
 }
 
+.reveal[aria-expanded="true"] {
+  display: none;
+}
+
+.reveal[aria-expanded="false"]~.full-details {
+  display: none;
+}
+
+.reveal[aria-expanded="true"] {
+  display: none;
+}
+
+.reveal[aria-expanded="true"]~.full-details {
+  display: block;
+}
+
 .hover-grow {
   transition: transform .2s ease-in-out
 }
