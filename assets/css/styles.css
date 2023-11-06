@@ -14091,6 +14091,10 @@ ul.resource-cats a, ul.about-us-cats a {
   -moz-transform: scale(1.2);
 }
 
+.search-block {
+  display: flex;
+}
+
 @keyframes bannerFadeOut {
   0% {
     opacity: 1;

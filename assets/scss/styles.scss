@@ -1340,6 +1340,10 @@ filter: grayscale(1);
   -moz-transform: scale(1.2);
 }
 
+.search-block {
+  display: flex;
+}
+
 @keyframes bannerFadeOut {
   0% {
     opacity: 1;
