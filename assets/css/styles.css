@@ -12849,6 +12849,10 @@ body {
   color: #fff;
 }
 
+.path-frontpage .navbar-nav .nav-link:hover {
+  color: #dd1e25;
+}
+
 .path-frontpage .navbar-nav .nav-link.normText {
   color: #777;
 }
