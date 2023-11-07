@@ -13787,7 +13787,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .noscroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .noscroll .action-menu {
