@@ -14115,6 +14115,119 @@ ul.resource-cats a, ul.about-us-cats a {
   font-size: 2em;
 }
 
+.social-items {
+  position: relative;
+}
+
+.social-items a {
+  border-bottom: none;
+}
+
+.social-items .item-1, .social-items .item-2, .social-items .item-3 {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-1 .item-1, .grid-3 .item-1, .grid-5 .item-1, .grid-8 .item-1, .grid-10 .item-1, .grid-12 .item-1 {
+  z-index: 3;
+  position: relative;
+  animation: fade 20s linear infinite forwards;
+  opacity: 0;
+}
+
+.grid-1 .item-2, .grid-3 .item-2, .grid-5 .item-2, .grid-8 .item-2, .grid-10 .item-2, .grid-12 .item-2 {
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  animation: fade 20s linear infinite forwards;
+  opacity: 0;
+  animation-delay: 6.666s;
+}
+
+.grid-1 .item-3, .grid-3 .item-3, .grid-5 .item-3, .grid-8 .item-3, .grid-10 .item-3, .grid-12 .item-3 {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  animation: fade 20s linear infinite forwards;
+  opacity: 0;
+  animation-delay: 13.333s;
+}
+
+.grid-2 .item-1, .grid-4 .item-1, .grid-6 .item-1, .grid-7 .item-1, .grid-9 .item-1, .grid-11 .item-1 {
+  z-index: 3;
+  position: relative;
+  animation: fade2 20s linear infinite forwards;
+  opacity: 1;
+  animation-delay: 8s;
+}
+
+.grid-2 .item-2, .grid-4 .item-2, .grid-6 .item-2, .grid-7 .item-2, .grid-9 .item-2, .grid-11 .item-2 {
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  animation: fade2 20s linear infinite forwards;
+  opacity: 0;
+  animation-delay: 14.666s;
+}
+
+.grid-2 .item-3, .grid-4 .item-3, .grid-6 .item-3, .grid-7 .item-3, .grid-9 .item-3, .grid-11 .item-3 {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  animation: fade2 20s linear infinite forwards;
+  opacity: 0;
+  animation-delay: 21.333s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+  3% {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  31% {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  35% {
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+    z-index: 3;
+    visibility: visible;
+  }
+  3% {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  31% {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  35% {
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+.gallery-box:hover img {
+  transform: none;
+}
+
 @keyframes bannerFadeOut {
   0% {
     opacity: 1;
