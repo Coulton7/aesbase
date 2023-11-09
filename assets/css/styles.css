@@ -14458,8 +14458,7 @@ ul.resource-cats a, ul.about-us-cats a {
   .sustain-nav {
     overflow-x: initial;
     overflow-y: initial;
-    display: initial;
-    display: initial;
+    display: flex;
   }
   #arrowNav {
     display: block;
