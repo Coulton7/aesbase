@@ -14109,6 +14109,7 @@ ul.resource-cats a, ul.about-us-cats a {
   background: #e5e5e7;
   color: #535354;
   opacity: 0.7;
+  background-image: none;
 }
 
 .carousel-control-next-icon:after {
