@@ -14101,6 +14101,16 @@ ul.resource-cats a, ul.about-us-cats a {
   display: flex;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 3em;
+  width: 3em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background: #e5e5e7;
+  color: #535354;
+  opacity: 0.7;
+}
+
 .carousel-control-next-icon:after {
   font-family: "Font Awesome 5 Free";
   content: "\f054";
