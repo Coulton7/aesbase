@@ -1356,6 +1356,14 @@ filter: grayscale(1);
   display: flex;
 }
 
+.carousel-control-next {
+  background-image: none;
+}
+
+.carousel-control-prev {
+  background-image: none;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 3em;
   width: 3em;
@@ -1364,7 +1372,6 @@ filter: grayscale(1);
   background: #e5e5e7;
   color: #535354;
   opacity: 0.7;
-  background-image: none;;
 }
 
 .carousel-control-next-icon:after {
