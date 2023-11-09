@@ -14461,7 +14461,7 @@ ul.resource-cats a, ul.about-us-cats a {
     display: flex;
   }
   #arrowNav {
-    display: block;
+    display: none;
   }
 }
 /* md */
