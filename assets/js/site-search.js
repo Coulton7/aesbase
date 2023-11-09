@@ -52,12 +52,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const langlistPanel = instantsearch.widgets.panel ({
         templates: {
             header: '<h4>Select your Language</h4>'
+        },cssClasses: {
+            root: 'pt-5'
         }
     })(instantsearch.widgets.refinementList);
 
     const typelistPanel = instantsearch.widgets.panel ({
         templates: {
             header: '<h4>Filter by Content Type</h4>'
+        },
+        cssClasses: {
+            root: 'pt-3'
         }
     })(instantsearch.widgets.refinementList);
 
@@ -110,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
         instantsearch.widgets.clearRefinements({
             container: '#clear-refinements',
             cssClasses:{
+                root: 'pt-5',
                 button: [
                     'btn btn-primary text-white'
                 ]
