@@ -27,4 +27,4 @@ front-library:
   js:
     assets/js/fade-scroll.js: {}
     assets/js/carousel-options.js: {}
-    assets/js/tiny-slider.js: {}
+    assets/js/home-tiny-slider.js: {}
