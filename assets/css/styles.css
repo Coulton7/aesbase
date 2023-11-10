@@ -14301,9 +14301,9 @@ ul.resource-cats a, ul.about-us-cats a {
     z-index: 4;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid-sm.jpg);
-    background-size: auto;
-    background-repeat: repeat;
+    background-image: url(http://static.aesseal.com/photo/wavehead/Helipad-si-56363854-sq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
@@ -14397,9 +14397,9 @@ ul.resource-cats a, ul.about-us-cats a {
     z-index: 4;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid-sm.jpg);
-    background-size: auto;
-    background-repeat: repeat;
+    background-image: url(http://static.aesseal.com/photo/wavehead/Helipad-si-56363854.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
@@ -14488,9 +14488,9 @@ ul.resource-cats a, ul.about-us-cats a {
     z-index: 4;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid.jpg);
-    background-size: auto;
-    background-repeat: repeat;
+    background-image: url(http://static.aesseal.com/photo/wavehead/Helipad-si-56363854.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
