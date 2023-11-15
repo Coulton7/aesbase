@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         textLogo.style.opacity = 1;
         enquiry.style.opacity = 1;
         navbar.style.backgroundColor = "rgba(255,255,255,1)";
+        scrollNav.classList.add('shadow-back')
     }
 
     window.addEventListener('resize', function(){
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             textLogo.style.opacity = 1;
             enquiry.style.opacity = 1;
             navbar.style.backgroundColor = "rgba(255,255,255,1)";
+            scrollNav.classList.add('shadow-back')
         }
     });
 
