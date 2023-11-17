@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         document.querySelector('#overlay-share').addEventListener('click', 
-        function searchBtn(){
+        function shareBtn(){
           document.getElementById('overlay-share').classList.toggle('change');
           if (y.style.height === "100%") {
             y.style.height = "0%";
