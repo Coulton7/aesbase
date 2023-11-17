@@ -13171,7 +13171,7 @@ a.icon-link:hover {
   text-decoration: none;
 }
 
-.search-btn {
+.search-btn, .share-btn {
   cursor: pointer;
 }
 
