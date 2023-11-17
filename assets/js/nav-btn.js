@@ -30,6 +30,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         });
 
+        document.querySelector('#overlay-share').addEventListener('click', 
+        function searchBtn(){
+          document.getElementById('overlay-share').classList.toggle('change');
+          if (y.style.height === "100%") {
+            y.style.height = "0%";
+            document.querySelector("body").classList.remove('noscroll');
+            document.querySelector('#overlay-share').classList.add('share-btn');
+          } else {
+            y.style.height = "100%";
+            document.querySelector("body").classList.add('noscroll');
+            document.querySelector('#overlay-share').classList.remove('share-btn');
+          }
+
+        });
+
       var tabletOverlayBtn = document.querySelector("#tablet-overlay-btn");
 
       if(tabletOverlayBtn !=null ) {
