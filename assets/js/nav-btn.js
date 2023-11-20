@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var x = document.getElementById('myNav');
     var y = document.getElementById('searchOverlay');
+    var s = document.getElementById('shareOverlay');
     document.querySelector("#overlay-btn").addEventListener('click', 
       function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
@@ -33,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('#overlay-share').addEventListener('click', 
         function shareBtn(){
           document.getElementById('overlay-share').classList.toggle('change');
-          if (y.style.height === "100%") {
-            y.style.height = "0%";
+          if (s.style.height === "100%") {
+            s.style.height = "0%";
             document.querySelector("body").classList.remove('noscroll');
             document.querySelector('#overlay-share').classList.add('share-btn');
           } else {
-            y.style.height = "100%";
+            s.style.height = "100%";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-share').classList.remove('share-btn');
           }
