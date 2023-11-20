@@ -233,6 +233,10 @@ body {
   display: inline-block;
 }
 
+.page-title h1 {
+  font-size: 3rem;
+}
+
 .video-overlay {
   background: rgb(0,42,91);
   background: linear-gradient(180deg, rgba(0,42,91,0.25) 33%, rgba(0,42,91,0.5) 50%, rgba(0,0,0,0.75) 66%, rgba(0,0,0,0.9) 100%);
