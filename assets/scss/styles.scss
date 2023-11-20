@@ -1661,7 +1661,7 @@ filter: grayscale(1);
   /* sm */
 @media screen and (min-width: 768px) {
   .textlogo {
-    top: 1em;
+    top: 0;
   }
 
   .preface-flex-margin {
@@ -1848,7 +1848,7 @@ filter: grayscale(1);
   /* lg */
 @media screen and (min-width: 1200px) {
   .textlogo {
-    top: 0.3em;;
+    top: 0;;
   }
 
   .slider-caption {

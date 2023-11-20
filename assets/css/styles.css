@@ -14388,7 +14388,7 @@ ul.resource-cats a, ul.about-us-cats a {
 /* sm */
 @media screen and (min-width: 768px) {
   .textlogo {
-    top: 1em;
+    top: 0;
   }
   .preface-flex-margin {
     margin: 2em 0 0 0;
@@ -14545,7 +14545,7 @@ ul.resource-cats a, ul.about-us-cats a {
 /* lg */
 @media screen and (min-width: 1200px) {
   .textlogo {
-    top: 0.3em;
+    top: 0;
   }
   .slider-caption {
     top: 14vh;
