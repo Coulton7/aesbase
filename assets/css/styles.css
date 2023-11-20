@@ -12899,7 +12899,7 @@ body {
 }
 
 .textlogo {
-  background: #fff;
+  background: transparent;
   position: fixed;
   width: 9.75em !important;
   height: auto;
