@@ -13371,6 +13371,18 @@ blockquote {
   z-index: 10;
 }
 
+.lower-wave {
+  width: 100%;
+  height: 7.57em;
+  background: #fafafa;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
 .socialmedia ul {
   display: -webkit-box;
   display: -webkit-flex;
