@@ -150,14 +150,14 @@
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="primary" aria-labelledby="primary">
+        <aside class="offcanvas offcanvas-start" tabindex="-1" id="primary" aria-labelledby="primary">
           <div class="offcanvas-title" id="primary">
             <button type="button" class="btn-close text-reset float-end mt-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             {{ page.sidebar_first }}
           </div>
-        </div>
+        </aside>
         {% endblock %}
       {% endif %}
 
@@ -197,14 +197,14 @@
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="secondary" aria-labelledby="secondary">
+          <aside class="offcanvas offcanvas-end" tabindex="-1" id="secondary" aria-labelledby="secondary">
             <div class="offcanvas-title" id="secondary">
               <button type="button" class="btn-close text-reset float-start mt-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               {{ page.sidebar_second }}
             </div>
-          </div>
+          </aside>
         {% endblock %}
       {% endif %}
 
