@@ -12863,6 +12863,18 @@ body {
   color: #777;
 }
 
+.path-frontpage .overlay-btn {
+  color: #fff;
+}
+
+.path-frontpage .overlay-btn:hover {
+  color: #dd1e25;
+}
+
+.path-frontpage .overlay-btn.normText {
+  color: #777;
+}
+
 .navbar-nav > li > a.is-active, .navbar-nav > li > a.is-active:hover, .navbar-nav > li > a.is-active:focus {
   background-color: #e9ecef;
 }

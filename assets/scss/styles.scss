@@ -112,6 +112,18 @@ body {
   color: #777;
 }
 
+.path-frontpage .overlay-btn {
+  color: $white;
+}
+
+.path-frontpage .overlay-btn:hover {
+  color: $danger;
+}
+
+.path-frontpage .overlay-btn.normText {
+  color: #777;
+}
+
 .navbar-nav>li>a.is-active, .navbar-nav>li>a.is-active:hover, .navbar-nav>li>a.is-active:focus {
   background-color: $gray-200;
 }
