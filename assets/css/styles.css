@@ -14489,6 +14489,9 @@ ul.resource-cats a, ul.about-us-cats a {
   .menu--main.navbar-nav {
     width: 100%;
   }
+  .bg-white .navbar-collapse {
+    padding-left: 6rem;
+  }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.95em 1.1em;
   }
@@ -14549,6 +14552,9 @@ ul.resource-cats a, ul.about-us-cats a {
     position: relative;
     transform: translateY(28%);
     z-index: 4;
+  }
+  .bg-white .navbar-collapse {
+    padding-left: 0;
   }
 }
 @media (max-width: 992px) {

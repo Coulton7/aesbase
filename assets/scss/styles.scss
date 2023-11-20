@@ -1782,6 +1782,10 @@ filter: grayscale(1);
     width: 100%;
   }
 
+  .bg-white .navbar-collapse {
+    padding-left: 6rem;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.95em 1.1em;
   }
@@ -1852,6 +1856,10 @@ filter: grayscale(1);
     position: relative;
     transform: translateY(28%);
     z-index: 4;
+  }
+
+  .bg-white .navbar-collapse {
+    padding-left: 0;
   }
 }
 
