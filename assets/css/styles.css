@@ -13751,6 +13751,10 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   color: #fff;
 }
 
+.search-overlay span {
+  color: #fff;
+}
+
 .search-overlay .lead {
   color: #fff;
 }

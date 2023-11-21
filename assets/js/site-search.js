@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         count += `no result`;
                     }
 
-                    return html`<span>${count} found in ${data.processingTimeMS}ms</span>`;
+                    return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
                 }
             }
         }),
