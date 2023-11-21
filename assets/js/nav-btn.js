@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
       function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
         if (x.style.height === "100%") {
-          x.style.height = "0%";
+          x.style.height = "1px";
+          x.style.bottom = "-1px";
           document.querySelector("body").classList.remove('noscroll');
           document.querySelector('#overlay-btn').classList.add('overlay-btn');
           } else {
             x.style.height = "100%";
+            x.style.bottom = "0";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-btn').classList.remove('overlay-btn');
           }
@@ -20,11 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
         function searchBtn(){
           document.getElementById('overlay-search').classList.toggle('change');
           if (y.style.height === "100%") {
-            y.style.height = "0%";
+            y.style.height = "1px";
+            y.style.bottom = "-1px";
             document.querySelector("body").classList.remove('noscroll');
             document.querySelector('#overlay-search').classList.add('search-btn');
           } else {
             y.style.height = "100%";
+            y.style.bottom = "0";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-search').classList.remove('search-btn');
           }
@@ -35,11 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
         function shareBtn(){
           document.getElementById('overlay-share').classList.toggle('change');
           if (s.style.height === "100%") {
-            s.style.height = "0%";
+            s.style.height = "1px";
+            s.style.bottom = "-1px";
             document.querySelector("body").classList.remove('noscroll');
             document.querySelector('#overlay-share').classList.add('share-btn');
           } else {
             s.style.height = "100%";
+            s.style.bottom = "0";
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-share').classList.remove('share-btn');
           }

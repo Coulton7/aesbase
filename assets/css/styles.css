@@ -13721,7 +13721,8 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
 }
 
 .overlay-main, .search-overlay, .share-overlay {
-  height: 0%;
+  height: 1px;
+  bottom: -1px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
