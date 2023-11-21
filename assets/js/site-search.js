@@ -174,6 +174,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitIcon: 'text-white'
             }
         }),
+
+        instantsearch.widgets.stats({
+            container: '#stats',
+            templates: {
+                text(data, { html }) {
+                    let count = '';
+                    if (data.hasManyResults) {
+                        count += `${data.nbHits} results`
+                    } else if (data.hasOneResult) {
+                        count += `1 result`
+                    } else {
+                        count += `no result`;
+                    }
+
+                    return html`<span>${count} found in ${data.processingTineMS}ms</span>`;
+                }
+            }
+        }),
     
         instantsearch.widgets.hits ({
             container: '#hits',
