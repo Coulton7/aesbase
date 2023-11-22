@@ -13750,6 +13750,10 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   color: #fff;
 }
 
+.search-overlay small, .search-overlay .small {
+  color: #fff;
+}
+
 .search-overlay span {
   color: #fff;
 }
