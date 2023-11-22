@@ -14248,6 +14248,19 @@ ul.resource-cats a, ul.about-us-cats a {
   animation-delay: 21.333s;
 }
 
+.hs-recaptcha {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  transform: scale(0.77);
+  -webkit-transform: scale(0.77);
+  -moz-transform: scale(0.77);
+  -o-transform: scale(0.77);
+  transform-origin: 0;
+  -webkit-transform-origin: 0;
+  -moz-transform-origin: 0;
+  -moz-transform-origin: 0;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
