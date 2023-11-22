@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
             templates:{
                 item: data => `
                 <div class="search-result">
-                    <small>${data.url}</p>
+                    <small>${data.url}</small>
                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
