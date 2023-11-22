@@ -569,8 +569,7 @@ blockquote {
   transform: skew(25deg);
   color: $bc-blue;
   display: inline-block;
-  padding-right: 9px;
-  padding-left: 9px;
+  padding: 9px;
   border-bottom: none;
   text-decoration: none;
 }
@@ -1539,6 +1538,9 @@ filter: grayscale(1);
   display: inline-flex;
   width: 100%;
   justify-content: center;
+  background-color: #e5e5e7;
+  border: 1px solid #e3e3e3;
+  padding-top: 1rem;
 }
 
 .views-exposed-form .form-item {
