@@ -14261,6 +14261,31 @@ ul.resource-cats a, ul.about-us-cats a {
   -moz-transform-origin: 0;
 }
 
+.hs-overlay-form .hs-input:not([type=file]) {
+  background-color: #000;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.hs-overlay-form.hs-custom-style fieldset {
+  padding: 0.5em;
+}
+
+.hs-overlay-form .hs-richtext {
+  color: #ffffff;
+}
+
+.hs-overlay-form .grecaptcha-badge {
+  float: right;
+}
+
+.hs-overlay-form .hs-form-checkbox-display span {
+  margin-left: 10px;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
