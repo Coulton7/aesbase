@@ -13773,6 +13773,31 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   margin-right: 5px;
 }
 
+.ais-Pagination-list {
+  margin: 20px 0;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.ais-Pagination-list > li, .ais-Pagination-list > span {
+  padding: 6px 12px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  color: #dd1e25;
+}
+
+.ais-Pagination-list > li:first-child, .ais-Pagination-list > li:first-child {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ais-Pagination-list > li:last-child, .ais-Pagination-list > li:last-child {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
 .change {
   color: transparent;
   pointer-events: none;
