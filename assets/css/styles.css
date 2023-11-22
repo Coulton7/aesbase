@@ -14286,6 +14286,25 @@ ul.resource-cats a, ul.about-us-cats a {
   margin-left: 10px;
 }
 
+.views-exposed-form {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.views-exposed-form .form-item {
+  display: inline-flex;
+}
+
+.views-exposed-form .form-item .form-label {
+  margin-right: 1rem;
+}
+
+.views-exposed-form .form-item .form-select {
+  width: fit-content;
+  margin-right: 1rem;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
