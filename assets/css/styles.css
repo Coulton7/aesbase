@@ -14298,6 +14298,7 @@ ul.resource-cats a, ul.about-us-cats a {
 
 .views-exposed-form .form-item .form-label {
   margin-right: 1rem;
+  align-self: center;
 }
 
 .views-exposed-form .form-item .form-select {
