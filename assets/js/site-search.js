@@ -19,24 +19,46 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const typeMapping = {
-        '3dmodels': '3D Models',
-        'academy': 'Academy',
-        'apiplans': 'API Plans',
-        'article': 'Article',
-        'bearingprotection': 'Bearing Protection',
-        'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
-        'casestudies': 'Case Studies',
-        'componentseals': 'Component Seals',
-        'elastomers': 'Elastomers',
-        'gasseals': 'Gas Seals',
-        'glandpacking': 'Gland Packing',
-        'locations': 'Locations',
-        'page': 'Web Page',
-        'productbrochure': 'Product Brochure',
-        'sealsupportsystems': 'Seal Support Systems',
-        'video': 'Video',
-        'whitepaper': 'Whitepaper',
+    if (filterLang == "en") {
+        const typeMapping = {
+            '3dmodels': '3D Models',
+            'academy': 'Academy',
+            'apiplans': 'API Plans',
+            'article': 'Article',
+            'bearingprotection': 'Bearing Protection',
+            'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
+            'casestudies': 'Case Studies',
+            'componentseals': 'Component Seals',
+            'elastomers': 'Elastomers',
+            'gasseals': 'Gas Seals',
+            'glandpacking': 'Gland Packing',
+            'locations': 'Locations',
+            'page': 'Web Page',
+            'productbrochure': 'Product Brochure',
+            'sealsupportsystems': 'Seal Support Systems',
+            'video': 'Video',
+            'whitepaper': 'Whitepaper',
+        }
+    } else if (filterLang == "fr") {
+        const typeMapping = {
+            '3dmodels': 'Modèles 3D',
+            'academy': 'Académie',
+            'apiplans': 'API Plans',
+            'article': 'Article',
+            'bearingprotection': 'Protections de Paliers',
+            'cartridgemechanicalseals': 'Garnitures cartouches',
+            'casestudies': 'Études de cas',
+            'componentseals': 'Garnitures mécaniques bi-composants',
+            'elastomers': 'Elastomers',
+            'gasseals': 'Garnitures gaz',
+            'glandpacking': 'Tresses d’étanchéité',
+            'locations': 'Emplacement',
+            'page': 'Web Page',
+            'productbrochure': 'Brochures des produits',
+            'sealsupportsystems': 'Seal Support Systems',
+            'video': 'Vidéos',
+            'whitepaper': 'Whitepaper',
+        }
     }
 
     const vidMapping ={
