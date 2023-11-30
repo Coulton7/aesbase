@@ -13116,7 +13116,7 @@ a.icon-link:hover {
 }
 
 .prev {
-  right: 0;
+  right: 1em;
   left: auto;
   position: absolute;
   top: 35%;
