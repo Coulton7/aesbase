@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
           } else {
             y.style.height = "100%";
             y.style.bottom = "0";
-            if (y.style.height == "100%") {
+            if (x.style.height == "100%") {
               x.style.height = "1px";
               x.style.bottom = "-1px";
               document.querySelector('#overlay-search').classList.remove('change');
