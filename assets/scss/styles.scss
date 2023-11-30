@@ -83,6 +83,18 @@ html {
   min-height: 100%;
 }
 
+.min-vh-75 {
+  min-height: 75vh!important;
+}
+
+.min-vh-50 {
+  min-height: 50vh!important;
+}
+
+.min-vh-25 {
+  min-height: 25vh!important;
+}
+
 body {
   color: #535454;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
