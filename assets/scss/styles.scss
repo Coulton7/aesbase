@@ -95,6 +95,26 @@ html {
   min-height: 25vh!important;
 }
 
+.mx-10 {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+
+.px-10 {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+
+.py-10 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.my-10 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
 body {
   color: #535454;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
