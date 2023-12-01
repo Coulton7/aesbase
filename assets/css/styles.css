@@ -13283,14 +13283,14 @@ blockquote::before {
   margin-right: -0.75em;
   z-index: -1;
   position: absolute;
-  left: -2.8em;
-  top: -1.9em;
+  left: -2.8rem;
+  top: -1.9rem;
 }
 
 blockquote::after {
   content: url(/themes/contrib/aesbase/assets/images/graphics/blockquote-bottom.png);
   position: absolute;
-  margin-left: -0.5em;
+  margin-left: -0.5rem;
   z-index: -1;
 }
 
