@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (s.style.height == "100%") {
               s.style.height = "1px";
               s.style.bottom = "-1px";
-              document.querySelector('#overlay-btn').classList.remove('change');
-              document.querySelector('#overlay-btn').classList.add('share-btn')
+              document.querySelector('#overlay-share').classList.remove('change');
+              document.querySelector('#overlay-share').classList.add('share-btn')
             }
             document.querySelector("body").classList.add('noscroll');
             document.querySelector('#overlay-search').classList.remove('search-btn');
