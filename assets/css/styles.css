@@ -13304,6 +13304,19 @@ blockquote {
   z-index: 1;
 }
 
+.icon-round-btn {
+  color: #fff;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: #dd1e25;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .enquiry-icon {
   color: #fff;
   border-radius: 50%;

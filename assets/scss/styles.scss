@@ -553,6 +553,19 @@ blockquote {
   z-index: 1;
 }
 
+.icon-round-btn {
+  color: $white;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: $danger;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .enquiry-icon {
   color: $white;
   border-radius: 50%;
