@@ -14005,6 +14005,10 @@ ul.resource-cats, ul.product-cats, ul.about-us-cats {
   border-bottom-left-radius: 4px;
 }
 
+.pagination {
+  justify-content: center;
+}
+
 .change {
   color: transparent;
   pointer-events: none;
