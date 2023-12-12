@@ -9,7 +9,7 @@ aes-card:
       preview: http://via.placeholder.com/350x350
     heading:
       type: text
-      label: Heading
+      label: Header
       description: The card heading (usually title of the page)
       preview: The title of the page
     body:
