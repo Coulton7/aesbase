@@ -2111,6 +2111,11 @@ filter: grayscale(1);
   #arrowNav {
     display: none;
   }
+
+  .banner-vid {
+    position: absolute;
+    top: 16%;
+  }
 }
   
   /* md */
@@ -2183,6 +2188,11 @@ filter: grayscale(1);
   .carousel-col-placement {
     position: relative;
     bottom: 8em;
+  }
+
+  .banner-vid {
+    position: absolute;
+    top: 10%;
   }
 }
   

@@ -14820,6 +14820,10 @@ ul.resource-cats a, ul.about-us-cats a {
   #arrowNav {
     display: none;
   }
+  .banner-vid {
+    position: absolute;
+    top: 16%;
+  }
 }
 /* md */
 @media screen and (min-width: 992px) {
@@ -14880,6 +14884,10 @@ ul.resource-cats a, ul.about-us-cats a {
   .carousel-col-placement {
     position: relative;
     bottom: 8em;
+  }
+  .banner-vid {
+    position: absolute;
+    top: 10%;
   }
 }
 /* lg */
