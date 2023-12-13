@@ -543,7 +543,7 @@ blockquote::after {
   z-index: -1;
 }
 
-.tomwetlands-background.lazy-back, .background-3179.lazy-back,  .background-3180.lazy-back, .background-3181.lazy-back, .background-3182.lazy-back, .background-3183.lazy-back, .background-3184.lazy-back, .background-3185.lazy-back, .background-3186.lazy-back, .background-3187.lazy-back, .background-3188.lazy-back, .background-3189.lazy-back, .background-3190.lazy-back, .background-3191.lazy-back, .background-3192.lazy-back, .background-3201.lazy-back {
+.tomwetlands-background.lazy-back, .background-3179.lazy-back,  .background-3180.lazy-back, .background-3181.lazy-back, .background-3182.lazy-back, .background-3183.lazy-back, .background-3184.lazy-back, .background-3185.lazy-back, .background-3186.lazy-back, .background-3187.lazy-back, .background-3188.lazy-back, .background-3189.lazy-back, .background-3190.lazy-back, .background-3191.lazy-back, .background-3192.lazy-back, .background-3201.lazy-back, .background-3237.lazy-back, .background-3238.lazy-back {
   background-image: none;
   background-color: #efefef;
 }
@@ -686,13 +686,33 @@ blockquote::after {
   color: #efefef;
 }
 
+.background-3237 {
+  background-image: url(https://static.aesseal.com/photo/staff/quotes/Chris_Dean.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: right;
+  background-color: #010101;
+  color: #efefef;
+}
+
+.background-3238 {
+  background-image: url(https://static.aesseal.com/photo/staff/quotes/Richard_Hunt.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: right;
+  background-color: #010101;
+  color: #efefef;
+}
+
 .background-3179 .quote-placement, .background-3180 .quote-placement, .background-3181 .quote-placement, .background-3183 .quote-placement, .background-3184 .quote-placement, .background-3186 .quote-placement, .background-3188 .quote-placement, .background-3190 .quote-placement, .background-3192 .quote-placement  {
   width: 50%;
   margin-left: 50%;
   text-align: right;
 }
 
-.background-3182 .quote-placement, .background-3185 .quote-placement, .background-3187 .quote-placement, .background-3189 .quote-placement, .background-3191 .quote-placement, .background-3201 .quote-placement {
+.background-3182 .quote-placement, .background-3185 .quote-placement, .background-3187 .quote-placement, .background-3189 .quote-placement, .background-3191 .quote-placement, .background-3201 .quote-placement, .background-3237 .quote-placement, .background-3238 .quote-placement {
   width: 50%;
 }
 
