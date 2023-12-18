@@ -12883,6 +12883,11 @@ body {
   border-radius: 2rem;
 }
 
+.disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
 .path-frontpage .navbar-nav .nav-link {
   color: #fff;
 }

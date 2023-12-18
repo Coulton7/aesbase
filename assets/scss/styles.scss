@@ -132,6 +132,11 @@ body {
   border-radius: 2rem;
 }
 
+.disabled {
+  background-color: $gray-200;
+  cursor: not-allowed;
+}
+
 .path-frontpage .navbar-nav .nav-link {
   color: $white;
 }
