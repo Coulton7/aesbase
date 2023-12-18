@@ -191,7 +191,6 @@ function pdfCreator() {
     } else {
       roiTime = roi.value;
     }
-    var orgType = document.getElementById('orgType').value;
     var jobRole = document.getElementById('jobRole');
     var role;
     if(role === ""){
