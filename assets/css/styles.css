@@ -13617,7 +13617,7 @@ blockquote {
 
 .banner-vid {
   position: absolute;
-  transform: translateY(-50%);
+  transform: translateY(-56%);
 }
 
 .socialmedia {
@@ -14837,7 +14837,7 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .banner-vid {
     position: absolute;
-    transform: translateY(-40%);
+    transform: translateY(-52%);
   }
 }
 /* md */
@@ -14902,7 +14902,7 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .banner-vid {
     position: absolute;
-    transform: translateY(-50%);
+    transform: translateY(-56%);
   }
 }
 /* lg */
