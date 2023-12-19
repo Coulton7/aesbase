@@ -529,6 +529,11 @@ a.lightblue-text {
   color: $white;
 }
 
+.card-body, .card-header, .card-footer {
+  background-color: $white;
+  opacity: 0.5;
+}
+
 .testhouse-background {
   background-image: url(https://static.aesseal.com/photo/sustainability/Testhouse_1.jpg);
   background-size: cover;
