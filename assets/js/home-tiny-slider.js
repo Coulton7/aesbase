@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
             speed: 0,
             loop: true,
             nav: false,
-            controlsContainer: "#arrow-controls",
+            controlsContainer: "#prod-controls",
             gutter: 20,
             lazyload: true,
             autoplay: false,
