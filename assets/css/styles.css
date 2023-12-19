@@ -13285,6 +13285,14 @@ a.lightblue-text {
   backdrop-filter: blur(10px);
 }
 
+.card-header {
+  border-bottom: none;
+}
+
+.card-footer {
+  border-top: none;
+}
+
 .testhouse-background {
   background-image: url(https://static.aesseal.com/photo/sustainability/Testhouse_1.jpg);
   background-size: cover;
