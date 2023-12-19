@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     if (document.querySelectorAll('.prod-slider').length > 0){
-        var base_slider = tns ({
+        var prod_slider = tns ({
             container: ".prod-slider",
             speed: 0,
             loop: true,
