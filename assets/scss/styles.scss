@@ -134,6 +134,7 @@ body {
 
 .disabled {
   cursor: not-allowed;
+  pointer-events: visible;
 }
 
 .path-frontpage .navbar-nav .nav-link {
