@@ -866,7 +866,7 @@ blockquote {
 
 .banner-vid {
   position: absolute;
-  top: 10%;
+  transform: translateY(-50%);
 }
 
 .socialmedia {
@@ -2129,7 +2129,7 @@ filter: grayscale(1);
 
   .banner-vid {
     position: absolute;
-    top: 16%;
+    transform: translateY(-40%);
   }
 }
   
@@ -2207,7 +2207,7 @@ filter: grayscale(1);
 
   .banner-vid {
     position: absolute;
-    top: 10%;
+    transform: translateY(-50%);
   }
 }
   
