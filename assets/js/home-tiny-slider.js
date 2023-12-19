@@ -106,4 +106,37 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('news-icon').classList.remove('active');
     });
 
+    if (document.querySelectorAll('.prod-slider').length > 0){
+        var base_slider = tns ({
+            container: ".prod-slider",
+            speed: 0,
+            loop: true,
+            nav: false,
+            controlsContainer: "#arrow-controls",
+            gutter: 20,
+            lazyload: true,
+            autoplay: false,
+            responsive: {
+                1 : {
+                items: 2 
+                },
+        
+                600 : {
+                items: 3
+                },
+        
+                768: {
+                    items: 3
+                },
+        
+                992: {
+                    itmes: 4
+                },
+        
+                1200: {
+                    items: 4
+                }
+            },
+        })
+    }
 });
