@@ -12889,7 +12889,8 @@ body {
 }
 
 a.disabled {
-  background-color: #e9ecef;
+  color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .path-frontpage .navbar-nav .nav-link {

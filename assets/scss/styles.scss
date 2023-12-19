@@ -138,7 +138,8 @@ body {
 }
 
 a.disabled {
-  background-color: $gray-200;
+  color: $gray-200;
+  border-color: $gray-200;
 }
 
 .path-frontpage .navbar-nav .nav-link {
