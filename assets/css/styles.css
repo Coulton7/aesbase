@@ -12884,9 +12884,7 @@ body {
 }
 
 .disabled {
-  background-color: #e9ecef;
   cursor: not-allowed;
-  color: #e9ecef;
 }
 
 .path-frontpage .navbar-nav .nav-link {
