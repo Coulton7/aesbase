@@ -13293,6 +13293,10 @@ a.lightblue-text {
   border-top: none;
 }
 
+.views-view-responsive-grid__item-inner {
+  height: 100%;
+}
+
 .testhouse-background {
   background-image: url(https://static.aesseal.com/photo/sustainability/Testhouse_1.jpg);
   background-size: cover;
