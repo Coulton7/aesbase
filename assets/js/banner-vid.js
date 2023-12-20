@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const lowerwave = document.getElementsByClassName('lower-wave');
   const bannerVid = document.getElementsByClassName('banner-vid');
 
-  const lowerwaveRect = lowerwave.getBoundingClientRect();
+  const lowerwaveRect = lowerwave[0].getBoundingClientRect();
 
   const lowerTop = lowerwaveRect.top + lowerwaveRect.height;
 
