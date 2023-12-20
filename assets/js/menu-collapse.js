@@ -25,20 +25,6 @@ function autocollapse() {
         document.getElementById('overlay-btn').classList.remove('display-none-important');
       }
     }
-  
-    if(window.innerWidth >= 768 && window.innerWidth <= 991) {
-      let tabletBtn = document.querySelector('.tablet-overlay-btn').getBoundingClientRect();
-      let tabletBtnLeft = tabletBtn.left;
-      let menuItem = document.querySelector('.desktop-last').getBoundingClientRect();
-      let menuItemRight = menuItem.right;
-  
-      if ((menuItemRight > tabletBtnLeft)) {
-        document.querySelector('.overlay-btn').classList.add('display-none-important');
-      }
-      else {
-        document.querySelector('.overlay-btn').classList.remove('display-none-important');
-      }
-    }
   }
   
   document.addEventListener("DOMContentLoaded", autocollapse);
