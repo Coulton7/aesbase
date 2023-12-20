@@ -13629,7 +13629,6 @@ blockquote {
 
 .banner-vid {
   position: absolute;
-  transform: translateY(-56%);
 }
 
 .socialmedia {
@@ -14847,10 +14846,6 @@ ul.resource-cats a, ul.about-us-cats a {
   #arrowNav {
     display: none;
   }
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-38%);
-  }
 }
 /* md */
 @media screen and (min-width: 992px) {
@@ -14912,10 +14907,6 @@ ul.resource-cats a, ul.about-us-cats a {
     position: relative;
     bottom: 8em;
   }
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-36%);
-  }
 }
 /* lg */
 @media screen and (min-width: 1200px) {
@@ -14930,16 +14921,6 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .bg-white .navbar-collapse {
     padding-left: 0;
-  }
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-46%);
-  }
-}
-@media screen and (min-width: 1500px) {
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-57%);
   }
 }
 @media (max-width: 992px) {

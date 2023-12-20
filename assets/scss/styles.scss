@@ -878,7 +878,6 @@ blockquote {
 
 .banner-vid {
   position: absolute;
-  transform: translateY(-56%);
 }
 
 .socialmedia {
@@ -2138,11 +2137,6 @@ filter: grayscale(1);
   #arrowNav {
     display: none;
   }
-
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-38%);
-  }
 }
   
   /* md */
@@ -2216,11 +2210,6 @@ filter: grayscale(1);
     position: relative;
     bottom: 8em;
   }
-
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-36%);
-  }
 }
   
   /* lg */
@@ -2238,18 +2227,6 @@ filter: grayscale(1);
 
   .bg-white .navbar-collapse {
     padding-left: 0;
-  }
-
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-46%);
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .banner-vid {
-    position: absolute;
-    transform: translateY(-57%);
   }
 }
 
