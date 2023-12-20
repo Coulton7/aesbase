@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const lowerTop = lowerwaveRect.top + lowerwaveRect.height;
 
-  bannerVid.style.top = (lowerTop - 10) + 'px';
+  bannerVid[0].style.top = (lowerTop - 10) + 'px';
 });
