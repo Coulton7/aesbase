@@ -14849,7 +14849,7 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .banner-vid {
     position: absolute;
-    transform: translateY(-52%);
+    transform: translateY(-38%);
   }
 }
 /* md */
@@ -14914,7 +14914,7 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .banner-vid {
     position: absolute;
-    transform: translateY(-56%);
+    transform: translateY(-36%);
   }
 }
 /* lg */
@@ -14930,6 +14930,16 @@ ul.resource-cats a, ul.about-us-cats a {
   }
   .bg-white .navbar-collapse {
     padding-left: 0;
+  }
+  .banner-vid {
+    position: absolute;
+    transform: translateY(-46%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .banner-vid {
+    position: absolute;
+    transform: translateY(-57%);
   }
 }
 @media (max-width: 992px) {

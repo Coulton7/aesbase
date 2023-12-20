@@ -2141,7 +2141,7 @@ filter: grayscale(1);
 
   .banner-vid {
     position: absolute;
-    transform: translateY(-52%);
+    transform: translateY(-38%);
   }
 }
   
@@ -2219,7 +2219,7 @@ filter: grayscale(1);
 
   .banner-vid {
     position: absolute;
-    transform: translateY(-56%);
+    transform: translateY(-36%);
   }
 }
   
@@ -2238,6 +2238,18 @@ filter: grayscale(1);
 
   .bg-white .navbar-collapse {
     padding-left: 0;
+  }
+
+  .banner-vid {
+    position: absolute;
+    transform: translateY(-46%);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .banner-vid {
+    position: absolute;
+    transform: translateY(-57%);
   }
 }
 
