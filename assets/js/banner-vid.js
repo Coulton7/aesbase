@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const lowerwaveRect = lowerwave[0].getBoundingClientRect();
 
-  const lowerTop = lowerwaveRect.top + lowerwaveRect.height;
+  const lowerTop = lowerwaveRect.height;
 
-  bannerVid[0].style.bottom = (lowerTop + 5) + 'px';
+  bannerVid[0].style.bottom = lowerTop + 'px';
 });
