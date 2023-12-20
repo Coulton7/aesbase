@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   bannerVid.load();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lowerwave = document.getElementsByClassName('lower-wave');
+  const bannerVid = document.getElementsByClassName('banner-vid');
+
+  const lowerwaveRect = lowerwave.getBoundingClientRect();
+
+  const lowerTop = lowerwaveRect.top + lowerwaveRect.height;
+
+  bannerVid.style.top = (lowerTop - 10) + 'px';
+});
