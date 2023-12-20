@@ -13,12 +13,12 @@ bootstrap:
     https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js: { type: external, minified: true }
     https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js: {type: external, minified: true}
     assets/js/tiny-slider.js: {}
-    assets/js/fade-scroll.js: {}
     assets/js/nav-scroll.js: {}
     assets/js/menu-collapse.js: {}
     assets/js/nav-btn.js: {}
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
+    assets/js/banner-vid.js: {}
 
 
 form:
@@ -30,3 +30,4 @@ front-library:
   js:
     assets/js/carousel-options.js: {}
     assets/js/home-tiny-slider.js: {}
+    assets/js/fade-scroll.js: {}
