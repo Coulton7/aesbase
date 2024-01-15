@@ -13862,7 +13862,7 @@ blockquote {
 }
 
 .scrolled-up {
-  transform: translateY(-104%);
+  transform: translateY(-108%);
   transition: all 0.3s ease-in-out;
 }
 
