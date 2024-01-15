@@ -13201,6 +13201,11 @@ a.icon-link:hover {
   color: #fff;
 }
 
+.bg-darkgrey {
+  background-color: #888C8F;
+  color: #fff;
+}
+
 .overlay-btn {
   float: right;
   margin-right: 1.5em;
@@ -13862,7 +13867,7 @@ blockquote {
 }
 
 .scrolled-up {
-  transform: translateY(-108%);
+  transform: translateY(-106%);
   transition: all 0.3s ease-in-out;
 }
 
