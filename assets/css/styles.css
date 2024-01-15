@@ -13922,6 +13922,7 @@ blockquote {
   background-color: transparent;
   box-shadow: none;
   border: none;
+  color: #fff;
 }
 
 .modal-open .modal {
