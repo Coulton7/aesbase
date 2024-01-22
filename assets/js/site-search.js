@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const search = instantsearch({
         indexName: 'aesseal',
         searchClient,
-        routing: true,
+        routing: {
+            router: instantsearch.routers.history(),
+            stateMapping: instantsearch.stateMappings.simple(),
+          },
         typoTolerance: 'strict',
         searchFunction(helper) {
             if (helper.state.query === '')
