@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
         indexName: 'aesseal',
         searchClient,
         routing: true,
-        typoTolerance: strict,
         searchFunction(helper) {
             if (helper.state.query === '')
             {
