@@ -18,16 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     return {
                         q: indexUiState.query,
                         page: indexUiState.page,
-                        types: indexUiState.refinementList && indexUiState.refinementList.types,
+                        type: indexUiState.refinementList && indexUiState.refinementList.type,
+                        lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                     };
                 },
                 routeToState(routeState) {
                     return {
                         aesseal: {
-                            q: routeState.query,
+                            query: routeState.q,
                             page: routeState.page,
                             refinementList: {
-                                types: routeState.types
+                                type: routeState.type,
+                                lang: routeState.search_api_language
                             }
                         }
                     }
