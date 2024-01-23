@@ -11,7 +11,28 @@ document.addEventListener("DOMContentLoaded", function() {
         searchClient,
         routing: {
             router: instantsearch.routers.history(),
-            stateMapping: instantsearch.stateMappings.simple(),
+            stateMapping: {
+                stateToRoute(uiState) {
+                    const indexUiState = uiState['aesseal'] || {};
+
+                    return {
+                        query: indexUiState.query,
+                        page: indexUiState.page,
+                        types: indexUiState.refinementList && indexUiState.refinementList.types,
+                    };
+                },
+                routeToState(routeState) {
+                    return {
+                        aesseal: {
+                            query: routeState.query,
+                            page: routeState.page,
+                            refinementList: {
+                                types: routeState.types
+                            }
+                        }
+                    }
+                }
+            },
           },
         typoTolerance: 'strict',
         searchFunction(helper) {
