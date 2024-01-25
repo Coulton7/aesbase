@@ -17,20 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     return {
                         qs: indexUiState.query,
-                        page: indexUiState.page,
                         type: indexUiState.refinementList && indexUiState.refinementList.type,
                         lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                        page: indexUiState.page,
                     };
                 },
                 routeToState(routeState) {
                     return {
                         aesseal: {
                             query: routeState.qs,
-                            page: routeState.page,
                             refinementList: {
                                 type: routeState.type,
                                 lang: routeState.search_api_language
-                            }
+                            },
+                            page: routeState.page,
                         }
                     }
                 }
