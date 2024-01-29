@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector('#block-block-91').style.display = 'none';
+    document.querySelector('.submit-notice').style.display = 'none';
     if (document.querySelector('.field-hubspot-form').length > 0) {
       document.querySelector('.download-field-wrapper').style.display = 'none';
     }
@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(submitString=='y'){
         document.querySelector('.download-field-wrapper').style.display = 'block';
         document.querySelector('.field-hubspot-form').style.display = 'none';
-        document.querySelector('#block-sharethis-sharethis-block').style.display = 'none';
         document.querySelector('.field-label').style.display = 'none';
-        document.querySelector('#block-block-91').style.display = 'block';
+        document.querySelector('.submit-notice').style.display = 'block';
     }
 });
