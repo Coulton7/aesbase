@@ -555,6 +555,10 @@ a.disabled {
   display: inline-block;
 }
 
+.equal-height-slider .tiny-slider-wrapper {
+  display: flex;
+}
+
 .page-title h1 {
   font-size: 3rem;
 }
