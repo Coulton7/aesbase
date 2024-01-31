@@ -67,7 +67,7 @@
                     {{ slide|add_class('carousel-item', 'active')|set_attribute('data-bs-slide-to', '{{ loop.index0 }}') }}
                 {% else %}
                     {{ slide|add_class('carousel-item')|set_attribute('data-bs-slide-to', '{{ loop.index0 }}') }}
-                {% end if %}
+                {% endif %}
             {% endfor %}
         </div>
     </div>
