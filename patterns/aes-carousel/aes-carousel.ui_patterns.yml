@@ -11,9 +11,6 @@ aes-carousel:
     default:
       label: "Default"
       description: "Standard sing slide carousel"
-    thumbnail:
-      label: "Thumbnail Navigation"
-      description: "Singl Image carousel with Thumbnails to control navigation"
   settings:
     with_controls:
       type: "boolean"
