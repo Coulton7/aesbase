@@ -63,7 +63,7 @@
     <div id="thumbNav" class="thumbnail-nav">
         {% for slide in slides %}
         <button type="button"
-                class="w-25 d-block"
+                class="w-25 d-inline-block"
                 data-bs-target="#{{ carousel_id }}"
                 data-bs-slide-to="{{ loop.index0 }}"
                 aria-label="{{ 'Slide @slide_number'|t({'@slide_number': loop.index}) }}"
