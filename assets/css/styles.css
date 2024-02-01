@@ -12798,6 +12798,14 @@ body.toolbar-tray-open {
   padding-top: calc(79px + 0.5em);
 }
 
+.print-media {
+  display: none;
+}
+
+.hide-print-media {
+  display: block;
+}
+
 #drupal-off-canvas-wrapper {
   z-index: 1035;
 }
