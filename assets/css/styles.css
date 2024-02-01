@@ -14790,6 +14790,10 @@ ul.about-us-cats a {
   font-size: 2em;
 }
 
+.thumbnail-nav {
+  text-align: center;
+}
+
 .social-items {
   position: relative;
 }
