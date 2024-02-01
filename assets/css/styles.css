@@ -13593,6 +13593,10 @@ blockquote::after {
   z-index: -1;
 }
 
+blockquote.transparent-50:before, blockquote.transparent-50:after {
+  opacity: 0.5;
+}
+
 .tomwetlands-background.lazy-back,
 .background-3179.lazy-back,
 .background-3180.lazy-back,
