@@ -10,7 +10,7 @@ aes-carousel:
   variants:
     default:
       label: "Default"
-      description: "Standard sing slide carousel"
+      description: "Standard single slide carousel"
   settings:
     with_controls:
       type: "boolean"
