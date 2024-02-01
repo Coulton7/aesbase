@@ -3,7 +3,6 @@ aes-carousel:
   description: Standard Bootstrap 5 Carousel Styles
   links:
     - 'https://getbootstrap.com/docs/5.3/components/carousel/'
-    - 'https://codepen.io/pankajthakur/pen/qmpKaw'
   
   category: "AES Carousel"
 
