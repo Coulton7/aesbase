@@ -60,7 +60,7 @@
     </div>
     
     {% if with_thumb_nav %}
-    <div id="thumbNav" class="carousel-indicators thumbnail-nav">
+    <div id="thumbNav" class="thumbnail-nav">
         {% for slide in slides %}
         <button type="button"
                 data-bs-target="#{{ carousel_id }}"
@@ -70,7 +70,7 @@
         class="active"
         aria-current="true"
         {% endif %}>
-        {{ slide|add_class('img-nav', 'd-block', 'w-100', 'img-fluid') }}
+        {{ slide|add_class('img-nav', 'img-fluid') }}
         </button>
         {% endfor %}
     </div>
