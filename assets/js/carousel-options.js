@@ -1,16 +1,3 @@
-var isOnDiv = false;
-document.querySelectorAll('.media-carousel-block').forEach((i) => {
-  i.addEventListener('mouseover', function () {
-    isOnDiv = true;
-  });
-});
-
-document.querySelectorAll('.media-carousel-block').forEach((i) => {
-  i.addEventListener('mouseout', function () {
-    isOnDiv = false;
-  });
-});
-
 function carouselNormalization() {
     window.heights = [],
     window.tallest;
