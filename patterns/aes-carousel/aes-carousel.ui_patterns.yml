@@ -23,7 +23,7 @@ aes-carousel:
       type: "boolean"
       label: "With indicators?"
       description: "You can also add the indicators to the carousel, alongside the controls, too."
-      preview: true
+      preview: false
       allow_expose: true
       allow_token: true
     with_touch:

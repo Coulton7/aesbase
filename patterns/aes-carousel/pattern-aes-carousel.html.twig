@@ -60,16 +60,19 @@
     </div>
     
     {% if with_thumb_nav %}
-    <div id="thumbcarousel" class="carousel slide" data-bs-interval="false">
-        <div class="carousel-inner">
-            {% for slide in slides %}
-                {% if loop.first %}
-                    {{ slide|add_class('carousel-item', 'active')|set_attribute('data-bs-slide-to', '{{ loop.index0 }}') }}
-                {% else %}
-                    {{ slide|add_class('carousel-item')|set_attribute('data-bs-slide-to', '{{ loop.index0 }}') }}
-                {% endif %}
-            {% endfor %}
-        </div>
+    <div class="carousel-indicators">
+        {% for slide in slides %}
+        <button type="button"
+                data-bs-target="#{{ carousel_id }}"
+                data-bs-slide-to="{{ loop.index0 }}"
+                aria-label="{{ 'Slide @slide_number'|t({'@slide_number': loop.index}) }}"
+        {% if loop.first %}
+        class="active"
+        aria-current="true"
+        {% endif %}>
+        {{ slide }}
+        </button>
+        {% endfor %}
     </div>
     {% endif %}
 
