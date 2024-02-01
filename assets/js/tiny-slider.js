@@ -32,6 +32,40 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         })
     }
+
+    if (document.querySelectorAll('.second-slider').length > 0){
+        var second_slider = tns ({
+            container: ".second-slider",
+            speed: 0,
+            loop: true,
+            nav: false,
+            controlsContainer: "#arrow-nav",
+            gutter: 20,
+            lazyload: true,
+            autoplay: false,
+            responsive: {
+                1 : {
+                items: 2 
+                },
+        
+                600 : {
+                items: 3
+                },
+        
+                768: {
+                    items: 3
+                },
+        
+                992: {
+                    itmes: 4
+                },
+        
+                1200: {
+                    items: 4
+                }
+            },
+        })
+    }
     
     if (document.querySelectorAll('.focus-slider').length > 0){
         var focus_slider = tns({
