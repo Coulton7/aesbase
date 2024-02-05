@@ -1237,7 +1237,7 @@ blockquote {
 }
 
 .darkgrey-background {
-  background: #888c8f;
+  background: $darkgrey;
   color: $white;
   padding: 1em 0.5em 1em 0.5em;
 }
@@ -1246,6 +1246,15 @@ blockquote {
   background: $secondary;
   color: $white;
   padding: 10px 15px;
+}
+
+.feature-background {
+  background: $darkgrey;
+  color: #FFFFFF;
+  background: -moz-radial-gradient(center, ellipse cover, $darkgrey 0%, $black 80%);
+  background: -webkit-radial-gradient(center, ellipse cover, $darkgrey 0%, $black 80%);
+  background: radial-gradient(ellipse at center, $darkgrey 0%, $black 80%);
+  padding: 30px 50px 30px 50px;
 }
 
 .banner-vid {
@@ -1386,7 +1395,7 @@ blockquote {
 }
 
 .dotted-border {
-  outline: 1px dashed #888c8f;
+  outline: 1px dashed $darkgrey;
   padding: 1em 0.5em 1em 0.5em;
 }
 
@@ -1575,7 +1584,7 @@ blockquote {
 .footer-overlay-btn {
   color: $white;
   cursor: pointer;
-  border-bottom: 1px dashed #888c8f;
+  border-bottom: 1px dashed $darkgrey;
 }
 
 .overlay-btn:hover,

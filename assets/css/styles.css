@@ -13956,7 +13956,7 @@ blockquote {
 }
 
 .darkgrey-background {
-  background: #888c8f;
+  background: #888C8F;
   color: #fff;
   padding: 1em 0.5em 1em 0.5em;
 }
@@ -13965,6 +13965,15 @@ blockquote {
   background: #b5b6b9;
   color: #fff;
   padding: 10px 15px;
+}
+
+.feature-background {
+  background: #888C8F;
+  color: #FFFFFF;
+  background: -moz-radial-gradient(center, ellipse cover, #888C8F 0%, #000 80%);
+  background: -webkit-radial-gradient(center, ellipse cover, #888C8F 0%, #000 80%);
+  background: radial-gradient(ellipse at center, #888C8F 0%, #000 80%);
+  padding: 30px 50px 30px 50px;
 }
 
 .banner-vid {
@@ -14105,7 +14114,7 @@ blockquote {
 }
 
 .dotted-border {
-  outline: 1px dashed #888c8f;
+  outline: 1px dashed #888C8F;
   padding: 1em 0.5em 1em 0.5em;
 }
 
@@ -14289,7 +14298,7 @@ blockquote {
 .footer-overlay-btn {
   color: #fff;
   cursor: pointer;
-  border-bottom: 1px dashed #888c8f;
+  border-bottom: 1px dashed #888C8F;
 }
 
 .overlay-btn:hover,
