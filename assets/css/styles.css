@@ -15007,6 +15007,17 @@ ul.about-us-cats a {
   position: absolute;
 }
 
+.chem-pharm-logo-container {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 37%;
+  top: 13%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -15353,6 +15364,16 @@ ul.about-us-cats a {
     top: 15%;
     width: 50%;
     left: 25%;
+  }
+  .chem-pharm-logo-container {
+    width: 35%;
+    top: 12%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .chem-pharm-logo-container {
+    width: 33%;
+    top: 10%;
   }
 }
 @media (max-width: 992px) {

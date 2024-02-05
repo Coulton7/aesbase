@@ -218,8 +218,10 @@
 
 	  {% if page.base %}
 	  	{% block base %}
-		  {{ page.base }}
-		{% endblock %}
+      <div class="row g-0"> 
+		    {{ page.base }}
+      </div>
+		  {% endblock %}
 	  {% endif %}
 
     </div>
