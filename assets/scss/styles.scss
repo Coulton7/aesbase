@@ -2304,6 +2304,18 @@ ul.about-us-cats a {
   margin: auto;
 }
 
+.water-background.lazy-back {
+  background-image: none;
+  background-color: #efefef;
+}
+
+.water-background {
+  background-image: url(/sites/all/themes/aesbs337/images/graphics/water-background.jpg);
+  background-repeat: no-repeat;
+  border: 5px solid #ffffff;
+  background-size: cover;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
