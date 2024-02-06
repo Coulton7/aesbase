@@ -1115,6 +1115,73 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   width: 50%;
 }
 
+.gas-seals-background {
+  background-image: url("https://static.aesseal.com/graphics/gascompressorseal_backcut.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.cart-seals-background.lazy-back {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.cart-seals-background {
+  background-image: url("https://static.aesseal.com/graphics/CAPI-13_backcut.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.seal-support-background.lazy-back {
+  background-image: none;
+  background-color: #e5e5e7;
+}
+
+.seal-support-background {
+  background-image: url("https://static.aesseal.com/graphics/GasSystem-backcut.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.labtecta-background.lazy-back {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.labtecta-background {
+  background-image: url("https://static.aesseal.com/graphics/Lab_Tecta_66IC_backcut.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.comp-seals-background.lazy-back {
+  background-image: none;
+  background-color: #e5e5e7;
+}
+
+.comp-seals-background {
+  background-image: url("https://static.aesseal.com/graphics/TO5-23_backcut.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.gland-packing-background.lazy-back {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.gland-packing-background {
+  background-image: url("https://static.aesseal.com/graphics/Packing-backcut.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 blockquote {
   color: $blue;
   padding: 0;
