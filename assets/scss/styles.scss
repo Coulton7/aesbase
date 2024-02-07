@@ -2391,6 +2391,14 @@ ul.about-us-cats a {
   text-shadow: 1px 1px 1px #000;
 }
 
+.base-sldier {
+  opacity: 0;
+}
+
+.tns-slider {
+  opacity: 1;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
