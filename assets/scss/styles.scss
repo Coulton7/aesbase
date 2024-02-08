@@ -2419,6 +2419,40 @@ ul.about-us-cats a {
   color: #006ba2;
 }
 
+.location-pop-up, .Rockford, .Fairfield, .Longview, .Cedar, .Lombard, .Corpus, .Odessa, .connect-text {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.ME, .NH, .VT, .NY, .MA, .CT, .PA, .RI, .NJ, .DE, .MD, .WV, .NC, .SC, .GA, .AL, .FL, .MS, .TN, .KY, .OH, .MI, .IN, .IL {
+  display: none;
+  height: 100%;
+}
+
+.WI {
+  display: none;
+  height: 100%;
+}
+
+ .MN, .IA, .MO, .AR, .LA, .TX, .OK, .KS, .NE, .SD, .ND, .MT, .WY, .CO, .NM, .AZ, .UT, .ID, .WA, .OR, .NV, .CA, .AK, .HI {
+  display: none;
+  height: 100%;
+}
+
+.Willow, .Chickasaw, .Birmingham, .Sherwood, .Pontiac, .Edmonds, .Lombard, .Plymouth, .Richardson, .Overland, .Littleton, .Layton, .Meadow, .National, .Kenai, .Kingsport, .Alamitos, .Phoenix, .Paso, .Griffin, .Bakersfield, .Wichita, .Albuquerque, .Plainville {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
+  fill: #002a5b !important;
+  stroke: #004a8c;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
