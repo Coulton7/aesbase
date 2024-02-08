@@ -14423,10 +14423,6 @@ ul.about-us-cats {
   height: 100%;
 }
 
-.show {
-  display: block;
-}
-
 .search-overlay .form-control {
   width: 85%;
   margin-right: 1em;
@@ -15162,6 +15158,10 @@ ul.about-us-cats a {
   display: none;
   height: 100%;
   width: 100%;
+}
+
+.show {
+  display: block;
 }
 
 #Map > *:hover, #Map > g > path:hover, #Lands > *:hover, #Lands > g > path:hover {
