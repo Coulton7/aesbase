@@ -14400,7 +14400,8 @@ ul.about-us-cats {
 
 .overlay-main,
 .search-overlay,
-.share-overlay {
+.share-overlay,
+.location-overlay {
   height: 1px;
   bottom: -1px;
   background-color: rgba(0, 0, 0, 0.5);
