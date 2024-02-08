@@ -15112,9 +15112,7 @@ ul.about-us-cats a {
   opacity: 1;
 }
 
-.social-contact a.social-link::after {
-  font-family: "Font Awesome 5 Brands";
-  content: " \f0e1";
+.social-contact {
   color: #0077b5;
   position: relative;
   font-size: 2em;
