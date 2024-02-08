@@ -2399,6 +2399,25 @@ ul.about-us-cats a {
   }
 }
 
+.social-contact a.social-link::after {
+  font-family: "Font Awesome 5 Brands";
+  content: " \f0e1";
+  color: #0077b5;
+  position: relative;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.social-flag {
+  height: 1em;
+  width: 1em;
+  position: relative;
+}
+
+.social-contact a.social-link:hover::after {
+  color: #006ba2;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
