@@ -575,7 +575,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("html").classList.add("noscroll");
       document.querySelector("body").classList.add("noscroll");
       document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
-      docume
       document.querySelector(".change").addEventListener("click", function () {
         document.querySelector("html").classList.remove("noscroll");  
         document.querySelector("body").classList.remove("noscroll");
