@@ -14542,7 +14542,7 @@ ul.about-us-cats a {
   color: #dd1e25;
 }
 
-.overlay-content {
+.overlay-content, .location-overlay div + div {
   position: relative;
   top: 26%;
   width: 100%;
