@@ -572,11 +572,14 @@ document.addEventListener("DOMContentLoaded", function () {
       x.style.height = "100%";
       x.style.bottom = "0";
       document.querySelector(".location-overlay").classList.add('change');
+      document.querySelector("html").classList.add("noscroll");
       document.querySelector("body").classList.add("noscroll");
       document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
       docume
       document.querySelector(".change").addEventListener("click", function () {
-          document.querySelector("body").classList.remove("noscroll");
+        document.querySelector("html").classList.remove("noscroll");  
+        document.querySelector("body").classList.remove("noscroll");
+        document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
           x.style.height = "0%";
           document.querySelector(".location-overlay").classList.remove("change");
 
