@@ -570,6 +570,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       x.style.height = "100%";
+      x.style.bottom = "0";
       document.querySelector(".location-overlay").classList.add('change');
       document.querySelector("body", "html").classList.add("noscroll");
       document.querySelector(".change").addEventListener("click", function () {
