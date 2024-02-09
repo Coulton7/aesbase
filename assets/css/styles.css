@@ -12794,7 +12794,7 @@ body.toolbar-tray-open {
   padding-top: calc(79px + 0.95em);
 }
 
-.toolbar-tray-open .change:after {
+.toolbar-tray-open .change:after, .toolbar-tray-open .loc-close:after {
   padding-top: calc(79px + 0.5em);
 }
 
