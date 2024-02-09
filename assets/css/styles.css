@@ -14501,7 +14501,9 @@ ul.about-us-cats {
 }
 
 .change:hover,
-.change:focus {
+.change:focus,
+.loc-close:focus,
+.loc-close:hover {
   color: transparent;
   border-bottom: none;
   pointer-events: none;
@@ -14683,7 +14685,7 @@ ul.about-us-cats a {
   -moz-transform: scale(1.2);
 }
 
-.change:hover:after {
+.change:hover:after, .loc-close:hover:after {
   color: #dd1e25;
 }
 
