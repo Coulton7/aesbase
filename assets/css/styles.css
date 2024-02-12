@@ -14393,7 +14393,7 @@ ul.about-us-cats {
   overflow: visible;
 }
 
-.overlay-content {
+.overlay-content, .location-overlay > div + div {
   background-color: none;
   position: static;
 }
