@@ -15328,6 +15328,15 @@ ul.about-us-cats a {
     width: 83.333%;
     left: 8.333%;
   }
+  .virtual-tour-banner {
+    background-image: url("https://static.aesseal.com/graphics/360-tour-background-520.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+  .virtual-tour-logo {
+    max-width: 50%;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
@@ -15512,6 +15521,25 @@ ul.about-us-cats a {
     width: 65%;
     left: 20%;
     top: 15%;
+  }
+  .virtual-tour:hover {
+    background-image: url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
+    background-size: 33%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .virtual-tour:hover img {
+    opacity: 0;
+  }
+  .virtual-tour-banner {
+    background-image: url("https://static.aesseal.com/graphics/360-tour-background-1920.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .virtual-tour-logo {
+    max-width: 33%;
   }
 }
 /* lg */
