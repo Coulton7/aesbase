@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   var allRegions = document.querySelectorAll("#Lands > *");
-  var locModal = new bootstrap.Modal(document.getElementById('locModal'))
   var x = document.querySelector('.location-overlay');
   var fairfield = document.querySelectorAll(".Fairfield");
   var rockford = document.querySelectorAll(".Rockford");
@@ -570,16 +569,20 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
       }
 
-      locModal.show();
-
+      x.style.height = "100%";
+      x.style.bottom = "0";
+      document.querySelector(".location-overlay").classList.add('loc-close');
       document.querySelector("html").classList.add("noscroll");
       document.querySelector("body").classList.add("noscroll");
       document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
       document.getElementById("int-map").classList.add("pe-none");
-      document.querySelector(".btn-close").addEventListener("click", function () {
+      document.querySelector(".loc-close").addEventListener("click", function () {
         document.querySelector("html").classList.remove("noscroll");  
         document.querySelector("body").classList.remove("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
+        document.getElementById("int-map").classList.remove("pe-none");
+          x.style.height = "0%";
+          document.querySelector(".location-overlay").classList.remove("loc-close");
 
           switch (true) {
             case link == "Land-Maine":
