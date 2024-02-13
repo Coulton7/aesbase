@@ -12771,6 +12771,10 @@ body,
   -webkit-overflow-scrolling: touch;
 }
 
+svg:not(:root) {
+  overflow: hidden;
+}
+
 #toolbar-administration {
   position: fixed;
   z-index: 1033;
