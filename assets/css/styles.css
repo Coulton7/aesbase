@@ -14401,6 +14401,7 @@ ul.about-us-cats {
 .overlay-content, .location-overlay > div + div {
   background-color: none;
   position: static;
+  z-index: 1031;
 }
 
 .overlay-main,
