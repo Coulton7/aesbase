@@ -13650,7 +13650,8 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
 .background-3192.lazy-back,
 .background-3201.lazy-back,
 .background-3237.lazy-back,
-.background-3238.lazy-back {
+.background-3238.lazy-back,
+.virtual-tour-banner.lazy-back {
   background-image: none;
   background-color: #efefef;
 }
