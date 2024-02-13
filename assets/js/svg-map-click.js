@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var allRegions = document.querySelectorAll("#Lands > *");
+  var locModal = new bootstrap.Modal(document.getElementById('locModal'))
   var x = document.querySelector('.location-overlay');
   var fairfield = document.querySelectorAll(".Fairfield");
   var rockford = document.querySelectorAll(".Rockford");
@@ -568,6 +569,8 @@ document.addEventListener("DOMContentLoaded", function () {
           });
           break;
       }
+
+      locModal.show();
 
       x.style.height = "100%";
       x.style.bottom = "0";
