@@ -576,7 +576,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("body").classList.add("noscroll");
       document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
       document.getElementById("int-map").classList.add("pe-none");
-      document.querySelector(".close").addEventListener("click", function () {
+      document.querySelector(".btn-close").addEventListener("click", function () {
         document.querySelector("html").classList.remove("noscroll");  
         document.querySelector("body").classList.remove("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
