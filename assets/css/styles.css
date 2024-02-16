@@ -14550,6 +14550,37 @@ ul.about-us-cats a {
   color: #dd1e25;
 }
 
+.location-pop-up, .Rockford, .Fairfield, .Longview, .Cedar, .Lombard, .Corpus, .Odessa, .connect-text {
+  display: none;
+}
+
+.ME, .NH, .VT, .NY, .MA, .CT, .PA, .RI, .NJ, .DE, .MD, .WV, .NC, .SC, .GA, .AL, .FL, .MS, .TN, .KY, .OH, .MI, .IN, .IL {
+  display: none;
+}
+
+.WI {
+  display: none;
+}
+
+.MN, .IA, .MO, .AR, .LA, .TX, .OK, .KS, .NE, .SD, .ND, .MT, .WY, .CO, .NM, .AZ, .UT, .ID, .WA, .OR, .NV, .CA, .AK, .HI {
+  display: none;
+}
+
+.Willow, .Chickasaw, .Birmingham, .Sherwood, .Pontiac, .Edmonds, .Lombard, .Plymouth, .Richardson, .Overland, .Littleton, .Layton, .Meadow, .National, .Kenai, .Kingsport, .Alamitos, .Phoenix, .Paso, .Griffin, .Bakersfield, .Wichita, .Albuquerque, .Plainville {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#Map > *:hover, #Map > g > path:hover, #Lands > *:hover, #Lands > g > path:hover {
+  fill: #002a5b !important;
+  stroke: #004a8c;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
 .overlay-content, .location-overlay > div + div {
   position: relative;
   top: 26%;
@@ -15160,37 +15191,6 @@ ul.about-us-cats a {
 
 .social-contact a.social-link:hover::after {
   color: #006ba2;
-}
-
-.location-pop-up, .Rockford, .Fairfield, .Longview, .Cedar, .Lombard, .Corpus, .Odessa, .connect-text {
-  display: none;
-}
-
-.ME, .NH, .VT, .NY, .MA, .CT, .PA, .RI, .NJ, .DE, .MD, .WV, .NC, .SC, .GA, .AL, .FL, .MS, .TN, .KY, .OH, .MI, .IN, .IL {
-  display: none;
-}
-
-.WI {
-  display: none;
-}
-
-.MN, .IA, .MO, .AR, .LA, .TX, .OK, .KS, .NE, .SD, .ND, .MT, .WY, .CO, .NM, .AZ, .UT, .ID, .WA, .OR, .NV, .CA, .AK, .HI {
-  display: none;
-}
-
-.Willow, .Chickasaw, .Birmingham, .Sherwood, .Pontiac, .Edmonds, .Lombard, .Plymouth, .Richardson, .Overland, .Littleton, .Layton, .Meadow, .National, .Kenai, .Kingsport, .Alamitos, .Phoenix, .Paso, .Griffin, .Bakersfield, .Wichita, .Albuquerque, .Plainville {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-#Map > *:hover, #Map > g > path:hover, #Lands > *:hover, #Lands > g > path:hover {
-  fill: #002a5b !important;
-  stroke: #004a8c;
-  stroke-width: 2;
-  cursor: pointer;
 }
 
 @keyframes fade {
