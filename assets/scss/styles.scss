@@ -2469,15 +2469,6 @@ ul.about-us-cats a {
   display: none;
 }
 
-.content-overlay {
-  background: rgba(0, 0, 0, .85) !important;
-  opacity: initial !important;
-  overflow-y: scroll;
-  transition: 0.5s;
-  position: relative;
-  z-index: 1029;
-}
-
 .show {
   display: block;
 }
