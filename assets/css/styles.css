@@ -15085,6 +15085,14 @@ ul.about-us-cats a {
   border-radius: 12px;
 }
 
+.legal-consent-container .hs-form-booleancheckbox-display input {
+  margin: 5px 0 0;
+}
+
+.legal-consent-container ul {
+  list-style: none;
+}
+
 .hs-overlay-form .hs-input:not([type=file]) {
   background-color: #000;
   color: #ffffff;
