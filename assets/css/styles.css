@@ -15080,6 +15080,11 @@ ul.about-us-cats a {
   -moz-transform-origin: 0;
 }
 
+.hs-custom-style .hs-input {
+  width: 100%;
+  border-radius: 12px;
+}
+
 .hs-overlay-form .hs-input:not([type=file]) {
   background-color: #000;
   color: #ffffff;
