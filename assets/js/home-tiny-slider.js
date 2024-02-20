@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         current = document.querySelector('.current'),
         total = document.querySelector('.total');
         activeSlide = info.displayIndex;
-        console.log(current)
         
         total.textContent = info.slideCount;
         current.textContent = info.displayIndex;
