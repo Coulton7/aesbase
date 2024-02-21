@@ -62,7 +62,8 @@ body.toolbar-tray-open {
   padding-top: calc(79px + 0.95em);
 }
 
-.toolbar-tray-open .change:after, .toolbar-tray-open .loc-close:after {
+.toolbar-tray-open .change:after,
+.toolbar-tray-open .loc-close:after {
   padding-top: calc(79px + 0.5em);
 }
 
@@ -913,10 +914,10 @@ blockquote::after {
   z-index: -1;
 }
 
-blockquote.transparent-50:before, blockquote.transparent-50:after {
+blockquote.transparent-50:before,
+blockquote.transparent-50:after {
   opacity: 0.5;
 }
-
 
 .tomwetlands-background.lazy-back,
 .background-3179.lazy-back,
@@ -1326,9 +1327,19 @@ blockquote {
 
 .feature-background {
   background: $darkgrey;
-  color: #FFFFFF;
-  background: -moz-radial-gradient(center, ellipse cover, $darkgrey 0%, $black 80%);
-  background: -webkit-radial-gradient(center, ellipse cover, $darkgrey 0%, $black 80%);
+  color: #ffffff;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    $darkgrey 0%,
+    $black 80%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    $darkgrey 0%,
+    $black 80%
+  );
   background: radial-gradient(ellipse at center, $darkgrey 0%, $black 80%);
   padding: 30px 50px 30px 50px;
 }
@@ -1684,7 +1695,8 @@ ul.about-us-cats {
   overflow: visible;
 }
 
-.overlay-content, .location-overlay > div + div {
+.overlay-content,
+.location-overlay > div + div {
   background-color: none;
   position: static;
   z-index: 1031;
@@ -1836,11 +1848,42 @@ ul.about-us-cats a {
   color: $danger;
 }
 
-.location-pop-up, .Rockford, .Fairfield, .Longview, .Cedar, .Lombard, .Corpus, .Odessa, .connect-text {
+.location-pop-up,
+.Rockford,
+.Fairfield,
+.Longview,
+.Cedar,
+.Lombard,
+.Corpus,
+.Odessa,
+.connect-text {
   display: none;
 }
 
-.ME, .NH, .VT, .NY, .MA, .CT, .PA, .RI, .NJ, .DE, .MD, .WV, .NC, .SC, .GA, .AL, .FL, .MS, .TN, .KY, .OH, .MI, .IN, .IL {
+.ME,
+.NH,
+.VT,
+.NY,
+.MA,
+.CT,
+.PA,
+.RI,
+.NJ,
+.DE,
+.MD,
+.WV,
+.NC,
+.SC,
+.GA,
+.AL,
+.FL,
+.MS,
+.TN,
+.KY,
+.OH,
+.MI,
+.IN,
+.IL {
   display: none;
 }
 
@@ -1848,11 +1891,57 @@ ul.about-us-cats a {
   display: none;
 }
 
- .MN, .IA, .MO, .AR, .LA, .TX, .OK, .KS, .NE, .SD, .ND, .MT, .WY, .CO, .NM, .AZ, .UT, .ID, .WA, .OR, .NV, .CA, .AK, .HI {
+.MN,
+.IA,
+.MO,
+.AR,
+.LA,
+.TX,
+.OK,
+.KS,
+.NE,
+.SD,
+.ND,
+.MT,
+.WY,
+.CO,
+.NM,
+.AZ,
+.UT,
+.ID,
+.WA,
+.OR,
+.NV,
+.CA,
+.AK,
+.HI {
   display: none;
 }
 
-.Willow, .Chickasaw, .Birmingham, .Sherwood, .Pontiac, .Edmonds, .Lombard, .Plymouth, .Richardson, .Overland, .Littleton, .Layton, .Meadow, .National, .Kenai, .Kingsport, .Alamitos, .Phoenix, .Paso, .Griffin, .Bakersfield, .Wichita, .Albuquerque, .Plainville {
+.Willow,
+.Chickasaw,
+.Birmingham,
+.Sherwood,
+.Pontiac,
+.Edmonds,
+.Lombard,
+.Plymouth,
+.Richardson,
+.Overland,
+.Littleton,
+.Layton,
+.Meadow,
+.National,
+.Kenai,
+.Kingsport,
+.Alamitos,
+.Phoenix,
+.Paso,
+.Griffin,
+.Bakersfield,
+.Wichita,
+.Albuquerque,
+.Plainville {
   display: none;
 }
 
@@ -1860,14 +1949,18 @@ ul.about-us-cats a {
   display: block;
 }
 
-#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
+#Map > *:hover,
+#Map > g > path:hover,
+#Lands > *:hover,
+#Lands > g > path:hover {
   fill: #002a5b !important;
   stroke: #004a8c;
   stroke-width: 2;
   cursor: pointer;
 }
 
-.overlay-content, .location-overlay > div + div {
+.overlay-content,
+.location-overlay > div + div {
   position: relative;
   top: 26%;
   width: 100%;
@@ -2008,7 +2101,8 @@ ul.about-us-cats a {
   -moz-transform: scale(1.2);
 }
 
-.change:hover:after, .loc-close:hover:after {
+.change:hover:after,
+.loc-close:hover:after {
   color: $danger;
 }
 
@@ -2411,7 +2505,7 @@ ul.about-us-cats a {
   background-color: #e5e5e7;
   border: 1px solid #e3e3e3;
   padding-top: 1rem;
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 }
 
 .views-exposed-form .form-item {
@@ -2491,6 +2585,246 @@ ul.about-us-cats a {
 
 .social-contact a.social-link:hover::after {
   color: #006ba2;
+}
+
+/* primary to white */
+.icebergPrimary1 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $primary 0%,
+    $primary 50%,
+    white 50%,
+    white 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* primary to danger */
+.icebergPrimary2 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $primary 0%,
+    $primary 50%,
+    $danger 50%,
+    $danger 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* primary to secondary */
+.icebergPrimary3 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $primary 0%,
+    $primary 50%,
+    $secondary 50%,
+    $secondary 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* primary to black */
+.icebergPrimary4 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $primary 0%,
+    $primary 50%,
+    rgb(7, 7, 7) 50%,
+    rgb(7, 7, 7) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* secondary to primary */
+.icebergSecondary1 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $secondary 0%,
+    $secondary 50%,
+    $primary 50%,
+    $primary 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* secondary to white */
+.icebergSecondary2 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $secondary 0%,
+    $secondary 50%,
+    white 50%,
+    white 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* secondary to danger  */
+.icebergSecondary3 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $secondary 0%,
+    $secondary 50%,
+    $danger 50%,
+    $danger 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icebergSecondary4 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $secondary 0%,
+    $secondary 50%,
+    black 50%,
+    black 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* danger to primary */
+.icebergDanger1 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $danger 0%,
+    $danger 50%,
+    $primary 50%,
+    $primary 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* danger to white  */
+.icebergDanger2 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $danger 0%,
+    $danger 50%,
+    white 50%,
+    white 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* danger to secondary */
+.icebergDanger3 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $danger 0%,
+    $danger 50%,
+    $secondary 50%,
+    $secondary 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* danger to black */
+.icebergDanger4 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $danger 0%,
+    $danger 50%,
+    black 50%,
+    black 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* dark to primary */
+.icebergDark1 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    $primary 50%,
+    $primary 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icebergDark2 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    $danger 50%,
+    $danger 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* dark to white */
+.icebergDark3 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* dark to secondary */
+.icebergDark4 {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    $secondary 50%,
+    $secondary 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fade {
