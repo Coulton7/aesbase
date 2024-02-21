@@ -2590,14 +2590,7 @@ ul.about-us-cats a {
 /* primary to white */
 .icebergPrimary1 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $primary 0%,
-    $primary 50%,
-    white 50%,
-    white 100%
-  );
-
+  background: linear-gradient(to bottom, $primary 0%, $primary 50%, white 50%, white 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2605,14 +2598,7 @@ ul.about-us-cats a {
 /* primary to danger */
 .icebergPrimary2 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $primary 0%,
-    $primary 50%,
-    $danger 50%,
-    $danger 100%
-  );
-
+  background: linear-gradient(to bottom, $primary 0%, $primary 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2620,14 +2606,7 @@ ul.about-us-cats a {
 /* primary to secondary */
 .icebergPrimary3 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $primary 0%,
-    $primary 50%,
-    $secondary 50%,
-    $secondary 100%
-  );
-
+  background: linear-gradient(to bottom, $primary 0%, $primary 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2635,14 +2614,7 @@ ul.about-us-cats a {
 /* primary to black */
 .icebergPrimary4 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $primary 0%,
-    $primary 50%,
-    rgb(7, 7, 7) 50%,
-    rgb(7, 7, 7) 100%
-  );
-
+  background: linear-gradient(to bottom, $primary 0%, $primary 50%, rgb(7, 7, 7) 50%, rgb(7, 7, 7) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2650,14 +2622,7 @@ ul.about-us-cats a {
 /* secondary to primary */
 .icebergSecondary1 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $secondary 0%,
-    $secondary 50%,
-    $primary 50%,
-    $primary 100%
-  );
-
+  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2666,14 +2631,7 @@ ul.about-us-cats a {
 /* secondary to white */
 .icebergSecondary2 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $secondary 0%,
-    $secondary 50%,
-    white 50%,
-    white 100%
-  );
-
+  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, white 50%, white 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2681,14 +2639,7 @@ ul.about-us-cats a {
 /* secondary to danger  */
 .icebergSecondary3 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $secondary 0%,
-    $secondary 50%,
-    $danger 50%,
-    $danger 100%
-  );
-
+  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2696,14 +2647,7 @@ ul.about-us-cats a {
 
 .icebergSecondary4 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $secondary 0%,
-    $secondary 50%,
-    black 50%,
-    black 100%
-  );
-
+  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, black 50%, black 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2711,14 +2655,7 @@ ul.about-us-cats a {
 /* danger to primary */
 .icebergDanger1 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $danger 0%,
-    $danger 50%,
-    $primary 50%,
-    $primary 100%
-  );
-
+  background: linear-gradient(to bottom, $danger 0%, $danger 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2726,14 +2663,7 @@ ul.about-us-cats a {
 /* danger to white  */
 .icebergDanger2 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $danger 0%,
-    $danger 50%,
-    white 50%,
-    white 100%
-  );
-
+  background: linear-gradient(to bottom, $danger 0%, $danger 50%, white 50%, white 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2741,14 +2671,7 @@ ul.about-us-cats a {
 /* danger to secondary */
 .icebergDanger3 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $danger 0%,
-    $danger 50%,
-    $secondary 50%,
-    $secondary 100%
-  );
-
+  background: linear-gradient(to bottom, $danger 0%, $danger 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2756,14 +2679,7 @@ ul.about-us-cats a {
 /* danger to black */
 .icebergDanger4 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    $danger 0%,
-    $danger 50%,
-    black 50%,
-    black 100%
-  );
-
+  background: linear-gradient(to bottom, $danger 0%, $danger 50%, black 50%, black 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2771,14 +2687,7 @@ ul.about-us-cats a {
 /* dark to primary */
 .icebergDark1 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    $primary 50%,
-    $primary 100%
-  );
-
+  background: linear-gradient(to bottom, black 0%, black 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2786,14 +2695,7 @@ ul.about-us-cats a {
 
 .icebergDark2 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    $danger 50%,
-    $danger 100%
-  );
-
+  background: linear-gradient(to bottom, black 0%, black 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2801,13 +2703,7 @@ ul.about-us-cats a {
 /* dark to white */
 .icebergDark3 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    white 50%,
-    white 100%
-  );
+  background: linear-gradient(to bottom, black 0%, black 50%, white 50%, white 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2815,13 +2711,7 @@ ul.about-us-cats a {
 /* dark to secondary */
 .icebergDark4 {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    $secondary 50%,
-    $secondary 100%
-  );
+  background: linear-gradient(to bottom, black 0%, black 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
