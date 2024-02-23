@@ -15433,6 +15433,10 @@ ul.about-us-cats a {
   align-items: center;
 }
 
+.card-staff-img {
+  bottom: 5em;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -15493,6 +15497,11 @@ ul.about-us-cats a {
   85% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .card-staff-img {
+    bottom: 3em; /* Adjust as needed for smaller screens */
   }
 }
 @media screen and (max-width: 767px) {
@@ -15702,6 +15711,9 @@ ul.about-us-cats a {
     top: 5%;
     width: 83.333%;
     left: 8.333%;
+  }
+  .card-staff-img {
+    bottom: 3em;
   }
 }
 /* md */
