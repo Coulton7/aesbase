@@ -15833,8 +15833,11 @@ ul.about-us-cats a {
 }
 @media (max-width: 992px) {
   .fixed-top {
-    background: transparent;
+    background: #ffffff !important;
     border: none;
+  }
+  .navbar-toggler {
+    margin: 0.5rem 0;
   }
   /*To stop a while backround appearing behind the action-menu*/
   .wavelogo img {
