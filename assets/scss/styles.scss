@@ -1344,6 +1344,24 @@ blockquote {
   padding: 30px 50px 30px 50px;
 }
 
+.black-box {
+  position: absolute;
+  top: 220px; /* Adjust the top position as needed */
+  left: 250px; /* Adjust the left position as needed */
+  max-width: 25%;
+  max-height: 40%;
+  background-color: rgba(0, 0, 0, 0.55); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 3px;
+  border-radius: 7px; 
+}
+
+.black-box h3, .black-box button {
+  margin: 0; /* Remove default margins */
+  border-radius: 30px;
+}
+
 .banner-vid {
   position: absolute;
 }
