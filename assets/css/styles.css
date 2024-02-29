@@ -13440,7 +13440,7 @@ a.icon-link:hover {
   left: 1em;
   right: auto;
   position: absolute;
-  top: 35%;
+  top: 50%;
   z-index: 10;
 }
 
@@ -13448,7 +13448,7 @@ a.icon-link:hover {
   right: 1em;
   left: auto;
   position: absolute;
-  top: 35%;
+  top: 50%;
   z-index: 10;
 }
 
