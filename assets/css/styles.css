@@ -13276,6 +13276,10 @@ a.disabled {
   position: relative;
 }
 
+.tns-slider {
+  display: flex;
+}
+
 .carousel-text-shadow {
   text-shadow: 1px 1px 1px #000;
 }
