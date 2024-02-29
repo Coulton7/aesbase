@@ -2777,6 +2777,10 @@ ul.about-us-cats a {
   background-color: rgba(0,0,0,0.8);
 }
 
+.tns-item .card-body {
+  border-radius: 0;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
