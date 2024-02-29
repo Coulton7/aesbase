@@ -441,7 +441,7 @@ a.disabled {
 }
 
 .path-frontpage .navbar-nav .nav-link {
-  color: $white;
+  color: $primary;
 }
 
 .path-frontpage .navbar-nav .nav-link:hover {
@@ -597,22 +597,17 @@ a.disabled {
 }
 
 .video-overlay {
-  background: rgb(0, 42, 91);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 42, 91, 0.25) 33%,
-    rgba(0, 42, 91, 0.5) 50%,
-    rgba(0, 0, 0, 0.75) 66%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
+  background: rgb(0,42,91);
+  background: url(https://coulton7.github.io/wave-test/Images/lowerwave-white-glass-v2.svg);
   position: absolute;
-  top: 0;
+  background-size: cover;
+  top: 60%;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
+  height: 45%;
   width: 100%;
-  z-index: 4;
+  z-index: 2;
 }
 
 .media-carousel-block {
@@ -2739,6 +2734,16 @@ ul.about-us-cats a {
   bottom: 5em;
 }
 
+.slider-info {
+  text-align: right;
+}
+
+.pillar-btns {
+  position: relative;
+  bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -3223,6 +3228,15 @@ ul.about-us-cats a {
 
   .uppercurve {
     display: none;
+  }
+
+  .carousel-caption {
+    top: 10vh;
+  }
+
+  .icons-col-placement {
+    position: relative;
+    bottom: 8em;
   }
 }
 
