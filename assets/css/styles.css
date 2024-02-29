@@ -15290,6 +15290,35 @@ ul.about-us-cats a {
   opacity: 1;
 }
 
+.btn-tab {
+  background-color: #b5b6b9;
+  cursor: pointer;
+  gap: 0.375rem;
+  --bs-btn-padding-y: 0.3rem;
+  border: 3px solid #b5b6b9;
+}
+
+.btn-tab:hover {
+  border: 3px solid #002A5B;
+  border-bottom: 3px solid #002A5B;
+  background-color: #002A5B;
+}
+
+.active .btn-tab {
+  color: #ffffff;
+  border: 3px solid #002A5B;
+  background-color: #002a5b;
+}
+
+.active .btn-tab i {
+  color: #FFFFFF;
+}
+
+.btn-tab:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .social-contact {
   position: relative;
 }
