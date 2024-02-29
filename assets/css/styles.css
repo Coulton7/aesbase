@@ -15807,9 +15807,8 @@ ul.about-us-cats a {
     min-height: 55em;
   }
   .slider-caption {
-    top: 13vh;
+    top: 4vh;
     position: relative;
-    transform: translateY(24%);
     z-index: 4;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
