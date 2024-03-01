@@ -2796,6 +2796,22 @@ ul.about-us-cats a {
   align-items: center;
 }
 
+.white-iceberg-primary{
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+       white 0%,
+      white 50%,
+      rgba(0, 42, 91) 50%,
+      rgba(0, 42, 91) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .card-staff-img {
   bottom: 5em;
 }
