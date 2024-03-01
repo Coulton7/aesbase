@@ -14078,6 +14078,37 @@ blockquote {
   border-radius: 30px;
 }
 
+.black-boxes {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.55); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.black-boxes-right {
+  position: absolute;
+  top: 50%;
+  right: 10%; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.55); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .black-boxes {
+    max-width: 100%;
+  }
+}
 .banner-vid {
   position: absolute;
 }
