@@ -14287,6 +14287,10 @@ blockquote {
   transform: translate3d(0, 0, 0);
 }
 
+.staff-img img {
+  border-radius: 50%;
+}
+
 .country-icon {
   max-height: 2em;
   max-width: 2em;
@@ -14296,6 +14300,7 @@ blockquote {
   margin-top: -6.5em;
   position: relative;
   z-index: 2;
+  border-radius: 0;
 }
 
 .social-flag {
