@@ -14020,6 +14020,7 @@ blockquote {
   color: #dd1e25;
   background-color: transparent;
   border-top: 4px solid transparent;
+  text-decoration: none;
 }
 
 .navbar-nav li a:hover, .path-frontpage .navbar-nav li a.normText:hover {
@@ -14027,6 +14028,7 @@ blockquote {
   margin-bottom: 0;
   text-decoration: none;
   background-color: #e9ecef;
+  border-top: 4px solid #dd1e25;
 }
 
 .navbar-nav li a.active {
