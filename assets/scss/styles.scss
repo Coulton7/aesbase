@@ -1582,6 +1582,12 @@ blockquote {
   max-width: 2em;
 }
 
+.flag-indicator {
+  margin-top: -6.5em;
+  position: relative;
+  z-index: 2;
+}
+
 .social-flag {
   height: 1em;
   width: 1em;
