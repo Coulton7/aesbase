@@ -1290,19 +1290,19 @@ blockquote {
   text-decoration: none;
 }
 
-.path-frontpage .navbar-nav li a:hover {
-  color: $danger;
-  background-color: transparent;
-  border-top: 4px solid transparent;
-  text-decoration: none;
-}
-
 .navbar-nav li a:hover, .path-frontpage .navbar-nav li a.normText:hover {
   color: $danger;
   margin-bottom: 0;
   text-decoration: none;
   background-color: $gray-200;
   border-top: 4px solid $danger;
+}
+
+.path-frontpage .navbar-nav li a:hover {
+  color: $danger;
+  background-color: transparent;
+  border-top: 4px solid transparent;
+  text-decoration: none;
 }
 
 .navbar-nav li a.active {
