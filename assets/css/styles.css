@@ -14025,7 +14025,6 @@ blockquote {
 .navbar-nav li a:hover, .path-frontpage .navbar-nav li a.normText:hover {
   color: #dd1e25;
   margin-bottom: 0;
-  border-bottom: 1px dashed #dd1e25;
   text-decoration: none;
   background-color: #e9ecef;
 }
