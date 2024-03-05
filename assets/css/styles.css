@@ -15892,7 +15892,7 @@ ul.about-us-cats a {
     background-size: auto;
     background-color: rgb(8, 14, 34);
     background-blend-mode: unset;
-    background-position: 0% 75%;
+    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
@@ -15900,6 +15900,7 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
+    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-3-1440.jpg);
@@ -15907,6 +15908,7 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
+    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-customer-service.jpg);
