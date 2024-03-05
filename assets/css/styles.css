@@ -15569,6 +15569,14 @@ ul.about-us-cats a {
   height: 200px;
 }
 
+.slider-nav .prev {
+  right: -40px;
+}
+
+.slider-nav .next {
+  left: -40px;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
