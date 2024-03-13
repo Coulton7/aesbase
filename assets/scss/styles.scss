@@ -695,7 +695,7 @@ a.icon-link:hover {
   margin: 0;
 }
 
-.controls li, .tns-controls button[aria-controls]{
+.controls li, .tns-outer .tns-controls button[aria-controls]{
   color: rgba(0, 0, 0, 0.3);
   border: 1px solid #e5e5e7;
   border-radius: 50%;
