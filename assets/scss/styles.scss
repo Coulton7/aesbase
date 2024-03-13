@@ -690,12 +690,12 @@ a.icon-link:hover {
   cursor: pointer;
 }
 
-.controls {
+.controls, .tns-controls {
   list-style: none;
   margin: 0;
 }
 
-.controls li {
+.controls li, .tns-controls button{
   color: rgba(0, 0, 0, 0.3);
   border: 1px solid #e5e5e7;
   border-radius: 50%;
@@ -706,13 +706,13 @@ a.icon-link:hover {
   height: 11.5%;
 }
 
-.controls li:hover {
+.controls li:hover, .tns-controls button:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   cursor: pointer;
 }
 
-.next {
+.next, .tns-controls button[data-controls="next"] {
   left: 1em;
   right: auto;
   position: absolute;
@@ -720,7 +720,7 @@ a.icon-link:hover {
   z-index: 10;
 }
 
-.prev {
+.prev, .tns-controls button[data-controls="prev"] {
   right: 1em;
   left: auto;
   position: absolute;
@@ -729,7 +729,8 @@ a.icon-link:hover {
 }
 
 .prev i,
-.next i {
+.next i,
+.tns-controls button i {
   font-size: 2.5em;
 }
 
