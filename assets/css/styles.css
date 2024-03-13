@@ -12769,6 +12769,7 @@ body,
   flex-direction: column;
   overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 svg:not(:root) {
