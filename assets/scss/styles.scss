@@ -941,6 +941,8 @@ blockquote.transparent-50:after {
 .background-3191.lazy-back,
 .background-3192.lazy-back,
 .background-3201.lazy-back,
+.us-background-62.lazy-back,
+.us-background-63.lazy-back,
 .background-3237.lazy-back,
 .background-3238.lazy-back,
 .virtual-tour-banner.lazy-back {
@@ -1036,7 +1038,7 @@ blockquote.transparent-50:after {
   color: #efefef;
 }
 
-.background-3189 {
+.background-3189, .us-background-63 {
   background-image: url(https://static.aesseal.com/photo/staff/quotes/SUE_WRIGHT.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1076,7 +1078,7 @@ blockquote.transparent-50:after {
   color: #efefef;
 }
 
-.background-3201 {
+.background-3201, .us-background-62 {
   background-image: url(https://static.aesseal.com/photo/staff/quotes/Ava-Jones.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1127,6 +1129,8 @@ blockquote.transparent-50:after {
 .background-3191 .quote-placement,
 .background-3201 .quote-placement,
 .background-3237 .quote-placement,
+.us-background-62 .quote-placement,
+.us-background-63 .quote-placement,
 .background-3238 .quote-placement {
   width: 50%;
 }
