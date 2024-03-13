@@ -712,7 +712,7 @@ a.icon-link:hover {
   cursor: pointer;
 }
 
-.next, .tns-controls button[data-controls="next"] {
+.next, .tns-controls button[data-controls="prev"] {
   left: 1em;
   right: auto;
   position: absolute;
@@ -720,7 +720,7 @@ a.icon-link:hover {
   z-index: 10;
 }
 
-.prev, .tns-controls button[data-controls="prev"] {
+.prev, .tns-controls button[data-controls="next"] {
   right: 1em;
   left: auto;
   position: absolute;
