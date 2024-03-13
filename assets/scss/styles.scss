@@ -2692,7 +2692,6 @@ ul.about-us-cats a {
 
 /* primary to white */
 .primary-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, $primary 0%, $primary 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -2700,7 +2699,6 @@ ul.about-us-cats a {
 }
 /* primary to danger */
 .primary-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, $primary 0%, $primary 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
@@ -2708,7 +2706,6 @@ ul.about-us-cats a {
 }
 /* primary to secondary */
 .primary-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, $primary 0%, $primary 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
@@ -2716,7 +2713,6 @@ ul.about-us-cats a {
 }
 /* primary to black */
 .primary-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, $primary 0%, $primary 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -2724,7 +2720,6 @@ ul.about-us-cats a {
 }
 /* secondary to primary */
 .secondary-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
@@ -2733,7 +2728,6 @@ ul.about-us-cats a {
 
 /* secondary to white */
 .secondary-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -2741,7 +2735,6 @@ ul.about-us-cats a {
 }
 /* secondary to danger  */
 .secondary-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
@@ -2749,7 +2742,6 @@ ul.about-us-cats a {
 }
 
 .secondary-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -2757,7 +2749,6 @@ ul.about-us-cats a {
 }
 /* danger to primary */
 .danger-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, $danger 0%, $danger 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
@@ -2765,7 +2756,6 @@ ul.about-us-cats a {
 }
 /* danger to white  */
 .danger-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, $danger 0%, $danger 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -2773,7 +2763,6 @@ ul.about-us-cats a {
 }
 /* danger to secondary */
 .danger-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, $danger 0%, $danger 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
@@ -2781,7 +2770,6 @@ ul.about-us-cats a {
 }
 /* danger to black */
 .danger-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, $danger 0%, $danger 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -2789,7 +2777,6 @@ ul.about-us-cats a {
 }
 /* dark to primary */
 .dark-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
@@ -2797,7 +2784,6 @@ ul.about-us-cats a {
 }
 
 .dark-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
@@ -2805,7 +2791,6 @@ ul.about-us-cats a {
 }
 /* dark to white */
 .dark-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -2813,7 +2798,6 @@ ul.about-us-cats a {
 }
 /* dark to secondary */
 .dark-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
@@ -2821,7 +2805,6 @@ ul.about-us-cats a {
 }
 
 .white-iceberg-primary{
-  height: 100vh;
   background: linear-gradient(
       to bottom,
       #fbfbfb 0%,

@@ -15401,7 +15401,6 @@ ul.about-us-cats a {
 
 /* primary to white */
 .primary-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -15410,7 +15409,6 @@ ul.about-us-cats a {
 
 /* primary to danger */
 .primary-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, #dd1e25 50%, #dd1e25 100%);
   display: flex;
   justify-content: center;
@@ -15419,7 +15417,6 @@ ul.about-us-cats a {
 
 /* primary to secondary */
 .primary-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, #b5b6b9 50%, #b5b6b9 100%);
   display: flex;
   justify-content: center;
@@ -15428,7 +15425,6 @@ ul.about-us-cats a {
 
 /* primary to black */
 .primary-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -15437,7 +15433,6 @@ ul.about-us-cats a {
 
 /* secondary to primary */
 .secondary-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, #002a5a 50%, #002a5a 100%);
   display: flex;
   justify-content: center;
@@ -15446,7 +15441,6 @@ ul.about-us-cats a {
 
 /* secondary to white */
 .secondary-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -15455,7 +15449,6 @@ ul.about-us-cats a {
 
 /* secondary to danger  */
 .secondary-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, #dd1e25 50%, #dd1e25 100%);
   display: flex;
   justify-content: center;
@@ -15463,7 +15456,6 @@ ul.about-us-cats a {
 }
 
 .secondary-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -15472,7 +15464,6 @@ ul.about-us-cats a {
 
 /* danger to primary */
 .danger-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, #002a5a 50%, #002a5a 100%);
   display: flex;
   justify-content: center;
@@ -15481,7 +15472,6 @@ ul.about-us-cats a {
 
 /* danger to white  */
 .danger-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -15490,7 +15480,6 @@ ul.about-us-cats a {
 
 /* danger to secondary */
 .danger-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, #b5b6b9 50%, #b5b6b9 100%);
   display: flex;
   justify-content: center;
@@ -15499,7 +15488,6 @@ ul.about-us-cats a {
 
 /* danger to black */
 .danger-iceberg-dark {
-  height: 50vh;
   background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, #332d2d 50%, #332d2d 100%);
   display: flex;
   justify-content: center;
@@ -15508,7 +15496,6 @@ ul.about-us-cats a {
 
 /* dark to primary */
 .dark-iceberg-primary {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #002a5a 50%, #002a5a 100%);
   display: flex;
   justify-content: center;
@@ -15516,7 +15503,6 @@ ul.about-us-cats a {
 }
 
 .dark-iceberg-danger {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #dd1e25 50%, #dd1e25 100%);
   display: flex;
   justify-content: center;
@@ -15525,7 +15511,6 @@ ul.about-us-cats a {
 
 /* dark to white */
 .dark-iceberg-white {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
@@ -15534,7 +15519,6 @@ ul.about-us-cats a {
 
 /* dark to secondary */
 .dark-iceberg-secondary {
-  height: 50vh;
   background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #b5b6b9 50%, #b5b6b9 100%);
   display: flex;
   justify-content: center;
@@ -15542,7 +15526,6 @@ ul.about-us-cats a {
 }
 
 .white-iceberg-primary {
-  height: 100vh;
   background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, #002a5a 50%, #002a5a 100%);
   display: flex;
   justify-content: center;
