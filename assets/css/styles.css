@@ -16039,6 +16039,11 @@ ul.about-us-cats a {
     padding-bottom: 32.99%;
   }
 }
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 /* end custom.scss */
 
 /*# sourceMappingURL=styles.css.map */
