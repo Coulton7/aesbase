@@ -1,15 +1,8 @@
-const links = document.querySelectorAll('a[href*="#"]');
-
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
+document.querySelectorAll('a[href^="#"').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    const offsetTop = document.querySelector(links).offsetTop;
-
-    scroll({
-        top:offsetTop,
-        behavior: "smooth"
-    })
-};
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
