@@ -26,6 +26,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import "bootstrap";
 /* custom.scss */
 
+html{
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 .dialog-off-canvas-main-canvas {
@@ -33,7 +37,6 @@ body,
   flex-direction: column;
   overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
 }
 
 svg:not(:root) {
