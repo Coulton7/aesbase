@@ -8,7 +8,7 @@ for (let item of anchorLinks) {
       behavior: 'smooth',
       block: 'start'
     })
-    history.pushState(null, null, hashval)
+    history.pushState(null, null, hashVal)
     e.preventDefault();
   })
 }
