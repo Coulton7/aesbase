@@ -13574,7 +13574,7 @@ a.no-dash:hover {
   border-bottom: none;
 }
 
-a.text-white {
+a.text-white, .text-white a {
   color: #e9ecef;
 }
 
