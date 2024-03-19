@@ -2722,7 +2722,7 @@ ul.about-us-cats a {
 }
 /* primary to black */
 .primary-iceberg-dark {
-  background: linear-gradient(to bottom, $primary 0%, $primary 50%, #332d2d 50%, #332d2d 100%);
+  background: linear-gradient(to bottom, $primary 0%, $primary 50%, #343a40 50%, #343a40 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2751,7 +2751,7 @@ ul.about-us-cats a {
 }
 
 .secondary-iceberg-dark {
-  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, #332d2d 50%, #332d2d 100%);
+  background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, #343a40 50%, #343a40 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2779,35 +2779,35 @@ ul.about-us-cats a {
 }
 /* danger to black */
 .danger-iceberg-dark {
-  background: linear-gradient(to bottom, $danger 0%, $danger 50%, #332d2d 50%, #332d2d 100%);
+  background: linear-gradient(to bottom, $danger 0%, $danger 50%, #343a40 50%, #343a40 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* dark to primary */
 .dark-iceberg-primary {
-  background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $primary 50%, $primary 100%);
+  background: linear-gradient(to bottom, #343a40 0%, #343a40 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .dark-iceberg-danger {
-  background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $danger 50%, $danger 100%);
+  background: linear-gradient(to bottom, #343a40 0%, #343a40 50%, $danger 50%, $danger 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* dark to white */
 .dark-iceberg-white {
-  background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, #fbfbfb 50%, #fbfbfb 100%);
+  background: linear-gradient(to bottom, #343a40 0%, #343a40 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* dark to secondary */
 .dark-iceberg-secondary {
-  background: linear-gradient(to bottom, #332d2d 0%, #332d2d 50%, $secondary 50%, $secondary 100%);
+  background: linear-gradient(to bottom, #343a40 0%, #343a40 50%, $secondary 50%, $secondary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
