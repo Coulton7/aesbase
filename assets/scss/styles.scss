@@ -1203,6 +1203,13 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.frequently-asked {
+  background-image: url(https://static.aesseal.com/graphics/shutterstock_752113054.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 blockquote {
   color: $blue;
   padding: 0;
