@@ -876,6 +876,10 @@ a.lightblue-text {
   background-color: #fbfbfb;
 }
 
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
 .text-bg-primary {
   background-color: $primary;
   color: $white;

@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 form : 'search-block',
                 input: 'form-control',
                 submit: 'btn btn-primary',
-                submitIcon: 'text-white'
+                submitIcon: 'filter-white'
             }
         }),
 
