@@ -187,6 +187,92 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('tech-icon').classList.remove('active');
     });
 
+    var localslider = tns({
+        container: ".local-slider",
+        loop: true,
+        nav: false,
+        controlsContainer: "#local-controls",
+        gutter: 20,
+        lazyload: true,
+        responsive: {
+            1 : {
+            items: 1
+            },
+    
+            600 : {
+            items: 1
+            },
+    
+            768: {
+                items: 2
+            },
+    
+            992: {
+                itmes: 3
+            },
+    
+            1200: {
+                items: 3
+            }
+        },
+    })
+    
+    var info = localslider.getInfo(),
+        current = document.querySelector('.local-current'),
+        total = document.querySelector('.local-total');
+        activeSlide = info.displayIndex;
+        
+        total.textContent = info.slideCount;
+        current.textContent = info.displayIndex;
+  
+    localslider.events.on('transitionEnd', function(info) {
+        activeSlide = info.displayIndex;
+        current.textContent = info.displayIndex;
+    });
+
+    var globalslider = tns({
+        container: ".global-slider",
+        loop: true,
+        nav: false,
+        controlsContainer: "#gloabl-controls",
+        gutter: 20,
+        lazyload: true,
+        responsive: {
+            1 : {
+            items: 1
+            },
+    
+            600 : {
+            items: 1
+            },
+    
+            768: {
+                items: 2
+            },
+    
+            992: {
+                itmes: 3
+            },
+    
+            1200: {
+                items: 3
+            }
+        },
+    })
+    
+    var info = globalslider.getInfo(),
+        current = document.querySelector('.global-current'),
+        total = document.querySelector('.global-total');
+        activeSlide = info.displayIndex;
+        
+        total.textContent = info.slideCount;
+        current.textContent = info.displayIndex;
+  
+    globalslider.events.on('transitionEnd', function(info) {
+        activeSlide = info.displayIndex;
+        current.textContent = info.displayIndex;
+    });
+
     if (document.querySelectorAll('.prod-slider').length > 0){
         var prod_slider = tns ({
             container: ".prod-slider",
