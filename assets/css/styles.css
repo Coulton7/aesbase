@@ -13362,6 +13362,7 @@ a.disabled {
 
 .slider-links {
   padding-top: 2.5em;
+  border: none;
 }
 
 .slider-links li {
