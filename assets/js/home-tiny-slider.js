@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
             container: ".global-slider",
             loop: true,
             nav: false,
-            controlsContainer: "#gloabl-controls",
+            controlsContainer: "#global-controls",
             gutter: 20,
             lazyload: true,
             responsive: {
