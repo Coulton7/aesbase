@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll(".card");
+    const cards = document.querySelectorAll(".infi-card");
 
     for (let n = 0; n < cards.length; n++){
         cards[n].classList.add("hide");

@@ -1,6 +1,13 @@
 aes-card:
   label: AES Card
   description: Standard card styles for AES Sites
+  variants:
+    default:
+      label: Normal
+      description: Just used to show cards and no other bhaviours with them
+    infi-card:
+      label: infi-card
+      description: Used to show an infinite scroll version of cards
   fields:
     image:
       type: text
