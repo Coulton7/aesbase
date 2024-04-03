@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var lastDivOffset = lastDiv.offsetTop + lastDiv.clientHeight;
         var pageOffset = window.scrollY + window.innerHeight;
 
-        if(pageOffset > lastDivOffset + 80) {
+        if(pageOffset > lastDivOffset + 200) {
             for(let i = 0; i <= 5; i++) {
                 hidCards[i].classList.add("card-visible");
                 hidCards[i].classList.remove("hide");
