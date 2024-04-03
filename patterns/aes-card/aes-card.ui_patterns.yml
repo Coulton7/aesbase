@@ -29,3 +29,8 @@ aes-card:
       label: Footer
       description: This will be where links go to the items or buttons
       preview: The button goes here
+    
+    libraries:
+      - aes-card:
+        js:
+          js/infinite-scroll.js: {}
