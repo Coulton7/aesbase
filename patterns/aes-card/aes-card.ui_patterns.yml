@@ -30,4 +30,6 @@ aes-card:
       description: This will be where links go to the items or buttons
       preview: The button goes here
     
-  
+  libraries:
+    js:
+      infinite-scroll.js: {}
