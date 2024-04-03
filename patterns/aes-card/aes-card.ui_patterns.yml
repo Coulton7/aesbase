@@ -31,6 +31,6 @@ aes-card:
       preview: The button goes here
     
     libraries:
-      - aes-card:
+      aes-card:
         js:
           js/infinite-scroll.js: {}
