@@ -35,4 +35,4 @@ front-library:
 
 aes-card:
   js:
-    assets/js/infinite=-scroll.js: {}
+    assets/js/infinite-scroll.js: {}
