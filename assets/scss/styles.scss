@@ -1631,6 +1631,10 @@ blockquote {
   transform: translate3d(0, 0, 0);
 }
 
+.staff-slider p {
+  padding: inherit;
+}
+
 .staff-img img {
   border-radius: 50%;
   max-width: 50%;
