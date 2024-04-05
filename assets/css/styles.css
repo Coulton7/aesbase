@@ -14343,6 +14343,7 @@ blockquote {
 
 .staff-slider p {
   padding: inherit;
+  margin-bottom: 1rem;
 }
 
 .staff-img img {
