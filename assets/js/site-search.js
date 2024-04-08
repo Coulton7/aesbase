@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlLang = urlArray[1];
     var filterLang = urlLang;
 
+    let globeSearch = document.getElementById('hits');
+    let usSearch = document.getElementById('usHits');
+
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
-    if(document.getElementById('hits').length > 0){
+    if(!!globeSearch){
         const search = instantsearch({
             indexName: 'aesseal',
             searchClient,
@@ -529,8 +532,8 @@ document.addEventListener("DOMContentLoaded", function() {
         search.start();
     }
 
-    if(document.getElementById('usHits').length > 0){
-        const usSearch = instantsearch({
+    if(!!usSearch){
+        const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
             typoTolerance: 'strict',
@@ -543,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
         
-        usSearch.addWidgets([
+        usaSearch.addWidgets([
             instantsearch.widgets.configure({
                 hitsPerPage: 20,
                 attributesToSnippet: ['body:80'],
@@ -607,6 +610,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
             })
         ]);
-        usSearch.start();
+        usaSearch.start();
     }
 });
