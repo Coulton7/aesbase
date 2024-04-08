@@ -3251,6 +3251,10 @@ ul.about-us-cats a {
   .card-staff-img {
     bottom: 3em;
   }
+
+  .promo-margin {
+    margin-block-start: 2%;
+  }
 }
 
 /* md */
@@ -3354,6 +3358,10 @@ ul.about-us-cats a {
   .virtual-tour-logo {
     max-width: 33%;
   }
+
+  .promo-margin {
+    margin-block-start: 6%;
+  }
 }
 
 /* lg */
@@ -3382,12 +3390,20 @@ ul.about-us-cats a {
     width: 35%;
     top: 12%;
   }
+
+  .promo-margin {
+    margin-block-start: -5%;
+  }
 }
 
 @media screen and (min-width: 1500px) {
   .chem-pharm-logo-container {
     width: 33%;
     top: 10%;
+  }
+
+  .promo-margin {
+    margin-block-start: -17%;
   }
 }
 
