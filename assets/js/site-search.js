@@ -525,6 +525,85 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     ]);
+
+    const usSearch = instantsearch({
+        indexName: 'aesseal us',
+        searchClient,
+        typoTolerance: 'strict',
+        searchFunction(helper) {
+            if (helper.state.query === '')
+            {
+                return;
+            }
+            helper.search();
+        }
+    })
+    
+    usSearch.addWidgets([
+        instantsearch.widgets.configure({
+            hitsPerPage: 20,
+            attributesToSnippet: ['body:80'],
+            page: 0,
+        }),
+
+        instantsearch.widgets.pagination({
+            container: '#usPagination',
+            totalPages: 3,
+            scrollTo: '#usSearchbox'
+        }),
+    
+        instantsearch.widgets.searchBox({
+            container: '#usSearchbox',
+            placeholder: 'Enter Your Keywords',
+            searchAsYouType: false,
+            cssClasses: {
+                form : 'search-block',
+                input: 'form-control',
+                submit: 'btn btn-primary',
+                submitIcon: 'filter-white'
+            }
+        }),
+
+        instantsearch.widgets.stats({
+            container: '#stats',
+            templates: {
+                text(data, { html }) {
+                    let count = '';
+                    if (data.hasManyResults) {
+                        count += `${data.nbHits} results`
+                    } else if (data.hasOneResult) {
+                        count += `1 result`
+                    } else {
+                        count += `no result`;
+                    }
+
+                    return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                }
+            }
+        }),
+
+        instantsearch.widgets.hits ({
+            container: '#usHits',
+            templates:{
+                item: data => `
+                <div class="search-result">
+                    <small class="${data.type ? 'case_studies' : 'd-none'}">${ data.url}</small>
+                    <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                    <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                        attribute: "body",
+                        hit: data
+                    })}</p>
+                    <a class="${data.type ? 'case_studies' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
+                    <a class="class="${data.field_s3_link ? '' : 'd-none'}" btn btn-primary align-self-end" href="${data.field_s3_link}">Read More</a>
+                </div>`,
+                empty: `<p class="h3">No results found matching {{query}}</p>
+                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
+                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
+            },
+        })
+    ]);
     
     search.start();
+    usSearch.start();
 });
