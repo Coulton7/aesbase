@@ -565,7 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }),
 
         instantsearch.widgets.stats({
-            container: '#stats',
+            container: '#usStats',
             templates: {
                 text(data, { html }) {
                     let count = '';
