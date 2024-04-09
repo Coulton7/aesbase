@@ -596,7 +596,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="search-result">
                         <small class="${data.type ? 'case_studies' : 'd-none'}">${data.url}</small>
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="h3 ${data.title ? 'test' : 'd-none'}">${data.title}</p>
                         <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
                             attribute: "body",
                             hit: data
