@@ -601,7 +601,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             attribute: "body",
                             hit: data
                         })}</p>
-                        <a class="${data.type ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
+                        <a class="${data.type != "case_studies" ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.field_s3_link}">Read More</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
