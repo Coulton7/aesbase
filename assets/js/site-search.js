@@ -602,7 +602,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             hit: data
                         })}</p>
                         <a class="${data.type ? 'case_studies' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
-                        <a class="${data.field_s3_link ? '' : 'd-none'}" btn btn-primary align-self-end" href="${data.field_s3_link}">Read More</a>
+                        <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.field_s3_link}">Read More</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
