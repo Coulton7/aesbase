@@ -2874,13 +2874,7 @@ ul.about-us-cats a {
 }
 
 .white-iceberg-primary{
-  background: linear-gradient(
-      to bottom,
-      #fbfbfb 0%,
-      #fbfbfb 50%,
-      $primary 50%,
-      $primary 100%
-  );
+  background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, $primary 50%, $primary 100%);
   display: flex;
   justify-content: center;
   align-items: center;
