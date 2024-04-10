@@ -15835,6 +15835,14 @@ ul.about-us-cats a {
   .virtual-tour-logo {
     max-width: 50%;
   }
+  .black-boxes .btn,
+  .black-boxes-right .btn {
+    font-size: 5px;
+    padding: 2px 4px;
+  }
+  .black-boxes {
+    padding: 1px;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
