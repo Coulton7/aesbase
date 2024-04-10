@@ -1440,32 +1440,40 @@ blockquote {
 .black-boxes {
   position: absolute;
   top: 50%;
-  left: 10%; /* Adjust the left position as needed */
+  left: 10%;
   transform: translateY(-50%);
-  background-color: rgba(1, 1, 1, 0.55); /* Adjust opacity as needed */
+  background-color: rgba(1, 1, 1, 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: white;
   padding: 20px;
-  max-width: 50%;
+  max-width: 40%; /* Adjust the max-width for smaller screens */
+  font-size: 1rem; /* Set default font size */
 }
 
 .black-boxes-right {
   position: absolute;
   top: 50%;
-  right: 10%; /* Adjust the left position as needed */
+  right: 10%;
   transform: translateY(-50%);
-  background-color: rgba(1, 1, 1, 0.55); /* Adjust opacity as needed */
+  background-color: rgba(1, 1, 1, 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: white;
   padding: 20px;
-  max-width: 50%;
+  max-width: 40%; /* Adjust the max-width for smaller screens */
+  font-size: 1rem; /* Set default font size */
 }
 
-@media screen and (max-width: 600px) {
-  .black-boxes {
-    max-width: 100%;
+@media screen and (max-width: 700px) {
+  .black-boxes,
+  .black-boxes-right {
+    max-width: 120%; /* Adjust max-width for smaller screens */
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 0.7em /* Decrease font size for smaller screens */
+   
   }
 }
 
@@ -3402,6 +3410,15 @@ ul.about-us-cats a {
   .promo-margin {
     margin-block-start: -5%;
   }
+
+  .global-res-slider li.next {
+    left: 1em;
+  }
+
+  .global-res-slider li.prev {
+    right: 1em;
+  }
+
 }
 
 @media screen and (min-width: 1500px) {
@@ -3412,6 +3429,14 @@ ul.about-us-cats a {
 
   .promo-margin {
     margin-block-start: -17%;
+  }
+
+  .global-res-slider li.next {
+    left: 5rem;
+  }
+
+  .global-res-slider li.prev {
+    right: 5rem;
   }
 }
 
