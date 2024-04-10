@@ -3085,6 +3085,17 @@ ul.about-us-cats a {
     padding-top: 3em;
   }
 
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: 65%;
+    padding-top: 3em;
+  }
+
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/photo/wavehead/wideformatmobile/pillar-customer-service.jpg);
     background-size: cover;
@@ -3210,6 +3221,17 @@ ul.about-us-cats a {
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-3-1440.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: bottom right;
+    animation: none;
+    padding-top: 3em;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
