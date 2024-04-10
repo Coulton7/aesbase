@@ -369,6 +369,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })(instantsearch.widgets.refinementList);
 
+        const pagination = instantsearch.widgets.panel ({
+            hidden: ({ results }) => results.nbPages === 1,
+        })(instantsearch.widgets.pagination)
+
         search.addWidgets([{
             init: function(options) {
                 if(filterLang == "en")
@@ -460,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
         
-            instantsearch.widgets.pagination({
+            pagination({
                 container: '#pagination',
                 totalPages: 3,
                 scrollTo: '#searchbox'
