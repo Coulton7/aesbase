@@ -15805,6 +15805,12 @@ ul.about-us-cats a {
   #arrowNav {
     display: none;
   }
+  .controls li, .tns-outer .tns-controls button[aria-controls] {
+    width: 3em;
+    height: 3em;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #e5e5e7;
+  }
   .ind-carousel-caption {
     top: 0;
     width: 83.333%;

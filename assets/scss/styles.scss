@@ -3107,6 +3107,13 @@ ul.about-us-cats a {
     display: none;
   }
 
+  .controls li, .tns-outer .tns-controls button[aria-controls] {
+    width: 3em;
+    height: 3em;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 30%);
+    border: 1px solid #e5e5e7;
+  }
+
   .ind-carousel-caption {
     top: 0;
     width: 83.333%;
