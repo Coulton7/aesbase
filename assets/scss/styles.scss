@@ -725,10 +725,13 @@ a.icon-link:hover {
   cursor: pointer;
 }
 
+.tns-outer .tns-controls {
+  margin-bottom: 0;
+}
+
 .controls, .tns-controls {
   list-style: none;
   margin: 0;
-  margin-bottom: 0;
 }
 
 .controls li, .tns-outer .tns-controls button[aria-controls]{
