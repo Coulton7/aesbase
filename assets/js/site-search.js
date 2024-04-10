@@ -545,6 +545,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 helper.search();
             }
         })
+
+        const usPagination = instantsearch.widgets.panel ({
+            hidden: ({ results }) => results.nbPages === 1,
+        })(instantsearch.widgets.pagination)
         
         usaSearch.addWidgets([
             instantsearch.widgets.configure({
@@ -553,7 +557,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 page: 0,
             }),
 
-            instantsearch.widgets.pagination({
+            usPagination({
                 container: '#usPagination',
                 totalPages: 3,
                 scrollTo: '#usSearchbox'
