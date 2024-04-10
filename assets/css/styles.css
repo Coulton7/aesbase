@@ -15493,7 +15493,7 @@ ul.about-us-cats a {
 
 /* primary to black */
 .primary-iceberg-dark {
-  background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, rgb(33, 37, 41) 50%, rgb(33, 37, 41) 100%);
+  background: linear-gradient(to bottom, #002a5a 0%, #002a5a 50%, #212529 50%, #212529 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15524,7 +15524,7 @@ ul.about-us-cats a {
 }
 
 .secondary-iceberg-dark {
-  background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, rgb(33, 37, 41) 50%, rgb(33, 37, 41) 100%);
+  background: linear-gradient(to bottom, #b5b6b9 0%, #b5b6b9 50%, #212529 50%, #212529 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15556,7 +15556,7 @@ ul.about-us-cats a {
 
 /* danger to black */
 .danger-iceberg-dark {
-  background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, rgb(33, 37, 41) 50%, rgb(33, 37, 41) 100%);
+  background: linear-gradient(to bottom, #dd1e25 0%, #dd1e25 50%, #212529 50%, #212529 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15564,14 +15564,14 @@ ul.about-us-cats a {
 
 /* dark to primary */
 .dark-iceberg-primary {
-  background: linear-gradient(to bottom, rgb(33, 37, 41) 0%, rgb(33, 37, 41) 50%, #002a5a 50%, #002a5a 100%);
+  background: linear-gradient(to bottom, #212529 0%, #212529 50%, #002a5a 50%, #002a5a 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .dark-iceberg-danger {
-  background: linear-gradient(to bottom, rgb(33, 37, 41) 0%, rgb(33, 37, 41) 50%, #dd1e25 50%, #dd1e25 100%);
+  background: linear-gradient(to bottom, #212529 0%, #212529 50%, #dd1e25 50%, #dd1e25 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15579,7 +15579,7 @@ ul.about-us-cats a {
 
 /* dark to white */
 .dark-iceberg-white {
-  background: linear-gradient(to bottom, rgb(33, 37, 41) 0%, rgb(33, 37, 41) 50%, #fbfbfb 50%, #fbfbfb 100%);
+  background: linear-gradient(to bottom, #212529 0%, #212529 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15587,7 +15587,7 @@ ul.about-us-cats a {
 
 /* dark to secondary */
 .dark-iceberg-secondary {
-  background: linear-gradient(to bottom, rgb(33, 37, 41) 0%, rgb(33, 37, 41) 50%, #b5b6b9 50%, #b5b6b9 100%);
+  background: linear-gradient(to bottom, #212529 0%, #212529 50%, #b5b6b9 50%, #b5b6b9 100%);
   display: flex;
   justify-content: center;
   align-items: center;
