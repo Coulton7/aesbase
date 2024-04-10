@@ -15927,7 +15927,7 @@ ul.about-us-cats a {
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: center;
+    background-position: top center;
     animation: none;
     padding-top: 3em;
   }
@@ -16026,7 +16026,7 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: center;
+    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-customer-service.jpg);
