@@ -3118,6 +3118,20 @@ ul.about-us-cats a {
     display: none;
   }
 
+  .mobile-search {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: block;
+    color: #535454;
+    padding: 0.7em 1.1em;
+    text-decoration: none;
+    z-index: 1036;
+    border-top: 4px solid transparent;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
   .controls li, .tns-outer .tns-controls button[aria-controls] {
     width: 3em;
     height: 3em;
