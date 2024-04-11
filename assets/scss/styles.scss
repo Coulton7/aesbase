@@ -3135,6 +3135,10 @@ ul.about-us-cats a {
     margin: 0.25rem 0;
   }
 
+  .change:after {
+    right: 0;
+  }
+
   .controls li, .tns-outer .tns-controls button[aria-controls] {
     width: 3em;
     height: 3em;
