@@ -16022,6 +16022,14 @@ ul.about-us-cats a {
   .promo-margin {
     margin-block-start: 2%;
   }
+  .black-boxes,
+  .black-boxes-right {
+    height: auto; /* Reset height to auto for smaller screens */
+    max-height: 115px; /* Adjust the maximum height as per your requirement */
+    overflow-y: scroll; /* Add vertical scroll if content exceeds the height */
+    padding: 0;
+    margin: 0;
+  }
 }
 /* md */
 @media screen and (min-width: 992px) {
@@ -16169,6 +16177,11 @@ ul.about-us-cats a {
   }
   .global-res-slider li.prev {
     right: 5rem;
+  }
+}
+@media screen and (max-width: 867px) {
+  .testimonials .col {
+    margin-bottom: 50px; /* Adjust this value as needed */
   }
 }
 @media (max-width: 992px) {
