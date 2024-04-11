@@ -16130,6 +16130,13 @@ ul.about-us-cats a {
   .promo-margin {
     margin-block-start: 6%;
   }
+  .black-boxes,
+  .black-boxes-right {
+    height: auto; /* Reset height to auto for smaller screens */
+    max-height: inherit; /* Adjust the maximum height as per your requirement */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the height */
+    padding: 1.5rem;
+  }
 }
 /* lg */
 @media screen and (min-width: 1200px) {
