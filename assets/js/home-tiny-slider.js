@@ -236,10 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         localFunction();
 
-        localslider.events.on('transitionEnd', function(info) {
-            activeSlide = info.displayIndex;
-            current.textContent = info.displayIndex;
-        });
+        localslider.events.on('transitionEnd', localFunction);
     }
 
     if (document.querySelectorAll('.global-slider').length > 0){
