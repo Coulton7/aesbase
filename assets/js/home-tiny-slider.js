@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         globalCounter();
     
-        globalslider.events.on('transitionEnd', globalSlideFunction);
+        globalslider.events.on('transitionEnd', globalCounter);
     }
 
     if (document.querySelectorAll('.prod-slider').length > 0){
