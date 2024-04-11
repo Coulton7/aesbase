@@ -16163,6 +16163,11 @@ ul.about-us-cats a {
     right: 1em;
   }
 }
+@media (max-width: 1430px) {
+  .nav-slide .item {
+    height: 450px;
+  }
+}
 @media screen and (min-width: 1500px) {
   .chem-pharm-logo-container {
     width: 33%;
