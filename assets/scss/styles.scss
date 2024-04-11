@@ -3151,10 +3151,6 @@ ul.about-us-cats a {
   .black-boxes{
     padding: 1px;
   }
-
-  .navbar-nav .nav-item:last-child{
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
@@ -3315,9 +3311,6 @@ ul.about-us-cats a {
     margin-block-start: 2%;
   }
 
-  .navbar-nav .nav-item:last-child {
-    display: none;
-  }
 }
 
 /* md */
