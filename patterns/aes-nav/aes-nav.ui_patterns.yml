@@ -1,9 +1,7 @@
 navbar:
   label: "AES Navbar"
   description: "Custom Navbar variation to allow for more control"
-  links:
-    - 'https://getbootstrap.com/docs/5.3/components/navbar/'
-  category: "Navbar"
+  category: "AES Nav"
   variants:
     default:
       label: "Default"
