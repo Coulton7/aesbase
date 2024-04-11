@@ -15817,7 +15817,7 @@ ul.about-us-cats a {
   }
   .mobile-search {
     position: fixed;
-    right: 0;
+    right: 6.5rem;
     top: 0;
     display: block;
     color: #535454;
