@@ -3135,6 +3135,11 @@ ul.about-us-cats a {
     margin: 0.25rem 0;
   }
 
+  .overlay-content,
+  .location-overlay > div + div {
+  top: 16%;
+  }
+
   .change:after {
     right: 0;
   }
