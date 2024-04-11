@@ -15815,6 +15815,10 @@ ul.about-us-cats a {
   #arrowNav {
     display: none;
   }
+  .navbar-collapse nav {
+    text-align: center;
+    width: 100%;
+  }
   .mobile-search {
     position: fixed;
     right: 6.5rem;
