@@ -1,6 +1,6 @@
 navbar:
-  label: "Navbar"
-  description: "Powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin."
+  label: "NavAES Navbarbar"
+  description: "Custom Navbar variation to allow for more control"
   links:
     - 'https://getbootstrap.com/docs/5.3/components/navbar/'
   category: "Navbar"
