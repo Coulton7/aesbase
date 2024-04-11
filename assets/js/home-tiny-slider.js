@@ -224,19 +224,19 @@ document.addEventListener("DOMContentLoaded", function() {
         })
 
     
-        const localFunction = function (info, eventName) {
-        var info = localslider.getInfo(),
-            current = document.querySelector('.local-current'),
-            total = document.querySelector('.local-total');
-            activeSlide = info.displayIndex;
-            
-            total.textContent = info.slideCount;
-            current.textContent = info.displayIndex;
-        }
+        const localCounter = function (info, eventName) {
+            var info = localslider.getInfo(),
+                current = document.querySelector('.local-current'),
+                total = document.querySelector('.local-total');
+                activeSlide = info.displayIndex;
+                
+                total.textContent = info.slideCount;
+                current.textContent = info.displayIndex;
+            }
 
-        localFunction();
+        localCounter();
 
-        localslider.events.on('transitionEnd', localFunction);
+        localslider.events.on('transitionEnd', localCounter);
     }
 
     if (document.querySelectorAll('.global-slider').length > 0){
@@ -270,18 +270,19 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         })
     
-        var info = globalslider.getInfo(),
-            current = document.querySelector('.global-current'),
-            total = document.querySelector('.global-total');
-            activeSlide = info.displayIndex;
-            
-            total.textContent = info.slideCount;
-            current.textContent = info.displayIndex;
+        const globalCounter = function(info, eventName) {
+            var info = globalslider.getInfo(),
+                current = document.querySelector('.global-current'),
+                total = document.querySelector('.global-total');
+                activeSlide = info.displayIndex;
+                
+                total.textContent = info.slideCount;
+                current.textContent = info.displayIndex;
+            }
+
+        globalCounter();
     
-        globalslider.events.on('transitionEnd', function(info) {
-            activeSlide = info.displayIndex;
-            current.textContent = info.displayIndex;
-        });
+        globalslider.events.on('transitionEnd', globalSlideFunction);
     }
 
     if (document.querySelectorAll('.prod-slider').length > 0){
