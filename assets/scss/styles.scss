@@ -1351,7 +1351,7 @@ blockquote {
   z-index: 2;
 }
 
-.navbar-nav li a {
+.navbar-nav li a, .navbar-nav li button {
   display: block;
   color: #535454;
   padding: 0.95em 1.1em;
@@ -1378,12 +1378,12 @@ blockquote {
   background-color: $gray-200;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > li > a, .navbar-nav > li > button {
   border-top: 4px solid transparent;
   border-bottom: none;
 }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover, .navbar-nav > li > button:hover {
   border-top: 4px solid $danger;
   border-bottom: none;
 }
