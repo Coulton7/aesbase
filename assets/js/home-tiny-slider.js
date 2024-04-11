@@ -224,6 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
 
     
+        const localFunction = function (info, eventName) {
         var info = localslider.getInfo(),
             current = document.querySelector('.local-current'),
             total = document.querySelector('.local-total');
@@ -231,7 +232,10 @@ document.addEventListener("DOMContentLoaded", function() {
             
             total.textContent = info.slideCount;
             current.textContent = info.displayIndex;
-    
+        }
+
+        localFunction();
+
         localslider.events.on('transitionEnd', function(info) {
             activeSlide = info.displayIndex;
             current.textContent = info.displayIndex;
