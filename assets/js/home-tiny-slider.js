@@ -224,17 +224,17 @@ document.addEventListener("DOMContentLoaded", function() {
         })
 
     
-        var localInfo = localslider.getInfo(),
+        var info = localslider.getInfo(),
             current = document.querySelector('.local-current'),
             total = document.querySelector('.local-total');
-            activeSlide = localInfo.displayIndex;
+            activeSlide = info.displayIndex;
             
-            total.textContent = localInfo.slideCount;
-            current.textContent = localInfo.displayIndex;
+            total.textContent = info.slideCount;
+            current.textContent = info.displayIndex;
     
         localslider.events.on('transitionEnd', function(info) {
-            activeSlide = localInfo.displayIndex;
-            current.textContent = localInfo.displayIndex;
+            activeSlide = info.displayIndex;
+            current.textContent = info.displayIndex;
         });
     }
 
@@ -269,17 +269,17 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         })
     
-        var globalInfo = globalslider.getInfo(),
+        var info = globalslider.getInfo(),
             current = document.querySelector('.global-current'),
             total = document.querySelector('.global-total');
-            activeSlide = globalInfo.displayIndex;
+            activeSlide = info.displayIndex;
             
-            total.textContent = globalInfo.slideCount;
-            current.textContent = globalInfo.displayIndex;
+            total.textContent = info.slideCount;
+            current.textContent = info.displayIndex;
     
         globalslider.events.on('transitionEnd', function(info) {
-            activeSlide = globalInfo.displayIndex;
-            current.textContent = globalInfo.displayIndex;
+            activeSlide = info.displayIndex;
+            current.textContent = info.displayIndex;
         });
     }
 
