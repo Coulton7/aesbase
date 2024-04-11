@@ -67,6 +67,8 @@
       {% block navbar %}
           {{ pattern('navbar', {
           placement: 'fixed-top',
+          toggler_position: 'end',
+          toggle_action: 'collapse',
           navigation: page.navigation,
           navigation_collapsible: page.navigation_collapsible,
           attributes: create_attribute({
