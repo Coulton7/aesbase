@@ -1617,6 +1617,7 @@ blockquote {
 .dotted-border {
   outline: 1px dashed $darkgrey;
   padding: 1em 0.5em 1em 0.5em;
+  overflow: hidden;
 }
 
 .image-highlight {
