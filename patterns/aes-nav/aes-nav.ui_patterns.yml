@@ -1,5 +1,5 @@
 navbar:
-  label: "NavAES Navbarbar"
+  label: "AES Navbar"
   description: "Custom Navbar variation to allow for more control"
   links:
     - 'https://getbootstrap.com/docs/5.3/components/navbar/'
