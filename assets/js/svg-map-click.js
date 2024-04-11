@@ -881,8 +881,8 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-Missouri":
               state = "Missouri";
-              lombard.forEach((lombard) => {
-                lombard.classList.remove('show');
+              cedar.forEach((lombard) => {
+                cedar.classList.remove('show');
               });
               mo.forEach((mo) => {
                 mo.classList.remove('show');
@@ -929,8 +929,8 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-Kansas":
               state = "Kansas";
-              lombard.forEach((lombard) => {
-                lombard.classList.remove('show');
+              cedar.forEach((cedar) => {
+                cedar.classList.remove('show');
               });
               ks.forEach((ks) => {
                 ks.classList.remove('show');
@@ -938,8 +938,8 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-Nebraska":
               state = "Nebraska";
-              lombard.forEach((lombard) => {
-                lombard.classList.remove('show');
+              cedar.forEach((cedar) => {
+                cedar.classList.remove('show');
               });
               ne.forEach((ne) => {
                 ne.classList.remove('show');
@@ -947,8 +947,8 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-SouthDakota":
               state = "South Dakota";
-              lombard.forEach((lombard) => {
-                lombard.classList.remove('show');
+              cedar.forEach((cedar) => {
+                cedar.classList.remove('show');
               });
               sd.forEach((sd) => {
                 sd.classList.remove('show');
@@ -956,8 +956,8 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-NorthDakota":
               state = "North Dakota";
-              lombard.forEach((lombard) => {
-                lombard.classList.remove('show');
+              cedar.forEach((cedar) => {
+                cedar.classList.remove('show');
               });
               nd.forEach((nd) => {
                 nd.classList.remove('show');
