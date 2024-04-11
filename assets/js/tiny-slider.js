@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
         
                 600 : {
-                items: 3
+                items: 2
                 },
         
                 768: {
