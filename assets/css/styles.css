@@ -15876,6 +15876,10 @@ ul.about-us-cats a {
   .virtual-tour-logo {
     max-width: 50%;
   }
+  .vid-embed {
+    max-width: 100%;
+    max-height: 100%;
+  }
   .black-boxes .btn,
   .black-boxes-right .btn {
     font-size: 5px;
