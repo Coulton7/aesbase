@@ -3123,6 +3123,14 @@ ul.about-us-cats a {
     display: none;
   }
 
+  .slider-nav .prev{
+    right: 0;
+  }
+  
+  .slider-nav .next{
+    left: 0;
+  }
+
   .navbar-collapse nav {
     text-align: center;
     width: 100%;
