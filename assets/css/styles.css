@@ -16034,6 +16034,9 @@ ul.about-us-cats a {
     padding: 0;
     margin: 0;
   }
+  .footer-curve {
+    margin-top: -6.5em;
+  }
 }
 /* md */
 @media screen and (min-width: 992px) {
@@ -16136,6 +16139,9 @@ ul.about-us-cats a {
     max-height: inherit; /* Adjust the maximum height as per your requirement */
     overflow-y: auto; /* Add vertical scroll if content exceeds the height */
     padding: 1.5rem;
+  }
+  .footer-curve {
+    margin-top: -7.2em;
   }
 }
 /* lg */
