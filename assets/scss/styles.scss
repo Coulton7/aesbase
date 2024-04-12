@@ -3040,6 +3040,10 @@ ul.about-us-cats a {
     bottom: inherit;
   }
 
+  .navbar-nav .nav-item:last-child {
+    display: block;
+  }
+
   .home-slider-height {
     min-height: 45em;
     display: flex;
@@ -3387,6 +3391,10 @@ ul.about-us-cats a {
 
   .footer-curve {
     margin-top: -6.5em;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    display: none;
   }
 
 }
