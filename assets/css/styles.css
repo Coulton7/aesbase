@@ -13500,6 +13500,10 @@ a.icon-link:hover {
   font-size: 2.5em;
 }
 
+.ind-carousel .carousel-control-prev, .ind-carousel .carousel-control-next {
+  width: 10%;
+}
+
 .shadow-container .next i {
   left: 18%;
   position: relative;
