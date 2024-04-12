@@ -16050,7 +16050,7 @@ ul.about-us-cats a {
     margin-top: -6.5em;
   }
   .navbar-nav .nav-item:last-child {
-    display: none;
+    display: block;
   }
 }
 /* md */
@@ -16060,6 +16060,9 @@ ul.about-us-cats a {
   }
   .menu--main.navbar-nav {
     width: 100%;
+  }
+  .navbar-nav .nav-item:last-child {
+    display: none;
   }
   .bg-white .navbar-collapse {
     padding-left: 6rem;
