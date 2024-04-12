@@ -99,14 +99,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.querySelector("#footer-overlay-btn").addEventListener('click', 
           function footerNavBtn() {
-            document.getElementById('overlay-btn').classList.toggle("change");
+            document.getElementById('footer-overlay-btn').classList.toggle("change");
             if (x.style.height === "100%") {
               x.style.height = "1px";
               x.style.bottom = "-1px";
               document.querySelector("html").classList.remove('noscroll');
               document.querySelector("body").classList.remove('noscroll');
               document.querySelector(".dialog-off-canvas-main-canvas").classList.remove('noscroll');
-              document.querySelector('#overlay-btn').classList.add('overlay-btn');
+              document.querySelector('#footer-overlay-btn').classList.add('overlay-btn');
               } else {
                 x.style.height = "100%";
                 x.style.bottom = "0";
