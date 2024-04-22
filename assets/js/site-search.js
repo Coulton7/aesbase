@@ -602,7 +602,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item: data => `
                     <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                        <small class="${data.type != "case_studies" ? '' : 'd-none'}">${data.url}</small>
+                        <small class="${data.type = "case_studies" ? '' : 'd-none'}">${data.url}</small>
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
