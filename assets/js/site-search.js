@@ -559,8 +559,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 20,
                 attributesToSnippet: ['body:80'],
                 page: 0,
-                clickAnalytics: true,
-                userToken:'user-1'
             }),
 
             usPagination({
