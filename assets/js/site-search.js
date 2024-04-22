@@ -602,14 +602,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item: data => `
                     <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                        <small class="${data.type = "case_studies" ? '' : 'd-none'}">${data.url}</small>
+                        <small class="${data.type != "casestudies" ? '' : 'd-none'}">${data.url}</small>
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
                             attribute: "body",
                             hit: data
                         })}</p>
-                        <a class="${data.type != "case_studies" ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
+                        <a class="${data.type != "casestudies" ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
