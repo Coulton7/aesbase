@@ -559,16 +559,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
-        window.dataLayer.push ({
-            algoliaUserToken: 'user-1'
-        });
-
-        aa('onUserTokenChange', (userToken) => {
-            window.dataLayer.push({
-                algoliaUserToken: userToken,
-            });
-        }, {immediate: true });
-
         const usPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
