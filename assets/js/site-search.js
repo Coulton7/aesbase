@@ -540,15 +540,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
-            insights: {
-                onEvent(event) {
-                    const { widgetType, eventType, payload, hits} = event;
-
-                    if(widgetType === 'ais.hits' && eventType === 'view') {
-                        dataLayer.push({ event: 'Hits Viewed' });
-                    }
-                }
-            },
             typoTolerance: 'strict',
             searchFunction(helper) {
                 if (helper.state.query === '')
