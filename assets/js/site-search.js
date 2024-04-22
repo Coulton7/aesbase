@@ -540,6 +540,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits} = event;
+
+                    if(widgetType === 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            },
             typoTolerance: 'strict',
             searchFunction(helper) {
                 if (helper.state.query === '')
@@ -550,6 +559,16 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
+        window.dataLayer.push ({
+            algoliaUserToken: 'user-1'
+        });
+
+        aa('onUserTokenChange', (userToken) => {
+            window.dataLayer.push({
+                algoliaUserToken: userToken,
+            });
+        }, {immediate: true });
+
         const usPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
@@ -559,6 +578,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 20,
                 attributesToSnippet: ['body:80'],
                 page: 0,
+                clickAnalytics: true,
+                userToken:'user-1'
             }),
 
             usPagination({
@@ -601,7 +622,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#usHits',
                 templates:{
                     item: data => `
-                    <div class="search-result">
+                    <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                         <small class="${data.type != "case_studies" ? '' : 'd-none'}">${data.url}</small>
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
