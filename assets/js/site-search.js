@@ -543,12 +543,6 @@ document.addEventListener("DOMContentLoaded", function() {
             algoliaUserToken: 'user-1',
         });
 
-        searchClient('onUserTokenChange', (userToken) => {
-            window.dataLayer.push({
-              algoliaUserToken: userToken,
-            });
-        }, { immediate: true });
-
         const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
