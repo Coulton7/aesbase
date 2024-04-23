@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", function() {
             algoliaUserToken: 'user-1',
         });
 
-        aa('onUserTokenChange', (userToken) => {
+        searchClient('onUserTokenChange', (userToken) => {
             window.dataLayer.push({
               algoliaUserToken: userToken,
             });
