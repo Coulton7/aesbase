@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
 
+    window.dataLayer = window.dataLayer || [];
+
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
     if(!!globeSearch){
@@ -537,6 +539,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if(!!usSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        aa('onUserTokenChange', (userToken) => {
+            window.dataLayer.push({
+              algoliaUserToken: userToken,
+            });
+        }, { immediate: true });
+
         const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
