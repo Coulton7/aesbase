@@ -52,6 +52,54 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        let lastRenderArgs;
+
+        const infiniteHits = instantsearch.connectors.connectInfiniteHits (
+            (renderArgs, isFirstRender) => {
+                const { hits, showMore, widgetParams } = renderArgs;
+                const { container } = widgetParams;
+                lastRenderArgs = renderArgs;
+
+                if(isFirstRender) {
+                    const sentinel = document.createElement('div');
+                    container.appendChild(document.createElement('ul'));
+                    container.appendChild(sentinel);
+
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if(entry.isIntersecting && !lastRenderArgs.isLastPage) {
+                                showMore();
+                            }
+                        });
+                    });
+
+                    observer.observe(sentinel);
+                    return;
+                }
+                
+                container.querySelector('ul').innerHTML = hits.map(
+                    data => `
+                    <div class="search-result">
+                        <small>${data.url}</small>
+                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                        <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "description",
+                            hit: data
+                        })}</p>
+                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "body",
+                            hit: data
+                        })}</p>
+                        <a class="btn btn-primary align-self-end" href="${data.url}">Read More</a>
+                    </div>`
+                )
+                .join('')
+            }
+        )
+
         let typeMapping;
         let vidMapping;
 
@@ -501,27 +549,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             }),
-        
+
+            infiniteHits({
+                container: document.querySelector('#hits'),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#hits',
                 templates:{
-                    item: data => `
-                    <div class="search-result">
-                        <small>${data.url}</small>
-                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                        <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "description",
-                            hit: data
-                        })}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
-                        <a class="btn btn-primary align-self-end" href="${data.url}">Read More</a>
-                    </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
                     <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
