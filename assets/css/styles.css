@@ -14081,6 +14081,10 @@ blockquote {
   border-bottom: none;
 }
 
+.breadcrumb-item.active {
+  visibility: hidden;
+}
+
 .z-index {
   z-index: 2;
 }
