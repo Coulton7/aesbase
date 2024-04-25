@@ -15903,6 +15903,14 @@ ul.about-us-cats a {
   .footer-curve {
     margin-top: -6.5em;
   }
+  #gas-seal::before {
+    content: "";
+    background-image: url("https://static.aesseal.com/graphics/gascompressorseal_backcut-sm.png");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: right;
+    opacity: 0.8;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
