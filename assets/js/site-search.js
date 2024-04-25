@@ -641,7 +641,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     templates:{
                         item: data => `
                         <div class="search-result">
-                            <small>https://www.aesseal.com/${data.url}</small>
+                            <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                             <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
@@ -652,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 attribute: "body",
                                 hit: data
                             })}</p>
-                            <a class="btn btn-primary align-self-end" href="https://www.aesseal.com/${data.url}">Read More</a>
+                            <a class="btn btn-primary align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                         </div>`,
                     },
                 })
