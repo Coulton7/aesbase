@@ -10,49 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     window.dataLayer = window.dataLayer || [];
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
-    
-    if(!!globeSearch){
-        const search = instantsearch({
-            indexName: 'aesseal',
-            searchClient,
-            routing: {
-                router: instantsearch.routers.history(),
-                stateMapping: {
-                    stateToRoute(uiState) {
-                        const indexUiState = uiState['aesseal'] || {};
 
-                        return {
-                            qs: indexUiState.query,
-                            type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
-                            page: indexUiState.page,
-                        };
-                    },
-                    routeToState(routeState) {
-                        return {
-                            aesseal: {
-                                query: routeState.qs,
-                                refinementList: {
-                                    type: routeState.type,
-                                    lang: routeState.search_api_language
-                                },
-                                page: routeState.page,
-                            }
-                        }
-                    }
-                },
-            },
-            typoTolerance: 'strict',
-            searchFunction(helper) {
-                if (helper.state.query === '')
-                {
-                    return;
-                }
-                helper.search();
-            }
-        });
-
-        let typeMapping;
+    let typeMapping;
         let vidMapping;
 
         if (filterLang == "en") {
@@ -353,6 +312,47 @@ document.addEventListener("DOMContentLoaded", function() {
                 'componentseals': 'Component Seals Category',
             }
         }
+    
+    if(!!globeSearch){
+        const search = instantsearch({
+            indexName: 'aesseal',
+            searchClient,
+            routing: {
+                router: instantsearch.routers.history(),
+                stateMapping: {
+                    stateToRoute(uiState) {
+                        const indexUiState = uiState['aesseal'] || {};
+
+                        return {
+                            qs: indexUiState.query,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            page: indexUiState.page,
+                        };
+                    },
+                    routeToState(routeState) {
+                        return {
+                            aesseal: {
+                                query: routeState.qs,
+                                refinementList: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language
+                                },
+                                page: routeState.page,
+                            }
+                        }
+                    }
+                },
+            },
+            typoTolerance: 'strict',
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            }
+        });
 
         const langlistPanel = instantsearch.widgets.panel ({
             templates: {
