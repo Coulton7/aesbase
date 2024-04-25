@@ -15876,7 +15876,7 @@ ul.about-us-cats a {
     left: 8.333%;
   }
   .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360-panel-mobile.png");
+    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 25%;
@@ -16152,7 +16152,7 @@ ul.about-us-cats a {
     opacity: 0;
   }
   .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360-panel-desktop.png");
+    background-image: url("https://static.aesseal.com/graphics/360tour-lg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
