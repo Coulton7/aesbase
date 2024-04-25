@@ -3152,6 +3152,92 @@ ul.about-us-cats a {
     width: 100%;
   }
 
+  #gas-seal::after { 
+    content: "";   
+    background-image: url('https://static.aesseal.com/graphics/gascompressorseal_backcut-sm.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: right;
+    opacity: 0.2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #gas-seal {   
+    color: black;
+  }
+
+  #cart-seal::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://static.aesseal.com/graphics/CAPI-13_backcut-sm.png");
+    background-blend-mode: soft-light;
+    background-position: left;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  #seal-support{
+    color: black;
+  }
+
+  #seal-support::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://static.aesseal.com/graphics/GasSystem-backcut-sm.png");
+    background-blend-mode: soft-light;
+    background-position: center top;
+    background-size: cover;
+    opacity: 0.2;
+    color: black;
+  }
+
+  #labtecta::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://static.aesseal.com/graphics/Lab_Tecta_66IC_backcut-sm.png");
+    background-blend-mode: overlay;
+    background-position: left;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  #comp-seal{
+    color: black;
+  }
+
+  #comp-seal::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    background-image: url("https://static.aesseal.com/graphics/TO5-23_backcut-sm.png");
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    color: black;
+  }
+
+  #packing::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    background-image: url("https://static.aesseal.com/graphics/Packing-backcut-sm.png");
+    background-blend-mode: overlay;
+    background-position: left;
+    background-size: cover;
+    opacity:0.2;
+  }
+
   .mobile-search {
     position: fixed;
     right: 6.5rem;
