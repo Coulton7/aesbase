@@ -15956,12 +15956,6 @@ ul.about-us-cats a {
     width: 83.333%;
     left: 8.333%;
   }
-  .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-  }
   .virtual-tour-logo {
     max-width: 50%;
   }
@@ -16119,12 +16113,6 @@ ul.about-us-cats a {
   }
   #arrowNav {
     display: none;
-  }
-  .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
   }
   .ind-carousel-caption {
     top: 5%;
