@@ -3277,13 +3277,6 @@ ul.about-us-cats a {
     left: 8.333%;
   }
 
-  .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-  }
-
   .virtual-tour-logo {
     max-width: 50%;
   }
@@ -3468,14 +3461,7 @@ ul.about-us-cats a {
   #arrowNav {
     display: none;
   }
-
-  .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-  }
-
+  
   .ind-carousel-caption {
     top: 5%;
     width: 83.333%;
@@ -3510,6 +3496,11 @@ ul.about-us-cats a {
 
 /* md */
 @media screen and (min-width: 992px) {
+
+  .lg-mt-10 {
+    margin-block-start: 8rem;
+  }
+
   .textlogo {
     top: 0em;
   }
@@ -3713,6 +3704,7 @@ ul.about-us-cats a {
 }
 
 @media (max-width: 992px) {
+
   .fixed-top {
     background: #ffffff!important;
     border: none;

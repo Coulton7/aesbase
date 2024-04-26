@@ -16154,6 +16154,9 @@ ul.about-us-cats a {
 }
 /* md */
 @media screen and (min-width: 992px) {
+  .lg-mt-10 {
+    margin-block-start: 8rem;
+  }
   .textlogo {
     top: 0em;
   }
