@@ -580,7 +580,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClasses: {
                     form : 'search-block',
                     input: 'form-control',
-                    submit: 'btn btn-primary',
+                    submit: 'btn btn-danger',
                     submitIcon: 'filter-white search-btn'
                 }
             }),
