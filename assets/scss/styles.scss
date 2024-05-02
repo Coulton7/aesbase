@@ -2188,7 +2188,8 @@ ul.about-us-cats a {
 
 .loc-close:after {
   display: block;
-  content: "\00d7";
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free"; 
   color: $white;
   position: fixed;
   font-size: 3em;
