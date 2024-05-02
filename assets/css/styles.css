@@ -14401,7 +14401,7 @@ blockquote {
   border-radius: 0 !important;
 }
 
-.social-flag {
+.social-flag, .search-btn {
   height: 1em;
   width: 1em;
   position: relative;

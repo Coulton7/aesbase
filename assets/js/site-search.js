@@ -581,7 +581,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     form : 'search-block',
                     input: 'form-control',
                     submit: 'btn btn-primary',
-                    submitIcon: 'filter-white'
+                    submitIcon: 'filter-white search-btn'
                 }
             }),
 
