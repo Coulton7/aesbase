@@ -14874,7 +14874,9 @@ ul.about-us-cats a {
 
 .change:after {
   display: block;
-  content: "×";
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
   color: #fff;
   position: fixed;
   font-size: 3em;
