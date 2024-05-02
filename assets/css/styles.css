@@ -14462,6 +14462,7 @@ blockquote {
 .scrolled-up {
   transform: translateY(-107%);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .modal-backdrop {
