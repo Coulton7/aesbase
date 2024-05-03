@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 refine(input.value);
             });
 
+            input.addEventListener('keydown', function(e){
+                if(e.code === "Enter") {
+                    refine(input.value);
+                }
+            })
+
             clearButton.addEventListener('click', () => {
                 clear(input);
             });
