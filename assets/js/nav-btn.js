@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
               document.querySelector("html").classList.remove('noscroll');
               document.querySelector("body").classList.remove('noscroll');
               document.querySelector(".dialog-off-canvas-main-canvas").classList.remove('noscroll');
-              document.querySelector('#footer-overlay-btn').classList.add('footer-overlay-btn');
+              document.querySelector('#overlay-btn').classList.add('overlay-btn');
               } else {
                 x.style.height = "100%";
                 x.style.bottom = "0";
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector("html").classList.add('noscroll');
                 document.querySelector("body").classList.add('noscroll');
                 document.querySelector(".dialog-off-canvas-main-canvas").classList.add('noscroll');
-                document.querySelector('#overlay-btn').classList.remove('footer-overlay-btn');
+                document.querySelector('#overlay-btn').classList.remove('overlay-btn');
               }
         });
 
