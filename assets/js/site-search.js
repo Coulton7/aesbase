@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const clearButton = document.createElement('button');
             clearButton.textContent = 'X';
 
-            searchButton.addEventListener('click', event => {
-                refine(event.input.value);
+            input.addEventListener('input', event => {
+                refine(event.target.value);
             });
 
             clearButton.addEventListener('click', () => {
