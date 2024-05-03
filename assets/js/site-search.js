@@ -17,24 +17,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isFirstRender) {
             const input =document.createElement('input');
+            input.classList.add('ais-SearchBox-input form-control');
+
+            const searchButton = document.createElement('button');
+            searchButton.classList.add('ais-SearchBox-submit btn btn-danger');
 
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';
 
-            const button = document.createElement('button');
-            button.textContent = 'X';
+            const clearButton = document.createElement('button');
+            clearButton.textContent = 'X';
 
-            input.addEventListener('input', event => {
+            searchButton.addEventListener('click', event => {
                 refine(event.target.value);
             });
 
-            button.addEventListener('click', () => {
+            clearButton.addEventListener('click', () => {
                 clear();
             });
 
             widgetParams.container.appendChild(input);
+            widgetParams.container.appendChild(searchButton);
             widgetParams.container.appendChild(loadingIndicator);
-            widgetParams.container.appendChild(button);
+            widgetParams.container.appendChild(clearButton);
         }
 
         widgetParams.container.querySelector('input').value = query;
@@ -506,17 +511,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#searchbox'
             }),
         
-            instantsearch.widgets.searchBox({
-                container: '#searchbox',
-                placeholder: 'Enter Your Keywords',
-                searchAsYouType: false,
-                cssClasses: {
-                    form : 'search-block',
-                    input: 'form-control',
-                    submit: 'btn btn-primary',
-                    submitIcon: 'filter-white'
-                }
-            }),,
+            customSearchBox({
+                container: document.querySelector('#searchbox'),
+                 searchAsYouType: false,
+              }),
 
             instantsearch.widgets.stats({
                 container: '#stats',
