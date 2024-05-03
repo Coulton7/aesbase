@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let usSearch = document.getElementById('usHits');
 
     window.dataLayer = window.dataLayer || [];
+    const { connectSearchBox } = instantsearch.connectors;
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
