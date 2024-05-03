@@ -17,10 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isFirstRender) {
             const input =document.createElement('input');
-            input.classList.add('ais-SearchBox-input form-control');
+            input.classList.add('ais-SearchBox-input');
+            input.classList.add('form-control');
 
             const searchButton = document.createElement('button');
-            searchButton.classList.add('ais-SearchBox-submit btn btn-danger');
+            searchButton.classList.add('ais-SearchBox-submit');
+            searchButton.classList.add('btn');
+            searchButton.classList.add('btn-danger');
 
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';
