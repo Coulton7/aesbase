@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             clearButton.textContent = 'X';
 
             searchButton.addEventListener('click', event => {
-                refine(event.input.value);
+                refine(event.querySelector('input').value);
             });
 
             clearButton.addEventListener('click', () => {
