@@ -506,9 +506,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#searchbox'
             }),
         
-            customSearchBox({
-                container: document.querySelector('#searchbox')
-            }),
+            instantsearch.widgets.searchBox({
+                container: '#searchbox',
+                placeholder: 'Enter Your Keywords',
+                searchAsYouType: false,
+                cssClasses: {
+                    form : 'search-block',
+                    input: 'form-control',
+                    submit: 'btn btn-primary',
+                    submitIcon: 'filter-white'
+                }
+            }),,
 
             instantsearch.widgets.stats({
                 container: '#stats',
