@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.classList.add('ais-SearchBox-submit');
             searchButton.classList.add('btn');
             searchButton.classList.add('btn-danger');
+            searchButton.innerHTML = '<i class="fas fa-search"></i>';
 
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';
@@ -31,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const clearButton = document.createElement('button');
             clearButton.textContent = 'X';
 
-            input.addEventListener('input', event => {
-                refine(event.target.value);
+            searchButton.addEventListener('click', event => {
+                refine(event.input.value);
             });
 
             clearButton.addEventListener('click', () => {
