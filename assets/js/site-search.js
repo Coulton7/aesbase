@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.classList.add('ais-SearchBox-submit');
             searchButton.classList.add('btn');
             searchButton.classList.add('btn-danger');
-            searchButton.innerHTML = '<i class="fas fa-search"></i>';
+            searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
 
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';

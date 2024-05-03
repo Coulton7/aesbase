@@ -14875,7 +14875,7 @@ ul.about-us-cats a {
 .change:after {
   display: block;
   content: "\f00d";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 400;
   color: #fff;
   position: fixed;
@@ -14897,7 +14897,7 @@ ul.about-us-cats a {
 .loc-close:after {
   display: block;
   content: "\f00d";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   color: #fff;
   position: fixed;
   font-size: 3em;
@@ -15213,14 +15213,14 @@ ul.about-us-cats a {
 }
 
 .carousel-control-next-icon:after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\f054";
   font-weight: 900;
   font-size: 2em;
 }
 
 .carousel-control-prev-icon:after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\f053";
   font-weight: 900;
   font-size: 2em;
@@ -15672,7 +15672,7 @@ ul.about-us-cats a {
 }
 
 .download-btn:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\f019    ";
   font-weight: 900;
 }
