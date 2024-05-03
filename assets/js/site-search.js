@@ -11,6 +11,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
+    const renderSearchBox = (renderOptions, isFirstRender) => {
+        const { query, refine, isSearchStalled, widgetParams } = renderOptions;
+
+        if (isFirstRender) {
+            const input =document.createElement('input');
+
+            const loadingIndicator = document.createElement('span');
+            loadingIndicator.textContent = 'Loading...';
+
+            const button = document.createElement('button');
+            button.textContent = 'X';
+
+            input.addEventListener('input', event => {
+                refine(event.target.value);
+            });
+
+            button.addEventListener('click', () => {
+                clear();
+            });
+
+            widgetParams.container.appendChild(input);
+            widgetParams.container.appendChild(loadingIndicator);
+            widgetParams.container.appendChild(button);
+        }
+
+        widgetParams.container.querySelector('input').value = query;
+        widgetParams.container.querySelector('span').hidden = !isSearchStalled;
+    };
+
+    const customSearchBox = connectSearchBox (
+        renderSearchBox
+    );
+
     let typeMapping;
         let vidMapping;
 
@@ -472,16 +505,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#searchbox'
             }),
         
-            instantsearch.widgets.searchBox({
-                container: '#searchbox',
-                placeholder: 'Enter Your Keywords',
-                searchAsYouType: false,
-                cssClasses: {
-                    form : 'search-block',
-                    input: 'form-control',
-                    submit: 'btn btn-primary',
-                    submitIcon: 'filter-white'
-                }
+            customSearchBox({
+                container: document.querySelector('#searchbox')
             }),
 
             instantsearch.widgets.stats({
