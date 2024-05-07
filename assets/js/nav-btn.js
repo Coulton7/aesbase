@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var x = document.getElementById('myNav');
     var y = document.getElementById('searchOverlay');
     var s = document.getElementById('shareOverlay');
+
     document.querySelector("#overlay-btn").addEventListener('click', 
       function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         document.querySelector('#mob-overlay-search').addEventListener('click', 
-        function searchBtn(){
+        function mobSearchBtn(){
           document.getElementById('mob-overlay-search').classList.toggle('change');
           if (y.style.height === "100%") {
             y.style.height = "1px";
