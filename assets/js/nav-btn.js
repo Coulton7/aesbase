@@ -137,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("html").classList.remove("noscroll");
         document.querySelector("body").classList.remove("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
-        document.querySelector("[data-bs-target='#mobile-overlay'").classList.add("overlay-btn");
       } else {
         x.style.height = "100%";
         x.style.bottom = "0";
@@ -154,9 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         document.querySelector("html").classList.add("noscroll");
         document.querySelector("body").classList.add("noscroll");
-        document
-          .querySelector(".dialog-off-canvas-main-canvas")
-          .classList.add("noscroll");
+        document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
         document.querySelector("[data-bs-target='#mobile-overlay'").classList.remove("overlay-btn");
       }
     });
