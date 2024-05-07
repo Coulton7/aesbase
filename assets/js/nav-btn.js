@@ -129,15 +129,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
-  document.querySelector("#mobile-overlay").addEventListener("click", function mobNavBtn() {
-    document.getElementById("mobile-overlay").classList.toggle("change");
+  document.querySelector("[data-bs-target='#mobile-overlay'").addEventListener("click", function mobNavBtn() {
+    document.querySelector("[data-bs-target='#mobile-overlay'").classList.toggle("change");
       if (x.style.height === "100%") {
         x.style.height = "1px";
         x.style.bottom = "-1px";
         document.querySelector("html").classList.remove("noscroll");
         document.querySelector("body").classList.remove("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
-        document.querySelector("#mobile-overlay").classList.add("overlay-btn");
+        document.querySelector("[data-bs-target='#mobile-overlay'").classList.add("overlay-btn");
       } else {
         x.style.height = "100%";
         x.style.bottom = "0";
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document
           .querySelector(".dialog-off-canvas-main-canvas")
           .classList.add("noscroll");
-        document.querySelector("#mobile-overlay").classList.remove("overlay-btn");
+        document.querySelector("[data-bs-target='#mobile-overlay'").classList.remove("overlay-btn");
       }
     });
 
