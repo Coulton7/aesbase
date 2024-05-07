@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var base_slider = tns ({
             container: ".base-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#arrow-controls",
             gutter: 20,
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var second_slider = tns ({
             container: ".second-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#arrow-nav",
             gutter: 20,
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var focus_slider = tns({
             container: ".focus-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controls: false,
             autoplay: true,
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var esg_slider = tns({
             container: ".esg-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controls: false,
             autoplay: true,
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var tech_slider = tns({
             container: ".tech-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controls: false,
             autoplay: true,
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var cust_slider = tns({
             container: ".cust-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controls: false,
             autoplay: true,
