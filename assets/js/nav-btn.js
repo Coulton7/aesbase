@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var x = document.getElementById("myNav");
+  var x = document.getElementById("overlyNav");
   var y = document.getElementById("searchOverlay");
   var s = document.getElementById("shareOverlay");
 
