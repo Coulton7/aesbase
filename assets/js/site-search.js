@@ -595,6 +595,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     return;
                 }
                 helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
             }
         })
 
