@@ -702,7 +702,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             attribute: "body",
                             hit: data
                         })}</p>
-                        <a class="${data.type != "casestudies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                        <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
