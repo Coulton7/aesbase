@@ -580,6 +580,14 @@ document.addEventListener("DOMContentLoaded", function() {
         search.start();
     }
 
+    let usTypeMapping
+
+    usTypeMapping = {
+        'page' : 'Web Page',
+        'article' : 'Article',
+        'casestudies' : 'Case Studies'
+    }
+
     if(!!usSearch){
         window.dataLayer.push({
             algoliaUserToken: 'user-1',
@@ -606,6 +614,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
+        const typelistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Filter by Content Type</h4>'
+            },
+            cssClasses: {
+                root: 'pt-3'
+            }
+        })(instantsearch.widgets.refinementList);
+
         const usPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
@@ -615,6 +632,25 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    header: 'Filter by Content Type',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: usTypeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
 
             usPagination({
@@ -661,6 +697,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.type != "casestudies" ? '' : 'd-none'}">${data.url}</small>
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="lead">${data.type}</p>
                         <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
                             attribute: "body",
                             hit: data
