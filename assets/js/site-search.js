@@ -712,6 +712,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
                     </div>`,
                 },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: typeMapping[item.type],
+                    }))
+                },
             }),
         ]);
         usaSearch.start();
