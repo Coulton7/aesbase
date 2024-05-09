@@ -715,7 +715,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: typeMapping[item.type],
+                        type: usTypeMapping[item.type],
                     }))
                 },
             }),
