@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     );
 
     let typeMapping;
-        let vidMapping;
+    let vidMapping;
 
         if (filterLang == "en") {
             typeMapping = {
