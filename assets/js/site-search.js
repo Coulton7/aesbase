@@ -593,6 +593,8 @@ document.addEventListener("DOMContentLoaded", function() {
             algoliaUserToken: 'user-1',
         });
 
+        console.log(urlLang)
+
         const usaSearch = instantsearch({
             indexName: 'aesseal us',
             searchClient,
