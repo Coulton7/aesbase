@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.querySelectorAll('.news-slider').length > 0){
         var newsslider = tns({
             container: ".news-slider",
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#news-controls",
             gutter: 20,
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.querySelectorAll('.pillar-slider').length > 0){
         var pillarslider = tns({
             container: ".pillar-slider",
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#pillar-controls",
             gutter: 20,
