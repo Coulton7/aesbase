@@ -531,7 +531,6 @@ a.disabled {
   position: relative;
   bottom: -0.25em;
   margin-top: -7.9em;
-  z-index: 10;
   pointer-events: none;
 }
 
@@ -1508,7 +1507,6 @@ blockquote {
   background: #fafafa;
   position: absolute;
   bottom: 0;
-  z-index: 10;
   display: flex;
   justify-content: end;
   align-items: end;
