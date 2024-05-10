@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
     const renderSearchBox = (renderOptions, isFirstRender) => {
-        const { query, refine, isSearchStalled, widgetParams } = renderOptions;
+        const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
 
         if (isFirstRender) {
             const input =document.createElement('input');
