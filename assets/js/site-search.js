@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
             loadingIndicator.textContent = 'Loading...';
 
             const clearButton = document.createElement('button');
-            clearButton.textContent = 'X';
+            clearButton.classList.add('btn');
+            clearButton.classList.add('btn-primary')
+            clearButton.innerHTML = '<i class="fa-solid fa-delete-left"></i>';
 
             searchButton.addEventListener('click', event => {
                 refine(input.value);
