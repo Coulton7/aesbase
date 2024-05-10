@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.querySelectorAll('.local-slider').length > 0){
         var localslider = tns({
             container: ".local-slider",
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#local-controls",
             gutter: 20,
