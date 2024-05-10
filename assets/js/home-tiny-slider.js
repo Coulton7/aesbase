@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.querySelectorAll('.global-slider').length > 0){
         var globalslider = tns({
             container: ".global-slider",
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#global-controls",
             gutter: 20,
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var prod_slider = tns ({
             container: ".prod-slider",
             speed: 0,
-            loop: true,
+            loop: false,
             nav: false,
             controlsContainer: "#prod-controls",
             gutter: 20,
