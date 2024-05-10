@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
 
         if (isFirstRender) {
-            const input =document.createElement('input');
+            const input = document.createElement('input');
             input.classList.add('ais-SearchBox-input');
             input.classList.add('form-control');
 
