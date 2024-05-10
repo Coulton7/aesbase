@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
             })
 
             clearButton.addEventListener('click', () => {
-                clear(input);
+                clear();
             });
 
             widgetParams.container.appendChild(input);
