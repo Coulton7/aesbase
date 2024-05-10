@@ -63,9 +63,10 @@
     <div class="col-md-10 col-xs-11 col-11">
       {% block navbar %}
           {{ pattern('navbar', {
+          navbar_id: 'mobile-overlay',
           placement: 'fixed-top',
           toggler_position: 'end',
-          toggle_action: 'collapse',
+          toggle_action: 'overlay',
           navigation: page.navigation,
           navigation_collapsible: page.navigation_collapsible,
           attributes: create_attribute({
