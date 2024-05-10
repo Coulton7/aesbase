@@ -369,33 +369,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const search = instantsearch({
             indexName: 'aesseal',
             searchClient,
-            routing: {
-                router: instantsearch.routers.history(),
-                stateMapping: {
-                    stateToRoute(uiState) {
-                        const indexUiState = uiState['aesseal'] || {};
-
-                        return {
-                            qs: indexUiState.query,
-                            type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
-                            page: indexUiState.page,
-                        };
-                    },
-                    routeToState(routeState) {
-                        return {
-                            aesseal: {
-                                query: routeState.qs,
-                                refinementList: {
-                                    type: routeState.type,
-                                    lang: routeState.search_api_language
-                                },
-                                page: routeState.page,
-                            }
-                        }
-                    }
-                },
-            },
             typoTolerance: 'strict',
             searchFunction(helper) {
                 if (helper.state.query === '')
