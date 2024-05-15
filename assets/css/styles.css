@@ -14959,7 +14959,7 @@ ul.about-us-cats a {
   color: #fff;
 }
 
-.card-hover-grow {
+.card-hover-grow:hover {
   transform: scale(1.015);
 }
 
