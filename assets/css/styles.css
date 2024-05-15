@@ -15638,7 +15638,7 @@ ul.about-us-cats a {
   text-align: right;
 }
 
-.pillar-btns {
+.pillar-btns, .local-news-link {
   position: relative;
   bottom: 0.5rem;
   margin-right: 1rem;
