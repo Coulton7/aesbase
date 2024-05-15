@@ -13555,6 +13555,10 @@ a.icon-link:hover {
   background-color: #e5e5e7;
 }
 
+.btn-secondary:hover {
+  background-color: #cfcfd2;
+}
+
 .btn-lightgrey {
   background-color: #e5e5e7;
 }
@@ -14953,6 +14957,10 @@ ul.about-us-cats a {
 .overlay-link p {
   opacity: 1;
   color: #fff;
+}
+
+.card-hover-grow {
+  transform: scale(1.015);
 }
 
 .hover-grow {

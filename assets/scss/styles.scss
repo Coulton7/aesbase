@@ -829,6 +829,10 @@ a.icon-link:hover {
   background-color: $lightgrey;
 }
 
+.btn-secondary:hover {
+  background-color: #cfcfd2;
+}
+
 .btn-lightgrey {
   background-color: $lightgrey;
 }
@@ -2245,6 +2249,10 @@ ul.about-us-cats a {
 .overlay-link p {
   opacity: 1;
   color: $white;
+}
+
+.card-hover-grow {
+  transform: scale(1.015);
 }
 
 .hover-grow {
