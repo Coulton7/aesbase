@@ -12789,12 +12789,12 @@ svg:not(:root) {
   padding-top: 39px !important;
 }
 
-body.toolbar-tray-open {
-  padding-top: 79px !important;
-}
-
 body.toolbar-fixed {
   padding-top: 39px !important;
+}
+
+body.toolbar-tray-open {
+  padding-top: 79px !important;
 }
 
 .toolbar-tray-open .fixed-top,
