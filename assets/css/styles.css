@@ -15392,6 +15392,10 @@ ul.about-us-cats a {
   width: auto;
 }
 
+.hs-overlay-form ul {
+  list-style: none;
+}
+
 .views-exposed-form {
   display: inline-flex;
   width: 100%;
