@@ -15687,6 +15687,12 @@ ul.about-us-cats a {
   font-weight: 900;
 }
 
+.installation-btn:before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f7d9    ";
+  font-weight: 900;
+}
+
 .hide {
   display: none;
 }
