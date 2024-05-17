@@ -21,6 +21,7 @@ bootstrap:
     assets/js/banner-vid.js: {}
     assets/js/svg-map-click.js: {}
     assets/js/lazyload-background-img.js: {}
+    assets/js/img-enquiry-bg-block.js : {}
 
 form:
   css:
