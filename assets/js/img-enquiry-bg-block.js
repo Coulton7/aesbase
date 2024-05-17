@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function(){
     indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Water-and-Waste-Water.jpg"
   }
 
-  document.querySelector('.block-solutionsenquiry').style.backgroundImage =  "url(" + indImg + ")";
+  document.querySelector('.block-solutionsenquiry').style.backgroundImage =  "url('" + indImg + "')";
 });
