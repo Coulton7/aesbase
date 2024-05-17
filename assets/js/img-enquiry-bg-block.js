@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   document.querySelector('.block-solutionsenquiry').style.backgroundImage =  "url('" + indImg + "')";
+  console.log(indImg)
 });
