@@ -15721,6 +15721,10 @@ ul.about-us-cats a {
   animation: typing 7.5s steps(50, end), blink-caret 1.25s step-end 3.5;
 }
 
+.customer-typewriter p {
+  animation: typing 7.5s steps(50, end), blink-caret 1.25s step-end 3.5;
+}
+
 .custom-typewrite p {
   animation: typing 10s steps(50, end), blink-caret 1s step-end 7.5;
 }
