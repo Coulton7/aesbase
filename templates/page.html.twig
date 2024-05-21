@@ -95,39 +95,38 @@
   {% endif %}
 
   <div class="row no-padding g-0">
-    {% if page.preface %}
-	    {% block preface %}
-	      <div class="preface preface-flex-margin text-bg-primary py-3">
-          <div class="row py-10">
+	  <div class="preface preface-flex-margin text-bg-primary py-3">
+      <div class="row py-10">
+        {% if page.preface %}
+	        {% block preface %}
             <div class="col-xl-7 col-lg-7 col-md-7 offset-xl-2 offset-lg-2 offset-md-1 col-11 offset-1">
 	            {{ page.preface }}
             </div>
-            {% if page.banner_promo %}
-              {% block banner_promo %}
-                <div class ="col-xl-3 col-lg-3 col-md-4 d-sm-none d-md-block position-relative">
-                  {{ page.banner_promo }}
-                </div>
+            {% endblock %}
+        {% endif %}
+        {% if page.banner_promo %}
+          {% block banner_promo %}
+            <div class ="col-xl-3 col-lg-3 col-md-4 d-sm-none d-md-block position-relative">
+              {{ page.banner_promo }}
+            </div>
+          {% endblock %}
+        {% endif %}
+        <div class="row wavelower no-padding g-0">
+          <div class="col-lg-9 col-md-8 col-0 g-0 no-padding">
+            <div class="bottom-gap">
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 g-0 d-sm-none d-md-block position-relative">
+            {% if page.wavelower %}
+              {% block wavelower %}
+                {{ page.wavelower }}
               {% endblock %}
             {% endif %}
           </div>
-	      </div>
-	    {% endblock %}
-    {% endif %}
-
-    <div class="row wavelower no-padding g-0">
-      <div class="col-lg-9 col-md-8 col-0 g-0 no-padding">
-        <div class="bottom-gap">
         </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 g-0 d-sm-none d-md-block position-relative">
-        {% if page.wavelower %}
-          {% block wavelower %}
-            {{ page.wavelower }}
-          {% endblock %}
-        {% endif %}
-      </div>
-    </div>
   </div>
+</div>
 
   <div class="row no-padding">
     {% if page.preafce_lower %}
