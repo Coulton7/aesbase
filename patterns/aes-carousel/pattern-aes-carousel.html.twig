@@ -15,46 +15,51 @@
 {% endif %}
 {% set attributes = attributes.setAttribute('data-bs-interval', interval) %}
 {% set attributes = attributes.setAttribute('data-bs-ride', data_bs_ride) %}
-{% set carousel_id = carousel_id|default("carousel-" ~ random()) %}
 
-<div class="aescarousel">
-    <div{{ attributes.addClass('carousel').addClass('slide').setAttribute('id', carousel_id) }}>
-    {% if with_indicators %}
-    <div class="carousel-indicators">
-        {% for slide in slides %}
-        <button type="button"
-                data-bs-target="#{{ carousel_id }}"
-                data-bs-slide-to="{{ loop.index0 }}"
-                aria-label="{{ 'Slide @slide_number'|t({'@slide_number': loop.index}) }}"
-        {% if loop.first %}
-        class="active"
-        aria-current="true"
-        {% endif %}>
-        </button>
-        {% endfor %}
-    </div>
-    {% endif %}
+<div{{ attributes.addClass('carousel').addClass('slide').setAttribute('id', carousel_id) }}>
 
-    <div class="carousel-inner">
-        {% for slide in slides %}
-        {% if loop.first %}
-            {{ slide|add_class('carousel-item', 'active') }}
-        {% else %}
-            {{ slide|add_class('carousel-item') }}
-        {% endif %}
-        {% endfor %}
-    </div>
+  {% if with_indicators %}
+  <div class="carousel-indicators">
+    {% for slide in slides %}
+    <button type="button"
+            data-bs-target="#{{ carousel_id }}"
+            data-bs-slide-to="{{ loop.index0 }}"
+            aria-label="{{ 'Slide @slide_number'|t({'@slide_number': loop.index}) }}"
+      {% if loop.first %}
+      class="active"
+      aria-current="true"
+      {% endif %}>
+    </button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="carousel-inner">
+    {% for slide in slides %}
+      {% if loop.first and slide is iterable %}
+        {#
+        There is currently no recursive merge in Twig or Drupal core Twig.
+        So it may breaks if the slide already have #attributes.
+        #}
+        {% set slide = slide|merge({'#attributes': {'class': ['carousel-item', 'active']}}) %}
+      {% elseif slide is iterable %}
+        {% set slide = slide|merge({'#attributes': {'class': ['carousel-item']}}) %}
+      {% endif %}
+
+      {{ slide }}
+    {% endfor %}
+  </div>
 
 
     {% if with_controls %}
-    <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">{{ 'Previous'|t }}</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">{{ 'Next'|t }}</span>
-    </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">{{ 'Previous'|t }}</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">{{ 'Next'|t }}</span>
+        </button>
     {% endif %}
 
     </div>
