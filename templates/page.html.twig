@@ -113,20 +113,19 @@
 	      </div>
 	    {% endblock %}
     {% endif %}
-  </div>
 
-  <div class="row wavelower no-padding g-0">
-    <div class="col-lg-9 col-md-8 col-0 g-0 no-padding">
-      <div class="bottom-gap">
+    <div class="row wavelower no-padding g-0">
+      <div class="col-lg-9 col-md-8 col-0 g-0 no-padding">
+        <div class="bottom-gap">
+        </div>
       </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-12 g-0 no-padding position-relative">
-      <img class="curve-down" src="/themes/contrib/aesbase/assets/images/graphics/wave-lower.svg">
-      {% if page.wavelower %}
-	      {% block wavelower %}
-		      {{ page.wavelower }}
-	      {% endblock %}
-      {% endif %}
+      <div class="col-xl-3 col-lg-3 col-md-4 g-0 d-sm-none d-md-block position-relative">
+        {% if page.wavelower %}
+          {% block wavelower %}
+            {{ page.wavelower }}
+          {% endblock %}
+        {% endif %}
+      </div>
     </div>
   </div>
 
