@@ -1,0 +1,36 @@
+thumbnav-slider:
+  label: Tinyslider Thumbnail Nav
+  description: Tinylsider with one large Image and a thumbnail stle navigation 1 PER PAGE ONLY
+  category: Tinyslider
+
+  fields:
+    slides:
+      type: render
+      label: Slides
+      description: Each Slide for the TinySlider
+      preview:
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields: 
+              image:
+                theme: "image"
+                uri: "data:image/svg+xml;base64,PHN2ZyBzdHlsZT0iZm9udC1zaXplOiAzLjVyZW07IHRleHQtYW5jaG9yOiBtaWRkbGU7IHVzZXItc2VsZWN0OiBub25lIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQbGFjZWhvbGRlcjogRmlyc3Qgc2xpZGUiPjx0aXRsZT5QbGFjZWhvbGRlcjwvdGl0bGU+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNTU1IiBkeT0iLjNlbSI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+Cg=="
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields: 
+              image:
+                theme: "image"
+                uri: "data:image/svg+xml;base64,PHN2ZyBzdHlsZT0iZm9udC1zaXplOiAzLjVyZW07IHRleHQtYW5jaG9yOiBtaWRkbGU7IHVzZXItc2VsZWN0OiBub25lIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQbGFjZWhvbGRlcjogRmlyc3Qgc2xpZGUiPjx0aXRsZT5QbGFjZWhvbGRlcjwvdGl0bGU+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNTU1IiBkeT0iLjNlbSI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+Cg=="
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields:         
+              image:
+                theme: "image"
+                uri: "data:image/svg+xml;base64,PHN2ZyBzdHlsZT0iZm9udC1zaXplOiAzLjVyZW07IHRleHQtYW5jaG9yOiBtaWRkbGU7IHVzZXItc2VsZWN0OiBub25lIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQbGFjZWhvbGRlcjogRmlyc3Qgc2xpZGUiPjx0aXRsZT5QbGFjZWhvbGRlcjwvdGl0bGU+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNTU1IiBkeT0iLjNlbSI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+Cg=="                
+
+  
+  libraries:
+    -
+      thumbnav-tinyslider:
+        js:
+          js/ithumbnav-tinyslider.js: {}

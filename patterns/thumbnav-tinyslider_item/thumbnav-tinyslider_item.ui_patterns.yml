@@ -1,0 +1,12 @@
+thumbnav-tinyslider_item:
+  label: (Thumbnav TinySlider Item)
+  description: Internal to be used inside of Thumbnail Nav Tinylsider
+  category: tinyslider
+
+  fields:
+    image:
+    label: "Image"
+      description: "The image of the item."
+      preview:
+        theme: "image"
+        uri: "data:image/svg+xml;base64,PHN2ZyBzdHlsZT0iZm9udC1zaXplOiAzLjVyZW07IHRleHQtYW5jaG9yOiBtaWRkbGU7IHVzZXItc2VsZWN0OiBub25lIiB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI2NDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiIGZvY3VzYWJsZT0iZmFsc2UiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iUGxhY2Vob2xkZXI6IEZpcnN0IHNsaWRlIj48dGl0bGU+UGxhY2Vob2xkZXI8L3RpdGxlPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM3NzciPjwvcmVjdD48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzU1NSIgZHk9Ii4zZW0iPkZpcnN0IHNsaWRlPC90ZXh0Pjwvc3ZnPgo="
