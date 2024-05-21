@@ -1,0 +1,11 @@
+thumbnav-tinyslider_item:
+  label: (Thumbnav TinySlider Item)
+  description: Internal to be used inside of Thumbnail Nav Tinylsider
+  category: Tinyslider
+
+  fields:
+    image:
+      type: text
+      label: Image
+      description: The Slide Image
+      value: http://via.placeholder.com/350x350
