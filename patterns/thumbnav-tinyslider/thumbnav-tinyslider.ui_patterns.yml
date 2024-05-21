@@ -1,0 +1,38 @@
+thumbnav-slider:
+  label: Tinyslider Thumbnail Nav
+  description: Tinylsider with one large Image and a thumbnail stle navigation 1 PER PAGE ONLY
+  category: Tinyslider
+
+  fields:
+    slides:
+      type: render
+      label: Slides
+      description: Each Slide for the TinySlider
+      preview:
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields: 
+              image:
+                type: text
+                label: Image
+                preview: http://via.placeholder.com/350x350
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields: 
+              image:
+                type: text
+                label: Image
+                preview: http://via.placeholder.com/350x350
+      - type: pattern
+          id: thumbnav-tinyslider_item
+            fields: 
+              image:
+                type: text
+                label: Image
+                preview: http://via.placeholder.com/350x350
+  
+  libraries:
+    -
+      thumbnav-tinyslider:
+        js:
+          js/ithumbnav-tinyslider.js: {}
