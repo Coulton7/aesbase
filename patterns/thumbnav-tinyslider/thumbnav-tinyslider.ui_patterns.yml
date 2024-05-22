@@ -20,4 +20,4 @@ thumbnav-slider:
     -
       thumbnav-tinyslider:
         js:
-          js/ithumbnav-tinyslider.js: {}
+          js/thumbnav-tinyslider.js: {}
