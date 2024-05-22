@@ -15,20 +15,6 @@ thumbnav-slider:
           image:
             theme: "image"
             uri: "http://via.placeholder.com/350x350"
-            
-        type: "pattern"
-        id: "thumbnav-tinyslider_item"
-        fields: 
-          image:
-            theme: "image"
-            uri: "http://via.placeholder.com/350x350"
-
-        type: "pattern"
-        id: "thumbnav-tinyslider_item"
-        fields: 
-          image:
-            theme: "image"
-            uri: "http://via.placeholder.com/350x350"
 
   libraries:
     -
