@@ -14639,7 +14639,7 @@ ul.about-us-cats {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   inset: 0;
   overflow-y: scroll;
   transition: 0.5s;
