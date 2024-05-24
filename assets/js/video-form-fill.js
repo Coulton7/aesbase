@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#block-block-166').style.display = "none";
-    document.querySelector('.field-thumbnail').style.display = "none";
+    document.querySelector('.submit-notice').style.display = "none";
+    document.querySelector('.video-thumbnail').style.display = "none";
   
-    if (document.querySelector('.field-hubspot-form').length > 0) {
-      document.querySelector('.field-api-stream').style.display = "none";
-      document.querySelector('.field-thumbnail').style.display = "block";
+    if (document.querySelector('.resource-request').length > 0) {
+      document.querySelector('.video-stream').style.display = "none";
+      document.querySelector('.video-thumbnail').style.display = "block";
     }
   
     function getUrlVars()
@@ -22,11 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     var submitString = getUrlVars()["fs"];
     if(submitString=='y'){
-      document.querySelector('.oembed').style.display = "block";
-      document.querySelector('.field-thumbnail').style.display = "none";
-      document.querySelector('.field-hubspot-form').style.display = "none";
-      document.querySelector('#block-sharethis-sharethis-block').style.display = "none";
-      docuemnt.querySelector('.field-label').style.display = "none";
-      document.querySelector('#block-block-166').style.display = "block";
+      document.querySelector('.video-thumbnail').style.display = "none";
+      document.querySelector('.resource-request').style.display = "none";
+      document.querySelector('.submit-notice').style.display = "block";
     }
   });
