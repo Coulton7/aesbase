@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (document.querySelectorAll('.thrid-slider').length > 0){
-        var second_slider = tns ({
+        var third_slider = tns ({
             container: ".third-slider",
             speed: 0,
             loop: false,
