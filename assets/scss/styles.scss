@@ -1411,6 +1411,77 @@ blockquote {
   visibility: hidden;
 }
 
+.promo-image img{
+  right: 0;
+  justify-content: end;
+  float: right;
+  max-width: 100%;
+}
+
+.promo-btn {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 1; 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgb(248,249,250,0.8);
+}
+
+.promo-btn:hover {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.promo-btn-success {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 1; 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgb(3,148,62,0.8);
+}
+
+.promo-btn-success:hover {
+  background-color: #198754;
+  color: black;
+}
+
+.promo-btn-danger {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 1; 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(295,9,43,0.8);
+}
+
+.promo-btn-danger:hover {
+  background-color: #dd1e25;
+  color: black;
+}
+
+.promo-btn-primary {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 1; 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(0,42,90,0.8);
+}
+
+.promo-btn-primary:hover {
+  background-color: #002a5a ;
+  color: black;
+}
+
+.promo-text {
+  margin-bottom: -1.5em;
+}
+
 .z-index {
   z-index: 2;
 }
