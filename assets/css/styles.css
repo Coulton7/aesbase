@@ -13548,14 +13548,14 @@ a.icon-link:hover {
 }
 
 .shadow-container .next i {
-  left: 18%;
+  /*left: 18%;*/
   position: relative;
   top: 8%;
 }
 
 .shadow-container .prev i {
   position: relative;
-  right: -28%;
+  /*right: -28%;*/
   top: 8%;
 }
 
@@ -16181,6 +16181,7 @@ ul.about-us-cats a {
     height: 3em;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border: 1px solid #e5e5e7;
+    text-align: center;
   }
   .ind-carousel-caption {
     top: 0;
