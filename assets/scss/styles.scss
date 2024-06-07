@@ -1041,6 +1041,7 @@ blockquote.transparent-50:after {
 }
 
 .tomwetlands-background.lazy-back,
+.chris-background.lazy-back,
 .background-36.lazy-back,
 .background-35.lazy-back,
 .background-34.lazy-back,
@@ -1061,6 +1062,15 @@ blockquote.transparent-50:after {
 .virtual-tour-banner.lazy-back {
   background-image: none;
   background-color: #efefef;
+}
+
+.chris-background {
+  background-image: url(https://static.aesseal.com/photo/service/CHRIS_REA_WORKSHOP_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 750px;
+  background-position: right top;
 }
 
 .tomwetlands-background {
