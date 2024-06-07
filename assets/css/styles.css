@@ -13795,7 +13795,7 @@ blockquote.transparent-50:after {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 750px;
+  height: 100%;
   background-position: right top;
 }
 
