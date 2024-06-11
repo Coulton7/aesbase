@@ -15907,6 +15907,10 @@ ul.about-us-cats a {
   padding: 1em;
 }
 
+.blue-tabs .dropdown-toggle {
+  color: #fff;
+}
+
 .blue-tabs .dropdown-menu.show {
   padding: 0;
 }
