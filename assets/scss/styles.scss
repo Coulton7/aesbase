@@ -3209,10 +3209,14 @@ ul.about-us-cats a {
 
 .blue-tabs li .dropdown-item {
   background: $primary;
-  color: #ffffff;
+  color: $white;
   border: 2px solid #5B82AD;
   border-bottom: 2px solid $primary;
   padding: 1em;
+}
+
+.blue-tabs li .dropdown-item {
+  background-color: $lightblue;
 }
 
 @keyframes fade {

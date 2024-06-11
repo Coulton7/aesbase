@@ -15913,10 +15913,14 @@ ul.about-us-cats a {
 
 .blue-tabs li .dropdown-item {
   background: #002a5a;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #5B82AD;
   border-bottom: 2px solid #002a5a;
   padding: 1em;
+}
+
+.blue-tabs li .dropdown-item {
+  background-color: #004a8c;
 }
 
 @keyframes fade {
