@@ -3193,6 +3193,18 @@ ul.about-us-cats a {
   display: none;
 }
 
+.blue-tabs {
+  border-bottom: none;
+}
+
+.blue-tabs li {
+  background-color: $primary;
+  color: $white;
+  padding: 1em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
