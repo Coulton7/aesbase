@@ -3223,6 +3223,14 @@ ul.about-us-cats a {
   background-color: $lightblue;
 }
 
+.block-productenquiry {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  position: relative;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
