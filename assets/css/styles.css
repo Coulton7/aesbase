@@ -15901,7 +15901,7 @@ ul.about-us-cats a {
   border-bottom: none;
 }
 
-.blue-tabs li {
+.blue-tabs .dropdown {
   background-color: #002a5a;
   color: #fff;
   padding: 1em;
