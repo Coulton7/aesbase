@@ -3411,6 +3411,13 @@ ul.about-us-cats a {
     width: 100%;
   }
 
+  .virtual-tour-banner {
+    background-image: url("https://static.aesseal.com/graphics/360tour-sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   #gas-seal::after { 
     content: "";   
     background-image: url('https://static.aesseal.com/graphics/gascompressorseal_backcut-sm.png');
