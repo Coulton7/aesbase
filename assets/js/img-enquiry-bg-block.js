@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+  if(document.querySelectorAll('.block-productenquiry').length > 0) {
+    var prodImg = document.querySelector('.tiny-slider div:nth-child(1) img').getAttribute('src');
+
+    document.querySelector('.block-productenquiry').style.backgroundImage = "url('" + prodImg + "')"
+  }
+
   if(document.querySelectorAll('.block-solutionsenquiry').length > 0) {
     var indImg;
 
