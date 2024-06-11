@@ -3231,6 +3231,11 @@ ul.about-us-cats a {
   position: relative;
 }
 
+.blur-backdrop {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
