@@ -29,11 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';
 
-            const clearButton = document.createElement('button');
-            clearButton.classList.add('btn');
-            clearButton.classList.add('btn-primary')
-            clearButton.innerHTML = '<i class="fa-solid fa-delete-left"></i>';
-
             searchButton.addEventListener('click', event => {
                 refine(input.value);
             });
@@ -44,15 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             })
 
-            clearButton.addEventListener('click', () => {
-                clear();
-                clear(input);
-            });
-
             widgetParams.container.appendChild(input);
             widgetParams.container.appendChild(searchButton);
             widgetParams.container.appendChild(loadingIndicator);
-            widgetParams.container.appendChild(clearButton);
         }
 
         widgetParams.container.querySelector('input').value = query;
