@@ -3429,7 +3429,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: 65%;
+    background-position: top;
     padding-top: 3em;
   }
 
@@ -3735,7 +3735,7 @@ ul.about-us-cats a {
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: bottom right;
+    background-position: top;
     animation: none;
     padding-top: 3em;
   }
@@ -3901,7 +3901,7 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: center;
+    background-position: top;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
