@@ -15960,6 +15960,16 @@ ul.about-us-cats a {
   vertical-align: middle;
 }
 
+.global-warming-form {
+  background-color: #888C8F;
+  color: #fff;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/aesweb/hostinggrabs/AES-climate-world.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  padding: 1.5em;
+}
+
 .blur-backdrop {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);

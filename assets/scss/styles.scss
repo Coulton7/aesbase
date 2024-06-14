@@ -2971,7 +2971,6 @@ ul.about-us-cats a {
   align-items: center;
 }
 
-
 .secondary-iceberg-white {
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
@@ -3254,6 +3253,16 @@ ul.about-us-cats a {
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
+}
+
+.global-warming-form {
+  background-color: $darkgrey;
+  color: $white;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/aesweb/hostinggrabs/AES-climate-world.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  padding: 1.5em;
 }
 
 .blur-backdrop {
