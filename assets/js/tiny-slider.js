@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
 
-    if (document.querySelectorAll('.thrid-slider').length > 0){
+    if (document.querySelectorAll('.third-slider').length > 0){
         var third_slider = tns ({
             container: ".third-slider",
             speed: 0,
