@@ -530,8 +530,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="btn btn-primary align-self-end" href="${data.url}">Read More</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
-                    <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                    `,
+                    <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>`,
                 },
                 transformItems(items){
                     return items.map(item => ({
