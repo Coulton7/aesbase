@@ -16335,6 +16335,17 @@ ul.about-us-cats a {
   .footer-curve {
     margin-top: -6.5em;
   }
+  .path-frontpage .scroll-nav {
+    transform: translateY(23%);
+  }
+  .path-frontpage .scrolled-down {
+    transform: translateY(-210%);
+    transition: all 0.3s ease-in-out;
+  }
+  .path-frontpage .scrolled-up {
+    transform: translateY(23%);
+    transition: all 0.3s ease-in-out;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .preface-flex-margin {
@@ -16505,6 +16516,17 @@ ul.about-us-cats a {
   }
   .navbar-nav .nav-item:last-child {
     display: block;
+  }
+  .path-frontpage .scroll-nav {
+    transform: translateY(105%);
+  }
+  .path-frontpage .scrolled-down {
+    transform: translateY(-210%);
+    transition: all 0.3s ease-in-out;
+  }
+  .path-frontpage .scrolled-up {
+    transform: translateY(102%);
+    transition: all 0.3s ease-in-out;
   }
 }
 /* md */
@@ -16695,7 +16717,8 @@ ul.about-us-cats a {
     display: none;
   }
   .carousel-caption {
-    top: 10vh;
+    top: -10vh;
+    margin-left: 2vh;
   }
   .icons-col-placement {
     position: relative;
