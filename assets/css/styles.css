@@ -16113,7 +16113,7 @@ ul.about-us-cats a {
     width: 100%;
     bottom: inherit;
   }
-  .navbar-nav .nav-item:last-child {
+  .main-menu .nav-item:last-child {
     display: block;
   }
   .home-slider-height {
@@ -16518,7 +16518,7 @@ ul.about-us-cats a {
   .footer-curve {
     margin-top: -6.5em;
   }
-  .navbar-nav .nav-item:last-child {
+  .main-menu .nav-item:last-child {
     display: block;
   }
   .path-frontpage .scroll-nav {
@@ -16544,7 +16544,7 @@ ul.about-us-cats a {
   .menu--main.navbar-nav {
     width: 100%;
   }
-  .navbar-nav .nav-item:last-child {
+  .main-menu .nav-item:last-child {
     display: none;
   }
   .bg-white .navbar-collapse {
