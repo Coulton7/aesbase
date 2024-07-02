@@ -3694,6 +3694,11 @@ ul.about-us-cats a {
     transform: translateY(23%);
     transition: all 0.3s ease-in-out;
   }
+
+  .sub-menu{
+    opacity: 85%;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
