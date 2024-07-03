@@ -23,6 +23,7 @@ bootstrap:
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/pdfmake.min.js: { minified: true }
+    assets/js/vfs_fonts.js: {}
     assets/js/pdf-creator.js: {}
     assets/js/pdf-button-hider.js: {}
 
@@ -40,5 +41,6 @@ front-library:
 pdf-make:
   js:
     assets/js/pdfmake.min.js: { minified: true }
+    assets/js/vfs_fonts.js: {}
     assets/js/pdf-creator.js: {}
     assets/js/pdf-button-hider.js: {}
