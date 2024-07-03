@@ -3275,6 +3275,10 @@ ul.about-us-cats a {
   padding: 1.5em;
 }
 
+.download-pdf, .save-pdf {
+  display: none;
+}
+
 .blur-backdrop {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
