@@ -15928,7 +15928,7 @@ ul.about-us-cats a {
   background-color: #004a8c;
 }
 
-.block-productenquiry::before, .block-labtectaenquiry {
+.block-productenquiry::before, .block-labtectaenquiry::before {
   content: " ";
   height: 100%;
   position: absolute;

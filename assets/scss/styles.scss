@@ -3223,7 +3223,7 @@ ul.about-us-cats a {
   background-color: $lightblue;
 }
 
-.block-productenquiry::before, .block-labtectaenquiry {
+.block-productenquiry::before, .block-labtectaenquiry::before {
   content: " ";
   height: 100%;
   position: absolute;
