@@ -3223,7 +3223,7 @@ ul.about-us-cats a {
   background-color: $lightblue;
 }
 
-.block-productenquiry::before {
+.block-productenquiry::before, .block-labtectaenquiry {
   content: " ";
   height: 100%;
   position: absolute;
@@ -3243,6 +3243,15 @@ ul.about-us-cats a {
   background-size: 60%;
   background-position: left;
   position: relative;
+}
+
+.block-labtectaenquiry {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  position: relative;
+  background-image: url(https://static.aesseal.com/content-image/bearing_protection/LabTecta-BV2.jpg);
 }
 
 .product-enquiry-icon {
