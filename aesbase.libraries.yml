@@ -22,7 +22,9 @@ bootstrap:
     assets/js/svg-map-click.js: {}
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
-    
+    assets/js/pdfmake.min.js: { minified: true }
+    assets/js/pdf-creator.js: {}
+    assets/js/pdf-button-hider.js: {}
 
 form:
   css:
