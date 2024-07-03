@@ -9,3 +9,15 @@ function aesbase_preprocess(&$variables, $hook){
   $variables['second_logo'] = theme_get_setting('secondary_logo_path');
   $variables['secondary_logo'] = theme_get_setting('secondary_logo');
 }
+
+function aesbase_page_attachments_alter(&$page){
+  $path = \Drupal::service('path.current')->getPath();
+
+  if(strpos($path, '/node/') === 0){
+    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+  }
+
+  if($alias == '/resources/industry-guides/policy-prevent-global-warming/'){
+    $page['#attached']['library'][] = 'aesbase/pdf-make';
+  }
+}

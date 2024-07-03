@@ -33,3 +33,9 @@ front-library:
     assets/js/home-tiny-slider.js: {}
     assets/js/home-tinyslider-reveal.js: {}
     assets/js/fade-scroll.js: {}
+
+pdf-make:
+  js:
+    assets/js/pdfmake.min.js: { minified: true }
+    assets/js/pdf-creator.js: {}
+    assets/js/pdf-button-hider.js: {}
