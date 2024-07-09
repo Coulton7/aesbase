@@ -355,6 +355,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
     if(!!globeSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
         const search = instantsearch({
             indexName: 'aesseal',
             searchClient,
@@ -365,6 +369,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     return;
                 }
                 helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
             }
         });
 
@@ -527,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             attribute: "body",
                             hit: data
                         })}</p>
-                        <a class="btn btn-primary align-self-end" href="${data.url}">Read More</a>
+                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>`,
