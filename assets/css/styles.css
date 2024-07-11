@@ -16689,6 +16689,10 @@ ul.about-us-cats a {
   .global-res-slider li.prev {
     right: 1em;
   }
+  .video-overlay {
+    top: 60%;
+    height: 45%;
+  }
 }
 @media (max-width: 1430px) {
   .nav-slide .item {
@@ -16708,6 +16712,16 @@ ul.about-us-cats a {
   }
   .global-res-slider li.prev {
     right: 5rem;
+  }
+  .video-overlay {
+    top: 60%;
+    height: 45%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .video-overlay {
+    top: 56%;
+    height: 45%;
   }
 }
 @media screen and (max-width: 867px) {
