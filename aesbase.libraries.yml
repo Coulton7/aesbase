@@ -42,6 +42,6 @@ pdf-make:
     assets/js/pdf-creator.js: {}
     assets/js/pdf-button-hider.js: {}
 
-labtecta-cal:
+labtecta-calc:
   js:
     assets/js/labtecta-calc: {}
