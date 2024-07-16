@@ -27,10 +27,7 @@ function getPumpId() {
     document.getElementById('calculate').addEventListener("click", function() {
       calculate();
     });
-  
-    document.getElementById('mobcalculate').addEventListener("touchstart", function() {
-      calculate();
-    });
+
   });
   
   window.addEventListener('resize', function(){
