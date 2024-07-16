@@ -38,6 +38,7 @@ function aesbase_page_attachements_alter(array &$attachments)
   $path = $current_path =  \Drupal::service('path.current')->getPath();
 
   if($path == '/resources/industry-guides/policy-prevent-global-warming') {
+    console.log($path);
     $page['#attached']['library'][] = 'aesbase/pdf-make';
   }
 }
