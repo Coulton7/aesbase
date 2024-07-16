@@ -44,4 +44,4 @@ pdf-make:
 
 labtecta-calc:
   js:
-    assets/js/labtecta-calc: {}
+    assets/js/labtecta-calc.js: {}
