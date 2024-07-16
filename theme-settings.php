@@ -32,3 +32,12 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   );
 
 }
+
+function aesbase_page_attachements_alter(array &$attachments)
+{
+  $route_uri = \Drupal::request()->getRequestUri();
+
+  if(str_starts_with($route_uri, '/policy-prevent-global-warming/')) {
+    $attachments['#attached']['library'][] = 'aesbase/pdf-make';
+  }
+}
