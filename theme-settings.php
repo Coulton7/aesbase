@@ -35,9 +35,9 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
 
 function aesbase_page_attachements_alter(array &$attachments)
 {
-  $route_uri = \Drupal::request()->getRequestUri();
+  $path = $current_path =  \Drupal::service('path.current')->getPath();
 
-  if(str_starts_with($route_uri, '/industry-guides/policy-prevent-global-warming/')) {
-    $attachments['#attached']['library'][] = 'aesbase/pdf-make';
+  if($path == '/industry-guides/policy-prevent-global-warming/') {
+    $page['#attached']['library'][] = 'aesbase/pdf-make';
   }
 }
