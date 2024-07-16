@@ -41,3 +41,7 @@ pdf-make:
     assets/js/vfs_fonts.js: {}
     assets/js/pdf-creator.js: {}
     assets/js/pdf-button-hider.js: {}
+
+labtecta-cal:
+  js:
+    assets/js/labtecta-calc: {}

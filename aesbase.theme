@@ -22,5 +22,9 @@ function aesbase_page_attachments_alter(&$page)
       $page['#attached']['library'][] = 'aesbase/pdf-make';
     }
 
+    if($alias == '/labtecta') {
+      $page['#attached']['library'][] = 'aesbase/labtecta-calc';
+    }
+
   }
 }
