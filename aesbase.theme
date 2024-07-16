@@ -10,7 +10,7 @@ function aesbase_preprocess(&$variables, $hook){
   $variables['secondary_logo'] = theme_get_setting('secondary_logo');
 }
 
-function aesbase_page_attachements_alter(array &$attachments)
+function aesbase_page_attachements_alter(&$page)
 {
   $path = \Drupal::service('path.current')->getPath();
 
