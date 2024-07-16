@@ -36,6 +36,7 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
 function aesbase_page_attachements_alter(array &$attachments)
 {
   $path = $current_path =  \Drupal::service('path.current')->getPath();
+  console.log($path);
 
   if($path == '/resources/industry-guides/policy-prevent-global-warming') {
     console.log($path);
