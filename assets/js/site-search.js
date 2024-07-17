@@ -312,15 +312,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 'componentseals': 'Component Seals Category',
             }
         } else if(filterLang=="") {
-                vidMapping = {
-                    'industry': 'Industry',
-                    'glandpacking': 'Gland Packing Category',
-                    'sealsupportsystems': 'Seal Support Systems Category',
-                    'bearingprotectioncategories': 'Bearing Protection Category',
-                    'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
-                    'gasseals': 'Gas Seals Category',
-                    'componentseals': 'Component Seals Category',
-                }
+            vidMapping = {
+                'industry': 'Industry',
+                'glandpacking': 'Gland Packing Category',
+                'sealsupportsystems': 'Seal Support Systems Category',
+                'bearingprotectioncategories': 'Bearing Protection Category',
+                'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
+                'gasseals': 'Gas Seals Category',
+                'componentseals': 'Component Seals Category',
+            }
         } else if (filterLang == "es") {
             vidMapping = {
                 'industry': 'Industria',
