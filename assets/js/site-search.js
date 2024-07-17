@@ -450,6 +450,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 {
                     options.helper.toggleRefinement('search_api_language', 'en');
                 }
+                else if(filterLang == "")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'en');
+                }
                 else if(filterLang == "es")
                 {
                     options.helper.toggleRefinement('search_api_language', 'es');
