@@ -79,6 +79,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 'video': 'Video',
                 'whitepaper': 'Whitepaper',
             }
+        } else if (filterLang =="") {
+            typeMapping = {
+                '3dmodels': '3D Models',
+                'academy': 'Academy',
+                'apiplans': 'API Plans',
+                'article': 'Article',
+                'bearingprotection': 'Bearing Protection',
+                'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
+                'casestudies': 'Case Studies',
+                'componentseals': 'Component Seals',
+                'corpbrochure': 'Corporate Brochure',
+                'elastomers': 'Elastomers',
+                'gasseals': 'Gas Seals',
+                'glandpacking': 'Gland Packing',
+                'industryguides': 'Industry Guides',
+                'locations': 'Locations',
+                'page': 'Web Page',
+                'policies': 'Policies',
+                'productbrochure': 'Product Brochure',
+                'productcertificates': 'Product Certificates',
+                'sealsupportsystems': 'Seal Support Systems',
+                'video': 'Video',
+                'whitepaper': 'Whitepaper',
+            }
         } else if (filterLang == "es") {
             typeMapping = {
                 '3dmodels': 'Modelos 3D',
@@ -287,6 +311,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 'gasseals': 'Gas Seals Category',
                 'componentseals': 'Component Seals Category',
             }
+        } else if(filterLang=="") {
+                vidMapping = {
+                    'industry': 'Industry',
+                    'glandpacking': 'Gland Packing Category',
+                    'sealsupportsystems': 'Seal Support Systems Category',
+                    'bearingprotectioncategories': 'Bearing Protection Category',
+                    'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
+                    'gasseals': 'Gas Seals Category',
+                    'componentseals': 'Component Seals Category',
+                }
         } else if (filterLang == "es") {
             vidMapping = {
                 'industry': 'Industria',
