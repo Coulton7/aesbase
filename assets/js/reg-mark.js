@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         doReplacements(element, element.parentElement);
       }
     }
-    var html = document.getElementsByTagName('body')[0];
+    var html = document.getElementsByTagName('html')[0];
     recurse(html);
     function doReplacements(element, parent) {
       var html = element.data;
