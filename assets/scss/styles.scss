@@ -3279,6 +3279,10 @@ ul.about-us-cats a {
   -webkit-backdrop-filter: blur(3px);
 }
 
+.model-table:hover > * {
+  box-shadow: none;
+}
+
 .parallax-container {
   display: flex;
   min-height: 80vh;
