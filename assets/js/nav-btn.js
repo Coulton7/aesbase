@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("body").classList.remove("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
         document.querySelector("#overlay-search").classList.add("search-btn");
+        document.querySelector(".scroll-nav").classList.remove("shadow-back");
       } else {
         y.style.height = "100%";
         y.style.bottom = "0";
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("body").classList.add("noscroll");
         document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
         document.querySelector("#overlay-search").classList.remove("search-btn");
+        document.querySelector(".scroll-nav").classList.add("shadow-back");
       }
     });
 
