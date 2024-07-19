@@ -16030,8 +16030,7 @@ ul.about-us-cats a {
 }
 
 .controls .next[aria-disabled=false],
-.controls .prev[aria-disabled=false],
-.tns-controls button[disabled] {
+.controls .prev[aria-disabled=false] {
   display: block;
 }
 
