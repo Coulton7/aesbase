@@ -3321,15 +3321,13 @@ ul.about-us-cats a {
 
 .controls .next[aria-disabled=true],
 .controls .prev[aria-disabled=true],
-.tns-controls .next[aria-disabled=true],
-.tns-controls .prev[aria-disabled=true]{
+.tns-controls button[disabled] {
   display: none;
 }
 
 .controls .next[aria-disabled=false],
 .controls .prev[aria-disabled=false],
-.tns-controls .next[aria-disabled=false],
-.tns-controls .prev[aria-disabled=false]{
+.tns-controls button[disabled]{
   display: block;
 }
 
