@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     // Correct query selector for nav links
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
+    var overlayLink = document.querySelector('.overlay-btn');
 
     // Ensure carousel element exists before adding event listener
     var carousel = document.querySelector('.carousel');
@@ -15,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 navLinks.forEach(function (navLink) {
                     navLink.style.color = 'white';
                 });
+
+                overlayLink.style.color="white";
+
             } else {
                 // Reset the font color of the nav links to default or another color
                 navLinks.forEach(function (navLink) {
