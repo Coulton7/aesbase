@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var x = document.getElementById("overlayNav");
   var y = document.getElementById("searchOverlay");
   var s = document.getElementById("shareOverlay");
+  var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
 
   document.querySelector("#overlay-btn").addEventListener("click", function navBtn() {
     document.getElementById("overlay-btn").classList.toggle("change");
@@ -44,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#overlay-search").classList.add("search-btn");
         document.querySelector(".scroll-nav").classList.remove("shadow-back");
         document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
-        document.querySelectorAll('.navbar-nav a.nav-link').classList.remove("normText");
+        navLinks.forEach(function (navLink) {
+          navLink.classList.remove('normText');
+        });
       } else {
         y.style.height = "100%";
         y.style.bottom = "0";
@@ -65,7 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#overlay-search").classList.remove("search-btn");
         document.querySelector(".scroll-nav").classList.add("shadow-back");
         document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
-        document.querySelectorAll('.navbar-nav a.nav-link').classList.add("normText");
+        navLinks.forEach(function (navLink) {
+          navLink.classList.add('normText');
+        });
       }
     });
 
