@@ -16028,6 +16028,11 @@ ul.about-us-cats a {
   display: none;
 }
 
+.controls .next[aria-disabled=false],
+.controls .prev[aria-disabled=false] {
+  display: block;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
