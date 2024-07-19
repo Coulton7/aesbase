@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#overlay-search").classList.add("search-btn");
         document.querySelector(".scroll-nav").classList.remove("shadow-back");
         document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
+        document.querySelector('.overlay-btn').classList.remove("normText");
         navLinks.forEach(function (navLink) {
           navLink.classList.remove('normText');
         });
@@ -68,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#overlay-search").classList.remove("search-btn");
         document.querySelector(".scroll-nav").classList.add("shadow-back");
         document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
+        document.querySelector('.overlay-btn').classList.add("normText");
         navLinks.forEach(function (navLink) {
           navLink.classList.add('normText');
         });
