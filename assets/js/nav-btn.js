@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".dialog-off-canvas-main-canvas").classList.add("noscroll");
         document.querySelector("#overlay-search").classList.remove("search-btn");
         document.querySelector(".scroll-nav").classList.add("shadow-back");
+        document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
       }
     });
 
