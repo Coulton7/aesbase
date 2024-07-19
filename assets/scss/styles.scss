@@ -3319,6 +3319,11 @@ ul.about-us-cats a {
   justify-content: center;
 }
 
+.controls .next[aria-disabled=true],
+.controls .prev[aria-disabled=true]{
+  display: none;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
