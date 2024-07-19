@@ -1,22 +1,27 @@
 document.addEventListener('DOMContentLoaded', function(){
- 
-var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
+    // Correct query selector for nav links
+    var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
 
-document.querySelector('.carousel').addEventListener('slid.bs.carousel', function () {
-   
-    var activeSlide = document.querySelector('.carousel-item.active');
+    // Ensure carousel element exists before adding event listener
+    var carousel = document.querySelector('.carousel');
+    if (carousel) {
+        carousel.addEventListener('slid.bs.carousel', function () {
+            // Get the currently active carousel item
+            var activeSlide = document.querySelector('.carousel-item.active');
 
-   
-    if (activeSlide && activeSlide.id === 'homePage2') {
-       
-        navLinks.forEach(function (navLink) {
-            navLink.style.color = 'white';
-        });
-    } else{
-        
-        navLinks.forEach(function (navLink) {
-            navLink.style.color = ''; 
+            // Check if the active item is the last slide with the id 'homePage2'
+            if (activeSlide && activeSlide.id === 'homePage2') {
+                // Change the font color of the nav links to white
+                navLinks.forEach(function (navLink) {
+                    navLink.style.color = 'white';
+                });
+            } else {
+                // Reset the font color of the nav links to default or another color
+                navLinks.forEach(function (navLink) {
+                    navLink.style.color = ''; // reset to default
+                });
+            }
         });
     }
 });
-});
+
