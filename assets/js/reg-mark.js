@@ -1,4 +1,4 @@
-const replaceHtml = (element, patterns, replacement) =>
+const replaceHtml = (element, pattern, replacement) =>
   {
     const { innerHTML } = element;
     return Object.assign(element, {
@@ -6,6 +6,6 @@ const replaceHtml = (element, patterns, replacement) =>
     })
   }
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(e){
    replaceHtml(e.target, /<sup>&reg;<\/sup>®/gi, "<sup>&reg;</sup>") 
   });
