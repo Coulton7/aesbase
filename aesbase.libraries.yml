@@ -22,6 +22,7 @@ bootstrap:
     assets/js/svg-map-click.js: {}
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
+    assets/js/reg-mark.js: {}
 
 
 form:
