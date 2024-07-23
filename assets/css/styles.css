@@ -14807,15 +14807,12 @@ ul.about-us-cats {
   padding: 0;
 }
 
-.lang-switch li {
-  padding: 0.95em 1.1em;
-}
-
 .lang-switch li a {
   text-decoration: none;
   display: block;
   width: 100%;
   color: #535354;
+  padding: 0.95em 1.1em;
 }
 
 .lang-switch a:hover, .lang-switch a.active {
