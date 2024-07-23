@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
             current.textContent = info.displayIndex + 2;
     
         newsslider.events.on('transitionEnd', function(info) {
-            activeSlide = info.displayIndex;
-            current.textContent = info.displayIndex;
+            activeSlide = info.displayIndex +2;
+            current.textContent = info.displayIndex +2;
         });
     }
     
