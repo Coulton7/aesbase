@@ -14798,6 +14798,27 @@ ul.about-us-cats {
   justify-content: center;
 }
 
+.lang-switch {
+  text-align: center;
+}
+
+.lang-switch ul {
+  list-style: none;
+}
+
+.lang-switch li {
+  padding-top: 1.5rem;
+}
+
+.lang-switch a {
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  background-color: #e9ecef;
+  text-decoration: none;
+}
+
 .change {
   color: transparent;
   pointer-events: none;
