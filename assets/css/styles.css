@@ -14815,7 +14815,7 @@ ul.about-us-cats {
   padding: 0.95em 1.1em;
 }
 
-.lang-switch a:hover, .lang-switch a.active {
+.lang-switch a:hover, .lang-switch a.is-active {
   text-decoration: none;
   background-color: #e9ecef;
 }
