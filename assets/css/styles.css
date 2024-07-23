@@ -14807,11 +14807,8 @@ ul.about-us-cats {
   padding: 0;
 }
 
-.lang-switch li {
+.lang-switch li a {
   padding-top: 1.5rem;
-}
-
-.lang-switch a {
   text-decoration: none;
 }
 
