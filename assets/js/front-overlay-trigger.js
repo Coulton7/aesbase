@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var html = document.querySelector("html");
     var body = document.querySelector("body");
     var dialogOffCanvas = document.querySelector(".dialog-off-canvas-main-canvas");
+    var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var frontPage = document.querySelector(".path-frontpage");
   
     if(frontPage){
