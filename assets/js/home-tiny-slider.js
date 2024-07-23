@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             activeSlide = info.displayIndex;
             
             total.textContent = info.slideCount;
-            current.textContent = info.displayIndex;
+            current.textContent = info.displayIndex + 2;
     
         newsslider.events.on('transitionEnd', function(info) {
             activeSlide = info.displayIndex;
