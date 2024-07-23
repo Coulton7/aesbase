@@ -14813,11 +14813,13 @@ ul.about-us-cats {
   width: 100%;
   color: #535354;
   padding: 0.95em 1.1em;
+  border-left: 4px solid transparent;
 }
 
 .lang-switch a:hover, .lang-switch a.is-active {
   text-decoration: none;
   background-color: #e9ecef;
+  border-left: 4px solid #dd1e25;
 }
 
 .change {
