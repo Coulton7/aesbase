@@ -14818,7 +14818,7 @@ ul.about-us-cats {
   color: #535354;
 }
 
-.lang-switch a:hover {
+.lang-switch a:hover, .lang-switch a.active {
   text-decoration: none;
   background-color: #e9ecef;
 }
