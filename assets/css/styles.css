@@ -14804,6 +14804,7 @@ ul.about-us-cats {
 
 .lang-switch ul {
   list-style: none;
+  padding: 0;
 }
 
 .lang-switch li {
