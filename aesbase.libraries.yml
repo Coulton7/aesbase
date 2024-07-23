@@ -15,7 +15,7 @@ bootstrap:
     assets/js/tiny-slider.js: {}
     assets/js/nav-scroll.js: {}
     assets/js/menu-collapse.js: {}
-    assets/js/nav-btn.js: {}
+    assets/js/overlay-trigger.js: {}
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
     assets/js/banner-vid.js: {}
@@ -35,6 +35,7 @@ front-library:
     assets/js/home-tiny-slider.js: {}
     assets/js/home-tinyslider-reveal.js: {}
     assets/js/fade-scroll.js: {}
+    assets/js/front-overlay-trigger.js: {}
     assets/js/report.js: {}
 
 pdf-make:
