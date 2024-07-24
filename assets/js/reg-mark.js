@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
       parent.removeChild(element);
     }
 
-    var pageTitle = document.querySelector(".page-title h1");
+    var pageTitle = document.querySelector(".page-title h1 span");
     function replaceTitle() {
         if(pageTitle.textContent == "Resources"){
           pageTitle.textContent = "ESG & Resources"
