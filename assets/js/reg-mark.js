@@ -35,15 +35,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var pageTitle = document.querySelector(".page-title h1 span");
     function replaceTitle() {
-      if (window.location.href.indexOf("resources") != -1) {
         if(pageTitle.innerHTML == "Resources"){
           pageTitle.innerHTML = "ESG & Resources"
         } else {
           return true
         }
-      } else {
-        return true;
-      }
   }
 
     replaceTitle();
