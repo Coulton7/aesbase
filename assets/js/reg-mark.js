@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function(){
       parent.removeChild(element);
     }
 
+    var pageTitle = document.querySelector(".page-title");
     function replaceTitle() {
-      var pageTitle = document.querySelector(".page-title");
-      if(pageTitle.innerHTML == "Resources"){
+      
         pageTitle.innerHTML = "ESG & Resoruces"
-      }
+      
     }
 
     replaceTitle();
