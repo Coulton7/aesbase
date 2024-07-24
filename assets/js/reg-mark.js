@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var pageTitle = document.querySelector(".page-title h1");
     function replaceTitle() {
+      if(pageTitle.innerHTML == "Resources"){
         pageTitle.innerHTML = "ESG & Resoruces"
+      }
     }
 
     replaceTitle();
