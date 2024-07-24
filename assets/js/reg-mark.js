@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', function(){
       parent.insertBefore(frag, element);
       parent.removeChild(element);
     }
+
+    function replaceTitle() {
+      var pageTitle = document.querySelector(".page-title");
+      if(pageTitle.textContent == "Resources"){
+        pageTitle.textContent = "ESG & Resoruces"
+      }
+    }
+
+    replaceTitle();
+
   });
