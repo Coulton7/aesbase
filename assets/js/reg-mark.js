@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log(pageTitle)
       if(pageTitle.innerHTML == "Resources"){
         pageTitle.innerHTML = "ESG & Resoruces"
+      } else {
+        return true;
       }
     }
 
