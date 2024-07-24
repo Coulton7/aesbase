@@ -35,12 +35,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var pageTitle = document.querySelector(".page-title h1 span");
     function replaceTitle() {
-      if(pageTitle.innerHTML == "Resources"){
-        pageTitle.innerHTML = "ESG & Resources"
+      if (window.location.pathname.contains = "resources") {
+        if(pageTitle.innerHTML == "Resources"){
+          pageTitle.innerHTML = "ESG & Resources"
+        }
       } else {
         return true;
       }
-    }
+  }
 
     replaceTitle();
 
