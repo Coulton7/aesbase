@@ -591,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     empty: `<p class="h3">No results found matching {{query}}</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                     <p>Are you searching for a Part Number or Serial Number</p>
-                    <a href="#" class="btn btn-danger">Click here to get in touch</p>`,
+                    <a href="#" class="btn btn-danger">Click here to get in touch</a>`,
                 },
                 transformItems(items){
                     return items.map(item => ({
