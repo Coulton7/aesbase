@@ -590,14 +590,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>`,
                     empty: `<p class="h3">No results found matching {{query}}</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                        region: "na1",
-                        portalId: "2248916",
-                        formId: "efc759e5-1c3d-403f-9122-dec74bf892ea"
-                        });
-                    </script>`,
+                    <p>Are you searching for a Part Number or Serial Number</p>
+                    <a href="#" class="btn btn-danger">Click here to get in touch</p>`,
                 },
                 transformItems(items){
                     return items.map(item => ({
