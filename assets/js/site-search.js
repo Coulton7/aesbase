@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
-    var noResult = document.querySelector('.ais-Hits--empty');
 
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
@@ -52,10 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const customSearchBox = connectSearchBox (
         renderSearchBox
     );
-
-    if(noResult){
-        document.querySelector('.parts-form').style.display = "block";
-    }
 
     let typeMapping;
     let vidMapping;
