@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
-    var noResult = document.querySelector('.no-result');
+    var noResult = document.querySelector('.ais-Hits--empty');
 
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
