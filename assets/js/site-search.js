@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         renderSearchBox
     );
 
-    if(noResult.style.visibility == "visible"){
+    if(noResult){
         document.querySelector('.parts-form').style.display = "block";
     }
 
