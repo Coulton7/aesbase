@@ -1,12 +1,9 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
-
 function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id=NULL) {
-
   if(isset($form_id)) {
       return;
   }
-
   // custom settings respective to theme
   // create setting for secondary logo
   $form['secondary_logo'] = array(
@@ -30,5 +27,4 @@ function aesbase_form_system_theme_settings_alter(&$form, FormStateInterface $fo
       'file_validate_extensions' => array('gif png jpg jpeg svg'),
     ),
   );
-
 }
