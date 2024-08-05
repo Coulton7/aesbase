@@ -602,6 +602,15 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         ]);
         search.start();
+
+        search.helper.on('result', function(res) {
+            const form = document.querySelector('.no-result');
+            if (res && res.hits && res.hits.length > 0) {
+                form.style.display = 'none';
+            } else {
+                form.style.display = 'block';
+            }
+        })
     }
 
     let usTypeMapping
