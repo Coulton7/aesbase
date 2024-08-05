@@ -603,14 +603,14 @@ document.addEventListener("DOMContentLoaded", function() {
         ]);
         search.start();
 
-        search.helper.on('result', function(res) {
-            const form = document.querySelector('.parts-form');
-            if (res && res.hits && res.hits.length > 0) {
-                form.style.display = 'block';
-            } else {
-                form.style.display = 'none';
-            }
-        })
+       search.on('render', function(){
+        var emptyResult = '.ais-Hits--empty';
+        if (emptyResult == true) {
+            document.querySelector('.no-result').style.display = 'block';
+        } else {
+            document.querySelector('.no-result').style.display = 'none';  
+        }
+       })
     }
 
     let usTypeMapping
