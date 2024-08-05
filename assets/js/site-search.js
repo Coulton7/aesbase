@@ -602,15 +602,6 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         ]);
         search.start();
-
-       search.on('render', function(){
-        var emptyResult = '.ais-Hits--empty';
-        if (emptyResult == true) {
-            document.querySelector('.no-result').style.display = 'block';
-        } else {
-            document.querySelector('.no-result').style.display = 'none';  
-        }
-       })
     }
 
     let usTypeMapping
