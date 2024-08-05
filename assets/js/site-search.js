@@ -606,9 +606,9 @@ document.addEventListener("DOMContentLoaded", function() {
         search.helper.on('result', function(res) {
             const form = document.querySelector('.parts-form');
             if (res && res.hits && res.hits.length > 0) {
-                form.style.display = 'none';
-            } else {
                 form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
             }
         })
     }
