@@ -599,7 +599,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         vid: vidMapping[item.vid]
                     }))
                 }
-            })
+            }),
+
+            {
+               $$type: 'Form',
+               render: ({ results }) => {
+                const partsForm = document.querySelector('.parts-form')
+                if ( results.length > 0) {
+                    partsForm.style.display = 'none';
+                }
+               } 
+            }
         ]);
         search.start();
     }
