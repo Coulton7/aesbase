@@ -406,9 +406,6 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             searchClient,
             typoTolerance: 'strict',
-            disableTypoToleranceOnAttributes: [
-                'field_case_ref'
-            ],
             searchFunction(helper) {
                 if (helper.state.query === '')
                 {
