@@ -2454,7 +2454,7 @@ ul.about-us-cats a {
 }
 
 .css-fade-linkedin {
-  background-image: url("https://static.aesseal.com/graphics/linkedin-panel.png");
+  background-image: url("https://static.aesseal.com/graphics/logos/linkedin-panel.png");
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -2473,7 +2473,7 @@ ul.about-us-cats a {
 }
 
 .css-fade-instagram {
-  background-image: url("https://static.aesseal.com/graphics/instagram-panel.png");
+  background-image: url("https://static.aesseal.com/graphics/logos/instagram-panel.png");
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -2492,7 +2492,7 @@ ul.about-us-cats a {
 }
 
 .css-fade-youtube {
-  background-image: url("https://static.aesseal.com/graphics/youtube-panel.png");
+  background-image: url("https://static.aesseal.com/graphics/logos/youtube-panel.png");
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -2510,8 +2510,8 @@ ul.about-us-cats a {
   width: 100%;
 }
 
-.css-fade-twitter {
-  background-image: url("https://static.aesseal.com/graphics/twitter-panel.png");
+.css-fade-facebook {
+  background-image: url("https://static.aesseal.com/graphics/logos/facebook-panel.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #f5f5f5;
@@ -2529,14 +2529,14 @@ ul.about-us-cats a {
   width: 100%;
 }
 
-.card:hover .css-fade-twitter,
+.card:hover .css-fade-facebook,
 .card:hover .css-fade-youtube,
 .card:hover .css-fade-linkedin,
 .card:hover .css-fade-instagram {
   opacity: 0;
 }
 
-.css-fade-twitter:hover,
+.css-fade-facebook:hover,
 .css-fade-instagram:hover,
 .css-fade-youtube:hover,
 .css-fade-linkedin:hover {
