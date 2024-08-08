@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var frontPage = document.querySelector(".path-frontpage");
 
   if(!frontPage){
-
+    if(overlayNavBtn){
       overlayNavBtn.addEventListener("click", function navBtn() {
         overlayNavBtn.classList.toggle("change");
           if (x.style.height === "100%") {
@@ -44,8 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
             overlayNavBtn.classList.remove("overlay-btn");
           }
       });
+    } else {
+      return true;
+    }
     
 
+    if(overlaySearchBtn){
       overlaySearchBtn.addEventListener("click", function searchBtn() {
         overlaySearchBtn.classList.toggle("change");
         if (y.style.height === "100%") {
@@ -77,8 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelector('.overlay-btn').classList.add("normText");
         }
       });
-    
+    } else {
+      return true;
+    }
 
+    if(!overlayShareBtn){
       overlayShareBtn.addEventListener("click", function shareBtn() {
         overlayShareBtn.classList.toggle("change");
         if (s.style.height === "100%") {
@@ -108,8 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayShareBtn.classList.remove("share-btn");
         }
       });
-    
+    }
 
+    if(!footerOverlayBtn){
       footerOverlayBtn.addEventListener("click", function footerNavBtn() {
         footerOverlayBtn.classList.toggle("change");
         if (x.style.height === "100%") {
@@ -139,8 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayNavBtn.classList.remove("overlay-btn");
         }
       });
-    
+    }
 
+    if(!mobileNavOverlay){
       mobileNavOverlay.addEventListener("click", function mobNavBtn() {
         mobileNavOverlay.classList.toggle("change");
         if (x.style.height === "100%") {
@@ -169,8 +178,9 @@ document.addEventListener("DOMContentLoaded", function () {
           mobileNavOverlay.classList.remove("overlay-btn");
         }
       });
-    
+    }
 
+    if(!mobileOverlaySearch){
       mobileOverlaySearch.addEventListener("click", function mobSearchBtn() {
         mobileOverlaySearch.classList.toggle("change");
         if (y.style.height === "100%") {
@@ -200,5 +210,6 @@ document.addEventListener("DOMContentLoaded", function () {
           overlaySearchBtn.classList.remove("search-btn");
         } 
       });
+    }
   }
 });
