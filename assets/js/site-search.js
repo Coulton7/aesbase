@@ -756,5 +756,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         usaSearch.start();
+        document.querySelector('.ais-SearchBox-input').focus();
     }
 });
