@@ -13303,7 +13303,7 @@ a.disabled {
   right: -1.6em;
   position: relative;
   bottom: 0;
-  margin-top: -7.2em;
+  margin-top: -6.9em;
 }
 
 .bg-white .navbar-collapse {
@@ -16394,7 +16394,7 @@ ul.about-us-cats a {
     padding: 1px;
   }
   .footer-curve {
-    margin-top: -6.5em;
+    margin-top: -6em;
   }
   .path-frontpage .scroll-nav {
     transform: translateY(23%);
@@ -16577,7 +16577,7 @@ ul.about-us-cats a {
     margin: 0;
   }
   .footer-curve {
-    margin-top: -6.5em;
+    margin-top: -6em;
   }
   .main-menu .nav-item:last-child {
     display: block;
@@ -16703,7 +16703,7 @@ ul.about-us-cats a {
     padding: 1.5rem;
   }
   .footer-curve {
-    margin-top: -7.2em;
+    margin-top: -6.9em;
   }
 }
 /* lg */
