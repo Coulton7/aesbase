@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
           dialogOffCanvas.classList.add("noscroll");
           overlaySearchBtn.classList.remove("search-btn");
           document.querySelector('.overlay-btn').classList.add("normText");
+          document.querySelector('.ais-SearchBox-input').focus();
         }
       });
     }
