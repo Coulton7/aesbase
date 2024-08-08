@@ -205,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           overlaySearchBtn.classList.remove("search-btn");
+          document.querySelector('.ais-SearchBox-input').focus();
         } 
       });
     }
