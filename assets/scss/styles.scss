@@ -877,14 +877,26 @@ a.icon-link:hover {
   color: $white;
 }
 
+.btn-twitter:hover {
+  background-color: #0b76b8;
+}
+
 .btn-facebook {
   background-color: $facebook;
   color: $white;
 }
 
+.btn-facebook:hover {
+  background-color: #0a54b3;
+}
+
 .btn-linkedin {
   background-color: $linkedin;
   color: $white;
+}
+
+.btn-linkedin:hover {
+  background-color: #005582;
 }
 
 .overlay-btn {
