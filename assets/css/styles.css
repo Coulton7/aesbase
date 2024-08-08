@@ -13707,6 +13707,10 @@ a.lightblue-text {
   color: #fff;
 }
 
+.card {
+  overflow: hidden;
+}
+
 .card-body,
 .card-header,
 .card-footer {

@@ -982,6 +982,10 @@ a.lightblue-text {
   color: $white;
 }
 
+.card {
+  overflow: hidden;
+}
+
 .card-body,
 .card-header,
 .card-footer {
