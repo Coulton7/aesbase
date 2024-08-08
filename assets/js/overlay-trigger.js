@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
             overlayNavBtn.classList.remove("overlay-btn");
           }
       });
-    } else {
-      return true;
     }
     
 
@@ -81,8 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelector('.overlay-btn').classList.add("normText");
         }
       });
-    } else {
-      return true;
     }
 
     if(overlayShareBtn){
@@ -115,8 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayShareBtn.classList.remove("share-btn");
         }
       });
-    } else {
-      return true;
     }
 
     if(footerOverlayBtn){
@@ -149,8 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayNavBtn.classList.remove("overlay-btn");
         }
       });
-    }  else {
-      return true;
     }
 
     if(mobileNavOverlay){
@@ -182,8 +174,6 @@ document.addEventListener("DOMContentLoaded", function () {
           mobileNavOverlay.classList.remove("overlay-btn");
         }
       });
-    } else {
-      return true;
     }
 
     if(mobileOverlaySearch){
@@ -216,8 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
           overlaySearchBtn.classList.remove("search-btn");
         } 
       });
-    } else {
-      return true;
     }
   }
 });
