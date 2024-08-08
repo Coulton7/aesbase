@@ -607,6 +607,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
+        document.querySelector('.ais-SearchBox-input').focus();
     }
 
     let usTypeMapping
