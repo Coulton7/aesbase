@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const input = document.createElement('input');
             input.classList.add('ais-SearchBox-input');
             input.classList.add('form-control');
-            input.focus();
 
             const searchButton = document.createElement('button');
             searchButton.classList.add('ais-SearchBox-submit');
