@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
           overlaySearchBtn.classList.add("search-btn");
+          if (scrollNav.classList.contains("scrolled-up")){
+            scrollNav.classList.remove("scrolled-up");
+            scrollNav.classList.add("scrolled-down")
+          } else {
+            scrollNav.classList.add("scrolled-down")
+          }
           document.querySelector(".scroll-nav").classList.remove("shadow-back");
           document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
           document.querySelector('.overlay-btn').classList.remove("normText");
@@ -82,6 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           overlaySearchBtn.classList.remove("search-btn");
+          if (scrollNav.classList.contains("scrolled-down")){
+            scrollNav.classList.remove("scrolled-down");
+            scrollNav.classList.add("scrolled-up")
+          } else {
+            scrollNav.classList.add("scrolled-up")
+          }
           document.querySelector('.ais-SearchBox-input').focus();
           document.querySelector(".scroll-nav").classList.add("shadow-back");
           document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
