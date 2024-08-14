@@ -21,5 +21,8 @@ function aesbase_page_attachments_alter(&$page)
     if($alias == '/resources/technical-drawings/316l-ss-adaptive-hardware') {
       $page['#attached']['library'][] = 'aesbase/tech-drawings';
     }
+    if($alias == '/resources/technical-drawings/super-duplex-adaptive-hardware') {
+      $page['#attached']['library'][] = 'aesbase/tech-drawings';
+    }
   }
 }
