@@ -19,7 +19,7 @@ function aesbase_page_attachments_alter(&$page)
       $page['#attached']['library'][] = 'aesbase/labtecta-calc';
     }
     if($alias == '/resources/technical-drawings/316l-ss-adaptive-hardware') {
-      $page['#attached']['library'][] = 'aesbase/tech-darwings';
+      $page['#attached']['library'][] = 'aesbase/tech-drawings';
     }
   }
 }
