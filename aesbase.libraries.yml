@@ -48,3 +48,7 @@ pdf-make:
 labtecta-calc:
   js:
     assets/js/labtecta-calc.js: {}
+
+tech-drawings:
+  js:
+    assets/js/filter-drawings.js: {}
