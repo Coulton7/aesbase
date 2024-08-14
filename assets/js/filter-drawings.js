@@ -1,7 +1,7 @@
 function searchTable() {
     var input, filter, table, tr, td, i, textValue;
     input = document.getElementById("myInput");
-    filter = input.ariaValueMax.toLowerCase();
+    filter = input.value.toLowerCase();
     table = document.getElementById("searchtable");
     tr = table.getElementsByTagName("tr");
     for(i = 0; i < tr.length; i++) {
