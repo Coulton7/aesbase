@@ -16208,6 +16208,10 @@ ul.about-us-cats a {
     padding: 0 15px;
     z-index: 4;
   }
+  .icons-col-placement {
+    position: absolute;
+    bottom: -100%;
+  }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
     background-size: cover;
@@ -16499,6 +16503,10 @@ ul.about-us-cats a {
     position: relative;
     transform: translateY(0%);
     z-index: 4;
+  }
+  .icons-col-placement {
+    position: relative;
+    bottom: 8em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
@@ -16842,10 +16850,6 @@ ul.about-us-cats a {
   .carousel-caption {
     top: -10vh;
     margin-left: 2vh;
-  }
-  .icons-col-placement {
-    position: relative;
-    bottom: 8em;
   }
   .intro-text {
     background-color: rgb(249, 249, 249);
