@@ -3136,6 +3136,13 @@ ul.about-us-cats a {
   align-items: center;
 }
 
+.white-iceberg-secondary{
+  background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 50%, $secondary 50%, $secondary 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-staff-img {
   bottom: 5em;
 }
