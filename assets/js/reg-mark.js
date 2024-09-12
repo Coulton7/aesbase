@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
+
+  var frontPage = document.querySelector(".path-frontpage");
+
   function recurse(element) {
     if (element.childNodes.length > 0) {
       for (var i = 0; i < element.childNodes.length; i++) {
@@ -35,11 +38,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var pageTitle = document.querySelector(".page-title h1");
   function replaceTitle() {
+    if(!frontPage){
       if(pageTitle.innerText == "Resources"){
         pageTitle.innerText = "ESG & Resources"
       } else {
         return true
       }
+    }
   }
 
   replaceTitle();
