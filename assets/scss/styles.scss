@@ -92,7 +92,6 @@ body .fixed-top {
 
 html {
   scroll-behavior: smooth;
-
   -webkit-overflow-scrolling: touch;
 }
 
@@ -452,7 +451,7 @@ html {
 }
 
 body {
-  color: #535454;
+  color: $textcolor;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman",
     "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial",
     "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
