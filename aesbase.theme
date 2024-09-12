@@ -7,6 +7,14 @@ function aesbase_preprocess(&$variables, $hook){
   $variables['second_logo'] = theme_get_setting('secondary_logo_path');
   $variables['secondary_logo'] = theme_get_setting('secondary_logo');
 }
+
+function aesbase_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->getType() == 'technical_drawings') {
+    $variables['#attached']['library'][] = 'aesbase/tech-drawings';
+  }
+}
+
 function aesbase_page_attachments_alter(&$page)
 {
   $path = \Drupal::service('path.current')->getPath();
@@ -17,12 +25,6 @@ function aesbase_page_attachments_alter(&$page)
     }
     if($alias == '/labtecta') {
       $page['#attached']['library'][] = 'aesbase/labtecta-calc';
-    }
-    if($alias == '/resources/technical-drawings/316l-ss-adaptive-hardware') {
-      $page['#attached']['library'][] = 'aesbase/tech-drawings';
-    }
-    if($alias == '/resources/technical-drawings/super-duplex-adaptive-hardware') {
-      $page['#attached']['library'][] = 'aesbase/tech-drawings';
     }
   }
 }
