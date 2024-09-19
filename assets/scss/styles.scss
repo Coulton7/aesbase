@@ -3423,6 +3423,12 @@ ul.about-us-cats a {
   display: block;
 }
 
+#svgContainer {
+  z-index: -10;
+  position: absolute;
+  opacity: 0.5;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
