@@ -52,3 +52,7 @@ labtecta-calc:
 tech-drawings:
   js:
     assets/js/filter-drawings.js: {}
+
+comp-seal:
+  js:
+    assets/js/build-code.js: {}
