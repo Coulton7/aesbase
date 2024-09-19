@@ -13,6 +13,9 @@ function aesbase_preprocess_node(&$variables) {
   if ($node->getType() == 'technical_drawings') {
     $variables['#attached']['library'][] = 'aesbase/tech-drawings';
   }
+  if ($node->getType() == 'component_seals') {
+    $variables['#attached']['library'][] = 'aesbase/comp-seal';
+  }
 }
 
 function aesbase_page_attachments_alter(&$page)
