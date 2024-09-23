@@ -881,7 +881,7 @@ document.addEventListener("DOMContentLoaded", function () {
               break;
             case link == "Land-Missouri":
               state = "Missouri";
-              cedar.forEach((lombard) => {
+              cedar.forEach((cedar) => {
                 cedar.classList.remove('show');
               });
               mo.forEach((mo) => {
