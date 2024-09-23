@@ -83,32 +83,39 @@ function connectAll() {
     
    if (document.querySelector(".Rotary1")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary1"), document.querySelector(".Rotary1"), document.querySelector(".views-field-field-primary-rotary-face"));
+    offset +=30;
     };
     
    if (document.querySelector(".Stationary1")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#stationary1"), document.querySelector(".Stationary1"), document.querySelector(".views-field-field-primary-stationary-face"));
+    offset +=30;
      };
      
    if (document.querySelector(".Elastomer1")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#elastomer1"), document.querySelector(".Elastomer1"), document.querySelector(".views-field-field-primary-elastomer"));
+    offset +=50;
           };
    
    
    if (document.querySelector(".Rotary2")){ //Tandem rotary position
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary2"), document.querySelector(".Rotary2"), document.querySelector(".views-field-field-secondary-rotary-face"));
+    offset +=40;
      };
      
      
    if (document.querySelector(".field-name-build--secondary-rotary-standard")){ //Standard rotary position, sorry these machine names are terrible. 
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary2"), document.querySelector(".Rotary2"), document.querySelector(".field-name-build--secondary-rotary-standard"));
+    offset -=20;
      };
     
    if (document.querySelector(".Stationary2")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#stationary2"), document.querySelector(".Stationary2"), document.querySelector(".views-field-field-secondary-stationary-face"));
+    offset -=30;
      };
    
    if (document.querySelector(".Elastomer2")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#elastomer2"), document.querySelector(".Elastomer2"), document.querySelector(".views-field-field-secondary-elastomer"));
+    offset -=30;
      };
      
    if (document.querySelector(".build-code")){        
