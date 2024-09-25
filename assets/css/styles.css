@@ -16150,6 +16150,15 @@ ul.about-us-cats a {
   color: #ff761a;
 }
 
+.Build,
+.build-code {
+  color: #2980b9;
+}
+
+.size-code {
+  color: #00b300;
+}
+
 .stockcode span {
   font-size: 1.8em;
 }
