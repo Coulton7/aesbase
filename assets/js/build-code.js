@@ -32,7 +32,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     // if start element is closer to the left edge,
     // draw the first arc counter-clockwise, and the second one clock-wise
     var arc1 = 0; var arc2 = 1;
-    if (startX < endX) {
+    if (startX > endX) {
         arc1 = 1;
         arc2 = 0;
         
