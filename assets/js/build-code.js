@@ -124,14 +124,14 @@ function connectAll() {
 }
 document.addEventListener("DOMContentLoaded", function() {
     // reset svg each time 
-    document.querySelector("#svg1").style.height="0";
-    document.querySelector("#svg1").style.width="0";
+    document.querySelector("#svg1").setAttribute("height", 0)
+    document.querySelector("#svg1").setAttribute("width", 0)
     connectAll();
 });
 window.addEventListener("resize", function () {
     // reset svg each time 
     offset = 0;
-    document.querySelector("#svg1").style.height="0";
-    document.querySelector("#svg1").style.width="0";
+    document.querySelector("#svg1").setAttribute("height", 0)
+    document.querySelector("#svg1").setAttribute("width", 0)
     connectAll();
 });
