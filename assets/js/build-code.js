@@ -99,7 +99,7 @@ function connectAll() {
    
    if (document.querySelector(".Rotary2")){ //Tandem rotary position
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary2"), document.querySelector(".Rotary2"), document.querySelector(".views-field-field-secondary-rotary-face"));
-    offset +=40;
+    offset -=20;
     };
      
      
