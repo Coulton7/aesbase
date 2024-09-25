@@ -3429,6 +3429,26 @@ ul.about-us-cats a {
   opacity: 0.5;
 }
 
+.Rotary,
+.Rotary1,
+.Rotary2 {
+  color: #330080;
+}
+.Stationary,
+.Stationary1,
+.Stationary2 {
+  color: #e60073;
+}
+.Elastomer,
+.Elastomer1,
+.Elastomer2 {
+  color: #ff761a;
+}
+
+.stockcode span {
+  font-size: 1.8em;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
