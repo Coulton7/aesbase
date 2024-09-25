@@ -13247,6 +13247,11 @@ a.disabled {
   padding: 0;
 }
 
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wavelogo {
   height: 11em;
   background: #fff;
