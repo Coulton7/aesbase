@@ -25,8 +25,6 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     if (svg.getAttribute("height") <  endY)                 svg.setAttribute("height", (endY));
     if (svg.getAttribute("width" ) < (startX + stroke) )    svg.setAttribute("width", (startX + stroke));
     if (svg.getAttribute("width" ) < (endX   + stroke) )    svg.setAttribute("width", (endX   + stroke));
-
-    console.log(endY)
     
     var deltaX = (endX - startX) * 0.15;
     var deltaY = (endY - startY) * 0.15;
@@ -66,8 +64,6 @@ function connectElements(svg, path, startElem, endElem) {
         endRect = temp;
     }
 
-    console.log(endY);
-
     // get (top, left) corner coordinates of the svg container   
     var svgTop  = svgContainer.offsetTop;
     var svgLeft = svgContainer.offsetLeft;
@@ -83,6 +79,8 @@ function connectElements(svg, path, startElem, endElem) {
     var endY = endCoord.top - endRect.height  - svgTop;
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
+
+    console.log(endY);
 }
 function connectAll() {
     // connect all the paths you want!
