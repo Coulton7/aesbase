@@ -1,8 +1,8 @@
 function getOffset(el) {
     var rect = el.getBoundingClientRect();
     return {
-      left: rect.left,
-      top: rect.top,
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY,
       width: rect.width || el.offsetWidth,
       height: rect.height || el.offsetHeight
     };
