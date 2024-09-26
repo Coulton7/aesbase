@@ -1,3 +1,5 @@
+var el = document.querySelector(".build-mats");
+
 function getOffset(el) {
     var rect = el.getBoundingClientRect();
     return {
