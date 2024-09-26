@@ -22,7 +22,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
     var stroke =  parseFloat(path.getAttribute("stroke-width"));
     // check if the svg is big enough to draw the path, if not, set heigh/width
-    if (svg.getAttribute("height") <  endY)                 svg.setAttribute("height", startRect.top);
+    if (svg.getAttribute("height") <  endY)                 svg.setAttribute("height", startCoord);
     if (svg.getAttribute("width" ) < (startX + stroke) )    svg.setAttribute("width", (startX + stroke));
     if (svg.getAttribute("width" ) < (endX   + stroke) )    svg.setAttribute("width", (endX   + stroke));
     
