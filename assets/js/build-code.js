@@ -26,6 +26,9 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     
     var deltaX = (endX - startX) * 0.15;
     var deltaY = (endY - startY) * 0.15;
+
+    console.log(deltaX);
+    console.log(delatY);
     // for further calculations which ever is the shortest distance
     var delta  =  deltaY < absolute(deltaX) ? deltaY : absolute(deltaX);
     // set sweep-flag (counter/clock-wise)
