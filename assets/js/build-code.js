@@ -25,6 +25,8 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     if (svg.getAttribute("height") <  endY)                 svg.setAttribute("height", (endY));
     if (svg.getAttribute("width" ) < (startX + stroke) )    svg.setAttribute("width", (startX + stroke));
     if (svg.getAttribute("width" ) < (endX   + stroke) )    svg.setAttribute("width", (endX   + stroke));
+
+    console.log(endY)
     
     var deltaX = (endX - startX) * 0.15;
     var deltaY = (endY - startY) * 0.15;
