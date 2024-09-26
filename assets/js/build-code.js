@@ -31,6 +31,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     console.log(deltaY);
     // for further calculations which ever is the shortest distance
     var delta  =  deltaY < absolute(deltaX) ? deltaY : absolute(deltaX);
+    console.log(delta);
     // set sweep-flag (counter/clock-wise)
     // if start element is closer to the left edge,
     // draw the first arc counter-clockwise, and the second one clock-wise
