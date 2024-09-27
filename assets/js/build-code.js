@@ -83,6 +83,7 @@ function connectElements(svg, path, startElem, endElem) {
     drawPath(svg, path, startX, startY, endX, endY);
 
     console.log(svgTop);
+    console.log(endCoord);
 }
 function connectAll() {
     // connect all the paths you want!
