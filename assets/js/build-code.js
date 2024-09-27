@@ -10,6 +10,17 @@ function getOffset(el) {
     };
 }
 
+function getSvgOffset () {
+    var svgContainer = document.querySelector("#svgContainer");
+    const svgRect = svgContainer.getBoundingClientRect();
+    return {
+        left: svgRect + window.scrollX,
+        top: svgRect.top + window.scrollY,
+        width: svgRect.width || el.offsetWidth,
+        height: svgRect.height || el.offsetHeight
+    }
+}
+
 //helper functions, it turned out chrome doesn't support Math.sgn() 
 function signum(x) {
     return (x < 0) ? -1 : 1;
@@ -52,8 +63,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
 }
 
 function connectElements(svg, path, startElem, endElem) {
-    var svgContainer = document.querySelector("#svgContainer");
-    const svgRect = svgContainer.getBoundingClientRect();
+
     // if first element is lower than the second, swap!
 
     var startRect = getOffset(startElem),
