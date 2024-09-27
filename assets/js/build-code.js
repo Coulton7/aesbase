@@ -10,17 +10,6 @@ function getOffset(el) {
     };
 }
 
-function getSvgOffset () {
-    var svgContainer = document.querySelector("#svgContainer");
-    const svgRect = svgContainer.getBoundingClientRect();
-    return {
-        left: svgRect + window.scrollX,
-        top: svgRect.top + window.scrollY,
-        width: svgRect.width || el.offsetWidth,
-        height: svgRect.height || el.offsetHeight
-    }
-}
-
 //helper functions, it turned out chrome doesn't support Math.sgn() 
 function signum(x) {
     return (x < 0) ? -1 : 1;
@@ -63,12 +52,12 @@ function drawPath(svg, path, startX, startY, endX, endY) {
 }
 
 function connectElements(svg, path, startElem, endElem) {
-
+    var svgContainer = document.querySelector("#svgContainer");
     // if first element is lower than the second, swap!
 
     var startRect = getOffset(startElem),
         endRect = getOffset(endElem);
-        
+      
     if(startRect.top > endRect.top){
         var temp = startRect;
         startRect = endRect;
@@ -76,8 +65,8 @@ function connectElements(svg, path, startElem, endElem) {
     }
 
     // get (top, left) corner coordinates of the svg container   
-    var svgTop  = svgContainer.top;
-    var svgLeft = svgContainer.left;
+    var svgTop  = svgContainer.offsetTop;
+    var svgLeft = svgContainer.offsetLeft;
     // get (top, left) coordinates for the two elements
     var startCoord = startRect;
     var endCoord   = endRect;
