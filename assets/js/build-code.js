@@ -54,7 +54,7 @@ function connectElements(svg, path, startElem, endElem) {
     // if first element is lower than the second, swap!
 
     var startRect = getOffset(startElem),
-        endRect = getOffset(endElem);
+        endRect = getOffset(el).bottom;
       
     if(startRect.top > endRect.top){
         var temp = startRect;
