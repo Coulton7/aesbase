@@ -10,8 +10,6 @@ function getOffset(el) {
     };
 }
 
-console.log(endY)
-
 //helper functions, it turned out chrome doesn't support Math.sgn() 
 function signum(x) {
     return (x < 0) ? -1 : 1;
@@ -81,6 +79,8 @@ function connectElements(svg, path, startElem, endElem) {
     var endY = endCoord.top - svgTop;
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
+
+    console.log(endY)
 
 }
 
