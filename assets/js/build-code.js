@@ -86,9 +86,6 @@ function connectElements(svg, path, startElem, endElem) {
 
 }
 function connectAll() {
-    // connect all the paths you want!
-    // This script manipulates the SVG lines in product_page.tpl.php to join the stock code <spans> to the drupal field outputs for each build materials bit. 
-    // the machine names for the feilds are pretty awful
     
    if (document.querySelector(".Rotary1")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary1"), document.querySelector(".Rotary1"), document.querySelector(".views-field-field-primary-rotary-face"));
