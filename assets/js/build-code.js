@@ -78,7 +78,7 @@ function connectElements(svg, path, startElem, endElem) {
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
 
-    console.log(getOffset(startElem))
+    console.log(document.querySelector(".Rotary").top)
     console.log(svgTop)
 
 }
