@@ -78,7 +78,8 @@ function connectElements(svg, path, startElem, endElem) {
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
 
-    console.log(endElem.offsetTop)
+    console.log(endElem.height)
+    console.log(svgTop)
 
 }
 
