@@ -15663,6 +15663,12 @@ ul.about-us-cats a {
   background-size: cover;
 }
 
+.water-wave-background {
+  background-image: url(https://static.aesseal.com/industry/marine/water-wave-backdrop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .text-shadow {
   text-shadow: 1px 1px 1px #000;
 }
