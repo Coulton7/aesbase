@@ -16175,12 +16175,6 @@ ul.about-us-cats a {
   font-size: 1.8em;
 }
 
-.comp-seals-img {
-  max-height: 324px;
-  object-fit: cover;
-  object-position: 50%;
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
