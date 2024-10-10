@@ -12831,6 +12831,12 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+a[target=_blank] {
+  font-family: "Font Awesome 6 Free";
+  content: "\f08e    ";
+  font-weight: 900;
+}
+
 .img-adaptive {
   margin-right: auto;
   margin-left: auto;
