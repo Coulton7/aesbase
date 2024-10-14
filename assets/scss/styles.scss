@@ -95,7 +95,7 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-a[target="_blank"]::after {
+a[target="_blank"]:after {
   font-family: "Font Awesome 6 Free";
   content: "\f08e    ";
   font-weight: 900;
