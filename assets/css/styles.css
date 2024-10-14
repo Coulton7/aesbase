@@ -14563,6 +14563,7 @@ blockquote {
 .related-media-cover img {
   height: 100% !important;
   object-fit: cover;
+  object-position: 50% 0%;
 }
 
 .blend-mode-multiply {
