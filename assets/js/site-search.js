@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Product Brochure',
                 'productcertificates': 'Product Certificates',
                 'sealsupportsystems': 'Seal Support Systems',
+                'technical_drawings': 'Technical Drawing',
                 'video': 'Video',
                 'whitepaper': 'Whitepaper',
             }
@@ -100,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Product Brochure',
                 'productcertificates': 'Product Certificates',
                 'sealsupportsystems': 'Seal Support Systems',
+                'technical_drawings': 'Technical Drawing',
                 'video': 'Video',
                 'whitepaper': 'Whitepaper',
             }
@@ -124,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Catálogos de productos',
                 'productcertificates': 'Certificados de producto',
                 'sealsupportsystems': 'Sistemas de soporte de cierre',
+                'technical_drawings': 'Dibujo técnico',
                 'video': 'Películas',
                 'whitepaper': 'Whitepaper',
         }
@@ -148,6 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Brochures des produits',
                 'productcertificates': 'Certificats de produit',
                 'sealsupportsystems': 'Systèmes d’exploitation',
+                'technical_drawings': 'Dessin technique',
                 'video': 'Vidéos',
                 'whitepaper': 'Whitepaper',
             }
@@ -172,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Produkt-Broschüre',
                 'productcertificates': 'Produktzertifikate',
                 'sealsupportsystems': 'Versorgungssysteme',
+                'technical_drawings': 'Technische Zeichnung',
                 'video': 'Filme',
                 'whitepaper': 'Whitepaper',
         }
@@ -196,6 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Opuscolo del prodotto',
                 'productcertificates': 'Certificati di prodotto',
                 'sealsupportsystems': 'Sistemi di supporto per le tenute',
+                'technical_drawings': 'Disegno tecnico',
                 'video': 'Film',
                 'whitepaper': 'Whitepaper',
             }
@@ -221,6 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Broszura produktu',
                 'productcertificates': 'Certyfikaty produktów',
                 'sealsupportsystems': 'Systemy wspomagające uszczelnienia',
+                'technical_drawings': 'Rysunek techniczny',
                 'video': 'Filmy',
                 'whitepaper': 'Whitepaper',
             }
@@ -246,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Брошюра о продукции',
                 'productcertificates': 'Сертификаты на продукцию',
                 'sealsupportsystems': 'Системы обеспечения уплотнений',
+                'technical_drawings': 'Технический чертеж',
                 'video': 'Видеоролики',
                 'whitepaper': 'Whitepaper',
             }
@@ -271,6 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': 'Ürün Broşürü',
                 'productcertificates': 'Ürün Sertifikaları',
                 'sealsupportsystems': 'Salmastra Destek Sistemleri',
+                'technical_drawings': 'Teknik Çizim',
                 'video': 'Filmler',
                 'whitepaper': 'Whitepaper',
             }
@@ -296,6 +305,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'productbrochure': '产品手册',
                 'productcertificates': '产品证书',
                 'sealsupportsystems': '密封辅助系统',
+                'technical_drawings': '技术图纸',
                 'video': '短片',
                 'whitepaper': 'Whitepaper',
             }
