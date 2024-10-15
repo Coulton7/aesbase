@@ -14560,6 +14560,10 @@ blockquote {
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
+.related-media-cover a {
+  align-content: center;
+}
+
 .related-media-cover img {
   max-width: 75%;
 }
