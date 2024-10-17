@@ -12831,7 +12831,7 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-a[target=_blank]:after {
+p a[target=_blank]:after {
   font-family: "Font Awesome 6 Free";
   content: "  \f08e";
   font-weight: 900;
