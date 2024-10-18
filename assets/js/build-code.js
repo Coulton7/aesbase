@@ -70,7 +70,7 @@ function connectElements(svg, path, startElem, endElem) {
     var svgLeft = svgContainer.offsetLeft;
     // get (top, left) coordinates for the two elements
     var startCoord = startRect;
-    var endCoord   = endRect;
+    var endCoord   = endRect - svgTop;
     // calculate path's start (x,y)  coords
     // we want the x coordinate to visually result in the element's mid point
     var startX = startCoord.left + 0.5*startRect.width - svgLeft;    // x = left offset + 0.5*width - svg's left offset
