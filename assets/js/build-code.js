@@ -52,7 +52,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
 }
 
 function connectElements(svg, path, startElem, endElem) {
-    var svgContainer = document.querySelector("#svgContainer");
+    var svgContainer = document.querySelector("#svgContainer").getOffset();
     // if first element is lower than the second, swap!
 
     var startRect = getOffset(startElem),
