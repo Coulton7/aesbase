@@ -58,7 +58,6 @@ function connectElements(svg, path, startElem, endElem) {
     var startRect = getOffset(startElem),
         endRect = getOffset(endElem);
 
-        console.log(endElem.offsetTop);
       
     if(startRect.top > endRect.top){
         var temp = startRect;
@@ -81,6 +80,8 @@ function connectElements(svg, path, startElem, endElem) {
     var endY = endCoord.top - svgTop;
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
+
+    console.log(endRect);
 
 }
 
