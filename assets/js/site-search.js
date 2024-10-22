@@ -796,6 +796,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p><a class="btn btn-danger align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a></p>
                         </div>`,
                     },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    },
                 })
             ])
         ]);
