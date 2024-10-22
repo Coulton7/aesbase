@@ -406,6 +406,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 'componentseals': 'Component Seals Category',
             }
         }
+
+        const langlistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Select your Language</h4>'
+            },cssClasses: {
+                root: 'pt-5'
+            }
+        })(instantsearch.widgets.refinementList);
     
     if(!!globeSearch){
         window.dataLayer.push({
@@ -432,14 +440,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         });
-
-        const langlistPanel = instantsearch.widgets.panel ({
-            templates: {
-                header: '<h4>Select your Language</h4>'
-            },cssClasses: {
-                root: 'pt-5'
-            }
-        })(instantsearch.widgets.refinementList);
 
         const typelistPanel = instantsearch.widgets.panel ({
             templates: {
