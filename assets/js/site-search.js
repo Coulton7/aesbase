@@ -775,6 +775,25 @@ document.addEventListener("DOMContentLoaded", function() {
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
 
+                typelistPanel({
+                    container: '#type-list',
+                    attribute: 'type',
+                    templates: {
+                        header: 'Filter Global Site by Content Type',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
+                    cssClasses: {
+                        item: ['types-item']
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
