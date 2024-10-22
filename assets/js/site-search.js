@@ -789,7 +789,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     transformItems(items){
                         return items.map(item => ({
                             ...item,
-                            label: typeMapping[item.type],
+                            label: typeMapping[item.label],
                         }));
                     },
                     cssClasses: {
