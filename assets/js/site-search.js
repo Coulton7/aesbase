@@ -791,7 +791,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 attribute: "body",
                                 hit: data
                             })}</p>
-                            <a class="btn btn-primary align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
+                            <p><a class="btn btn-danger align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a></p>
                         </div>`,
                     },
                 })
