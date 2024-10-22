@@ -764,6 +764,38 @@ document.addEventListener("DOMContentLoaded", function() {
                     }))
                 },
             }),
+
+            instantsearch.widgets
+                .index({ indexName: 'aesseal' })
+                .addWidgets([
+                instantsearch.widgets.configure({
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['description:80', 'body:80'],
+                    page: 0,
+                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item: data => `
+                        <div class="search-result">
+                            <small>https://www.aesseal.com${data.url}</small>
+                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "description",
+                                hit: data
+                            })}</p>
+                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "body",
+                                hit: data
+                            })}</p>
+                            <a class="btn btn-primary align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
+                        </div>`,
+                    },
+                })
+            ])
         ]);
         usaSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
