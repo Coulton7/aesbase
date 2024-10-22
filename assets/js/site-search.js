@@ -450,6 +450,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })(instantsearch.widgets.refinementList);
 
+        const gloablTypelistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Filter Global Results by Content Type</h4>'
+            },
+            cssClasses: {
+                root: 'pt-3'
+            }
+        })(instantsearch.widgets.refinementList);
+
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
@@ -775,7 +784,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
 
-                typelistPanel({
+                gloablTypelistPanel({
                     container: '#globalType-list',
                     attribute: 'type',
                     templates: {
