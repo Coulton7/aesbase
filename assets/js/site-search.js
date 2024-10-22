@@ -422,6 +422,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 root: 'pt-5'
             }
         })(instantsearch.widgets.refinementList);
+
+        const typelistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Filter by Content Type</h4>'
+            },
+            cssClasses: {
+                root: 'pt-3'
+            }
+        })(instantsearch.widgets.refinementList);
+
+        const gloablTypelistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Filter Global Results by Content Type</h4>'
+            },
+            cssClasses: {
+                root: 'pt-3'
+            }
+        })(instantsearch.widgets.refinementList);
     
     if(!!globeSearch){
         window.dataLayer.push({
@@ -448,15 +466,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         });
-
-        const typelistPanel = instantsearch.widgets.panel ({
-            templates: {
-                header: '<h4>Filter by Content Type</h4>'
-            },
-            cssClasses: {
-                root: 'pt-3'
-            }
-        })(instantsearch.widgets.refinementList);
 
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
@@ -657,24 +666,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         })
-
-        const typelistPanel = instantsearch.widgets.panel ({
-            templates: {
-                header: '<h4>Filter by Content Type</h4>'
-            },
-            cssClasses: {
-                root: 'pt-3'
-            }
-        })(instantsearch.widgets.refinementList);
-
-        const gloablTypelistPanel = instantsearch.widgets.panel ({
-            templates: {
-                header: '<h4>Filter Global Results by Content Type</h4>'
-            },
-            cssClasses: {
-                root: 'pt-3'
-            }
-        })(instantsearch.widgets.refinementList);
 
         const usPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
