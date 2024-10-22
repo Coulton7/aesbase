@@ -55,6 +55,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let typeMapping;
     let vidMapping;
 
+    let usTypeMapping
+
+    usTypeMapping = {
+        'page' : 'Web Page',
+        'article' : 'Article',
+        'casestudies' : 'Case Studies'
+    }
+
         if (filterLang == "en") {
             typeMapping = {
                 '3dmodels': '3D Models',
@@ -624,14 +632,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
-    let usTypeMapping
-
-    usTypeMapping = {
-        'page' : 'Web Page',
-        'article' : 'Article',
-        'casestudies' : 'Case Studies'
-    }
-
     if(!!usSearch){
         window.dataLayer.push({
             algoliaUserToken: 'user-1',
@@ -803,22 +803,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     cssClasses: {
                         item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                langlistPanel({
-                    container: '#lang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
                     },
                     sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
