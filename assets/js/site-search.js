@@ -776,7 +776,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
 
                 typelistPanel({
-                    container: '#type-list',
+                    container: '#globalType-list',
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
