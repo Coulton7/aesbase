@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
 
             const clearButton = document.createElement('button');
+            clearButton.classList.add('ais-SearchBox-reset');
             clearButton.classList.add('btn');
             clearButton.classList.add('btn-primary');
             clearButton.innerHTML = '<i class="fa-solid fa-x"></i>';
