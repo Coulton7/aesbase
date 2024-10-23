@@ -786,7 +786,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         header: 'Filter Global Site by Content Type',
                         item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
-
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
                     cssClasses: {
                         item: ['types-item']
                     },
@@ -813,6 +818,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             })}</p>
                             <p><a class="btn btn-danger align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a></p>
                         </div>`,
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
                     },
                 })
             ])
