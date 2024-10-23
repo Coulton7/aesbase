@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.classList.add('btn-danger');
             searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
 
+            const clearButton = document.createElement('button');
+            clearButton.classList.add('btn');
+            clearButton.classList.add('btn-primary');
+            clearButton.innerHTML = '<i class="fa-solid fa-x"></i>';
+
             const loadingIndicator = document.createElement('span');
             loadingIndicator.textContent = 'Loading...';
 
@@ -37,7 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 if(e.code === "Enter") {
                     refine(input.value);
                 }
-            })
+            });
+
+            clearButton.addEventListener('click', event => {
+                clear
+            });
 
             widgetParams.container.appendChild(input);
             widgetParams.container.appendChild(searchButton);
