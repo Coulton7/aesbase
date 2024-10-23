@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var body = document.querySelector("body");
   var dialogOffCanvas = document.querySelector(".dialog-off-canvas-main-canvas");
   var frontPage = document.querySelector(".path-frontpage");
+  var scrollNav = document.querySelector('.scroll-nav');
   
   if(frontPage){
     if(overlayNavBtn){
