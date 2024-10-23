@@ -13355,12 +13355,6 @@ a.disabled {
   height: 100%;
 }
 
-#carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-  background-repeat: no-repeat;
-  background-color: #012e58;
-  height: 100%;
-}
-
 .carousel-caption {
   left: 0;
   right: 0;
@@ -16382,16 +16376,6 @@ ul.about-us-cats a {
     background-position: 65%;
     padding-top: 3em;
   }
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatmobile/pillar-customer-service.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: 40%;
-    padding-top: 3em;
-  }
   .sustain-nav {
     overflow-x: auto;
     overflow-y: hidden;
@@ -16688,16 +16672,6 @@ ul.about-us-cats a {
     background-position: 65%;
     padding-top: 3em;
   }
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/wideformattablet/pillar-customer-service.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    background-position: top center;
-    animation: none;
-    padding-top: 3em;
-  }
   .controls li, .tns-outer .tns-controls button[aria-controls] {
     width: 3em;
     height: 3em;
@@ -16849,13 +16823,6 @@ ul.about-us-cats a {
     animation: none;
     background-position: 65%;
     padding-top: 3em;
-  }
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/wideformatfull/pillar-customer-service.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #012e58;
-    background-blend-mode: unset;
   }
   .carousel-col-placement {
     position: relative;
