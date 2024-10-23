@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
-            clearButton.addEventListener('click', event => {
-                clear(input.value);
+            clearButton.addEventListener('click', () => {
+                clear();
                 console.log('Clear Clicked')
             });
 
