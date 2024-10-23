@@ -16373,7 +16373,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: 65%;
+    background-position: top;
     padding-top: 3em;
   }
   .sustain-nav {
@@ -16669,7 +16669,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: 65%;
+    background-position: top;
     padding-top: 3em;
   }
   .controls li, .tns-outer .tns-controls button[aria-controls] {
@@ -16821,7 +16821,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: 65%;
+    background-position: top;
     padding-top: 3em;
   }
   .carousel-col-placement {
