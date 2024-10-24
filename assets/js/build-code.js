@@ -80,6 +80,8 @@ function connectElements(svg, path, startElem, endElem) {
     var endY = endRect.top - endRect.height - svgTop;
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
+
+    console.log(endRect);
 }
 
 function connectAll() {
