@@ -56,4 +56,3 @@ tech-drawings:
 comp-seal:
   js:
     assets/js/filter-drawings.js: {}
-    assets/js/build-code.js: {}
