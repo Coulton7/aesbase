@@ -13263,7 +13263,7 @@ a.disabled {
   border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
-.search-overlay .nav-tabs .nav-link .active {
+.search-overlay .nav-tabs .nav-link.active {
   color: #777;
   background-color: rgba(255, 255, 255, 0.5);
 }
