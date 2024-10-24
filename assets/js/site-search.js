@@ -871,7 +871,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 attribute: "body",
                                 hit: data
                             })}</p>
-                            <p><a class="btn btn-danger align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a></p>
+                            <p><a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a></p>
                         </div>`,
                     },
                     transformItems(items){
