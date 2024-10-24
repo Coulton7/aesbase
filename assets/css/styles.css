@@ -13258,6 +13258,16 @@ a.disabled {
   height: auto;
 }
 
+.search-overlay .nav-tabs .nav-link {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.search-overlay .nav-tabs .nav-link .active {
+  color: #777;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .wavelogo {
   height: 11em;
   background: #fff;
