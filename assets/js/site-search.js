@@ -716,7 +716,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         
             customSearchBox({
-                container: document.querySelector('#searchbox'),
+                container: document.querySelector('#usSearchbox'),
                  searchAsYouType: false,
             }),
 
