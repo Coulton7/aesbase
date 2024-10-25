@@ -110,7 +110,7 @@ function connectAll() {
     
    if (document.querySelector(".Stationary2")){
     connectElements(document.querySelector("#svg1"), document.querySelector("#stationary2"), document.querySelector(".Stationary2"), document.querySelector(".views-field-field-secondary-stationary-face"));
-    offset -=20;
+    offset -=30;
     };
    
    if (document.querySelector(".Elastomer2")){
