@@ -105,7 +105,7 @@ function connectAll() {
 
    if (document.querySelector(".Rotary2")){ 
     connectElements(document.querySelector("#svg1"), document.querySelector("#rotary2"), document.querySelector(".Rotary2"), document.querySelector(".views-field-field-secondary-rotary-face"));
-    offset -=10;
+    offset -=30;
     };
     
    if (document.querySelector(".Stationary2")){
