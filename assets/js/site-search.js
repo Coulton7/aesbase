@@ -450,6 +450,7 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             searchClient,
             typoTolerance: 'strict',
+            paginationLimitedTo: 80,
             searchFunction(helper) {
                 if (helper.state.query === '')
                 {
