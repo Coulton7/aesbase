@@ -440,6 +440,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 root: 'pt-3'
             }
         })(instantsearch.widgets.refinementList);
+
+        const pagination = instantsearch.widgets.panel ({
+            hidden: ({ results }) => results.nbPages === 1,
+        })(instantsearch.widgets.pagination)
     
     if(!!globeSearch){
         window.dataLayer.push({
@@ -467,10 +471,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         });
-
-        const pagination = instantsearch.widgets.panel ({
-            hidden: ({ results }) => results.nbPages === 1,
-        })(instantsearch.widgets.pagination)
 
         search.addWidgets([{
             init: function(options) {
@@ -853,6 +853,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         }));
                     },
                     sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#searchbox'
                 }),
 
                 instantsearch.widgets.hits ({
