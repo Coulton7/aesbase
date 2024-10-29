@@ -861,6 +861,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#usSearchbox'
                 }),
 
+                instantsearch.widgets.stats({
+                    container: '#globalStats',
+                    templates: {
+                        text(data, { html }) {
+                            let count = '';
+                            if (data.hasManyResults) {
+                                count += `${data.nbHits} results`
+                            } else if (data.hasOneResult) {
+                                count += `1 result`
+                            } else {
+                                count += `no result`;
+                            }
+    
+                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                        }
+                    }
+                }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
