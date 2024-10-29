@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const gloablTypelistPanel = instantsearch.widgets.panel ({
             templates: {
-                header: '<h4>Filter Global Results by Content Type</h4>'
+                header: '<h4>Filter Global Site by Resource Type</h4>'
             },
             cssClasses: {
                 root: 'pt-3'
