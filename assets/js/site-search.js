@@ -865,7 +865,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     container: '#globalHits',
                     templates:{
                         item: data => `
-                        <div class="search-result">
+                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                             <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
