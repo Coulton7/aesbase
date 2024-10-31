@@ -16203,6 +16203,203 @@ ul.about-us-cats a {
   font-size: 1.8em;
 }
 
+.main {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  top: 400px;
+  left: -50px;
+}
+
+.container-cards {
+  display: block;
+  width: 200px;
+  height: 310px;
+  position: absolute;
+  bottom: 0;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  transition: height 0.4s;
+}
+
+.container-cards:hover {
+  height: 350px;
+}
+
+.cards {
+  display: block;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  background-image: url("https://static.aesseal.com/content-image/corp/LIT-DE-L-CORP_Page_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards1 {
+  display: block;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  background-image: url("https://static.aesseal.com/content-image/brochure/LIT-UK-L-BPMAIN_Page_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards2 {
+  display: block;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  background-image: url("https://static.aesseal.com/content-image/brochure/FIDC_cover.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards3 {
+  display: block;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  Background-image: url("https://static.aesseal.com/content-image/brochure/Systems_cover_DE.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards4 {
+  display: block;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  background-image: url("https://static.aesseal.com/content-image/range/LIT-DE-L-S-SPRING_Page_001.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards:hover {
+  border: 1px solid #000000;
+}
+
+.cards1:hover {
+  border: 1px solid #000000;
+}
+
+.cards2:hover {
+  border: 1px solid #000000;
+}
+
+.cards3:hover {
+  border: 1px solid #000000;
+}
+
+.cards4:hover {
+  border: 1px solid #000000;
+}
+
+.cards a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#container1 {
+  animation-name: card1_ani;
+}
+
+#container2 {
+  animation-name: card2_ani;
+}
+
+#container4 {
+  animation-name: card4_ani;
+}
+
+#container5 {
+  animation-name: card5_ani;
+}
+
+@keyframes card1_ani {
+  0% {
+    left: 0px;
+    transform: rotate(0);
+  }
+  100% {
+    left: -250px;
+    transform: rotate(-30deg);
+  }
+}
+@keyframes card2_ani {
+  0% {
+    left: 0px;
+    transform: rotate(0);
+  }
+  100% {
+    left: -150px;
+    transform: rotate(-15deg);
+  }
+}
+@keyframes card4_ani {
+  0% {
+    left: 0px;
+    transform: rotate(0);
+  }
+  100% {
+    left: 150px;
+    transform: rotate(15deg);
+  }
+}
+@keyframes card5_ani {
+  0% {
+    left: 0px;
+    transform: rotate(0);
+  }
+  100% {
+    left: 250px;
+    transform: rotate(30deg);
+  }
+}
 @keyframes fade {
   0% {
     opacity: 0;
