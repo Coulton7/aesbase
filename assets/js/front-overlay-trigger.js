@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
-          overlaySearchGlobal.classList.add("search-btn");
           if (scrollNav.classList.contains("scrolled-up")){
             scrollNav.classList.remove("scrolled-up");
             scrollNav.classList.add("scrolled-down")
@@ -151,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
-          overlaySearchGlobal.classList.remove("search-btn");
           if (scrollNav.classList.contains("scrolled-down")){
             scrollNav.classList.remove("scrolled-down");
             scrollNav.classList.add("scrolled-up")
