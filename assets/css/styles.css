@@ -16360,6 +16360,12 @@ ul.about-us-cats a {
   animation-name: card5_ani;
 }
 
+#training {
+  background-image: url("https://static.aesseal.com/content-image/training/aes-advance-laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @keyframes card1_ani {
   0% {
     left: 0px;
