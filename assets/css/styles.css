@@ -16611,6 +16611,16 @@ ul.about-us-cats a {
     background-position: top;
     padding-top: 3em;
   }
+  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/oilandgas-steam-waste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: top;
+    padding-top: 3em;
+  }
   .sustain-nav {
     overflow-x: auto;
     overflow-y: hidden;
