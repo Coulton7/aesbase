@@ -14374,7 +14374,6 @@ blockquote {
   -webkit-backdrop-filter: blur(10px);
   color: white;
   padding: 20px;
-  max-width: 40%; /* Adjust the max-width for smaller screens */
   font-size: 1rem; /* Set default font size */
 }
 
@@ -14388,7 +14387,6 @@ blockquote {
   -webkit-backdrop-filter: blur(10px);
   color: white;
   padding: 20px;
-  max-width: 40%; /* Adjust the max-width for smaller screens */
   font-size: 1rem; /* Set default font size */
 }
 
@@ -16765,11 +16763,6 @@ ul.about-us-cats a {
     max-width: 100%;
     max-height: 100%;
   }
-  .black-boxes .btn,
-  .black-boxes-right .btn {
-    font-size: 5px;
-    padding: 2px 4px;
-  }
   .black-boxes {
     padding: 1px;
   }
@@ -17203,7 +17196,6 @@ ul.about-us-cats a {
   .black-boxes,
   .black-boxes-right {
     height: auto; /* Reset height to auto for smaller screens */
-    max-height: 115px; /* Adjust the maximum height as per your requirement */
     overflow-y: scroll; /* Add vertical scroll if content exceeds the height */
     padding: 0;
     margin: 0;
