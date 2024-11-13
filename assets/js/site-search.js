@@ -915,7 +915,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
-    if(!gerSearch){
+    if(!!gerSearch){
         window.dataLayer.push({
             algoliaUserToken: 'user-1',
         });
