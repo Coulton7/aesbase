@@ -963,7 +963,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: typeMapping[item.label],
+                        label: natTypeMapping[item.label],
                     }));
                 },
                 cssClasses: {
