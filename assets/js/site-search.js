@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
-    let gerSearch = doucment.getElementById('deHits');
+    let gerSearch = document.getElementById('deHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
