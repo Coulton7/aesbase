@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
+    let gerSearch = doucment.getElementById('deHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
@@ -55,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let typeMapping;
     let vidMapping;
 
-    let usTypeMapping
+    let natTypeMapping
 
-    usTypeMapping = {
+    natTypeMapping = {
         'page' : 'Web Page',
         'article' : 'Article',
         'casestudies' : 'Case Studies'
@@ -759,7 +760,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: usTypeMapping[item.type],
+                        type: natTypeMapping[item.type],
                     }))
                 },
             }),
@@ -911,6 +912,247 @@ document.addEventListener("DOMContentLoaded", function() {
             ])
         ]);
         usaSearch.start();
+        document.querySelector('.ais-SearchBox-input').focus();
+    }
+
+    if(!gerSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        const deSearch = instantsearch({
+            indexName: 'aesseal de',
+            searchClient,
+            typoTolerance: 'strict',
+            paginationLimitedTo: 80,
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            }
+        })
+
+        const dePagination = instantsearch.widgets.panel ({
+            hidden: ({ results }) => results.nbPages === 1,
+        })(instantsearch.widgets.pagination)
+        
+        deSearch.addWidgets([
+            instantsearch.widgets.configure({
+                hitsPerPage: 10,
+                attributesToSnippet: ['body:80'],
+                page: 0,
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    header: 'Filter by Content Type',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            dePagination({
+                container: '#dePagination',
+                totalPages: 3,
+                scrollTo: '#deSearchbox'
+            }),
+        
+            customSearchBox({
+                container: document.querySelector('#deSearchbox'),
+                 searchAsYouType: false,
+            }),
+
+            instantsearch.widgets.stats({
+                container: '#deStats',
+                templates: {
+                    text(data, { html }) {
+                        let count = '';
+                        if (data.hasManyResults) {
+                            count += `${data.nbHits} results`
+                        } else if (data.hasOneResult) {
+                            count += `1 result`
+                        } else {
+                            count += `no result`;
+                        }
+
+                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                    }
+                }
+            }),
+
+            instantsearch.widgets.hits ({
+                container: '#deHits',
+                templates:{
+                    item: data => `
+                    <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                        <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                        <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="lead">${data.type}</p>
+                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "body",
+                            hit: data
+                        })}</p>
+                        <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                        <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                    </div>`,
+                    empty(results, { html }){
+                        document.querySelector('.parts-form').style.display = 'block';
+                        document.querySelector('.ais-Pagination').style.display = 'none';
+                        return html`<p class="h3">No results found matching ${results.query}</p>
+                    <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                    <div class="text-center">
+                        <p class="h3">Would you like to search our Global site?</p>
+                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                    </div>
+                    <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                    },
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: natTypeMapping[item.type],
+                    }))
+                },
+            }),
+
+            instantsearch.widgets
+                .index({ indexName: 'aesseal' })
+                .addWidgets([{
+                    init: function(options) {
+                        if(filterLang == "en")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if(filterLang == "")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if (filterLang === "de") {
+                            options.helper.toggleRefinement('search_api_language', 'de');
+                        }
+                    }
+                },
+
+                instantsearch.widgets.configure({
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['description:80', 'body:80'],
+                    page: 0,
+                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                }),
+
+                gloablTypelistPanel({
+                    container: '#globalType-list',
+                    attribute: 'type',
+                    templates: {
+                        header: 'Filter Global Site by Content Type',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
+                    cssClasses: {
+                        item: ['types-item']
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                langlistPanel({
+                    container: '#lang-list',
+                    attribute: 'search_api_language',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#deSearchbox'
+                }),
+
+                instantsearch.widgets.stats({
+                    container: '#globalStats',
+                    templates: {
+                        text(data, { html }) {
+                            let count = '';
+                            if (data.hasManyResults) {
+                                count += `${data.nbHits} results`
+                            } else if (data.hasOneResult) {
+                                count += `1 result`
+                            } else {
+                                count += `no result`;
+                            }
+    
+                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                        }
+                    }
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item: data => `
+                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                            <small>https://www.aesseal.com${data.url}</small>
+                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "description",
+                                hit: data
+                            })}</p>
+                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "body",
+                                hit: data
+                            })}</p>
+                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
+                        </div>`,
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    },
+                })
+            ])
+        ]);
+        deSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
     }
 });
