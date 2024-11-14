@@ -14914,6 +14914,10 @@ ul.about-us-cats {
   border-left: 4px solid #dd1e25;
 }
 
+.language-link--untranslated {
+  display: none;
+}
+
 .change {
   color: transparent;
   pointer-events: none;

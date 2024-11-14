@@ -2210,6 +2210,10 @@ ul.about-us-cats {
   border-left: 4px solid $danger
 }
 
+.language-link--untranslated {
+  display: none;
+}
+
 .change {
   color: transparent;
   pointer-events: none;
