@@ -953,22 +953,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const dePagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
-        
-        deSearch.addWidgets([{
-            init: function(options) {
-                if(filterLang == "en")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if (filterLang === "de") {
-                    options.helper.toggleRefinement('search_api_language', 'de');
-                }
-            }
-        }]),
 
         deSearch.addWidgets([
             instantsearch.widgets.configure({
