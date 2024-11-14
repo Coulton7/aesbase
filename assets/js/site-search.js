@@ -1106,7 +1106,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
 
                 globalLanglistPanel({
-                    container: '#lang-list',
+                    container: '#globalLang-list',
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
