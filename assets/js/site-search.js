@@ -442,6 +442,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })(instantsearch.widgets.refinementList);
 
+        const globalLanglistPanel = instantsearch.widgets.panel ({
+            templates: {
+                header: '<h4>Select your Language</h4>'
+            },cssClasses: {
+                root: 'pt-5'
+            }
+        })(instantsearch.widgets.refinementList);
+
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
@@ -953,6 +961,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 page: 0,
             }),
 
+            langlistPanel({
+                container: '#lang-list',
+                attribute: 'search_api_language',
+                templates: {
+                    header: 'Select your Language',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: item.label.toUpperCase(),
+                    }));
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
             typelistPanel({
                 container: '#type-list',
                 attribute: 'type',
@@ -1081,7 +1105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
-                langlistPanel({
+                globalLanglistPanel({
                     container: '#lang-list',
                     attribute: 'search_api_language',
                     templates: {
