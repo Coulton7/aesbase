@@ -426,7 +426,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const typelistPanel = instantsearch.widgets.panel ({
             templates: {
-                header: function(filterLang, {html}) {
+                header(filterLang, {html}) {
                     if(filterLang == "en"){
                         return html `<h4>Filter by Content Type</h4>`;
                     } else if (filterLang == "es"){
