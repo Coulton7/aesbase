@@ -426,7 +426,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const typelistPanel = instantsearch.widgets.panel ({
             templates: {
-                header: '<h4>Filter by Content Type</h4>'
+                header: function(filterLang, {html}) {
+                    if(filterLang == "en"){
+                        return html `<h4>Filter by Content Type</h4>`;
+                    } else if (filterLang == "es"){
+                        return html `<h4>Filtrar por tipo de contenido</h4>`;
+                    } else if (filterLang == "fr"){
+                        return html `<h4>Filtrer par type de contenu</h4>`;
+                    } else if (filterLang == "de") {
+                        return html `<h4>Nach Inhaltstyp filtern</h4>`;
+                    } else if (filterLang == "it"){
+                        return html `<h4>Filtrare per tipo di contenuto</h4>`
+                    } else if (filterLang == "pl"){
+                        return html `<h4>Filtruj według typu zawartości</h4>`;
+                    } else if (filterLang == "ru"){
+                        return html `<h4>Фильтр по типу содержимого</h4>`;
+                    } else if (filterLang == "tr"){
+                        return html `<h4>İçerik Türüne Göre Filtrele</h4>`;
+                    } else if (filterLang == "zh-hans"){
+                        return html `<h4>按内容类型筛选</h4>`;
+                    } else if (filterLang == ""){
+                        return html `<h4>Filter by Content Type</h4>`;
+                    }
+                }
             },
             cssClasses: {
                 root: 'pt-3'
