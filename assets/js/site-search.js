@@ -444,9 +444,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     } else if (filterLang == "tr"){
                         '<h4>İçerik Türüne Göre Filtrele</h4>'
                     } else if (filterLang == "zh-hans"){
-                        '<h4>Filtrare per tipo di contenuto</h4>'
-                    } else if (filterLang == ""){
                         '<h4>按内容类型筛选</h4>'
+                    } else if (filterLang == ""){
+                        '<h4>Filter by Content Type</h4>'
                     }
                 }
             },
