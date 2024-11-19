@@ -3631,6 +3631,10 @@ ul.about-us-cats a {
   border:1px solid #000000;
 }
 
+.container-cards:hover {
+  z-index: 1000;
+}
+
 
 .cards a{
 display:block;
