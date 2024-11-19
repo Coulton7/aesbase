@@ -910,6 +910,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
+        deSearch.addWidgets([{
+            init: function(lang) {
+                if(filterLang == "en")
+                {
+                    lang.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if(filterLang == "")
+                {
+                    lang.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if (filterLang === "de") {
+                    lang.helper.toggleRefinement('search_api_language', 'de');
+                }
+            }
+        }]);
+
         deSearch.addWidgets([
             instantsearch.widgets.configure({
                 hitsPerPage: 10,
