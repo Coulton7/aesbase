@@ -4,6 +4,6 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("#global-overlay-search").addEventListener('click', function(){
         var resouceSearch = document.querySelector('#resourceSearch')
-        bootstrap.Tab.getOrCreateInstance(resouceSearch).show
+        bootstrap.Tab.getOrCreateInstance(resouceSearch).show()
     })
 });
