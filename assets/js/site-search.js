@@ -453,6 +453,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
         })(instantsearch.widgets.pagination)
+
+        const nationalPagination = instantsearch.widgets.panel ({
+            hidden: ({ results }) => results.nbPages === 1,
+        })(instantsearch.widgets.pagination)
     
     if(!!globeSearch){
         window.dataLayer.push({
@@ -672,10 +676,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         })
-
-        const usPagination = instantsearch.widgets.panel ({
-            hidden: ({ results }) => results.nbPages === 1,
-        })(instantsearch.widgets.pagination)
         
         usaSearch.addWidgets([
             instantsearch.widgets.configure({
@@ -702,7 +702,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
 
-            usPagination({
+            nationalPagination({
                 container: '#usPagination',
                 totalPages: 3,
                 scrollTo: '#usSearchbox'
@@ -910,9 +910,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
-        const dePagination = instantsearch.widgets.panel ({
-            hidden: ({ results }) => results.nbPages === 1,
-        })(instantsearch.widgets.pagination)
+        deSearch.addWidgets([{
+            init: function(options) {
+                if(filterLang == "en")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if(filterLang == "")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if (filterLang === "de") {
+                    options.helper.toggleRefinement('search_api_language', 'de');
+                }
+            }
+        }]);
 
         deSearch.addWidgets([
             instantsearch.widgets.configure({
@@ -955,7 +967,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
 
-            dePagination({
+            nationalPagination({
                 container: '#dePagination',
                 totalPages: 3,
                 scrollTo: '#deSearchbox'
