@@ -911,22 +911,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
 
         deSearch.addWidgets([
-            {
-                init: function(options) {
-                    if(filterLang == "en")
-                    {
-                        options.helper.toggleRefinement('search_api_language', 'en');
-                    }
-                    else if(filterLang == "")
-                    {
-                        options.helper.toggleRefinement('search_api_language', 'en');
-                    }
-                    else if (filterLang === "de") {
-                        options.helper.toggleRefinement('search_api_language', 'de');
-                    }
-                }
-            },
-            
             instantsearch.widgets.configure({
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
@@ -1034,7 +1018,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
             instantsearch.widgets
                 .index({ indexName: 'aesseal' })
-                .addWidgets([
+                .addWidgets([{
+                    init: function(options) {
+                        if(filterLang == "en")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if(filterLang == "")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if (filterLang === "de") {
+                            options.helper.toggleRefinement('search_api_language', 'de');
+                        }
+                    }
+                },
 
                 instantsearch.widgets.configure({
                     hitsPerPage: 10,
