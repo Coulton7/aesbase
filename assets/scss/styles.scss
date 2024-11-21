@@ -2419,7 +2419,7 @@ ul.about-us-cats a {
   line-height: 1.3em;
 }
 
-.change:after {
+.change:after, .loc-close:after {
   display: block;
   content: "\f00d";
   font-family: "Font Awesome 6 Free"; 
@@ -2430,27 +2430,6 @@ ul.about-us-cats a {
   float: right;
   z-index: 1032;
   top: 3em;
-  right: 1em;
-  height: 1em;
-  width: 1em;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.loc-close:after {
-  display: block;
-  content: "\f00d";
-  font-family: "Font Awesome 6 Free"; 
-  color: $white;
-  position: fixed;
-  font-size: 3em;
-  float: right;
-  z-index: 1032;
-  top: 2em;
   right: 1em;
   height: 1em;
   width: 1em;
