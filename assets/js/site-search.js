@@ -937,13 +937,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             nationalPagination({
-                container: '#usPagination',
+                container: '#inPagination',
                 totalPages: 3,
-                scrollTo: '#usSearchbox'
+                scrollTo: '#inSearchbox'
             }),
         
             customSearchBox({
-                container: document.querySelector('#usSearchbox'),
+                container: document.querySelector('#inSearchbox'),
                  searchAsYouType: false,
             }),
 
@@ -1061,7 +1061,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#inSearchbox'
                 }),
 
                 instantsearch.widgets.stats({
