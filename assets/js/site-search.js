@@ -966,7 +966,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets.hits ({
-                container: '#usHits',
+                container: '#inHits',
                 templates:{
                     item: data => `
                     <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
