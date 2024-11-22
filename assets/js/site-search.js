@@ -890,7 +890,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         const indiaSearch = instantsearch({
-            indexName: 'aesseal us',
+            indexName: 'aesseal in',
             searchClient,
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
@@ -948,7 +948,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets.stats({
-                container: '#usStats',
+                container: '#inStats',
                 templates: {
                     text(data, { html }) {
                         let count = '';
