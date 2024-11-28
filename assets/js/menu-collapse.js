@@ -1,5 +1,5 @@
+var overlayBtn = document.getElementById('overlay-btn');
 function autocollapse() {
-    var overlayBtn = document.getElementById('overlay-btn');
     var navbar = document.getElementById('autocollapse');
     navbar.classList.remove('collapsed');
 
