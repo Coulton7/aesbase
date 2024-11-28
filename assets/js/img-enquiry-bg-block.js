@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var water = document.querySelector('img[src="https://static.aesseal.com/graphics/Water-and-Waste-Water.png"');
 
     if(automotive) {
-      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Industry-Solutions.jpg"
+      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Automotive.jpg"
     } else if (biofuel) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Biofuels.jpg"
     } else if (chemical) {
