@@ -13291,9 +13291,13 @@ a.disabled {
   top: 0.5em;
 }
 
-.waveupper,
-.wavelower {
+.waveupper {
   position: relative;
+}
+
+.wavelower {
+  height: 8em;
+  width: 8em;
 }
 
 .textlogo {
