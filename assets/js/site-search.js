@@ -14,6 +14,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
+    function googleAnalyticsMiddleware() {
+        const sendEventDebounced = debounce(() => {
+            gtag('event','page_view', {
+                page_location: window.location.pathname + window.location.search,
+            });
+        }, 3000);
+
+        return {
+            onStateChange() {
+                sendEventDebounced();
+            },
+            subscribe() {},
+            unsubscribe() {},
+        };
+    }
     const renderSearchBox = (renderOptions, isFirstRender) => {
         const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
 
@@ -648,6 +663,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
+        search.use(googleAnalyticsMiddleware);
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
