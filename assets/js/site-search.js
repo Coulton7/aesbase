@@ -1,4 +1,4 @@
-import debounce from 'lodash.debounce';
+import debounce from 'https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/index.min.js';
 document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
