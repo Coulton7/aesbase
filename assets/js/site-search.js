@@ -520,8 +520,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        search.use(googleAnalyticsMiddleware);
-
         search.addWidgets([{
             init: function(options) {
                 if(filterLang == "en")
@@ -684,6 +682,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
+        search.use(googleAnalyticsMiddleware);
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
