@@ -12,6 +12,22 @@ const debounce = (func, wait, immediate=false) => {
     };
 };
 
+function googleAnalyticsMiddleware() {
+    const sendEventDebounced = debounce(() => {
+        gtag('event','page_view', {
+            page_location: window.location.pathname + window.location.search,
+        });
+    }, 3000);
+
+    return {
+        onStateChange() {
+            sendEventDebounced();
+        },
+        subscribe() {},
+        unsubscribe() {},
+    };
+}
+
 document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
@@ -67,27 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const customSearchBox = connectSearchBox (
         renderSearchBox
     );
-
-    function googleAnalyticsMiddleware() {
-        const sendEventDebounced = debounce(() => {
-            gtag('event','page_view', {
-                page_location: window.location.pathname + window.location.search,
-            });
-        }, 3000);
-    
-            gtag('event', 'search_term', {
-                query
-            }, 3000);
-    
-        return {
-            onStateChange() {
-                sendEventDebounced();
-            },
-            subscribe() {},
-            unsubscribe() {},
-        };
-    }
-    
 
     let typeMapping;
     let vidMapping;
