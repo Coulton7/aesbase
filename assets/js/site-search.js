@@ -519,7 +519,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             },
-            routing: true,
+            routing: {
+                router: instantsearch.routers.history(),
+                stateMapping: instantsearch.stateMappings.simple(),
+            }
         });
 
         search.addWidgets([{
