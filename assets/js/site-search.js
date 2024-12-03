@@ -1,3 +1,37 @@
+const debounce = (func, wait, immediate=false) => {
+    let timeout;
+    return (...args) => {
+        const later = () => {
+            timeout = null; // added this to set same behaviour as ES5
+            if (!immediate) func(...args); // this is called conditionally, just like in the ES5 version
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func(...args);
+    };
+};
+
+function googleAnalyticsMiddleware() {
+    const sendEventDebounced = debounce(() => {
+        gtag('event','page_view', {
+            page_location: window.location.pathname + window.location.search,
+        });
+
+        gtag('event', 'view_search_results', {
+            search_term: document.querySelector('.ais-SearchBox-input').value,
+        });
+    }, 3000);
+
+    return {
+        onStateChange() {
+            sendEventDebounced();
+        },
+        subscribe() {},
+        unsubscribe() {},
+    };
+}
+
 document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
@@ -13,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const { connectSearchBox } = instantsearch.connectors;
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
-    const globalIndex= 'aesseal';
 
     const renderSearchBox = (renderOptions, isFirstRender) => {
         const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
@@ -466,8 +499,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         const search = instantsearch({
-            globalIndex,
             searchClient,
+            indexName: 'aesseal',
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
             searchFunction(helper) {
@@ -484,6 +517,29 @@ document.addEventListener("DOMContentLoaded", function() {
                         dataLayer.push({ event: 'Hits Viewed' });
                     }
                 }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState[globalIndex];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            [globalIndex]: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
             },
         });
 
@@ -649,6 +705,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
+        search.use(googleAnalyticsMiddleware);
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
