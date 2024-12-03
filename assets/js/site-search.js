@@ -19,6 +19,10 @@ function googleAnalyticsMiddleware() {
         });
     }, 3000);
 
+        gtag('event', 'search_term', {
+            query
+        }, 3000);
+
     return {
         onStateChange() {
             sendEventDebounced();
