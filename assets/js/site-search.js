@@ -1,37 +1,3 @@
-const debounce = (func, wait, immediate=false) => {
-    let timeout;
-    return (...args) => {
-        const later = () => {
-            timeout = null; // added this to set same behaviour as ES5
-            if (!immediate) func(...args); // this is called conditionally, just like in the ES5 version
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func(...args);
-    };
-};
-
-function googleAnalyticsMiddleware() {
-    const sendEventDebounced = debounce(() => {
-        gtag('event','page_view', {
-            page_location: window.location.pathname + window.location.search,
-        });
-
-        gtag('event', 'view_search_results', {
-            search_term: document.querySelector('.ais-SearchBox-input').value,
-        });
-    }, 3000);
-
-    return {
-        onStateChange() {
-            sendEventDebounced();
-        },
-        subscribe() {},
-        unsubscribe() {},
-    };
-}
-
 document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
