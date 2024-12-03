@@ -520,7 +520,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
-                router: instantsearch.routers.history(),
                 stateMapping: {
                     stateToRoute(uiState){
                         const indexUiState = uiState[globalIndex];
