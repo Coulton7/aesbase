@@ -18,7 +18,7 @@ function googleAnalyticsMiddleware() {
             page_location: window.location.pathname + window.location.search,
         });
 
-        gtag('event', 'views_search_results', {
+        gtag('event', 'view_search_results', {
             search_term: document.querySelector('.ais-SearchBox-input').value,
         });
     }, 3000);
