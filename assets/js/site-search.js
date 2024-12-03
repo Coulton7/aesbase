@@ -517,6 +517,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         dataLayer.push({ event: 'Hits Viewed' });
                     }
                 }
+            },
+            routing: {
+                stateMapping: {
+                    statetoRoute(uiState){
+                        const indexUiState = uiState[indexName];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type
+                        }
+                    }
+                }
             }
         });
 
