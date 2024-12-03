@@ -519,27 +519,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             },
-            routing: {
-                stateMapping: {
-                    stateToRoute(uiState){
-                        const indexUiState = uiState[globalIndex];
-                        return{
-                            q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type
-                        }
-                    },
-                    routeToState(routeState) {
-                        return{
-                            [globalIndex]: {
-                                query: routeState.q,
-                                menu: {
-                                    type: routeState.type
-                                }
-                            },
-                        };
-                    },
-                },
-            },
+            routing: true,
         });
 
         search.addWidgets([{
