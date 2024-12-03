@@ -519,29 +519,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             },
-            routing: {
-                stateMapping: {
-                    stateToRoute(uiState){
-                        const indexUiState = uiState[globalIndex];
-                        return{
-                            q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
-                        }
-                    },
-                    routeToState(routeState) {
-                        return{
-                            [globalIndex]: {
-                                query: routeState.q,
-                                menu: {
-                                    type: routeState.type,
-                                    lang: routeState.search_api_language,
-                                }
-                            },
-                        };
-                    },
-                },
-            },
         });
 
         search.addWidgets([{
