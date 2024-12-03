@@ -683,7 +683,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
-        search.use(googleAnalyticsMiddleware);
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
