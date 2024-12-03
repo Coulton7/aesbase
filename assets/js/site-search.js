@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function() {
             routing: {
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState[globalIndex];
+                        const indexUiState = uiState['aesseal'];
                         return{
                             q: indexUiState.query,
                             type: indexUiState.menu && indexUiState.menu.type,
@@ -530,7 +530,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            [globalIndex]: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 menu: {
                                     type: routeState.type,
