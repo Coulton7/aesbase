@@ -526,9 +526,19 @@ document.addEventListener("DOMContentLoaded", function() {
                             q: indexUiState.query,
                             type: indexUiState.menu && indexUiState.menu.type
                         }
-                    }
-                }
-            }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            [indexName]: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type
+                                }
+                            },
+                        };
+                    },
+                },
+            },
         });
 
         search.addWidgets([{
