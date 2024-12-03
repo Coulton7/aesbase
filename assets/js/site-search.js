@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const { connectSearchBox } = instantsearch.connectors;
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
+    const globalIndex= 'aesseal';
 
     const renderSearchBox = (renderOptions, isFirstRender) => {
         const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
@@ -499,7 +500,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         const search = instantsearch({
-            indexName: 'aesseal',
+            globalIndex,
             searchClient,
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
@@ -521,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function() {
             routing: {
                 stateMapping: {
                     statetoRoute(uiState){
-                        const indexUiState = uiState[indexName];
+                        const indexUiState = uiState[globalIndex];
                         return{
                             q: indexUiState.query,
                             type: indexUiState.menu && indexUiState.menu.type
@@ -529,7 +530,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            [indexName]: {
+                            [globalIndex]: {
                                 query: routeState.q,
                                 menu: {
                                     type: routeState.type
