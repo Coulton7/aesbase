@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             routing: {
                 stateMapping: {
-                    statetoRoute(uiState){
+                    stateToRoute(uiState){
                         const indexUiState = uiState[globalIndex];
                         return{
                             q: indexUiState.query,
