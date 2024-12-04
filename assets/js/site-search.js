@@ -2,8 +2,8 @@ const debounce = (func, wait, immediate=false) => {
     let timeout;
     return (...args) => {
         const later = () => {
-            timeout = null; // added this to set same behaviour as ES5
-            if (!immediate) func(...args); // this is called conditionally, just like in the ES5 version
+            timeout = null; 
+            if (!immediate) func(...args);
         };
         const callNow = immediate && !timeout;
         clearTimeout(timeout);
