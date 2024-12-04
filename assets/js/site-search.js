@@ -1991,7 +1991,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 })
             ])
         ]);
-        deSearch.start();
+        aeSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
     }
 });
