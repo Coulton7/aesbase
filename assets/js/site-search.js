@@ -2094,6 +2094,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 20,
                 attributesToSnippet: ['description:80', 'body:80'],
                 page: 0,
+                filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
             }),
 
             instantsearch.widgets.clearRefinements({
