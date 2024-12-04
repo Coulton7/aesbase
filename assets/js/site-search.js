@@ -1387,7 +1387,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#inSearchbox'
+                    scrollTo: '#zaSearchbox'
                 }),
 
                 instantsearch.widgets.stats({
