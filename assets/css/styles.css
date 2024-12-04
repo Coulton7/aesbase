@@ -13213,6 +13213,10 @@ body {
   pointer-events: visible;
 }
 
+.pe-pointer {
+  cursor: pointer;
+}
+
 a.disabled {
   color: #6c757d;
   border-color: #6c757d;

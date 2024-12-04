@@ -487,6 +487,10 @@ body {
   pointer-events: visible;
 }
 
+.pe-pointer {
+  cursor: pointer;
+}
+
 a.disabled {
   color: $gray-600;
   border-color: $gray-600;
