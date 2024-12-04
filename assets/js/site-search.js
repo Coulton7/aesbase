@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let inSearch = document.getElementById('inHits');
     let zaSearch = document.getElementById('zaHits');
     let uaeSearch = document.getElementById('aeHits');
+    let resSearch = doucment.getElementById('resHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
@@ -1992,6 +1993,221 @@ document.addEventListener("DOMContentLoaded", function() {
             ])
         ]);
         aeSearch.start();
+        document.querySelector('.ais-SearchBox-input').focus();
+    }
+
+    if(!!resSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        const resourceSearch = instantsearch({
+            searchClient,
+            indexName: 'aesseal',
+            typoTolerance: 'strict',
+            paginationLimitedTo: 80,
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal']: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
+        });
+
+        resourceSearch.addWidgets([{
+            init: function(options) {
+                if(filterLang == "en")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if(filterLang == "")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'en');
+                }
+                else if(filterLang == "es")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'es');
+                }
+                else if (filterLang === "fr") {
+                    options.helper.toggleRefinement('search_api_language', 'fr');
+                }
+                else if (filterLang === "de") {
+                    options.helper.toggleRefinement('search_api_language', 'de');
+                }
+                else if(filterLang == "it")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'it');
+                }
+                else if(filterLang == "pl")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'pl');
+                }
+                else if(filterLang == "ru")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'ru');
+                }
+                else if(filterLang == "tr")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'tr');
+                }
+                else if(filterLang == "zh-hans")
+                {
+                    options.helper.toggleRefinement('search_api_language', 'zh-hans');
+                }
+            }
+        }]);
+        
+        resourceSearch.addWidgets([
+            instantsearch.widgets.configure({
+                hitsPerPage: 20,
+                attributesToSnippet: ['description:80', 'body:80'],
+                page: 0,
+            }),
+
+            instantsearch.widgets.clearRefinements({
+                container: '#clear-refinements',
+                cssClasses:{
+                    root: 'pt-5',
+                    button: [
+                        'btn btn-primary text-white'
+                    ]
+                }
+            }),
+
+            langlistPanel({
+                container: '#lang-list',
+                attribute: 'search_api_language',
+                templates: {
+                    header: 'Select your Language',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: item.label.toUpperCase(),
+                    }));
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+        
+            pagination({
+                container: '#resPagination',
+                totalPages: 3,
+                scrollTo: '#resSearchbox'
+            }),
+        
+            customSearchBox({
+                container: document.querySelector('#resSearchbox'),
+                 searchAsYouType: false,
+            }),
+
+            instantsearch.widgets.stats({
+                container: '#resStats',
+                templates: {
+                    text(data, { html }) {
+                        let count = '';
+                        if (data.hasManyResults) {
+                            count += `${data.nbHits} results`
+                        } else if (data.hasOneResult) {
+                            count += `1 result`
+                        } else {
+                            count += `no result`;
+                        }
+
+                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                    }
+                }
+            }),
+        
+            instantsearch.widgets.hits ({
+                container: '#resHits',
+                templates:{
+                    item: data => `
+                    <div class="search-result">
+                        <small>${data.url}</small>
+                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                        <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "description",
+                            hit: data
+                        })}</p>
+                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "body",
+                            hit: data
+                        })}</p>
+                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                    </div>`,
+                    empty(results, { html }){
+                        document.querySelector('.parts-form').style.display = 'block';
+                        document.querySelector('.ais-Pagination').style.display = 'none';
+                        return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                        <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                        </div>
+                        <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                    },
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: typeMapping[item.type],
+                        vid: vidMapping[item.vid]
+                    }))
+                }
+            }),
+        ]);
+        resourceSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
     }
 });
