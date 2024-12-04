@@ -1,37 +1,3 @@
-const debounce = (func, wait, immediate=false) => {
-    let timeout;
-    return (...args) => {
-        const later = () => {
-            timeout = null; 
-            if (!immediate) func(...args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func(...args);
-    };
-};
-
-function googleAnalyticsMiddleware() {
-    const sendEventDebounced = debounce(() => {
-        gtag('event','page_view', {
-            page_location: window.location.pathname + window.location.search,
-        });
-
-        gtag('event', 'view_search_results', {
-            search_term: document.querySelector('.ais-SearchBox-input').value,
-        });
-    }, 3000);
-
-    return {
-        onStateChange() {
-            sendEventDebounced();
-        },
-        subscribe() {},
-        unsubscribe() {},
-    };
-}
-
 document.addEventListener("DOMContentLoaded", function() {
 
     var urlArray = window.location.pathname.split('/');
@@ -705,7 +671,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
         ]);
         search.start();
-        search.use(googleAnalyticsMiddleware);
         document.querySelector('.ais-SearchBox-input').focus();
     }
 
