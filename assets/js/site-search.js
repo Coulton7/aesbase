@@ -954,7 +954,30 @@ document.addEventListener("DOMContentLoaded", function() {
                         dataLayer.push({ event: 'Hits Viewed' });
                     }
                 }
-            }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal in'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal in']: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
         })
         
         indiaSearch.addWidgets([
@@ -1187,7 +1210,30 @@ document.addEventListener("DOMContentLoaded", function() {
                         dataLayer.push({ event: 'Hits Viewed' });
                     }
                 }
-            }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal de'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal de']: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
         })
 
         deSearch.addWidgets([
