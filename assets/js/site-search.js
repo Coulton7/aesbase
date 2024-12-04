@@ -1237,7 +1237,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         })
         
-        indiaSearch.addWidgets([
+        southafricaSearch.addWidgets([
             instantsearch.widgets.configure({
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
