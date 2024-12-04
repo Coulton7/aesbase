@@ -698,7 +698,30 @@ document.addEventListener("DOMContentLoaded", function() {
                         dataLayer.push({ event: 'Hits Viewed' });
                     }
                 }
-            }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal us'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal us']: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
         })
         
         usaSearch.addWidgets([
