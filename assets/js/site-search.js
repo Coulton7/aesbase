@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let usSearch = document.getElementById('usHits');
     let gerSearch = document.getElementById('deHits');
     let inSearch = document.getElementById('inHits');
+    let zaSearch = document.getElementById('zaHits')
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
@@ -1185,6 +1186,263 @@ document.addEventListener("DOMContentLoaded", function() {
         indiaSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
     }
+
+    if(!!zaSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        const southafricaSearch = instantsearch({
+            indexName: 'aesseal za',
+            searchClient,
+            typoTolerance: 'strict',
+            paginationLimitedTo: 80,
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal za'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.menu && indexUiState.menu.type,
+                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal za']: {
+                                query: routeState.q,
+                                menu: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
+        })
+        
+        indiaSearch.addWidgets([
+            instantsearch.widgets.configure({
+                hitsPerPage: 10,
+                attributesToSnippet: ['body:80'],
+                page: 0,
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            nationalPagination({
+                container: '#zaPagination',
+                totalPages: 3,
+                scrollTo: '#zaSearchbox'
+            }),
+        
+            customSearchBox({
+                container: document.querySelector('#zaSearchbox'),
+                 searchAsYouType: false,
+            }),
+
+            instantsearch.widgets.stats({
+                container: '#zaStats',
+                templates: {
+                    text(data, { html }) {
+                        let count = '';
+                        if (data.hasManyResults) {
+                            count += `${data.nbHits} results`
+                        } else if (data.hasOneResult) {
+                            count += `1 result`
+                        } else {
+                            count += `no result`;
+                        }
+
+                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                    }
+                }
+            }),
+
+            instantsearch.widgets.hits ({
+                container: '#zaHits',
+                templates:{
+                    item: data => `
+                    <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                        <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                        <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                        <p class="lead">${data.type}</p>
+                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                            attribute: "body",
+                            hit: data
+                        })}</p>
+                        <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                        <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                    </div>`,
+                    empty(results, { html }){
+                        document.querySelector('.parts-form').style.display = 'block';
+                        document.querySelector('.ais-Pagination').style.display = 'none';
+                        return html`<p class="h3">No results found matching ${results.query}</p>
+                    <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                    <div class="text-center  py-5">
+                        <p class="h3">Would you like to search our Global site?</p>
+                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                    </div>
+                    <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
+                    },
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: natTypeMapping[item.type],
+                    }))
+                },
+            }),
+
+            instantsearch.widgets
+                .index({ indexName: 'aesseal' })
+                .addWidgets([{
+                    init: function(options) {
+                        if(filterLang == "en")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if(filterLang == "")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                    }
+                },
+
+                instantsearch.widgets.configure({
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['description:80', 'body:80'],
+                    page: 0,
+                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                }),
+
+                gloablTypelistPanel({
+                    container: '#globalType-list',
+                    attribute: 'type',
+                    templates: {
+                        header: 'Filter Global Site by Content Type',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
+                    cssClasses: {
+                        item: ['types-item']
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                langlistPanel({
+                    container: '#lang-list',
+                    attribute: 'search_api_language',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#inSearchbox'
+                }),
+
+                instantsearch.widgets.stats({
+                    container: '#globalStats',
+                    templates: {
+                        text(data, { html }) {
+                            let count = '';
+                            if (data.hasManyResults) {
+                                count += `${data.nbHits} results`
+                            } else if (data.hasOneResult) {
+                                count += `1 result`
+                            } else {
+                                count += `no result`;
+                            }
+    
+                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                        }
+                    }
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item: data => `
+                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                            <small>https://www.aesseal.com${data.url}</small>
+                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "description",
+                                hit: data
+                            })}</p>
+                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                attribute: "body",
+                                hit: data
+                            })}</p>
+                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
+                        </div>`,
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    },
+                })
+            ])
+        ]);
+        southafricaSearch.start();
+        document.querySelector('.ais-SearchBox-input').focus();
+    }
+
 
     if(!!gerSearch){
         window.dataLayer.push({
