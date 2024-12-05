@@ -493,15 +493,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -708,15 +708,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal us'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal us']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -964,15 +964,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal in'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal in']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -1220,15 +1220,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal za'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal za']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -1477,15 +1477,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal de'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal de']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -1752,15 +1752,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal ae'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal ae']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
@@ -2027,15 +2027,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal'];
                         return{
                             q: indexUiState.query,
-                            type: indexUiState.menu && indexUiState.menu.type,
-                            lang: indexUiState.emnu && indexUiState.menu.search_api_language,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                         }
                     },
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
                                 query: routeState.q,
-                                menu: {
+                                refinementList: {
                                     type: routeState.type,
                                     lang: routeState.search_api_language,
                                 }
