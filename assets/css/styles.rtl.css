@@ -16530,6 +16530,7 @@ ul.about-us-cats a {
   .footer-curve {
     margin-top: -6.5em;
     transform: rotateZ(180deg);
+    transform: scaleX(-1);
   }
   .main-menu .nav-item:last-child {
     display: block;
