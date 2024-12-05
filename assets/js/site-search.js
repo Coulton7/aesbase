@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let inSearch = document.getElementById('inHits');
     let zaSearch = document.getElementById('zaHits');
     let uaeSearch = document.getElementById('aeHits');
-    let resSearch = doucment.getElementById('resHits');
+    let resSearch = document.getElementById('resHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
