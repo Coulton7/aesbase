@@ -14663,7 +14663,7 @@ blockquote {
   float: left;
   margin-left: 1.5em;
   position: fixed;
-  left: 0;
+  left: auto;
   top: 0;
   display: block;
   color: #535454;
