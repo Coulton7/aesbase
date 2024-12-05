@@ -13304,6 +13304,7 @@ a.disabled {
   position: relative;
   bottom: 0;
   margin-top: -7.2em;
+  transform: rotateZ(180deg);
 }
 
 .bg-white .navbar-collapse {
@@ -13572,6 +13573,7 @@ a.icon-link:hover {
   position: absolute;
   bottom: 0.55em;
   background-attachment: fixed;
+  transform: rotateZ(180deg);
 }
 
 .svg-white {
@@ -14186,6 +14188,7 @@ blockquote {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   background-color: rgba(255, 9, 43, 0.8);
+  width: 10px;
 }
 
 .promo-btn-danger:hover {
@@ -16342,6 +16345,7 @@ ul.about-us-cats a {
   }
   .footer-curve {
     margin-top: -6.5em;
+    transform: rotateZ(180deg);
   }
   .path-frontpage .scroll-nav {
     transform: translateY(23%);
@@ -16525,6 +16529,7 @@ ul.about-us-cats a {
   }
   .footer-curve {
     margin-top: -6.5em;
+    transform: rotateZ(180deg);
   }
   .main-menu .nav-item:last-child {
     display: block;
@@ -16651,6 +16656,7 @@ ul.about-us-cats a {
   }
   .footer-curve {
     margin-top: -7.2em;
+    transform: rotateZ(180deg);
   }
 }
 /* lg */
@@ -16799,4 +16805,4 @@ ul.about-us-cats a {
 }
 /* end custom.scss */
 
-/*# sourceMappingURL=rtl-styles.css.map */
+/*# sourceMappingURL=styles.rtl.css.map */
