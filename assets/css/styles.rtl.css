@@ -13574,7 +13574,6 @@ a.icon-link:hover {
   position: absolute;
   bottom: 0.55em;
   background-attachment: fixed;
-  transform: rotateZ(180deg);
 }
 
 .svg-white {
@@ -16659,7 +16658,6 @@ ul.about-us-cats a {
   }
   .footer-curve {
     margin-top: -7.2em;
-    transform: rotateZ(180deg);
   }
 }
 /* lg */
