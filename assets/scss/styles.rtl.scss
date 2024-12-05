@@ -1,4 +1,4 @@
-@import "configuration-import";
+ @import "configuration-import";
 @import "variables";
 
 $custom-theme-colors: map-merge(
@@ -849,7 +849,7 @@ a.icon-link:hover {
   position: absolute;
   bottom: 0.55em;
   background-attachment: fixed;
-  transform: rotateZ(180deg);
+  
 }
 
 .svg-white {
@@ -4065,7 +4065,7 @@ ul.about-us-cats a {
 
   .footer-curve {
     margin-top: -7.2em;
-    transform: rotateZ(180deg);
+    
   }
 }
 
