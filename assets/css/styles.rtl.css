@@ -13305,6 +13305,7 @@ a.disabled {
   bottom: 0;
   margin-top: -7.2em;
   transform: rotateZ(180deg);
+  transform: scaleX(-1);
 }
 
 .bg-white .navbar-collapse {
@@ -16346,6 +16347,7 @@ ul.about-us-cats a {
   .footer-curve {
     margin-top: -6.5em;
     transform: rotateZ(180deg);
+    transform: scaleX(-1);
   }
   .path-frontpage .scroll-nav {
     transform: translateY(23%);
