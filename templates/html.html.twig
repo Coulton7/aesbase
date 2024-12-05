@@ -36,7 +36,7 @@
 {% if html_attributes['dir'] == 'ltr' %}
   {{ attach_library('aesbase/bootstrap/css') }}
 {% elseif html_attributes['dir'] == 'rtl' %}
-  {{ attach_library('aesbase/bootstrap/rtl-css') }}
+  {{ attach_library('aesbase/rtl-css') }}
 {%- endif -%}
 <!DOCTYPE html>
 <html{{ html_attributes }}>
