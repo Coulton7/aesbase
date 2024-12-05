@@ -578,7 +578,10 @@ a.disabled {
   left: -1.6em;
   position: relative;
   bottom: 0;
-  margin-top: -7.2em;
+  margin-top: -7.2em; 
+  transform: rotateZ(180deg);
+
+
 }
 
 .bg-white .navbar-collapse {
@@ -847,6 +850,7 @@ a.icon-link:hover {
   position: absolute;
   bottom: 0.55em;
   background-attachment: fixed;
+  transform: rotateZ(180deg);
 }
 
 .svg-white {
@@ -3687,6 +3691,7 @@ ul.about-us-cats a {
 
   .footer-curve {
     margin-top: -6.5em;
+    transform: rotateZ(180deg);
   }
 
   .path-frontpage .scroll-nav {
@@ -4058,6 +4063,7 @@ ul.about-us-cats a {
 
   .footer-curve {
     margin-top: -7.2em;
+    transform: rotateZ(180deg);
   }
 }
 
