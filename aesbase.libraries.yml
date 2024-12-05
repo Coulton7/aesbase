@@ -5,6 +5,14 @@ bootstrap:
       https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css: { type: external, minified: true }
       https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
       assets/css/styles.css: { minified: true }
+
+  rtl-css:
+    theme:
+      https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css: { type: external, minified: true }
+      https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css: { type: external, minified: true }
+      https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
+      assets/css/styles.css: { minified: true }
+      assets/css/rtl-styles.css: { minified: true }
     
   js:
     https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js: { type: external, minified: true }
