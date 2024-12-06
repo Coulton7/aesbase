@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var frontPage = document.querySelector(".path-frontpage");
   var scrollNav = document.querySelector('.scroll-nav');
   var navLinks = document.querySelectorAll(".nav-link");
+  var url = window.location.href;
+  var query = 'q';
   
   if(frontPage){
     if(overlayNavBtn){
@@ -108,6 +110,65 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       });
+    }
+
+    if(url.indexOf('?' + query + '=') != -1){
+      overlaySearchBtn.classList.toggle("change");
+        if (y.style.height === "100%") {
+          y.style.height = "1px";
+          y.style.bottom = "-1px";
+          html.classList.remove("noscroll");
+          body.classList.remove("noscroll");
+          dialogOffCanvas.classList.remove("noscroll");
+          overlaySearchBtn.classList.add("search-btn");
+          if (scrollNav.classList.contains("scrolled-up")){
+            scrollNav.classList.remove("scrolled-up");
+            scrollNav.classList.add("scrolled-down")
+          } else {
+            scrollNav.classList.add("scrolled-down")
+          }
+          document.querySelector(".scroll-nav").classList.remove("shadow-back");
+          document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
+          document.querySelector('.overlay-btn').classList.remove("normText");
+          document.querySelector('.wavelogo').style.opacity = "1";
+          document.querySelector('.textlogo').style.opacity = "0";
+          navLinks.forEach(function (navLink) {
+          navLink.classList.remove('normText');
+          });
+        } else {
+          y.style.height = "100%";
+          y.style.bottom = "0";
+          if (x.style.height == "100%") {
+            x.style.height = "1px";
+            x.style.bottom = "-1px";
+            overlaySearchBtn.classList.remove("change");
+            overlaySearchBtn.classList.add("overlay-btn");
+          } else if (s.style.height == "100%") {
+            s.style.height = "1px";
+            s.style.bottom = "-1px";
+            overlayShareBtn.classList.remove("change");
+            overlayShareBtn.classList.add("share-btn");
+          }
+          html.classList.add("noscroll");
+          body.classList.add("noscroll");
+          dialogOffCanvas.classList.add("noscroll");
+          overlaySearchBtn.classList.remove("search-btn");
+          if (scrollNav.classList.contains("scrolled-down")){
+            scrollNav.classList.remove("scrolled-down");
+            scrollNav.classList.add("scrolled-up")
+          } else {
+            scrollNav.classList.add("scrolled-up")
+          }
+          document.querySelector('.ais-SearchBox-input').focus();
+          document.querySelector(".scroll-nav").classList.add("shadow-back");
+          document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
+          document.querySelector('.overlay-btn').classList.add("normText");
+          document.querySelector('.wavelogo').style.opacity = "0";
+          document.querySelector('.textlogo').style.opacity = "1";
+          navLinks.forEach(function (navLink) {
+            navLink.classList.add('normText');
+          });
+        }
     }
 
     if(overlaySearchGlobal) {
