@@ -488,57 +488,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
-                router: instantsearch.routers.history({
-                    windowTitle({ query }){
-                        const queryTitle = query ? `Results for "${query}"` : 'Search';
-                    },
-
-                    createURL({ qsModule, routeState, location }){
-                        const urlParts = location.href;
-                        const baseUrl = `${urlParts ? urlParts[1] : ''}/`;
-
-                        const queryParameters = {};
-
-                        if(routeState.query) {
-                            queryParameters.query = encodeURIComponent(routeState.query);
-                        }
-
-                        if(routeState.page !==1) {
-                            queryParameters.page = routeState.page;
-                        }
-
-                        if (routeState.type) {
-                            queryParameters.type = routeState.type.map(encodeURIComponent);
-                        }
-
-                        if (routeState.search_api_language) {
-                            queryParameters.search_api_language = routeState.search_api_language.map(encodeURIComponent);
-                        }
-
-                        const queryString = qsModule.stringify(queryParameters, {
-                            addQueryPrefix: true,
-                            arrayFormat: 'repeat',
-                        });
-
-                        return `${baseUrl}/${queryString}`;
-                    },
-
-                    parseUrl({ qsModule, location }){
-                        const pathnameMatches = location.pathname;
-                        const {query = '', page, type =[], search_api_language =[] } = qsModule.parse(
-                            location.search.slice(1)
-                        );
-                        const allTypes = Array.isArray(type) ? type : [type].filter(Boolean);
-                        const allLangs = Array.isArray(search_api_language) ? search_api_language : [search_api_language].filter(Boolean);
-
-                        return {
-                            query:decodeURIComponent(query),
-                            page,
-                            type: allTypes.map(decodeURIComponent),
-                            search_api_language: allLangs.map(decodeURIComponent)
-                        };
-                    },
-                }),
                 stateMapping: {
                     stateToRoute(uiState){
                         const indexUiState = uiState['aesseal'];
