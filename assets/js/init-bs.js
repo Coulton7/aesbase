@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(!nav) {
         document.querySelector('.navbar-toggler').style.display = "none";
-        document.querySelector('.collapse').style.display="block";
+        document.querySelector('.collapse').style.display="flex";
     }
 
 });
