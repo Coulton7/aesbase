@@ -23,7 +23,6 @@ bootstrap:
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
-    assets/js/expanding-icons.js: {}
 
 
 form:
