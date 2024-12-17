@@ -15885,10 +15885,6 @@ ul.about-us-cats a {
   align-items: center;
 }
 
-.card-staff-img {
-  bottom: 5em;
-}
-
 .slider-info {
   text-align: right;
 }
@@ -16484,11 +16480,6 @@ ul.about-us-cats a {
   }
   to {
     width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .card-staff-img {
-    bottom: 3em; /* Adjust as needed for smaller screens */
   }
 }
 @media screen and (max-width: 767px) {
@@ -17180,9 +17171,6 @@ ul.about-us-cats a {
     top: 5%;
     width: 83.333%;
     left: 8.333%;
-  }
-  .card-staff-img {
-    bottom: 3em;
   }
   .promo-margin {
     margin-block-start: 2%;
