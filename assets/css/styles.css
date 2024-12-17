@@ -14200,6 +14200,7 @@ blockquote {
 
 .enquiry-icon:hover {
   background-color: rgb(167, 52, 53);
+  color: #e5e5e7;
 }
 
 .search-icon:hover {
@@ -14291,11 +14292,6 @@ blockquote {
     transform: translateY(0);
   }
 }
-.enquiry-icon:hover {
-  color: #e5e5e7;
-  background-color: #004a8c;
-}
-
 .breadcrumb li {
   transform: skew(-25deg);
   color: #667f9c;

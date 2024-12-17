@@ -1475,8 +1475,8 @@ blockquote {
 
 
 .enquiry-icon:hover {
- 
   background-color: rgb(167, 52, 53);
+  color: #e5e5e7;
 }
 
 .search-icon:hover{
@@ -1556,11 +1556,6 @@ blockquote {
 @keyframes slide-up {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
-}
-
-.enquiry-icon:hover {
-  color: #e5e5e7;
-  background-color: $lightblue;
 }
 
 .breadcrumb li {
