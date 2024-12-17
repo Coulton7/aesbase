@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const enquiryIcon = document.querySelector('.expanding-icon');
+    const enquiryIcon = document.querySelector('.enquiry-icon');
     const enquiryIconFa = enquiryIcon.querySelector('i');
     const searchIcon = document.querySelector('.search-icon');
     const feedbackIcon = document.querySelector('.feedback-icon');
