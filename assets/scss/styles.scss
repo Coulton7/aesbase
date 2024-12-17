@@ -1436,15 +1436,15 @@ blockquote {
 }
 
 .enquiry-icon {
-  color: $white;
+  color: white;
   border-radius: 50%;
-  width: 3.5em;
-  height: 3.5em;
-  background-color: $danger;
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  z-index: 1032;
+  width: 5em;
+  height: 5em;
+  background-color: red;
+  position: fixed; /* Use fixed to ensure it stays at the bottom-right */
+  bottom: 1.5em;
+  right: 1.5em;
+  z-index: 1060;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1452,6 +1452,110 @@ blockquote {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.search-icon {
+  color: white;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: red;
+  position: fixed; /* Use fixed to align it with .enquiry-icon */
+  bottom: 1em;
+  right: 7.5em; /* Adjust to the left of enquiry-icon */
+  z-index: 1033;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.enquiry-icon:hover {
+ 
+  background-color: rgb(167, 52, 53);
+}
+
+.search-icon:hover{
+  transform: scale(1.2) !important;
+  background-color: rgb(167, 52, 53);
+}
+.chat-icon:hover{
+  transform: scale(1.2) !important;
+  background-color: rgb(167, 52, 53);
+}
+.feedback-icon:hover{
+  transform: scale(1.2) !important; 
+  background-color: rgb(167, 52, 53);
+}
+
+.feedback-icon {
+  color: white;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: red;
+  position: fixed; /* Use fixed to align it with .enquiry-icon */
+  bottom: 6.5em;
+  right: 6.5em; /* Adjust to the left of enquiry-icon */
+  z-index: 1034;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+.chat-icon {
+  color: white;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: red;
+  position: fixed; /* Use fixed to align it with .enquiry-icon */
+  bottom: 7.5em;
+  right: 1em; /* Adjust to the left of enquiry-icon */
+  z-index: 1035;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
+  cursor: pointer;
+  text-decoration: none;
+ 
+}
+
+.slide-in-right {
+  animation: slide-right 0.5s ease-in-out forwards;
+}
+
+.slide-in-left {
+  animation: slide-left 0.5s ease-in-out forwards;
+}
+
+.slide-in-up {
+  animation: slide-up 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-left {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
 }
 
 .enquiry-icon:hover {
