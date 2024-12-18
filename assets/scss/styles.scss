@@ -4128,7 +4128,6 @@ height:100%;
     margin: 0.25rem 0;
   }
 
-  .overlay-content,
   .location-overlay > div + div {
     top: 21%;
   }
@@ -4196,6 +4195,15 @@ height:100%;
     transform-origin: none;
     margin-bottom: 0;
   }
+
+  .change:after {
+    top: 1.5em
+    }
+    
+  .overlay-content {
+    top: 28%
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -4205,6 +4213,14 @@ height:100%;
     transform: none;
     transform-origin: none;
     margin-bottom: 0;
+  }
+
+  .change:after {
+    top: 1.5em
+    }
+    
+  .overlay-content {
+    top: 30%
   }
 }
 
@@ -4738,6 +4754,14 @@ height:100%;
     transition: all 0.3s ease-in-out;
   }
 
+  .change:after{
+    top: 2em;
+  }
+    
+  .overlay-content {
+    top: 15%
+  }
+
   .ps-md-6 {
     padding-inline-start: 3.5rem;
   }
@@ -5167,6 +5191,10 @@ height:100%;
     width: 65%;
     left: 20%;
     top: 15%;
+  }
+
+  .overlay-content {
+    top:22%;
   }
 
   .virtual-tour:hover {

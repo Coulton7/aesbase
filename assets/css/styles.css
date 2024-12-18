@@ -16824,7 +16824,6 @@ ul.about-us-cats a {
     border-radius: 0.375rem;
     margin: 0.25rem 0;
   }
-  .overlay-content,
   .location-overlay > div + div {
     top: 21%;
   }
@@ -16880,6 +16879,12 @@ ul.about-us-cats a {
     transform-origin: none;
     margin-bottom: 0;
   }
+  .change:after {
+    top: 1.5em;
+  }
+  .overlay-content {
+    top: 28%;
+  }
 }
 @media screen and (max-width: 500px) {
   .preface-flex-margin {
@@ -16888,6 +16893,12 @@ ul.about-us-cats a {
     transform: none;
     transform-origin: none;
     margin-bottom: 0;
+  }
+  .change:after {
+    top: 1.5em;
+  }
+  .overlay-content {
+    top: 30%;
   }
 }
 /* sm */
@@ -17311,6 +17322,12 @@ ul.about-us-cats a {
     transform: translateY(102%);
     transition: all 0.3s ease-in-out;
   }
+  .change:after {
+    top: 2em;
+  }
+  .overlay-content {
+    top: 15%;
+  }
   .ps-md-6 {
     padding-inline-start: 3.5rem;
   }
@@ -17646,6 +17663,9 @@ ul.about-us-cats a {
     width: 65%;
     left: 20%;
     top: 15%;
+  }
+  .overlay-content {
+    top: 22%;
   }
   .virtual-tour:hover {
     background-image: url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
