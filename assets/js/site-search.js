@@ -1972,9 +1972,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         {
                             options.helper.toggleRefinement('search_api_language', 'en');
                         }
-                        else if (filterLang === "de") {
-                            options.helper.toggleRefinement('search_api_language', 'ar');
-                        }
                     }
                 },
 
