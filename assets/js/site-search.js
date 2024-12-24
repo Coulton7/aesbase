@@ -658,6 +658,14 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                             <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                         }
+                        else if (filterLang == 'es') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No se han encontrado resultados que coincidan ${results.query}</p>
+                            <p>Lo sentimos, no hemos encontrado ningún resultado para su búsqueda. Intente buscar de nuevo, revisando su búsqueda en busca de errores ortográficos y/o reduciendo el número de palabras clave utilizadas. También puede intentar utilizar una frase de búsqueda más amplia.</p>
+                            </div>
+                            <p class="h3">¿Busca un número de pieza o de serie?</p>`;
+                        }
                         else if (filterLang == 'fr') {
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
@@ -665,6 +673,54 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
                             </div>
                             <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                        }
+                        else if (filterLang == 'de') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
+                            <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
+                            </div>
+                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                        }
+                        else if (filterLang == 'it') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Nessun risultato trovato corrispondente ${results.query}</p>
+                            <p>Siamo spiacenti di non aver trovato un risultato per la vostra ricerca. Provi a effettuare una nuova ricerca, controllando che non vi siano errori di ortografia e/o riducendo il numero di parole chiave utilizzate. Potete anche provare a utilizzare una frase di ricerca più ampia.</p>
+                            </div>
+                            <p class="h3">State cercando un numero di parte o un numero di serie?</p>`;
+                        }
+                        else if (filterLang == 'pl') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Nie znaleziono pasujących wyników ${results.query}</p>
+                            <p>Przepraszamy, nie mogliśmy znaleźć wyniku wyszukiwania. Spróbuj wyszukać ponownie, sprawdzając wyszukiwanie pod kątem błędów ortograficznych i/lub zmniejszając liczbę użytych słów kluczowych. Możesz także spróbować użyć szerszej frazy wyszukiwania.</p>
+                            </div>
+                            <p class="h3">Szukasz numeru części lub numeru seryjnego?</p>`;
+                        }
+                        else if (filterLang == 'ru') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Не найдено ни одного подходящего результата ${results.query}</p>
+                            <p>К сожалению, мы не нашли результатов для вашего поиска. Попробуйте поискать еще раз, проверив поиск на наличие орфографических ошибок и/или сократив количество используемых ключевых слов. Вы также можете попробовать использовать более широкую поисковую фразу.</p>
+                            </div>
+                            <p class="h3">Вы ищете номер детали или серийный номер?</p>`;
+                        }
+                        else if (filterLang == 'tr') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Eşleşen sonuç bulunamadı ${results.query}</p>
+                            <p>Üzgünüz, aramanız için bir sonuç bulamadık. Aramanızı yazım hatalarına karşı kontrol ederek ve/veya kullanılan anahtar kelime sayısını azaltarak tekrar aramayı deneyin. Daha geniş bir arama cümlesi kullanmayı da deneyebilirsiniz.</p>
+                            </div>
+                            <p class="h3">Bir Parça Numarası veya Seri Numarası mı arıyorsunuz?</p>`;
+                        }
+                        else if (filterLang == 'zh-hans') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">未找到匹配结果 ${results.query}</p>
+                            <p>很抱歉，我们找不到您的搜索结果。请再次尝试搜索，检查拼写错误和/或减少使用的关键词数量。您还可以尝试使用更宽泛的搜索短语。</p>
+                            </div>
+                            <p class="h3">您在搜索零件编号或序列号吗？</p>`;
                         }
                     },
                 },
@@ -1587,15 +1643,22 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
                     empty(results, { html }){
-                        document.querySelector('.parts-form').style.display = 'block';
-                        document.querySelector('.ais-Pagination').style.display = 'none';
-                        return html`<p class="h3">No results found matching ${results.query}</p>
-                    <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                    <div class="text-center py-5">
-                        <p class="h3">Would you like to search our Global site?</p>
-                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
-                    </div>
-                    <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
+                        if(filterLang == 'en'){
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if (filterLang == 'de') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
+                            <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
+                            </div>
+                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                        }
                     },
                 },
                 transformItems(items){
