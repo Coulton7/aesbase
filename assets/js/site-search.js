@@ -650,12 +650,22 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                     </div>`,
                     empty(results, { html }){
-                        document.querySelector('.parts-form').style.display = 'block';
-                        document.querySelector('.ais-Pagination').style.display = 'none';
-                        return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
-                        <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                        </div>
-                        <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        if(filterLang == 'en'){
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if (filterLang == 'fr') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
+                            <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                            </div>
+                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                        }
                     },
                 },
                 transformItems(items){
