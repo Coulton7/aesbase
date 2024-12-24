@@ -1789,6 +1789,26 @@ document.addEventListener("DOMContentLoaded", function() {
                             })}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
+                        empty(results, { html }){
+                            if(filterLang == 'en'){
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if(filterLang == '') {
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if (filterLang == 'de') {
+                                return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
+                                <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
+                                </div>
+                                <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            }
+                        }
                     },
                     transformItems(items){
                         return items.map(item => ({
