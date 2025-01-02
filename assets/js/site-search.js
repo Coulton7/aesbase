@@ -641,6 +641,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'type',
                 templates: {
                     item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    searchableNoResults(data, { html }) {
+                        return html `<p>No Results</p>`
+                    },
                 },
                 transformItems(items){
                     return items.map(item => ({
