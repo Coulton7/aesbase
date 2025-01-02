@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const langlistPanel = instantsearch.widgets.panel ({
-            hidde(options) {
+            hidden(options) {
                 return options.results.nbHits === 0;
             },
             templates: {
