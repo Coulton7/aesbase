@@ -570,7 +570,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#lang-list',
                 attribute: 'search_api_language',
                 templates: {
-                    header: 'Select your Language',
+                    header(filterLang, { html }) {
+                        if (filterLang == 'en'){
+                            return html `<h4>Select your Language</h4>`
+                        } else if (filterLang == 'fr'){
+                            return html `<h4>Sélectionnez votre langue</h4>`
+                        }
+                    },
                     item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
