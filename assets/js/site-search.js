@@ -425,8 +425,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 header( options, { html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Select your Language</h4>`
-                    } else if (filterLang == 'fr'){
+                    }
+                    else if (filterLang == ''){
+                        return html `<h4>Select your Language</h4>`
+                    }
+                    else if (filterLang == 'es'){
+                        return html `<h4>Seleccione su idioma</h4>`
+                    }
+                    else if (filterLang == 'fr'){
                         return html `<h4>Sélectionnez votre langue</h4>`
+                    }
+                    else if (filterLang == 'de'){
+                        return html `<h4>Wählen Sie Ihre Sprache</h4>`
+                    }
+                    else if (filterLang == 'it'){
+                        return html `<h4>Selezionare la lingua</h4>`
+                    }
+                    else if (filterLang == 'pl'){
+                        return html `<h4>Wybierz język</h4>`
+                    }
+                    else if (filterLang == 'ru'){
+                        return html `<h4>Выберите язык</h4>`
+                    }
+                    else if (filterLang == 'zh-hans'){
+                        return html `<h4>选择语言</h4>`
                     }
                 }
             },cssClasses: {
