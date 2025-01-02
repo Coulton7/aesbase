@@ -422,7 +422,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const langlistPanel = instantsearch.widgets.panel ({
             templates: {
-                header(filterLang, { html }) {
+                header({ html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Select your Language</h4>`
                     } else if (filterLang == 'fr'){
