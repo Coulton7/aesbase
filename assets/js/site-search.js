@@ -463,6 +463,9 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const typelistPanel = instantsearch.widgets.panel ({
+            hidden(options) {
+                return options.results.nbHits === 0;
+            },
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
@@ -499,6 +502,9 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const gloablTypelistPanel = instantsearch.widgets.panel ({
+            hidden(options) {
+                return options.results.nbHits === 0;
+            },
             templates: {
                 header: '<h4>Filter Global Site by Resource Type</h4>'
             },
@@ -508,6 +514,9 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const globalLanglistPanel = instantsearch.widgets.panel ({
+            hidden(options) {
+                return options.results.nbHits === 0;
+            },
             templates: {
                 header: '<h4>Select your Language</h4>'
             },cssClasses: {
