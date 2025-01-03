@@ -704,7 +704,7 @@ document.addEventListener("DOMContentLoaded", function() {
             instantsearch.widgets.hits ({
                 container: '#hits',
                 templates:{
-                    item(data, { html }){
+                    item(data, { html, components }){
                         if(filterLang == 'en'){
                             return html `<div class="search-result">
                                 <small>${data.url}</small>
@@ -712,12 +712,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
                                     hit: data,
                                     highlightedTagName: 'em'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
                                     hit: data,
                                     highlightedTagName: 'em'
@@ -731,11 +731,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
                                     hit: data
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
                                     hit: data
                                 })}</p>
@@ -748,11 +748,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
                                     hit: data
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
                                     hit: data
                                 })}</p>
