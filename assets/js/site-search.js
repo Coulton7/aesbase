@@ -715,12 +715,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
                                     hit: data,
-                                    highlightedTagName: 'em'
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
                                     hit: data,
-                                    highlightedTagName: 'em'
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -733,11 +733,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                 <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -750,11 +752,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                 <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "description",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
                                     attribute: "body",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'strong'
                                 })}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
