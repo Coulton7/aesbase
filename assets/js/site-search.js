@@ -714,11 +714,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                 <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
                                     attribute: "description",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'em'
                                 })}</p>
                                 <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
                                     attribute: "body",
-                                    hit: data
+                                    hit: data,
+                                    highlightedTagName: 'em'
                                 })}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
