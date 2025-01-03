@@ -706,7 +706,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html }){
                         if(filterLang == 'en'){
-                            `<div class="search-result">
+                            return html `<div class="search-result">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
-                            `<div class="search-result">
+                            return html `<div class="search-result">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
@@ -740,7 +740,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
-                            `<div class="search-result">
+                            return html `<div class="search-result">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
