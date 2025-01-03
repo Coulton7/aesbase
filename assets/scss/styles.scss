@@ -43,6 +43,10 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+strong, b {
+  font-weight: 700;
+}
+
 #toolbar-administration {
   position: fixed;
   z-index: 1033;

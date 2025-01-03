@@ -5,10 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 /* custom.scss */
-strong, b {
-  font-weight: 700;
-}
-
 /* end custom.scss */
 :root,
 [data-bs-theme=light] {
@@ -12781,6 +12777,10 @@ body,
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+strong, b {
+  font-weight: 700;
 }
 
 #toolbar-administration {
