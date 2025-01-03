@@ -704,23 +704,60 @@ document.addEventListener("DOMContentLoaded", function() {
             instantsearch.widgets.hits ({
                 container: '#hits',
                 templates:{
-                    item: data => `
-                    <div class="search-result">
-                        <small>${data.url}</small>
-                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                        <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "description",
-                            hit: data
-                        })}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
-                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                    </div>`,
+                    item(data, { html }){
+                        if(filterLang == 'en'){
+                            `<div class="search-result">
+                                <small>${data.url}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "description",
+                                    hit: data
+                                })}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "body",
+                                    hit: data
+                                })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                            </div>`
+                        } else if(filterLang == ''){
+                            `<div class="search-result">
+                                <small>${data.url}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "description",
+                                    hit: data
+                                })}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "body",
+                                    hit: data
+                                })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                            </div>`
+                        } else if(filterLang == 'es'){
+                            `<div class="search-result">
+                                <small>${data.url}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "description",
+                                    hit: data
+                                })}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
+                                    attribute: "body",
+                                    hit: data
+                                })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                            </div>`
+                        }
+                    },
                     empty(results, { html }){
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
