@@ -560,7 +560,8 @@ a.disabled {
   right: 11em;
   z-index: 1032;
   position: relative;
-  transform: translateY(49%);
+  transform: translateY(49%) scaleX(-1);
+  left: 0;
 }
 
 .curve-down {
