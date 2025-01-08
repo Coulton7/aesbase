@@ -30,6 +30,13 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
+stylesheets:
+  all:
+    - assets/css/styles.css
+
+  rtl:
+    - asstes/css/rtl-styles.css
+
 ckeditor5-stylesheets:
   - assets/css/ckeditor5.css
 
