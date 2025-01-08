@@ -433,7 +433,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 .footer-curve {
   width: 100%;
-  left: -1.6em;
+  right: 1em;
   position: relative;
   bottom: 0;
   margin-top: -7.2em; 
