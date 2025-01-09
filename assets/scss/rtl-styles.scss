@@ -418,6 +418,11 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   left: 0;
 }
 
+.wavelower{
+  height: 8em;
+  transform: scaleX(-1);
+}
+
 .curve-down {
   width: 8em;
   height: 6.585em;
@@ -451,7 +456,6 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   text-shadow: none;
   display: inline-block;
 }
-
 
 .video-overlay {
   background: rgb(0,42,91);
