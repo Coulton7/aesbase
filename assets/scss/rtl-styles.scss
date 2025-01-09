@@ -526,6 +526,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   padding-top: 0;
 }
 
+.btn, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn {
+  border-radius: 2rem;
+}
+
 .slider-tab-btn {
   display: flex;
   border-radius: 0;
