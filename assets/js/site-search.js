@@ -1885,19 +1885,39 @@ document.addEventListener("DOMContentLoaded", function() {
             instantsearch.widgets.hits ({
                 container: '#deHits',
                 templates:{
-                    item: data => `
-                    <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                        <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
-                        <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                        <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
-                        <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                        <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
-                    </div>`,
+                    item(data, { html, components }){
+                        if(filterLang == 'en'){
+                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if(filterLang == 'de'){
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">PDF öffnen</a>
+                            </div`
+
+                        }
+                    },
                     empty(results, { html }){
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
