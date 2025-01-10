@@ -1914,7 +1914,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 })}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">PDF öffnen</a>
-                            </div`
+                            </div>`
 
                         }
                     },
@@ -2040,23 +2040,48 @@ document.addEventListener("DOMContentLoaded", function() {
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item: data => `
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`,
+                        item(data, { html, components }){
+                            if(filterLang == 'en'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                </div>`
+                            } else if(filterLang == 'de'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                </div>`
+
+                            }
+                        },
                         empty(results, { html }){
                             if(filterLang == 'en'){
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
