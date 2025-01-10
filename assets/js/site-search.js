@@ -1888,7 +1888,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     item(data, { html, components }){
                         if(filterLang == 'en'){
                             return html ` 
-                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                            <div class="search-result">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1903,7 +1903,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'de'){
                             return html`
-                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                            <div class="search-result">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
