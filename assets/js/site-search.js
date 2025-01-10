@@ -1812,6 +1812,12 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         })
 
+        deSearch.addWidget({
+            init: function(options){
+                options.helper.toggleRefinement('search_api_language', 'en');
+            },
+        })
+
         deSearch.addWidgets([
             instantsearch.widgets.configure({
                 hitsPerPage: 10,
