@@ -2060,8 +2060,26 @@ document.addEventListener("DOMContentLoaded", function() {
                                     })}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
-    
-                            } else if(filterLang == 'de'){
+                                } else if(filterLang == '') {
+                                    return html `<div class="search-result">
+                                        <small>${data.url}</small>
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "description",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "body",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    </div>`
+                                } else if(filterLang == 'de'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
