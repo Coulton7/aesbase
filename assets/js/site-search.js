@@ -454,9 +454,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>选择语言</h4>`
                     }
                 },
-                searchableNoResults(data, { html }) {
-                    return html `<p>No Results</p>`
-                },
             },cssClasses: {
                 root: 'pt-5'
             }
