@@ -503,7 +503,35 @@ document.addEventListener("DOMContentLoaded", function() {
                 return options.results.nbHits === 0;
             },
             templates: {
-                header: '<h4>Filter Global Site by Resource Type</h4>'
+                header( options, { html }) {
+                    if (filterLang == 'en'){
+                        return html `<h4>Filter Global Site by Resource Type</h4>`
+                    }
+                    else if (filterLang == ''){
+                        return html `<h4>Filter Global Site by Resource Type</h4>`
+                    }
+                    else if (filterLang == 'es'){
+                        return html `<h4>Filtrar el sitio global por tipo de recurso</h4>`
+                    }
+                    else if (filterLang == 'fr'){
+                        return html `<h4>Filtrer le site global par type de ressource</h4>`
+                    }
+                    else if (filterLang == 'de'){
+                        return html `<h4>Globale Website nach Ressourcentyp filtern</h4>`
+                    }
+                    else if (filterLang == 'it'){
+                        return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
+                    }
+                    else if (filterLang == 'pl'){
+                        return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
+                    }
+                    else if (filterLang == 'ru'){
+                        return html `<h4>Фильтр глобального сайта по типу ресурса</h4>`
+                    }
+                    else if (filterLang == 'zh-hans'){
+                        return html `<h4>按资源类型筛选全球网站</h4>`
+                    }
+                },
             },
             cssClasses: {
                 root: 'pt-3'
