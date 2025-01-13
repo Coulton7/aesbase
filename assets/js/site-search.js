@@ -428,30 +428,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 header( options, { html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Select your Language</h4>`
-                    }
-                    else if (filterLang == ''){
+                    } else if (filterLang == ''){
                         return html `<h4>Select your Language</h4>`
-                    }
-                    else if (filterLang == 'es'){
+                    } else if (filterLang == 'es'){
                         return html `<h4>Seleccione su idioma</h4>`
-                    }
-                    else if (filterLang == 'fr'){
+                    } else if (filterLang == 'fr'){
                         return html `<h4>Sélectionnez votre langue</h4>`
-                    }
-                    else if (filterLang == 'de'){
+                    } else if (filterLang == 'de'){
                         return html `<h4>Wählen Sie Ihre Sprache</h4>`
-                    }
-                    else if (filterLang == 'it'){
+                    } else if (filterLang == 'it'){
                         return html `<h4>Selezionare la lingua</h4>`
-                    }
-                    else if (filterLang == 'pl'){
+                    } else if (filterLang == 'pl'){
                         return html `<h4>Wybierz język</h4>`
-                    }
-                    else if (filterLang == 'ru'){
+                    } else if (filterLang == 'ru'){
                         return html `<h4>Выберите язык</h4>`
-                    }
-                    else if (filterLang == 'zh-hans'){
+                    } else if (filterLang == 'zh-hans'){
                         return html `<h4>选择语言</h4>`
+                    } else if (filterLang == 'ar'){
+                        return html `<h4>اختر لغتك</h4>`
+                    } else if (filterLang == 'nb'){
+                        return html `<h4>Velg språk</h4>`
+                    } else if (filterLang == 'pt-br'){
+                        return html `<h4>Selecione seu idioma</h4>`
+                    } else if (filterLang == 'pt'){
+                        return html `<h4>Selecione o seu idioma</h4>`
+                    } else if (filterLang == 'cz'){
+                        return html `<h4>Vyberte jazyk</h4>`
+                    } else if (filterLang == 'nl'){
+                        return html `<h4>Selecteer uw taal</h4>`
                     }
                 },
             },cssClasses: {
@@ -467,30 +471,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 header( options, { html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Filter by Content Type</h4>`
-                    }
-                    else if (filterLang == ''){
+                    } else if (filterLang == ''){
                         return html `<h4>Filter by Content Type</h4>`
-                    }
-                    else if (filterLang == 'es'){
+                    } else if (filterLang == 'es'){
                         return html `<h4>Filtrar por tipo de contenido</h4>`
-                    }
-                    else if (filterLang == 'fr'){
+                    } else if (filterLang == 'fr'){
                         return html `<h4>Filtrer par type de contenu</h4>`
-                    }
-                    else if (filterLang == 'de'){
+                    } else if (filterLang == 'de'){
                         return html `<h4>Nach Inhaltstyp filtern</h4>`
-                    }
-                    else if (filterLang == 'it'){
+                    } else if (filterLang == 'it'){
                         return html `<h4>Filtrare per tipo di contenuto</h4>`
-                    }
-                    else if (filterLang == 'pl'){
+                    } else if (filterLang == 'pl'){
                         return html `<h4>Filtruj według typu zawartości</h4>`
-                    }
-                    else if (filterLang == 'ru'){
+                    } else if (filterLang == 'ru'){
                         return html `<h4>Фильтр по типу содержимого</h4>`
-                    }
-                    else if (filterLang == 'zh-hans'){
+                    } else if (filterLang == 'zh-hans'){
                         return html `<h4>按内容类型筛选</h4>`
+                    } else if (filterLang == 'ar'){
+                        return html `<h4>التصفية حسب نوع المحتوى</h4>`
+                    } else if (filterLang == 'nb'){
+                        return html `<h4>Filtrer etter innholdstype</h4>`
+                    } else if (filterLang == 'pt-br'){
+                        return html `<h4>Filtrar por tipo de conteúdo</h4>`
+                    } else if (filterLang == 'pt'){
+                        return html `<h4>Filtrar por tipo de conteúdo</h4>`
+                    } else if (filterLang == 'cz'){
+                        return html `<h4>Filtrování podle typu obsahu</h4>`
+                    } else if (filterLang == 'nl'){
+                        return html `<h4>Filter op inhoudstype</h4>`
                     }
                 }
             },cssClasses: {
@@ -506,30 +514,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 header( options, { html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Filter Global Site by Resource Type</h4>`
-                    }
-                    else if (filterLang == ''){
+                    } else if (filterLang == ''){
                         return html `<h4>Filter Global Site by Resource Type</h4>`
-                    }
-                    else if (filterLang == 'es'){
+                    } else if (filterLang == 'es'){
                         return html `<h4>Filtrar el sitio global por tipo de recurso</h4>`
-                    }
-                    else if (filterLang == 'fr'){
+                    } else if (filterLang == 'fr'){
                         return html `<h4>Filtrer le site global par type de ressource</h4>`
-                    }
-                    else if (filterLang == 'de'){
+                    } else if (filterLang == 'de'){
                         return html `<h4>Globale Website nach Ressourcentyp filtern</h4>`
-                    }
-                    else if (filterLang == 'it'){
+                    } else if (filterLang == 'it'){
                         return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
-                    }
-                    else if (filterLang == 'pl'){
+                    } else if (filterLang == 'pl'){
                         return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
-                    }
-                    else if (filterLang == 'ru'){
+                    } else if (filterLang == 'ru'){
                         return html `<h4>Фильтр глобального сайта по типу ресурса</h4>`
-                    }
-                    else if (filterLang == 'zh-hans'){
+                    } else if (filterLang == 'zh-hans'){
                         return html `<h4>按资源类型筛选全球网站</h4>`
+                    } else if (filterLang == 'ar'){
+                        return html `<h4>تصفية الموقع العالمي حسب نوع المورد</h4>`
+                    } else if (filterLang == 'nb'){
+                        return html `<h4>Filtrer globalt nettsted etter ressurstype</h4>`
+                    } else if (filterLang == 'pt-br'){
+                        return html `<h4>Filtrar site global por tipo de recurso</h4>`
+                    } else if (filterLang == 'pt'){
+                        return html `<h4>Filtrar sítio global por tipo de recurso</h4>`
+                    } else if (filterLang == 'cz'){
+                        return html `<h4>Filtrování globálního webu podle typu zdroje</h4>`
+                    } else if (filterLang == 'nl'){
+                        return html `<h4>Filter Globale site op type bron</h4>`
                     }
                 },
             },
@@ -546,30 +558,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 header( options, { html }) {
                     if (filterLang == 'en'){
                         return html `<h4>Select your Language</h4>`
-                    }
-                    else if (filterLang == ''){
+                    } else if (filterLang == ''){
                         return html `<h4>Select your Language</h4>`
-                    }
-                    else if (filterLang == 'es'){
+                    } else if (filterLang == 'es'){
                         return html `<h4>Seleccione su idioma</h4>`
-                    }
-                    else if (filterLang == 'fr'){
+                    } else if (filterLang == 'fr'){
                         return html `<h4>Sélectionnez votre langue</h4>`
-                    }
-                    else if (filterLang == 'de'){
+                    } else if (filterLang == 'de'){
                         return html `<h4>Wählen Sie Ihre Sprache</h4>`
-                    }
-                    else if (filterLang == 'it'){
+                    } else if (filterLang == 'it'){
                         return html `<h4>Selezionare la lingua</h4>`
-                    }
-                    else if (filterLang == 'pl'){
+                    } else if (filterLang == 'pl'){
                         return html `<h4>Wybierz język</h4>`
-                    }
-                    else if (filterLang == 'ru'){
+                    } else if (filterLang == 'ru'){
                         return html `<h4>Выберите язык</h4>`
-                    }
-                    else if (filterLang == 'zh-hans'){
+                    } else if (filterLang == 'zh-hans'){
                         return html `<h4>选择语言</h4>`
+                    } else if (filterLang == 'ar'){
+                        return html `<h4>اختر لغتك</h4>`
+                    } else if (filterLang == 'nb'){
+                        return html `<h4>Velg språk</h4>`
+                    } else if (filterLang == 'pt-br'){
+                        return html `<h4>Selecione seu idioma</h4>`
+                    } else if (filterLang == 'pt'){
+                        return html `<h4>Selecione o seu idioma</h4>`
+                    } else if (filterLang == 'cz'){
+                        return html `<h4>Vyberte jazyk</h4>`
+                    } else if (filterLang == 'nl'){
+                        return html `<h4>Selecteer uw taal</h4>`
                     }
                 },
             },cssClasses: {
