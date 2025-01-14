@@ -13820,6 +13820,12 @@ blockquote.transparent-50:after {
   opacity: 0.5;
 }
 
+.uk-banner-background {
+  background-image: url(/content-image/uk-header.jpg);
+  background-size: cover;
+  background-color: #002a5a;
+}
+
 .tomwetlands-background.lazy-back,
 .chris-background.lazy-back,
 .background-36.lazy-back,
