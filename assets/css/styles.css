@@ -13822,9 +13822,9 @@ blockquote.transparent-50:after {
 
 .uk-banner-background {
   background-image: url(/sites/aesseal.int/files/content-image/uk-header.jpg);
-  background-size: cover;
+  background-size: 95%;
   background-color: #002a5a;
-  background-position: center;
+  background-position: center right;
 }
 
 .tomwetlands-background.lazy-back,
