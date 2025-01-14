@@ -13269,6 +13269,13 @@ a.disabled {
   height: auto;
 }
 
+.navbar-flag {
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 .search-overlay .nav-tabs .nav-link {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.75);
