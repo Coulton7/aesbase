@@ -61,7 +61,8 @@
 {# Navbar #}
     {% if page.navigation or page.navigation_collapsible %}
     <div class="col-md-10 col-xs-11 col-11">
-    {{ pattern('navbar', {
+      {% block navbar %}
+          {{ pattern('navbar', {
           navbar_id: 'mobile-overlay',
           placement: 'fixed-top',
           toggler_position: 'end',
@@ -77,7 +78,6 @@
             ]
           }),
           }, 'expand_lg') }}
-      {% block navbar %}
       {% endblock %}
     </div>
     {% endif %}
