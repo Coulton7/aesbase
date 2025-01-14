@@ -13825,6 +13825,7 @@ blockquote.transparent-50:after {
   background-size: 95%;
   background-color: #002a5a;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tomwetlands-background.lazy-back,
