@@ -12802,7 +12802,8 @@ body.toolbar-tray-open {
 }
 
 .toolbar-tray-open .fixed-top,
-.toolbar-tray-open .textlogo {
+.toolbar-tray-open .textlogo,
+.toolbar-tray-open .navbar-flag {
   padding-top: 79px !important;
 }
 
@@ -13274,6 +13275,7 @@ a.disabled {
   position: fixed;
   right: 0;
   top: 0;
+  width: 4rem;
 }
 
 .search-overlay .nav-tabs .nav-link {
