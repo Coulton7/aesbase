@@ -13821,7 +13821,7 @@ blockquote.transparent-50:after {
 }
 
 .uk-banner-background {
-  background-image: url(/content-image/uk-header.jpg);
+  background-image: url(../content-image/uk-header.jpg);
   background-size: cover;
   background-color: #002a5a;
 }
