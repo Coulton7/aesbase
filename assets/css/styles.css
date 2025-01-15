@@ -18522,6 +18522,9 @@ ul.about-us-cats a {
   .promo-text {
     display: none;
   }
+  .navbar-flag {
+    width: 3.5rem;
+  }
 }
 @media (max-width: 1200px) {
   .short-texts {
