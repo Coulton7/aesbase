@@ -13276,6 +13276,7 @@ a.disabled {
   right: 0;
   top: 0;
   width: 3.6rem;
+  z-index: 10332;
 }
 
 .search-overlay .nav-tabs .nav-link {
