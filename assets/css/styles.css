@@ -13275,6 +13275,8 @@ a.disabled {
   top: 0;
   right: 0;
   float: right;
+  display: flex;
+  z-index: 1032;
 }
 
 .navbar-flag {
