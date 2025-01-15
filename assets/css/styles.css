@@ -13712,6 +13712,7 @@ a.icon-link:hover {
   position: relative;
   top: auto;
   right: auto;
+  margin-right: 0;
 }
 
 .search-btn,
