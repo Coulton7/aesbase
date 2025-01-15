@@ -13270,11 +13270,15 @@ a.disabled {
   height: auto;
 }
 
-.navbar-flag {
-  float: right;
+.national-overlay {
   position: fixed;
-  right: 0;
   top: 0;
+  right: 0;
+  float: right;
+}
+
+.navbar-flag {
+  position: relative;
   width: 3.6rem;
   z-index: 10332;
 }
@@ -13700,6 +13704,12 @@ a.icon-link:hover {
   border-bottom: none;
   color: #535454;
   text-decoration: none;
+}
+
+.national-overlay .overlay-btn {
+  position: relative;
+  top: auto;
+  right: auto;
 }
 
 .search-btn,
