@@ -781,7 +781,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         };
                     },
                 },
-                instantSearchRouter,
             },
         });
 
