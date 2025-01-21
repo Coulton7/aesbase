@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 last_scroll_top = scroll_top;
          });
-        }
-        else {
+        } else {
             el_scrollNav.classList.add('scrolled-up')
         }
     }
