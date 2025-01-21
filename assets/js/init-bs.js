@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     if(document.querySelector(".navbar-flag")) {
+        console.log('flag is there')
         document.querySelector('.navbar-toggler').classList.add = "flag-space";
     }
 })
