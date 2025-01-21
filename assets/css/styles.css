@@ -18654,7 +18654,7 @@ ul.about-us-cats a {
     margin-right: 4rem;
   }
   .scrolled-up {
-    transform: translateY(100%);
+    transform: translateY(80%);
   }
 }
 @media (max-width: 1200px) {
