@@ -18653,7 +18653,7 @@ ul.about-us-cats a {
   .flag-space {
     margin-right: 4rem;
   }
-  .scrolled-up {
+  .scrolled-up, .path-frontpage .scrolled-up {
     transform: translateY(80%);
   }
 }
