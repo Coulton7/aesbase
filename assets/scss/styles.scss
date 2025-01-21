@@ -24,7 +24,6 @@ $utilities-text-colors: map-loop(
 );
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
-$utilities: map-merge($utilities,( "font-size": map-merge( map-get($utilities, "font-size"), ( responsive: true, values: $font-sizes))));
 @import "bootstrap";
 /* custom.scss */
 
