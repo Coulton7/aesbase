@@ -16669,9 +16669,6 @@ ul.about-us-cats a {
     position: absolute;
     bottom: 100%;
   }
-  .flag-space {
-    margin-right: 4rem;
-  }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
     background-size: cover;
@@ -18537,6 +18534,9 @@ ul.about-us-cats a {
   }
   .navbar-flag {
     width: 3.5rem;
+  }
+  .flag-space {
+    margin-right: 4rem;
   }
 }
 @media (max-width: 1200px) {
