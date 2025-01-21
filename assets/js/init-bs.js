@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.collapse').style.display="flex";
     }
 
-    if(nationalFlag) {
+    if(!!nationalFlag) {
         document.querySelector('.navbar-toggler').classList.add = "flag-space";
     }
 
