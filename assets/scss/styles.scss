@@ -22,7 +22,6 @@ $utilities-text-colors: map-loop(
   "$key",
   "text"
 );
-
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 @import "bootstrap";
@@ -6320,6 +6319,10 @@ height:100%;
 
   .scrolled-up, .path-frontpage .scrolled-up {
     transform: translateY(80%);
+  }
+
+  .shadow-mob-text{
+    font-size: calc(1.275rem + 0.3vw) !important;
   }
 }
 
