@@ -6329,6 +6329,10 @@ height:100%;
   .flag-space {
     margin-right: 4rem;
   }
+
+  .scrolled-up {
+    transform: translateY(100%);
+  }
 }
 
 @media (max-width: 1200px) {

@@ -18538,6 +18538,9 @@ ul.about-us-cats a {
   .flag-space {
     margin-right: 4rem;
   }
+  .scrolled-up {
+    transform: translateY(100%);
+  }
 }
 @media (max-width: 1200px) {
   .short-texts {
