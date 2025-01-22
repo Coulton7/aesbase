@@ -2366,7 +2366,6 @@ document.addEventListener("DOMContentLoaded", function() {
             ])
         ]);
         deSearch.start();
-        document.querySelector('.ais-SearchBox-input').focus();
     }
 
     if(!!uaeSearch){
