@@ -1097,6 +1097,14 @@ a.lightblue-text {
   background-position: center;
 }
 
+.capi-background {
+  background-image: url(https://static.aesseal.com/photo/alt/Capi-GROUP_0017_shad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+}
+
 blockquote::before {
   content: url(/themes/contrib/aesbase/assets/images/graphics/blockquote-top.png);
   margin-right: -0.75em;
