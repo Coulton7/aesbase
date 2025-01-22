@@ -18530,7 +18530,7 @@ ul.about-us-cats a {
   .scrolled-up, .path-frontpage .scrolled-up {
     transform: translateY(80%);
   }
-  .shadow-mob-text {
+  .shadow-mob-text i {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
 }
