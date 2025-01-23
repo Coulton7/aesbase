@@ -2067,12 +2067,12 @@ blockquote {
   max-width: 2em;
 }
 
-.country-browser h3 {
+.country-browser h3, .brochure-browser h3 {
   text-align: center;
   margin-top: 5rem;
 }
 
-.country-browser h3:first-of-type {
+.country-browser h3:first-of-type, .brochure-browser h3:first-of-type {
   text-align: center;
   margin-top: 0;
 }
