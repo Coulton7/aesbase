@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let franSearch = document.getElementById('frHits');
     let polSearch = document.getElementById('plHits');
     let sweSearch = document.getElementById('seHits');
-    let malaySearch = document.getElementById('malyHits');
+    let malaySearch = document.getElementById('myHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
