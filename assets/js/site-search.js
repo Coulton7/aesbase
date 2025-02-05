@@ -2927,7 +2927,7 @@ document.addEventListener("DOMContentLoaded", function() {
             routing: {
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal de'];
+                        const indexUiState = uiState['aesseal fr'];
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
