@@ -3829,7 +3829,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
-                        } else if(filterLang == 'se'){
+                        } else if(filterLang == 'sv'){
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
@@ -3864,7 +3864,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                             <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                         }
-                        else if (filterLang == 'se') {
+                        else if (filterLang == 'sv') {
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
                             return html`<div class="no-result"><p class="h3">Inga resultat hittades som matchade ${results.query}</p>
@@ -4008,7 +4008,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         })}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
-                                } else if(filterLang == 'se'){
+                                } else if(filterLang == 'sv'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -4044,7 +4044,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
-                            else if (filterLang == 'se') {
+                            else if (filterLang == 'sv') {
                                 return html`<div class="no-result"><p class="h3">Inga resultat hittades som matchade ${results.query}</p>
                                 <p>Tyvärr kunde vi inte hitta något resultat för din sökning. Försök att söka igen genom att kontrollera din sökning efter stavfel och/eller minska antalet nyckelord som används. Du kan också försöka använda en bredare sökfras.</p>
                                 </div>
