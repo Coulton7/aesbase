@@ -69,7 +69,8 @@ document.addEventListener("DOMContentLoaded", function() {
     natTypeMapping = {
         'page' : 'Web Page',
         'article' : 'Article',
-        'casestudies' : 'Case Studies'
+        'casestudies' : 'Case Studies',
+        'case_studies' : 'Case Studies'
     }
 
         if (filterLang == "en") {
