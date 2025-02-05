@@ -2936,7 +2936,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal de']: {
+                            ['aesseal fr']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
