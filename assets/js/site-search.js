@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
-    const customSearchBox = instantsearch.connectors.connectAutocomplete (
+    const customSearchBox = connectSearchBox (
         renderSearchBox
     );
 
