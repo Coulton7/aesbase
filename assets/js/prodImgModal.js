@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
             prodImg.forEach(function(event){
                 event.addEventListener("click", function(){
                     prodImg.forEach( function( event ){
-                        var image = event.getAttribute("src")
-                        console.log(image)
+                        var image = event.getAttribute("src");
+                        console.log(image);
                         document.getElementById("zoomedImage").setAttribute("src", image);
                     })
                 })
