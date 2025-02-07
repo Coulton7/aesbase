@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     prodImgModal.addEventListener('show.bs.modal', event => {
         prodImg.forEach(function(event){
-            event.addEventListener("click", function(){
-                prodImg.forEach( function( event ){
-                    var image = event.getAttribute("src")
-                    console.log(image);
-                    document.getElementById("zoomedImage").setAttribute("src", image);
-                })
+            event.addEventListener("click", function(e){
+                var zoomedImage = document.querySelector(e.relatedTarget).getAttribute('src');
+                console.log(zoomedImage)
+                
             })
         })
     })
