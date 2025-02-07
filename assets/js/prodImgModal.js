@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     prodImgModal.addEventListener('show.bs.modal', function(event) {
         document.getElementById('zoomedImage').src = event.relatedTarget.src;
-        console.log(event.querySelector.getAtrribute("data-img-url"));
+        console.log(event.querySelector.getAttribute("data-img-url"));
     });
 })
