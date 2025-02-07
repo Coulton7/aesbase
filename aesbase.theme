@@ -16,6 +16,9 @@ function aesbase_preprocess_node(&$variables) {
   if ($node->getType() == 'component_seals') {
     $variables['#attached']['library'][] = 'aesbase/comp-seal';
   }
+  if ($node->getType() ==  'bearing_protection' || 'cartridge_mechanical_seals' || 'component_seals' || 'elastomers' || 'gas_seals' || 'gland_packing' || 'seal_support_systems') {
+    $variables['#attached']['library'][] = 'aesbase/prod-lib';
+  }
 }
 
 function aesbase_page_attachments_alter(&$page)

@@ -59,6 +59,10 @@ comp-seal:
   js:
     assets/js/filter-drawings.js: {}
     assets/js/build-code.js: {}
+
+prod-lib:
+  js:
+    assets/js/prodImgModal.js: {}
   
 rtl-css:
   css:
