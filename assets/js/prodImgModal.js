@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     prodImgModal.addEventListener('show.bs.modal', event => {
         prodImg.forEach(function(event){
             event.addEventListener("click", function(){
-                prodImg.forEach( function( event ){
-                    var image = event.getAttribute("src")
+                prodImg.forEach( function( ele ){
+                    var image = ele.getAttribute("src")
+                    console.log(image)
                     document.getElementById("zoomedImage").setAttribute("src", image);
                 })
             })
