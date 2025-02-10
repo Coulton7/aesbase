@@ -13145,7 +13145,7 @@ textarea.form-control-lg {
   height: auto;
   border-bottom: none;
   z-index: 1031;
-  left: 90%;
+  right: 0;
 }
 
 .uppercurve {
