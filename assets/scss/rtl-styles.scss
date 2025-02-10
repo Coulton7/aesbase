@@ -400,8 +400,6 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   margin: 8rem;
 }
 
-.preface-flex-marg
-
 .wavelogo {
   height: 11em;
   background: $white;
@@ -455,6 +453,12 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   margin-top: -7.2em; 
   transform: rotateZ(180deg);
   transform: scaleX(-1);
+}
+
+.national-overlay {
+  left: 0;
+  right: auto;
+  float: left;
 }
 
 .carousel-text-shadow {

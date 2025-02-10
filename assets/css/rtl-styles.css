@@ -13128,7 +13128,7 @@ textarea.form-control-lg {
   margin: 8rem;
 }
 
-.preface-flex-marg .wavelogo {
+.wavelogo {
   height: 11em;
   background: #fff;
   position: absolute;
@@ -13180,6 +13180,12 @@ textarea.form-control-lg {
   margin-top: -7.2em;
   transform: rotateZ(180deg);
   transform: scaleX(-1);
+}
+
+.national-overlay {
+  left: 0;
+  right: auto;
+  float: left;
 }
 
 .carousel-text-shadow {
