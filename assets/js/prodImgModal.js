@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     const prodImgModal = document.getElementById('prodImgModal');
-    
-    prodImgModal.addEventListener('show.bs.modal', function(event) {
-        document.getElementById('zoomedImage').src = event.relatedTarget.dataset.imgurl;
-        console.log(event.relatedTarget.dataset.imgurl);
-    });
+    if(prodImgModal){
+        prodImgModal.addEventListener('show.bs.modal', function(event) {
+            document.getElementById('zoomedImage').src = event.relatedTarget.dataset.imgurl;
+            console.log(event.relatedTarget.dataset.imgurl);
+        });
+    }
 })
