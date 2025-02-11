@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let polSearch = document.getElementById('plHits');
     let sweSearch = document.getElementById('seHits');
     let malaySearch = document.getElementById('myHits');
+    let toriSearch = document.getElementById('jaHits');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'video': 'Filme',
                 'whitepaper': 'Whitepaper',
         }
-    } else if (filterLang == "it") {
+        } else if (filterLang == "it") {
             typeMapping = {
                 '3dmodels': 'Modelli 3D',
                 'academy': 'Accademia',
@@ -478,6 +479,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 'video': 'Video',
                 'whitepaper': 'Whitepaper',
             }
+            
+        } else if (filterLang =="ja") {
+            typeMapping = {
+                '3dmodels': '3Dモデル',
+                'academy': 'アカデミー',
+                'apiplans': 'API Plans',
+                'article': '記事',
+                'bearingprotection': 'ベアリング保護',
+                'cartridgemechanicalseals': 'カートリッジ・メカニカルシール',
+                'casestudies': 'ケーススタディ',
+                'componentseals': 'コンポーネント・シール',
+                'corpbrochure': '会社案内',
+                'elastomers': 'Elastomers',
+                'gasseals': 'ガスシール',
+                'glandpacking': 'グランドパッキン',
+                'industryguides': '業界ガイド',
+                'locations': '所在地',
+                'page': 'ウェブページ',
+                'policies': 'ポリシー',
+                'productbrochure': '製品パンフレット',
+                'productcertificates': '製品証明書',
+                'sealsupportsystems': 'シール・サポート・システム',
+                'technicaldrawings': '技術図面',
+                'video': 'ビデオ',
+                'whitepaper': 'Whitepaper',
+            }
         }
 
         if(filterLang == "en") {
@@ -612,6 +639,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Vyberte jazyk</h4>`
                     } else if (filterLang == 'nl'){
                         return html `<h4>Selecteer uw taal</h4>`
+                    } else if (filterLang == 'ja'){
+                        return html `<h4>言語の選択</h4>`
                     }
                 },
             },cssClasses: {
@@ -655,6 +684,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filtrování podle typu obsahu</h4>`
                     } else if (filterLang == 'nl'){
                         return html `<h4>Filter op inhoudstype</h4>`
+                    } else if (filterLang == 'ja'){
+                        return html `<h4>コンテンツ・タイプによるフィルタリング</h4>`
                     }
                 }
             },cssClasses: {
@@ -698,6 +729,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filtrování globálního webu podle typu zdroje</h4>`
                     } else if (filterLang == 'nl'){
                         return html `<h4>Filter Globale site op type bron</h4>`
+                    } else if (filterLang == 'ja'){
+                        return html `<h4>リソースタイプによるグローバルサイトのフィルタリング</h4>`
                     }
                 },
             },
@@ -742,6 +775,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Vyberte jazyk</h4>`
                     } else if (filterLang == 'nl'){
                         return html `<h4>Selecteer uw taal</h4>`
+                    } else if (filterLang == 'ja'){
+                        return html `<h4>言語の選択</h4>`
                     }
                 },
             },cssClasses: {
@@ -4063,6 +4098,394 @@ document.addEventListener("DOMContentLoaded", function() {
             ])
         ]);
         seSearch.start();
+    }
+
+    if(!!toriSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        const jpSearch = instantsearch({
+            indexName: 'torishima aesseal',
+            searchClient,
+            typoTolerance: 'strict',
+            paginationLimitedTo: 80,
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            },
+            routing: {
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['torishima aesseal'];
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['torishima aesseal']: {
+                                query: routeState.q,
+                                refinementList: {
+                                    type: routeState.type,
+                                    lang: routeState.search_api_language,
+                                }
+                            },
+                        };
+                    },
+                },
+            },
+        })
+
+        jpSearch.addWidgets([
+            instantsearch.widgets.configure({
+                hitsPerPage: 10,
+                attributesToSnippet: ['body:80'],
+                page: 0,
+            }),
+
+            langlistPanel({
+                container: '#lang-list',
+                attribute: 'search_api_language',
+                templates: {
+                    header: 'Select your Language',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: item.label.toUpperCase(),
+                    }));
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            nationalPagination({
+                container: '#jaPagination',
+                totalPages: 3,
+                scrollTo: '#jaSearchbox'
+            }),
+        
+            customSearchBox({
+                container: document.querySelector('#jaSearchbox'),
+                 searchAsYouType: false,
+            }),
+
+            instantsearch.widgets.stats({
+                container: '#jaStats',
+                templates: {
+                    text(data, { html }) {
+                        let count = '';
+                        if (data.hasManyResults) {
+                            count += `${data.nbHits} results`
+                        } else if (data.hasOneResult) {
+                            count += `1 result`
+                        } else {
+                            count += `no result`;
+                        }
+
+                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                    }
+                }
+            }),
+
+            instantsearch.widgets.hits ({
+                container: '#jaHits',
+                templates:{
+                    item(data, { html, components }){
+                        if(filterLang == 'en'){
+                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if (filterLang == ''){
+                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if(filterLang == 'ja'){
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">PDFを開く</a>
+                            </div>`
+
+                        }
+                    },
+                    empty(results, { html }){
+                        if(filterLang == 'en'){
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if(filterLang == '') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if (filterLang == 'ja') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">一致する結果は見つかりませんでした ${results.query}</p>
+                            <p>検索結果が見つかりませんでした。スペルミスがないか、キーワードの数を減らして再度検索してみてください。また、より広い検索フレーズを使用してみることもできます。</p>
+                            </div>
+                            <p class="h3">部品番号またはシリアル番号をお探しですか？</p>`;
+                        }
+                    },
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: natTypeMapping[item.type],
+                    }))
+                },
+            }),
+
+            instantsearch.widgets
+                .index({ indexName: 'aesseal' })
+                .addWidgets([{
+                    init: function(options) {
+                        if(filterLang == "en")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if(filterLang == "")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if (filterLang === "se") {
+                            options.helper.toggleRefinement('search_api_language', 'ja');
+                        }
+                    }
+                },
+
+                instantsearch.widgets.configure({
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['description:80', 'body:80'],
+                    page: 0,
+                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                }),
+
+                gloablTypelistPanel({
+                    container: '#globalType-list',
+                    attribute: 'type',
+                    templates: {
+                        header: 'Filter Global Site by Content Type',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
+                    cssClasses: {
+                        item: ['types-item']
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                globalLanglistPanel({
+                    container: '#globalLang-list',
+                    attribute: 'search_api_language',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#seSearchbox'
+                }),
+
+                instantsearch.widgets.stats({
+                    container: '#globalStats',
+                    templates: {
+                        text(data, { html }) {
+                            let count = '';
+                            if (data.hasManyResults) {
+                                count += `${data.nbHits} results`
+                            } else if (data.hasOneResult) {
+                                count += `1 result`
+                            } else {
+                                count += `no result`;
+                            }
+    
+                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                        }
+                    }
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item(data, { html, components }){
+                            if(filterLang == 'en'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                </div>`
+                                } else if(filterLang == '') {
+                                    return html `<div class="search-result">
+                                        <small>${data.url}</small>
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "description",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "body",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    </div>`
+                                } else if(filterLang == 'ja'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
+                                </div>`
+    
+    
+                            }
+                        },
+                        empty(results, { html }){
+                            if(filterLang == 'en'){
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if(filterLang == '') {
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if (filterLang == 'ja') {
+                                return html`<div class="no-result"><p class="h3">一致する結果は見つかりませんでした ${results.query}</p>
+                                <p>検索結果が見つかりませんでした。スペルミスがないか、キーワードの数を減らして再度検索してみてください。また、より広い検索フレーズを使用してみることもできます。</p>
+                                </div>
+                                <p class="h3">部品番号またはシリアル番号をお探しですか？</p>`;
+                            }
+                        }
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    },
+                })
+            ])
+        ]);
+        jpSearch.start();
     }
 
     if(!!resSearch){
