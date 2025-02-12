@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'policies': 'Policies',
                 'productbrochure': 'Product Brochure',
                 'productcertificates': 'Product Certificates',
+                'services_brochure' : 'Services Brochure',
                 'sealsupportsystems': 'Seal Support Systems',
                 'technicaldrawings': 'Technical Drawing',
                 'video': 'Video',
