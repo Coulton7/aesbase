@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if(prodImgModal){
         prodImgModal.addEventListener('show.bs.modal', function(event) {
             document.getElementById('zoomedImage').src = event.relatedTarget.dataset.imgurl;
-            console.log(event.relatedTarget.dataset.imgurl);
         });
     }
 })
