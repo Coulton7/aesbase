@@ -405,6 +405,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   background: $white;
   position: absolute;
   border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 0;
   z-index: 1032;
   width: 11.7em;
   opacity: 1;
