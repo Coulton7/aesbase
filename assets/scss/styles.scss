@@ -1121,6 +1121,14 @@ a.lightblue-text {
   min-height: 300px; 
 }
 
+.robot-cell {
+  background-image: url('https://static.aesseal.com/photo/workshop/ROBOTCELL_9262-21by9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
 blockquote::before {
   content: url(/themes/contrib/aesbase/assets/images/graphics/blockquote-top.png);
   margin-right: -0.75em;
