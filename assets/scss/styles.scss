@@ -694,7 +694,7 @@ a.disabled {
   background: url(https://static.aesseal.com/graphics/lowerwave-white-glass.svg), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.2) 53%, rgba(255, 255, 255, 0.5) 67%, 72%, rgb(255, 255, 255) 100%);
   position: absolute;
   background-size: cover;
-  top: 60%;
+  top: 70%;
   right: 0;
   left: 0;
   bottom: 0;
@@ -5658,7 +5658,7 @@ height:100%;
   }
 
   .video-overlay {
-    top: 60%;
+    top: 64%;
     height: 45%;
   }
 
@@ -6292,14 +6292,14 @@ height:100%;
   }
 
   .video-overlay {
-    top: 60%;
+    top: 62%;
     height: 45%;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .video-overlay {
-    top: 56%;
+    top: 62%;
     height: 45%;
   }  
 }

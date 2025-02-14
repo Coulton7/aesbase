@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
+    const { connectStats } = instantsearch.connectors;
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
 
@@ -58,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('input').value = query;
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
+
+    
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
