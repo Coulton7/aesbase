@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(filterLang = 'en' || '') {
             widgetParams.container.innerHTML =
-            `${count} result found in ${processingTimeMS}ms`
+            `${count} found in ${processingTimeMS}ms`
         } else if(filterLang = 'es') {
             widgetParams.container.innerHTML =
             `${count} encontrado en ${processingTimeMS}ms`
