@@ -60,7 +60,174 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
-    
+    const renderStats = (renderOptions, isFirstRender) => {
+        const {
+            nbHits,
+            processingTimeMS
+        } = renderOptions;
+
+        if (isFirstRender) {
+            return;
+        }
+
+        let count = '';
+
+        if (nbHits > 1) {
+            if(filterLang == 'en' || '') {
+                count += `${nbHits} results`;
+            } else if (filterLang == 'es') {
+                count += `${nbHits} resultados`;
+            } else if (filterLang == 'fr') {
+                count += `${nbHits} résultats`;
+            } else if (filterLang == 'de') {
+                count += `${nbHits} resultate`;
+            } else if (filterLang == 'it') {
+                count += `${nbHits} risultati`;
+            } else if (filterLang == 'pl') {
+                count += `${nbHits} wyniki`;
+            } else if (filterLang == 'ru') {
+                count += `${nbHits} результаты`;
+            } else if (filterLang == 'tr') {
+                count += `${nbHits} sonuçlar`;
+            } else if (filterLang == 'zh-hans') {
+                count += `${nbHits} 成果`;
+            } else if (filterLang == 'ar') {
+                count += `النتائج ${nbHits}`;
+            } else if (filterLang == 'nb') {
+                count += `${nbHits} resultater`;
+            } else if (filterLang == 'pt-br' || 'pt') {
+                count += `${nbHits} resultados`;
+            } else if (filterLang == 'cz') {
+                count += `${nbHits} výsledky`;
+            } else if (filterLang == 'nl') {
+                count += `${nbHits} resultaten`;
+            } else if (filterLang == 'ja') {
+                count += `${nbHits} 結果`;
+            } else if (filterLang == 'sv') {
+                count += `${nbHits} resultat`;
+            }
+        } else if (nbHits === 1) {
+            if(filterLang == 'en' || '') {
+                count += `1 result`;
+            } else if (filterLang == 'es') {
+                count += `1 resultado`;
+            } else if (filterLang == 'fr') {
+                count += `1 résultat`;
+            } else if (filterLang == 'de') {
+                count += `1 resultat`;
+            } else if (filterLang == 'it') {
+                count += `1 risultato`;
+            } else if (filterLang == 'pl') {
+                count += `1 wynik`;
+            } else if (filterLang == 'ru') {
+                count += `1 результат`;
+            } else if (filterLang == 'tr') {
+                count += `1 sonuç`;
+            } else if (filterLang == 'zh-hans') {
+                count += `1 项成果`;
+            } else if (filterLang == 'ar') {
+                count += `1 نتيجة`;
+            } else if (filterLang == 'nb') {
+                count += `1 resultat`;
+            } else if (filterLang == 'pt-br' || 'pt') {
+                count += `1 resultado`;
+            } else if (filterLang == 'cz') {
+                count += `1 výsledek`;
+            } else if (filterLang == 'nl') {
+                count += `1 resultaat`;
+            } else if (filterLang == 'ja') {
+                count += `1件`;
+            } else if (filterLang == 'sv') {
+                count += `1 resultat`;
+            }
+        } else {
+            if(filterLang == 'en' || '') {
+                count += `no results`;
+            } else if (filterLang == 'es') {
+                count += `sin resultados`;
+            } else if (filterLang == 'fr') {
+                count += `pas de résultat`;
+            } else if (filterLang == 'de') {
+                count += `keine resultate`;
+            } else if (filterLang == 'it') {
+                count += `nessun risultato`;
+            } else if (filterLang == 'pl') {
+                count += `brak wyników`;
+            } else if (filterLang == 'ru') {
+                count += `нет результатов`;
+            } else if (filterLang == 'tr') {
+                count += `sonuç yok`;
+            } else if (filterLang == 'zh-hans') {
+                count += `无结果`;
+            } else if (filterLang == 'ar') {
+                count += `لا توجد نتائج`;
+            } else if (filterLang == 'nb') {
+                count += `ingen resultater`;
+            } else if (filterLang == 'pt-br' || 'pt') {
+                count += `sem resultados`;
+            } else if (filterLang == 'cz') {
+                count += `žádné výsledky`;
+            } else if (filterLang == 'nl') {
+                count += `geen resultaten`;
+            } else if (filterLang == 'ja') {
+                count += `結果なし`;
+            } else if (filterLang == 'sv') {
+                count += `inga resultat`;
+            }
+        }
+
+        if(filterLang = 'en' || '') {
+            widgetParams.container.innerHTML =
+            `${count} result found in ${processingTimeMS}ms`
+        } else if(filterLang = 'es') {
+            widgetParams.container.innerHTML =
+            `${count} encontrado en ${processingTimeMS}ms`
+        } else if(filterLang = 'fr') {
+            widgetParams.container.innerHTML =
+            `${count} trouvé dans ${processingTimeMS}ms`
+        } else if(filterLang = 'de') {
+            widgetParams.container.innerHTML =
+            `${count} gefunden in ${processingTimeMS}ms`
+        } else if(filterLang = 'it') {
+            widgetParams.container.innerHTML =
+            `${count} trovato in ${processingTimeMS}ms`
+        } else if(filterLang = 'pl') {
+            widgetParams.container.innerHTML =
+            `${count} znaleziony w ${processingTimeMS}ms`
+        } else if(filterLang = 'ru') {
+            widgetParams.container.innerHTML =
+            `${count} найденный в ${processingTimeMS}ms`
+        } else if(filterLang = 'tr') {
+            widgetParams.container.innerHTML =
+            `${count} içinde bulundu ${processingTimeMS}ms`
+        } else if(filterLang = 'zh-hans') {
+            widgetParams.container.innerHTML =
+            `${count} 在 ${processingTimeMS}ms`
+        } else if(filterLang = 'ar') {
+            widgetParams.container.innerHTML =
+            `${count} موجودة في ${processingTimeMS}ms`
+        } else if(filterLang = 'nb') {
+            widgetParams.container.innerHTML =
+            `${count} funnet i ${processingTimeMS}ms`
+        } else if(filterLang = 'pt-br' || 'pt') {
+            widgetParams.container.innerHTML =
+            `${count} encontrado em ${processingTimeMS}ms`
+        } else if(filterLang = 'cz') {
+            widgetParams.container.innerHTML =
+            `${count} nalezené v ${processingTimeMS}ms`
+        } else if(filterLang = 'nl') {
+            widgetParams.container.innerHTML =
+            `${count} gevonden in ${processingTimeMS}ms`
+        } else if(filterLang = 'ja') {
+            widgetParams.container.innerHTML =
+            `${count} で見つかった。 ${processingTimeMS}ms`
+        } else if(filterLang = 'sv') {
+            widgetParams.container.innerHTML =
+            `${count} finns i ${processingTimeMS}ms`
+        }
+    }
+
+    const customStats = connectStats(renderStats);
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
@@ -948,22 +1115,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#stats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#stats"),
             }),
         
             instantsearch.widgets.hits ({
