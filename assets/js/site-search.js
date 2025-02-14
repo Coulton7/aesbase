@@ -1498,22 +1498,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#usStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#usStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -1615,22 +1601,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#usSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -1753,22 +1725,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#inStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#inStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -1870,22 +1828,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#inSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -2009,22 +1953,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#zaStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#zaStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -2126,22 +2056,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#zaSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -2265,22 +2181,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#myStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#myStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -2382,22 +2284,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#mySearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -2537,22 +2425,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#deStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#deStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -2706,22 +2580,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#deSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -2925,22 +2785,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#aeStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#aeStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -3042,22 +2888,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#aeSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -3197,22 +3029,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#frStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#frStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -3366,22 +3184,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#frSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -3585,22 +3389,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#plStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#plStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -3754,22 +3544,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#plSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -3973,22 +3749,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#seStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#seStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -4142,22 +3904,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#seSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -4361,22 +4109,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#jaStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#jaStats"),
             }),
 
             instantsearch.widgets.hits ({
@@ -4530,22 +4264,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTo: '#jaSearchbox'
                 }),
 
-                instantsearch.widgets.stats({
-                    container: '#globalStats',
-                    templates: {
-                        text(data, { html }) {
-                            let count = '';
-                            if (data.hasManyResults) {
-                                count += `${data.nbHits} results`
-                            } else if (data.hasOneResult) {
-                                count += `1 result`
-                            } else {
-                                count += `no result`;
-                            }
-    
-                            return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                        }
-                    }
+                customStats({
+                    container: document.querySelector("#globalStats"),
                 }),
 
                 instantsearch.widgets.hits ({
@@ -4803,22 +4523,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#resStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#resStats"),
             }),
         
             instantsearch.widgets.hits ({
@@ -5320,22 +5026,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  searchAsYouType: false,
             }),
 
-            instantsearch.widgets.stats({
-                container: '#resStats',
-                templates: {
-                    text(data, { html }) {
-                        let count = '';
-                        if (data.hasManyResults) {
-                            count += `${data.nbHits} results`
-                        } else if (data.hasOneResult) {
-                            count += `1 result`
-                        } else {
-                            count += `no result`;
-                        }
-
-                        return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
-                    }
-                }
+            customStats({
+                container: document.querySelector("#newsStats"),
             }),
         
             instantsearch.widgets.hits ({
