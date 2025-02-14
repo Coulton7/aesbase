@@ -177,54 +177,54 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        if(filterLang = 'en' || '') {
+        if(filterLang == 'en' || '') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
-        } else if(filterLang = 'es') {
+        } else if(filterLang == 'es') {
             widgetParams.container.innerHTML =
-            `${count} encontrado en ${processingTimeMS}ms`
-        } else if(filterLang = 'fr') {
+            `<p class="text-white">${count} encontrado en ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'fr') {
             widgetParams.container.innerHTML =
-            `${count} trouvé dans ${processingTimeMS}ms`
-        } else if(filterLang = 'de') {
+            `<p class="text-white">${count} trouvé dans ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'de') {
             widgetParams.container.innerHTML =
-            `${count} gefunden in ${processingTimeMS}ms`
-        } else if(filterLang = 'it') {
+            `<p class="text-white">${count} gefunden in ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'it') {
             widgetParams.container.innerHTML =
-            `${count} trovato in ${processingTimeMS}ms`
-        } else if(filterLang = 'pl') {
+            `<p class="text-white">${count} trovato in ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'pl') {
             widgetParams.container.innerHTML =
-            `${count} znaleziony w ${processingTimeMS}ms`
-        } else if(filterLang = 'ru') {
+            `<p class="text-white">${count} znaleziony w ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'ru') {
             widgetParams.container.innerHTML =
-            `${count} найденный в ${processingTimeMS}ms`
-        } else if(filterLang = 'tr') {
+            `<p class="text-white">${count} найденный в ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'tr') {
             widgetParams.container.innerHTML =
-            `${count} içinde bulundu ${processingTimeMS}ms`
-        } else if(filterLang = 'zh-hans') {
+            `<p class="text-white">${count} içinde bulundu ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'zh-hans') {
             widgetParams.container.innerHTML =
-            `${count} 在 ${processingTimeMS}ms`
-        } else if(filterLang = 'ar') {
+            `<p class="text-white">${count} 在 ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'ar') {
             widgetParams.container.innerHTML =
-            `${count} موجودة في ${processingTimeMS}ms`
-        } else if(filterLang = 'nb') {
+            `<p class="text-white">${count} موجودة في ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'nb') {
             widgetParams.container.innerHTML =
-            `${count} funnet i ${processingTimeMS}ms`
-        } else if(filterLang = 'pt-br' || 'pt') {
+            `<p class="text-white">${count} funnet i ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'pt-br' || 'pt') {
             widgetParams.container.innerHTML =
-            `${count} encontrado em ${processingTimeMS}ms`
-        } else if(filterLang = 'cz') {
+            `<p class="text-white">${count} encontrado em ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'cz') {
             widgetParams.container.innerHTML =
-            `${count} nalezené v ${processingTimeMS}ms`
-        } else if(filterLang = 'nl') {
+            `<p class="text-white">${count} nalezené v ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'nl') {
             widgetParams.container.innerHTML =
-            `${count} gevonden in ${processingTimeMS}ms`
-        } else if(filterLang = 'ja') {
+            `<p class="text-white">${count} gevonden in ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'ja') {
             widgetParams.container.innerHTML =
-            `${count} で見つかった。 ${processingTimeMS}ms`
-        } else if(filterLang = 'sv') {
+            `<p class="text-white">${count} で見つかった。 ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'sv') {
             widgetParams.container.innerHTML =
-            `${count} finns i ${processingTimeMS}ms`
+            `<p class="text-white">${count} finns i ${processingTimeMS}ms</p>`
         }
     }
 
