@@ -13907,6 +13907,14 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.ie-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/ireland-aesseal-header.jpg);
+  background-size: cover;
+  background-color: #002a5a;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .tomwetlands-background.lazy-back,
 .chris-background.lazy-back,
 .background-36.lazy-back,
