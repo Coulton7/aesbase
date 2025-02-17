@@ -13404,6 +13404,7 @@ a.disabled {
   text-align: left;
   text-shadow: none;
   display: inline-block;
+  padding-top: 0;
 }
 
 .equal-height-slider .tiny-slider-wrapper {
