@@ -15310,10 +15310,21 @@ ul.about-us-cats a {
   display: flex;
 }
 
-#Map > *:hover,
-#Map > g > path:hover,
 #Lands > *:hover,
-#Lands > g > path:hover {
+#Lands > g > path:hover,
+#Nova_Scotia .st6:hover,
+#SASKAT-CHEWAN .st7:hover,
+#Quebec .st14:hover,
+#Ontario .st10:hover,
+#Manitoba .st6:hover,
+#New_Brunswick .st15:hover,
+#Princ_Edward_Island .st10:hover,
+#Newfoundland .st10:hover,
+#Yukon_Territory .st7:hover,
+#British_Columbia .st10:hover,
+#Alberta .st6:hover,
+#Nunawut .st7:hover,
+#Northwest_Territory .st10:hover {
   fill: #002a5b !important;
   stroke: #004a8c;
   stroke-width: 2;
