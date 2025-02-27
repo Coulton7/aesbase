@@ -15302,7 +15302,14 @@ ul.about-us-cats a {
 .Bakersfield,
 .Wichita,
 .Albuquerque,
-.Plainville {
+.Plainville,
+.Surrey,
+.Edmonton,
+.Etobicoke {
+  display: none;
+}
+
+.AB, .BC, .MB, .NB, .NL, .NT, .NS, .NU, .ON, .PE, .QC, .SK, .YT {
   display: none;
 }
 
