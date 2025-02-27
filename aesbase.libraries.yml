@@ -21,8 +21,6 @@ bootstrap:
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
     assets/js/banner-vid.js: {}
-    assets/js/svg-map-click.js: {}
-    assets/js/ca-svg-map-click.js: {}
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
@@ -64,6 +62,11 @@ comp-seal:
 prod-lib:
   js:
     assets/js/prodImgModal.js: {}
+
+svg-map:
+  js:
+    assets/js/svg-map-click.js: {}
+    assets/js/ca-svg-map-click.js: {}
   
 rtl-css:
   css:

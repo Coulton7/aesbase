@@ -21,8 +21,7 @@ function aesbase_preprocess_node(&$variables) {
   }
 }
 
-function aesbase_page_attachments_alter(&$page)
-{
+function aesbase_page_attachments_alter(&$page) {
   $path = \Drupal::service('path.current')->getPath();
   if(strpos($path, '/node/') === 0){
     $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
@@ -31,6 +30,9 @@ function aesbase_page_attachments_alter(&$page)
     }
     if($alias == '/labtecta') {
       $page['#attached']['library'][] = 'aesbase/labtecta-calc';
+    }
+    if($alias == '/contact-us' || '/contactez-nous' || '/location' || '/localisation') {
+      $page['#attached']['library'][] = 'aesbase/svg-map';
     }
   }
 }
