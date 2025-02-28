@@ -1008,7 +1008,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 router: instantsearch.routers.history({
 
                     createURL({ qsModule, routeState, location }) {
-                        const urlParts = location.href
+                        const urlParts = location.href;
                         const baseUrl = `${urlParts ? urlParts[1] : ''}`;
                         const queryParameters = {};
 
