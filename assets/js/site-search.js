@@ -1050,7 +1050,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             query: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
