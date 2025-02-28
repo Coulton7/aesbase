@@ -1012,7 +1012,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryParameters = {};
 
                         if(routeState.q) {
-                            queryParameters.query = encodeURIComponent(routeState.q);
+                            queryParameters.q = encodeURIComponent(routeState.q);
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
@@ -1040,7 +1040,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            query: decodeURIComponent(q),
+                            q: decodeURIComponent(q),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
                         };
