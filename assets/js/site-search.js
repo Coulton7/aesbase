@@ -1012,21 +1012,26 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexState = routeState['aesseal'] || {};
                         const queryParameters = {};
 
-                        if(routeState.q) {
-                            queryParameters.q = encodeURIComponent(routeState.q);
-                        }
-                        if(routeState.type) {
-                            queryParameters.type = routeState.type.map(encodeURIComponent);
-                        }
-                        if(routeState.lang) {
-                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
-                        }
+                        if(!indexState.q) {
+                            return `${origin}${pathname}${hash}`
+                        } else {
+                            if(routeState.q) {
+                                queryParameters.q = encodeURIComponent(routeState.q);
+                            }
+                            if(routeState.type) {
+                                queryParameters.type = routeState.type.map(encodeURIComponent);
+                            }
+                            if(routeState.lang) {
+                                queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                            }
 
-                        const queryString = qsModule.stringify(queryParameters, {
-                            addQueryPrefix: true,
-                            arrayFormat: 'repeat'
-                        });
-                        return `${origin}${pathname}${queryString}${hash}`;
+                            const queryString = qsModule.stringify(queryParameters, {
+                                addQueryPrefix: true,
+                                arrayFormat: 'repeat'
+                            });
+
+                            return `${origin}${pathname}${queryString}${hash}`;
+                        }
                     },
 
                     parseUrl({ qsModule, location }) {
