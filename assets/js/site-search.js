@@ -1009,7 +1009,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     createURL({ qsModule, routeState, location }) {
                         const { origin, pathname, hash} = location;
-                        const baseUrl = `${urlParts ? urlParts[1] : ''}`;
                         const queryParameters = {};
 
                         if(routeState.query) {
@@ -1027,7 +1026,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'repeat'
                         });
 
-                        console.log(baseUrl);
+                        console.log(origin);
 
                         return `${origin}${pathname}?${queryString}`;
                     },
