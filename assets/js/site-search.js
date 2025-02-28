@@ -1039,11 +1039,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         const allLang = Array.isArray(lang)
                             ? lang
                             :[lang].filter(Boolean);
+                            console.log(allType)
+                            console.log(allLang)
                         return {
                             q: decodeURIComponent(q),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
                         };
+                        
                     },
                     writeDelay: 400,
                     cleanUrlOnDispode: true,
