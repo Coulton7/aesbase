@@ -1028,7 +1028,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         console.log(origin);
 
-                        return `${origin}${pathname}?${queryString}`;
+                        return `${origin}${pathname}${queryString}`;
                     },
 
                     parseUrl({ qsModule, location }) {
