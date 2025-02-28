@@ -1030,7 +1030,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
 
                     parseUrl({ qsModule, location }) {
-                        const { query = '', type = [], lang =[] } = qsModule.parse(
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
                             location.search.slice(1)
                         );
                         const allType = Array.isArray(type)
@@ -1040,7 +1040,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            query: decodeURIComponent(query),
+                            q: decodeURIComponent(query),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
                         };
