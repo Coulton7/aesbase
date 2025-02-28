@@ -1052,7 +1052,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     stateToRoute(uiState){
                         const indexUiState = uiState['aesseal'] || {};
                         return{
-                            query: indexUiState.query,
+                            q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
                             lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
@@ -1060,7 +1060,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
-                                query: routeState.query,
+                                query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
                                     search_api_language: routeState.lang
