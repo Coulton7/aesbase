@@ -1026,8 +1026,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'repeat'
                         });
 
-                        console.log(pathname);
-
                         return `${origin}${pathname}${queryString}`;
                     },
 
