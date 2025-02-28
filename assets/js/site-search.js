@@ -1011,8 +1011,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         const { origin, pathname, hash} = location;
                         const queryParameters = {};
 
-                        if(routeState.query) {
-                            queryParameters.query = encodeURIComponent(routeState.query);
+                        if(routeState.q) {
+                            queryParameters.query = encodeURIComponent(routeState.q);
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
