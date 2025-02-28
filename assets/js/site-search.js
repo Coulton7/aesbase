@@ -1027,7 +1027,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'repeat'
                         });
 
-                        console.log(queryString);
+                        console.log(baseUrl);
 
                         return `${baseUrl}${queryString}`;
                     },
