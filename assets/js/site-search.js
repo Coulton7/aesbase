@@ -1009,7 +1009,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     createURL({ qsModule, routeState, location }) {
                         const urlParts = location.href
-                        const baseUrl = `${urlParts}`;
+                        const baseUrl = `${urlParts ? urlParts[1] : ''}`;
                         const queryParameters = {};
 
                         if(routeState.query) {
