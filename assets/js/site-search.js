@@ -1060,7 +1060,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
-                                query: routeState.q,
+                                query: routeState.query,
                                 refinementList: {
                                     type: routeState.type,
                                     search_api_language: routeState.lang
