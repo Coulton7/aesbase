@@ -1026,7 +1026,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'repeat'
                         });
 
-                        return `${origin}${pathname}${queryString}`;
+                        return `${origin}${pathname}${queryString}${hash}`;
                     },
 
                     parseUrl({ qsModule, location }) {
