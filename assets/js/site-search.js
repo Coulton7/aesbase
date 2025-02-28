@@ -1049,6 +1049,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         };
                     },
                     writeDelay: 400,
+                    cleanUrlOnDispode: true,
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
