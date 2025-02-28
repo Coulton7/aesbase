@@ -1021,8 +1021,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             queryParameters.lang = routeState.lang.map(encodeURIComponent);
                         }
 
-                        console.log(routeState.tpye);
-
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'repeat'
