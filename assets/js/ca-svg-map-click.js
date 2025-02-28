@@ -291,24 +291,24 @@ document.addEventListener("DOMContentLoaded", function () {
                     case link == "Nunawut":
                         state = "Nunawut";
                         surrey.forEach((surrey) => {
-                            surrey.classList.add('show');
+                            surrey.classList.remove('show');
                         });
                         nu.forEach((nu) => {
-                            nu.classList.add('show');
+                            nu.classList.remove('show');
                         });
                         break;
                     case link == "Yukon_Territory":
                         state = "Yukon Territory";
                         surrey.forEach((surrey) => {
-                            surrey.classList.add('show');
+                            surrey.classList.remove('show');
                         });
                         yt.forEach((yt) => {
-                            yt.classList.add('show');
+                            yt.classList.remove('show');
                         });
                         break;
                     default:
                         state = "Canada Territory";
-                        surrey.forEach((rockford) => {
+                        surrey.forEach((surrey) => {
                             surrey.classList.remove('show');
                         });
                     break;
