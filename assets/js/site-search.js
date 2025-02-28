@@ -1501,22 +1501,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal us'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal us']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -1728,22 +1771,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal in'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal in']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -1956,22 +2042,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal za'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal za']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -2184,22 +2313,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal my'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal my']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -2412,22 +2584,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal de'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal de']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -2772,22 +2987,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal ae'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal ae']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -3016,22 +3274,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal fr'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal fr']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -3376,22 +3677,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal pl'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal pl']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -3736,22 +4080,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal_se'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal_se']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -4096,22 +4483,65 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['torishima aesseal'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
                         return{
-                            ['torishima aesseal']: {
+                            ['aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -4456,13 +4886,56 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
@@ -4471,7 +4944,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
@@ -4977,13 +5450,56 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'];
+                        const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
@@ -4992,7 +5508,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
-                                    lang: routeState.search_api_language,
+                                    search_api_language: routeState.lang
                                 }
                             },
                         };
