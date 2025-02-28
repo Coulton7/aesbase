@@ -1021,6 +1021,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             queryParameters.lang = routeState.lang.map(encodeURIComponent);
                         }
 
+                        console.log(routeState.tpye);
+
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'repeat'
@@ -1039,8 +1041,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         const allLang = Array.isArray(lang)
                             ? lang
                             :[lang].filter(Boolean);
-                            console.log(allType)
-                            console.log(allLang)
                         return {
                             q: decodeURIComponent(q),
                             type: allType.map(decodeURIComponent),
