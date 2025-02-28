@@ -1047,7 +1047,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
                         };
-                    }
+                    },
+                    writeDelay: 400,
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
