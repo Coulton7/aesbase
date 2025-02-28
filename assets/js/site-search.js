@@ -1047,7 +1047,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         
                     },
                     writeDelay: 400,
-                    cleanUrlOnDispode: true,
+                    cleanUrlOnDispose: true,
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
