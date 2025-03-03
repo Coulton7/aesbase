@@ -1012,7 +1012,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
-                            arrayFormat: 'repeat'
+                            arrayFormat: 'indices'
                         });
 
                         return `${origin}${pathname}${queryString}${hash}`;
