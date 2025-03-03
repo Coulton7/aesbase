@@ -1538,7 +1538,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal us'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -1547,7 +1547,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal us']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -1808,7 +1808,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal in'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -1817,7 +1817,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal in']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -2079,7 +2079,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal za'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -2088,7 +2088,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal za']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -2350,7 +2350,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal my'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -2359,7 +2359,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal my']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -2621,7 +2621,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal de'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -2630,7 +2630,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal de']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -3024,7 +3024,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal ae'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -3033,7 +3033,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal ae']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -3311,7 +3311,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal fr'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -3320,7 +3320,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal fr']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -3714,7 +3714,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal pl'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -3723,7 +3723,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal pl']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -4117,7 +4117,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['aesseal_se'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -4126,7 +4126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['aesseal_se']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
@@ -4520,7 +4520,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }),
                 stateMapping: {
                     stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal'] || {};
+                        const indexUiState = uiState['torishima aesseal'] || {};
                         return{
                             q: indexUiState.query,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
@@ -4529,7 +4529,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     routeToState(routeState) {
                         return{
-                            ['aesseal']: {
+                            ['torishima aesseal']: {
                                 query: routeState.q,
                                 refinementList: {
                                     type: routeState.type,
