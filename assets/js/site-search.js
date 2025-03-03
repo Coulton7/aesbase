@@ -1008,9 +1008,10 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
 
                         const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
                         });
 
-                        return `${origin}${pathname}?${queryString}${hash}`;
+                        return `${origin}${pathname}${queryString}${hash}`;
                     },
 
                     parseUrl({ qsModule, location }) {
