@@ -1000,6 +1000,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(routeState.q) {
                             queryParameters.q = encodeURIComponent(routeState.q);
                         }
+                        if(routeState.page !== 1){
+                            queryParameters.page = routeState.page;
+                        }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
                         }
@@ -1009,6 +1012,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
+                            arrayFormat: 'repeat'
                         });
 
                         return `${origin}${pathname}${queryString}${hash}`;
@@ -1026,6 +1030,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             :[lang].filter(Boolean);
                         return {
                             q: decodeURIComponent(q),
+                            page,
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
                         };
@@ -1038,6 +1043,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const indexUiState = uiState['aesseal'] || {};
                         return{
                             q: indexUiState.query,
+                            page:indexUiState.page,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
                             lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
@@ -1046,6 +1052,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         return{
                             ['aesseal']: {
                                 query: routeState.q,
+                                page:routeState.page,
                                 refinementList: {
                                     type: routeState.type,
                                     search_api_language: routeState.lang
