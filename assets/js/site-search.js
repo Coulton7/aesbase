@@ -1005,7 +1005,49 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
-                router: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${origin}${pathname}${queryString}${hash}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                        
+                    },
+                    writeDelay: 400,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
                         const indexUiState = uiState['aesseal'] || {};
@@ -1028,7 +1070,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
             },
-        },
         });
 
         search.addWidgets([{
