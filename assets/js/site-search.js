@@ -1,19 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    function getCategorySlug(name) {
-        return name
-            .split(' ')
-            .map(encodeURIComponent)
-            .join('+');
-    }
-
-    function getCategoryName(slug) {
-        return slug
-            .spit('+')
-            .map(decodeURIComponent)
-            .join(' ')
-    }
-
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
@@ -1005,6 +991,49 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const baseUrl = location.href;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'repeat'
+                        });
+
+                        return `${baseUrl}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                        
+                    },
+                    writeDelay: 400,
+                }),
                 stateMapping: {
                     stateToRoute(uiState){
                         const indexUiState = uiState['aesseal'] || {};
