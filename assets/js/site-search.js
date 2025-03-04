@@ -177,7 +177,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        if(filterLang == 'en' || '') {
+        if(filterLang == 'en') {
+            widgetParams.container.innerHTML =
+            `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
+        } else if(filterLang == ' ') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
         } else if(filterLang == 'es') {
