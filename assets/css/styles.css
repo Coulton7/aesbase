@@ -14568,6 +14568,28 @@ blockquote {
   padding: 30px 50px 30px 50px;
 }
 
+.engineering-block {
+  background-image: url("https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top, right;
+  height: 600px;
+}
+
+.black-box-promo {
+  position: relative;
+  top: 50%;
+  left: 10%; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.55); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding-top: 20px;
+  max-width: 30%;
+  max-height: 100%;
+}
+
 .black-box {
   position: absolute;
   top: 220px; /* Adjust the top position as needed */
@@ -18618,6 +18640,9 @@ ul.about-us-cats a {
   }
   .shadow-mob-text i {
     font-size: calc(1.275rem + 0.3vw) !important;
+  }
+  .black-box-promo {
+    max-width: 70%;
   }
 }
 @media (max-width: 1200px) {
