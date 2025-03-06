@@ -5429,13 +5429,6 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
-            searchFunction(helper) {
-                if (helper.state.query === '')
-                {
-                    return;
-                }
-                helper.search();
-            },
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
