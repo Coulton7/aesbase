@@ -978,12 +978,19 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
-            searchFunction(helper) {
-                if (helper.state.query === '')
-                {
-                    return;
+            search(requests) {
+                if(requests.every(({ params }) => !params.query)) {
+                    return Promise.resolve({
+                        results: requests.map(() => ({
+                            hits: [],
+                            nbHits: 0,
+                            nbPages: 0,
+                            page: 0,
+                            processingTimeMS: 0,
+                        })),
+                    });
                 }
-                helper.search();
+                return searchClient.search(requests);
             },
             insights: {
                 onEvent(event) {
