@@ -988,6 +988,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             page: 0,
                             hitsPerPage: 0,
                             processingTimeMS: 0,
+                            widgetParams: 0,
                             query: '',
                             params: '',
                         })),
