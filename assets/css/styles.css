@@ -13781,6 +13781,11 @@ a.lightblue-text {
   color: #fff;
 }
 
+.text-bg-primary .mark {
+  background-color: #002a5a;
+  padding: 0;
+}
+
 .card {
   overflow: hidden;
 }
