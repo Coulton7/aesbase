@@ -97,9 +97,9 @@
   <div class="row no-padding g-0">
 	  <div class="preface preface-flex-margin text-bg-primary">
     {% if not is_front %}
-      <div class="row pt-10 pb-lg-0 pb-8 {{ node.label|replace(' ', '-')|lower }}-banner-background">
+      <div class="row pt-10 pb-lg-0 pb-8 {{ node.label|lower }}-banner-background">
     {% else %}
-      <div class="row pt-10 pb-lg-0 pb-8 {{ page['#title']|replace(' ', '-')|lower }}-banner-background">
+      <div class="row pt-10 pb-lg-0 pb-8 {{ page['#title']|lower }}-banner-background">
     {% endif %}
         {% if page.preface %}
 	        {% block preface %}
