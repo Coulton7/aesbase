@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let uaeSearch = document.getElementById('aeHits');
     let resSearch = document.getElementById('resHits');
     let franSearch = document.getElementById('frHits');
+    let canSearch = document.getElementById('caHits');
     let polSearch = document.getElementById('plHits');
     let sweSearch = document.getElementById('seHits');
     let malaySearch = document.getElementById('myHits');
@@ -3663,6 +3664,409 @@ document.addEventListener("DOMContentLoaded", function() {
         ]);
         frSearch.start();
     }
+
+    if(!!canSearch){
+        window.dataLayer.push({
+            algoliaUserToken: 'user-1',
+        });
+
+        const caSearch = instantsearch({
+            indexName: 'aesseal ca',
+            searchClient,
+            typoTolerance: 'strict',
+            paginationLimitedTo: 80,
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
+            insights: {
+                onEvent(event) {
+                    const { widgetType, eventType, payload, hits } = event;
+                    if (widgetType == 'ais.hits' && eventType === 'view') {
+                        dataLayer.push({ event: 'Hits Viewed' });
+                    }
+                }
+            },
+            routing: {
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'indices'
+                        });
+
+                        return `${origin}${pathname}${queryString}`;
+                    },
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
+                        return {
+                            q: decodeURIComponent(q),
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                    },
+                    writeDelay: 400,
+                    cleanUrlOnDispode: true,
+                }),
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal ca'] || {};
+                        return{
+                            q: indexUiState.query,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
+                            ['aesseal ca']: {
+                                query: routeState.q,
+                                refinementList: {
+                                    type: routeState.type,
+                                    search_api_language: routeState.lang
+                                }
+                            },
+                        };
+                    },
+                },
+            },
+        })
+
+        caSearch.addWidgets([
+            instantsearch.widgets.configure({
+                hitsPerPage: 10,
+                attributesToSnippet: ['body:80'],
+                page: 0,
+            }),
+
+            langlistPanel({
+                container: '#lang-list',
+                attribute: 'search_api_language',
+                templates: {
+                    header: 'Select your Language',
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: item.label.toUpperCase(),
+                    }));
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            typelistPanel({
+                container: '#type-list',
+                attribute: 'type',
+                templates: {
+                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
+                cssClasses: {
+                    item: ['types-item']
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
+
+            nationalPagination({
+                container: '#caPagination',
+                totalPages: 3,
+                scrollTo: '#caSearchbox'
+            }),
+        
+            customSearchBox({
+                container: document.querySelector('#caSearchbox'),
+                 searchAsYouType: false,
+            }),
+
+            customStats({
+                container: document.querySelector("#caStats"),
+            }),
+
+            instantsearch.widgets.hits ({
+                container: '#caHits',
+                templates:{
+                    item(data, { html, components }){
+                        if(filterLang == 'en'){
+                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if (filterLang == ''){
+                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if(filterLang == 'fr'){
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                    attribute: "body",
+                                    hit: data,
+                                    highlightedTagName: 'strong'
+                                })}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Ouvrir le PDF</a>
+                            </div>`
+
+                        }
+                    },
+                    empty(results, { html }){
+                        if(filterLang == 'en'){
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if(filterLang == '') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                        }
+                        else if (filterLang == 'fr') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
+                            <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                            </div>
+                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                        }
+                    },
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: natTypeMapping[item.type],
+                    }))
+                },
+            }),
+
+            instantsearch.widgets
+                .index({ indexName: 'aesseal' })
+                .addWidgets([{
+                    init: function(options) {
+                        if(filterLang == "en")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if(filterLang == "")
+                        {
+                            options.helper.toggleRefinement('search_api_language', 'en');
+                        }
+                        else if (filterLang === "fr") {
+                            options.helper.toggleRefinement('search_api_language', 'fr');
+                        }
+                    }
+                },
+
+                instantsearch.widgets.configure({
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['description:80', 'body:80'],
+                    page: 0,
+                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                }),
+
+                gloablTypelistPanel({
+                    container: '#globalType-list',
+                    attribute: 'type',
+                    templates: {
+                        header: 'Filter Global Site by Content Type',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    },
+                    cssClasses: {
+                        item: ['types-item']
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                globalLanglistPanel({
+                    container: '#globalLang-list',
+                    attribute: 'search_api_language',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    },
+                    sortBy: ['isRefined', 'count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#caSearchbox'
+                }),
+
+                customStats({
+                    container: document.querySelector("#globalStats"),
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item(data, { html, components }){
+                            if(filterLang == 'en'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                </div>`
+                                } else if(filterLang == '') {
+                                    return html `<div class="search-result">
+                                        <small>${data.url}</small>
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "description",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "body",
+                                            hit: data,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    </div>`
+                                } else if(filterLang == 'fr'){
+                                return html `<div class="search-result">
+                                    <small>${data.url}</small>
+                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "description",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "body",
+                                        hit: data,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                </div>`
+    
+    
+                            }
+                        },
+                        empty(results, { html }){
+                            if(filterLang == 'en'){
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if(filterLang == '') {
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if (filterLang == 'fr') {
+                                return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
+                            <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                            </div>
+                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            }
+                        }
+                    },
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    },
+                })
+            ])
+        ]);
+        caSearch.start();
+    }    
 
     if(!!polSearch){
         window.dataLayer.push({
