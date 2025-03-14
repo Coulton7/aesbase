@@ -1132,7 +1132,7 @@ document.addEventListener("DOMContentLoaded", function() {
         search.addWidgets([
             instantsearch.widgets.configure({
                 hitsPerPage: 20,
-                attributesToSnippet: ['description:80', 'body:80'],
+                attributesToSnippet: ['description:80', 'summary:80'],
                 page: 0,
             }),
 
@@ -1213,11 +1213,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
@@ -1232,11 +1228,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
@@ -1251,11 +1243,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
@@ -1270,11 +1258,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
@@ -1289,11 +1273,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
@@ -1308,11 +1288,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'pl'){
@@ -1327,11 +1303,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
                             </div>`
                         } else if(filterLang == 'ru'){
@@ -1346,11 +1318,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
                             </div>`
                         } else if(filterLang == 'tr'){
@@ -1365,11 +1333,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
@@ -1384,11 +1348,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
                         }
