@@ -1214,7 +1214,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1229,7 +1231,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1244,7 +1249,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1259,7 +1266,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1274,7 +1283,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1289,7 +1300,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'pl'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1304,7 +1317,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
                             </div>`
                         } else if(filterLang == 'ru'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1319,7 +1334,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
                             </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1334,7 +1351,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1349,7 +1368,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     highlightedTagName: 'strong'
                                 })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
+                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
+                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
+                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
                         }
                     },
@@ -1591,10 +1612,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
+                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                         <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
@@ -1861,10 +1879,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
+                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                         <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
@@ -2132,10 +2147,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
+                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                         <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
@@ -2403,10 +2415,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
+                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                         <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
@@ -2691,11 +2700,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -2705,11 +2710,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -2720,11 +2721,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">PDF öffnen</a>
                             </div>`
@@ -3093,10 +3090,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                         <p class="lead">${data.type}</p>
-                        <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                            attribute: "body",
-                            hit: data
-                        })}</p>
+                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                         <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                         <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                     </div>`,
@@ -3381,11 +3375,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -3395,11 +3385,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -3410,11 +3396,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Ouvrir le PDF</a>
                             </div>`
@@ -3784,11 +3766,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -3798,11 +3776,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -3813,11 +3787,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Ouvrir le PDF</a>
                             </div>`
@@ -4187,11 +4157,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -4201,11 +4167,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -4216,11 +4178,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Otwórz PDF</a>
                             </div>`
@@ -4590,11 +4548,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -4604,11 +4558,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -4619,11 +4569,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">CLäs mer om</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Öppna PDF</a>
                             </div>`
@@ -4993,11 +4939,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -5007,11 +4949,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
@@ -5022,11 +4960,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">PDFを開く</a>
                             </div>`
@@ -5456,11 +5390,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
@@ -5475,11 +5405,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
@@ -5494,11 +5420,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
@@ -5513,11 +5435,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
@@ -5532,11 +5450,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
@@ -5551,11 +5465,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'tr'){
@@ -5570,11 +5480,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
@@ -5589,11 +5495,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
                         } else if(filterLang == 'ar'){
@@ -5608,11 +5510,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
                             </div>`
                         } else if(filterLang == 'nb'){
@@ -5627,11 +5525,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Les mer</a>
                             </div>`
                         } else if(filterLang == 'pt-br'){
@@ -5646,11 +5540,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Leia mais</a>
                             </div>`
                         } else if(filterLang == 'pt'){
@@ -5665,11 +5555,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Ler mais</a>
                             </div>`
                         } else if(filterLang == 'nl'){
@@ -5684,11 +5570,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Meer lezen</a>
                             </div>`
                         }
@@ -5995,11 +5877,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
@@ -6014,11 +5892,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
@@ -6033,11 +5907,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
@@ -6052,11 +5922,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
@@ -6071,11 +5937,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
@@ -6090,11 +5952,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'tr'){
@@ -6109,11 +5967,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
@@ -6128,11 +5982,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
                         } else if(filterLang == 'ar'){
@@ -6147,11 +5997,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
                             </div>`
                         } else if(filterLang == 'nb'){
@@ -6166,11 +6012,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Les mer</a>
                             </div>`
                         } else if(filterLang == 'pt-br'){
@@ -6185,11 +6027,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Leia mais</a>
                             </div>`
                         } else if(filterLang == 'pt'){
@@ -6204,11 +6042,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Ler mais</a>
                             </div>`
                         } else if(filterLang == 'nl'){
@@ -6223,11 +6057,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     hit: data,
                                     highlightedTagName: 'strong'
                                 })}</p>
-                                <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "body",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Meer lezen</a>
                             </div>`
                         }
