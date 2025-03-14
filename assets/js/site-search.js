@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D Models',
                 'academy': 'Academy',
+                'announcements': 'Announcements',
                 'apiplans': 'API Plans',
                 'article': 'Article',
                 'bearingprotection': 'Bearing Protection',
@@ -281,6 +282,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D Models',
                 'academy': 'Academy',
+                'announcements': 'Announcements',
                 'apiplans': 'API Plans',
                 'article': 'Article',
                 'bearingprotection': 'Bearing Protection',
@@ -306,6 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modelos 3D',
                 'academy': 'Academia',
+                'announcements': 'Anuncios',
                 'apiplans': 'API Plans',
                 'article': 'Artículo',
                 'bearingprotection': 'Protección de Rodamientos',
@@ -331,6 +334,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modèles 3D',
                 'academy': 'Académie',
+                'announcements': 'Annonces',
                 'apiplans': 'API Plans',
                 'article': 'Article',
                 'bearingprotection': 'Protections de Paliers',
@@ -356,6 +360,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D-Modelle',
                 'academy': 'Akademie',
+                'announcements': 'Ankündigungen',
                 'apiplans': 'API Plans',
                 'article': 'Artikel',
                 'bearingprotection': 'Lagerschutzdichtungen',
@@ -381,6 +386,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modelli 3D',
                 'academy': 'Accademia',
+                'announcements': 'Annunci',
                 'apiplans': 'API Plans',
                 'article': 'Articolo',
                 'bearingprotection': 'Protettori per cuscinetti',
@@ -407,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modele 3D',
                 'academy': 'Akademia',
+                'announcements': 'Ogłoszenia',
                 'apiplans': 'API Plans',
                 'article': 'Artykuł',
                 'bearingprotection': 'Ochrona łożysk',
@@ -433,6 +440,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D-модели',
                 'academy': 'Академия',
+                'announcements': 'Объявления',
                 'apiplans': 'API Plans',
                 'article': 'Статья',
                 'bearingprotection': 'Защита подшипников',
@@ -459,6 +467,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D Modeller',
                 'academy': 'Akademi',
+                'announcements': 'Duyurular',
                 'apiplans': 'API Plans',
                 'article': 'Makale',
                 'bearingprotection': 'Rulman Koruyucu',
@@ -485,6 +494,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '三维模型',
                 'academy': '学院',
+                'announcements': '公告',
                 'apiplans': 'API Plans',
                 'article': '文章',
                 'bearingprotection': '轴承保护器',
@@ -510,6 +520,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'نماذج 3D',
                 'academy': 'الأكاديمية',
+                'announcements': 'إعلانات',
                 'apiplans': 'خطط API',
                 'article': 'المادة',
                 'bearingprotection': 'حماية المحمل',
@@ -535,6 +546,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D-modeller',
                 'academy': 'Akademiet',
+                'announcements': 'Kunngjøringer',
                 'apiplans': 'API Plans',
                 'article': 'Artikkel',
                 'bearingprotection': 'Beskyttelse av lager',
@@ -560,6 +572,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modelos 3D',
                 'academy': 'Academia',
+                'announcements': 'Anúncios',
                 'apiplans': 'API Plans',
                 'article': 'Artigo',
                 'bearingprotection': 'Proteção do rolamento',
@@ -585,6 +598,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': 'Modelos 3D',
                 'academy': 'Academia',
+                'announcements': 'Anúncios',
                 'apiplans': 'API Plans',
                 'article': 'Artigo',
                 'bearingprotection': 'Proteção dos rolamentos',
@@ -610,6 +624,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D modely',
                 'academy': 'Akademie',
+                'announcements': 'Oznámení',
                 'apiplans': 'API Plans',
                 'article': 'Článek',
                 'bearingprotection': 'Ochrana ložisek',
@@ -635,6 +650,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3D-modellen',
                 'academy': 'Academie',
+                'announcements': 'Aankondigingen',
                 'apiplans': 'API Plans',
                 'article': 'Artikel',
                 'bearingprotection': 'Lagerbescherming',
@@ -661,6 +677,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeMapping = {
                 '3dmodels': '3Dモデル',
                 'academy': 'アカデミー',
+                'announcements': 'お知らせ',
                 'apiplans': 'API Plans',
                 'article': '記事',
                 'bearingprotection': 'ベアリング保護',
