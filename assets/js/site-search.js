@@ -1222,7 +1222,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1241,7 +1241,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1261,7 +1261,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1280,7 +1280,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1299,7 +1299,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1318,7 +1318,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1337,7 +1337,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1356,7 +1356,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1375,7 +1375,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1394,7 +1394,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}>${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${field_ext_site_link_address}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
