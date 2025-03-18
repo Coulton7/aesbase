@@ -1239,7 +1239,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == ''){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1259,7 +1259,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'es'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1278,7 +1278,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'fr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1297,7 +1297,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'de'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1316,7 +1316,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'it'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1335,7 +1335,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'pl'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1354,7 +1354,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'ru'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1373,7 +1373,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1392,7 +1392,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}"${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
