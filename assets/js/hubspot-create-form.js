@@ -1088,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("technical-drawings-form")) {
+        } else if (document.querySelector("#technical-drawings-form")) {
             document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.getElementById("disclaimer").style.display = "block";
