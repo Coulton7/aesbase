@@ -1148,6 +1148,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         search.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 20,
                 attributesToSnippet: ['description:80', 'summary:80'],
                 page: 0,
@@ -1167,7 +1169,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#lang-list',
                 attribute: 'search_api_language',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -1182,7 +1184,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     searchableNoResults(data, { html }) {
                         return html `<p>No Results</p>`
                     },
@@ -1602,6 +1604,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         usaSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -1611,7 +1615,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -1689,6 +1693,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -1700,7 +1706,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -1719,7 +1725,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -1869,6 +1875,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         indiaSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -1878,7 +1886,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -1956,6 +1964,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -1967,7 +1977,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -1986,7 +1996,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2137,6 +2147,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         southafricaSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -2146,7 +2158,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -2224,6 +2236,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -2235,7 +2249,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2254,7 +2268,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2405,6 +2419,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         mySearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -2414,7 +2430,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -2492,6 +2508,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -2503,7 +2521,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2522,7 +2540,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2673,6 +2691,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         deSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -2683,7 +2703,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -2698,7 +2718,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -2819,6 +2839,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -2830,7 +2852,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -2849,7 +2871,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3064,6 +3086,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         aeSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -3074,7 +3098,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3089,7 +3113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3167,6 +3191,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -3178,7 +3204,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3197,7 +3223,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3348,6 +3374,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         frSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -3358,7 +3386,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3373,7 +3401,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3494,6 +3522,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -3505,7 +3535,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3524,7 +3554,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3739,6 +3769,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         caSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -3749,7 +3781,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3764,7 +3796,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -3885,6 +3917,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -3896,7 +3930,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -3915,7 +3949,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -4130,6 +4164,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         plSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -4140,7 +4176,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -4155,7 +4191,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -4276,6 +4312,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -4287,7 +4325,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -4306,7 +4344,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -4521,6 +4559,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         seSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -4531,7 +4571,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -4546,7 +4586,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -4667,6 +4707,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -4678,7 +4720,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -4697,7 +4739,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -4912,6 +4954,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         jpSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
@@ -4922,7 +4966,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -4937,7 +4981,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -5058,6 +5102,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
 
                 instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
                     hitsPerPage: 10,
                     attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
@@ -5069,7 +5115,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'type',
                     templates: {
                         header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -5088,7 +5134,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     attribute: 'search_api_language',
                     templates: {
                         header: 'Select your Language',
-                        item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     },
                     transformItems(items){
                         return items.map(item => ({
@@ -5346,6 +5392,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         resourceSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 20,
                 attributesToSnippet: ['description:80', 'body:80'],
                 page: 0,
@@ -5367,7 +5415,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -5382,7 +5430,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
@@ -5851,6 +5899,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         newsSearch.addWidgets([
             instantsearch.widgets.configure({
+                clickAnalytics: true,
+                userToken: 'user-1',
                 hitsPerPage: 20,
                 attributesToSnippet: ['description:80', 'body:80'],
                 page: 0,
@@ -5872,7 +5922,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 attribute: 'search_api_language',
                 templates: {
                     header: 'Select your Language',
-                    item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
