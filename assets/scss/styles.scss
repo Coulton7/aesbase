@@ -36,7 +36,7 @@ body,
 .dialog-off-canvas-main-canvas {
   display: flex;
   flex-direction: column;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
