@@ -810,6 +810,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
+        } else if(document.querySelector("#training-form")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
+                target: "#training-form",
+                css:"",
+                submitButtonClass: "btn btn-danger",
+            });
         }
     } else if(filterLang == 'nb'){
         if(document.querySelector("#modal-form")){
