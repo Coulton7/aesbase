@@ -952,7 +952,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-primary hs-button",
             });
         }
-    } else if(filterLang == 'jp'){
+    } else if(filterLang == 'ja'){
         if(document.querySelector("#contact-form")){
             hbspt.forms.create({
                 region: "na1",
