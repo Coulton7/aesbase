@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hbspt.forms.create({
                     portalId: "2248916",
                     formId: "0d6eb558-5d3a-48e6-977f-448765cc24b6",
-                    target: "#download-resource",
+                    target: "#video-request",
                     css: "",
                     cssClass:"hs-overlay-form",
                     submitButtonClass:"btn btn-primary hs-button",
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     }
                 });
-        }  else if (document.querySelector("#download")) {
+        }  else if (document.querySelector("#download-resource")) {
             document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
