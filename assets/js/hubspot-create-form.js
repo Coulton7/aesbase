@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     }
                 });
-        }  else if (document.querySelector("#download-resource")) {
+        }  else if (document.querySelector("#download")) {
             document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
