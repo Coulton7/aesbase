@@ -908,6 +908,36 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-primary hs-button",
             });
         }
+    } else if(filterLang == 'sv'){
+        if(document.querySelector("#contact-form")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
+                target: "#contact-form",
+                css: "",
+                cssClass: "hs-visible-form blue-background",
+                submitButtonClass: "btn btn-danger"
+            });
+        } else if(document.querySelector("#modal-form")){
+            hbspt.forms.create({
+                portalId: "2248916",
+                formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
+                target: "#modal-form",
+                css: "",
+                cssClass:"hs-overlay-form",
+                submitButtonClass:"btn btn-primary hs-button",
+            });
+        } else if(document.querySelector("#training-form")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
+                target: "#training-form",
+                css:"",
+                submitButtonClass: "btn btn-danger",
+            });
+        }
     } else if(filterLang == 'pt-br'){
         if(document.querySelector("#modal-form")){
             hbspt.forms.create({
