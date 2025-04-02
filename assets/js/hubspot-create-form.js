@@ -52,6 +52,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
+        } else if(document.querySelector("#training-form-ae")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
+                target: "#training-form",
+                css:"",
+                submitButtonClass: "btn btn-danger",
+            });
         } else if (document.querySelector("#piping-booklet-form")){
             document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -1038,6 +1047,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
+                target: "#training-form",
+                css:"",
+                submitButtonClass: "btn btn-danger",
+            });
+        } else if(document.querySelector("#training-form-ae")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
                 target: "#training-form",
                 css:"",
                 submitButtonClass: "btn btn-danger",
