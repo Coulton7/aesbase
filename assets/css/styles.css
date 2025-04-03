@@ -15114,6 +15114,10 @@ ul.about-us-cats {
   flex-flow: column;
 }
 
+.view-details {
+  width: auto;
+}
+
 .parts-form {
   display: none;
 }
