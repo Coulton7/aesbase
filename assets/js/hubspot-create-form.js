@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
-                target: "#training-form",
+                target: "#training-form-ae",
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
@@ -1056,7 +1056,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
-                target: "#training-form",
+                target: "#training-form-ae",
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
