@@ -1229,11 +1229,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
@@ -1248,11 +1244,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
@@ -1268,11 +1260,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
@@ -1287,11 +1275,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
@@ -1306,11 +1290,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
@@ -1325,11 +1305,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
@@ -1344,11 +1320,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
@@ -1363,11 +1335,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
@@ -1382,11 +1350,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
@@ -1401,11 +1365,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
@@ -1753,17 +1713,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
+                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
                     },
@@ -2024,17 +1975,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
+                            <p class=${data.body ? '' : 'd-none'}>${data.summary}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
                     },
@@ -2296,17 +2238,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
+                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
                     },
@@ -2568,17 +2501,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
+                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
                     },
@@ -2900,57 +2824,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'de'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                                 </div>`
     
@@ -3251,17 +3142,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small>https://www.aesseal.com${data.url}</small>
                             <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                             <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                            <p class=${data.description ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "description",
-                                hit: data
-                            })}</p>
-                            <p class=${data.body ? '' : 'd-none'}>${instantsearch.snippet({
-                                attribute: "body",
-                                hit: data
-                            })}</p>
+                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`,
                     },
@@ -3583,57 +3465,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'fr'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 </div>`
     
@@ -3978,57 +3827,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'fr'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 </div>`
     
@@ -4373,57 +4189,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'pl'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
                                 </div>`
     
@@ -4770,55 +4553,23 @@ document.addEventListener("DOMContentLoaded", function() {
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'sv'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Läs mer om</a>
                                 </div>`
     
@@ -5163,57 +4914,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
                                         <small>${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "description",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
-                                        <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                            attribute: "body",
-                                            hit: data,
-                                            highlightedTagName: 'strong'
-                                        })}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'ja'){
                                 return html `<div class="search-result">
                                     <small>${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                    <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "description",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
-                                    <p class=${data.body ? '' : 'd-none'}>${components.Snippet({
-                                        attribute: "body",
-                                        hit: data,
-                                        highlightedTagName: 'strong'
-                                    })}</p>
+                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     <a class="btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
                                 </div>`
     
@@ -5467,14 +5185,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -5482,14 +5193,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -5497,14 +5201,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
@@ -5512,14 +5209,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
@@ -5527,14 +5217,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
@@ -5542,14 +5225,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
@@ -5557,14 +5233,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
@@ -5572,14 +5241,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
@@ -5590,11 +5252,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
                             </div>`
@@ -5602,14 +5260,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Les mer</a>
                             </div>`
@@ -5617,14 +5268,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Leia mais</a>
                             </div>`
@@ -5632,14 +5276,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Ler mais</a>
                             </div>`
@@ -5647,14 +5284,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Meer lezen</a>
                             </div>`
@@ -5956,14 +5586,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -5971,14 +5594,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
@@ -5986,14 +5602,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
@@ -6001,14 +5610,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
@@ -6016,14 +5618,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
@@ -6031,14 +5626,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
@@ -6046,14 +5634,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
@@ -6061,14 +5642,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
@@ -6076,14 +5650,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
                             </div>`
@@ -6091,14 +5658,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Les mer</a>
                             </div>`
@@ -6106,14 +5666,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Leia mais</a>
                             </div>`
@@ -6121,14 +5674,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Ler mais</a>
                             </div>`
@@ -6136,14 +5682,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${components.Snippet({
-                                    attribute: "description",
-                                    hit: data,
-                                    highlightedTagName: 'strong'
-                                })}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">Meer lezen</a>
                             </div>`
