@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#video-request")) {
+        } else if (document.querySelector("#video-form")) {
                 document.querySelector('.video-thumbnail').style.display = 'none';
                 if (document.querySelector('.resource-request').innerHTML.length > 0) {
                     document.querySelector('.video-stream').style.display='none';
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hbspt.forms.create({
                     portalId: "2248916",
                     formId: "0d6eb558-5d3a-48e6-977f-448765cc24b6",
-                    target: "#video-request",
+                    target: "#video-form",
                     css: "",
                     cssClass:"hs-overlay-form",
                     submitButtonClass:"btn btn-primary hs-button",
