@@ -1034,7 +1034,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         } else if(document.querySelector("#location-form")){
             hbspt.forms.create({
-                region: "na1",
                 portalId: "2248916",
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
@@ -1044,7 +1043,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         } else if(document.querySelector("#training-form")){
             hbspt.forms.create({
-                region: "na1",
                 portalId: "2248916",
                 formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
                 target: "#training-form",
@@ -1053,7 +1051,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         } else if(document.querySelector("#training-form-ae")){
             hbspt.forms.create({
-                region: "na1",
                 portalId: "2248916",
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
                 target: "#training-form-ae",
