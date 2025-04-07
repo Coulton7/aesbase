@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (document.querySelector("#video-form")) {
+            console.log('video form');
                 document.querySelector('.video-thumbnail').style.display = 'none';
                 if (document.querySelector('.resource-request').innerHTML.length > 0) {
                     document.querySelector('.video-stream').style.display='none';
@@ -140,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 });
         }  else if (document.querySelector("#download-resource")) {
+            console.log('download resource');
             document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
