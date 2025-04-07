@@ -18,10 +18,10 @@ bootstrap:
     assets/js/nav-scroll.js: {}
     assets/js/menu-collapse.js: {}
     assets/js/overlay-trigger.js: {}
+    assets/js/hubspot-create-form.js: {}
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
     assets/js/lazyload-background-img.js: {}
-    assets/js/hubspot-create-form.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
 
