@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
                 target: "#training-form-ae",
                 css:"",
+                cssClass:"hs-overlay-form",
                 submitButtonClass: "btn btn-danger",
             });
         } else if (document.querySelector("#piping-booklet-form")){
