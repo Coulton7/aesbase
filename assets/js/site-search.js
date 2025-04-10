@@ -1233,6 +1233,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1247,9 +1250,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == ''){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
@@ -1264,6 +1264,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1278,9 +1281,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
