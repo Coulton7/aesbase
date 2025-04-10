@@ -1226,7 +1226,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <div class="row">
-                                    <div class="col-md-9 col-8">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
@@ -1250,7 +1250,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <div class="row">
-                                    <div class="col-md-9 col-8">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
