@@ -1235,16 +1235,16 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     </div>
                                     <div class="col-md-3 col-4">
-                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.mechanical_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.mechanical_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}">
                                     </div>
                                 </div>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
@@ -1266,16 +1266,16 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                     </div>
                                     <div class="col-md-3 col-4">
-                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.mechanical_seal_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_image_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}">
-                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'}img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.mechanical_seal_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_image_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}">
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}">
                                     </div>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
