@@ -1225,12 +1225,28 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <div class="row">
+                                    <div class="col-md-9 col-8">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'}img-fluid" src="${data.api_plan_image_uri}" alt="${data.title}">
+                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'}img-fluid" src="${data.bearing_product_image_uri}" alt="${data.title}">
+                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.comp_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'}img-fluid" src="${data.elastomers_image_uri}" alt="${data.title}">
+                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.gas_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'}img-fluid" src="${data.gland_packing_image_uri}" alt="${data.title}">
+                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.mechanical_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'}img-fluid" src="${data.seal_support_image_uri}" alt="${data.title}">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'}img-fluid" src="${data.news_node_thumb_uri}" alt="${data.title}">
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'}img-fluid" src="${data.video_thumbnail_uri}" alt="${data.title}">
+                                    </div>
+                                </div>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
@@ -1240,12 +1256,27 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <div class="row">
+                                    <div class="col-md-9 col-8">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'}img-fluid" src="${data.api_plan_image_uri}" alt="${data.title}">
+                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'}img-fluid" src="${data.bearing_product_image_uri}" alt="${data.title}">
+                                        <img class="${data.comp_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.comp_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'}img-fluid" src="${data.elastomers_image_uri}" alt="${data.title}">
+                                        <img class="${data.gas_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.gas_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.gland_packing_image_uri ? '' : 'd-none'}img-fluid" src="${data.gland_packing_image_uri}" alt="${data.title}">
+                                        <img class="${data.mechanical_seal_image_uri ? '' : 'd-none'}img-fluid" src="${data.mechanical_seal_image_uri}" alt="${data.title}">
+                                        <img class="${data.seal_support_image_uri ? '' : 'd-none'}img-fluid" src="${data.seal_support_image_uri}" alt="${data.title}">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'}img-fluid" src="${data.news_node_thumb_uri}" alt="${data.title}">
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'}img-fluid" src="${data.video_thumbnail_uri}" alt="${data.title}">
+                                    </div>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
