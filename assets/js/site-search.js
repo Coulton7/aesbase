@@ -1266,6 +1266,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
                             </div>`
