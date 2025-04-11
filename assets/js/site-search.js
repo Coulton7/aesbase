@@ -1243,7 +1243,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
                             </div>`
@@ -1270,7 +1269,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.bearing_product_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_image_uri}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
                             </div>`
