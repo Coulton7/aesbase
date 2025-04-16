@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass: "btn btn-danger",
             });
         } else if (document.querySelector("#piping-booklet-form")){
-            if (document.querySelector('.resource-request').innerHTML.length > 0) {
-                document.querySelector('.pdf-download').style.display = 'none';
+            if (document.querySelector('.resource-request').innerHTML.length <= 0) {
+                document.querySelector('.pdf-download').classList.remove('d-none');
             }
             
             function getUrlVars() {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             var submitString = getUrlVars()["fs"];
             if(submitString=='y'){
-                document.querySelector('.pdf-download').style.display = 'block';;
+                document.querySelector('.pdf-download').classList.remove('d-none');
                 document.querySelector('.resource-request').style.display = 'none';
                 document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
