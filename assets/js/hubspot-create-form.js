@@ -141,8 +141,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
         }  else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
-                return true
+                console.log('Not Empty');
             } else {
+                console.log('Empty');
                 document.querySelector('pdf-download').classList.remove('d-none');
             }
             function getUrlVars() {
