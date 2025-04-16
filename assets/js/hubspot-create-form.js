@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass: "btn btn-danger",
             });
         } else if (document.querySelector("#piping-booklet-form")){
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -83,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -141,8 +140,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 });
         }  else if (document.querySelector("#download-resource")) {
-            console.log('download resource');
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -161,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');;
             }
 
             hbspt.forms.create({
@@ -179,7 +176,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (document.querySelector("#technical-drawings-form")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.getElementById("disclaimer").style.display = "block";
                 document.querySelector('#resource-table').style.display = 'none';
@@ -201,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('#resource-table').style.display = 'block';
                 document.querySelector('.resource-request').style.display = 'none';
                 document.getElementById("disclaimer").style.display = "none";
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -265,7 +261,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -284,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -302,7 +297,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (document.querySelector("#piping-booklet-form")){
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -322,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -380,7 +374,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -399,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -457,7 +450,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -476,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -534,7 +526,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -553,7 +544,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -611,7 +602,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -630,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -688,7 +678,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -707,7 +696,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -765,7 +754,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -784,7 +772,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -842,7 +830,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass:"btn btn-danger hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -861,7 +848,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -1061,7 +1048,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitButtonClass: "btn btn-danger",
             });
         } else if (document.querySelector("#download-resource")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -1080,7 +1066,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.pdf-download').style.display = 'block';;
                 document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
@@ -1137,7 +1123,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (document.querySelector("#technical-drawings-form")) {
-            document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.getElementById("disclaimer").style.display = "block";
                 document.querySelector('#resource-table').style.display = 'none';
@@ -1159,7 +1144,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('#resource-table').style.display = 'block';
                 document.querySelector('.resource-request').style.display = 'none';
                 document.getElementById("disclaimer").style.display = "none";
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').style.display = 'block';;
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
             hbspt.forms.create({
