@@ -140,8 +140,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 });
         }  else if (document.querySelector("#download-resource")) {
-            if (!(document.querySelector('.resource-request').innerHTML.length > 0)) {
-                document.querySelector('.pdf-download').classList.remove('d-none');
+            if (document.querySelector('.resource-request').innerHTML.length > 0) {
+                return true
+            } else {
+                document.querySelector('pdf-download').classList.remove('d-none');
             }
             function getUrlVars() {
                 var vars = [], hash;
