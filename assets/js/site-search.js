@@ -1015,16 +1015,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 return searchClient.search(requests);
             },
             searchFunction(helper) {
-                if(window.location.href.indexOf('type[0]') > -1){
-                    console.log('type not found');
-                    if (helper.state.query === '') {
+                if (helper.state.query === ''){
                     return;
-                    }
-                    helper.search();
-                } else {
-                    console.log('type[0] found');
-                    helper.search();
                 }
+                helper.search();
             },
             insights: {
                 onEvent(event) {
