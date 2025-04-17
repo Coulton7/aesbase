@@ -1170,6 +1170,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     button: [
                         'btn btn-primary text-white'
                     ]
+                },
+                transformItems(items, { results }) {
+                    if(results.query === '') return [];
                 }
             }),
 
