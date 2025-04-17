@@ -1014,12 +1014,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 return searchClient.search(requests);
             },
-            searchFunction(helper) {
-                if (helper.state.query === ''){
-                    return;
-                }
-                helper.search();
-            },
+           
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
