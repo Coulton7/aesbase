@@ -1490,7 +1490,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
                 transformItems(items, { results }){
                     console.log(window.location.search);
-                    if(window.location.search.includes('type=')){
+                    if(window.location.search.includes('type[0]=')){
                         console.log('contains type');
                         return items.map(item => ({
                             ...item,
