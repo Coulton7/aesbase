@@ -1477,8 +1477,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                 },
-                transformItems(items, { data }){
-                    if(data.query === '') return [];
+                transformItems(items, { results }){
+                    if(results.query === '') return [];
                     return items.map(item => ({
                         ...item,
                         type: typeMapping[item.type],
