@@ -1170,7 +1170,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates: {
                     item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
-                transformItems(items){
+                transformItems(items, { results }){
+                    if(results.query === '') return [];
                     return items.map(item => ({
                         ...item,
                         label: item.label.toUpperCase(),
