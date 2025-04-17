@@ -1015,11 +1015,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 return searchClient.search(requests);
             },
             searchFunction(helper) {
-                if (helper.state.query === '')
-                {
+                if(window.location.gref.indexOf('type[0]')){
+                    if (helper.state.query === '') {
                     return;
+                    }
+                    helper.search();
+                } else {
+                    helper.search();
                 }
-                helper.search();
             },
             insights: {
                 onEvent(event) {
