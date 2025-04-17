@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let count = '';
 
         if (nbHits > 1) {
-            if(filterLang == 'en' || '') {
+            if(filterLang == 'en') {
+                count += `${nbHits} results`;
+            } else if(filterLang == '') {
                 count += `${nbHits} results`;
             } else if (filterLang == 'es') {
                 count += `${nbHits} resultados`;
@@ -181,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(filterLang == 'en') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
-        } else if(filterLang == ' ') {
+        } else if(filterLang == '') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
         } else if(filterLang == 'es') {
@@ -214,7 +216,10 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(filterLang == 'nb') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} funnet i ${processingTimeMS}ms</p>`
-        } else if(filterLang == 'pt-br' || 'pt') {
+        } else if(filterLang == 'pt-br') {
+            widgetParams.container.innerHTML =
+            `<p class="text-white">${count} encontrado em ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'pt') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} encontrado em ${processingTimeMS}ms</p>`
         } else if(filterLang == 'cz') {
