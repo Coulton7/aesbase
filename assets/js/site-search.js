@@ -1171,9 +1171,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         'btn btn-primary text-white'
                     ]
                 },
-                transformItems(items, { results }) {
-                    if(results.query === '') return [];
-                }
             }),
 
             langlistPanel({
