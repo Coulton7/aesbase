@@ -851,6 +851,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
+            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
