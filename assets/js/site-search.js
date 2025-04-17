@@ -1016,6 +1016,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             searchFunction(helper) {
                 if(window.location.href.indexOf('type[0]')){
+                    console.log('type[0] found');
                     if (helper.state.query === '') {
                     return;
                     }
