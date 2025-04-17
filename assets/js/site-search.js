@@ -1490,12 +1490,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
                 transformItems(items, { results }){
                     if(window.location.search.includes('type=')){
+                        console.log('contains type');
                         return items.map(item => ({
                             ...item,
                             type: typeMapping[item.type],
                             vid: vidMapping[item.vid]
                         }))
                     } else {
+                        console.log('does not contain type');
                         if(results.query === '') return [];
                         return items.map(item => ({
                             ...item,
