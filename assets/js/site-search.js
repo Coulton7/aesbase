@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let count = '';
 
+        if(results.query === '') return null;
+
         if (nbHits > 1) {
             if(filterLang == 'en') {
                 count += `${nbHits} results`;
