@@ -806,6 +806,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
+            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
@@ -897,6 +898,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
+            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
@@ -943,6 +945,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
+            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
@@ -986,10 +989,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
+            hidden: ({results}) => results.query === '',
         })(instantsearch.widgets.pagination)
 
         const nationalPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
+            hidden: ({results}) => results.query === '',
         })(instantsearch.widgets.pagination)
     
     if(!!globeSearch){
@@ -1207,12 +1212,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#pagination',
                 totalPages: 3,
                 scrollTo: '#searchbox',
-                templates: {
-                    transformItems(items, { results }){
-                        if(results.query === '') return [];
-                        return items;
-                    },
-                },
             }),
         
             customSearchBox({
