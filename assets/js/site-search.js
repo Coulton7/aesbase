@@ -1016,12 +1016,13 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             searchFunction(helper) {
                 if(window.location.href.indexOf('type[0]') > -1){
-                    console.log('type[0] found');
+                    console.log('type not found');
                     if (helper.state.query === '') {
                     return;
                     }
                     helper.search();
                 } else {
+                    console.log('type[0] found');
                     helper.search();
                 }
             },
