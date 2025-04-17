@@ -1231,6 +1231,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html, components }){
                         if(filterLang == 'en'){
+                            console.log(window.location.href)
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
