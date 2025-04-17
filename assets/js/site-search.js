@@ -1189,7 +1189,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<p>No Results</p>`
                     },
                 },
-                transformItems(items){
+                transformItems(items, { results }){
+                    if(results.query === '') return [];
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
@@ -1204,7 +1205,13 @@ document.addEventListener("DOMContentLoaded", function() {
             pagination({
                 container: '#pagination',
                 totalPages: 3,
-                scrollTo: '#searchbox'
+                scrollTo: '#searchbox',
+                templates: {
+                    transformItems(items, { results }){
+                        if(results.query === '') return [];
+                        return items;
+                    },
+                },
             }),
         
             customSearchBox({
