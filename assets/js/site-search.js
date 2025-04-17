@@ -1019,12 +1019,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 return searchClient.search(requests);
             },
-            searchFunction(helper) {
-                if (helper.state.query === ''){
-                    return;
-                }
-                helper.search();
-            },
+            
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
@@ -1399,6 +1394,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                     empty(results, { html }){
+                        if (results.query === '') return null;
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
@@ -1481,13 +1477,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                 },
-                transformItems(items){
+                transformItems(items, { data }){
+                    if(data.query === '') return [];
                     return items.map(item => ({
                         ...item,
                         type: typeMapping[item.type],
                         vid: vidMapping[item.vid]
                     }))
-                }
+                                    }
             }),
         ]);
         search.start();
