@@ -1489,6 +1489,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 transformItems(items, { results }){
+                    console.log(window.location.search);
                     if(window.location.search.includes('type=')){
                         console.log('contains type');
                         return items.map(item => ({
@@ -1506,7 +1507,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }))
                     }
                     
-                                    }
+                },
             }),
         ]);
         search.start();
