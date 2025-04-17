@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let count = '';
 
-        if (query === '') return null
+        if (query === '') return []
 
         if (nbHits > 1) {
             if(filterLang == 'en') {
@@ -855,7 +855,6 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
-            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
@@ -948,7 +947,6 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
-            hidden: ({results}) => results.query === '',
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
