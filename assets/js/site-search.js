@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let count = '';
 
         if (nbHits > 1) {
-            if(filterLang == 'en' || '') {
+            if(filterLang == 'en') {
+                count += `${nbHits} results`;
+            } else if (filterLang == ''){ƒ
                 count += `${nbHits} results`;
             } else if (filterLang == 'es') {
                 count += `${nbHits} resultados`;
@@ -97,7 +99,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `النتائج ${nbHits}`;
             } else if (filterLang == 'nb') {
                 count += `${nbHits} resultater`;
-            } else if (filterLang == 'pt-br' || 'pt') {
+            } else if (filterLang == 'pt-br') {
+                count += `${nbHits} resultados`;
+            } else if (filterLang == 'pt') {
                 count += `${nbHits} resultados`;
             } else if (filterLang == 'cz') {
                 count += `${nbHits} výsledky`;
@@ -109,7 +113,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `${nbHits} resultat`;
             }
         } else if (nbHits === 1) {
-            if(filterLang == 'en' || '') {
+            if(filterLang == 'en') {
+                count += `1 result`;
+            } else if (filterLang == ''){
                 count += `1 result`;
             } else if (filterLang == 'es') {
                 count += `1 resultado`;
@@ -131,7 +137,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `1 نتيجة`;
             } else if (filterLang == 'nb') {
                 count += `1 resultat`;
-            } else if (filterLang == 'pt-br' || 'pt') {
+            } else if (filterLang == 'pt-br') {
+                count += `1 resultado`;
+            } else if (filterLang == 'pt') {
                 count += `1 resultado`;
             } else if (filterLang == 'cz') {
                 count += `1 výsledek`;
@@ -143,7 +151,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `1 resultat`;
             }
         } else {
-            if(filterLang == 'en' || '') {
+            if(filterLang == 'en') {
+                count += `no results`;
+            } else if (filterLang == '') {
                 count += `no results`;
             } else if (filterLang == 'es') {
                 count += `sin resultados`;
@@ -165,7 +175,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `لا توجد نتائج`;
             } else if (filterLang == 'nb') {
                 count += `ingen resultater`;
-            } else if (filterLang == 'pt-br' || 'pt') {
+            } else if (filterLang == 'pt-br') {
+                count += `sem resultados`;
+            } else if (filterLang == 'pt') {
                 count += `sem resultados`;
             } else if (filterLang == 'cz') {
                 count += `žádné výsledky`;
@@ -214,7 +226,10 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(filterLang == 'nb') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} funnet i ${processingTimeMS}ms</p>`
-        } else if(filterLang == 'pt-br' || 'pt') {
+        } else if(filterLang == 'pt-br') {
+            widgetParams.container.innerHTML =
+            `<p class="text-white">${count} encontrado em ${processingTimeMS}ms</p>`
+        } else if(filterLang == 'pt') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} encontrado em ${processingTimeMS}ms</p>`
         } else if(filterLang == 'cz') {
