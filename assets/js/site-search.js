@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             nbHits,
             processingTimeMS,
             widgetParams,
+            query,
         } = renderOptions;
 
         if (isFirstRender) {
@@ -74,10 +75,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let count = '';
 
+        if (query === '') return []
+
         if (nbHits > 1) {
             if(filterLang == 'en') {
                 count += `${nbHits} results`;
-            } else if (filterLang == ''){ƒ
+            } else if(filterLang == '') {
                 count += `${nbHits} results`;
             } else if (filterLang == 'es') {
                 count += `${nbHits} resultados`;
@@ -115,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (nbHits === 1) {
             if(filterLang == 'en') {
                 count += `1 result`;
-            } else if (filterLang == ''){
+            } else if (filterLang == '') {
                 count += `1 result`;
             } else if (filterLang == 'es') {
                 count += `1 resultado`;
@@ -193,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(filterLang == 'en') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
-        } else if(filterLang == ' ') {
+        } else if(filterLang == '') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
         } else if(filterLang == 'es') {
@@ -995,10 +998,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
+            hidden: ({results}) => results.query === '',
         })(instantsearch.widgets.pagination)
 
         const nationalPagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
+            hidden: ({results}) => results.query === '',
         })(instantsearch.widgets.pagination)
     
     if(!!globeSearch){
@@ -1029,13 +1034,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 return searchClient.search(requests);
             },
-            searchFunction(helper) {
-                if (helper.state.query === '')
-                {
-                    return;
-                }
-                helper.search();
-            },
+            
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
@@ -1177,7 +1176,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     button: [
                         'btn btn-primary text-white'
                     ]
-                }
+                },
             }),
 
             langlistPanel({
@@ -1186,11 +1185,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates: {
                     item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: item.label.toUpperCase(),
-                    }));
+                transformItems(items, { results }){
+                    if(window.location.search.includes('type[0]=')){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    } else {
+                        if(results.query === '') return [];
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    }
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -1204,11 +1211,19 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<p>No Results</p>`
                     },
                 },
-                transformItems(items){
+                transformItems(items, { results }){
+                    if(window.location.search.includes('type[0]=')){
+                        return items.map(item => ({
+                            ...item,
+                            label: typeMapping[item.label],
+                        }));
+                    } else {
+                    if(results.query === '') return [];
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
+                    }
                 },
                 cssClasses: {
                     item: ['types-item']
@@ -1219,7 +1234,7 @@ document.addEventListener("DOMContentLoaded", function() {
             pagination({
                 container: '#pagination',
                 totalPages: 3,
-                scrollTo: '#searchbox'
+                scrollTo: '#searchbox',
             }),
         
             customSearchBox({
@@ -1410,6 +1425,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                     empty(results, { html }){
+                        if (results.query === '') return null;
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
@@ -1492,13 +1508,23 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                 },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        type: typeMapping[item.type],
-                        vid: vidMapping[item.vid]
-                    }))
-                }
+                transformItems(items, { results }){
+                    if(window.location.search.includes('type[0]=')){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    } else {
+                        if(results.query === '') return [];
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    }
+                    
+                },
             }),
         ]);
         search.start();
