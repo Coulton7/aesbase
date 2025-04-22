@@ -1186,7 +1186,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items, { results }){
-                    if(window.location.search.includes('type[0]=')){
+                    if(window.location.search.includes('type[')){
                         return items.map(item => ({
                             ...item,
                             label: item.label.toUpperCase(),
@@ -1212,7 +1212,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 transformItems(items, { results }){
-                    if(window.location.search.includes('type[0]=')){
+                    if(window.location.search.includes('type[')){
                         return items.map(item => ({
                             ...item,
                             label: typeMapping[item.label],
@@ -1509,7 +1509,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 transformItems(items, { results }){
-                    if(window.location.search.includes('type[0]=')){
+                    if(window.location.search.includes('type[')){
                         return items.map(item => ({
                             ...item,
                             type: typeMapping[item.type],
