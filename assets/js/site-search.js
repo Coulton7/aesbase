@@ -1059,7 +1059,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
                         }
-                        s
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
 
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
