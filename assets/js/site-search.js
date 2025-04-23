@@ -1108,10 +1108,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 page:routeState.page,
                                 refinementList: {
                                     type: routeState.type,
-                                },
-                                refinementList: {
                                     search_api_language: routeState.lang
-                                },
+                                }
                             },
                         };
                     },
