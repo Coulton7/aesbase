@@ -1117,6 +1117,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         search.addWidgets([{
             init: function(options) {
+                console.log(filterLang);
                 if(filterLang == "en")
                 {
                     options.helper.toggleRefinement('search_api_language', 'en');
