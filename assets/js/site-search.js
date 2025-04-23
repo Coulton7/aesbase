@@ -1056,11 +1056,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(routeState.page !== 1){
                             queryParameters.page = routeState.page;
                         }
-                        if(routeState.type) {
-                            queryParameters.type = routeState.type.map(encodeURIComponent);
-                        }
                         if(routeState.lang) {
                             queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
                         }
 
                         const queryString = qsModule.stringify(queryParameters, {
@@ -1084,8 +1084,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return {
                             q: decodeURIComponent(q),
                             page,
+                            lang: allLang.map(decodeURIComponent),
                             type: allType.map(decodeURIComponent),
-                            lang: allLang.map(decodeURIComponent)
                         };
                         
                     },
@@ -1097,8 +1097,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return{
                             q: indexUiState.query,
                             page:indexUiState.page,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
@@ -1107,8 +1107,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 query: routeState.q,
                                 page:routeState.page,
                                 refinementList: {
+                                    search_api_language: routeState.lang,
                                     type: routeState.type,
-                                    search_api_language: routeState.lang
                                 }
                             },
                         };
