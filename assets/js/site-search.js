@@ -1059,8 +1059,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
                         }
-                        if(routeState.lang) {
-                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
+                        if(routeState.search_api_language) {
+                            queryParameters.search_api_language = routeState.search_api_language.map(encodeURIComponent);
                         }
 
                         const queryString = qsModule.stringify(queryParameters, {
@@ -1085,7 +1085,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             q: decodeURIComponent(q),
                             page,
                             type: allType.map(decodeURIComponent),
-                            lang: allLang.map(decodeURIComponent)
+                            search_api_language: allLang.map(decodeURIComponent)
                         };
                         
                     },
@@ -1098,7 +1098,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             q: indexUiState.query,
                             page:indexUiState.page,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
+                            search_api_language: indexUiState.refinementList && indexUiState.refinementList.search_api_language
                         }
                     },
                     routeToState(routeState) {
@@ -1108,7 +1108,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 page:routeState.page,
                                 refinementList: {
                                     type: routeState.type,
-                                    search_api_language: routeState.lang
+                                    search_api_language: routeState.search_api_language
                                 }
                             },
                         };
