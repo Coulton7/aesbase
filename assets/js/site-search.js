@@ -1119,44 +1119,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
         search.addWidgets([{
             init: function(options) {
-                console.log(filterLang);
-                if(filterLang == "en")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "es")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'es');
-                }
-                else if (filterLang === "fr") {
-                    options.helper.toggleRefinement('search_api_language', 'fr');
-                }
-                else if (filterLang === "de") {
-                    options.helper.toggleRefinement('search_api_language', 'de');
-                }
-                else if(filterLang == "it")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'it');
-                }
-                else if(filterLang == "pl")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'pl');
-                }
-                else if(filterLang == "ru")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'ru');
-                }
-                else if(filterLang == "tr")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'tr');
-                }
-                else if(filterLang == "zh-hans")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'zh-hans');
+                if(document.location.href.indexOf('lang[') === -1){
+                    if(filterLang == "en")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'en');
+                    }
+                    else if(filterLang == "")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'en');
+                    }
+                    else if(filterLang == "es")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'es');
+                    }
+                    else if (filterLang === "fr") {
+                        options.helper.toggleRefinement('search_api_language', 'fr');
+                    }
+                    else if (filterLang === "de") {
+                        options.helper.toggleRefinement('search_api_language', 'de');
+                    }
+                    else if(filterLang == "it")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'it');
+                    }
+                    else if(filterLang == "pl")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'pl');
+                    }
+                    else if(filterLang == "ru")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'ru');
+                    }
+                    else if(filterLang == "tr")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'tr');
+                    }
+                    else if(filterLang == "zh-hans")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'zh-hans');
+                    }
                 }
             }
         }]);
