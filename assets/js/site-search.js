@@ -998,7 +998,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const pagination = instantsearch.widgets.panel ({
             hidden: ({ results }) => results.nbPages === 1,
-            hidden: ({results}) => results.query === '',
+            hidden: ({ results }) => results.query === '',
         })(instantsearch.widgets.pagination)
 
         const nationalPagination = instantsearch.widgets.panel ({
