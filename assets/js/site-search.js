@@ -5675,7 +5675,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     item(data, { html, components }){
                         if(filterLang == 'en'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
                                 <div class="row">
@@ -5685,7 +5685,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
