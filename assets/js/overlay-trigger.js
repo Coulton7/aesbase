@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var x = document.getElementById("overlayNav");
   var y = document.getElementById("searchOverlay");
   var s = document.getElementById("shareOverlay");
+  var n = document.getElementById("newsOverlay");
   var overlayNavBtn = document.querySelector("#overlay-btn");
   var overlaySearchBtn = document.querySelector("#overlay-search");
   var overlayShareBtn = document.querySelector("#overlay-share");
@@ -105,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if(newsSearchBtn){
       newsSearchBtn.addEventListener("click", function searchBtn() {
         newsSearchBtn.classList.toggle("change");
-        if (y.style.height === "100%") {
-          y.style.height = "1px";
-          y.style.bottom = "-1px";
+        if (n.style.height === "100%") {
+          n.style.height = "1px";
+          n.style.bottom = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
@@ -122,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           document.querySelector('.overlay-btn').classList.remove("normText");
         } else {
-          y.style.height = "100%";
-          y.style.bottom = "0";
+          n.style.height = "100%";
+          n.style.bottom = "0";
           if (x.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
