@@ -5753,6 +5753,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                     empty(results, { html }){
+                        if (results.query === '') return null;
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
@@ -5853,7 +5854,14 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p class="h3">Ben je op zoek naar een onderdeelnummer of serienummer?</p>`;
                         }
                     },
-                }
+                },
+                transformItems(items, { results }){
+                    return items.map(item => ({
+                        ...item,
+                        type: typeMapping[item.type],
+                        vid: vidMapping[item.vid]
+                    }))
+                },
             }),
         ]);
         newsSearch.start();
