@@ -5636,11 +5636,19 @@ document.addEventListener("DOMContentLoaded", function() {
                     header: 'Select your Language',
                     item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: item.label.toUpperCase(),
-                    }));
+                transformItems(items, { results }){
+                    if(window.location.search.includes('type[')){
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    } else {
+                        if(results.query === '') return [];
+                        return items.map(item => ({
+                            ...item,
+                            label: item.label.toUpperCase(),
+                        }));
+                    }
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
