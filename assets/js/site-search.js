@@ -5630,7 +5630,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }),
 
-            langlistPanel({
+            globalLanglistPanel({
                 container: '#lang-list',
                 attribute: 'search_api_language',
                 templates: {
