@@ -5355,6 +5355,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                     empty(results, { html }){
+                        if(results.query === '') return null;
                         if(filterLang == 'en'){
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
