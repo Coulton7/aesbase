@@ -5472,7 +5472,7 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
-            search(requests) {
+            newsSearch(requests) {
                 if(requests.every(({ params }) => !params.query)) {
                     return Promise.resolve({
                         results: requests.map(() => ({
