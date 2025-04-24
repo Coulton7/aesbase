@@ -5846,11 +5846,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 transformItems(items, { results }){
-                    return items.map(item => ({
-                        ...item,
-                        type: typeMapping[item.type],
-                        vid: vidMapping[item.vid]
-                    }))
+                    if(window.location.search.includes('type[')){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    } else {
+                        if(results.query === '') return [];
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    }
+                    
                 },
             }),
         ]);
