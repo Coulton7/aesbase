@@ -5488,7 +5488,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         })),
                     });
                 }
-                return searchClient.search(requests);
+                return searchClient.newsSearch(requests);
             },
             insights: {
                 onEvent(event) {
