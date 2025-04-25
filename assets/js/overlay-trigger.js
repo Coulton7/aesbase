@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
           newsSearchBtn.classList.add("search-btn");
-          if(document.querySelector('black-boxes-right')){
-            document.querySelector('black-boxes-right').classList.remove("overlay-btn-allow");
+          if(document.querySelector('.black-boxes-right')){
+            document.querySelector('.black-boxes-right').classList.remove("overlay-btn-allow");
           }
         } else {
           n.style.height = "100%";
@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           newsSearchBtn.classList.remove("search-btn");
-          if(document.querySelector('black-boxes-right')){
-            document.querySelector('black-boxes-right').classList.add("overlay-btn-allow");
+          if(document.querySelector('.black-boxes-right')){
+            document.querySelector('.black-boxes-right').classList.add("overlay-btn-allow");
           }
           document.querySelector('.ais-SearchBox-input').focus();
         }
