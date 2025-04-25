@@ -113,14 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
           newsSearchBtn.classList.add("search-btn");
-          if(window.innerWidth > 992) {
-            if (scrollNav.classList.contains("scrolled-up")){
-              scrollNav.classList.remove("scrolled-up");
-              scrollNav.classList.add("scrolled-down")
-            } else {
-              scrollNav.classList.add("scrolled-down")
-            }
-          }
           if(document.querySelector('black-boxes-right')){
             document.querySelector('black-boxes-right').classList.remove("overlay-btn-allow");
           }
@@ -138,14 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           newsSearchBtn.classList.remove("search-btn");
-          if(window.innerWidth > 992) {
-            if (scrollNav.classList.contains("scrolled-down")){
-              scrollNav.classList.remove("scrolled-down");
-              scrollNav.classList.add("scrolled-up")
-            } else {
-              scrollNav.classList.add("scrolled-up")
-            }
-          }
           if(document.querySelector('black-boxes-right')){
             document.querySelector('black-boxes-right').classList.add("overlay-btn-allow");
           }
