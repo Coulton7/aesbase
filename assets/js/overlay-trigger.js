@@ -133,12 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
             x.style.bottom = "-1px";
             newsSearchBtn.classList.remove("change");
             newsSearchBtn.classList.add("overlay-btn");
-          } else if (s.style.height == "100%") {
-            s.style.height = "1px";
-            s.style.bottom = "-1px";
-            overlayShareBtn.classList.remove("change");
-            overlayShareBtn.classList.add("share-btn");
-          }
+          } 
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
