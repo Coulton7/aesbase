@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
               scrollNav.classList.add("scrolled-down")
             }
           }
+          if(document.querySelector('black-boxes-right')){
+            document.querySelector('black-boxes-right').classList.remove("overlay-btn-allow");
+          }
           document.querySelector('.overlay-btn').classList.remove("normText");
         } else {
           n.style.height = "100%";
@@ -147,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
               scrollNav.classList.add("scrolled-up")
             }
+          }
+          if(document.querySelector('black-boxes-right')){
+            document.querySelector('black-boxes-right').classList.add("overlay-btn-allow");
           }
           document.querySelector('.overlay-btn').classList.add("normText");
           document.querySelector('.ais-SearchBox-input').focus();

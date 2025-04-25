@@ -15686,6 +15686,12 @@ blockquote {
   font-size: 1rem; /* Set default font size */
 }
 
+.overlay-btn-allow {
+  transform: "none";
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 @media screen and (max-width: 700px) {
   .black-boxes,
   .black-boxes-right {
