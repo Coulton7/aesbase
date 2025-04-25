@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let resSearch = document.getElementById('resHits');
     let franSearch = document.getElementById('frHits');
     let canSearch = document.getElementById('caHits');
-    let polSearch = document.getElementById('plHits');
     let sweSearch = document.getElementById('seHits');
     let malaySearch = document.getElementById('myHits');
     let toriSearch = document.getElementById('jaHits');
@@ -3959,368 +3958,6 @@ document.addEventListener("DOMContentLoaded", function() {
         caSearch.start();
     }    
 
-    if(!!polSearch){
-        window.dataLayer.push({
-            algoliaUserToken: 'user-1',
-        });
-
-        const plSearch = instantsearch({
-            indexName: 'aesseal pl',
-            searchClient,
-            typoTolerance: 'strict',
-            paginationLimitedTo: 80,
-            searchFunction(helper) {
-                if (helper.state.query === '')
-                {
-                    return;
-                }
-                helper.search();
-            },
-            insights: {
-                onEvent(event) {
-                    const { widgetType, eventType, payload, hits } = event;
-                    if (widgetType == 'ais.hits' && eventType === 'view') {
-                        dataLayer.push({ event: 'Hits Viewed' });
-                    }
-                }
-            },
-            routing: {
-                router: instantsearch.routers.history({
-
-                    createURL({ qsModule, routeState, location }) {
-                        const { origin, pathname, hash} = location;
-                        const queryParameters = {};
-
-                        if(routeState.q) {
-                            queryParameters.q = encodeURIComponent(routeState.q);
-                        }
-                        if(routeState.type) {
-                            queryParameters.type = routeState.type.map(encodeURIComponent);
-                        }
-                        if(routeState.lang) {
-                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
-                        }
-
-                        const queryString = qsModule.stringify(queryParameters, {
-                            addQueryPrefix: true,
-                            arrayFormat: 'indices'
-                        });
-
-                        return `${origin}${pathname}${queryString}`;
-                    },
-
-                    parseUrl({ qsModule, location }) {
-                        const { q = '', type = [], lang =[] } = qsModule.parse(
-                            location.search.slice(1)
-                        );
-                        const allType = Array.isArray(type)
-                            ? type
-                            : [type].filter(Boolean);
-                        const allLang = Array.isArray(lang)
-                            ? lang
-                            :[lang].filter(Boolean);
-                        return {
-                            q: decodeURIComponent(q),
-                            type: allType.map(decodeURIComponent),
-                            lang: allLang.map(decodeURIComponent)
-                        };
-                    },
-                    writeDelay: 400,
-                    cleanUrlOnDispode: true,
-                }),
-                stateMapping: {
-                    stateToRoute(uiState){
-                        const indexUiState = uiState['aesseal pl'] || {};
-                        return{
-                            q: indexUiState.query,
-                            type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
-                        }
-                    },
-                    routeToState(routeState) {
-                        return{
-                            ['aesseal pl']: {
-                                query: routeState.q,
-                                refinementList: {
-                                    type: routeState.type,
-                                    search_api_language: routeState.lang
-                                }
-                            },
-                        };
-                    },
-                },
-            },
-        })
-
-        plSearch.addWidgets([
-            instantsearch.widgets.configure({
-                clickAnalytics: true,
-                userToken: 'user-1',
-                hitsPerPage: 10,
-                attributesToSnippet: ['body:80'],
-                page: 0,
-            }),
-
-            langlistPanel({
-                container: '#lang-list',
-                attribute: 'search_api_language',
-                templates: {
-                    header: 'Select your Language',
-                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: item.label.toUpperCase(),
-                    }));
-                },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
-            }),
-
-            typelistPanel({
-                container: '#type-list',
-                attribute: 'type',
-                templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: typeMapping[item.label],
-                    }));
-                },
-                cssClasses: {
-                    item: ['types-item']
-                },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
-            }),
-
-            nationalPagination({
-                container: '#plPagination',
-                totalPages: 3,
-                scrollTo: '#plSearchbox'
-            }),
-        
-            customSearchBox({
-                container: document.querySelector('#plSearchbox'),
-                 searchAsYouType: false,
-            }),
-
-            customStats({
-                container: document.querySelector("#plStats"),
-            }),
-
-            instantsearch.widgets.hits ({
-                container: '#plHits',
-                templates:{
-                    item(data, { html, components }){
-                        if(filterLang == 'en'){
-                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="lead">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
-                            </div>`
-                        } else if (filterLang == ''){
-                            return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="lead">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Open PDF</a>
-                            </div>`
-                        } else if(filterLang == 'pl'){
-                            return html`
-                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="lead">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
-                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_s3_link}">Otwórz PDF</a>
-                            </div>`
-
-                        }
-                    },
-                    empty(results, { html }){
-                        if(filterLang == 'en'){
-                            document.querySelector('.parts-form').style.display = 'block';
-                            document.querySelector('.ais-Pagination').style.display = 'none';
-                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
-                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            </div>
-                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
-                        }
-                        else if(filterLang == '') {
-                            document.querySelector('.parts-form').style.display = 'block';
-                            document.querySelector('.ais-Pagination').style.display = 'none';
-                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
-                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            </div>
-                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
-                        }
-                        else if (filterLang == 'pl') {
-                            document.querySelector('.parts-form').style.display = 'block';
-                            document.querySelector('.ais-Pagination').style.display = 'none';
-                            return html`<div class="no-result"><p class="h3">Nie znaleziono pasujących wyników ${results.query}</p>
-                            <p>Przepraszamy, nie mogliśmy znaleźć wyniku wyszukiwania. Spróbuj wyszukać ponownie, sprawdzając wyszukiwanie pod kątem błędów ortograficznych i/lub zmniejszając liczbę użytych słów kluczowych. Możesz także spróbować użyć szerszej frazy wyszukiwania.</p>
-                            </div>
-                            <p class="h3">Szukasz numeru części lub numeru seryjnego?</p>`;
-                        }
-                    },
-                },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        type: natTypeMapping[item.type],
-                    }))
-                },
-            }),
-
-            instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "pl") {
-                            options.helper.toggleRefinement('search_api_language', 'pl');
-                        }
-                    }
-                },
-
-                instantsearch.widgets.configure({
-                    clickAnalytics: true,
-                    userToken: 'user-1',
-                    hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
-                    page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                pagination({
-                    container: '#pagination',
-                    totalPages: 3,
-                    scrollTo: '#plSearchbox'
-                }),
-
-                customStats({
-                    container: document.querySelector("#globalStats"),
-                }),
-
-                instantsearch.widgets.hits ({
-                    container: '#globalHits',
-                    templates:{
-                        item(data, { html, components }){
-                            if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'pl'){
-                                return html `<div class="search-result">
-                                    <small>${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
-                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
-                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                                </div>
-                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
-                            }
-                            else if(filterLang == '') {
-                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
-                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                                </div>
-                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
-                            }
-                            else if (filterLang == 'pl') {
-                                return html`<div class="no-result"><p class="h3">Nie znaleziono pasujących wyników ${results.query}</p>
-                            <p>Przepraszamy, nie mogliśmy znaleźć wyniku wyszukiwania. Spróbuj wyszukać ponownie, sprawdzając wyszukiwanie pod kątem błędów ortograficznych i/lub zmniejszając liczbę użytych słów kluczowych. Możesz także spróbować użyć szerszej frazy wyszukiwania.</p>
-                            </div>
-                            <p class="h3">Szukasz numeru części lub numeru seryjnego?</p>`;
-                            }
-                        }
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
-            ])
-        ]);
-        plSearch.start();
-    }
-
     if(!!sweSearch){
         window.dataLayer.push({
             algoliaUserToken: 'user-1',
@@ -5319,6 +4956,14 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
+                        }  else if(filterLang == 'pl'){
+                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small>${data.url}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                            </div>`
                         } else if(filterLang == 'ar'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small>${data.url}</small>
@@ -5422,6 +5067,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p>很抱歉，我们找不到您的搜索结果。请再次尝试搜索，检查拼写错误和/或减少使用的关键词数量。您还可以尝试使用更宽泛的搜索短语。</p>
                             </div>
                             <p class="h3">您在搜索零件编号或序列号吗？</p>`;
+                        }  else if (filterLang == 'pl') {
+                            document.querySelector('.parts-form').style.display = 'block';
+                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            return html`<div class="no-result"><p class="h3">Nie znaleziono pasujących wyników ${results.query}</p>
+                            <p>Przepraszamy, nie mogliśmy znaleźć wyniku wyszukiwania. Spróbuj wyszukać ponownie, sprawdzając wyszukiwanie pod kątem błędów ortograficznych i/lub zmniejszając liczbę użytych słów kluczowych. Możesz także spróbować użyć szerszej frazy wyszukiwania.</p>
+                            </div>
+                            <p class="h3">Szukasz numeru części lub numeru seryjnego?</p>`;
                         } else if(filterLang == 'ar') {
                             document.querySelector('.parts-form').style.display = 'block';
                             document.querySelector('.ais-Pagination').style.display = 'none';
