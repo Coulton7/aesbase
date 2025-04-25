@@ -5704,7 +5704,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -5713,91 +5713,117 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'es'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'fr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">En savoir plus</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">En savoir plus</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'de'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'it'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">更多信息</a>
-                            </div>`
-                        } else if(filterLang == 'ar'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">قراءة المزيد</a>
-                            </div>`
-                        } else if(filterLang == 'nb'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Les mer</a>
-                            </div>`
-                        } else if(filterLang == 'pt-br'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Leia mais</a>
-                            </div>`
-                        } else if(filterLang == 'pt'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Ler mais</a>
-                            </div>`
-                        } else if(filterLang == 'nl'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small>https://www.aesseal.com${data.url}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Meer lezen</a>
+                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">更多信息</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         }
                     },
