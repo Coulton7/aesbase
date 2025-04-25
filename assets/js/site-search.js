@@ -1267,6 +1267,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -1293,6 +1294,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -1317,6 +1319,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
@@ -1332,6 +1335,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
@@ -1347,6 +1351,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
@@ -1362,6 +1367,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'pl'){
@@ -1377,6 +1383,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Czytaj więcej</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
                             </div>`
                         } else if(filterLang == 'ru'){
@@ -1392,6 +1399,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Читать далее</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
                             </div>`
                         } else if(filterLang == 'tr'){
@@ -1407,6 +1415,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
@@ -1422,6 +1431,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
                                 <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
+                                <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
                                 <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
                             </div>`
                         }
@@ -5671,6 +5681,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5690,6 +5701,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5709,6 +5721,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5728,6 +5741,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">En savoir plus</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5747,6 +5761,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5766,6 +5781,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5785,6 +5801,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -5802,8 +5819,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
+                                        <a class="${data.field_brochure_link_address ? '' : d-none } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">更多信息</a>
                                     </div>
                                     <div class="col-md-3 col-4">
