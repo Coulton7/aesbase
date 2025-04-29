@@ -92,63 +92,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('esg-icon').classList.add('active');
                 document.getElementById('tech-icon').classList.remove('active');
                 document.getElementById('cust-icon').classList.remove('active');
-
-                if(!document.querySelector('.esg-text').classList.contains('d-block')){
-                    document.querySelector('.esg-btn').classList.add('d-inline-flex');
-                    document.querySelector('.esg-btn').classList.remove('d-none');
-                }
-
-                if(!document.querySelector('.tech-text').classList.contains('d-none')){
-                    document.querySelector('.tech-btn').classList.add('d-none');
-                    document.querySelector('.tech-btn').classList.remove('d-inline-flex');
-                }
-
-                if(!document.querySelector('.cust-text').classList.contains('d-none')){
-                    document.querySelector('.cust-btn').classList.add('d-none');
-                    document.querySelector('.cust-btn').classList.remove('d-inline-flex');
-                }
             }
         
             else if (activeSlide >= 6 && activeSlide <= 10) {
                 document.getElementById('esg-icon').classList.remove('active');
                 document.getElementById('tech-icon').classList.add('active');
                 document.getElementById('cust-icon').classList.remove('active');
-
-                if(!document.querySelector('.tech-text').classList.contains('d-block')){
-                    document.querySelector('.tech-btn').classList.add('d-inline-flex');
-                    document.querySelector('.tech-btn').classList.remove('d-none');
-                }
-
-                if(!document.querySelector('.esg-text').classList.contains('d-none')){
-                    document.querySelector('.esg-btn').classList.add('d-none');
-                    document.querySelector('.esg-btn').classList.remove('d-inline-flex');
-                }
-
-                if(!document.querySelector('.cust-text').classList.contains('d-none')){
-                    document.querySelector('.cust-btn').classList.add('d-none');
-                    document.querySelector('.cust-btn').classList.remove('d-inline-flex');
-                }
             }
         
             else if (activeSlide >= 11 && activeSlide <= 15) {
                 document.getElementById('tech-icon').classList.remove('active');
                 document.getElementById('esg-icon').classList.remove('active');
                 document.getElementById('cust-icon').classList.add('active');
-
-                if(!document.querySelector('.cust-text').classList.contains('d-block')){
-                    document.querySelector('.cust-btn').classList.add('d-inline-flex');
-                    document.querySelector('.cust-btn').classList.remove('d-none');
-                }
-
-                if(!document.querySelector('.esg-text').classList.contains('d-none')){
-                    document.querySelector('.esg-btn').classList.add('d-none');
-                    document.querySelector('.esg-btn').classList.remove('d-inline-flex');
-                }
-
-                if(!document.querySelector('.tech-text').classList.contains('d-none')){
-                    document.querySelector('.tech-btn').classList.add('d-none');
-                    document.querySelector('.tech-btn').classList.remove('d-inline-flex');
-                }
             }
         });
         
