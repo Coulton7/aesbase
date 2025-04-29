@@ -17840,7 +17840,7 @@ ul.about-us-cats a {
     z-index: 4;
   }
   .icons-col-placement {
-    position: absolute;
+    position: relative;
     bottom: 0em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
