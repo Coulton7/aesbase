@@ -14601,6 +14601,7 @@ a.icon-link:hover {
   width: 4.5%;
   height: 11.5%;
   padding: 0;
+  text-align: center;
 }
 
 .controls li:hover, .tns-controls button:hover {
@@ -18049,7 +18050,6 @@ ul.about-us-cats a {
     height: 3em;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border: 1px solid #e5e5e7;
-    text-align: center;
   }
   .ind-carousel-caption {
     top: 0;
