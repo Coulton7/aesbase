@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function carouselResize() {
         if(window.innerWidth >= 1800) {
             homeCarousel.classList.add('ratio-2x1');
-        } else if(window.innerwidth >= 1401 || window.innerWidth < 1800 ) {
+        } else if(window.innerwidth >= 1401 && window.innerWidth < 1800 ) {
             homeCarousel.classList.add('ratio-16x9');
-        } else if(window.innerWidth >= 1201 || window.innerWidth < 1400) {
+        } else if(window.innerWidth >= 1201 && window.innerWidth < 1400) {
             homeCarousel.classList.add('ratio-8x5');
-        } else if(window.innerWidth >=993 || window.innerWidth < 1200) {
+        } else if(window.innerWidth >=993 && window.innerWidth < 1200) {
             homeCarousel.classList.add('ratio-1x1');
-        } else if(window.innerWidth >= 769 || window.innerWidth < 992) {
+        } else if(window.innerWidth >= 769 && window.innerWidth < 992) {
             homeCarousel.classList.add('ratio-5x8');
-        } else if(window.innerWidth >= 576 || window.innerWidth < 768) {
+        } else if(window.innerWidth >= 576 && window.innerWidth < 768) {
             homeCarousel.classList.add('ratio-3x7');
         } else {
             homeCarousel.classList.add('ratio-3x7');
