@@ -818,6 +818,11 @@ document.addEventListener("DOMContentLoaded", function() {
             hidden(options) {
                 return options.results.nbHits === 0;
             },
+            hidden: function(options) {
+                if (window.location.href.indexOf('q=') === -1){
+                    return [];
+                }
+            },
             templates: {
                 header( options, { html }) {
                     if (filterLang == 'en'){
