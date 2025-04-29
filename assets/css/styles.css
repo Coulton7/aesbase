@@ -14636,14 +14636,12 @@ a.icon-link:hover {
 }
 
 .shadow-container .next i {
-  left: 18%;
   position: relative;
   top: 8%;
 }
 
 .shadow-container .prev i {
   position: relative;
-  right: -28%;
   top: 8%;
 }
 
