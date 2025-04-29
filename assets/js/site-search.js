@@ -817,7 +817,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const langlistPanel = instantsearch.widgets.panel ({
             hidden: function(options) {
                 if (window.location.href.indexOf('/?q=') === -1){
-                    console.log(window.location.href)
+                    console.log(window.location)
                     return [];
                 } else {
                     return options.results.nbHits === 0;
