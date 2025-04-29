@@ -769,7 +769,7 @@ a.disabled {
 }
 
 .icons-col-placement {
-  bottom: 8em;
+  bottom: 0em;
   position: relative;
 }
 
@@ -4074,7 +4074,7 @@ height:100%;
 
   .icons-col-placement {
     position: absolute;
-    bottom: 100%;
+    bottom: 0em;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
@@ -4738,7 +4738,7 @@ height:100%;
 
   .icons-col-placement {
     position: relative;
-    bottom: 8em;
+    bottom: 0em;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
@@ -4846,7 +4846,7 @@ height:100%;
 
   .carousel-col-placement {
     position: relative;
-    bottom: 3.9em;
+    bottom: -1em;
   }
 
   .virtual-tour-banner {
@@ -5332,7 +5332,7 @@ height:100%;
 
   .carousel-col-placement {
     position: relative;
-    bottom: 8em;
+    bottom: -1em;
   }
 
   .ind-carousel-caption {
