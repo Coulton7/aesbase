@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function carouselResize() {
         if(window.innerWidth >= 1800) {
             homeCarousel.classList.add('ratio-2x1');
-        } else if(window.innerwidth >= 1401 && window.innerWidth < 1800 ) {
+        } else if(window.innerWidth >= 1401 && window.innerWidth < 1800 ) {
             homeCarousel.classList.add('ratio-16x9');
         } else if(window.innerWidth >= 1201 && window.innerWidth < 1400) {
             homeCarousel.classList.add('ratio-8x5');
