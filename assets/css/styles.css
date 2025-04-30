@@ -14459,6 +14459,18 @@ a.disabled {
   height: 100%;
 }
 
+.crsl-cntrl {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+
 .carousel-caption {
   left: 0;
   right: 0;
