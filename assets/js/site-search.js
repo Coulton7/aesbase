@@ -864,8 +864,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const typelistPanel = instantsearch.widgets.panel ({
-            hidden(options) {
-                return options.results.nbHits === 0;
+            hidden: function(options) {
+                if (options.results.query === '' &&  !window.location.search.includes('type[')){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
             },
             templates: {
                 header( options, { html }) {
@@ -909,8 +913,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const gloablTypelistPanel = instantsearch.widgets.panel ({
-            hidden(options) {
-                return options.results.nbHits === 0;
+            hidden: function(options) {
+                if (options.results.query === '' &&  !window.location.search.includes('type[')){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
             },
             templates: {
                 header( options, { html }) {
@@ -955,8 +963,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const globalLanglistPanel = instantsearch.widgets.panel ({
-            hidden(options) {
-                return options.results.nbHits === 0;
+            hidden: function(options) {
+                if (options.results.query === '' &&  !window.location.search.includes('type[')){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
             },
             templates: {
                 header( options, { html }) {
@@ -1000,13 +1012,23 @@ document.addEventListener("DOMContentLoaded", function() {
         })(instantsearch.widgets.refinementList);
 
         const pagination = instantsearch.widgets.panel ({
-            hidden: ({ results }) => results.nbPages === 1,
-            hidden: ({ results }) => results.query === '',
+            hidden: function(options) {
+                if (options.results.query === '' &&  !window.location.search.includes('type[')){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
+            },
         })(instantsearch.widgets.pagination)
 
         const nationalPagination = instantsearch.widgets.panel ({
-            hidden: ({ results }) => results.nbPages === 1,
-            hidden: ({ results }) => results.query === '',
+            hidden: function(options) {
+                if (options.results.query === '' &&  !window.location.search.includes('type[')){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
+            },
         })(instantsearch.widgets.pagination)
     
     if(!!globeSearch){
