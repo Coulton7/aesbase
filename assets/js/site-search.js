@@ -815,8 +815,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const langlistPanel = instantsearch.widgets.panel ({
-            hidden(options) {
-                return options.results.nbHits === 0;
+            hidden: function(options) {
+                if (results.query === '' ){
+                    return [];
+                } else {
+                    return options.results.nbHits === 0;
+                }
             },
             templates: {
                 header( options, { html }) {
