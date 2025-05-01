@@ -18131,8 +18131,6 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: top;
-    padding-top: 3em;
   }
   .ps-sm-6 {
     padding-inline-start: 3.5rem;
@@ -18429,9 +18427,7 @@ ul.about-us-cats a {
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top;
     animation: none;
-    padding-top: 3em;
   }
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
@@ -18819,7 +18815,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: 50% 30%;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-03.webp);
@@ -19178,7 +19173,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top;
   }
   .bg-white .navbar-collapse {
     padding-left: 0;
@@ -19453,7 +19447,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top;
   }
   .ps-xxl-6 {
     padding-inline-start: 3.5rem;
@@ -19744,7 +19737,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top;
   }
   .ps-xxxl-6 {
     padding-inline-start: 3.5rem;
