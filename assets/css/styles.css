@@ -18139,6 +18139,35 @@ ul.about-us-cats a {
 }
 /* sm */
 @media screen and (min-width: 576px) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #012e58;
+    animation: none;
+    background-position: 65%;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: center;
+    padding-top: 3em;
+  }
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+    background-position: top;
+    padding-top: 3em;
+  }
   .ps-sm-6 {
     padding-inline-start: 3.5rem;
   }
