@@ -18115,8 +18115,6 @@ ul.about-us-cats a {
     background-repeat: repeat;
     background-color: #012e58;
     animation: none;
-    background-position: 65%;
-    padding-top: 3em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
@@ -18125,8 +18123,6 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: center;
-    padding-top: 3em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
@@ -18417,9 +18413,7 @@ ul.about-us-cats a {
     background-size: cover;
     background-repeat: repeat;
     background-color: #012e58;
-    background-position: 65%;
     animation: none;
-    padding-top: 3em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-02.webp);
@@ -18427,9 +18421,7 @@ ul.about-us-cats a {
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: center;
     animation: none;
-    padding-top: 3em;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
@@ -18818,9 +18810,8 @@ ul.about-us-cats a {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-03.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: rgb(8, 14, 34);
+    background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-03.webp);
@@ -18836,7 +18827,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top;
   }
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
@@ -19172,9 +19162,8 @@ ul.about-us-cats a {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-04.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: rgb(8, 14, 34);
+    background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-04.webp);
@@ -19182,7 +19171,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: 50% 30%;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
@@ -19449,9 +19437,8 @@ ul.about-us-cats a {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-05.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: rgb(8, 14, 34);
+    background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-05.webp);
@@ -19459,7 +19446,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: 50% 30%;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
@@ -19742,9 +19728,8 @@ ul.about-us-cats a {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-06.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: rgb(8, 14, 34);
+    background-color: #012e58;
     background-blend-mode: unset;
-    background-position: top center;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-06.webp);
@@ -19752,7 +19737,6 @@ ul.about-us-cats a {
     background-size: cover;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: 50% 30%;
   }
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
