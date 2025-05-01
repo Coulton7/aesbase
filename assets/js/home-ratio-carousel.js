@@ -24,3 +24,38 @@ document.addEventListener("DOMContentLoaded", function () {
         carouselResize();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselEl = document.getElementById("carousel-fade");
+    const pauseBtns = document.querySelectorAll("#carouselPauseBtn");
+
+    let carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
+    let isPaused = false;
+
+    pauseBtns.forEach(pauseBtn => {
+      pauseBtn.addEventListener("click", () => {
+        if (isPaused) {
+          carousel.cycle();
+          pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-pause"></i>`);
+          pauseBtns.forEach(btn => {
+            btn.setAttribute("aria-pressed", "false");
+            btn.setAttribute("aria-label", "Pause carousel");
+          });
+        } else {
+          carousel.pause();
+          pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-play"></i>`);
+          pauseBtns.forEach(btn => {
+            btn.setAttribute("aria-pressed", "true");
+            btn.setAttribute("aria-label", "Play carousel");
+          });
+        }
+        isPaused = !isPaused;
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key.toLowerCase() === "p") {
+        pauseBtns[0].click();
+      }
+    });
+  });
