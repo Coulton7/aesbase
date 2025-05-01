@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var overlayLink = document.querySelector('.overlay-btn');
     var scrollNav = document.querySelector('.scroll-nav');
     var scrollPosition = window.scrollY;
+    var getScrollPos = document.documentElement.scrollTop;
     
     function fadeScroll() {
         window.addEventListener('scroll', function(e) {
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('resize', function(){
         if(window.innerWidth > 992) {
             console.log(scrollPosition);
+            console.log(getScrollPos);
             if(scrollPosition/600 >= 0.75) {
                 navbar.style.backgroundColor = "rgba(255,255,255,1)";
                 sectionShadow.style.opacity = 1
