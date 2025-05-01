@@ -1504,8 +1504,7 @@ blockquote.transparent-50:after {
 
 .labtecta-table-scrollable {
   max-height: 30em;
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .labtecta-table-scrollable::-webkit-scrollbar {
