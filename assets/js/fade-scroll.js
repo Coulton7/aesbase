@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 sectionShadow.style.opacity = 1
                 textLogo.style.opacity = 1
                 enquiry.style.opacity = 1
-            } else if (scrollPos/600 < 0.75) {
+            } else if (scrollPos < 2000) {
                 sectionShadow.style.opacity = -1.03;
                 textLogo.style.opacity = -1.03;
                 enquiry.style.opacity = -1.03;
