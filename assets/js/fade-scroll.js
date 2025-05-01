@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var overlayLink = document.querySelector('.overlay-btn');
     var scrollNav = document.querySelector('.scroll-nav');
+    var scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     
     function fadeScroll() {
         window.addEventListener('scroll', function(e) {
-            var scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
             sectionShadow.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
             textLogo.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
             enquiry.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
