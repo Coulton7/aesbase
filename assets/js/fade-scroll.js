@@ -56,10 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     hideLink();
 
-    window.addEventListener('resize', function() {
-        hideLink();
-    });
-
     if(window.innerWidth > 992) {
         sectionShadow.style.opacity = -1.03;
         textLogo.style.opacity = -1.03;
@@ -101,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
             navbar.style.backgroundColor = "rgba(255,255,255,1)";
             scrollNav.classList.add('shadow-back')
         }
+        hideLink();
     });
 
 });
