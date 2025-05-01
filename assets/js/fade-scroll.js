@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var overlayLink = document.querySelector('.overlay-btn');
     var scrollNav = document.querySelector('.scroll-nav');
-    var scrollPosition = window.scrollY;
-    var getScrollPos = document.documentElement.scrollTop;
     
     function fadeScroll() {
         window.addEventListener('scroll', function(e) {
@@ -75,23 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('resize', function(){
         if(window.innerWidth > 992) {
-            console.log(scrollPosition);
-            console.log(getScrollPos);
-            if(scrollPosition/600 >= 0.75) {
-                navbar.style.backgroundColor = "rgba(255,255,255,1)";
-                sectionShadow.style.opacity = 1
-                textLogo.style.opacity = 1
-                enquiry.style.opacity = 1
-            } else if (scrollPosition/600 < 0.75) {
-                sectionShadow.style.opacity = -1.03;
-                textLogo.style.opacity = -1.03;
-                enquiry.style.opacity = -1.03;
-                navbar.style.backgroundColor = "rgba(255,255,255,0)";
-                navItems[4].style.display = 'block';
-                navItems[5].style.display = 'block';
-                navItems[6].style.display = 'block';
-
-            }
+            sectionShadow.style.opacity = -1.03;
+            textLogo.style.opacity = -1.03;
+            enquiry.style.opacity = -1.03;
+            navbar.style.backgroundColor = "rgba(255,255,255,0)";
             fadeScroll();
             scrollNav.classList.remove('shadow-back');
         } else {
