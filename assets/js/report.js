@@ -27,5 +27,9 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         });
     }
+
+    if(window.screen.width < 1300) {
+        document.querySelector('[drupal-data-link-system-path="article]"').style.display = 'none';
+    }
 });
 
