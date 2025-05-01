@@ -4056,6 +4056,34 @@ height:100%;
   }
 }
 
+@media screen and (max-width: 576px) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #012e58;
+    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
@@ -4364,7 +4392,6 @@ height:100%;
 
 /* sm */
 @media screen and (min-width: 576px) {
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
     background-size: cover;
