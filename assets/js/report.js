@@ -50,9 +50,12 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     hideLink();
-    
+
     window.addEventListener('resize', function() {
         hideLink();
+        if (window.innerWidth > 992) {
+            document.querySelector('scroll-nav').classList.remove('shadow-back');
+        }
     });
     
 });
