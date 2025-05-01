@@ -583,6 +583,7 @@ a.disabled {
 
 .path-frontpage .wavelogo {
   background: transparent;
+  background-color: rgba($color: $white, $alpha: 0.5);
 }
 
 .wavelogo img {
@@ -613,6 +614,15 @@ a.disabled {
   z-index: 1032;
   position: relative;
   transform: translateY(49%);
+}
+
+.path-frontpage .wavelower {
+  height: 11em;
+  left: 12em;
+  z-index: 1032;
+  position: absolute;
+  opacity: 0.5;
+  transform: none
 }
 
 .curve-down {
