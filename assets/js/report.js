@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     // Correct query selector for nav links
+    var navItems = document.querySelectorAll('.navbar-nav .nav-itemå');
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var overlayLink = document.querySelector('.overlay-btn');
 
@@ -29,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     if(window.screen.width < 1300) {
-        navLinks[5].style.display = 'none';
+        console.log(navItems)
+        navItems[5].style.display = 'none';
     }
 });
 
