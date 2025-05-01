@@ -4056,40 +4056,6 @@ height:100%;
   }
 }
 
-@media screen and (max-width: 576px) {
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-color: #012e58;
-    animation: none;
-    background-position: 65%;
-    padding-top: 3em;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1080.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: center;
-    padding-top: 3em;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: top;
-    padding-top: 3em;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
@@ -4124,38 +4090,6 @@ height:100%;
   .icons-col-placement {
     position: relative;
     bottom: 0em;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-color: #012e58;
-    animation: none;
-    background-position: 65%;
-    padding-top: 3em;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1080.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: center;
-    padding-top: 3em;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: top;
-    padding-top: 3em;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
@@ -4432,7 +4366,7 @@ height:100%;
 @media screen and (min-width: 576px) {
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1080.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
     background-size: cover;
     background-repeat: repeat;
     background-color: #012e58;
@@ -4442,7 +4376,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1080.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
@@ -4822,7 +4756,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-02.webp);
     background-size: cover;
     background-repeat: repeat;
     background-color: #012e58;
@@ -4832,7 +4766,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-02.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
@@ -5333,7 +5267,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-03.webp);
     background-repeat: repeat;
     background-size: cover;
     background-color: rgb(8,14,34);
@@ -5342,7 +5276,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-03.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #012e58;
@@ -5783,7 +5717,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-04.webp);
     background-repeat: repeat;
     background-size: cover;
     background-color: rgb(8,14,34);
@@ -5792,7 +5726,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-04.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #012e58;
@@ -6146,7 +6080,7 @@ height:100%;
 @media screen and (min-width: 1400px) {
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-05.webp);
     background-repeat: repeat;
     background-size: cover;
     background-color: rgb(8,14,34);
@@ -6155,7 +6089,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-05.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #012e58;
@@ -6529,7 +6463,7 @@ height:100%;
 @media screen and (min-width: 1800px) {
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-06.webp);
     background-repeat: repeat;
     background-size: cover;
     background-color: rgb(8,14,34);
@@ -6538,7 +6472,7 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-06.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #012e58;
