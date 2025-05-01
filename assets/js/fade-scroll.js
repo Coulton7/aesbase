@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const sectionShadow = document.querySelector('.section-shadow');
     const enquiry = document.querySelector('.enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
+    var navItems = document.querySelectorAll('.navbar-nav .nav-item');
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var overlayLink = document.querySelector('.overlay-btn');
     var scrollNav = document.querySelector('.scroll-nav');
@@ -33,6 +34,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
 
+    function hideLink() {
+        if(window.innerWidth < 1300) {
+            navItems[6].style.display = 'none';
+        } else if(window.innerWidth > 1300) {
+            navItems[6].style.display = 'block';
+        }
+
+        if(window.innerWidth < 1200) {
+            navItems[5].style.display = 'none';
+        } else if(window.innerWidth > 1200) {
+            navItems[5].style.display = 'block';
+        }
+
+        if(window.innerWidth < 1050) {
+            navItems[4].style.display = 'none';
+        } else if(window.innerWidth > 1050) {
+            navItems[4].style.display = 'block';
+        }
+    }
+
+    hideLink();
+
+    window.addEventListener('resize', function() {
+        hideLink();
+    });
+
     if(window.innerWidth > 992) {
         sectionShadow.style.opacity = -1.03;
         textLogo.style.opacity = -1.03;
@@ -60,6 +87,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 textLogo.style.opacity = -1.03;
                 enquiry.style.opacity = -1.03;
                 navbar.style.backgroundColor = "rgba(255,255,255,0)";
+                navItems[4].style.display = 'block';
+                navItems[5].style.display = 'block';
+                navItems[6].style.display = 'block';
+
             }
             fadeScroll();
             scrollNav.classList.remove('shadow-back');
