@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     }
 
-    if(window.screen.width < 1300) {
+    if(window.innerWidth < 1300) {
         console.log(navItems)
         navItems[5].style.display = 'none';
     }
