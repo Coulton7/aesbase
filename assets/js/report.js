@@ -48,10 +48,12 @@ document.addEventListener('DOMContentLoaded', function(){
             navItems[4].style.display = 'block';
         }
     }
+
     hideLink();
-    window.addEventListener(resize), function() {
+    
+    window.addEventListener('resize', function() {
         hideLink();
-    }
+    });
     
 });
 
