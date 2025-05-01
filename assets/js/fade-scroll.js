@@ -50,12 +50,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('resize', function(){
         if(window.innerWidth > 992) {
-            sectionShadow.style.opacity = -1.03;
-            textLogo.style.opacity = -1.03;
-            enquiry.style.opacity = -1.03;
-            navbar.style.backgroundColor = "rgba(255,255,255,0)";
+            if(scrollPos/600 >= 0.75) {
+                navbar.style.backgroundColor = "rgba(255,255,255,1)";
+                sectionShadow.style.opacity = 1
+                textLogo.style.opacity = 1
+                enquiry.style.opacity = 1
+            } else if (scrollPos/600 < 0.75) {
+                sectionShadow.style.opacity = -1.03;
+                textLogo.style.opacity = -1.03;
+                enquiry.style.opacity = -1.03;
+                navbar.style.backgroundColor = "rgba(255,255,255,0)";
+            }
             fadeScroll();
-        
+            scrollNav.classList.remove('shadow-back');
         } else {
             sectionShadow.style.opacity = 1;
             textLogo.style.opacity = 1;
