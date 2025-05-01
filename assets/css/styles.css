@@ -14442,21 +14442,29 @@ a.disabled {
 }
 
 #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-  background-repeat: no-repeat;
+  background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
+  background-size: cover;
+  background-repeat: repeat;
   background-color: #012e58;
   height: 100%;
 }
 
 #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+  background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #012e58;
-  height: 100%;
+  background-blend-mode: unset;
+  animation: none;
 }
 
 #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+  background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #012e58;
-  height: 100%;
+  background-blend-mode: unset;
+  animation: none;
 }
 
 .crsl-cntrl {
