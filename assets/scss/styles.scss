@@ -584,6 +584,8 @@ a.disabled {
 .path-frontpage .wavelogo {
   background: transparent;
   background-color: rgba($color: $white, $alpha: 0.5);
+  border-radius: none;
+  width: 12em;
 }
 
 .wavelogo img {
