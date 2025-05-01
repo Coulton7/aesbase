@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('resize', function(){
         if(window.innerWidth > 992) {
-            console.log(scrollPos);
+            console.log(scrollPos/600);
             if(scrollPos/600 >= 0.75) {
                 navbar.style.backgroundColor = "rgba(255,255,255,1)";
                 sectionShadow.style.opacity = 1
