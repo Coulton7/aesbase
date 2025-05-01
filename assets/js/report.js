@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     // Correct query selector for nav links
-    var navItems = document.querySelectorAll('.navbar-nav .nav-itemå');
+    var navItems = document.querySelectorAll('.navbar-nav .nav-item');
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
     var overlayLink = document.querySelector('.overlay-btn');
 
