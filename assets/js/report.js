@@ -32,19 +32,19 @@ document.addEventListener('DOMContentLoaded', function(){
     function hideLink() {
         if(window.innerWidth < 1300) {
             navItems[6].style.display = 'none';
-        } else if(window.innerWidth >= 1300) {
+        } else if(window.innerWidth > 1300) {
             navItems[6].style.display = 'block';
         }
 
         if(window.innerWidth < 1200) {
             navItems[5].style.display = 'none';
-        } else if(window.innerWidth >= 1200) {
+        } else if(window.innerWidth > 1200) {
             navItems[5].style.display = 'block';
         }
 
         if(window.innerWidth < 1050) {
             navItems[4].style.display = 'none';
-        } else if(window.innerWidth >= 1050) {
+        } else if(window.innerWidth > 1050) {
             navItems[4].style.display = 'block';
         }
     }
