@@ -29,8 +29,29 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     }
 
-    if(window.innerWidth < 1300) {
-        navItems[6].style.display = 'none';
+    function hideLink() {
+        if(window.innerWidth < 1300) {
+            navItems[6].style.display = 'none';
+        } else if(window.innerWidth >= 1300) {
+            navItems[6].style.display = 'block';
+        }
+
+        if(window.innerWidth < 1200) {
+            navItems[5].style.display = 'none';
+        } else if(window.innerWidth >= 1200) {
+            navItems[5].style.display = 'block';
+        }
+
+        if(window.innerWidth < 1050) {
+            navItems[4].style.display = 'none';
+        } else if(window.innerWidth >= 1050) {
+            navItems[4].style.display = 'block';
+        }
     }
+    hideLink();
+    window.addEventListener(resize), function() {
+        hideLink();
+    }
+    
 });
 
