@@ -655,7 +655,7 @@ a.disabled {
 
 #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
   background-repeat: no-repeat;
-  background-color: rgb(9, 107, 50);
+  background-color: #012e58;
   height: 100%;
 }
 
@@ -5717,6 +5717,33 @@ height:100%;
     z-index: 4;
   }
 
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(8,14,34);
+    background-blend-mode: unset;
+    background-position: top center;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: 50% 30%;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: top;
+  }
+
   .bg-white .navbar-collapse {
     padding-left: 0;
   }
@@ -6052,6 +6079,33 @@ height:100%;
 
 /* xxl */
 @media screen and (min-width: 1400px) {
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(8,14,34);
+    background-blend-mode: unset;
+    background-position: top center;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: 50% 30%;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: top;
+  }
   
   .ps-xxl-6 {
     padding-inline-start: 3.5rem;
@@ -6377,10 +6431,6 @@ height:100%;
   }
 }
 
-@media screen and (min-width: 1400px) {
-
-}
-
 @media(max-width: 1430px){
   .nav-slide .item { 
     height: 450px;
@@ -6412,6 +6462,34 @@ height:100%;
 }
 
 @media screen and (min-width: 1800px) {
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-1-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(8,14,34);
+    background-blend-mode: unset;
+    background-position: top center;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-2-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: 50% 30%;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(https://static.aesseal.com/photo/wavehead/industry-4-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    background-position: top;
+  }
+  
   .ps-xxxl-6 {
     padding-inline-start: 3.5rem;
   }
