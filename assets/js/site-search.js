@@ -1290,7 +1290,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <p>${data.bearing_product_image_uri}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
