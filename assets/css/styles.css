@@ -18849,6 +18849,10 @@ ul.about-us-cats a {
     position: relative;
     z-index: 4;
   }
+  .carousel-caption {
+    top: 0;
+    margin-left: 0;
+  }
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-03.webp);
     background-repeat: repeat;
