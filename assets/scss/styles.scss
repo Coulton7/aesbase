@@ -4406,12 +4406,6 @@ height:100%;
 
 /* sm */
 @media screen and (min-width: 576px) {
-
-  .carousel-caption {
-    top: -10vh;
-    margin-left: 2vh;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
     background-size: cover;
@@ -4794,11 +4788,6 @@ height:100%;
   .icons-col-placement {
     position: relative;
     bottom: 0em;
-  }
-
-  .carousel-caption {
-    top: -35vh;
-    margin-left: 2vh;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
@@ -5304,11 +5293,6 @@ height:100%;
     top: 4vh;
     position: relative;
     z-index: 4;
-  }
-
-  .carousel-caption {
-    top: 0;
-    margin-left: 0;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
@@ -6858,6 +6842,11 @@ height:100%;
 
   .uppercurve {
     display: none;
+  }
+
+  .carousel-caption {
+    top: -10vh;
+    margin-left: 2vh;
   }
 
   .intro-text {
