@@ -14441,7 +14441,6 @@ a.disabled {
 .home-slider-height {
   height: 100%;
   background-color: #002a5a;
-  min-height: 32em;
   position: relative;
 }
 
@@ -17899,7 +17898,6 @@ ul.about-us-cats a {
     bottom: inherit;
   }
   .home-slider-height {
-    min-height: 45em;
     display: flex;
     flex-wrap: wrap;
   }
@@ -18437,7 +18435,6 @@ ul.about-us-cats a {
     height: 100%;
   }
   .home-slider-height {
-    min-height: 42em;
     display: flex;
   }
   #carousel-fade {
@@ -18844,9 +18841,6 @@ ul.about-us-cats a {
   }
   .preface-flex-margin {
     margin: -4.3em 0 0 0;
-  }
-  .home-slider-height {
-    min-height: 55em;
   }
   .slider-caption {
     top: 4vh;

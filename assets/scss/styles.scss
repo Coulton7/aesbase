@@ -653,7 +653,6 @@ a.disabled {
 .home-slider-height {
   height: 100%;
   background-color: $primary;
-  min-height: 32em;
   position: relative;
 }
 
@@ -4118,7 +4117,6 @@ height:100%;
   }
 
   .home-slider-height {
-    min-height: 45em;
     display: flex;
     flex-wrap: wrap;
   }
@@ -4782,7 +4780,6 @@ height:100%;
   }
 
   .home-slider-height {
-    min-height: 42em;
     display: flex;
   }
 
@@ -5300,10 +5297,6 @@ height:100%;
 
   .preface-flex-margin {
     margin: -4.3em 0 0 0;
-  }
-
-  .home-slider-height {
-    min-height: 55em;
   }
 
   .slider-caption {
