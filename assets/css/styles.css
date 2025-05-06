@@ -18824,6 +18824,9 @@ ul.about-us-cats a {
 }
 /* lg */
 @media screen and (min-width: 992px) {
+  .navbar-nav .nav-item:nth-child(7) {
+    display: block;
+  }
   .lg-mt-10 {
     margin-block-start: 8rem;
   }
@@ -19194,6 +19197,9 @@ ul.about-us-cats a {
 }
 /* xl */
 @media screen and (min-width: 1200px) {
+  .navbar-nav .nav-item:nth-child(7) {
+    display: block;
+  }
   .textlogo {
     top: 0;
   }

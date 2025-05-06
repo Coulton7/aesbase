@@ -5274,6 +5274,10 @@ height:100%;
 
 /* lg */
 @media screen and (min-width: 992px) {
+  
+  .navbar-nav .nav-item:nth-child(7) {
+    display: block;
+  }
 
   .lg-mt-10 {
     margin-block-start: 8rem;
@@ -5747,6 +5751,11 @@ height:100%;
 
 /* xl */
 @media screen and (min-width: 1200px) {
+
+  .navbar-nav .nav-item:nth-child(7) {
+    display: block;
+  }
+
   .textlogo {
     top: 0;
   }
