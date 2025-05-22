@@ -17915,6 +17915,16 @@ ul.about-us-cats a {
     animation: none;
   }
 }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .textlogo {
     top: 0.5em;
@@ -18206,6 +18216,16 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
+
+    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
   .ps-sm-6 {
     padding-inline-start: 3.5rem;
   }
@@ -18506,6 +18526,15 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
+    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-02.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
     background-size: cover;
@@ -18904,6 +18933,16 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
+
+    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-03.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
     background-repeat: no-repeat;
@@ -19258,6 +19297,16 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
+
+    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-04.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
   .bg-white .navbar-collapse {
     padding-left: 0;
   }
@@ -19822,6 +19871,16 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
+
+    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-06.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #012e58;
+    background-blend-mode: unset;
+    animation: none;
+  }
+}
   .ps-xxxl-6 {
     padding-inline-start: 3.5rem;
   }
