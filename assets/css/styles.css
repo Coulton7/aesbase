@@ -6504,34 +6504,6 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-#slider-overlay{
-top: 15%
-right: 15%;
-}
-
-#slider-overlay .black-box {
-  width: 60%;              /* Mobile default */
-  max-width: 75%;
-  max-height: 50%;
-}
-
-@media (max-width: 1200px) {
-  #slider-overlay .black-box {
-    width: 85%;
-    height: 100%;
-    top: 10%;
-    left: 15%;
-   
-  }
-}
-
-
-
-.carousel-item img {
-  height: 70vh; 
-  object-fit: cover; 
-}
-
 .carousel-indicators {
   position: absolute;
   right: 0;
@@ -17914,8 +17886,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
     background-size: cover;
@@ -18216,8 +18186,7 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-
-    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18225,7 +18194,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
   .ps-sm-6 {
     padding-inline-start: 3.5rem;
   }
@@ -18526,7 +18494,7 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-02.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18534,7 +18502,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
     background-size: cover;
@@ -18933,8 +18900,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
-
-    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-03.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18942,7 +18908,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
     background-repeat: no-repeat;
@@ -19297,8 +19262,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
-
-    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-04.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19306,7 +19270,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
   .bg-white .navbar-collapse {
     padding-left: 0;
   }
@@ -19871,8 +19834,7 @@ ul.about-us-cats a {
     background-color: #012e58;
     background-blend-mode: unset;
   }
-
-    #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-06.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19880,7 +19842,6 @@ ul.about-us-cats a {
     background-blend-mode: unset;
     animation: none;
   }
-}
   .ps-xxxl-6 {
     padding-inline-start: 3.5rem;
   }
