@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if(el_scrollNav) {
         var last_scroll_top = 0;
         if(window.innerWidth > 992) {
+            
             window.addEventListener('scroll', function(){
                 let scroll_top = window.scrollY;
+                console.log(scroll_top);
                 if(scroll_top < last_scroll_top) {
                     el_scrollNav.classList.remove('scrolled-down');
                     el_scrollNav.classList.add('scrolled-up');
