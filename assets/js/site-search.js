@@ -2923,7 +2923,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
@@ -2931,7 +2931,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'de'){
                                 return html `<div class="search-result">
@@ -2939,7 +2939,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
                                 </div>`
     
     
@@ -3560,27 +3560,27 @@ document.addEventListener("DOMContentLoaded", function() {
                         item(data, { html, components }){
                             if(filterLang == 'en'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
-                                        <small>${data.url}</small>
+                                        <small>https://www.aesseal.com${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'fr'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Lire la suite</a>
                                 </div>`
     
     
@@ -3922,27 +3922,27 @@ document.addEventListener("DOMContentLoaded", function() {
                         item(data, { html, components }){
                             if(filterLang == 'en'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
-                                        <small>${data.url}</small>
+                                        <small>https://www.aesseal.com${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'fr'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Lire la suite</a>
                                 </div>`
     
     
@@ -4284,28 +4284,28 @@ document.addEventListener("DOMContentLoaded", function() {
                         item(data, { html, components }){
                             if(filterLang == 'en'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
-                                        <small>${data.url}</small>
+                                        <small>https://www.aesseal.com${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'sv'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Läs mer om</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Läs mer om</a>
                                 </div>`
     
     
@@ -4647,27 +4647,27 @@ document.addEventListener("DOMContentLoaded", function() {
                         item(data, { html, components }){
                             if(filterLang == 'en'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 </div>`
                                 } else if(filterLang == '') {
                                     return html `<div class="search-result">
-                                        <small>${data.url}</small>
+                                        <small>https://www.aesseal.com${data.url}</small>
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>`
                                 } else if(filterLang == 'ja'){
                                 return html `<div class="search-result">
-                                    <small>${data.url}</small>
+                                    <small>https://www.aesseal.com${data.url}</small>
                                     <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                     <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                     <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
+                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">続きを読む</a>
                                 </div>`
     
     
