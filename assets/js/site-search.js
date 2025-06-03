@@ -1348,128 +1348,272 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'fr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'de'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'it'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'pl'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Czytaj więcej</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Czytaj więcej</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                                        </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'ru'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Читать далее</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Читать далее</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
-                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
-                                <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
-                                <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
-                                <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
+                                <div class="row">
+                                    <div class="col-md-9 col-8 d-flex flex-column">
+                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
+                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
+                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
+                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
+                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                    </div>
+                                </div>
                             </div>`
                         }
                     },
