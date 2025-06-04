@@ -250,31 +250,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    const renderClearRefinements = (renderOptions, isFirstRender) => {
-        const { canRefine, refine, widgetParams } = renderOptions;
-
-        if (isFirstRender) {
-            const button = document.createElement('button');
-            button.textContent = 'Clear refinements';
-
-            button.addEventListener('click', () => {
-                refine();
-            });
-
-            widgetParams.container.appendChild(button);
-        }
-
-        widgetParams.container.querySelector('button').disabled = !canRefine;
-    };
-
     const customStats = connectStats(renderStats);
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
-    );
-
-    const customClearRefinements = connectClearRefinements(
-        renderClearRefinements
     );
 
     let typeMapping;
@@ -1218,8 +1197,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 page: 0,
             }),
 
-            customClearRefinements({
+            instantsearch.widgets.clearRefinements({
                 container: '#clear-refinements',
+                cssClasses:{
+                    root: 'pt-5',
+                    button: [
+                        'btn btn-primary text-white'
+                    ]
+                },
             }),
 
             langlistPanel({
