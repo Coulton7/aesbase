@@ -249,10 +249,70 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    const renderClearRefinements = (renderOptions, isFirstRender) => {
+        const{ canRefine, refine, widgetParams } = renderOptions;
+
+        if(isFirstRender) {
+            const button = document.createElement('button');
+            button.classList.add('ais-ClearRefinements-button');
+            button.classList.add('btn');
+            button.classList.add('btn-primary');
+            if(filterLang == 'en') {
+                button.innerHTML = "Clear Refinements";
+            } else if(filterLang == '') {
+                button.innerHTML = "Clear Refinements";
+            } else if (filterLang == 'es') {
+                button.innerHTML = "Refinamientos claros";
+            } else if (filterLang == 'fr') {
+                button.innerHTML = "Raffinements clairs";
+            } else if (filterLang == 'de') {
+                button.innerHTML = "Klare Verfeinerungen";
+            } else if (filterLang == 'it') {
+                button.innerHTML = "Rifiniture chiare";
+            } else if (filterLang == 'pl') {
+                button.innerHTML = "Wyraźne udoskonalenia";
+            } else if (filterLang == 'ru') {
+                button.innerHTML = "Четкие уточнения";
+            } else if (filterLang == 'tr') {
+                button.innerHTML = "Açık İfadeler";
+            } else if (filterLang == 'zh-hans') {
+                button.innerHTML = "清除细目";
+            } else if (filterLang == 'ar') {
+                button.innerHTML = "تنقيحات واضحة";
+            } else if (filterLang == 'nb') {
+                button.innerHTML = "Tydelige avgrensninger";
+            } else if (filterLang == 'pt-br') {
+                button.innerHTML = "Limpar refinamentos";
+            } else if (filterLang == 'pt') {
+                button.innerHTML = "Limpar refinamentos";
+            } else if (filterLang == 'cz') {
+                button.innerHTML = "Jasné upřesnění";
+            } else if (filterLang == 'nl') {
+                button.innerHTML = "Duidelijke refincties";
+            } else if (filterLang == 'ja') {
+                button.innerHTML = "明確な絞り込み";
+            } else if (filterLang == 'sv') {
+                button.innerHTML = "Tydliga förbättringar";
+            }
+
+            button.addEventListener('click', () => {
+                refine();
+            });
+
+            widgetParams.container.appendChild(button);
+        }
+
+        widgetParams.container.querySelector('button').disabled = !canRefine;
+    }
+
     const customStats = connectStats(renderStats);
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
+    );
+
+    const customClearRefinements = connectClearRefinements(
+        renderClearRefinements
     );
 
     let typeMapping;
@@ -1196,14 +1256,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 page: 0,
             }),
 
-            instantsearch.widgets.clearRefinements({
+            customClearRefinements({
                 container: '#clear-refinements',
-                cssClasses:{
-                    root: 'pt-5',
-                    button: [
-                        'btn btn-primary text-white'
-                    ]
-                },
             }),
 
             langlistPanel({
