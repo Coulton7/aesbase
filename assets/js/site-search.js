@@ -251,23 +251,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const renderClearRefinements = (renderOptions, isFirstRender) => {
-        const{ canRefine, refine, widgetParams } = renderOptions;
+        const { canRefine, refine, widgetParams } = renderOptions;
 
-        if(isFirstRender) {
-            const clearButton = document.createElement('button');
-            clearButton.classList.add('ais-ClearRefinements-button');
-            clearButton.classList.add('btn');
-            clearButton.classList.add('btn-primary');
+        if (isFirstRender) {
+            const button = document.createElement('button');
+            button.textContent = 'Clear refinements';
 
-            clearButton.addEventListener('click', () => {
+            button.addEventListener('click', () => {
                 refine();
             });
 
-            widgetParams.container.appendChild(clearButton);
+            widgetParams.container.appendChild(button);
         }
 
         widgetParams.container.querySelector('button').disabled = !canRefine;
-    }
+    };
 
     const customStats = connectStats(renderStats);
 
