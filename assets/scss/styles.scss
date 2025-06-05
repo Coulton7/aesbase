@@ -706,6 +706,11 @@ a.disabled {
   padding-top: 0;
 }
 
+#treewalkCarousel .carousel-item img {
+  height: 70vh; 
+  object-fit: cover; 
+}
+
 .equal-height-slider .tiny-slider-wrapper {
   display: flex;
 }
@@ -3908,6 +3913,16 @@ ul.about-us-cats a {
   z-index: 1000;
 }
 
+#slider-overlay{
+  top: 15%;
+  right: 15%;
+}
+
+#slider-overlay .black-box {
+  width: 60%;              /* Mobile default */
+  max-width: 75%;
+  max-height: 50%;
+}
 
 .cards a{
 display:block;
@@ -6967,6 +6982,15 @@ height:100%;
 
   .black-box-promo {
     max-width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #slider-overlay .black-box {
+    width: 85%;
+    height: 100%;
+    top: 10%;
+    left: 15%;
   }
 }
 
