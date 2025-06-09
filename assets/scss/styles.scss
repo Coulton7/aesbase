@@ -4201,47 +4201,73 @@ height:100%;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: 65%;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
     background-position: 65%;
-    padding-top: 3em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
     background-position: top;
-    padding-top: 3em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: top;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .sustain-nav {
@@ -5011,47 +5037,73 @@ height:100%;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    background-position: bottom right;
-    animation: none;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    background-position: bottom right;
-    animation: none;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 65%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
     background-position: top;
-    padding-top: 3em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: top;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .controls li, .tns-outer .tns-controls button[aria-controls] {
@@ -5569,43 +5621,73 @@ height:100%;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
-    background-position: top center;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
-    background-position: top center;
+  }
+
+  #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 65%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Betterworld-SolarFarm-India.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/sky-carousel.jpg);
+    background-repeat: repeat;
+    background-size: cover;
     background-position: top;
-    padding-top: 3em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
-    background-position: top;
-    padding-top: 3em;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .carousel-col-placement {
