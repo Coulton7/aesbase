@@ -4080,38 +4080,71 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
-    background-size: cover;
-    background-repeat: repeat;
     background-color: #012e58;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 }
 
@@ -4440,38 +4473,71 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
-    background-size: cover;
-    background-repeat: repeat;
     background-color: #012e58;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .ps-sm-6 {
@@ -4837,38 +4903,71 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-02.webp);
-    background-size: cover;
-    background-repeat: repeat;
     background-color: #012e58;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-02.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-02.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-02.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-02.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-02.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-02.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-02.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
@@ -5356,36 +5455,71 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-03.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: #012e58;
-    background-blend-mode: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-03.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-03.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-03.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-03.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-03.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-03.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
@@ -5817,36 +5951,71 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-04.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: #012e58;
-    background-blend-mode: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-04.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-04.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-04.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-04.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-04.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-04.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .bg-white .navbar-collapse {
@@ -6186,27 +6355,71 @@ height:100%;
 @media screen and (min-width: 1400px) {
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/industry-background-05.webp);
     background-repeat: repeat;
     background-size: cover;
-    background-color: #012e58;
-    background-blend-mode: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-05.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-05.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-05.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-05.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-05.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
   
   .ps-xxl-6 {
@@ -6583,28 +6796,54 @@ height:100%;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-06.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/ecoguard-background-06.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-06.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #012e58;
-    background-blend-mode: unset;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/FTemployers-background-06.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-06.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: unset;
-    animation: none;
+  }
+
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-06.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .ps-xxxl-6 {
