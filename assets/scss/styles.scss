@@ -1958,18 +1958,6 @@ blockquote {
   -webkit-backdrop-filter: none;
 }
 
-@media screen and (max-width: 700px) {
-  .black-boxes,
-  .black-boxes-right {
-    max-width: 120%; /* Adjust max-width for smaller screens */
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 0.7em /* Decrease font size for smaller screens */
-   
-  }
-}
-
 .banner-vid {
   position: absolute;
 }
@@ -4430,6 +4418,18 @@ height:100%;
     
   .overlay-content {
     top: 30%
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .black-boxes,
+  .black-boxes-right {
+    max-width: 120%; /* Adjust max-width for smaller screens */
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 0.7em /* Decrease font size for smaller screens */
+   
   }
 }
 
