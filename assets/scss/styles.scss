@@ -4130,12 +4130,12 @@ height:100%;
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
     background-color: #012e58;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
+  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -4147,12 +4147,12 @@ height:100%;
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
+    #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-color: #012e58;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/Reliability-background-01.webp);
+  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
