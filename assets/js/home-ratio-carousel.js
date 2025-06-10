@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const carouselEl = document.getElementById("carousel-fade");
-  const carouselItems = carouselEl.querySelectorAll(".carousel-item");
+  const carouselItems = document.querySelectorAll(".carousel-item");
   const pauseBtns = document.querySelectorAll("#carouselPauseBtn");
 
   let carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
