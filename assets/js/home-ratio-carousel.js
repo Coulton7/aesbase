@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pauseBtn.addEventListener("click", () => {
       if (isPaused) {
         carousel.cycle();
-        carouselEl.querySelector(".active").style.animatonPlayState = "running";
+        docuemtn.querySelector(".carousel-item.active").style.animatonPlayState = "running";
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-pause"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "false");
