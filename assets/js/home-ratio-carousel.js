@@ -37,11 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pauseBtn.addEventListener("click", () => {
       if (isPaused) {
         carousel.cycle();
-        carouselItems.forEach(item => {
-          if(item.classList.contains("active")){
-            item.style.animatonPlayState = "running";
-          }
-        });
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-pause"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "false");
@@ -49,11 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       } else {
         carousel.pause();
-        carouselItems.forEach(item => {
-          if(item.classList.contains("active")){
-            item.style.animatonPlayState = "paused";
-          }
-        });
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-play"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "true");
