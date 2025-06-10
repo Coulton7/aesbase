@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       } else {
         carousel.pause();
-        carouselEl.querySelector(".active").style.animatonPlayState = "paused";
+        docuemnt.querySelector(".carousel-item.active").style.animatonPlayState = "paused";
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-play"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "true");
