@@ -4057,6 +4057,15 @@ height:100%;
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0%;
@@ -6515,7 +6524,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeInOut 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
@@ -6533,7 +6542,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
@@ -6551,7 +6560,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
@@ -6569,7 +6578,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
@@ -6587,7 +6596,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
   
   .ps-xxl-6 {
@@ -6961,7 +6970,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeInOut 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
@@ -6979,7 +6988,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeInOut 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
@@ -6997,7 +7006,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
@@ -7015,7 +7024,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
@@ -7033,7 +7042,7 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
-    animation: fadeInOut 5s ease-out;
+    animation: fadeIn 5s ease-out forwards;
   }
 
   .ps-xxxl-6 {
