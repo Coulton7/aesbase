@@ -58,14 +58,4 @@ document.addEventListener("DOMContentLoaded", function () {
       pauseBtns[0].click();
     }
   });
-
-  carouselEl.addEventListener('slide.bs.carousel', function() {
-    document.querySelector('.carousel-item.active').classList.add('fadeOut');
-    document.querySelector('.carousel-item.active').classList.remove('fadeIn');
-  })
-
-  carouselEl.addEventListener('slid.bs.carousel', function() {
-    document.querySelector('.carousel-item.active').classList.remove('fadeOut');
-    document.querySelector('.carousel-item.active').classList.add('fadeIn');
-  })
 });
