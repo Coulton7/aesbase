@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const carouselEl = document.getElementById("carousel-fade");
+  const carouselItems = carouselEl.querySelectorAll(".carousel-item");
   const pauseBtns = document.querySelectorAll("#carouselPauseBtn");
 
   let carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pauseBtn.addEventListener("click", () => {
       if (isPaused) {
         carousel.cycle();
-        carouselEl.getElementsByClassName(".active")[0].style.animatonPlayState = "running";
+        carouselItems.classList.contains(".active").style.animatonPlayState = "running";
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-pause"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "false");
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       } else {
         carousel.pause();
-        carouselEl.getElementsByClassName(".active")[0].style.animatonPlayState = "paused";
+        carouselItems.classList.contains(".active").style.animatonPlayState = "paused";
         pauseBtns.forEach(btn => btn.innerHTML = `<i class="fa-solid fa-play"></i>`);
         pauseBtns.forEach(btn => {
           btn.setAttribute("aria-pressed", "true");
