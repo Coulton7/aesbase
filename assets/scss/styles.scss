@@ -4454,6 +4454,13 @@ height:100%;
     padding: 1px;
   }
 
+  #slider-overlay .black-box {
+   top: 3%;
+   left: 7.5%;
+   max-width: 85%;
+   max-height: 90%; 
+  }
+
   .footer-curve {
     margin-top: -6em;
   }
@@ -5172,13 +5179,6 @@ height:100%;
 
   .promo-margin {
     margin-block-start: 2%;
-  }
-
-  #slider-overlay .black-box {
-   top: 3%;
-   left: 7.5%;
-   max-width: 85%;
-   max-height: 90%; 
   }
 
   .black-boxes,
