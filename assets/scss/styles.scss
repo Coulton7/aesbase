@@ -5174,6 +5174,13 @@ height:100%;
     margin-block-start: 2%;
   }
 
+  #slider-overlay .black-box {
+   top: 3%;
+   left: 7.5%;
+   max-width: 85%;
+   max-height: 90%; 
+  }
+
   .black-boxes,
   .black-boxes-right {
     height: auto; /* Reset height to auto for smaller screens */
