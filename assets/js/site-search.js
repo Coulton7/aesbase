@@ -1043,7 +1043,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
             search(requests) {
-                if(requests.every(({ params }) => !params.query)) {
+                if(requests.every(({ params }) => !params.query || params.query.length === 0)) {
                     return Promise.resolve({
                         results: requests.map(() => ({
                             hits: [],
@@ -1055,6 +1055,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             widgetParams: 0,
                             query: '',
                             params: '',
+                            analytics: false,
                         })),
                     });
                 }
