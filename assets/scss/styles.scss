@@ -7374,6 +7374,10 @@ height:100%;
     margin: 0.5rem 0;
   }
 
+  .navbar-expand .navbar-nav {
+    visibility: hidden;
+  }
+
   /*To stop a while background appearing behind the action-menu*/
   .wavelogo img {
     display: none;
