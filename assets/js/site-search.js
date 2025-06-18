@@ -61,6 +61,24 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
+    const renderClearRefinements = (renderOptions, isFirstRender) => {
+        const {canRefine, refine, widgetParams} = renderOptions;
+
+        if(isFirstRender) {
+            const clearButton = document.createElement('button');
+            clearButton.classList.add("btn", "btn-primary");
+            clearButton.textContent = 'Clear Refinements';
+
+            clearButton.addEventListener('click', () => {
+                refine();
+            });
+
+            widgetParams.container.appendChild(clearButton);
+        }
+
+        widgetParams.container.querySelector('button').disabled = !canRefine;
+    }
+
     const renderStats = (renderOptions, isFirstRender) => {
         const {
             nbHits,
@@ -251,6 +269,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const customStats = connectStats(renderStats);
+
+    const customClearRefinements = connectClearRefinements(
+        renderClearRefinements
+    );
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
@@ -1198,14 +1220,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 page: 0,
             }),
 
-            instantsearch.widgets.clearRefinements({
-                container: '#clear-refinements',
-                cssClasses:{
-                    root: 'pt-5',
-                    button: [
-                        'btn btn-primary text-white'
-                    ]
-                },
+            customClearRefinements({
+                container: document.querySelector('#clear-refinements'),
             }),
 
             langlistPanel({
