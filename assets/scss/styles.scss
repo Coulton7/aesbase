@@ -524,7 +524,7 @@ a.disabled {
   background-color: $gray-200;
 }
 
-.navbar-expand-lg .navbar-collapse {
+.navbar-expand .navbar-collapse {
   justify-content: center;
 }
 
@@ -4942,7 +4942,7 @@ height:100%;
     margin: 0.25rem 0;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand .navbar-nav .nav-link {
     padding: 0.95em 0.95em;
   }
 
@@ -5541,7 +5541,7 @@ height:100%;
     padding-left: 6rem;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand .navbar-nav .nav-link {
     padding: 0.95em 1.1em;
   }
 
