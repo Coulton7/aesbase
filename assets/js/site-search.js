@@ -1125,8 +1125,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         const { origin, pathname, hash} = location;
                         const queryParameters = {};
 
-                        if(routeState.q) {
-                            queryParameters.q = encodeURIComponent(routeState.q);
+                        if(routeState.query) {
+                            queryParameters.query = encodeURIComponent(routeState.query);
                         }
                         if(routeState.page !== 1){
                             queryParameters.page = routeState.page;
@@ -1147,7 +1147,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
 
                     parseUrl({ qsModule, location }) {
-                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                        const { query = '', type = [], lang =[] } = qsModule.parse(
                             location.search.slice(1)
                         );
                         const allType = Array.isArray(type)
@@ -1157,7 +1157,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: decodeURIComponent(q),
+                            query: decodeURIComponent(query),
                             page,
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
@@ -1179,7 +1179,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
-                                query: routeState.q,
+                                query: routeState.query,
                                 page:routeState.page,
                                 refinementList: {
                                     type: routeState.type,
