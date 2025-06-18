@@ -77,6 +77,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 clearButton.textContent = 'Raffinements clairs'
             } else if(filterLang == 'de'){
                 clearButton.textContent = 'Klare Verfeinerungen'
+            } else if(filterLang == 'it'){
+                clearButton.textContent = 'Rifiniture chiare'
+            } else if(filterLang == 'pl'){
+                clearButton.textContent = 'Wyraźne udoskonalenia';
+            } else if(filterLang == 'ru'){
+                clearButton.textContent = 'Четкие уточнения';
+            } else if(filterLang == 'tr'){
+                clearButton.textContent = 'Açık İfadeler';
+            } else if(filterLang == 'zh-hans'){
+                clearButton.textContent = '清除细化';
+            } else if(filterLang == 'ar'){
+                clearButton.textContent = 'تنقيحات واضحة';
+            } else if(filterLang == 'nb'){
+                clearButton.textContent = 'Tydelige avgrensninger';
+            } else if(filterLang == 'pt-br'){
+                clearButton.textContent = 'Limpar refinamentos';
+            } else if(filterLang == 'pt'){
+                clearButton.textContent = 'Limpar refinamentos';
+            } else if(filterLang == 'cz'){
+                clearButton.textContent = 'Jasné upřesnění';
+            } else if(filterLang == 'nl'){
+                clearButton.textContent = 'Duidelijke Verfijningen';
+            } else if(filterLang == 'ja'){
+                clearButton.textContent = '明確な絞り込み';
+            } else if(filterLang == 'sv'){
+                clearButton.textContent = 'Tydliga förbättringar';
             }
 
             clearButton.addEventListener('click', () => {
