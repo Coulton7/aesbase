@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(isFirstRender) {
             const clearButton = document.createElement('button');
-            clearButton.classList.add("btn", "btn-primary");
+            clearButton.classList.add("btn", "btn-primary", "mt-5");
             clearButton.textContent = 'Clear Refinements';
 
             clearButton.addEventListener('click', () => {
