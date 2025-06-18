@@ -67,7 +67,17 @@ document.addEventListener("DOMContentLoaded", function() {
         if(isFirstRender) {
             const clearButton = document.createElement('button');
             clearButton.classList.add("btn", "btn-primary", "mt-5");
-            clearButton.textContent = 'Clear Refinements';
+            if(filterLang == 'en'){
+                clearButton.textContent = 'Clear Refinements';
+            } else if(filterLang == ''){
+                clearButton.textContent = 'Clear Refinements';
+            } else if(filterLang == 'es'){
+                clearButton.textContent = 'Refinamientos claros'
+            } else if(filterLang == 'fr'){
+                clearButton.textContent = 'Raffinements clairs'
+            } else if(filterLang == 'de'){
+                clearButton.textContent = 'Klare Verfeinerungen'
+            }
 
             clearButton.addEventListener('click', () => {
                 refine();
