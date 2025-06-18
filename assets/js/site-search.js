@@ -1101,23 +1101,13 @@ document.addEventListener("DOMContentLoaded", function() {
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
             search(requests) {
-                if(requests.every(({ params }) => !params.query || params.query.length === 0)) {
-                    return Promise.resolve({
-                        results: requests.map(() => ({
-                            hits: [],
-                            nbHits: 0,
-                            nbPages: 0,
-                            page: 0,
-                            hitsPerPage: 0,
-                            processingTimeMS: 0,
-                            widgetParams: 0,
-                            query: '',
-                            params: '',
-                            analytics: false,
-                        })),
-                    });
-                }
-                return searchClient.search(requests);
+                const newRequests = requests.map((request) => {
+                    if(!request.params.query || request.params.query.length === 0) {
+                        request.params.analytics = false;
+                    }
+                    return request;
+                });
+                return algoliaClient.search(newRequests);
             },
             
             insights: {
