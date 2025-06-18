@@ -5065,14 +5065,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
             }),
 
-            instantsearch.widgets.clearRefinements({
-                container: '#clear-refinements',
-                cssClasses:{
-                    root: 'pt-5',
-                    button: [
-                        'btn btn-primary text-white'
-                    ]
-                }
+            customClearRefinements({
+                container: document.querySelector('#clear-refinements'),
             }),
 
             langlistPanel({
@@ -5518,14 +5512,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 filters: '(type:article OR type:announcements)', 
             }),
 
-            instantsearch.widgets.clearRefinements({
-                container: '#clear-refinements',
-                cssClasses:{
-                    root: 'pt-5',
-                    button: [
-                        'btn btn-primary text-white'
-                    ]
-                }
+            customClearRefinements({
+                container: document.querySelector('#clear-refinements'),
             }),
 
             globalLanglistPanel({
