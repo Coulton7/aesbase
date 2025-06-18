@@ -48,19 +48,19 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 <div class="row g-0 bannerimage">
   <div class="row g-0 waveupper">
-    <div class="col-md-2 col-xs-1 col-1">
+    <div class="col-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 col-xxxl-2">
       <div class="wavelogo">
         {{ page.logo }}
       </div>
       <img class= "uppercurve" src="/themes/contrib/aesbase/assets/images/graphics/wave-upper.svg" alt="uppercurve"></img>
-        <a class="logo navbar-btn float-start" href="{{ front_page }}" title=" {{ 'Home'|t }} ">
-					<img src="{{ second_logo }}" alt="{{ 'AESSEAL Textlogo'|t }}" class="textlogo img-adaptive pt-1" title="{{ 'Home'|t }}"/>
-        </a>
+      <a class="logo navbar-btn float-start" href="{{ front_page }}" title=" {{ 'Home'|t }} ">
+				<img src="{{ second_logo }}" alt="{{ 'AESSEAL Textlogo'|t }}" class="textlogo img-adaptive pt-1" title="{{ 'Home'|t }}"/>
+      </a>
     </div>
 
 {# Navbar #}
     {% if page.navigation or page.navigation_collapsible %}
-    <div class="col-md-10 col-xs-11 col-11">
+    <div class="col-1 col-md-2 col-lg-4 col-xl-5 xol-xxl-6 xol-xxxl-8">
           {{ pattern('navbar', {
           navbar_id: 'mobile-overlay',
           placement: 'fixed-top',
@@ -80,8 +80,14 @@
           {% block navbar %}
       {% endblock %}
     </div>
+    {% if page.overlay_menu %}
+    <div class="col-3 col-md-4 col-lg-3 col-xxxl-2">
+      {% block overlay_menu %}
+        {{ page.overlay_menu }}
+      {% endblock %}
+    </div>
     {% endif %}
-    <div class="section-shadow"></div>
+    {% endif %}
   </div>
 
   {% if page.secondary_nav %}
