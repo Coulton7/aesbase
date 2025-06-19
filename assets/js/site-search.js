@@ -1100,14 +1100,12 @@ document.addEventListener("DOMContentLoaded", function() {
             indexName: 'aesseal',
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
-            search(requests) {
-                const newRequests = requests.map((request) => {
-                    if(!request.params.query || request.params.query.length === 0) {
-                        request.params.analytics = false;
-                    }
-                    return request;
-                });
-                return algoliaClient.search(newRequests);
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
             },
             
             insights: {
