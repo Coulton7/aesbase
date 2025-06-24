@@ -4195,9 +4195,11 @@ height:100%;
     transform: none;
     font-size: initial;
     top: auto;
-    background-color: none;
+    background-color: initial;
     backdrop-filter: auto;
+    -webkit-backdrop-filter: auto;
     padding: initial;
+    border-radius: 0!important;
   }
 }
 
