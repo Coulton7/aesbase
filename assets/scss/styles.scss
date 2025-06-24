@@ -4187,6 +4187,18 @@ height:100%;
     content:'';
     z-index: -1;
   }
+
+  .pbhd-promo .black-boxes {
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    transform: none;
+    font-size: initial;
+    top: auto;
+    background-color: none;
+    backdrop-filter: auto;
+    padding: initial;
+  }
 }
 
 @media screen and (max-width: 767px) {
