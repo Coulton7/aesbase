@@ -24,6 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
     if(submitString=='y'){
       document.querySelector('.video-thumbnail').style.display = "none";
       document.querySelector('.resource-request').style.display = "none";
-      document.querySelector('.submit-notice').style.display = "block";
     }
   });
