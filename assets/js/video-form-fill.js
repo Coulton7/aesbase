@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.submit-notice').style.display = "none";
+
     document.querySelector('.video-thumbnail').style.display = "none";
   
     if (document.querySelector('.resource-request').length > 0) {
