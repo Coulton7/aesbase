@@ -2138,6 +2138,10 @@ blockquote {
               0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
+.img-420 img {
+  max-width: 420px;
+}
+
 .blend-mode-multiply {
   mix-blend-mode: multiply;
   transform: translate3d(0, 0, 0);
