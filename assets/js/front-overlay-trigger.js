@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
           x.style.bottom = "0";
           if (y.style.height == "100%") {
             y.style.height = "1px";
-            y.style.bottom = "-1px";
+            y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
           } else if (s.style.height == "100%") {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overlaySearchBtn.classList.toggle("change");
         if (y.style.height === "100%") {
           y.style.height = "1px";
-          y.style.bottom = "-1px";
+          y.style.top = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         } else {
           y.style.height = "100%";
-          y.style.bottom = "0";
+          y.style.top = "0";
           if (x.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
       overlaySearchBtn.classList.toggle("change");
         if (y.style.height === "100%") {
           y.style.height = "1px";
-          y.style.bottom = "-1px";
+          y.style.top = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         } else {
           y.style.height = "100%";
-          y.style.bottom = "0";
+          y.style.top = "0";
           if (x.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overlaySearchGlobal.classList.toggle("change");
         if (y.style.height === "100%") {
           y.style.height = "1px";
-          y.style.bottom = "-1px";
+          y.style.top = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         } else {
           y.style.height = "100%";
-          y.style.bottom = "0";
+          y.style.top = "0";
           if (x.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
           s.style.bottom = "0";
           if (y.style.height == "100%") {
             y.style.height = "1px";
-            y.style.bottom = "-1px";
+            y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
           } else if (s.style.height == "100%") {
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
             x.style.bottom = "0";
             if (y.style.height == "100%") {
               y.style.height = "1px";
-              y.style.bottom = "-1px";
+              y.style.top = "-1px";
               overlaySearchBtn.classList.remove("change");
               overlaySearchBtn.classList.add("search-btn");
             } else if (s.style.height == "100%") {
@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function () {
           x.style.bottom = "0";
           if (y.style.height == "100%") {
             y.style.height = "1px";
-            y.style.bottom = "-1px";
+            y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
           } else if (s.style.height == "100%") {
@@ -338,14 +338,14 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileOverlaySearch.classList.toggle("change");
         if (y.style.height === "100%") {
           y.style.height = "1px";
-          y.style.bottom = "-1px";
+          y.style.top = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           document.querySelector(".dialog-off-canvas-main-canvas").classList.remove("noscroll");
           overlaySearchBtn.classList.add("search-btn");
         } else {
           y.style.height = "100%";
-          y.style.bottom = "0";
+          y.style.top = "0";
           if (x.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
