@@ -1124,8 +1124,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         const { origin, pathname, hash} = location;
                         const queryParameters = {};
 
-                        if(routeState.query) {
-                            queryParameters.query = encodeURIComponent(routeState.query);
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
                         }
                         if(routeState.page !== 1){
                             queryParameters.page = routeState.page;
@@ -1146,7 +1146,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
 
                     parseUrl({ qsModule, location }) {
-                        const { query = '', type = [], lang =[] } = qsModule.parse(
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
                             location.search.slice(1)
                         );
                         const allType = Array.isArray(type)
@@ -1156,7 +1156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            query: decodeURIComponent(query),
+                            q: decodeURIComponent(q),
                             page,
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
@@ -1169,7 +1169,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     stateToRoute(uiState){
                         const indexUiState = uiState['aesseal'] || {};
                         return{
-                            query: indexUiState.query,
+                            q: indexUiState.query,
                             page:indexUiState.page,
                             type: indexUiState.refinementList && indexUiState.refinementList.type,
                             lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
@@ -1178,7 +1178,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     routeToState(routeState) {
                         return{
                             ['aesseal']: {
-                                query: routeState.query,
+                                query: routeState.q,
                                 page:routeState.page,
                                 refinementList: {
                                     type: routeState.type,
