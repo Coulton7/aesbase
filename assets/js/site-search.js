@@ -1124,8 +1124,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         const { origin, pathname, hash} = location;
                         const queryParameters = {};
 
-                        if(routeState.q) {
-                            queryParameters.q = encodeURIComponent(routeState.q);
+                        if(routeState.query) {
+                            queryParameters.query = encodeURIComponent(routeState.query);
                         }
                         if(routeState.page !== 1){
                             queryParameters.page = routeState.page;
@@ -1156,7 +1156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: decodeURIComponent(q),
+                            q: decodeURIComponent(query),
                             page,
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
