@@ -1156,7 +1156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: decodeURIComponent(q).replace(/\+/g, '%20'),
+                            q: decodeURIComponent(q),
                             page,
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent)
