@@ -8,6 +8,9 @@ aes-card:
     infi-card:
       label: infi-card
       description: Used to show an infinite scroll version of cards
+    dark-glass:
+      label: Dark glass
+      description: Use when the body needs a dark glass background on body
   fields:
     image:
       type: text
