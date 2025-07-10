@@ -1,7 +1,7 @@
 name: 'AES Base'
 type: theme
 description: 'Base theme for AES sites'
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 base theme: ui_suite_bootstrap
 
 regions:
@@ -54,6 +54,5 @@ libraries-extend:
     - aesbase/form
 
 # Information added by Drupal.org packaging script on 2023-04-05
-version: '5.0.0-alpha6'
 project: 'ui_suite_bootstrap'
 datestamp: 1680707371
