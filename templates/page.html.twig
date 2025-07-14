@@ -105,7 +105,7 @@
     {% if not is_front %}
       <div class="row pt-10 pb-lg-0 pb-8 {{ node.label|lower|replace({' ':'-'}) }}-banner-background">
     {% else %}
-      <div class="row pt-10 pb-lg-0 pb-8 {{ page['#title']|lower}-banner-background">
+      <div class="row pt-10 pb-lg-0 pb-8 {{ page['#title']|lower }}-banner-background">
     {% endif %}
         {% if page.preface %}
 	        {% block preface %}
