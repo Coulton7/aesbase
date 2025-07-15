@@ -4183,12 +4183,29 @@ height:100%;
     z-index: -1;
   }
 
-    #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
+  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-color: #012e58;
   }
 
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-01.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -4617,6 +4634,23 @@ height:100%;
 
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-01.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5097,7 +5131,7 @@ height:100%;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-02.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5679,7 +5713,7 @@ height:100%;
   }
 
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-03.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6187,12 +6221,21 @@ height:100%;
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-04.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-04.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6612,10 +6655,6 @@ height:100%;
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-05.webp);
     background-repeat: repeat;
@@ -6628,6 +6667,19 @@ height:100%;
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-05.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
   
   .ps-xxl-6 {
@@ -7058,10 +7110,6 @@ height:100%;
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-06.webp);
     background-repeat: repeat;
@@ -7074,6 +7122,19 @@ height:100%;
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
+  }
+
+#carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/usRockford-Ordering-Background-06.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   .ps-xxxl-6 {
