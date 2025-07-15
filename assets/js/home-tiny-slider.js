@@ -165,10 +165,10 @@ document.addEventListener("DOMContentLoaded", function() {
             var info = localslider.getInfo(),
                 current = document.querySelector('.local-current'),
                 total = document.querySelector('.local-total');
-                activeSlide = info.displayIndex;
+                activeSlide = info.displayIndex + 2;
                 
                 total.textContent = info.slideCount;
-                current.textContent = info.displayIndex;
+                current.textContent = info.displayIndex + 2;
             }
 
         localCounter();
