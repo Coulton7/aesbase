@@ -1148,6 +1148,7 @@ document.addEventListener("DOMContentLoaded", function() {
         search.addWidgets([{
             init: function(options) {
                 if(!document.location.href.includes('lang[')){
+                    console.log('Language not in filter')
                     if(filterLang == "en")
                     {
                         options.helper.toggleRefinement('search_api_language', 'en');
