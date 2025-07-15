@@ -12,8 +12,6 @@ regions:
   secondary_nav: 'Secondary Nav'
   preface: 'Preface'
   banner_promo: 'Banner Promo'
-  wavelower: 'Wavelower'
-  preface_lower: 'Preface Lower'
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
