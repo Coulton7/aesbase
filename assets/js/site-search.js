@@ -1118,30 +1118,76 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             routing: {
-                stateMapping: {
-                    stateToRute(uiState) {
-                        const indexUiState = uiState['aesseal'];
-                        return {
-                            q: indexUiState.query,
-                            lang: indexUiState.refinementList && indexUiState.refinementList.lang,
-                            type: indexUiState.refinementList && indexUiState.refinementList.type,
-                            page: indexUiState.page
+                router: instantsearch.routers.history({
+
+                    createURL({ qsModule, routeState, location }) {
+                        const { origin, pathname, hash} = location;
+                        const queryParameters = {};
+
+                        if(routeState.q) {
+                            queryParameters.q = encodeURIComponent(routeState.q);
+                        }
+                        if(routeState.page !== 1){
+                            queryParameters.page = routeState.page;
+                        }
+                        if(routeState.type) {
+                            queryParameters.type = routeState.type.map(encodeURIComponent);
+                        }
+                        if(routeState.lang) {
+                            queryParameters.lang = routeState.lang.map(encodeURIComponent);
                         }
 
+                        const queryString = qsModule.stringify(queryParameters, {
+                            addQueryPrefix: true,
+                            arrayFormat: 'indices',
+                        });
+
+                        return `${origin}${pathname}${queryString}${hash}`;
                     },
-                    routeState(routeState) {
+
+                    parseUrl({ qsModule, location }) {
+                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                            location.search.slice(1)
+                        );
+                        const allType = Array.isArray(type)
+                            ? type
+                            : [type].filter(Boolean);
+                        const allLang = Array.isArray(lang)
+                            ? lang
+                            :[lang].filter(Boolean);
                         return {
+                            q: decodeURIComponent(q),
+                            page,
+                            type: allType.map(decodeURIComponent),
+                            lang: allLang.map(decodeURIComponent)
+                        };
+                        
+                    },
+                    writeDelay: 400,
+                }),
+                stateMapping: {
+                    stateToRoute(uiState){
+                        const indexUiState = uiState['aesseal'] || {};
+                        return{
+                            q: indexUiState.query,
+                            page:indexUiState.page,
+                            type: indexUiState.refinementList && indexUiState.refinementList.type,
+                            lang: indexUiState.refinementList && indexUiState.refinementList.search_api_language
+                        }
+                    },
+                    routeToState(routeState) {
+                        return{
                             ['aesseal']: {
                                 query: routeState.q,
+                                page:routeState.page,
                                 refinementList: {
-                                    lang: routeState.lang,
-                                    type: routeState.type
-                                },
-                                page: routeState.page
-                            }
-                        }
-                    }
-                }
+                                    type: routeState.type,
+                                    search_api_language: routeState.lang
+                                }
+                            },
+                        };
+                    },
+                },
             },
         });
 
