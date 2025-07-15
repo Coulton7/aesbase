@@ -1241,7 +1241,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clickAnalytics: true,
                 userToken: 'user-1',
                 hitsPerPage: 20,
-                attributesToSnippet: ['meta_description:80', 'summary:80'],
+                attributesToSnippet: ['description:80', 'summary:80'],
                 page: 0,
             }),
 
@@ -1331,7 +1331,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
@@ -1364,7 +1364,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
@@ -1397,7 +1397,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
@@ -1431,7 +1431,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
@@ -1465,7 +1465,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
@@ -1499,7 +1499,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
@@ -1533,7 +1533,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
@@ -1567,7 +1567,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
@@ -1601,7 +1601,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
@@ -1635,7 +1635,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
@@ -1954,7 +1954,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -2216,7 +2216,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -2479,7 +2479,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -2742,7 +2742,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -3064,7 +3064,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -3383,7 +3383,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -3705,7 +3705,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -4067,7 +4067,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -4429,7 +4429,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -4792,7 +4792,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['meta_description:80', 'body:80'],
+                    attributesToSnippet: ['description:80', 'body:80'],
                     page: 0,
                     filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
                 }),
@@ -5049,7 +5049,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clickAnalytics: true,
                 userToken: 'user-1',
                 hitsPerPage: 20,
-                attributesToSnippet: ['meta_description:80', 'body:80'],
+                attributesToSnippet: ['description:80', 'body:80'],
                 page: 0,
                 filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
             }),
@@ -5190,7 +5190,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                <p class=${data.meta_description ? '' : 'd-none'}>${data.meta_description}</p>
+                                <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
                             </div>`
@@ -5496,7 +5496,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clickAnalytics: true,
                 userToken: 'user-1',
                 hitsPerPage: 20,
-                attributesToSnippet: ['meta_description:80', 'body:80'],
+                attributesToSnippet: ['description:80', 'body:80'],
                 page: 0,
                 filters: '(type:article OR type:announcements)', 
             }),
