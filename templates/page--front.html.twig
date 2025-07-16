@@ -124,7 +124,7 @@
 
     {% if page.carousel %}
       {% block carousel %}
-        <div class="{% if page.carousel_control %} col-xl-9 col-lg-8 col-md-7 col-sm-12 col-12 mobile-col-padding carousel-col-placement {% else %} col-12 mobile-col-padding {% endif %}">
+        <div class="{% if page.carousel_control %}col-xl-9 col-lg-8 col-md-7 col-sm-12 col-12 mobile-col-padding carousel-col-placement {% else %}col-12 mobile-col-padding {% endif %}">
           {{ page.carousel }}
         </div>
      {% endblock %}
