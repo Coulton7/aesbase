@@ -11,6 +11,8 @@ regions:
   navigation_collapsible: 'Navigation (Collapsible)'
   secondary_nav: 'Secondary Nav'
   preface: 'Preface'
+  carousel_control: 'Carousel Control'
+  carousel: 'Carousel'
   banner_promo: 'Banner Promo'
   header: 'Top Bar'
   highlighted: 'Highlighted'
