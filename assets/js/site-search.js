@@ -1147,7 +1147,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         search.addWidgets([{
             init: function(options) {
-                if(!document.location.href.includes('lang[')){
+                if(!document.location.href.includes('lang%5B')){
                     console.log(document.location.href);
                     if(filterLang == "en")
                     {
