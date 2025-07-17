@@ -11,7 +11,20 @@ aes-card:
     dark-glass:
       label: Dark glass
       description: Use when the body needs a dark glass background on body
+  settings:
+    with_link:
+      type: "boolean"
+      label: "Add a link?"
+      description: "Check to allow the card to be a full link"
+      preview: true
+      allow_expose: true
+      allow_token: true
   fields:
+    link:
+      type: text
+      label: Link
+      description: Apply full link to the card
+      preview: https://example.com
     image:
       type: text
       label: Image

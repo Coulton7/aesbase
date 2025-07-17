@@ -1,3 +1,23 @@
+{% if with_link %}
+<a class="full-card text-decoration-none" href="{{ link }}">
+    <div class="card {{ variant }} shadow-sm rounded-bottom-5 h-100 overflow-hidden">
+        <div class="card-img-top rounded-top border-bottom">
+            {{ image }}
+        </div>
+        <div class="card-header">
+            {{ heading }}
+        </div>
+        <div class="card-body">
+            <p>{{ body }}</p>
+        </div>
+        <div class="card-footer">
+            {{ footer }}
+        </div>
+    </div>
+</a>
+
+{% else %}
+
 <div class="card {{ variant }} shadow-sm rounded-bottom-5 h-100 overflow-hidden">
     <div class="card-img-top rounded-top border-bottom">
         {{ image }}
@@ -12,3 +32,5 @@
         {{ footer }}
     </div>
 </div>
+
+{% endif %}
