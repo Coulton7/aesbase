@@ -4283,28 +4283,12 @@ height:100%;
     bottom: 0em;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/Rockford-careers-slide.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content:'';
-    z-index: -1;
-  }
-
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
     background-color: #012e58;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/carousel/sky-carousel.jpg);
     background-repeat: repeat;
     background-size: cover;
     background-position: 65%;
@@ -5164,6 +5148,7 @@ height:100%;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/carousel/sky-carousel.jpg);
     background-repeat: repeat;
     background-size: cover;
     background-position: 65%;
@@ -5746,6 +5731,7 @@ height:100%;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/carousel/sky-carousel.jpg);
     background-repeat: repeat;
     background-size: cover;
     background-position: 65%;
