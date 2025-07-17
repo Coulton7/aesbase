@@ -1195,7 +1195,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clickAnalytics: true,
                 userToken: 'user-1',
                 hitsPerPage: 20,
-                attributesToSnippet: ['description:120', 'summary:80'],
+                attributesToSnippet: ['description:80', 'summary:80'],
                 page: 0,
             }),
 
@@ -1285,7 +1285,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${components.Snippet({attribute: 'description', data})}</p>
+                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
