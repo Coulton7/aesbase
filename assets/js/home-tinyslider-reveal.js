@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".pillar-slider").classList.remove('d-none');
             document.querySelector("#pillar-controls").classList.remove('d-none');
             document.querySelector(".latest-news-slider .tns-controls").classList.add('d-none');
-            document.querySelector('.pillar-btns').classList.add('visible');
-            document.querySelector('.pillar-btns').classList.remove('invisible');
         })
 
         document.querySelector("#newsBtn").addEventListener("click",
@@ -28,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".latest-news-slider").classList.remove('d-none');
             document.querySelector("#pillar-controls").classList.add('d-none');
             document.querySelector(".latest-news-slider .tns-controls").classList.remove('d-none');
-            document.querySelector('.pillar-btns').classList.add('invisible');
-            document.querySelector('.pillar-btns').classList.remove('visible');
         })
     }
 });
