@@ -675,29 +675,6 @@ a.disabled {
   height: 100%;
 }
 
-.crsl-cntrl {
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  padding: 0;
-  line-height: 1;
-}
-
-.carousel-caption {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: relative;
-  text-align: left;
-  text-shadow: none;
-  display: inline-block;
-  padding-top: 0;
-}
-
 #treewalkCarousel .carousel-item img, .mining-promo {
   height: 70vh; 
   object-fit: cover; 
@@ -3514,6 +3491,29 @@ ul.about-us-cats a {
 .dark-glass-background, .dark-glass .card-body, .dark-glass .card-header, .dark-glass .card-footer {
   background-color: rgba(0,0,0,0.8);
   height: 100%;
+}
+
+.crsl-cntrl {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+  display: inline-block;
+  padding-top: 0;
 }
 
 .bg-white-glass {
