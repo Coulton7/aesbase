@@ -75,18 +75,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
         })
-
-        var info = pillarslider.getInfo(),
-            pillarCurrent = document.querySelector('.pillar-current'),
-            pillarTotal = document.querySelector('.pillar-total');
-            activeSlide = info.displayIndex;
-            
-            pillarTotal.textContent = info.slideCount;
-            pillarCurrent.textContent = info.displayIndex;
         
         pillarslider.events.on('transitionEnd', function(info) {
-            activeSlide = info.displayIndex;
-            pillarCurrent.textContent = info.displayIndex;
         
             if (activeSlide >= 1 && activeSlide <= 5) {
                 document.getElementById('esg-icon').classList.add('active');
