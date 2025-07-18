@@ -911,6 +911,10 @@ blockquote::after {
   width: 10px;
 }
 
+.rtl-promo {
+  transform: scaleX(-1);
+}
+
 .promo-btn-primary {
   position: absolute;
   bottom: 5rem;
