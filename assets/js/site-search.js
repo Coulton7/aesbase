@@ -1135,7 +1135,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clickAnalytics: true,
                 userToken: 'user-1',
                 hitsPerPage: 20,
-                attributesToSnippet: ['description:80', 'summary:80'],
+                attributesToSnippet: ['description:120', 'summary:120'],
                 page: 0,
             }),
 
