@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 clearButton.textContent = 'Rifiniture chiare'
             } else if(filterLang == 'pl'){
                 clearButton.textContent = 'Wyraźne udoskonalenia';
-            } else if(filterLang == 'ru'){
-                clearButton.textContent = 'Четкие уточнения';
             } else if(filterLang == 'tr'){
                 clearButton.textContent = 'Açık İfadeler';
             } else if(filterLang == 'zh-hans'){
@@ -147,8 +145,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `${nbHits} risultati`;
             } else if (filterLang == 'pl') {
                 count += `${nbHits} wyniki`;
-            } else if (filterLang == 'ru') {
-                count += `${nbHits} результаты`;
             } else if (filterLang == 'tr') {
                 count += `${nbHits} sonuçlar`;
             } else if (filterLang == 'zh-hans') {
@@ -185,8 +181,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `1 risultato`;
             } else if (filterLang == 'pl') {
                 count += `1 wynik`;
-            } else if (filterLang == 'ru') {
-                count += `1 результат`;
             } else if (filterLang == 'tr') {
                 count += `1 sonuç`;
             } else if (filterLang == 'zh-hans') {
@@ -223,8 +217,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `nessun risultato`;
             } else if (filterLang == 'pl') {
                 count += `brak wyników`;
-            } else if (filterLang == 'ru') {
-                count += `нет результатов`;
             } else if (filterLang == 'tr') {
                 count += `sonuç yok`;
             } else if (filterLang == 'zh-hans') {
@@ -269,9 +261,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(filterLang == 'pl') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} znaleziony w ${processingTimeMS}ms</p>`
-        } else if(filterLang == 'ru') {
-            widgetParams.container.innerHTML =
-            `<p class="text-white">${count} найденный в ${processingTimeMS}ms</p>`
         } else if(filterLang == 'tr') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} içinde bulundu ${processingTimeMS}ms</p>`
@@ -510,33 +499,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 'sealsupportsystems': 'Systemy wspomagające uszczelnienia',
                 'technicaldrawings': 'Rysunek techniczny',
                 'video': 'Filmy',
-                'whitepaper': 'Whitepaper',
-            }
-        }
-        else if (filterLang == "ru") {
-            typeMapping = {
-                '3dmodels': '3D-модели',
-                'academy': 'Академия',
-                'announcements': 'Объявления',
-                'apiplans': 'API Plans',
-                'article': 'Статья',
-                'bearingprotection': 'Защита подшипников',
-                'cartridgemechanicalseals': 'Картриджные Механические Уплотнения',
-                'casestudies': 'Примеры из практики',
-                'componentseals': 'Компонентные уплотнения',
-                'corpbrochure': 'Корпоративная брошюра',
-                'elastomers': 'Эластомеры',
-                'gasseals': 'Газовое уплотнение',
-                'glandpacking': 'Упаковка',
-                'industryguides': 'Отраслевые руководства',
-                'locations': 'Места',
-                'page': 'веб-страница',
-                'policies': 'Политика',
-                'productbrochure': 'Брошюра о продукции',
-                'productcertificates': 'Сертификаты на продукцию',
-                'sealsupportsystems': 'Системы обеспечения уплотнений',
-                'technicaldrawings': 'Технический чертеж',
-                'video': 'Видеоролики',
                 'whitepaper': 'Whitepaper',
             }
         }
@@ -842,16 +804,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 'gasseals': 'Gas Seals Category',
                 'componentseals': 'Component Seals Category',
             }
-        } else if (filterLang == "ru") {
-            vidMapping = {
-                'industry': 'промышленность',
-                'glandpacking': 'Gland Packing Category',
-                'sealsupportsystems': 'Seal Support Systems Category',
-                'bearingprotectioncategories': 'Bearing Protection Category',
-                'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
-                'gasseals': 'Gas Seals Category',
-                'componentseals': 'Component Seals Category',
-            }
         } else if (filterLang == "tr") {
             vidMapping = {
                 'industry': 'Sanayi',
@@ -898,8 +850,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Selezionare la lingua</h4>`
                     } else if (filterLang == 'pl'){
                         return html `<h4>Wybierz język</h4>`
-                    } else if (filterLang == 'ru'){
-                        return html `<h4>Выберите язык</h4>`
                     } else if (filterLang == 'zh-hans'){
                         return html `<h4>选择语言</h4>`
                     } else if (filterLang == 'ar'){
@@ -947,8 +897,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filtrare per tipo di contenuto</h4>`
                     } else if (filterLang == 'pl'){
                         return html `<h4>Filtruj według typu zawartości</h4>`
-                    } else if (filterLang == 'ru'){
-                        return html `<h4>Фильтр по типу содержимого</h4>`
                     } else if (filterLang == 'zh-hans'){
                         return html `<h4>按内容类型筛选</h4>`
                     } else if (filterLang == 'ar'){
@@ -996,8 +944,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
                     } else if (filterLang == 'pl'){
                         return html `<h4>Filtrare il sito globale per tipo di risorsa</h4>`
-                    } else if (filterLang == 'ru'){
-                        return html `<h4>Фильтр глобального сайта по типу ресурса</h4>`
                     } else if (filterLang == 'zh-hans'){
                         return html `<h4>按资源类型筛选全球网站</h4>`
                     } else if (filterLang == 'ar'){
@@ -1046,8 +992,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Selezionare la lingua</h4>`
                     } else if (filterLang == 'pl'){
                         return html `<h4>Wybierz język</h4>`
-                    } else if (filterLang == 'ru'){
-                        return html `<h4>Выберите язык</h4>`
                     } else if (filterLang == 'zh-hans'){
                         return html `<h4>选择语言</h4>`
                     } else if (filterLang == 'ar'){
@@ -1173,10 +1117,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     else if(filterLang == "pl")
                     {
                         options.helper.toggleRefinement('search_api_language', 'pl');
-                    }
-                    else if(filterLang == "ru")
-                    {
-                        options.helper.toggleRefinement('search_api_language', 'ru');
                     }
                     else if(filterLang == "tr")
                     {
@@ -1510,40 +1450,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                     </div>
                                 </div>
                             </div>`
-                        } else if(filterLang == 'ru'){
-                            return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
-                                <div class="row">
-                                    <div class="col-md-9 col-8 d-flex flex-column">
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
-                                        <p class=${data.description ? '' : 'd-none'}>${data.description}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Читать далее</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Читать далее</a>
-                                        <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Читать далее</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Читать далее</a>
-                                    </div>
-                                    <div class="col-md-3 col-4">
-                                        <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.video_thumbnail_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.video_thumbnail_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.og_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.og_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.about_us_service_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.about_us_service_image_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.bearing_product_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.bearing_product_preview_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.comp_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.comp_seal_preview_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.elastomers_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.elastomers_image_uri}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.gas_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gas_seal_preview_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
-                                        <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
-                                    </div>
-                                </div>
-                            </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
@@ -1671,14 +1577,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p>Przepraszamy, nie mogliśmy znaleźć wyniku wyszukiwania. Spróbuj wyszukać ponownie, sprawdzając wyszukiwanie pod kątem błędów ortograficznych i/lub zmniejszając liczbę użytych słów kluczowych. Możesz także spróbować użyć szerszej frazy wyszukiwania.</p>
                             </div>
                             <p class="h3">Szukasz numeru części lub numeru seryjnego?</p>`;
-                        }
-                        else if (filterLang == 'ru') {
-                            document.querySelector('.parts-form').style.display = 'block';
-                            document.querySelector('.ais-Pagination').style.display = 'none';
-                            return html`<div class="no-result"><p class="h3">Не найдено ни одного подходящего результата ${results.query}</p>
-                            <p>К сожалению, мы не нашли результатов для вашего поиска. Попробуйте поискать еще раз, проверив поиск на наличие орфографических ошибок и/или сократив количество используемых ключевых слов. Вы также можете попробовать использовать более широкую поисковую фразу.</p>
-                            </div>
-                            <p class="h3">Вы ищете номер детали или серийный номер?</p>`;
                         }
                         else if (filterLang == 'tr') {
                             document.querySelector('.parts-form').style.display = 'block';
@@ -4983,10 +4881,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 {
                     options.helper.toggleRefinement('search_api_language', 'pl');
                 }
-                else if(filterLang == "ru")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'ru');
-                }
                 else if(filterLang == "tr")
                 {
                     options.helper.toggleRefinement('search_api_language', 'tr');
@@ -5429,10 +5323,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 else if(filterLang == "pl")
                 {
                     options.helper.toggleRefinement('search_api_language', 'pl');
-                }
-                else if(filterLang == "ru")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'ru');
                 }
                 else if(filterLang == "tr")
                 {
