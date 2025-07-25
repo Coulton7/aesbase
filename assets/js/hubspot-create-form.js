@@ -15,7 +15,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form blue-background",
                 submitButtonClass: "btn btn-danger"
             });
-        } else if(document.querySelector("#modal-form")){
+        } else if(document.querySelector("#error-form")){
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "2248916",
+                formId: "40024060-c39f-4bed-9b37-a5fb65b101ea",
+                target: "#error-form",
+                css: "",
+                cssClass: "hs-visible-form blue-background",
+                submitButtonClass: "btn btn-danger"
+            });
+        }else if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
