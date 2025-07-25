@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
                 target: "#contact-form",
                 css: "",
-                cssClass: "hs-visible-form blue-background",
+                cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
         } else if(document.querySelector("#error-form")){
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "40024060-c39f-4bed-9b37-a5fb65b101ea",
                 target: "#error-form",
                 css: "",
-                cssClass: "hs-visible-form blue-background",
+                cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
         }else if(document.querySelector("#modal-form")){
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "5ff19115-a5de-4318-bdf7-9f7663f72cf5",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "213ce03e-5c81-4526-9bcf-68a231dac51c",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -428,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "0a900227-78e9-4643-b15a-66ccf3444f5b",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -504,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "432c51f5-77b7-454f-a903-e189054977e8",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -580,7 +580,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "29cb63ef-125d-4198-8d72-3ed292d5c6da",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -656,7 +656,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "f05d71b2-f8e5-43b9-a2a0-8743497cb31e",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -732,7 +732,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "97f5826d-aff9-4e1a-ac19-9b7bc52050f4",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -808,7 +808,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "dc8e5c99-a60f-4a6a-b42c-64b41d307081",
                 target: "#contact-form",
                 css:"",
-                cssClass:"hs-visible-form blue-background",
+                cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
         } else if(document.querySelector("#modal-form")){
@@ -884,7 +884,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
                 target: "#contact-form",
                 css: "",
-                cssClass: "hs-visible-form blue-background",
+                cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
         } else if(document.querySelector("#modal-form")){
@@ -925,7 +925,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
                 target: "#contact-form",
                 css: "",
-                cssClass: "hs-visible-form blue-background",
+                cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
         } else if(document.querySelector("#modal-form")){
@@ -1011,7 +1011,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
                 target: "#contact-form",
                 css: "",
-                cssClass: "hs-visible-form blue-background",
+                cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
         } else if(document.querySelector("#modal-form")){
