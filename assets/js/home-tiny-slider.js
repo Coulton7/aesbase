@@ -75,8 +75,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
         })
-        
+
+        var info = pillarslider.getInfo(),
+            activeSlide = info.displayIndex;
+            
         pillarslider.events.on('transitionEnd', function(info) {
+            activeSlide = info.displayIndex;        
         
             if (activeSlide >= 1 && activeSlide <= 5) {
                 document.getElementById('esg-icon').classList.add('active');
