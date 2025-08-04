@@ -815,6 +815,7 @@ blockquote::after {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .cart-seals-background {
@@ -822,6 +823,7 @@ blockquote::after {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .seal-support-background {
@@ -829,6 +831,7 @@ blockquote::after {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .labtecta-background {
@@ -836,6 +839,7 @@ blockquote::after {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .comp-seals-background {
@@ -843,6 +847,7 @@ blockquote::after {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .gland-packing-background {
@@ -850,6 +855,7 @@ blockquote::after {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
 .enquiry-icon {
