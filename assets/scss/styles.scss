@@ -3882,15 +3882,15 @@ ul.about-us-cats a {
   height: 283px;
   position: absolute;
   top:0;
-  background-image: url('https://static.aesseal.com/content-image/corp/LIT-DE-L-CORP_Page_01.jpg');
+  background-image: url('https://static.aesseal.com/content-image/corp/CORP_cover.jpg');
   background-size:100%;
   background-repeat:no-repeat;
   border-radius: 20px;
   overflow:hidden;
 }
 
-.corp-card:lang(en) {
-  background-image: url('https://static.aesseal.com/content-image/corp/CORP_cover.jpg');
+.corp-card:lang(de) {
+  background-image: url('https://static.aesseal.com/content-image/corp/LIT-DE-L-CORP_Page_01.jpg');
 }
 
 .bp-card{
@@ -3938,15 +3938,16 @@ ul.about-us-cats a {
   height: 283px;
   position: absolute;
   top:0;
-  background-image: url('https://static.aesseal.com/content-image/range/LIT-DE-L-S-SPRING_Page_001.jpg');
+  background-image: url('https://static.aesseal.com/content-image/range/LIT-UK-L-S-SPRING_Page_001.jpg');
   background-size:100%;
   background-repeat:no-repeat;
   border-radius: 20px;
   overflow:hidden;
 }
 
-.comp-card:lang(en) {
-  background-image: url('https://static.aesseal.com/content-image/range/LIT-UK-L-S-SPRING_Page_001.jpg');
+.comp-card:lang(de) {
+  
+  background-image: url('https://static.aesseal.com/content-image/range/LIT-DE-L-S-SPRING_Page_001.jpg');
 }
 
 .corp-card a{
