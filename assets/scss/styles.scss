@@ -3846,7 +3846,7 @@ ul.about-us-cats a {
   bottom: -4rem;
 }
 
-.main {
+.cards-container {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -3855,7 +3855,7 @@ ul.about-us-cats a {
   height: 310px;
 }
 
-.container-cards{
+.cards{
   display: block;
   width: 200px;
   height: 310px;
@@ -3868,11 +3868,15 @@ ul.about-us-cats a {
   transition: height 0.4s;
 }
 
-.container-cards:hover{
+.cards:hover {
+  z-index: 1000;
+}
+
+.cards:hover{
   height:350px;
 }
 
-.cards{
+.corp-card{
   display: block;
   width: 200px;
   height: 283px;
@@ -3885,7 +3889,7 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
-.cards1{
+.bp-card{
   display: block;
   width: 200px;
   height: 283px;
@@ -3898,7 +3902,7 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
-.cards2{
+.cart-card{
   display: block;
   width: 200px;
   height: 283px;
@@ -3911,7 +3915,7 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
-.cards3{
+.sys-card{
   display: block;
   width: 200px;
   height: 283px;
@@ -3924,7 +3928,7 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
-.cards4{
+.comp-card{
   display: block;
   width: 200px;
   height: 283px;
@@ -3937,9 +3941,40 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
-.container-cards:hover {
-  z-index: 1000;
+.corp-card a{
+display:block;
+width:100%;
+height:100%;
 }
+
+.bp-card a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+.cart-card a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+.sys-card a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+.comp-card a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+#corp-card{ animation-name: card1_ani; }
+#bp-card{ animation-name: card2_ani; }
+#container4{ animation-name: card4_ani; }
+#container5{ animation-name: card5_ani; }
 
 #slider-overlay{
   top: 15%;
@@ -3953,41 +3988,6 @@ ul.about-us-cats a {
   top: 25%;
   left: 20%;
 }
-
-.cards a{
-display:block;
-width:100%;
-height:100%;
-}
-
-.cards1 a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.cards2 a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.cards3 a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.cards4 a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-#container1{ animation-name: card1_ani; }
-#container2{ animation-name: card2_ani; }
-#container4{ animation-name: card4_ani; }
-#container5{ animation-name: card5_ani; }
 
 #training {
   background-image: url('https://static.aesseal.com/content-image/training/aes-advance-laptop.jpg');
