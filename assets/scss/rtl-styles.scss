@@ -431,12 +431,13 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   right: 11em;
   z-index: 1032;
   position: relative;
-  transform: scaleX(-1)!important;
+  transform: translateY(49%) scaleX(-1)!important;
   left: 0;
 }
 
 .path-frontpage .uppercurve {
   right: 12em;
+  transform: translateY(0) scaleX(-1)!important;
 }
 
 .wavelower{
