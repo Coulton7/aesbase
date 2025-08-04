@@ -3925,11 +3925,15 @@ ul.about-us-cats a {
   height: 283px;
   position: absolute;
   top:0;
-  background-image: url('https://static.aesseal.com/content-image/brochure/Systems_cover_DE.jpg');
+  background-image: url('https://static.aesseal.com/content-image/brochure/Systems_cover.jpg');
   background-size:100%;
   background-repeat:no-repeat;
   border-radius: 20px;
   overflow:hidden;
+}
+
+.sys-card:lang(de) {
+  background-image: url('https://static.aesseal.com/content-image/brochure/Systems_cover_DE.jpg');
 }
 
 .comp-card{
