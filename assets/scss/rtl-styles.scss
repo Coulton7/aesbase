@@ -411,6 +411,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   opacity: 1;
 }
 
+.path-frontpage .wavelogo{
+  border-bottom-left-radius: 0!important;
+}
+
 
 .textlogo {
   background: transparent;
@@ -427,7 +431,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   right: 11em;
   z-index: 1032;
   position: relative;
-  transform: translateY(49%) scaleX(-1)!important;
+  transform: scaleX(-1)!important;
   left: 0;
 }
 
