@@ -466,7 +466,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 .national-overlay {
   left: 0;
-  right: auto;
+  right: auto!important;
   float: left;
 }
 
