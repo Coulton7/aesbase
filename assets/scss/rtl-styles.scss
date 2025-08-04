@@ -435,6 +435,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
   left: 0;
 }
 
+.path-frontpage .uppercurve {
+  right: 12em;
+}
+
 .wavelower{
   height: 8em;
   transform: scaleX(-1);
