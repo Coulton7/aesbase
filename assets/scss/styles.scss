@@ -3194,7 +3194,7 @@ ul.about-us-cats a {
 
 .hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p, .hsfc-FieldLabel{
   background-color: #000;
-  color: #ffffff;
+  color: #ffffff!important;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0 15px;
@@ -3202,8 +3202,8 @@ ul.about-us-cats a {
 }
 
 .hsfc-Button {
-  background-color: $primary;
-  color: $white;
+  background-color: $primary!important;
+  color: $white!important;
   border-radius: 15px;
 }
 
