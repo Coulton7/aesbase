@@ -27,12 +27,6 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import "bootstrap";
 /* custom.scss */
 
-:root{
-  --hsf-global__color:$white;
-  --hsf-button__background-color: $primary;
-  --hsf-richtext__color: $white;
-}
-
 html{
   scroll-behavior: smooth;
 }
@@ -3193,13 +3187,19 @@ ul.about-us-cats a {
   list-style: none;
 }
 
-.hs-overlay-form .hs-input:not([type="file"]) {
+.hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p{
   background-color: #000;
   color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0 15px;
   width: 100%;
+}
+
+.hsfc-Button {
+  background-color: $primary;
+  color: $white;
+  border-radius: 15px;
 }
 
 .hs-overlay-form.hs-custom-style fieldset {
