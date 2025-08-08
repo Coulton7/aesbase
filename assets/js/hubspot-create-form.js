@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }else if(document.querySelector("#us-training-form")){
             hbspt.forms.create({
+                region: "na1",
                 portalId: "2248916",
                 formId: "485ab9dd-47f5-46ee-b2a8-5fa03646678c",
                 target: "#us-training-form",
