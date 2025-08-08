@@ -3187,7 +3187,7 @@ ul.about-us-cats a {
   list-style: none;
 }
 
-.hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p{
+.hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p, .hsfc-FieldLabel{
   background-color: #000;
   color: #ffffff;
   border: 1px solid #ccc;
