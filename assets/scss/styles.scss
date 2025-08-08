@@ -29,6 +29,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 :root {
   --hsf-global__color: #fff;
+  --hsf-button__background-color: #002a5a;
 }
 
 html{
