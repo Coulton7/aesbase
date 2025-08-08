@@ -27,6 +27,11 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import "bootstrap";
 /* custom.scss */
 
+:root{
+  --hsf-global__color:#ffffff;
+  --hsf-button__background-color:#002a5c
+}
+
 html{
   scroll-behavior: smooth;
 }
