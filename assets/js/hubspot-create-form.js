@@ -62,7 +62,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
-        } else if(document.querySelector("#training-form-ae")){
+        }else if(document.querySelector("#us-training-form")){
+            hbspt.forms.create({
+                portalId: "2248916",
+                formId: "485ab9dd-47f5-46ee-b2a8-5fa03646678c",
+                target: "#us-training-form",
+                css: "",
+                cssClass:"hs-overlay-form",
+                submitButtonClass:"btn btn-primary hs-button",
+            });
+        }else if(document.querySelector("#training-form-ae")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
