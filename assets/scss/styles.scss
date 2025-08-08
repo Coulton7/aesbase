@@ -28,8 +28,9 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 /* custom.scss */
 
 :root{
-  --hsf-global__color:#ffffff;
-  --hsf-button__background-color:#002a5c
+  --hsf-global__color:$white;
+  --hsf-button__background-color: $primary;
+  --hsf-richtext__color: $white;
 }
 
 html{
