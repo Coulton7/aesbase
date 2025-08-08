@@ -3390,6 +3390,13 @@ ul.about-us-cats a {
   align-items: center;
 }
 
+.secondary-subtle-iceberg-white {
+  background: linear-gradient(to bottom, $secondary-subtle 0%, $secondary-subtle 50%, #fbfbfb 50%, #fbfbfb 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .secondary-iceberg-danger {
   background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $danger 50%, $danger 100%);
   display: flex;
