@@ -3193,7 +3193,7 @@ ul.about-us-cats a {
   list-style: none;
 }
 
-.hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p, .hsfc-FieldLabel, .hsfc-RichText{
+.hs-overlay-form .hs-input:not([type="file"]), .hsfc-RichText p, .hsfc-FieldLabel,.us-training-form .hsfc-RichText{
   background-color: #000;
   color: #ffffff!important;
   border: 1px solid #ccc;
