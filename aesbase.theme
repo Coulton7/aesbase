@@ -19,9 +19,6 @@ function aesbase_preprocess_node(&$variables) {
   if ($node->getType() ==  'bearing_protection' || 'cartridge_mechanical_seals' || 'component_seals' || 'elastomers' || 'gas_seals' || 'gland_packing' || 'seal_support_systems') {
     $variables['#attached']['library'][] = 'aesbase/prod-lib';
   }
-  if ($node->getType() == 'video') {
-    $variables['#attached']['library'][] = 'aesbase/video-lib';
-  }
 }
 
 function aesbase_page_attachments_alter(&$page) {
