@@ -64,6 +64,10 @@ prod-lib:
   js:
     assets/js/prodImgModal.js: {}
 
+video-lib:
+  js:
+    assets/js/video-form-fill.js: {}
+
 svg-map:
   js:
     assets/js/svg-map-click.js: {}
