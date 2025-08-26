@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.getElementById("video-form-fill")) {
+        } else if (document.querySelector("#video-form-fill")) {
                 console.log("Video-form is here!!")
                 document.querySelector('.video-thumbnail').style.display = 'none';
                 if (document.querySelector('.resource-request').innerHTML.length > 0) {
