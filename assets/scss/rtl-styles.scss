@@ -1411,6 +1411,31 @@ ul.about-us-cats a {
   justify-content: center;
 }
 
+.media-carousel-block .carousel {
+  direction: rtl;
+}
+
+.media-carousel-block .carousel-item {
+  float: right !important;
+  margin-right: -100%;
+  margin-left: 0;
+  transform: translateX(100%); 
+}
+
+/* Fix counter positioning */
+.slider-info .counter {
+  float: left !important;
+}
+.media-carousel-block .controls {
+  left: 1rem;
+  right: auto;
+}
+
+.media-carousel-block .prev {
+  left: auto !important;
+  right: 4rem !important;
+}
+
 @media screen and (min-width: 576px) {
   .offset-sm-0 {
     margin-right: 0;
