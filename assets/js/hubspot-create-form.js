@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (document.querySelector("#video-form")) {
+                console.log("Video-form is here!!")
                 document.querySelector('.video-thumbnail').style.display = 'none';
                 if (document.querySelector('.resource-request').innerHTML.length > 0) {
                     document.querySelector('.video-stream').style.display='none';
