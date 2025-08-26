@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  document.querySelector('.video-thumbnail').style.display = 'none';
   if (document.querySelector("#video-form-fill")) {
-    console.log("Video-form is here!!")
-    document.querySelector('.video-thumbnail').style.display = 'none';
     if (document.querySelector('.resource-request').innerHTML.length > 0) {
         document.querySelector('.video-stream').style.display='none';
         document.querySelector('.video-thumbnail').style.display='block';
