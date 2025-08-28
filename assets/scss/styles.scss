@@ -54,7 +54,7 @@ strong, b {
   font-weight: 700;
 }
 
-#toolbar-administration {
+#toolbar-administration, .gin-secondary-toolbar {
   position: fixed;
   z-index: 1033;
 }
@@ -69,17 +69,17 @@ body.toolbar-fixed {
 }
 
 body.toolbar-tray-open {
-  padding-top: 79px !important;
+  padding-top: 60px !important;
 }
 
 .toolbar-tray-open .fixed-top,
 .toolbar-tray-open .textlogo,
 .toolbar-tray-open .navbar-flag {
-  padding-top: 79px !important;
+  padding-top: 60px !important;
 }
 
 .toolbar-tray-open .overlay-btn {
-  padding-top: calc(79px + 0.95em);
+  padding-top: calc(60px + 0.95em);
 }
 
 .print-media {
