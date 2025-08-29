@@ -5065,6 +5065,10 @@ height:100%;
     padding: 0.95em 0.95em;
   }
 
+  .navbar-nav .nav-item:nth-child(7), .navbar-nav .nav-item:nth-child(6), .navbar-nav .nav-item:nth-child(5) {
+    display: block;
+  }
+
   .socialmedia ul {
     top: 15%;
     height: 100%;
