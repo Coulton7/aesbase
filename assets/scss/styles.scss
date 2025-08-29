@@ -4299,6 +4299,11 @@ height:100%;
 }
 
 @media screen and (max-width: 767px) {
+
+  html, body, .dialog-off-canvas-main-canvas {
+    overflow-x: hidden;
+  }
+
   .textlogo {
     top: 0.5em;
   }
