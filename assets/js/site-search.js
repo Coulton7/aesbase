@@ -1218,13 +1218,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html, components }){
                         if(filterLang == 'en'){
-                            if(partsForm) {
-                                if(partsForm.style.display === 'block'){
-                                    partsForm.style.display = 'none';
+                            if(document.querySelector('#parts-form')) {
+                                if(document.querySelector('#parts-form').style.display === 'block'){
+                                    document.querySelector('#parts-form').style.display = 'none';
                                 }
-                            } else if (searchPartsForm) {
-                                if(searchPartsForm.style.display === 'block'){
-                                    searchPartsForm.style.display = 'none';
+                            } else if (document.querySelector('#search-parts-form')) {
+                                if(document.querySelector('#search-parts-form').style.display === 'block'){
+                                    document.querySelector('#search-parts-form').style.display = 'none';
                                 }
                             }
                             if(document.querySelector('.ais-Pagination').style.display === 'none') {
@@ -1538,13 +1538,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     empty(results, { html }){
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
-                            if(partsForm) {
-                                if(partsForm.style.display === 'none'){
-                                    partsForm.style.display = 'block';
+                            if(document.querySelector('#parts-form')){ 
+                                if(document.querySelector('#parts-form').style.display === 'none'){
+                                    document.querySelector('#parts-form').style.display = 'block';
                                 }
-                            } else if (searchPartsForm) {
-                                if(searchPartsForm.style.display === 'none'){
-                                    searchPartsForm.style.display = 'block';
+                            } else if (document.querySelector('#search-parts-form')) {
+                                if(document.querySelector('#search-parts-form').style.display === 'none'){
+                                    document.querySelector('#search-parts-form').style.display = 'block';
                                 }
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
