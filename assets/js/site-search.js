@@ -1215,18 +1215,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html, components }){
                         if(filterLang == 'en'){
-                            if(document.querySelector('#parts-form')) {
-                                if(document.querySelector('#parts-form').style.display === 'block'){
-                                    document.querySelector('#parts-form').style.display = 'none';
-                                }
-                            } else if (document.querySelector('#search-parts-form')) {
-                                if(document.querySelector('#search-parts-form').style.display === 'block'){
-                                    document.querySelector('#search-parts-form').style.display = 'none';
-                                }
-                            }
-                            if(document.querySelector('.ais-Pagination').style.display === 'none') {
-                                document.querySelector('.ais-Pagination').style.display = 'block';
-                            }
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
