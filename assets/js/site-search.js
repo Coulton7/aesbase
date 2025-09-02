@@ -1542,13 +1542,13 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(filterLang == 'en'){
                             if(partsForm) {
                                 if(partsForm.classList.contains('d-block')){
-                                    partsForm.classList.add('d-none');
-                                    partsForm.classList.remove('d-block');
+                                    partsForm.classList.add('d-block');
+                                    partsForm.classList.remove('d-none');
                                 }
                             } else if (searchPartsForm) {
                                 if(searchPartsForm.classList.contains('d-block')){
-                                    searchPartsForm.classList.add('d-none');
-                                    searchPartsForm.classList.remove('d-block');
+                                    searchPartsForm.classList.add('d-block');
+                                    searchPartsForm.classList.remove('d-none');
                                 }
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
