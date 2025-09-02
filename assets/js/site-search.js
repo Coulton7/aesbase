@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let toriSearch = document.getElementById('jaHits');
     let articleSearch = document.getElementById('newsHits');
 
+    var partsForm = document.getElementById('parts-form');
+    var searchPartsForm = document.getElementById('search-parts-form');
+
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
     const { connectStats } = instantsearch.connectors;
@@ -1215,6 +1218,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html, components }){
                         if(filterLang == 'en'){
+                            if(partsForm) {
+                                if(partsForm.classList.contains('d-block')){
+                                    partsForm.classList.add('d-none');
+                                    partsForm.classList.remove('d-block');
+                                }
+                            } else if (searchPartsForm) {
+                                if(searchPartsForm.classList.contains('d-block')){
+                                    searchPartsForm.classList.add('d-none');
+                                    searchPartsForm.classList.remove('d-block');
+                                }
+                            }
+                            if(document.querySelector('.ais-Pagination').style.display === 'none') {
+                                document.querySelector('.ais-Pagination').style.display = 'block';
+                            }
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1523,10 +1540,16 @@ document.addEventListener("DOMContentLoaded", function() {
                     empty(results, { html }){
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
-                            if(document.querySelector('#parts-form')){
-                                document.querySelector('#parts-form').style.display = 'block';
-                            } else if (document.querySelector('#search-parts-form')) {
-                                document.querySelector('#search-parts-form').style.display = 'block';
+                            if(partsForm) {
+                                if(partsForm.classList.contains('d-block')){
+                                    partsForm.classList.add('d-none');
+                                    partsForm.classList.remove('d-block');
+                                }
+                            } else if (searchPartsForm) {
+                                if(searchPartsForm.classList.contains('d-block')){
+                                    searchPartsForm.classList.add('d-none');
+                                    searchPartsForm.classList.remove('d-block');
+                                }
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
