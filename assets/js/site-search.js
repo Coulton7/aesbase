@@ -1524,13 +1524,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
                             if(document.querySelector('#parts-form')){ 
-                                if(document.querySelector('#parts-form').style.display === 'none'){
-                                    document.querySelector('#parts-form').style.display = 'block';
-                                }
+                                document.querySelector('#parts-form').style.display = 'block';
                             } else if (document.querySelector('#search-parts-form')) {
-                                if(document.querySelector('#search-parts-form').style.display === 'none'){
-                                    document.querySelector('#search-parts-form').style.display = 'block';
-                                }
+                                document.querySelector('#search-parts-form').style.display = 'block';
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
