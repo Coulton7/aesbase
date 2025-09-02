@@ -1524,9 +1524,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
                             if(document.querySelector('#parts-form')){ 
-                                document.querySelector('#parts-form').style.display = 'block';
+                                document.querySelector('#parts-form').classList.add('d-block');
                             } else if (document.querySelector('#search-parts-form')) {
-                                document.querySelector('#search-parts-form').style.display = 'block';
+                                document.querySelector('#search-parts-form').classList.add('d-block');
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
