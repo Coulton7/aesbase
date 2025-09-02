@@ -18,6 +18,31 @@ document.addEventListener("DOMContentLoaded", function() {
     let toriSearch = document.getElementById('jaHits');
     let articleSearch = document.getElementById('newsHits');
 
+    function revealForm() {
+        if(document.querySelector('#parts-form')){ 
+            document.querySelector('#parts-form').classList.add('d-block');
+        } else if (document.querySelector('#search-parts-form')) {
+            document.querySelector('#search-parts-form').classList.add('d-block');
+        }
+        
+        document.querySelector('.ais-Pagination').classList.add('d-none');
+    }
+
+    function hideForm() {
+        if(document.querySelector('#parts-form')){ 
+            if(document.querySelector('#parts-form').classList.contains('d-block')){
+                document.querySelector('#parts-form').classList.remove('d-block');
+            }
+        } else if (document.querySelector('#search-parts-form')) {
+            if (document.querySelector('#search-parts-form').classList.contains('d-block')) {
+                document.querySelector('#search-parts-form').classList.remove('d-block');
+            }
+        }
+        if (document.querySelector('.ais-Pagination').classList.contains('d-none')) {
+            document.querySelector('.ais-Pagination').classList.remove('d-none');
+        }
+    }
+
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
     const { connectStats } = instantsearch.connectors;
@@ -1215,18 +1240,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates:{
                     item(data, { html, components }){
                         if(filterLang == 'en'){
-                            if(document.querySelector('#parts-form')){ 
-                                if(document.querySelector('#parts-form').classList.contains('d-block')){
-                                    document.querySelector('#parts-form').classList.remove('d-block');
-                                }
-                            } else if (document.querySelector('#search-parts-form')) {
-                                if (document.querySelector('#search-parts-form').classList.contains('d-block')) {
-                                    document.querySelector('#search-parts-form').classList.remove('d-block');
-                                }
-                            }
-                            if (document.querySelector('.ais-Pagination').classList.contains('d-none')) {
-                                document.querySelector('.ais-Pagination').classList.remove('d-none');
-                            }
+                            hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1535,12 +1549,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     empty(results, { html }){
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
-                            if(document.querySelector('#parts-form')){ 
-                                document.querySelector('#parts-form').classList.add('d-block');
-                            } else if (document.querySelector('#search-parts-form')) {
-                                document.querySelector('#search-parts-form').classList.add('d-block');
-                            }
-                            document.querySelector('.ais-Pagination').classList.add('d-none');
+                            revealForm();
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             </div>
