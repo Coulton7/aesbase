@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let toriSearch = document.getElementById('jaHits');
     let articleSearch = document.getElementById('newsHits');
 
-    var partsForm = document.getElementById('parts-form');
-    var searchPartsForm = document.getElementById('search-parts-form');
+    var partsForm = document.querySelector('#parts-form');
+    var searchPartsForm = document.querySelector('#search-parts-form');
 
     window.dataLayer = window.dataLayer || [];
     const { connectSearchBox } = instantsearch.connectors;
