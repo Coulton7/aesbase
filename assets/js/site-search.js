@@ -1224,6 +1224,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     document.querySelector('#search-parts-form').classList.remove('d-block');
                                 }
                             }
+                            if (document.querySelector('.ais-Pagination').classList.contains('d-none')) {
+                                document.querySelector('.ais-Pagination').classList.remove('d-none');
+                            }
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1537,7 +1540,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             } else if (document.querySelector('#search-parts-form')) {
                                 document.querySelector('#search-parts-form').classList.add('d-block');
                             }
-                            document.querySelector('.ais-Pagination').style.display = 'none';
+                            document.querySelector('.ais-Pagination').classList.add('d-none');
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             </div>
