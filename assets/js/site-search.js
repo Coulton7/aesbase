@@ -1219,14 +1219,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     item(data, { html, components }){
                         if(filterLang == 'en'){
                             if(partsForm) {
-                                if(partsForm.classList.contains('d-block')){
-                                    partsForm.classList.add('d-none');
-                                    partsForm.classList.remove('d-block');
+                                if(partsForm.style.display === 'block'){
+                                    partsForm.style.display = 'none';
                                 }
                             } else if (searchPartsForm) {
-                                if(searchPartsForm.classList.contains('d-block')){
-                                    searchPartsForm.classList.add('d-none');
-                                    searchPartsForm.classList.remove('d-block');
+                                if(searchPartsForm.style.display === 'block'){
+                                    searchPartsForm.style.display = 'none';
                                 }
                             }
                             if(document.querySelector('.ais-Pagination').style.display === 'none') {
@@ -1541,14 +1539,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (results.query === '') return null;
                         if(filterLang == 'en'){
                             if(partsForm) {
-                                if(partsForm.classList.contains('d-block')){
-                                    partsForm.classList.add('d-block');
-                                    partsForm.classList.remove('d-none');
+                                if(partsForm.style.display === 'none'){
+                                    partsForm.style.display = 'block';
                                 }
                             } else if (searchPartsForm) {
-                                if(searchPartsForm.classList.contains('d-block')){
-                                    searchPartsForm.classList.add('d-block');
-                                    searchPartsForm.classList.remove('d-none');
+                                if(searchPartsForm.style.display === 'none'){
+                                    searchPartsForm.style.display = 'block';
                                 }
                             }
                             document.querySelector('.ais-Pagination').style.display = 'none';
