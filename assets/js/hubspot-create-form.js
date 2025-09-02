@@ -439,6 +439,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
+        } else if(document.querySelector("#parts-form")){
+            hbspt.forms.create({
+	            portalId: "2248916",
+                formId: "1600c225-d87c-4374-96bf-58ea9c6110e1",
+                formInstanceId: '1',
+                target: "#parts-form",
+                css: "",
+                cssClass:"hs-overlay-form",
+                submitButtonClass:"btn btn-primary hs-button",
+            });
+        } else if(document.querySelector("#search-parts-form")){
+            hbspt.forms.create({
+	            portalId: "2248916",
+                formId: "1600c225-d87c-4374-96bf-58ea9c6110e1",
+                formInstanceId: '1',
+                target:"#search-parts-form",
+                css: "",
+                cssClass:"bg-primary text-white p-5",
+                submitButtonClass:"btn btn-danger hs-button",
+            });
         } else if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
