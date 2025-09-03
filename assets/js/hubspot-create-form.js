@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "485ab9dd-47f5-46ee-b2a8-5fa03646678c",
+                formInstanceId: '1',
                 target: "#us-training-form",
                 css: "",
                 cssClass:"hs-overlay-form",
