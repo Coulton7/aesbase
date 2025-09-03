@@ -3346,6 +3346,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
                         </div>`
                         },
+                        empty(results, { html }){
+                            revealForm();
+                            return html`<p class="h3">No results found matching ${results.query}</p>
+                        <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                        <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
+                        },
                     },
                     transformItems(items){
                         return items.map(item => ({
