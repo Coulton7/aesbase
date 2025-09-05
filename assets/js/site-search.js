@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlLang = urlArray[1];
     var filterLang = urlLang;
 
+    var popSearch = document.getElementById('popular-searches');
+
     let globeSearch = document.getElementById('hits');
     let usSearch = document.getElementById('usHits');
     let gerSearch = document.getElementById('deHits');
@@ -63,6 +65,45 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.classList.add('ais-SearchBox-submit');
             searchButton.classList.add('btn');
             searchButton.classList.add('btn-danger');
+            searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
+
+            const loadingIndicator = document.createElement('span');
+            loadingIndicator.textContent = 'Loading...';
+
+            searchButton.addEventListener('click', event => {
+                refine(input.value);
+            });
+
+            input.addEventListener('keydown', function(e){
+                if(e.code === "Enter") {
+                    refine(input.value);
+                }
+            });
+
+            widgetParams.container.appendChild(input);
+            widgetParams.container.appendChild(searchButton);
+            widgetParams.container.appendChild(loadingIndicator);
+        }
+
+        widgetParams.container.querySelector('input').value = query;
+        widgetParams.container.querySelector('span').hidden = !isSearchStalled;
+    };
+
+    const renderPopularSearchBox = (renderOptions, isFirstRender) => {
+        const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
+
+        if (isFirstRender) {
+            const input = document.createElement('input');
+            input.classList.add('ais-SearchBox-input');
+            input.classList.add('form-control');
+            input.classList.add('pop-search-bar');
+            input.setAttribute("type", "text")
+
+            const searchButton = document.createElement('button');
+            searchButton.classList.add('ais-SearchBox-submit');
+            searchButton.classList.add('btn');
+            searchButton.classList.add('btn-danger');
+            searchButton.classList.add('pop-search-button');
             searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
 
             const loadingIndicator = document.createElement('span');
@@ -327,6 +368,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const customSearchBox = connectSearchBox (
         renderSearchBox
+    );
+
+    const popularSearchBox = connectSearchBox(
+        renderPopularSearchBox
     );
 
     let typeMapping;
@@ -1642,6 +1687,16 @@ document.addEventListener("DOMContentLoaded", function() {
         ]);
         search.start();
         document.querySelector('.ais-SearchBox-input').focus();
+        
+        if(popSearch) {
+            var popSearchButtons = document.querySelectorAll('.prefill-btn');
+            for (var i = 0; i < popSearchButtons.length; i++) {
+                popSearchButtons[i].addEventListener('click', function(){
+                    var searchQuery = this.getAttribute('data-search-query');
+                    search.helper.setQuery(searchQuery).search();
+                });
+            }
+        }
     }
 
     if(!!usSearch){
