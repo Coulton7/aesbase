@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(tourTabs) {
         if(hashTab != '' && hashTab != '#howto'){
             document.querySelector('#howto').classList.remove('active', 'show');
-            document.querySelector('#' + hashTab).classList.add('active show');
+            document.querySelector(hashTab).classList.add('active', 'show');
         }
     } 
 });
