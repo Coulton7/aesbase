@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var tourTabs = document.querySelector('.blue-tabs');
 
     if(tourTabs) {
-        var triggerTab = document.querySelector('#countryDropdown .dropdownmenu a[data-bs-target="' + hashTab + '"]');
-        bootstrap.Tab.getInstance(triggerTab).show();
+        var triggerEl = document.querySelector('#countryDropdown button[data-bs-target="' + hashTab + '"]');
+        bootstrap.Tab.getInstance(triggerEl).show();
     } 
 });
