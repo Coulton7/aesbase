@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(tourTabs) {
         document.querySelector('#howto').classList.remove('active', 'show');
-        document.querySelector(hashTab).classList.add('active show');
+        document.querySelector('#' + hashTab).classList.add('active show');
     } 
 });
