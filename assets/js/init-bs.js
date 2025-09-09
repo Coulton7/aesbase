@@ -20,4 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
     if(nationalFlag) {
         document.querySelector('.navbar-toggler').classList.add("flag-space");
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var hashTab = window.location.hash;
+    var tourTabs = document.querySelector('.blue-tabs');
+
+    if(tourTabs) {
+        var triggerTab = document.querySelector('#countryDropdown .dropdownmenu a[data-bs-target="' + hashTab + '"]');
+        bootstrap.Tab.getInstance(triggerTab).show();
+    } 
+});
 });
