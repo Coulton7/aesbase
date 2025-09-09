@@ -20,13 +20,4 @@ document.addEventListener("DOMContentLoaded", function() {
     if(nationalFlag) {
         document.querySelector('.navbar-toggler').classList.add("flag-space");
     }
-
-    var hashTab = window.location.hash;
-    var tourTabs = document.querySelector('.blue-tabs');
-
-    if(tourTabs) {
-        var tabName = document.querySelector(hashTab);
-        bootstrap.Tab.getOrCreateInstance(tabName).show();
-        tab.show();
-    } 
 });
