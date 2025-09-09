@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var tourTabs = document.querySelector('.blue-tabs');
 
     if(tourTabs) {
-        document.querySelector('#howto').classList.remove('active', 'show');
-        document.querySelector('#' + hashTab).classList.add('active show');
+        if(hashTab != '' && hashTab != '#howto'){
+            document.querySelector('#howto').classList.remove('active', 'show');
+            document.querySelector('#' + hashTab).classList.add('active show');
+        }
     } 
 });
