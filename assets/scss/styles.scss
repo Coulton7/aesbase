@@ -61,22 +61,13 @@ strong, b {
 }
 
 .toolbar-fixed .fixed-top,
-.toolbar-fixed .textlogo {
+.toolbar-fixed .textlogo,
+.toolbar-fixed .navbar-flag {
   padding-top: 39px !important;
 }
 
 body.toolbar-fixed {
   padding-top: 39px !important;
-}
-
-body.toolbar-tray-open {
-  padding-top: 60px !important;
-}
-
-.toolbar-tray-open .fixed-top,
-.toolbar-tray-open .textlogo,
-.toolbar-tray-open .navbar-flag {
-  padding-top: 60px !important;
 }
 
 .toolbar-fixed .overlay-btn {
