@@ -6025,6 +6025,15 @@ height:100%;
     background-repeat: no-repeat;
   }
 
+  .banner-overlay-video:hover .virtual-tour img,.banner-overlay-video:hover .corp-video img {
+    opacity: 0;
+  }
+
+  .banner-overlay-video:hover .btn {
+    background-color: var(--bs-btn-hover-bg);
+    border-color:  var(--bs-btn-hover-border-color);
+  }
+
   .virtual-tour:hover img {
     opacity: 0;
   }
