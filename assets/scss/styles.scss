@@ -1215,12 +1215,18 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
-.au-location-gradient {
+.au-location-gradient-overlay {
   background-image: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg);
   background: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 72%, rgb(255, 255, 255) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .sentry-block {
