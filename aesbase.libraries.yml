@@ -25,6 +25,7 @@ bootstrap:
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
+    assets/js/360-tour-banner.js: {}
 
 
 form:
