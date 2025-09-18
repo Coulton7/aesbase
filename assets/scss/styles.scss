@@ -116,6 +116,12 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
   height: auto;
 }
 
+.square-img {
+  height: 420px;
+  width: 420px;
+  object-fit: cover;
+}
+
 .no-padding {
   padding: 0;
 }
