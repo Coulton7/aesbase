@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
+                formInstanceId: '1',
                 target: "#location-form",
                 css: "",
                 cssClass:"bg-primary text-white p-5",
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
+                formInstanceId: '1',
                 target: "#training-form",
                 css:"",
                 submitButtonClass: "btn btn-danger",
@@ -98,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
+                formInstanceId: '1',
                 target: "#training-form-ae",
                 css:"",
                 cssClass:"hs-overlay-form",
@@ -129,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "c2a17ea4-d514-4e7e-8825-633553a28e04",
+                formInstanceId: '1',
                 target: "#piping-booklet-form",
                 css: "",
                 cssClass:"hs-overlay-form",
@@ -165,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "0d6eb558-5d3a-48e6-977f-448765cc24b6",
+                formInstanceId: '1',
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
@@ -198,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "f3b56435-d63b-471b-9416-03b57fd08e78",
+                formInstanceId: '1',
                 target: "#technical-drawings-form",
                 css: "",
                 cssClass:"hs-overlay-form",
