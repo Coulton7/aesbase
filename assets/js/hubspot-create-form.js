@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
+                formInstanceId: '1',
                 target: "#contact-form",
                 css: "",
                 cssClass: "hs-visible-form",
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 region: "na1",
                 portalId: "2248916",
                 formId: "40024060-c39f-4bed-9b37-a5fb65b101ea",
+                formInstanceId: '1',
                 target: "#error-form",
                 css: "",
                 cssClass: "hs-visible-form",
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
+                formInstanceId: '1',
                 target: "#modal-form",
                 css: "",
                 cssClass:"hs-overlay-form",
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
+                formInstanceId: '1',
                 target: "#sales-form",
                 css: "",
                 cssClass:"hs-overlay-form",
