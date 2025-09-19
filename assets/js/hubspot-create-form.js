@@ -57,16 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
-            hbspt.forms.create({
-	            portalId: "2248916",
-                formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
-                formInstanceId: '1',
-                target:"#search-parts-form",
-                css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
-            });
         } else if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
