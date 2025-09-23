@@ -1799,6 +1799,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 10,
                 attributesToSnippet: ['body:80'],
                 page: 0,
+                filters: 'field_global_article: false',
             }),
 
             typelistPanel({
