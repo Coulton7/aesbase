@@ -366,7 +366,7 @@ document.addEventListener("DOMContentLoaded", function() {
         renderClearRefinements
     );
 
-    const customSearchBox = connectSearchBox (
+    const mainSearchBox = connectSearchBox (
         renderSearchBox
     );
 
@@ -1271,9 +1271,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#searchbox',
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#searchbox'),
                  searchAsYouType: false,
+            }),
+
+            popularSearchBox({
+                container: document.querySelector('#popular-search-bar'),
+                searchAsYouType: false,
+                cssClasses: {
+                    root: 'popular-search',
+                    form: 'pop-search-bar',
+                }
             }),
 
             customStats({
@@ -1826,7 +1835,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#usSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#usSearchbox'),
                  searchAsYouType: false,
             }),
@@ -2094,7 +2103,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#inSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#inSearchbox'),
                  searchAsYouType: false,
             }),
@@ -2363,7 +2372,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#zaSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#zaSearchbox'),
                  searchAsYouType: false,
             }),
@@ -2632,7 +2641,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#mySearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#mySearchbox'),
                  searchAsYouType: false,
             }),
@@ -2917,7 +2926,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#deSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#deSearchbox'),
                  searchAsYouType: false,
             }),
@@ -3280,7 +3289,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#aeSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#aeSearchbox'),
                  searchAsYouType: false,
             }),
@@ -3571,7 +3580,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#frSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#frSearchbox'),
                  searchAsYouType: false,
             }),
@@ -3934,7 +3943,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#caSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#caSearchbox'),
                  searchAsYouType: false,
             }),
@@ -4297,7 +4306,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#seSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#seSearchbox'),
                  searchAsYouType: false,
             }),
@@ -4660,7 +4669,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#jaSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#jaSearchbox'),
                  searchAsYouType: false,
             }),
@@ -5066,7 +5075,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#resSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#resSearchbox'),
                  searchAsYouType: false,
             }),
@@ -5484,7 +5493,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTo: '#newsSearchbox'
             }),
         
-            customSearchBox({
+            mainSearchBox({
                 container: document.querySelector('#newsSearchbox'),
                  searchAsYouType: false,
             }),
