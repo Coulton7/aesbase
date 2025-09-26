@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      popSearchButton.addEventListener("click", function popSearchBtn(){
+      document.querySelector(".pop-search-button").addEventListener("click", function popSearchBtn(){
         openSearch();
       });
 
