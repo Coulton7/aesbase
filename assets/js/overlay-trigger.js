@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } 
       });
     }
-    if(popSearch){
+    if(popSearchButton){
       popSearch.addEventListener("keypress", function(event) {
         if(event.key === "Enter") {
           event.preventDefault();
