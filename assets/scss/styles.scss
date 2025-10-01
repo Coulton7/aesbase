@@ -1232,6 +1232,22 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.mx-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Mexico_aesseal_header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tr-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Turkey_aesseal_header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .au-location-gradient-overlay {
   background-image: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg);
   background: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 72%, rgb(255, 255, 255) 100%);
