@@ -255,6 +255,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
+        } else if(document.querySelector("#parts-form")){
+            hbspt.forms.create({
+	            portalId: "2248916",
+                formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
+                formInstanceId: '1',
+                target: "#parts-form",
+                css: "",
+                cssClass:"hs-overlay-form",
+                submitButtonClass:"btn btn-primary hs-button",
+            });
         } else if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
@@ -349,19 +359,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         }
-
-        if(document.querySelector("#parts-form")){
-            hbspt.forms.create({
-	            portalId: "2248916",
-                formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
-                formInstanceId: '1',
-                target: "#parts-form",
-                css: "",
-                cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
-            });
-        }
-
     } else if(filterLang =='fr'){
         if(document.querySelector("#contact-form")){
             hbspt.forms.create({
