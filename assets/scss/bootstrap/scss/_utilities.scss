@@ -36,6 +36,13 @@ $utilities: map-merge(
       )
     ),
     // scss-docs-end utils-object-fit
+    // Opject Position utilities
+    // scss-docs-start utils-object-position
+    "object-position": (
+      property: object-position,
+      values: top bottom left right center
+    ),
+    // scss-docs-end utils-object-position
     // Opacity utilities
     // scss-docs-start utils-opacity
     "opacity": (
