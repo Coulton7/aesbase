@@ -21,6 +21,7 @@ var prefillBtns = document.querySelectorAll(".prefill-btn");
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  var popSearchInput = document.querySelector("#popular-search-input");
   var popSearchButton = document.querySelector(".pop-search-button");
 
   function openSearch() {
@@ -381,11 +382,9 @@ document.addEventListener("DOMContentLoaded", function () {
         } 
       });
     }
-    if(popSearchButton){
-      popSearch.addEventListener("keypress", function(event) {
+    if(popSearch){
+      popSearchInput.addEventListener("keydown", function(event) {
         if(event.key === "Enter") {
-          event.preventDefault();
-          document.querySelector('.pop-search-button').click()
           openSearch();
         }
       });

@@ -1647,9 +1647,21 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if(popSearch) {
             var popSearchButtons = document.querySelectorAll('.prefill-btn');
+            var popSearchButton = document.querySelector('.pop-search-button');
+            var popSearchBar = document.querySelector('#popular-search-input');
             for (var i = 0; i < popSearchButtons.length; i++) {
                 popSearchButtons[i].addEventListener('click', function(){
                     var searchQuery = this.getAttribute('data-search-query');
+                    search.helper.setQuery(searchQuery).search();
+                });
+                popSearchBar.addEventListener('keydown', function(e){
+                    if(e.key === 'Enter'){
+                        var searchQuery = popSearchBar.value;
+                        search.helper.setQuery(searchQuery).search();
+                    }
+                });
+                popSearchButton.addEventListener('click', function(){
+                    var searchQuery = popSearchBar.value;
                     search.helper.setQuery(searchQuery).search();
                 });
             }
