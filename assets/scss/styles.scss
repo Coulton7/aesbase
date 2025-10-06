@@ -615,6 +615,14 @@ a.disabled {
   transform: translateY(49%);
 }
 
+.promo-region div{
+  height: 100%;
+}
+
+.promo-region div .btn {
+  height: auto;
+}
+
 .path-frontpage .uppercurve {
   height: 11em;
   left: 12em;
