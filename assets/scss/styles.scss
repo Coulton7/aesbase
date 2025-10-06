@@ -1815,8 +1815,9 @@ blockquote {
   justify-content: end;
   float: right;
   max-width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
+  height: 100%;
 }
 
 .promo-btn {
