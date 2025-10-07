@@ -1810,6 +1810,12 @@ blockquote {
   visibility: hidden;
 }
 
+.promo-image {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
 .promo-image img{
   right: 0;
   justify-content: end;
