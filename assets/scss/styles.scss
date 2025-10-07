@@ -4097,6 +4097,14 @@ ul.about-us-cats a {
   overflow:hidden;
 }
 
+.pb-hd-card:lang(es) {
+  background-image: url('https://static.aesseal.com/content-image/brochure/LIT-ES-L-LAB-PB-HD_Page_1.jpg');
+}
+
+.pb-hd-card:lang(fr) {
+  background-image: url('https://static.aesseal.com/content-image/brochure/LIT-FR-L-LAB-PB-HD-01_Page_1.jpg');
+}
+
 .corp-card a, .bp-card a, .cart-card a, .sys-card a, .comp-card a, .pb-hd-card a{
 display:block;
 width:100%;
