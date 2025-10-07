@@ -1256,9 +1256,8 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
-.au-location-gradient-overlay {
-  background-image: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg);
-  background: url(/sites/aesseal.com.au/files/content-image/Brisbane-Day-Shot.jpg), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 72%, rgb(255, 255, 255) 100%);
+.au-location-gradient-overlay:before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 72%, rgb(255, 255, 255) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
