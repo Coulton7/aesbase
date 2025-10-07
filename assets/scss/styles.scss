@@ -4084,34 +4084,23 @@ ul.about-us-cats a {
   background-image: url('https://static.aesseal.com/content-image/range/LIT-DE-L-S-SPRING_Page_001.jpg');
 }
 
-.corp-card a{
+.pb-hd-card {
+  display: block;
+  width: 200px;
+  height: 283px;
+  position: absolute;
+  top:0;
+  background-image: url('https://static.aesseal.com/content-image/brochure/LIT-UK-L-LAB-PB-HD_Page_1.jpg');
+  background-size:100%;
+  background-repeat:no-repeat;
+  border-radius: 20px;
+  overflow:hidden;
+}
+
+.corp-card a, .bp-card a, .cart-card a, .sys-card a, .comp-card a, .pb-hd-card a{
 display:block;
 width:100%;
 height:100%;
-}
-
-.bp-card a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.cart-card a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.sys-card a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.comp-card a{
-  display:block;
-  width:100%;
-  height:100%;
 }
 
 #corp-card{ animation-name: card1_ani; }
