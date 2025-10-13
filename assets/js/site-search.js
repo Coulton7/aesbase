@@ -142,12 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const renderStats = (renderOptions, isFirstRender) => {
-        const {
-            nbHits,
-            processingTimeMS,
-            widgetParams,
-            query,
-        } = renderOptions;
+        const { nbHits, processingTimeMS, widgetParams, query } = renderOptions;
 
         if (isFirstRender) {
             return;
