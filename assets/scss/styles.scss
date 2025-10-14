@@ -659,6 +659,7 @@ a.disabled {
   height: 100%;
   background-color: $primary;
   position: relative;
+  min-height: 100%;;
 }
 
 .tns-slider {
