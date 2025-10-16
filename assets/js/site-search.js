@@ -134,10 +134,8 @@ document.addEventListener("DOMContentLoaded", function() {
             clearButton.addEventListener('click', () => {
                 refine();
             });
-
             widgetParams.container.appendChild(clearButton);
         }
-
         widgetParams.container.querySelector('button').disabled = !canRefine;
     }
 
