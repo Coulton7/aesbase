@@ -2105,6 +2105,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#inStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#inHits',
                 templates:{
@@ -2334,6 +2338,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#zaStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#zaHits',
                 templates:{
@@ -2561,6 +2569,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             customStats({
                 container: document.querySelector("#myStats"),
+            }),
+
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
             }),
 
             instantsearch.widgets.hits ({
@@ -2806,6 +2818,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             customStats({
                 container: document.querySelector("#deStats"),
+            }),
+
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
             }),
 
             instantsearch.widgets.hits ({
@@ -3103,6 +3119,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#aeStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#aeHits',
                 templates:{
@@ -3346,6 +3366,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             customStats({
                 container: document.querySelector("#frStats"),
+            }),
+
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
             }),
 
             instantsearch.widgets.hits ({
@@ -3942,6 +3966,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#seStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#seHits',
                 templates:{
@@ -4234,6 +4262,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             customStats({
                 container: document.querySelector("#jaStats"),
+            }),
+
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
             }),
 
             instantsearch.widgets.hits ({
