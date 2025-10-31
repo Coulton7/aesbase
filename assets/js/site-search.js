@@ -129,6 +129,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 clearButton.textContent = '明確な絞り込み';
             } else if(filterLang == 'sv'){
                 clearButton.textContent = 'Tydliga förbättringar';
+            } else {
+                clearButton.textContent = 'Clear Refinements';
             }
 
             clearButton.addEventListener('click', () => {
@@ -185,6 +187,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `${nbHits} 結果`;
             } else if (filterLang == 'sv') {
                 count += `${nbHits} resultat`;
+            } else {
+                count += `${nbHits} results`;
             }
         } else if (nbHits === 1) {
             if(filterLang == 'en') {
@@ -221,6 +225,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `1件`;
             } else if (filterLang == 'sv') {
                 count += `1 resultat`;
+            } else {
+                count += `1 result`;
             }
         } else {
             if(filterLang == 'en') {
@@ -257,6 +263,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 count += `結果なし`;
             } else if (filterLang == 'sv') {
                 count += `inga resultat`;
+            } else {
+                count += `no results`;
             }
         }
 
@@ -311,10 +319,34 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(filterLang == 'sv') {
             widgetParams.container.innerHTML =
             `<p class="text-white">${count} finns i ${processingTimeMS}ms</p>`
+        } else {
+            widgetParams.container.innerHTML =
+            `<p class="text-white">${count} found in ${processingTimeMS}ms</p>`
         }
     }
 
+    const renderHits = (renderOptions, isFirstRender) => {
+        const { nbHits, widgetParams, query } = renderOptions;
+        if(isFirstRender) {
+            return;
+        }
+        let count = "";
+
+        if (query === '') return [];
+
+        if (nbHits > 1) {
+            count += `${nbHits}`;
+        } else if (nbHits === 1) {
+            count += `1`;
+        } else {
+            count += `0`;
+        }
+        widgetParams.container.innerHTML = `${count}`;
+    }
+
     const customStats = connectStats(renderStats);
+
+    const numberOfHits = connectStats(renderHits);
 
     const customClearRefinements = connectClearRefinements(
         renderClearRefinements
@@ -758,6 +790,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 'video': 'ビデオ',
                 'whitepaper': 'Whitepaper',
             }
+        } else {
+            typeMapping = {
+                '3dmodels': '3D Models',
+                'academy': 'Academy',
+                'announcements': 'Announcements',
+                'apiplans': 'API Plans',
+                'article': 'Article',
+                'bearingprotection': 'Bearing Protection',
+                'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
+                'casestudies': 'Case Studies',
+                'componentseals': 'Component Seals',
+                'corpbrochure': 'Corporate Brochure',
+                'elastomers': 'Elastomers',
+                'gasseals': 'Gas Seals',
+                'glandpacking': 'Gland Packing',
+                'industryguides': 'Industry Guides',
+                'locations': 'Locations',
+                'page': 'Web Page',
+                'policies': 'Policies',
+                'productbrochure': 'Product Brochure',
+                'productcertificates': 'Product Certificates',
+                'sealsupportsystems': 'Seal Support Systems',
+                'technicaldrawings': 'Technical Drawing',
+                'video': 'Video',
+                'whitepaper': 'Whitepaper',
+            }
         }
 
         if(filterLang == "en") {
@@ -844,6 +902,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 'gasseals': 'Gas Seals Category',
                 'componentseals': 'Component Seals Category',
             }
+        } else {
+            vidMapping = {
+                'industry': 'Industry',
+                'glandpacking': 'Gland Packing Category',
+                'sealsupportsystems': 'Seal Support Systems Category',
+                'bearingprotectioncategories': 'Bearing Protection Category',
+                'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
+                'gasseals': 'Gas Seals Category',
+                'componentseals': 'Component Seals Category',
+            }
         }
 
         const langlistPanel = instantsearch.widgets.panel ({
@@ -886,6 +954,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Selecteer uw taal</h4>`
                     } else if (filterLang == 'ja'){
                         return html `<h4>言語の選択</h4>`
+                    } else {
+                        return html `<h4>Select your Language</h4>`
                     }
                 },
             },cssClasses: {
@@ -933,6 +1003,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filter op inhoudstype</h4>`
                     } else if (filterLang == 'ja'){
                         return html `<h4>コンテンツ・タイプによるフィルタリング</h4>`
+                    } else {
+                        return html `<h4>Filter by Content Type</h4>`
                     }
                 }
             },cssClasses: {
@@ -980,6 +1052,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Filter Globale site op type bron</h4>`
                     } else if (filterLang == 'ja'){
                         return html `<h4>リソースタイプによるグローバルサイトのフィルタリング</h4>`
+                    } else {
+                        return html `<h4>Filter Global Site by Resource Type</h4>`
                     }
                 },
             },
@@ -1028,6 +1102,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html `<h4>Selecteer uw taal</h4>`
                     } else if (filterLang == 'ja'){
                         return html `<h4>言語の選択</h4>`
+                    } else {
+                        return html `<h4>Select your Language</h4>`
                     }
                 },
             },cssClasses: {
@@ -1797,6 +1873,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#usStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#usHits',
                 templates:{
@@ -1833,62 +1913,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                langlistPanel({
-                    container: '#lang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -1901,28 +1934,35 @@ document.addEventListener("DOMContentLoaded", function() {
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
+                                revealForm();
+                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            <div class="text-center  py-5">
+                                <p class="h3">Would you like to search our Global site?</p>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                            </div>
+                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
                         },
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
+                    }
                 }),
             ])
         ]);
@@ -2101,97 +2141,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                langlistPanel({
-                    container: '#lang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#inSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
+                                revealForm();
+                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            <div class="text-center  py-5">
+                                <p class="h3">Would you like to search our Global site?</p>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                            </div>
+                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
                         },
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                    }
+                }),
             ])
         ]);
         indiaSearch.start();
@@ -2370,97 +2370,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                langlistPanel({
-                    container: '#lang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#zaSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
+                                revealForm();
+                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            <div class="text-center  py-5">
+                                <p class="h3">Would you like to search our Global site?</p>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                            </div>
+                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
                         },
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                    }
+                }),
             ])
         ]);
         southafricaSearch.start();
@@ -2639,97 +2599,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                langlistPanel({
-                    container: '#lang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#mySearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
+                                revealForm();
+                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            <div class="text-center  py-5">
+                                <p class="h3">Would you like to search our Global site?</p>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                            </div>
+                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
                         },
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                    }
+                }),
             ])
         ]);
         mySearch.start();
@@ -2962,138 +2882,70 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "de") {
-                            options.helper.toggleRefinement('search_api_language', 'de');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#deSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
                             if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'de'){
-                                return html `<div class="search-result">
-                                    <small>${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if(filterLang == '') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if (filterLang == 'de') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
                                 <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
                                 </div>
                                 <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
                             }
-                        }
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                        },
+                    }
+                }),
             ])
         ]);
         deSearch.start();
@@ -3287,103 +3139,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#aeSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small>https://www.aesseal.com${data.url}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="btn btn-danger view-details align-self-end" href="https://www.aesseal.com${data.url}" target="_blank">Read More</a>
-                        </div>`
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
+                                revealForm();
+                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                            <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                            <div class="text-center  py-5">
+                                <p class="h3">Would you like to search our Global site?</p>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                            </div>
+                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
                         },
-                        empty(results, { html }){
-                            revealForm();
-                            return html`<p class="h3">No results found matching ${results.query}</p>
-                        <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                        <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
-                        },
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                    }
+                }),
             ])
         ]);
         aeSearch.start();
@@ -3616,138 +3422,70 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "fr") {
-                            options.helper.toggleRefinement('search_api_language', 'fr');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#frSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
                             if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>https://www.aesseal.com${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'fr'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Lire la suite</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if(filterLang == '') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if (filterLang == 'fr') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
-                            <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
-                            </div>
-                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                                <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                                </div>
+                                <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
                             }
-                        }
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                        },
+                    }
+                }),
             ])
         ]);
         frSearch.start();
@@ -3979,138 +3717,70 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "fr") {
-                            options.helper.toggleRefinement('search_api_language', 'fr');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#caSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
                             if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>https://www.aesseal.com${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'fr'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Lire la suite</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if(filterLang == '') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if (filterLang == 'fr') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
-                            <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
-                            </div>
-                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                                <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                                </div>
+                                <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
                             }
-                        }
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                        },
+                    }
+                }),
             ])
         ]);
         caSearch.start();
@@ -4342,139 +4012,70 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "se") {
-                            options.helper.toggleRefinement('search_api_language', 'se');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#seSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
                             if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p class="h3 ${data.name_1 ? '' : 'd-none'}">${data.name_1}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>https://www.aesseal.com${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'sv'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Läs mer om</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if(filterLang == '') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if (filterLang == 'sv') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">Inga resultat hittades som matchade ${results.query}</p>
                                 <p>Tyvärr kunde vi inte hitta något resultat för din sökning. Försök att söka igen genom att kontrollera din sökning efter stavfel och/eller minska antalet nyckelord som används. Du kan också försöka använda en bredare sökfras.</p>
                                 </div>
                                 <p class="h3">Söker du efter ett artikelnummer eller serienummer?</p>`;
                             }
-                        }
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                        },
+                    }
+                }),
             ])
         ]);
         seSearch.start();
@@ -4705,138 +4306,70 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'aesseal' })
-                .addWidgets([{
-                    init: function(options) {
-                        if(filterLang == "en")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if(filterLang == "")
-                        {
-                            options.helper.toggleRefinement('search_api_language', 'en');
-                        }
-                        else if (filterLang === "se") {
-                            options.helper.toggleRefinement('search_api_language', 'ja');
-                        }
-                    }
-                },
+                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .addWidgets([
 
                 instantsearch.widgets.configure({
                     clickAnalytics: true,
                     userToken: 'user-1',
                     hitsPerPage: 10,
-                    attributesToSnippet: ['field_summary:80', 'body:80'],
+                    attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
-                }),
-
-                gloablTypelistPanel({
-                    container: '#globalType-list',
-                    attribute: 'type',
-                    templates: {
-                        header: 'Filter Global Site by Content Type',
-                        item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: typeMapping[item.label],
-                        }));
-                    },
-                    cssClasses: {
-                        item: ['types-item']
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
-                }),
-
-                globalLanglistPanel({
-                    container: '#globalLang-list',
-                    attribute: 'search_api_language',
-                    templates: {
-                        header: 'Select your Language',
-                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                    },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            label: item.label.toUpperCase(),
-                        }));
-                    },
-                    sortBy: ['isRefined', 'count:desc', 'name:asc']
                 }),
 
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#jaSearchbox'
+                    scrollTo: '#usSearchbox'
                 }),
 
                 customStats({
                     container: document.querySelector("#globalStats"),
                 }),
 
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+            }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
-                        item(data, { html, components }){
+                        item(hit, { html, components }){
+                            return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                    <small>${hit.url}</small>
+                                    <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                    <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                        attribute: "content",
+                                        hit: hit,
+                                        highlightedTagName: 'strong'
+                                    })}</p>
+                                <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                            </div>`
+                        }, empty(results, { html }){
                             if(filterLang == 'en'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                </div>`
-                                } else if(filterLang == '') {
-                                    return html `<div class="search-result">
-                                        <small>https://www.aesseal.com${data.url}</small>
-                                        <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                        <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                        <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
-                                    </div>`
-                                } else if(filterLang == 'ja'){
-                                return html `<div class="search-result">
-                                    <small>https://www.aesseal.com${data.url}</small>
-                                    <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                                    <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
-                                    <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                    <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">続きを読む</a>
-                                </div>`
-    
-    
-                            }
-                        },
-                        empty(results, { html }){
-                            if(filterLang == 'en'){
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if(filterLang == '') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 </div>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                             }
                             else if (filterLang == 'ja') {
+                                revealForm();
                                 return html`<div class="no-result"><p class="h3">一致する結果は見つかりませんでした ${results.query}</p>
                                 <p>検索結果が見つかりませんでした。スペルミスがないか、キーワードの数を減らして再度検索してみてください。また、より広い検索フレーズを使用してみることもできます。</p>
                                 </div>
                                 <p class="h3">部品番号またはシリアル番号をお探しですか？</p>`;
                             }
-                        }
                     },
-                    transformItems(items){
-                        return items.map(item => ({
-                            ...item,
-                            type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
-                        }))
-                    },
-                })
+                    }
+                }),
             ])
         ]);
         jpSearch.start();

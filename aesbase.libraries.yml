@@ -22,6 +22,7 @@ bootstrap:
     assets/js/hubspot-create-form.js: {}
     assets/js/init-bs.js: {}
     assets/js/site-search.js: {}
+    assets/js/search-tab.js: {}
     assets/js/lazyload-background-img.js: {}
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
