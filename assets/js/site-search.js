@@ -2155,7 +2155,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#inSearchbox'
                 }),
 
                 customStats({
@@ -2384,7 +2384,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#zaSearchbox'
                 }),
 
                 customStats({
@@ -2613,7 +2613,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#mySearchbox'
                 }),
 
                 customStats({
@@ -2896,7 +2896,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#deSearchbox'
                 }),
 
                 customStats({
@@ -3153,7 +3153,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#aeSearchbox'
                 }),
 
                 customStats({
@@ -3436,7 +3436,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#frSearchbox'
                 }),
 
                 customStats({
@@ -3731,7 +3731,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#caSearchbox'
                 }),
 
                 customStats({
@@ -4026,7 +4026,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#seSearchbox'
                 }),
 
                 customStats({
@@ -4320,7 +4320,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination({
                     container: '#pagination',
                     totalPages: 3,
-                    scrollTo: '#usSearchbox'
+                    scrollTo: '#jaSearchbox'
                 }),
 
                 customStats({
