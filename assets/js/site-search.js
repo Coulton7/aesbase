@@ -3643,6 +3643,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: document.querySelector("#caStats"),
             }),
 
+            numberOfHits({
+                container: document.querySelector("#intResultsNum"),
+            }),
+
             instantsearch.widgets.hits ({
                 container: '#caHits',
                 templates:{
