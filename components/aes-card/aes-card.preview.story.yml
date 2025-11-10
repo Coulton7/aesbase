@@ -1,0 +1,9 @@
+name: Preview
+slots:
+  link: 'https://example.com'
+  image: 'http://via.placeholder.com/350x350'
+  heading: 'The title of the page'
+  body: 'This is an example of what the card body could be inside of it may also contain other fields like date field'
+  footer: 'The button goes here'
+props:
+  with_link: true

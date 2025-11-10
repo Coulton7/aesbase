@@ -1,0 +1,7 @@
+name: '(Thumbnav TinySlider Item)'
+description: 'Internal to be used inside of Thumbnail Nav Tinylsider'
+group: Tinyslider
+slots:
+  image:
+    title: Image
+    description: 'The image of the Slide'

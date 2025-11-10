@@ -1,0 +1,38 @@
+name: 'AES Card'
+description: 'Standard card styles for AES Sites'
+variants:
+  default:
+    title: Normal
+    description: 'Just used to show cards and no other bhaviours with them'
+  infi-card:
+    title: infi-card
+    description: 'Used to show an infinite scroll version of cards'
+  dark-glass:
+    title: 'Dark glass'
+    description: 'Use when the body needs a dark glass background on body'
+slots:
+  link:
+    title: Link
+    description: 'Apply full link to the card'
+  image:
+    title: Image
+    description: 'The Card Image'
+  heading:
+    title: Header
+    description: 'The card heading (usually title of the page)'
+  body:
+    title: Body
+    description: 'The card body can contain multiple fields'
+  footer:
+    title: Footer
+    description: 'This will be where links go to the items or buttons'
+props:
+  type: object
+  properties:
+    with_link:
+      title: 'Add a link?'
+      description: 'Check to allow the card to be a full link'
+      type: boolean
+libraryOverrides:
+  js:
+    js/infinite-scroll.js: {  }

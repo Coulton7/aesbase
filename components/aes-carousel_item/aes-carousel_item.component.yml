@@ -1,0 +1,9 @@
+name: '(AES-Carousel Item)'
+description: "Internal: to be used in the 'AES-Carousel' component."
+group: Carousel
+links:
+  - 'https://getbootstrap.com/docs/5.3/components/carousel/'
+slots:
+  image:
+    title: Image
+    description: 'The image of the item.'

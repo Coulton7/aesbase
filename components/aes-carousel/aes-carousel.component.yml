@@ -1,0 +1,42 @@
+name: 'AES Carousel'
+description: 'Standard Bootstrap 5 Carousel Styles'
+group: 'AES Carousel'
+links:
+  - 'https://getbootstrap.com/docs/5.3/components/carousel/'
+variants:
+  default:
+    title: Default
+    description: 'Standard single slide carousel'
+slots:
+  slides:
+    title: Slides
+    description: 'Each slide is a collection of carousel items.'
+props:
+  type: object
+  properties:
+    with_controls:
+      title: 'With controls?'
+      description: 'Adding in the previous and next controls'
+      type: boolean
+    with_indicators:
+      title: 'With indicators?'
+      description: 'You can also add the indicators to the carousel, alongside the controls, too.'
+      type: boolean
+    with_touch:
+      title: 'With touch swiping?'
+      description: 'Carousels support swiping left/right on touchscreen devices to move between slides.'
+      type: boolean
+      default: true
+    with_thumb_nav:
+      title: 'With Tumbnail Navigation?'
+      description: 'Use image thumbnails to navigate the carousel'
+      type: boolean
+    interval:
+      title: Interval
+      description: 'The amount of time to delay between automatically cycling to the next item. In ms. 0 to disable autoplay.'
+      type: number
+      default: 5000
+    carousel_id:
+      title: ID
+      description: 'Must start with a letter. Randomly generated if empty.'
+      type: string

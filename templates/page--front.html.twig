@@ -62,22 +62,23 @@
 {# Navbar #}
     {% if page.navigation or page.navigation_collapsible %}
     <div class="col-1 col-md-2 col-lg-4 col-xl-5 xol-xxl-6 xol-xxxl-8">
-          {{ pattern('navbar', {
+          {{ include('ui_suite_bootstrap:navbar', {
           navbar_id: 'mobile-overlay',
           placement: 'fixed-top',
           toggler_position: 'end',
           toggle_action: 'overlay',
           navigation: page.navigation,
           navigation_collapsible: page.navigation_collapsible,
-          attributes: create_attribute({
+          attributes: {
             'class': [
-              'bg-transparent'
+              'bg-transparent',
+              'navbar-expand'
             ],
             'id': [
               'autocollapse'
             ]
-          }),
-          }, 'expand') }}
+          },
+          }, with_context: false) }}
           {% block navbar %}
       {% endblock %}
     </div>
