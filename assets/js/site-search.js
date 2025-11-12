@@ -4995,10 +4995,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 filters: '(type:article OR type:announcements)', 
             }),
 
-            customClearRefinements({
-                container: document.querySelector('#clear-refinements'),
-            }),
-
             globalLanglistPanel({
                 container: '#lang-list',
                 attribute: 'search_api_language',
