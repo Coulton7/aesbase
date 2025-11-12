@@ -4626,7 +4626,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                             </div>`
                         } else if(filterLang == 'es'){
                             hideForm();
@@ -4635,7 +4635,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
                             </div>`
                         } else if(filterLang == 'fr'){
                             hideForm();
@@ -4644,7 +4644,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">En savoir plus</a>
                             </div>`
                         } else if(filterLang == 'de'){
                             hideForm();
@@ -4653,7 +4653,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
                             </div>`
                         } else if(filterLang == 'it'){
                             hideForm();
@@ -4662,7 +4662,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
                             </div>`
                         } else if(filterLang == 'tr'){
                             hideForm();
@@ -4671,7 +4671,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             hideForm();
@@ -4680,7 +4680,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">更多信息</a>
                             </div>`
                         }  else if(filterLang == 'pl'){
                             hideForm();
@@ -4689,7 +4689,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Czytaj więcej</a>
                             </div>`
                         } else if(filterLang == 'ar'){
                             hideForm();
@@ -4701,7 +4701,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                 <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">قراءة المزيد</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">قراءة المزيد</a>
                             </div>`
                         } else if(filterLang == 'nb'){
                             hideForm();
@@ -4710,7 +4710,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Les mer</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Les mer</a>
                             </div>`
                         } else if(filterLang == 'pt-br'){
                             hideForm();
@@ -4719,7 +4719,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Leia mais</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Leia mais</a>
                             </div>`
                         } else if(filterLang == 'pt'){
                             hideForm();
@@ -4728,7 +4728,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Ler mais</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Ler mais</a>
                             </div>`
                         } else if(filterLang == 'nl'){
                             hideForm();
@@ -4737,7 +4737,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="btn btn-primary view-details align-self-end" href="${data.url}">Meer lezen</a>
+                                <a class="btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Meer lezen</a>
                             </div>`
                         }
                     },
