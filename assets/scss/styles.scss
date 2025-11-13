@@ -625,6 +625,13 @@ a.disabled {
   height: 8em!important;
 }
 
+.lower-curve {
+  height: 8.05em!important;
+  bottom: -1px;
+  position: relative;
+  right: -1px;
+}
+
 .textlogo {
   background: transparent;
   position: fixed;
