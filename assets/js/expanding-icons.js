@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     searchIcon.style.display = "none";
     feedbackIcon.style.display = "none";
-    chatIcon.style.display = "none";
+    if(chatIcon){
+        chatIcon.style.display = "none";
+    }
 
     let isOpen = false;
 
