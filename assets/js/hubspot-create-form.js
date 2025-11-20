@@ -168,6 +168,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 css: "",
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
+                onFormSubmit: function ($form){
+                    var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
+                    if(deliverability === 0){
+                        window.location.href = window.location.pathname+'?fs=y'
+                    }
+                }
             });
         } else if (document.querySelector("#technical-drawings-form")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
