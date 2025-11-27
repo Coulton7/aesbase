@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var overlaySearchGlobal = document.querySelector("#global-overlay-search");
   var overlayShareBtn = document.querySelector("#overlay-share");
   var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
+  var footerSearchBtn = document.querySelector("#footer-search");
   var mobileNavOverlay = document.querySelector("[data-bs-target='#mobile-overlay']");
   var mobileOverlaySearch  = document.querySelector("#mob-overlay-search");
   var html = document.querySelector("html");
