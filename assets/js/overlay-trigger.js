@@ -302,6 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           l.style.height = "100%";
           l.style.bottom = "0";
+          l.style.top = "0";
           if (y.style.height == "100%") {
             y.style.height = "1px";
             y.style.top = "-1px";
