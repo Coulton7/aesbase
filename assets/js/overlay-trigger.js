@@ -2,13 +2,10 @@ var x = document.getElementById("overlayNav");
 var y = document.getElementById("searchOverlay");
 var s = document.getElementById("shareOverlay");
 var n = document.getElementById("newsOverlay");
-var l = document.getElementById("legalOverlay");
 var overlayNavBtn = document.querySelector("#overlay-btn");
 var overlaySearchBtn = document.querySelector("#overlay-search");
-var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayShareBtn = document.querySelector("#overlay-share");
 var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
-var footerSearchBtn = document.querySelector("#footer-search");
 var mobileNavOverlay = document.querySelector("[data-bs-target='#mobile-overlay']");
 var mobileOverlaySearch  = document.querySelector("#mob-overlay-search");
 var newsSearchBtn = document.querySelector("#news-search");
@@ -290,39 +287,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    if(overlayLegalBtn){
-      overlayLegalBtn.addEventListener("click", function shareBtn() {
-        overlayLegalBtn.classList.toggle("change");
-        if (l.style.height === "100%") {
-          l.style.height = "1px";
-          l.style.bottom = "-1px";
-          html.classList.remove("noscroll");
-          body.classList.remove("noscroll");
-          dialogOffCanvas.classList.remove("noscroll");
-          overlayLegalBtn.classList.add("legal-btn");
-        } else {
-          l.style.height = "100%";
-          l.style.bottom = "0";
-          l.style.top = "0";
-          if (y.style.height == "100%") {
-            y.style.height = "1px";
-            y.style.top = "-1px";
-            overlaySearchBtn.classList.remove("change");
-            overlaySearchBtn.classList.add("search-btn");
-          } else if (l.style.height == "100%") {
-            x.style.height = "1px";
-            x.style.bottom = "-1px";
-            overlayNavBtn.classList.remove("change");
-            overlayNavBtn.classList.add("overlay-btn");
-          }
-          html.classList.add("noscroll");
-          body.classList.add("noscroll");
-          dialogOffCanvas.classList.add("noscroll");
-          overlayLegalBtn.classList.remove("share-btn");
-        }
-      });
-    }
-
     if(footerOverlayBtn){
       footerOverlayBtn.addEventListener("click", function footerNavBtn() {
         footerOverlayBtn.classList.toggle("change");
@@ -351,57 +315,6 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           overlayNavBtn.classList.remove("overlay-btn");
-        }
-      });
-    }
-
-    if(footerSearchBtn){
-      footerSearchBtn.addEventListener("click", function searchBtn() {
-        footerSearchBtn.classList.toggle("change");
-        if (y.style.height === "100%") {
-          y.style.height = "1px";
-          y.style.top = "-1px";
-          html.classList.remove("noscroll");
-          body.classList.remove("noscroll");
-          dialogOffCanvas.classList.remove("noscroll");
-          overlaySearchBtn.classList.add("search-btn");
-          if(window.innerWidth > 992) {
-            if (scrollNav.classList.contains("scrolled-up")){
-              scrollNav.classList.remove("scrolled-up");
-              scrollNav.classList.add("scrolled-down")
-            } else {
-              scrollNav.classList.add("scrolled-down")
-            }
-          }
-          document.querySelector('.overlay-btn').classList.remove("normText");
-        } else {
-          y.style.height = "100%";
-          y.style.top = "0";
-          if (x.style.height == "100%") {
-            x.style.height = "1px";
-            x.style.bottom = "-1px";
-            overlaySearchBtn.classList.remove("change");
-            overlaySearchBtn.classList.add("overlay-btn");
-          } else if (s.style.height == "100%") {
-            s.style.height = "1px";
-            s.style.bottom = "-1px";
-            overlayShareBtn.classList.remove("change");
-            overlayShareBtn.classList.add("share-btn");
-          }
-          html.classList.add("noscroll");
-          body.classList.add("noscroll");
-          dialogOffCanvas.classList.add("noscroll");
-          overlaySearchBtn.classList.remove("search-btn");
-          if(window.innerWidth > 992) {
-            if (scrollNav.classList.contains("scrolled-down")){
-              scrollNav.classList.remove("scrolled-down");
-              scrollNav.classList.add("scrolled-up")
-            } else {
-              scrollNav.classList.add("scrolled-up")
-            }
-          }
-          document.querySelector('.overlay-btn').classList.add("normText");
-          document.querySelector('.ais-SearchBox-input').focus();
         }
       });
     }
