@@ -974,7 +974,15 @@ a.icon-link:hover {
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: contain;
- }
+}
+
+.bg-comp-seal-multiply {
+  background-image: url(https://static.aesseal.com/photo/component_seals/Component-Range.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
 
 .btn-lightgrey {
   background-color: $lightgrey;
