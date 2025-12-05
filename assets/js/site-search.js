@@ -1321,7 +1321,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>                       
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Read More' : 'Watch Video'}</a>
                                     </div>
@@ -1355,9 +1356,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Read More</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Read More' : 'Watch Video'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1389,10 +1391,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Seguir leyendo</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Seguir leyendo' : 'Ver vídeo'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Seguir leyendo' : 'Ver vídeo'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1424,10 +1426,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">En savoir plus</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'En savoir plus' : 'Regarder la vidéo'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'En savoir plus' : 'Regarder la vidéo'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1459,10 +1461,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Mehr lesen</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Mehr lesen' : 'Video ansehen'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Mehr lesen' : 'Video ansehen'}</a>
+                                        
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1494,10 +1497,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Per saperne di più</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Per saperne di più' : 'Guarda il video'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Per saperne di più' : 'Guarda il video'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1529,10 +1532,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Czytaj więcej</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Czytaj więcej' : 'Obejrzyj film'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Czytaj więcej</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Czytaj więcej' : 'Obejrzyj film'}</a>
                                         </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1564,10 +1567,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Daha Fazla Oku</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Daha Fazla Oku' : 'Videoyu izle'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Daha Fazla Oku' : 'Videoyu izle'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1599,10 +1602,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">更多信息</a>
-                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? '更多信息' : '观看视频'}</a>
+                                        <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
+                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? '更多信息' : '观看视频'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
