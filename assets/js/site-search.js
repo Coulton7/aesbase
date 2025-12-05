@@ -1321,7 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "YouTube" ? 'Read More' : 'Watch Video'}</a>                       
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
