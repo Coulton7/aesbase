@@ -54,24 +54,29 @@ document.addEventListener("DOMContentLoaded", function() {
             gutter: 20,
             lazyload: true,
             responsive: {
-                1 : {
+                1: {
                     items: 1
                 },
-        
-                600 : {
+                600: {
                     items: 1
                 },
-        
                 768: {
+                    items: 1
+                },
+                850: {
+                    items: 1
+                },
+                992: {
                     items: 2
                 },
-        
-                992: {
-                    itmes: 3
-                },
-        
                 1200: {
                     items: 3
+                },
+                1900: {
+                    items: 4
+                },
+                2300: {
+                    items: 5
                 }
             },
         })
