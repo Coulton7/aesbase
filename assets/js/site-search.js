@@ -1303,7 +1303,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1312,7 +1312,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>                       
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Read More</a>                       
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
@@ -1337,7 +1337,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1346,7 +1346,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Read More</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
                                     </div>
@@ -1371,7 +1371,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1380,7 +1380,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Seguir leyendo</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Seguir leyendo</a>
@@ -1406,7 +1406,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1415,7 +1415,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">En savoir plus</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">En savoir plus</a>
@@ -1441,7 +1441,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1450,7 +1450,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Mehr lesen</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
@@ -1476,7 +1476,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1485,7 +1485,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Per saperne di più</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Per saperne di più</a>
@@ -1511,7 +1511,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1520,7 +1520,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Czytaj więcej</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Czytaj więcej</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Czytaj więcej</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Czytaj więcej</a>
@@ -1546,7 +1546,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1555,7 +1555,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Daha Fazla Oku</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Daha Fazla Oku</a>
@@ -1581,7 +1581,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
@@ -1590,7 +1590,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">更多信息</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">更多信息</a>
@@ -5016,13 +5016,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Read More</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
@@ -5035,13 +5035,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Read More</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Read More</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Read More</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                     </div>
@@ -5054,13 +5054,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Seguir leyendo</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Seguir leyendo</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Seguir leyendo</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
@@ -5074,13 +5074,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">En savoir plus</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">En savoir plus</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">En savoir plus</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">En savoir plus</a>
@@ -5094,13 +5094,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Mehr lesen</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Mehr lesen</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Mehr lesen</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
@@ -5114,13 +5114,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Per saperne di più</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Per saperne di più</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Per saperne di più</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
@@ -5134,13 +5134,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">Daha Fazla Oku</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">Daha Fazla Oku</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">Daha Fazla Oku</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
@@ -5154,13 +5154,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_ext_site_link_address ? '' : 'd-none'}">${data.field_ext_site_link_address}</small>
+                                <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
                                         <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                         <p id="contentCat" class="lead ${data.type ? '' : 'd-none'}">${data.type}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_ext_site_link_address ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_ext_site_link_address}">更多信息</a>
+                                        <a class="${data.field_link_to_post ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_post}">更多信息</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>
                                         <a class="${data.field_brochure_link_address ? '' : 'd-none' } btn btn-primary view-details align-self-end" href="${data.field_brochure_link_address}">更多信息</a>
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">更多信息</a>
