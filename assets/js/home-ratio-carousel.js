@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeCarousel = document.querySelector('.home-carousel');
     function carouselResize() {
         if(window.innerWidth >= 1800) {
-            return true;
+            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.add('ratio-2x1');
         } else if(window.innerWidth >= 1401 && window.innerWidth < 1800 ) {
             homeCarousel.classList.add('ratio-16x9');
             homeCarousel.classList.remove('ratio-2x1');
