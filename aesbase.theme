@@ -18,9 +18,14 @@ function aesbase_preprocess_node(&$variables) {
   }
   if ($node->getType() ==  'bearing_protection' || 'cartridge_mechanical_seals' || 'component_seals' || 'elastomers' || 'gas_seals' || 'gland_packing' || 'seal_support_systems') {
     $variables['#attached']['library'][] = 'aesbase/prod-lib';
+    $variables['#attached']['library'][] = 'aesbase/hubspot';
   }
   if ($node->getType() == 'video') {
     $variables['#attached']['library'][] = 'aesbase/video-lib';
+  }
+
+  if( $node->getType() == 'industry_guides' || 'whitepaper' || 'product_certificates' || 'video' || 'technical_drawings' || '3d_models' || 'product_brochure' || 'locations') {
+    $variables['#attached']['library'][] = 'aesbase/hubspot';
   }
 }
 
@@ -36,6 +41,10 @@ function aesbase_page_attachments_alter(&$page) {
     }
     if($alias == '/contact-us' || '/contactez-nous' || '/location' || '/localisation') {
       $page['#attached']['library'][] = 'aesbase/svg-map';
+    }
+
+    if($alias == '/contact-us' || '/contáctenos' || '/contacter-aesseal' || '/kontakt' || '/contattaci' || '/kontakt-z-nami' || '/bize-ulaşın' || '/联系我们' || '/contactez-nous' || '/kontakt-uns') {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
     }
   }
 }
