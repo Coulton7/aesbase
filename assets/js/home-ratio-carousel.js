@@ -2,26 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeCarousel = document.querySelector('.home-carousel');
     function carouselResize() {
         if(window.innerWidth >= 1800) {
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
             homeCarousel.classList.add('ratio-2x1');
         } else if(window.innerWidth >= 1401 && window.innerWidth < 1800 ) {
             homeCarousel.classList.add('ratio-16x9');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
         } else if(window.innerWidth >= 1201 && window.innerWidth < 1400) {
             homeCarousel.classList.add('ratio-8x5');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
         } else if(window.innerWidth >=993 && window.innerWidth < 1200) {
             homeCarousel.classList.add('ratio-1x1');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
         } else if(window.innerWidth >= 769 && window.innerWidth < 992) {
             homeCarousel.classList.add('ratio-5x8');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
         } else if(window.innerWidth >= 576 && window.innerWidth < 768) {
             homeCarousel.classList.add('ratio-3x7');
             homeCarousel.classList.remove('ratio-2x1');
         } else {
             homeCarousel.classList.add('ratio-3x7');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('home-aspect-ratio');
         }
     }
     carouselResize();

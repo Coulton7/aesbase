@@ -4634,6 +4634,10 @@ height:100%;
     z-index: -1;
   }
 
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 233.333333%;
+  }
+
   .sustain-nav {
     overflow-x: auto;
     overflow-y: hidden;
@@ -5538,6 +5542,10 @@ height:100%;
     z-index: -1;
   }
 
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 160%;
+  }
+
   .controls li, .tns-outer .tns-controls button[aria-controls] {
     width: 3em;
     height: 3em;
@@ -6142,6 +6150,10 @@ height:100%;
     z-index: -1;
   }
 
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 100%;
+  }
+
   .carousel-col-placement {
     position: relative;
     bottom: -1em;
@@ -6243,7 +6255,6 @@ height:100%;
     padding-inline-start: 8rem;
   }
   
-  /* code for the padding end parameters 6-10 */
   .pe-lg-6 {
     padding-inline-end: 3.5rem;
   }
@@ -6264,7 +6275,6 @@ height:100%;
     padding-inline-end: 8rem;
   }
   
-  /* code for the padding top parameters 6-10 */
   .pt-lg-6 {
     padding-block-start: 3.5rem;
   }
@@ -6285,7 +6295,6 @@ height:100%;
     padding-block-start: 8rem;
   }
   
-  /* code for the padding bottom parameters 6-10 */
   .pb-lg-6 {
     padding-block-end: 3.5rem;
   }
@@ -6425,9 +6434,7 @@ height:100%;
   .px-lg-10 {
     padding-inline: 8rem;
   }
-  
-  /* code for the padding Y parameters 6-10 */
-  
+    
   .py-lg-6 {
     padding-block: 3.5rem;
   }
@@ -6655,6 +6662,10 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
+  }
+
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 62.5%;
   }
 
   .bg-white .navbar-collapse {
@@ -7107,6 +7118,10 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
+  }
+
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 56.25%;
   }
   
   .ps-xxl-6 {
@@ -7579,6 +7594,10 @@ height:100%;
     right: 0;
     content:'';
     z-index: -1;
+  }
+
+  .home-aspect-ratio {
+    --bs-aspect-ratio: 50%;
   }
 
   .ps-xxxl-6 {
