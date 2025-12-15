@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(el_scrollNav) {
         var last_scroll_top = 0;
-        if(window.innerWidth > 992  || !(document.querySelector(".noscroll"))) {
+        if(window.innerWidth > 992  && !(document.querySelector(".noscroll"))) {
             
             window.addEventListener('scroll', function(){
                 let scroll_top = window.scrollY;
