@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
                  else if(scroll_top < last_scroll_top) {
                     el_scrollNav.classList.remove('scrolled-down');
                     el_scrollNav.classList.add('scrolled-up');
+
                 } else if(document.querySelector(".noscroll")) {
                     el_scrollNav.classList.remove('scrolled-down');
                     el_scrollNav.classList.add('scrolled-up');
+                    console.log("no scroll on page");
                 }
                 else {
                     el_scrollNav.classList.remove('scrolled-up');
