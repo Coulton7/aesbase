@@ -123,10 +123,6 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
   object-fit: cover;
 }
 
-.no-padding {
-  padding: 0;
-}
-
 .min-h-100 {
   min-height: 100%;
 }
@@ -141,6 +137,10 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
 
 .min-vh-25 {
   min-height: 25vh !important;
+}
+
+.mw-420 {
+  max-width: 420px;
 }
 
 .ps-6 {
