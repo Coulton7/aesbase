@@ -222,17 +222,51 @@ $utilities: map-merge(
     "max-width": (
       property: max-width,
       class: mw,
-      values: (100: 100%)
+      values: (
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        100: 100%,
+        420: 420px
+        )
+    ),
+    "min-width": (
+      property: min-width,
+      class: min-w,
+      values: (
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        100: 100%
+        )
     ),
     "viewport-width": (
       property: width,
       class: vw,
-      values: (100: 100vw)
+      values: (
+        25: 25vw,
+        33: 33vw,
+        50: 50vw,
+        66: 66vw,
+        75: 75vw,
+        100: 100vw
+        )
     ),
     "min-viewport-width": (
       property: min-width,
       class: min-vw,
-      values: (100: 100vw)
+      values: (
+        25: 25vw,
+        33: 33vw,
+        50: 50vw,
+        66: 66vw,
+        75: 75vw,
+        100: 100vw
+        )
     ),
     "height": (
       property: height,
@@ -250,17 +284,50 @@ $utilities: map-merge(
     "max-height": (
       property: max-height,
       class: mh,
-      values: (100: 100%)
+      values: (
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        100: 100%
+        )
+    ),
+    "min-height": (
+      property: min-height,
+      class: min-h,
+      values: (
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        100: 100%
+        )
     ),
     "viewport-height": (
       property: height,
       class: vh,
-      values: (100: 100vh)
+      values: (
+        25: 25vh,
+        33: 33vh,
+        50: 50vh,
+        66: 66vh,
+        75: 75vh,
+        100: 100vh
+        )
     ),
     "min-viewport-height": (
       property: min-height,
       class: min-vh,
-      values: (100: 100vh)
+      values: (
+        25: 25vh,
+        33: 33vh,
+        50: 50vh,
+        66: 66vh,
+        75: 75vh,
+        100: 100vh
+        )
     ),
     // scss-docs-end utils-sizing
     // Flex utilities
