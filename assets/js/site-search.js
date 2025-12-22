@@ -1296,7 +1296,12 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#searchbox'),
-                 searchAsYouType: false,
+                searchAsYouType: false,
+                queryHook(query, search) {
+                    if(query.length >=3) {
+                        search(query);
+                    }
+                }
             }),
 
             customStats({
