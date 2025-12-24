@@ -4858,22 +4858,13 @@ document.addEventListener("DOMContentLoaded", function() {
             typoTolerance: 'strict',
             paginationLimitedTo: 80,
             newsSearch(requests) {
-                if(requests.every(({ params }) => !params.query)) {
-                    return Promise.resolve({
-                        results: requests.map(() => ({
-                            hits: [],
-                            nbHits: 0,
-                            nbPages: 0,
-                            page: 0,
-                            hitsPerPage: 0,
-                            processingTimeMS: 0,
-                            widgetParams: 0,
-                            query: '',
-                            params: '',
-                        })),
-                    });
-                }
-                return searchClient.newsSearch(requests);
+                const newRequests = requests.map((request) => {
+                    if(!request.params.query || request.params.query.length === 0){
+                        request.params.analytics = false;
+                    }
+                    return request;
+                });
+                return searchClient.newsSearch(newRequests);
             },
             insights: {
                 onEvent(event) {
@@ -5019,6 +5010,11 @@ document.addEventListener("DOMContentLoaded", function() {
             mainSearchBox({
                 container: document.querySelector('#newsSearchbox'),
                  searchAsYouType: false,
+                 queryHook(query, search) {
+                    if(query.length >=3) {
+                        search(query);
+                    }
+                }
             }),
 
             customStats({
