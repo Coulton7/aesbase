@@ -1184,7 +1184,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
         search.addWidgets([{
             init: function(options) {
-                
+                if(!document.location.href.includes('lang%5B')){
+                    if(filterLang == "en")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'en');
+                    }
+                    else if(filterLang == "")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'en');
+                    }
+                    else if(filterLang == "es")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'es');
+                    }
+                    else if (filterLang === "fr") {
+                        options.helper.toggleRefinement('search_api_language', 'fr');
+                    }
+                    else if (filterLang === "de") {
+                        options.helper.toggleRefinement('search_api_language', 'de');
+                    }
+                    else if(filterLang == "it")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'it');
+                    }
+                    else if(filterLang == "pl")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'pl');
+                    }
+                    else if(filterLang == "tr")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'tr');
+                    }
+                    else if(filterLang == "zh-hans")
+                    {
+                        options.helper.toggleRefinement('search_api_language', 'zh-hans');
+                    }
+                }
             }
         }]);
         
@@ -1279,7 +1314,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     item(data, { html, components }){
                         if(filterLang == 'en'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'en');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1315,7 +1349,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == ''){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'en');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1351,7 +1384,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'es'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'es');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1387,7 +1419,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'fr'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'fr');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1423,7 +1454,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'de'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'de');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1460,7 +1490,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'it'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'it');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1496,7 +1525,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'pl'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'pl');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1532,7 +1560,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'tr'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'tr');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
@@ -1568,7 +1595,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             hideForm();
-                            options.helper.toggleRefinement('search_api_language', 'zh-hans');
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
