@@ -4875,6 +4875,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 return searchClient.newsSearch(newRequests);
             },
+            searchFunction(helper) {
+                if (helper.state.query === '')
+                {
+                    return;
+                }
+                helper.search();
+            },
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
