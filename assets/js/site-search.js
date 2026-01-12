@@ -1344,6 +1344,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <img class="${data.gland_packing_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.gland_packing_preview_image}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.cart_seal_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.cart_seal_preview_image}" height="420" width="420" alt="${data.title}" />
                                         <img class="${data.seal_support_preview_image ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.seal_support_preview_image}" height="420" width="420" alt="${data.title}" />
+                                        <img class="${data.case_study_thumbnail ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.case_study_thumbnail}" height="420" width="420" alt="${data.title}" />
                                     </div>
                                 </div>
                             </div>`
