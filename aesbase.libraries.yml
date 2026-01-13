@@ -4,7 +4,6 @@ bootstrap:
       https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css: { type: external, minified: true }
       https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1.17.9/dist/theme.min.css: { type: external, minified: true }
       https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css: { type: external, minified: true }
-      https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
       assets/css/styles.css: { minified: true }
     
   js:
@@ -40,6 +39,8 @@ front-library:
     assets/js/fade-scroll.js: {}
     assets/js/front-overlay-trigger.js: {}
     assets/js/report.js: {}
+  css:
+    https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
 
 pdf-make:
   js:
