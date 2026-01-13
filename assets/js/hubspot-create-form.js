@@ -289,8 +289,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
