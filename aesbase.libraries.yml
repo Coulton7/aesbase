@@ -38,7 +38,8 @@ front-library:
     assets/js/front-overlay-trigger.js: {}
     assets/js/report.js: {}
   css:
-    https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
+    component:
+     https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true}
 
 pdf-make:
   js:
