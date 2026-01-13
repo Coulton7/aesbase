@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formInstanceId: '1',
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if(document.querySelector("#training-form")){
             hbspt.forms.create({
@@ -422,8 +422,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -518,8 +518,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -614,8 +614,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -710,8 +710,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -806,8 +806,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -902,8 +902,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -998,8 +998,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
@@ -1376,12 +1376,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }  else if(document.querySelector("#location-form")){
             hbspt.forms.create({
+                region: "na1",
                 portalId: "2248916",
                 formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
                 target: "#location-form",
                 css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
+                cssClass: "hs-overlay-form",
+                submitButtonClass: "btn btn-primary hs-button",
             });
         } else if(document.querySelector("#training-form")){
             hbspt.forms.create({
