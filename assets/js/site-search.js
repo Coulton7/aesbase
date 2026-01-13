@@ -1674,7 +1674,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
                             <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
                             </div>
-                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            <p class="h3">Suchen Sie nach einer Teilenummer oder Seriennummer?</p>`;
                         }
                         else if (filterLang == 'it') {
                             revealForm();
@@ -2899,7 +2899,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
                             <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
                             </div>
-                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            <p class="h3">Suchen Sie nach einer Teilenummer oder Seriennummer?</p>`;
                         }
                     },
                 },
@@ -2971,7 +2971,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
                                 <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
                                 </div>
-                                <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                                <p class="h3">Suchen Sie nach einer Teilenummer oder Seriennummer?</p>`;
                             }
                         },
                     }
@@ -4786,7 +4786,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html`<div class="no-result"><p class="h3">Keine passenden Ergebnisse gefunden ${results.query}</p>
                             <p>Wir konnten leider kein Ergebnis für Ihre Suche finden. Versuchen Sie, die Suche zu wiederholen, indem Sie Ihre Suche auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Schlüsselwörter reduzieren. Sie können auch versuchen, einen umfassenderen Suchbegriff zu verwenden.</p>
                             </div>
-                            <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            <p class="h3">Suchen Sie nach einer Teilenummer oder Seriennummer?</p>`;
                         } else if (filterLang == 'it') {
                             revealForm();
                             return html`<div class="no-result"><p class="h3">Nessun risultato trovato corrispondente ${results.query}</p>
