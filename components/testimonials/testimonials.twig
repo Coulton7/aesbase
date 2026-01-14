@@ -4,9 +4,9 @@
         <blockquote class="blockquote">{{ quote }}</blockquote>
     </div>
 </div>
-<div class="row testimonial-info">
+<div class="row testimonial-info pt-5 pb-3">
     <div class="col-lg-4 col-6">
-        <div class="user-image text-center pt-5 pb-3">
+        <div class="user-image text-center">
             {{ userImage }}
         </div>
     </div>
@@ -28,15 +28,19 @@
         <blockquote class="blockquote">{{ quote }}</blockquote>
     </div>
 </div>
-<div class="testimonial-info">
-    <div class="user-image text-center pt-5 pb-3">
-        {{ userImage }}
+<div class="row testimonial-info pt-5 pb-3">
+    <div class="col-lg-4 col-6">
+        <div class="user-image text-center">
+            {{ userImage }}
+        </div>
     </div>
-    <div class="user-name text-center">
-        <strong>{{ userName }}</strong>
-    </div>
-    <div class="job-title text-center">
-        {{ jobTitle }}
+    <div class="col-lg-3 col-3">
+        <div class="user-name text-center">
+            <strong>{{ userName }}</strong>
+        </div>
+        <div class="job-title text-center">
+            {{ jobTitle }}
+        </div>
     </div>
 </div>
 {% endif %}
