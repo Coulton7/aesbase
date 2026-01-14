@@ -4,11 +4,11 @@ slots:
   quote:
     title: Quote
     description: 'The quote text itself'
-  image:
+  userImage:
     title: User Image
     description: 'Image of the person quoting'
-  name:
-    title: name
+  userName:
+    title: User Name
     description: 'Name of the person Quoting'
   jobTitle:
     title: Job Title
@@ -16,7 +16,3 @@ slots:
   socialLink:
     title: Social Link
     description: 'Link to a social media profile'
-libraryOverrides:
-  css:
-    component:
-      styles/testimonials.css: {}
