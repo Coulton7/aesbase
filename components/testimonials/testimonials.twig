@@ -1,3 +1,4 @@
+{% if socialLink %}
 <div class="testimonials-box">
     <div class="quote">
         <blockquote class="blockquote">{{ quote }}</blockquote>
@@ -14,4 +15,20 @@
     <div class="social-link">
         {{ socialLink }}
     </div>
+</div>  
+{% else %}
+<div class="testimonials-box">
+    <div class="quote">
+        <blockquote class="blockquote">{{ quote }}</blockquote>
+    </div>
+    <div class="user-image">
+        {{ userImage }}
+    </div>
+    <div class="user-name">
+        <strong>{{ userName }}</strong>
+    </div>
+    <div class="job-title">
+        {{ jobTitle }}
+    </div>
 </div>
+{% endif %}
