@@ -17,7 +17,5 @@ slots:
     title: Social Link
     description: 'Link to a social media profile'
 libraryOverrides:
-  styles:
-    components:
-      css:
-        css/testimonials.css: {}
+  css:
+    - css/testimonials.css
