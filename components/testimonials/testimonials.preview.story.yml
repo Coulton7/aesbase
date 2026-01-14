@@ -1,7 +1,7 @@
 name: Preview
 slots:
   quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec consequat quam. In varius commodo varius. Donec dolor lorem, ultricies quis eros et, gravida pretium leo. Curabitur tristique volutpat neque id eleifend.'
-  user-image: https://static.aesseal.com/graphics/AES-logo-placeholder.jpg
-  name: 'John Doe'
-  job-title: 'Chief Executive Officer'
-  social-link: https://example.com
+  userImage: https://static.aesseal.com/graphics/AES-logo-placeholder.jpg
+  userName: 'John Doe'
+  jobTitle: 'Chief Executive Officer'
+  socialLink: https://example.com
