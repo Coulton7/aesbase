@@ -1,9 +1,5 @@
 name: 'Testimonials'
 description: 'Used to show company of person testimonials on products or locations'
-variants:
-  default:
-    title: Normal
-    description: 'Standard Quote in speech pattern'
 slots:
   quote:
     title: Quote
