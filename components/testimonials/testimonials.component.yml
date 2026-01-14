@@ -1,0 +1,25 @@
+name: 'Testimonials'
+description: 'Used to show company of person testimonials on products or locations'
+variants:
+  default:
+    title: Normal
+    description: 'Standard Quote in speech pattern'
+slots:
+  quote:
+    title: Quote
+    description: 'The quote text itself'
+  user-image:
+    title: User Image
+    description: 'Image of the person quoting'
+  name:
+    title: name
+    description: 'Name of the person Quoting'
+  job-title:
+    title: Job Title
+    description: 'Job title of the person quoting'
+  social-link:
+    title: Social Link
+    description: 'Link to a social media profile'
+libraryOverrides:
+  css:
+    css/testimonials.css: {  }

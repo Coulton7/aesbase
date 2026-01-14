@@ -1,9 +1,0 @@
-name: Preview
-slots:
-  slides:
-    type: component
-    component: thumbnav-tinyslider_item
-    slots:
-      image:
-        theme: image
-        uri: 'http://via.placeholder.com/350x350'

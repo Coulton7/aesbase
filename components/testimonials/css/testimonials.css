@@ -1,0 +1,22 @@
+
+.testimonials-box {
+  background-color:#fff;
+  padding:30px;
+  position:relative
+}
+.testimonials-box:after {
+  border:15px solid transparent;
+  border-top-color:#fff;
+  border-width:12px 15px;
+  bottom:-24px;
+  content:"";
+  height:0;
+  left:30px;
+  position:absolute;
+  width:0
+}
+
+.user-image img {
+  border-radius:50%;
+  max-width:50%
+}
