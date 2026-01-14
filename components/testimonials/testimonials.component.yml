@@ -4,7 +4,7 @@ slots:
   quote:
     title: Quote
     description: 'The quote text itself'
-  user-image:
+  image:
     title: User Image
     description: 'Image of the person quoting'
   name:
