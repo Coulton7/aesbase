@@ -10,10 +10,10 @@ slots:
   name:
     title: name
     description: 'Name of the person Quoting'
-  job-title:
+  jobTitle:
     title: Job Title
     description: 'Job title of the person quoting'
-  social-link:
+  socialLink:
     title: Social Link
     description: 'Link to a social media profile'
 libraryOverrides:
