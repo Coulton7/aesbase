@@ -18,4 +18,4 @@ slots:
     description: 'Link to a social media profile'
 libraryOverrides:
   css:
-    css/testimonials.css: {  }
+    css/testimonials.css: {}
