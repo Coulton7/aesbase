@@ -16,3 +16,5 @@ slots:
   socialLink:
     title: Social Link
     description: 'Link to a social media profile'
+libraryOverrides:
+  css: {}
