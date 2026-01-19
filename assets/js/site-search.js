@@ -1316,7 +1316,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_post ? '' : 'd-none'}">${data.field_link_to_post}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
