@@ -5,3 +5,4 @@ slots:
   userName: 'John Doe'
   jobTitle: 'Chief Executive Officer'
   socialLink: https://example.com
+  contentLink: 'Link to related content'

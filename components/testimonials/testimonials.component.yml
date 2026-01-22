@@ -16,6 +16,9 @@ slots:
   socialLink:
     title: Social Link
     description: 'Link to a social media profile'
+  contentLink:
+    title: Content Link
+    description: 'Link to related content'
 libraryOverrides:
   css:
     component:
