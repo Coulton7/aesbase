@@ -2341,6 +2341,14 @@ ul.about-us-cats {
   cursor: pointer;
 }
 
+.change i {
+  display: none;
+}
+
+.change div {
+  display: none;
+}
+
 .overlay-menu .action-menu {
   z-index: 1030;
   background-color: transparent;
