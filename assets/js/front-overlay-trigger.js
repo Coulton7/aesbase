@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           overlayNavBtn.classList.remove("overlay-btn");
-                    document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
+          document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
           document.querySelector('.nav-link').classList.add("normText");
           document.querySelector('.overlay-btn').classList.add("normText");
           document.querySelector('.wavelogo').style.opacity = "0";
