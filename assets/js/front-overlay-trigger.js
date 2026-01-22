@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelector('.ais-SearchBox-input').focus();
           document.querySelector(".scroll-nav").classList.add("shadow-back");
           document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
-          document.querySelector('.nav-link').classList.add("normText");
           document.querySelector('.overlay-btn').classList.add("normText");
           document.querySelector('.wavelogo').style.opacity = "0";
           document.querySelector('.textlogo').style.opacity = "1";
