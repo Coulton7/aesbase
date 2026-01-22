@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayNavBtn.classList.remove("overlay-btn");
           document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
           document.querySelector('.nav-link').classList.add("normText");
-          document.querySelector('.overlay-btn').classList.add("normText");
           document.querySelector('.wavelogo').style.opacity = "0";
           document.querySelector('.textlogo').style.opacity = "1";
           navLinks.forEach(function (navLink) {
