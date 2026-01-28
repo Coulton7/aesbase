@@ -268,6 +268,18 @@ $utilities: map-merge(
         100: 100vw
         )
     ),
+    "max-viewport-width": (
+      property: max-width,
+      class: max-vw,
+      values: (
+        25: 25vw,
+        33: 33vw,
+        50: 50vw,
+        66: 66vw,
+        75: 75vw,
+        100: 100vw
+        )
+    ),
     "height": (
       property: height,
       class: h,
@@ -320,6 +332,18 @@ $utilities: map-merge(
     "min-viewport-height": (
       property: min-height,
       class: min-vh,
+      values: (
+        25: 25vh,
+        33: 33vh,
+        50: 50vh,
+        66: 66vh,
+        75: 75vh,
+        100: 100vh
+        )
+    ),
+    "max-viewport-height": (
+      property: max-height,
+      class: max-vh,
       values: (
         25: 25vh,
         33: 33vh,
