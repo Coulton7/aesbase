@@ -224,9 +224,17 @@
         {% endblock %}
       {% endif %}
 
+    {% if page.prod_standards %}
+    	{% block prod_standards %}
+      <div class="row g-0"> 
+        {{ page.prod_standards }}
+      </div>
+      {% endblock %}
+    {% endif %}
+
 	  {% if page.base %}
 	  	{% block base %}
-      <div class="row g-0"> 
+      <div class="row g-0 justify-content-center"> 
 		    {{ page.base }}
       </div>
 		  {% endblock %}

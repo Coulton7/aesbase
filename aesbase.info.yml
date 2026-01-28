@@ -21,6 +21,7 @@ regions:
   sidebar_first: 'Offcanvas Left'
   sidebar_second: 'Offcanvas Right'
   base: 'Base'
+  prod_standards: 'Product Standards'
   suffix: 'Suffix'
   postscript_fir: 'Postscript First'
   postscript_mid: 'Postscript Middle'
