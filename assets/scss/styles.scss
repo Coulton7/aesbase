@@ -117,6 +117,11 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
   height: auto;
 }
 
+.product-standards-section > div {
+  display: flex;
+  justify-content: center;
+}
+
 .square-img {
   height: 420px!important;
   width: 420px;
