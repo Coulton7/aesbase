@@ -224,14 +224,6 @@
         {% endblock %}
       {% endif %}
 
-	  {% if page.base %}
-	  	{% block base %}
-      <div class="row g-0"> 
-		    {{ page.base }}
-      </div>
-		  {% endblock %}
-	  {% endif %}
-
     </div>
     {% if page.prod_standards %}
     	{% block prod_standards %}
@@ -242,6 +234,15 @@
       </div>
       {% endblock %}
     {% endif %}
+
+    {% if page.base %}
+	  	{% block base %}
+      <div class="row g-0"> 
+		    {{ page.base }}
+      </div>
+		  {% endblock %}
+	  {% endif %}
+    
   </main>
 {% endblock %}
 
