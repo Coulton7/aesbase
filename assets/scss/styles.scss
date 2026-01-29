@@ -123,6 +123,10 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
   flex-wrap: wrap;
 }
 
+.full-height > div, .full-height > div > div, .full-height > div > div > div {
+  height: 100%;
+}
+
 .square-img {
   height: 420px!important;
   width: 420px;
