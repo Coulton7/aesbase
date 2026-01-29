@@ -120,6 +120,7 @@ p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
 .product-standards-section > div {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .square-img {
