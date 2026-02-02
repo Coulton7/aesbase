@@ -2208,7 +2208,7 @@ ul.about-us-cats {
 .overlay-terms,
 .location-overlay {
   height: 1px;
-  top: 0;
+  top: -1px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
