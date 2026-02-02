@@ -4567,6 +4567,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 helper.search();
             },
+            
             insights: {
                 onEvent(event) {
                     const { widgetType, eventType, payload, hits } = event;
@@ -4739,6 +4740,11 @@ document.addEventListener("DOMContentLoaded", function() {
             mainSearchBox({
                 container: document.querySelector('#resSearchbox'),
                  searchAsYouType: false,
+                 queryHook(query, search) {
+                    if(query.length >=3) {
+                        search(query);
+                    }
+                }
             }),
 
             customStats({
