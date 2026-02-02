@@ -3191,6 +3191,18 @@ ul.about-us-cats a {
   cursor: pointer;
 }
 
+.link-btn a {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.link-btn a:hover {
+  background-color: darken($primary, 10%);
+  border-color: darken($primary, 10%);
+  color: $white;
+}
+
 .social-contact {
   position: relative;
 }
