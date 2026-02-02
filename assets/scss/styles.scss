@@ -3192,7 +3192,7 @@ ul.about-us-cats a {
 }
 
 .link-btn a {
-  background-color: $primary;
+  background-color: $primary!important;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   color: $white;
   border-color: $primary;
@@ -3207,7 +3207,7 @@ ul.about-us-cats a {
 }
 
 .link-btn a:hover {
-  background-color: $lightblue;
+  background-color: $lightblue!important;
   border-color: $lightblue;
   color: $white;
 }
