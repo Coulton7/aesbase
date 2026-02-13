@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function(){
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Power-Generation.jpg"
     }else if (pharmacutical) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Chemical.jpg"
-    } else if (chemical) {
-      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Chemical.jpg"
     } else if (pulp) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Pulp-and-Paper.jpg"
     } else if (water) {
