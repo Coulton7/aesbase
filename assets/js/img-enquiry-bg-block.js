@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var automotive = document.querySelector('img[src="https://static.aesseal.com/graphics/Automotive.png"');
     var biofuel = document.querySelector('img[src="https://static.aesseal.com/graphics/Biofuels.png"');
-    var chemical = document.querySelector('img[src="https://static.aesseal.com/graphics/Chemical-and-Pharmaceutical.png"');
+    var chemical = document.querySelector('img[src="https://static.aesseal.com/graphics/Chemical.webp"');
     var construction = document.querySelector('img[src="https://static.aesseal.com/graphics/construction.png"')
     var food = document.querySelector('img[src="https://static.aesseal.com/graphics/Food-and-Beverage.png"');
     var marine = document.querySelector('img[src="https://static.aesseal.com/graphics/Marine.png"');
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var mining = document.querySelector('img[src="https://static.aesseal.com/graphics/Mining-and-Minerals.png"');
     var oil = document.querySelector('img[src="https://static.aesseal.com/graphics/Oil-and-Gas.png"');
     var power = document.querySelector('img[src="https://static.aesseal.com/graphics/Power-Generation.png"');
+    var pharmacutical = document.querySelector('img[src="https://static.aesseal.com/graphics/Pharmaceutical.webp"');
     var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/Pulp-and-Paper.png"');
     var water = document.querySelector('img[src="https://static.aesseal.com/graphics/Water-and-Waste-Water.png"');
 
@@ -42,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function(){
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Oil-and-Gas.jpg"
     } else if (power) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Power-Generation.jpg"
+    }else if (pharmacutical) {
+      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Chemical.jpg"
+    } else if (chemical) {
+      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Chemical.jpg"
     } else if (pulp) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Pulp-and-Paper.jpg"
     } else if (water) {
