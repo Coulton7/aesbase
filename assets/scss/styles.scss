@@ -823,6 +823,12 @@ a.lightblue-text {
   border-radius: 15px;
 }
 
+.dark-bg.card-body {
+    background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
 .card-header {
   border-bottom: none;
 }
