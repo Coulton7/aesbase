@@ -49,5 +49,19 @@ function aesbase_page_attachments_alter(&$page) {
   }
   if(strpos($alias, '/industry') !== false) {
       $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if (strpos($alias, '/industria') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/industrie') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/branchen') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/industria') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/przemysł') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/sanayi') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
+  } else if(strpos($alias, '/行业') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
   }
 }
