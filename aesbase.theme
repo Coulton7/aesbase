@@ -47,8 +47,8 @@ function aesbase_page_attachments_alter(&$page) {
       $page['#attached']['library'][] = 'aesbase/hubspot';
     }
 
-    if($alias == '/industry/automotive') {
-      $page['#attached']['library'][] = 'aesbase/labtecta-calc';
+    if(strpos($alias, '/industry') !== false) {
+      $page['#attached']['library'][] = 'aesbase/hubspot';
     }
   }
 }
