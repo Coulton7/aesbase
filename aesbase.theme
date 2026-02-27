@@ -46,8 +46,8 @@ function aesbase_page_attachments_alter(&$page) {
     if($alias == '/contact-us' || '/contáctenos' || '/contacter-aesseal' || '/kontakt' || '/contattaci' || '/kontakt-z-nami' || '/bize-ulaşın' || '/联系我们' || '/contactez-nous' || '/kontakt-uns') {
       $page['#attached']['library'][] = 'aesbase/hubspot';
     }
-    
-    if($alias == '/industry/') {
+
+    if($alias == '/industry/automotive') {
       $page['#attached']['library'][] = 'aesbase/labtecta-calc';
     }
   }
