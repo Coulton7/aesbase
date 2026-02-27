@@ -31,8 +31,8 @@ function aesbase_preprocess_node(&$variables) {
 
 function aesbase_page_attachments_alter(&$page) {
   $path = \Drupal::service('path.current')->getPath();
+  $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
   if(strpos($path, '/node/') === 0){
-    $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
     if($alias == '/resources/industry-guides/policy-prevent-global-warming') {
       $page['#attached']['library'][] = 'aesbase/pdf-make';
     }
@@ -46,9 +46,8 @@ function aesbase_page_attachments_alter(&$page) {
     if($alias == '/contact-us' || '/contáctenos' || '/contacter-aesseal' || '/kontakt' || '/contattaci' || '/kontakt-z-nami' || '/bize-ulaşın' || '/联系我们' || '/contactez-nous' || '/kontakt-uns') {
       $page['#attached']['library'][] = 'aesbase/hubspot';
     }
-
-    if(strpos($alias, '/industry') !== false) {
+  }
+  if(strpos($alias, '/industry') !== false) {
       $page['#attached']['library'][] = 'aesbase/hubspot';
-    }
   }
 }
