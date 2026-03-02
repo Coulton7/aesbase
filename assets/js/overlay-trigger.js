@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if(overlayLegalBtn){
-      overlayLegalBtn.addEventListener("click", function shareBtn() {
+      overlayLegalBtn.addEventListener("click", function legalBtn() {
         overlayLegalBtn.classList.toggle("change");
         if (l.style.height === "100%") {
           l.style.height = "1px";
