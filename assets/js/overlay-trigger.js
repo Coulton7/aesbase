@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
             y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
-          } else if (l.style.height == "100%") {
+          } else if (t.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
             overlayNavBtn.classList.remove("change");
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
-          overlayLegalBtn.classList.remove("share-btn");
+          overlayTermsBtn.classList.remove("terms-btn");
         }
       });
     }
