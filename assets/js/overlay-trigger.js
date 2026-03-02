@@ -357,7 +357,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(footerSearchBtn){
       footerSearchBtn.addEventListener("click", function searchBtn() {
-        footerSearchBtn.classList.toggle("change");
         openSearch();
       });
     }
