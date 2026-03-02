@@ -394,34 +394,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(mobileOverlaySearch){
       mobileOverlaySearch.addEventListener("click", function mobSearchBtn() {
-        mobileOverlaySearch.classList.toggle("change");
-        if (y.style.height === "100%") {
-          y.style.height = "1px";
-          y.style.top = "-1px";
-          html.classList.remove("noscroll");
-          body.classList.remove("noscroll");
-          dialogOffCanvas.classList.remove("noscroll");
-          overlaySearchBtn.classList.add("search-btn");
-        } else {
-          y.style.height = "100%";
-          y.style.top = "0";
-          if (x.style.height == "100%") {
-            x.style.height = "1px";
-            x.style.bottom = "-1px";
-            mobileOverlaySearch.classList.remove("change");
-            mobileOverlaySearch.classList.add("overlay-btn");
-          } else if (s.style.height == "100%") {
-            s.style.height = "1px";
-            s.style.bottom = "-1px";
-            overlayShareBtn.classList.remove("change");
-            overlayShareBtn.classList.add("share-btn");
-          }
-          html.classList.add("noscroll");
-          body.classList.add("noscroll");
-          dialogOffCanvas.classList.add("noscroll");
-          overlaySearchBtn.classList.remove("search-btn");
-          document.querySelector('.ais-SearchBox-input').focus();
-        } 
+        openSearch();
       });
     }
     if(popSearch){
