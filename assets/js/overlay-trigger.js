@@ -224,8 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
           } else if (t.style.height == "100%") {
             x.style.height = "1px";
             x.style.bottom = "-1px";
-            overlayNavBtn.classList.remove("change");
-            overlayNavBtn.classList.add("overlay-btn");
+            
           }
           html.classList.add("noscroll");
           body.classList.add("noscroll");
