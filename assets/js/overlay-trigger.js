@@ -10,6 +10,7 @@ var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayTermsBtn = document.getElementById("overlayTerms");
 var overlayShareBtn = document.querySelector("#overlay-share");
 var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
+var footerTermsBtn = document.querySelector("#footer-terms");
 var footerSearchBtn = document.querySelector("#footer-search");
 var mobileNavOverlay = document.querySelector("[data-bs-target='#mobile-overlay']");
 var mobileOverlaySearch  = document.querySelector("#mob-overlay-search");
@@ -295,6 +296,38 @@ document.addEventListener("DOMContentLoaded", function () {
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
           overlayNavBtn.classList.remove("overlay-btn");
+        }
+      });
+    }
+
+    if(footerTermsBtn){
+      footerTermsBtn.addEventListener("click", function termsBtn() {
+        footerTermsBtn.classList.toggle("change");
+        if (t.style.height === "100%") {
+          t.style.height = "1px";
+          t.style.bottom = "-1px";
+          html.classList.remove("noscroll");
+          body.classList.remove("noscroll");
+          dialogOffCanvas.classList.remove("noscroll");
+          footerTermsBtn.classList.add("terms-btn");
+        } else {
+          t.style.height = "100%";
+          t.style.bottom = "0";
+          t.style.top = "0";
+          if (y.style.height == "100%") {
+            y.style.height = "1px";
+            y.style.top = "-1px";
+            overlaySearchBtn.classList.remove("change");
+            overlaySearchBtn.classList.add("search-btn");
+          } else if (t.style.height == "100%") {
+            x.style.height = "1px";
+            x.style.bottom = "-1px";
+            
+          }
+          html.classList.add("noscroll");
+          body.classList.add("noscroll");
+          dialogOffCanvas.classList.add("noscroll");
+          footerTermsBtn.classList.remove("terms-btn");
         }
       });
     }
