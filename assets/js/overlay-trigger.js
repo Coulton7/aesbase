@@ -225,6 +225,27 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
+    if(url.location.hash === "#terms" && overlayTermsBtn){
+      overlayTermsBtn.classList.toggle("change");
+        if (t.style.height === "100%") {
+          t.style.height = "1px";
+          t.style.bottom = "-1px";
+          html.classList.remove("noscroll");
+          body.classList.remove("noscroll");
+          dialogOffCanvas.classList.remove("noscroll");
+          overlayTermsBtn.classList.add("terms-btn");
+        } else {
+          t.style.height = "100%";
+          t.style.bottom = "0";
+          t.style.top = "0";
+          html.classList.add("noscroll");
+          body.classList.add("noscroll");
+          dialogOffCanvas.classList.add("noscroll");
+          overlayTermsBtn.classList.remove("terms-btn");
+        }
+      
+    };
+
     if(overlayLegalBtn){
       overlayLegalBtn.addEventListener("click", function legalBtn() {
         overlayLegalBtn.classList.toggle("change");
