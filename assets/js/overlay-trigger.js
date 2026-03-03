@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    if(url.location.hash === "#terms" && overlayTermsBtn){
+    if(window.location.hash === "#terms" && overlayTermsBtn){
       overlayTermsBtn.classList.toggle("change");
         if (t.style.height === "100%") {
           t.style.height = "1px";
