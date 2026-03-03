@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    if(hash === "#terms" ){
+    if(hash === "#terms" && overlayTermsBtn){
       overlayTermsBtn.classList.toggle("change");
         if (t.style.height === "100%") {
           t.style.height = "1px";
