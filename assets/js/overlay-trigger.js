@@ -217,16 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
           t.style.height = "100%";
           t.style.bottom = "0";
           t.style.top = "0";
-          if (y.style.height == "100%") {
-            y.style.height = "1px";
-            y.style.top = "-1px";
-            overlaySearchBtn.classList.remove("change");
-            overlaySearchBtn.classList.add("search-btn");
-          } else if (t.style.height == "100%") {
-            x.style.height = "1px";
-            x.style.bottom = "-1px";
-            
-          }
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
