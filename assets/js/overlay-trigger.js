@@ -24,6 +24,7 @@ var url = window.location.href;
 var query = 'q';
 var popSearch = document.querySelector("#popular-search-bar");
 var prefillBtns = document.querySelectorAll(".prefill-btn");
+var hash = window.location.hash;
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -225,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    if(window.location.hash === "#terms" && overlayTermsBtn){
+    if(hash === "#terms" ){
       overlayTermsBtn.classList.toggle("change");
         if (t.style.height === "100%") {
           t.style.height = "1px";
