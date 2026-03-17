@@ -24,6 +24,10 @@ $utilities-text-colors: map-loop(
 );
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
+$finalHeight: 10rem;
+$finalWidth: 3 * $finalHeight;
+$scrollBarHeight: 1px;
+
 @import "bootstrap";
 /* custom.scss */
 
@@ -3663,6 +3667,24 @@ ul.about-us-cats a {
   min-height: 5vh;
   background-color: white;
   opacity: 1;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width:300vw;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-$finalHeight);
+  transform-origin: right top; & > div {
+    display: block;
+    padding: 0.5rem;
+    rotate: (90deg);
+    transform-origin: right top;
+  }
 }
 
 .parallax-container2 {
