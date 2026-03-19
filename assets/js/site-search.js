@@ -2043,7 +2043,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    filters: '(dclanguage:en-GB OR dclanguage:en-US)',
                 }),
 
                 pagination({
