@@ -2276,6 +2276,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -2509,6 +2510,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -2742,6 +2744,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -3029,6 +3032,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -3290,6 +3294,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -3577,6 +3582,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -3876,6 +3882,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -4175,6 +4182,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
@@ -4473,6 +4481,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    filters: 'dclanguage:en-GB',
                 }),
 
                 pagination({
