@@ -215,7 +215,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         } else if (document.querySelector("#model-table-form")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
-                document.getElementById("disclaimer").style.display = "block";
                 document.querySelector('.model-table').style.display = 'none';
             }
              
@@ -234,7 +233,6 @@ document.addEventListener("DOMContentLoaded", function() {
             if(submitString=='y'){
                 document.querySelector('.model-table').style.display = 'block';
                 document.querySelector('.resource-request').style.display = 'none';
-                document.getElementById("disclaimer").style.display = "none";
                 document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
             }
 
