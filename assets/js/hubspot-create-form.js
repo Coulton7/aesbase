@@ -213,6 +213,43 @@ document.addEventListener("DOMContentLoaded", function() {
                         window.location.href = window.location.pathname+'?fs=y'
                 }
             });
+        } else if (document.querySelector("#model-table-form")) {
+            if (document.querySelector('.resource-request').innerHTML.length > 0) {
+                document.getElementById("disclaimer").style.display = "block";
+                document.querySelector('.model-table').style.display = 'none';
+            }
+             
+            function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for(var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+             
+            var submitString = getUrlVars()["fs"];
+            if(submitString=='y'){
+                document.querySelector('.model-table').style.display = 'block';
+                document.querySelector('.resource-request').style.display = 'none';
+                document.getElementById("disclaimer").style.display = "none";
+                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
+            }
+
+            hbspt.forms.create({
+                portalId: "2248916",
+                formId: "f3b56435-d63b-471b-9416-03b57fd08e78",
+                formInstanceId: '1',
+                target: "#model-table-form",
+                css: "",
+                cssClass:"hs-overlay-form",
+                submitButtonClass:"btn btn-primary hs-button",
+                onFormSubmit: function ($form){
+                        window.location.href = window.location.pathname+'?fs=y'
+                }
+            });
         } else if (document.querySelector("#apprentice-dec-form")) {
             hbspt.forms.create({
                 portalId: "2248916",
