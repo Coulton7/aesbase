@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
-        } else if(document.querySelector("#error-form")){
+        } 
+        
+        if(document.querySelector("#error-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -27,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
-        }else if(document.querySelector("#modal-form")){
+        }
+        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -37,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        } 
+        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
@@ -47,7 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }
+        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -57,7 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        } else if(document.querySelector("#location-form")){
+        }
+        
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -68,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#training-form")){
+        } 
+        
+        if(document.querySelector("#training-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -78,7 +90,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
-        }else if(document.querySelector("#us-training-form")){
+        } 
+        
+        if(document.querySelector("#us-training-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -89,7 +103,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        }else if(document.querySelector("#training-form-ae")){
+        }
+        
+        if(document.querySelector("#training-form-ae")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -100,7 +116,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass: "btn btn-danger",
             });
-        } else if (document.querySelector("#piping-booklet-form")){
+        }
+        
+        if (document.querySelector("#piping-booklet-form")){
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -138,7 +156,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#download-resource")) {
+        }
+        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -176,7 +196,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#technical-drawings-form")) {
+        } 
+        
+        if (document.querySelector("#technical-drawings-form")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.getElementById("disclaimer").style.display = "block";
                 document.querySelector('#resource-table').style.display = 'none';
@@ -213,7 +235,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         window.location.href = window.location.pathname+'?fs=y'
                 }
             });
-        } else if (document.querySelector("#apprentice-dec-form")) {
+        }
+        
+        if (document.querySelector("#apprentice-dec-form")) {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "f2198fd3-4808-496d-be2b-dda748d6c6e1",
@@ -222,7 +246,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }
+        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -244,7 +270,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }
+        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -253,7 +281,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }
+        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "bb83ce2b-23ec-4761-b278-6aa63687ccaa",
@@ -262,7 +292,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }
+        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -272,7 +304,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }
+        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -282,7 +316,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }
+        
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -292,7 +328,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }
+        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -328,7 +366,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#piping-booklet-form")){
+        }
+        
+        if (document.querySelector("#piping-booklet-form")){
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -377,7 +417,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }
+        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -386,7 +428,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }
+        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId : "2248916",
                 formId : "451a1582-c796-46eb-bb96-008042aa5a74",
@@ -395,7 +439,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass : "hs-overlay-form",
                 submitButtonClass : "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }
+        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -405,7 +451,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }
+        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -415,7 +463,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }
+        
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -425,7 +475,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }
+        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -473,7 +525,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }
+        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "0a900227-78e9-4643-b15a-66ccf3444f5b",
@@ -482,7 +536,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }
+        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "c16de6ca-1de5-4c89-823b-10b2407f333c",
@@ -491,7 +547,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }
+        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "1600c225-d87c-4374-96bf-58ea9c6110e1",
@@ -501,7 +559,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }
+        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "1600c225-d87c-4374-96bf-58ea9c6110e1",
@@ -511,7 +571,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        } else if(document.querySelector("#location-form")){
+        }        
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -521,7 +582,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -569,7 +631,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -578,7 +641,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -588,7 +652,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -598,7 +663,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if (document.querySelector("#sales-form")){
+        }         
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
@@ -607,7 +673,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#location-form")){
+        }        
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -617,7 +684,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -665,7 +733,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -674,7 +743,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
@@ -683,7 +753,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -693,7 +764,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -703,7 +775,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }         
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -713,7 +786,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -750,103 +824,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         }
-    } else if (filterLang == 'ru'){
-        if(document.querySelector("#contact-form")){
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "2248916",
-                formId: "f05d71b2-f8e5-43b9-a2a0-8743497cb31e",
-                target: "#contact-form",
-                css:"",
-                cssClass:"hs-visible-form",
-                submitButtonClass:"btn btn-primary hs-button"
-            });
-        } else if(document.querySelector("#modal-form")){
-            hbspt.forms.create({
-                portalId: "2248916",
-                formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
-                target: "#modal-form",
-                css: "",
-                cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
-            });
-        } else if (document.querySelector("#sales-form")){
-            hbspt.forms.create({
-                portalId: "2248916",
-                formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
-                target: "#sales-form",
-                css: "",
-                cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
-            });
-        } else if(document.querySelector("#parts-form")){
-            hbspt.forms.create({
-	            portalId: "2248916",
-                formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
-                formInstanceId: '1',
-                target: "#parts-form",
-                css: "",
-                cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
-            });
-        } else if(document.querySelector("#search-parts-form")){
-            hbspt.forms.create({
-	            portalId: "2248916",
-                formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
-                formInstanceId: '1',
-                target:"#search-parts-form",
-                css: "",
-                cssClass:"bg-primary text-white p-5",
-                submitButtonClass:"btn btn-danger hs-button",
-            });
-        }  else if(document.querySelector("#location-form")){
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "2248916",
-                formId: "d0bf7089-7cad-47c2-8199-b516edecdddc",
-                target: "#location-form",
-                css: "",
-                cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
-            });
-        } else if (document.querySelector("#download-resource")) {
-            if (document.querySelector('.resource-request').innerHTML.length > 0) {
-                document.querySelector('.pdf-download').style.display = 'none';
-            }
-            function getUrlVars() {
-                var vars = [], hash;
-                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-                for(var i = 0; i < hashes.length; i++) {
-                    hash = hashes[i].split('=');
-                    vars.push(hash[0]);
-                    vars[hash[0]] = hash[1];
-                }
-                return vars;
-            }
-
-            var submitString = getUrlVars()["fs"];
-            if(submitString=='y'){
-                document.querySelector('.pdf-download').style.display = 'block';;
-                document.querySelector('.resource-request').style.display = 'none';
-                document.querySelector('#block-aesbase-resourcesubmissionnotice').classList.remove('d-none');
-            }
-
-            hbspt.forms.create({
-                portalId: "2248916",
-                formId: "0d6eb558-5d3a-48e6-977f-448765cc24b6",
-                target: "#download-resource",
-                css: "",
-                cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
-                onFormSubmit: function ($form){
-                    var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
-                    if(deliverability === 0){
-                        window.location.href = window.location.pathname+'?fs=y'
-                    }
-                }
-            });
-        }
-    } else if (filterLang == 'tr'){
+    }  else if (filterLang == 'tr'){
         if(document.querySelector("#contact-form")){
             hbspt.forms.create({
                 region: "na1",
@@ -857,7 +835,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -866,7 +845,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
@@ -875,7 +855,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -885,7 +866,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -895,7 +877,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }         
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -905,7 +888,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -953,7 +937,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form",
                 submitButtonClass:"btn btn-primary hs-button"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -962,7 +947,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId:"2248916",
                 formId:"5814dfcf-6a2b-4b19-8b28-477c99eb4178",
@@ -971,7 +957,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -981,7 +968,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -991,7 +979,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }         
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -1001,7 +990,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -1049,7 +1039,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -1058,7 +1049,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1068,7 +1060,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1078,7 +1071,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#training-form")){
+        }         
+        if(document.querySelector("#training-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -1098,7 +1092,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1108,7 +1103,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1130,7 +1126,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -1139,7 +1136,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1149,7 +1147,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1159,7 +1158,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#training-form")){
+        }         
+        if(document.querySelector("#training-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -1179,7 +1179,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1189,7 +1190,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1210,7 +1212,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1220,7 +1223,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1241,7 +1245,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1251,7 +1256,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1272,7 +1278,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1282,7 +1289,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1304,7 +1312,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-visible-form p-7",
                 submitButtonClass:"btn btn-danger"
               });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1314,7 +1323,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1336,7 +1346,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-visible-form",
                 submitButtonClass: "btn btn-danger"
             });
-        } else if(document.querySelector("#modal-form")){
+        }        
+        if(document.querySelector("#modal-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "a014d83c-8942-4076-8c95-bc6c47ff38c4",
@@ -1345,7 +1356,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if (document.querySelector("#sales-form")){
+        }        
+        if (document.querySelector("#sales-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "b0dff973-4804-41c0-bb6f-c6ff8b88ce2b",
@@ -1354,7 +1366,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#parts-form")){
+        }        
+        if(document.querySelector("#parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1364,7 +1377,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"hs-overlay-form",
                 submitButtonClass:"btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#search-parts-form")){
+        }        
+        if(document.querySelector("#search-parts-form")){
             hbspt.forms.create({
 	            portalId: "2248916",
                 formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
@@ -1374,7 +1388,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass:"bg-primary text-white p-5",
                 submitButtonClass:"btn btn-danger hs-button",
             });
-        }  else if(document.querySelector("#location-form")){
+        }         
+        if(document.querySelector("#location-form")){
             hbspt.forms.create({
                 region: "na1",
                 portalId: "2248916",
@@ -1384,7 +1399,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 cssClass: "hs-overlay-form",
                 submitButtonClass: "btn btn-primary hs-button",
             });
-        } else if(document.querySelector("#training-form")){
+        }        
+        if(document.querySelector("#training-form")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "de82606b-106f-4a0f-a086-6162fbcd54ca",
@@ -1392,7 +1408,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
-        } else if(document.querySelector("#training-form-ae")){
+        }        
+        if(document.querySelector("#training-form-ae")){
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "164b9e3d-50b9-4ad8-b04b-66a112705829",
@@ -1400,7 +1417,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 css:"",
                 submitButtonClass: "btn btn-danger",
             });
-        } else if (document.querySelector("#download-resource")) {
+        }        
+        if (document.querySelector("#download-resource")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.pdf-download').style.display = 'none';
             }
@@ -1436,7 +1454,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#video-form")) {
+        }        
+        if (document.querySelector("#video-form")) {
             document.querySelector('.video-thumbnail').style.display = 'none';
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.querySelector('.video-stream').style.display = 'none';
@@ -1475,7 +1494,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        } else if (document.querySelector("#technical-drawings-form")) {
+        }        
+        if (document.querySelector("#technical-drawings-form")) {
             if (document.querySelector('.resource-request').innerHTML.length > 0) {
                 document.getElementById("disclaimer").style.display = "block";
                 document.querySelector('#resource-table').style.display = 'none';
@@ -1511,7 +1531,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         window.location.href = window.location.pathname+'?fs=y'
                 }
             });
-        } else if (document.querySelector("#apprentice-dec-form")) {
+        }        
+        if (document.querySelector("#apprentice-dec-form")) {
             hbspt.forms.create({
                 portalId: "2248916",
                 formId: "f2198fd3-4808-496d-be2b-dda748d6c6e1",
