@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function(){
   if(document.querySelectorAll('.block-solutionsenquiry').length > 0) {
     var indImg;
 
-    var automotive = document.querySelector('img[src="https://static.aesseal.com/graphics/Automotive.png"');
-    var biofuel = document.querySelector('img[src="https://static.aesseal.com/graphics/Biofuels.png"');
+    var automotive = document.querySelector('img[src="https://static.aesseal.com/graphics/Automotive.webp"');
+    var biofuel = document.querySelector('img[src="https://static.aesseal.com/graphics/Biofuels.webp"');
     var chemical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Chemical.webp"');
-    var construction = document.querySelector('img[src="https://static.aesseal.com/graphics/construction.png"')
-    var food = document.querySelector('img[src="https://static.aesseal.com/graphics/Food-and-Beverage.png"');
-    var marine = document.querySelector('img[src="https://static.aesseal.com/graphics/Marine.png"');
-    var metal = document.querySelector('img[src="https://static.aesseal.com/graphics/Metal-Processing.png"');
-    var mining = document.querySelector('img[src="https://static.aesseal.com/graphics/Mining-and-Minerals.png"');
-    var oil = document.querySelector('img[src="https://static.aesseal.com/graphics/Oil-and-Gas.png"');
-    var power = document.querySelector('img[src="https://static.aesseal.com/graphics/Power-Generation.png"');
+    var construction = document.querySelector('img[src="https://static.aesseal.com/graphics/construction.webp"')
+    var food = document.querySelector('img[src="https://static.aesseal.com/graphics/Food-and-Beverage.webp"');
+    var marine = document.querySelector('img[src="https://static.aesseal.com/graphics/Marine.webp"');
+    var metal = document.querySelector('img[src="https://static.aesseal.com/graphics/Metal-Processing.webp"');
+    var mining = document.querySelector('img[src="https://static.aesseal.com/graphics/Mining-and-Minerals.webp"');
+    var oil = document.querySelector('img[src="https://static.aesseal.com/graphics/Oil-and-Gas.webp"');
+    var power = document.querySelector('img[src="https://static.aesseal.com/graphics/Power-Generation.webp"');
     var pharmacutical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pharmaceutical.webp"');
-    var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/Pulp-and-Paper.png"');
-    var water = document.querySelector('img[src="https://static.aesseal.com/graphics/Water-and-Waste-Water.png"');
+    var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/Pulp-and-Paper.webp"');
+    var water = document.querySelector('img[src="https://static.aesseal.com/graphics/Water-and-Waste-Water.webp"');
 
     if(automotive) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Automotive.jpg"
