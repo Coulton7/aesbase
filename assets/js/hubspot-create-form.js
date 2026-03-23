@@ -21,14 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function checkCookie() {
-        let hubspot = getCookie("__hstc");
-        if (hubspot != "") {
+        let hubspotCookie = getCookie("__hstc");
+        if (hubspotCookie != "") {
+            console.log("Hubspot cookie found");
             return true;
         } else {
             return false;
         }
 
     }
+
+    checkCookie();
         if(filterLang == 'en'){
             if(document.querySelector("#contact-form")){
                 hbspt.forms.create({
