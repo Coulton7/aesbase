@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function checkCookie() {
-        let hubspot = getCookie("hubspotutk");
+        let hubspot = getCookie("__hstc");
         if (hubspot != "") {
             return true;
         } else {
