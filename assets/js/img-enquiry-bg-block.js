@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function(){
   if(document.querySelectorAll('.block-solutionsenquiry').length > 0) {
     var indImg;
 
-    var automotive = document.querySelector('img[src="https://static.aesseal.com/graphics/Automotive.webp"');
-    var biofuel = document.querySelector('img[src="https://static.aesseal.com/graphics/Biofuels.webp"');
+    var automotive = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Automotive.webp"');
+    var biofuel = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Biofuels.webp"');
     var chemical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Chemical.webp"');
-    var construction = document.querySelector('img[src="https://static.aesseal.com/graphics/construction.webp"')
-    var food = document.querySelector('img[src="https://static.aesseal.com/graphics/Food-and-Beverage.webp"');
-    var marine = document.querySelector('img[src="https://static.aesseal.com/graphics/Marine.webp"');
-    var metal = document.querySelector('img[src="https://static.aesseal.com/graphics/Metal-Processing.webp"');
-    var mining = document.querySelector('img[src="https://static.aesseal.com/graphics/Mining-and-Minerals.webp"');
-    var oil = document.querySelector('img[src="https://static.aesseal.com/graphics/Oil-and-Gas.webp"');
-    var power = document.querySelector('img[src="https://static.aesseal.com/graphics/Power-Generation.webp"');
+    var construction = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Construction.webp"')
+    var food = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Food-and-Beverage.webp"');
+    var marine = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Marine.webp"');
+    var metal = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Metal-Processing.webp"');
+    var mining = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Mining-and-Minerals.webp"');
+    var oil = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Oil-and-Gas.webp"');
+    var power = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Power-Generation.webp"');
     var pharmacutical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pharmaceutical.webp"');
-    var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/Pulp-and-Paper.webp"');
-    var water = document.querySelector('img[src="https://static.aesseal.com/graphics/Water-and-Waste-Water.webp"');
+    var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pulp-and-Paper.webp"');
+    var water = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Water-and-Waste-Water.webp"');
 
     if(automotive) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Automotive.jpg"
