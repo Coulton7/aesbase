@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }
-
-    if(checkCookie() == true){
         if(filterLang == 'en'){
             if(document.querySelector("#contact-form")){
                 hbspt.forms.create({
@@ -1570,5 +1568,4 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             }
         }
-    }
 });
