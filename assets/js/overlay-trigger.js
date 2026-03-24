@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('.overlay-btn').classList.remove("normText");
       document.querySelector('.wavelogo').style.opacity = "1";
       document.querySelector('.uppercurve').style.opacity = "1";
-      document.querySelector('.textlogo').style.opacity = "0";
       navLinks.forEach(function (navLink) {
       navLink.classList.remove('normText');
       });
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('.overlay-btn').classList.add("normText");
       document.querySelector('.wavelogo').style.opacity = "0";
       document.querySelector('.uppercurve').style.opacity = "0";
-      document.querySelector('.textlogo').style.opacity = "1";
       navLinks.forEach(function (navLink) {
         navLink.classList.add('normText');
       });
