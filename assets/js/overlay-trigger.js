@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollNav.classList.add("scrolled-up")
         }
       }
-      document.querySelector('.main-search-bar').focus();
       document.querySelector(".scroll-nav").classList.add("shadow-back");
       document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
       document.querySelector('.overlay-btn').classList.add("normText");
