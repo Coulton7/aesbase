@@ -20,6 +20,7 @@ var body = document.querySelector("body");
 var dialogOffCanvas = document.querySelector(".dialog-off-canvas-main-canvas");
 var frontPage = document.querySelector(".path-frontpage");
 var scrollNav = document.querySelector('.scroll-nav');
+var navLinks = document.querySelectorAll(".nav-link");
 var url = window.location.href;
 var query = 'q';
 var popSearch = document.querySelector("#popular-search-bar");
