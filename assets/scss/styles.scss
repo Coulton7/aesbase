@@ -626,11 +626,6 @@ a.icon-link:hover {
   filter: brightness(0) invert(1);
 }
 
-.lazy-back {
-  background-image: none;
-  background-color: #efefef; 
-}
-
 .bg-transparent {
   background-color: transparent;
   background: transparent;
@@ -1012,30 +1007,6 @@ blockquote.transparent-50:after {
   background-image: url(https://static.aesseal.com/photo/wavehead/system-sentry-carousel.jpg);
 }
 
-.tomwetlands-background.lazy-back,
-.chris-background.lazy-back,
-.background-36.lazy-back,
-.background-35.lazy-back,
-.background-34.lazy-back,
-.background-33.lazy-back,
-.background-32.lazy-back,
-.background-31.lazy-back,
-.background-30.lazy-back,
-.background-29.lazy-back,
-.background-28.lazy-back,
-.background-27.lazy-back,
-.background-26.lazy-back,
-.background-25.lazy-back,
-.background-17.lazy-back,
-.us-background-62.lazy-back,
-.us-background-63.lazy-back,
-.background-12.lazy-back,
-.background-11.lazy-back,
-.virtual-tour-banner.lazy-back {
-  background-image: none;
-  background-color: #efefef;
-}
-
 .chris-background {
   background-image: url(https://static.aesseal.com/photo/service/CHRIS_REA_WORKSHOP_1.jpg);
   background-size: cover;
@@ -1235,21 +1206,11 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
-.cart-seals-background.lazy-back {
-  background-image: none;
-  background-color: #ffffff;
-}
-
 .cart-seals-background {
   background-image: url("https://static.aesseal.com/graphics/CAPI-13_backcut.png");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-}
-
-.seal-support-background.lazy-back {
-  background-image: none;
-  background-color: #e5e5e7;
 }
 
 .seal-support-background {
@@ -1259,11 +1220,6 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
-.labtecta-background.lazy-back {
-  background-image: none;
-  background-color: #ffffff;
-}
-
 .labtecta-background {
   background-image: url("https://static.aesseal.com/graphics/Lab_Tecta_66IC_backcut.png");
   background-size: cover;
@@ -1271,21 +1227,11 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
-.comp-seals-background.lazy-back {
-  background-image: none;
-  background-color: #e5e5e7;
-}
-
 .comp-seals-background {
   background-image: url("https://static.aesseal.com/graphics/TO5-23_backcut.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-}
-
-.gland-packing-background.lazy-back {
-  background-image: none;
-  background-color: #ffffff;
 }
 
 .gland-packing-background {
@@ -3136,11 +3082,6 @@ ul.about-us-cats a {
   margin: auto;
 }
 
-.water-background.lazy-back {
-  background-image: none;
-  background-color: #efefef;
-}
-
 .water-background {
   background-image: url(https://static.aesseal.com/graphics/waterback.jpg);
   background-repeat: no-repeat;
@@ -4136,6 +4077,11 @@ ul.about-us-cats a {
   to {
     width: 100%;
   }
+}
+
+.lazy-back {
+  background-image: none;
+  background-color: #efefef; 
 }
 
 @media screen and (max-width: 576px) {
