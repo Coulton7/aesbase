@@ -626,6 +626,11 @@ a.icon-link:hover {
   filter: brightness(0) invert(1);
 }
 
+.lazy-back {
+  background-image: none;
+  background-color: #efefef; 
+}
+
 .bg-transparent {
   background-color: transparent;
   background: transparent;
