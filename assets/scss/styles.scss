@@ -3935,6 +3935,10 @@ ul.about-us-cats a {
   pointer-events: none;
 }
 
+.align-font-awesome-2x {
+  vertical-align: -25%;
+}
+
 @keyframes card1_ani {
   0%   { left:0px; transform: rotate(0); }
   100% { left:-250px; transform: rotate(-30deg); }
