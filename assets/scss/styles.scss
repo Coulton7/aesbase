@@ -2745,6 +2745,49 @@ ul.about-us-cats a {
   filter: grayscale(100%);
 }
 
+time.icon {
+  font-size: 1em;
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 $white, 0 3px 0 #bdbdbd, 0 4px 0 $white, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+
+time.icon * {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong {
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: $white;
+  background-color: $danger;
+  border-bottom: 1px dashed $danger;
+  box-shadow: 0 2px 0 $danger;
+}
+
+time.icon em {
+  position: absolute;
+  bottom: 0.3em;
+  color: $danger;
+}
+
+.time.icon span {
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: $textcolor;
+}
+
 .mono-filter {
   transition: 0.8s;
   filter: grayscale(1);
