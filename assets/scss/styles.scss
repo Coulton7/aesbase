@@ -1334,7 +1334,7 @@ blockquote {
   background-color: $danger;
   position: fixed; /* Use fixed to ensure it stays at the bottom-right */
   bottom: 1.5em;
-  right: 1.5em;
+  right: 1em;
   z-index: 1060;
   text-align: center;
   display: flex;
@@ -1343,6 +1343,7 @@ blockquote {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
   cursor: pointer;
   text-decoration: none;
+  border: none;
 }
 
 .expanding-icon {
@@ -1350,15 +1351,12 @@ blockquote {
   height: 5em;
 }
 
-.search-icon {
+.search-icon, .feedback-icon, .chat-icon {
   color: white;
   border-radius: 50%;
   width: 3.5em;
   height: 3.5em;
   background-color: $danger;
-  position: fixed; /* Use fixed to align it with .enquiry-icon */
-  bottom: 1em;
-  right: 7.5em; /* Adjust to the left of enquiry-icon */
   z-index: 1033;
   text-align: center;
   display: flex;
@@ -1367,64 +1365,40 @@ blockquote {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
   cursor: pointer;
   text-decoration: none;
+  border: none;
+}
+
+.search-fa-icon, .feedback-fa-icon, .chat-fa-icon {
+  border: none;
+  background-color: transparent;
+}
+
+.search-icon {
+  position: fixed; /* Use fixed to align it with .enquiry-icon */
+  bottom: 16em;
+  right: 1em; /* Adjust to the left of enquiry-icon */
 }
 
 
 .enquiry-icon:hover {
- 
   background-color: rgb(167, 52, 53);
 }
 
-.search-icon:hover{
-  transform: scale(1.2) !important;
-  background-color: rgb(167, 52, 53);
-}
-.chat-icon:hover{
-  transform: scale(1.2) !important;
-  background-color: rgb(167, 52, 53);
-}
-.feedback-icon:hover{
+.search-icon:hover, .chat-icon:hover, .feedback-icon:hover{
   transform: scale(1.2) !important; 
   background-color: rgb(167, 52, 53);
 }
 
 .feedback-icon {
-  color: white;
-  border-radius: 50%;
-  width: 3.5em;
-  height: 3.5em;
-  background-color: $danger;
   position: fixed; /* Use fixed to align it with .enquiry-icon */
-  bottom: 6.5em;
-  right: 6.5em; /* Adjust to the left of enquiry-icon */
-  z-index: 1034;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
-  cursor: pointer;
-  text-decoration: none;
-  
-}
-.chat-icon {
-  color: white;
-  border-radius: 50%;
-  width: 3.5em;
-  height: 3.5em;
-  background-color: $danger;
-  position: fixed; /* Use fixed to align it with .enquiry-icon */
-  bottom: 7.5em;
+  bottom: 11em;
   right: 1em; /* Adjust to the left of enquiry-icon */
-  z-index: 1035;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px;
-  cursor: pointer;
-  text-decoration: none;
- 
+}
+
+.chat-icon {
+  position: fixed; /* Use fixed to align it with .enquiry-icon */
+  bottom: 6em;
+  right: 1em; /* Adjust to the left of enquiry-icon */
 }
 
 .slide-in-right {
@@ -1435,8 +1409,20 @@ blockquote {
   animation: slide-left 0.5s ease-in-out forwards;
 }
 
-.slide-in-up {
-  animation: slide-up 0.5s ease-in-out forwards;
+.slide-up-btn-1 {
+  animation: slide-up-btn-1 0.5s ease-in-out forwards;
+}
+
+.slide-up-btn-2 {
+  animation: slide-up-btn-2 0.7s ease-in-out forwards;
+}
+
+.slide-up-btn-3 {
+  animation: slide-up-btn-3 0.9s ease-in-out forwards;
+}
+
+.slide-in-diagnol {
+  animation: slide-in-diagonal 0.5s linear;
 }
 
 @keyframes slide-right {
@@ -1449,9 +1435,28 @@ blockquote {
   to { transform: translateX(0); }
 }
 
-@keyframes slide-up {
+@keyframes slide-up-btn-1 {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
+}
+
+@keyframes slide-up-btn-2 {
+  from { transform: translateY(200%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-up-btn-3 {
+  from { transform: translateY(300%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-in-diagonal {
+  0% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .breadcrumb li {
