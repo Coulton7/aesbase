@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".scroll-nav").classList.remove("shadow-back");
       document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
       document.querySelector('.overlay-btn').classList.remove("normText");
-      document.querySelector('.wavelogo').style.opacity = "0.5";
+      document.querySelector('.wavelogo').style.opacity = "1";
       document.querySelector('.uppercurve').style.opacity = "0.5";
       navLinks.forEach(function (navLink) {
       navLink.classList.remove('normText');
