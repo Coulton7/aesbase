@@ -6,6 +6,7 @@ var l = document.getElementById("legalOverlay");
 var t = document.querySelector(".termsOverlay");
 var overlayNavBtn = document.querySelector("#overlay-btn");
 var overlaySearchBtn = document.querySelector("#overlay-search");
+var overlaySearchGlobal = document.querySelector("#global-overlay-search");
 var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayTermsBtn = document.getElementById("overlayTerms");
 var overlayShareBtn = document.querySelector("#overlay-share");
