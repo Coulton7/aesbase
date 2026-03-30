@@ -19,7 +19,6 @@ bootstrap:
     assets/js/img-enquiry-bg-block.js : {}
     assets/js/reg-mark.js: {}
     assets/js/360-tour-banner.js: {}
-    assets/js/expanding-icon.js: {}
     https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js: { type: external, minified: true }
     assets/js/tiny-slider.js: {}
 
