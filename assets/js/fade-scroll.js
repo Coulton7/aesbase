@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textLogo = document.querySelector('.textlogo');
-    const enquiry = document.querySelector('.enq-icon');
     const navbar = document.querySelector('.bg-transparent .navbar-collapse');
     var navItems = document.querySelectorAll('.navbar-nav .nav-item');
     var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener('scroll', function(e) {
             var scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
             textLogo.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
-            enquiry.style.opacity = Math.max(0, Math.min(1, +scrollPos / 600));
             navbar.style.backgroundColor = "rgba(255,255,255,"+ Math.max(0, Math.min(1, +scrollPos / 600)); +")";
     
             if(scrollPos/600 >= 0.75) {
