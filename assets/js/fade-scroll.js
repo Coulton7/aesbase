@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('resize', function(){
         if(window.innerWidth > 992) {
             textLogo.style.opacity = -1.03;
-            enquiry.style.opacity = -1.03;
             navbar.style.backgroundColor = "rgba(255,255,255,0)";
             fadeScroll();
             scrollNav.classList.remove('shadow-back');
