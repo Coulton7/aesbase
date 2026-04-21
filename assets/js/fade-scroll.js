@@ -66,13 +66,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(window.innerWidth > 992) {
         textLogo.style.opacity = -1.03;
-        enquiry.style.opacity = -1.03;
         navbar.style.backgroundColor = "rgba(255,255,255,0)";
         fadeScroll();
 
     } else {
         textLogo.style.opacity = 1;
-        enquiry.style.opacity = 1;
         navbar.style.backgroundColor = "rgba(255,255,255,1)";
         scrollNav.classList.add('shadow-back');
         hideLink();
@@ -86,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollNav.classList.remove('shadow-back');
         } else {
             textLogo.style.opacity = 1;
-            enquiry.style.opacity = 1;
             navbar.style.backgroundColor = "rgba(255,255,255,1)";
             scrollNav.classList.add('shadow-back')
         }
