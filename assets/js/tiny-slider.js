@@ -156,4 +156,38 @@ document.addEventListener("DOMContentLoaded", function() {
             autoplayTimeout: 7000
         });
     }
+
+    if (document.querySelectorAll('.prod-slider').length > 0){
+        var prod_slider = tns ({
+            container: ".prod-slider",
+            speed: 0,
+            loop: false,
+            nav: false,
+            controlsContainer: "#prod-controls",
+            gutter: 20,
+            lazyload: true,
+            autoplay: false,
+            responsive: {
+                1 : {
+                items: 2 
+                },
+        
+                600 : {
+                items: 2
+                },
+        
+                768: {
+                    items: 2
+                },
+        
+                992: {
+                    itmes: 4
+                },
+        
+                1200: {
+                    items: 4
+                }
+            },
+        })
+    }
 });
