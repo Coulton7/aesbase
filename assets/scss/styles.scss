@@ -1253,7 +1253,7 @@ blockquote.transparent-50:after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $offwhite;
+  background-color: $white;
 }
 
 .globe-background {
@@ -1749,6 +1749,18 @@ blockquote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -35%);
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: $textcolor;
+  padding: 3rem;
+}
+
+.white-box-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
