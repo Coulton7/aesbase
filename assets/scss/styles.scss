@@ -1248,6 +1248,22 @@ blockquote.transparent-50:after {
   background-size: cover;
 }
 
+.millclose-entrance-background {
+  background-image: url("https://static.aesseal.com/photo/branches/uk/OUTSIDE_RECPTION_5Y7A0812.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $offwhite;
+}
+
+.globe-background {
+  background-image: url("https://static.aesseal.com/photo/wavehead/AESSEAL-in-the-BHAG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $black;
+}
+
 .popular-searches-seal-support {
   display: flex;
   justify-content: space-between;
