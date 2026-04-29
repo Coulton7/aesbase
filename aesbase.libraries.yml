@@ -49,6 +49,10 @@ pdf-make:
     assets/js/pdf-creator.js: {}
     assets/js/pdf-button-hider.js: {}
 
+timeline:
+  js:
+    assets/js/timeline-scroll.js: {}
+
 labtecta-calc:
   js:
     assets/js/labtecta-calc.js: {}

@@ -1668,6 +1668,23 @@ blockquote {
   height: 600px;
 }
 
+.timeline {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-container{
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.timeline-image {
+  height: 100%;
+  will-change: transform;
+}
+
 .black-box-promo {
   position: relative;
   top: 50%;

@@ -36,13 +36,15 @@ function aesbase_page_attachments_alter(&$page) {
     if($alias == '/resources/industry-guides/policy-prevent-global-warming') {
       $page['#attached']['library'][] = 'aesbase/pdf-make';
     }
+    if($alias == '/about-us' || '/sobre-nosotros' || 'à-propos-de-nous'|| 'über-uns' || 'riguardo-noi' || 'o-nas' || 'hakkımızda' || '关于我们') {
+      $page['#attached']['library'][] = 'aesbase/timeline';
+    }
     if($alias == '/labtecta') {
       $page['#attached']['library'][] = 'aesbase/labtecta-calc';
     }
     if($alias == '/contact-us' || '/contactez-nous' || '/location' || '/localisation') {
       $page['#attached']['library'][] = 'aesbase/svg-map';
     }
-
     if($alias == '/contact-us' || '/contáctenos' || '/contacter-aesseal' || '/kontakt' || '/contattaci' || '/kontakt-z-nami' || '/bize-ulaşın' || '/联系我们' || '/contactez-nous' || '/kontakt-uns') {
       $page['#attached']['library'][] = 'aesbase/hubspot';
     }
