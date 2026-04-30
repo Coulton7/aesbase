@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var timelineContainer = document.querySelector(".timeline-container");
         var timelineImage = document.querySelector(".timeline-image");
         var imageWidth = timelineImage.clientWidth;
-        var fifthOfImageWidth = imageWidth / 5;
         var scrollValue = 0;
         var lastScrollTop = 0;
 
+        console.log(imageWidth);
         timeline.setAttribute("style", "height: " + imageWidth + "px");
 
         window.addEventListener('scroll', function(e){
