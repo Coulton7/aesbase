@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var timeline = document.querySelector(".timeline");
         var timelineContainer = document.querySelector(".timeline-container");
         var timelineImage = document.querySelector(".timeline-image");
-        var imageWidth = timelineImage.clientWidth;
+        timeline.setAttribute("style", "height: " + timelineImage.naturalWidth + "px");
         var scrollValue = 0;
         var lastScrollTop = 0;
 
-        timeline.setAttribute("style", "height: " + imageWidth + "px");
         if(timeline.style.height == "0px") {
             timeline.setAttribute("style", "height: auto");
         }
