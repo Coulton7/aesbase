@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var lastScrollTop = 0;
 
         timeline.setAttribute("style", "height: " + imageWidth + "px");
-        if(timeline.style.height == 0) {
+        if(timeline.style.height == "0px") {
             timeline.setAttribute("style", "height: auto");
         }
 
