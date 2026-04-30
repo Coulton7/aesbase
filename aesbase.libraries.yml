@@ -51,7 +51,7 @@ pdf-make:
 
 timeline:
   js:
-    assets/js/timeline-scroll.js: {}
+    assets/js/timeline-scroll.js: { attributes: { defer: true } }
 
 labtecta-calc:
   js:
