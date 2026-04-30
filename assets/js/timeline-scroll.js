@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var scrollValue = 0;
         var lastScrollTop = 0;
 
-        console.log(imageWidth);
         timeline.setAttribute("style", "height: " + imageWidth + "px");
+        if(timeline.clientHeight == 0) {
+            timeline.setAttribute("style", "height: auto");
+        }
 
         window.addEventListener('scroll', function(e){
             var timelineBounding = timeline.getBoundingClientRect();
