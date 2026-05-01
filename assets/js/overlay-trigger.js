@@ -1,6 +1,5 @@
 var x = document.getElementById("overlayNav");
 var y = document.getElementById("searchOverlay");
-var s = document.getElementById("shareOverlay");
 var n = document.getElementById("newsOverlay");
 var l = document.getElementById("legalOverlay");
 var t = document.querySelector(".termsOverlay");
@@ -8,7 +7,6 @@ var overlayNavBtn = document.querySelector("#overlay-btn");
 var overlaySearchBtn = document.querySelector("#overlay-search");
 var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayTermsBtn = document.getElementById("overlayTerms");
-var overlayShareBtn = document.querySelector("#overlay-share");
 var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
 var footerTermsBtn = document.querySelector("#footer-terms");
 var footerSearchBtn = document.querySelector("#footer-search");
@@ -65,11 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         x.style.bottom = "-1px";
         overlaySearchBtn.classList.remove("change");
         overlaySearchBtn.classList.add("overlay-btn");
-      } else if (s.style.height == "100%") {
-        s.style.height = "1px";
-        s.style.bottom = "-1px";
-        overlayShareBtn.classList.remove("change");
-        overlayShareBtn.classList.add("share-btn");
       }
       html.classList.add("noscroll");
       body.classList.add("noscroll");
@@ -113,11 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
               y.style.top = "-1px";
               overlaySearchBtn.classList.remove("change");
               overlaySearchBtn.classList.add("search-btn");
-            } else if (s.style.height == "100%") {
-              s.style.height = "1px";
-              s.style.bottom = "-1px";
-              overlayShareBtn.classList.remove("change");
-              overlayShareBtn.classList.add("share-btn");
             }
             html.classList.add("noscroll");
             body.classList.add("noscroll");
@@ -170,38 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(url.indexOf('?' + query + '=') != -1){
       openSearch();
-    }
-
-    if(overlayShareBtn){
-      overlayShareBtn.addEventListener("click", function shareBtn() {
-        overlayShareBtn.classList.toggle("change");
-        if (s.style.height === "100%") {
-          s.style.height = "1px";
-          s.style.bottom = "-1px";
-          html.classList.remove("noscroll");
-          body.classList.remove("noscroll");
-          dialogOffCanvas.classList.remove("noscroll");
-          overlayShareBtn.classList.add("share-btn");
-        } else {
-          s.style.height = "100%";
-          s.style.bottom = "0";
-          if (y.style.height == "100%") {
-            y.style.height = "1px";
-            y.style.top = "-1px";
-            overlaySearchBtn.classList.remove("change");
-            overlaySearchBtn.classList.add("search-btn");
-          } else if (s.style.height == "100%") {
-            x.style.height = "1px";
-            x.style.bottom = "-1px";
-            overlayNavBtn.classList.remove("change");
-            overlayNavBtn.classList.add("overlay-btn");
-          }
-          html.classList.add("noscroll");
-          body.classList.add("noscroll");
-          dialogOffCanvas.classList.add("noscroll");
-          overlayShareBtn.classList.remove("share-btn");
-        }
-      });
     }
 
     if(overlayTermsBtn){
@@ -298,11 +254,6 @@ document.addEventListener("DOMContentLoaded", function () {
             y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
-          } else if (s.style.height == "100%") {
-            s.style.height = "1px";
-            s.style.bottom = "-1px";
-            overlayShareBtn.classList.remove("change");
-            overlayShareBtn.classList.add("share-btn");
           }
           html.classList.add("noscroll");
           body.classList.add("noscroll");
@@ -367,11 +318,6 @@ document.addEventListener("DOMContentLoaded", function () {
             y.style.top = "-1px";
             overlaySearchBtn.classList.remove("change");
             overlaySearchBtn.classList.add("search-btn");
-          } else if (s.style.height == "100%") {
-            s.style.height = "1px";
-            s.style.bottom = "-1px";
-            overlayShareBtn.classList.remove("change");
-            overlayShareBtn.classList.add("share-btn");
           }
           html.classList.add("noscroll");
           body.classList.add("noscroll");
