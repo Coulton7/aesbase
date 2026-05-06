@@ -8,6 +8,7 @@ var overlaySearchBtn = document.querySelector("#overlay-search");
 var overlaySearchGlobal = document.querySelector("#global-overlay-search");
 var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayTermsBtn = document.getElementById("overlayTerms");
+var expandingSearch = document.querySelector("#search-icon");
 var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
 var footerTermsBtn = document.querySelector("#footer-terms");
 var footerSearchBtn = document.querySelector("#footer-search");
@@ -143,6 +144,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(url.indexOf('?' + query + '=') != -1){
       openSearch();
+    }
+
+    if(expandingSearch){
+      expandingSearch.addEventListener("click", function searchBtn() {
+        openSearch();
+      });
     }
 
     if(overlaySearchGlobal) {

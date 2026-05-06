@@ -7,6 +7,7 @@ var overlayNavBtn = document.querySelector("#overlay-btn");
 var overlaySearchBtn = document.querySelector("#overlay-search");
 var overlayLegalBtn = document.querySelector("#overlay-legal");
 var overlayTermsBtn = document.getElementById("overlayTerms");
+var expandingSearch = document.querySelector("#search-icon");
 var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
 var footerTermsBtn = document.querySelector("#footer-terms");
 var footerSearchBtn = document.querySelector("#footer-search");
@@ -118,6 +119,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(overlaySearchBtn){
       overlaySearchBtn.addEventListener("click", function searchBtn() {
+        openSearch();
+      });
+    }
+
+    if(expandingSearch){
+      expandingSearch.addEventListener("click", function searchBtn() {
         openSearch();
       });
     }
