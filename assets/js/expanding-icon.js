@@ -5,8 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const feedbackIcon = document.querySelector('.feedback-icon');
     const chatIcon = document.querySelector('.chat-icon');
 
-    searchIcon.style.display = "none";
-    feedbackIcon.style.display = "none";
+    if(searchIcon){
+        searchIcon.style.display = "none";
+    }
+    if(feedbackIcon){
+        feedbackIcon.style.display = "none";
+    }
     if(chatIcon){
         chatIcon.style.display = "none";
     }
