@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary prodEnq hs-button",
             });
         }
         
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#piping-booklet-form",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#technical-drawings-form",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                         window.location.href = window.location.pathname+'?fs=y'
                 }
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }
         
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -397,7 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#piping-booklet-form",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css : "",
                 cssClass : "hs-overlay-form",
-                submitButtonClass : "btn btn-primary hs-button",
+                submitButtonClass : "btn btn-primary prodEnq hs-button",
             });
         }
         
@@ -505,7 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -545,7 +545,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }
         
@@ -611,7 +611,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -671,7 +671,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }        
         if(document.querySelector("#location-form")){
@@ -713,7 +713,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -751,7 +751,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }        
         if(document.querySelector("#parts-form")){
@@ -815,7 +815,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -853,7 +853,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css: "",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }        
         if(document.querySelector("#parts-form")){
@@ -917,7 +917,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
@@ -955,7 +955,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#sales-form",
                 css:"",
                 cssClass: "hs-overlay-form",
-                submitButtonClass: "btn btn-primary hs-button",
+                submitButtonClass: "btn btn-primary prodEnq hs-button",
             });
         }        
         if(document.querySelector("#parts-form")){
@@ -1019,7 +1019,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target: "#download-resource",
                 css: "",
                 cssClass:"hs-overlay-form",
-                submitButtonClass:"btn btn-primary hs-button",
+                submitButtonClass:"btn btn-primary resReq hs-button",
                 onFormSubmit: function ($form){
                     var deliverability = parseFloat (document.querySelector('.deliverable').textContent);
                     if(deliverability === 0){
