@@ -41,11 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
       dialogOffCanvas.classList.remove("noscroll");
       overlaySearchBtn.classList.add("search-btn");
       if(window.innerWidth > 992) {
-        if (scrollNav.classList.contains("scrolled-up")){
-          scrollNav.classList.remove("scrolled-up");
-          scrollNav.classList.add("scrolled-down")
-        } else {
-          scrollNav.classList.add("scrolled-down")
+        if(scrollNav){
+          if (scrollNav.classList.contains("scrolled-up")){
+            scrollNav.classList.remove("scrolled-up");
+            scrollNav.classList.add("scrolled-down")
+          } else {
+            scrollNav.classList.add("scrolled-down")
+          }
         }
       }
       document.querySelector(".scroll-nav").classList.remove("shadow-back");
@@ -70,11 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
       dialogOffCanvas.classList.add("noscroll");
       overlaySearchBtn.classList.remove("search-btn");
       if(window.innerWidth > 992) {
-        if (scrollNav.classList.contains("scrolled-down")){
-          scrollNav.classList.remove("scrolled-down");
-          scrollNav.classList.add("scrolled-up")
-        } else {
-          scrollNav.classList.add("scrolled-up")
+        if(scrollNav){
+          if (scrollNav.classList.contains("scrolled-down")){
+            scrollNav.classList.remove("scrolled-down");
+            scrollNav.classList.add("scrolled-up")
+          } else {
+            scrollNav.classList.add("scrolled-up")
+          }
         }
       }
       document.querySelector(".scroll-nav").classList.add("shadow-back");
