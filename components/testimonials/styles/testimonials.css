@@ -2,8 +2,11 @@
 .testimonials-box {
   background-color:#fff;
   padding:30px;
-  position:relative
+  position:relative;
+  height: 75%;
+  align-content: center;
 }
+
 .testimonials-box:after {
   border:15px solid transparent;
   border-top-color:#fff;
