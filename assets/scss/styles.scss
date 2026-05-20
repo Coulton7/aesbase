@@ -248,7 +248,7 @@ a.disabled {
 
 .search-overlay .nav-tabs .nav-link.active, .search-overlay .nav-tabs .nav-link.active span {
   color: $white;
-  background-color: $transparent;
+  background-color: transparent;
 }
 
 .highlight-tab {
@@ -411,6 +411,14 @@ a.disabled {
 
 .equal-height-slider .tiny-slider-wrapper {
   display: flex;
+}
+
+.tiny-slider {
+  max-height: 660px;
+}
+
+.tiny-slider.tns-slider {
+  max-height: inherit;
 }
 
 .page-title h1 {
