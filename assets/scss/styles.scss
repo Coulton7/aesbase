@@ -3207,6 +3207,10 @@ time.icon span {
   position: relative;
 }
 
+.tns-outer a:focus {
+  outline: transparent
+}
+
 .base-slider {
   opacity: 0;
 
