@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
             input.classList.add('ais-SearchBox-input');
             input.classList.add('form-control');
             input.setAttribute("type", "text")
+            input.setAttribute("placeholder", "Enter your keywords");
 
             const searchButton = document.createElement('button');
             searchButton.classList.add('ais-SearchBox-submit');
