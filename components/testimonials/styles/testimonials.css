@@ -3,6 +3,8 @@
   background-color:#fff;
   padding:30px;
   position:relative;
+  height:100%;
+  align-content: center;
 }
 
 .testimonials-box:after {
