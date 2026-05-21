@@ -3,14 +3,6 @@
   background-color:#fff;
   padding:30px;
   position:relative;
-  height: 50%;
-  align-content: center;
-}
-
-.testimonial-info {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .testimonials-box:after {
