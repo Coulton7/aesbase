@@ -1996,7 +1996,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#usSearchbox'),
-                 searchAsYouType: false,
+                searchAsYouType: false,
+                placeholder: "Enter your keywords",
             }),
 
             customStats({
