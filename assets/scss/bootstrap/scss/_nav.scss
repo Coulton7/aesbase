@@ -93,6 +93,7 @@
     color: var(--#{$prefix}nav-tabs-link-active-color);
     background-color: var(--#{$prefix}nav-tabs-link-active-bg);
     border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+    border-bottom-color: transparent;
   }
 
   .dropdown-menu {
