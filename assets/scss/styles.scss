@@ -240,6 +240,7 @@ a.disabled {
   color: $gray-600;
   background-color: $black;
   border: 1px solid $gray-200;
+  border-bottom: none;
 }
 
 .search-overlay .nav-tabs .nav-link span {
