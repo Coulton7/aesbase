@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     stacked: true,
                     grid: {
                         borderColor: '#fff',
-                        color: '#fff'
+                        fontColor: '#fff'
                     }
                 },
                 y: {
                     stacked: true,
                     grid: {
                         borderColor: '#fff',
-                        color: '#fff'
+                        fontColor: '#fff'
                     }
                 }
             },
@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
-                                color: '#fff'
+                                fontColor: '#fff'
                         }
                     },
                     y: {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
-                                color: '#fff'
+                                fontColor: '#fff'
                         }
                     }
                 },
