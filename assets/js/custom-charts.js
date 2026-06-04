@@ -45,7 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                 },
                 legend: {
-                    display: false
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        color: '#fff'
+                    },
+                    textAlign: 'center',
                 }
             },
         },
@@ -111,7 +116,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                     legend: {
-                        display: false
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: '#fff'
+                        },
+                        textAlign: 'center',
                     }
                 },
             },
