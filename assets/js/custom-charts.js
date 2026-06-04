@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         
         data: {
-        labels: ["1"],
+        labels: ["live"],
 
         datasets: [{
             data: [18.50],
