@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     var sustainCarousel = document.getElementById("sustainRes");
-    var itemFirst    = sustainCarousel.querySelector('.carousel-inner > .carousel-item:first-child');
-    var itemLast     = sustainCarousel.querySelector('.carousel-inner > .item:last-child');
-    var controlLeft  = sustainCarousel.querySelector('.carousel-control-prev');
-    var controlRight = sustainCarousel.querySelector('.carousel-control-next');
+    var itemFirst    = document.querySelector('.carousel-inner > .carousel-item:first-child');
+    var itemLast     = document.querySelector('.carousel-inner > .item:last-child');
+    var controlLeft  = document.querySelector('.carousel-control-prev');
+    var controlRight = document.querySelector('.carousel-control-next');
     if(sustainCarousel){
         hideControl();
 
