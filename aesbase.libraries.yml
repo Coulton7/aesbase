@@ -85,9 +85,7 @@ hubspot:
 
 chartjs:
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.js: { type: external }
-    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.js: { type: external }
-    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/helpers.js: { type: external }
+    https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js: { type: external, minified: true }
     assets/js/custom-charts.js: {}
   
 rtl-css:
