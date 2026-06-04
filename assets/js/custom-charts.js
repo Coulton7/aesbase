@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         type: 'bar',
         options: {
             responsive: true,
-            aspectRatio: 2,
+            maintainAspectRatio: false,
             indexAxis: 'y',
             scales: {
                 x: {
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         type: 'bar',
         options: {
             responsive: true,
-            aspectRatio: 2,
+            maintainAspectRatio: false,
             indexAxis: 'y',
                 scales: {
                     x: {
