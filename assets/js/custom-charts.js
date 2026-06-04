@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Road to 50 - Live & In- Devlopment Progress',
+                    text: 'Live & In- Devlopment Progress',
                     color: '#fff',
                     font: {
                             size: 24
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Road to 50 - Live Department Progress',
+                        text: 'Live Department Progress',
                         color: '#fff',
                         font: {
                             size: 24
