@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var sustainCarousel = document.getElementById("sustainRes");
     var itemFirst    = document.querySelector('.carousel-inner > .carousel-item:first-child');
-    var itemLast     = document.querySelector('.carousel-inner > .item:last-child');
+    var itemLast     = document.querySelector('.carousel-inner > .carousel-item:last-child');
     var controlLeft  = document.querySelector('.carousel-control-prev');
     var controlRight = document.querySelector('.carousel-control-next');
     if(sustainCarousel){
