@@ -6,20 +6,29 @@ document.addEventListener("DOMContentLoaded", function() {
     new Chart(dvpInProg,{
         type: 'bar',
         options: {
-        indexAxis: 'y',
-        scales: {
-            x: {
-            stacked: true
+            responsive: true,
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    stacked: true,
+                    grid: {
+                        borderColor: '#fff',
+                        color: '#fff'
+                    }
+                },
+                y: {
+                    stacked: true,
+                    grid: {
+                        borderColor: '#fff',
+                        color: '#fff'
+                    }
+                }
             },
-            y: {
-            stacked: true
-            }
-        },
-        plugins: {
-            legend: {
-            display: false
-            }
-        },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
         },
         
         data: {
@@ -39,44 +48,35 @@ document.addEventListener("DOMContentLoaded", function() {
                 hoverBackgroundColor: "rgba(46,185,235,1)"
             }]
         },
-        options: {
-            responsive: true,
-            scales: {
-                x: {
-                    grid: {
-                        borderColor: '#fff',
-                        color: '#fff'
-                    }
-                },
-                y: {
-                    grid: {
-                        borderColor: '#fff',
-                        color: '#fff'
-                    }
-                }
-            }
-        }
     });
 
     new Chart(depInProg,{
         type: 'bar',
         options: {
-        indexAxis: 'y',
-        scales: {
-            x: {
-            stacked: true
+            responsive: true,
+            indexAxis: 'y',
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                                borderColor: '#fff',
+                                color: '#fff'
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        grid: {
+                                borderColor: '#fff',
+                                color: '#fff'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                    display: false
+                    }
+                },
             },
-            y: {
-            stacked: true
-            }
-        },
-        plugins: {
-            legend: {
-            display: false
-            }
-        },
-        },
-        
         data: {
             labels: ["live"],
 
@@ -122,22 +122,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 hoverBackgroundColor: "rgba(46,185,235,1)"
             }]
         },
-        options: {
-            responsive: true,
-            scales: {
-                x: {
-                    grid: {
-                        borderColor: '#fff',
-                        color: '#fff'
-                    }
-                },
-                y: {
-                    grid: {
-                        borderColor: '#fff',
-                        color: '#fff'
-                    }
-                }
-            }
-        }
     });
 });
