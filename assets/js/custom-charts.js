@@ -159,8 +159,8 @@ document.addEventListener("DOMContentLoaded", function() {
             },{
                 data: [3.08],
                 label: 'Engineering',
-                backgroundColor: "#002a5a",
-                hoverBackgroundColor: "#001e41"
+                backgroundColor: "#085f80",
+                hoverBackgroundColor: "#053b50"
             },{
                 data: [2.23],
                 label: 'Development Team',
