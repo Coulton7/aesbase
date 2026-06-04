@@ -29,39 +29,40 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector('#howto').classList.remove('active', 'show');
             document.querySelector(hashTab).classList.add('active', 'show');
         }
-    } 
+    }
+
+    var sustainCarousel = document.getElementById("sustainRes");
+    var itemFirst    = sustainCarousel.querySelector('.carousel-inner > .carousel-item:first-child');
+    var itemLast     = sustainCarousel.querySelector('.carousel-inner > .item:last-child');
+    var controlLeft  = sustainCarousel.querySelector('.carousel-control-prev');
+    var controlRight = sustainCarousel.querySelector('.carousel-control-next');
+    if(sustainCarousel){
+        hideControl();
+
+        sustainCarousel.addEventListener('slid.bs.carousel', function(){
+            hideControl();
+        });
+
+        sustainCarousel.addEventListener('slide.bs.carousel', function(){
+            showControl();
+        });
+
+        function hideControl() {
+            if ( itemFirst.hasClass('active') ) {
+                controlLeft.classList.add('d-none');
+            }
+            if ( itemLast.hasClass('active') ) {
+                controlRight.classList.add('d-none');
+            } 
+        }
+
+        function showControl() {
+            if ( itemFirst.hasClass('active') ) {
+                controlLeft.classList.remove('d-none');
+            }
+            if ( itemLast.hasClass('active') ) {
+                controlRight.classList.remove('d-none');
+            }
+        }
+    }
 });
-
-var sustainCarousel = document.querySelector("#sustainRes");
-var itemFirst    = sustainCarousel.querySelector('.carousel-inner > .carousel-item:first-child');
-var itemLast     = sustainCarousel.querySelector('.carousel-inner > .item:last-child');
-var controlLeft  = sustainCarousel.querySelector('.carousel-control-prev');
-var controlRight = sustainCarousel.querySelector('.carousel-control-next');
-
-hideControl();
-
-sustainCarousel.addEventListener('slid.bs.carousel', function(){
-    hideControl();
-});
-
-sustainCarousel.addEventListener('slide.bs.carousel', function(){
-    showControl();
-});
-
-function hideControl() {
-  if ( itemFirst.hasClass('active') ) {
-    controlLeft.classList.add('d-none');
-  }
-  if ( itemLast.hasClass('active') ) {
-    controlRight.classList.add('d-none');
-  } 
-}
-
-function showControl() {
-  if ( itemFirst.hasClass('active') ) {
-    controlLeft.classList.remove('d-none');
-  }
-  if ( itemLast.hasClass('active') ) {
-    controlRight.classList.remove('d-none');
-  }
-}
