@@ -51,16 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
             datasets: [{
                 data: [49.55],
-                backgroundColor: "rgba(63,103,126,1)",
-                hoverBackgroundColor: "rgba(50,90,100,1)"
+                backgroundColor: "#03943e",
+                hoverBackgroundColor: "#027631"
             },{
                 data: [18.04],
-                backgroundColor: "rgba(163,103,126,1)",
-                hoverBackgroundColor: "rgba(140,85,100,1)"
+                backgroundColor: "#004a8c",
+                hoverBackgroundColor: "#003b70"
             },{
                 data: [32.41],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+                backgroundColor: "#e98531",
+                hoverBackgroundColor: "#d26b16"
             }]
         },
     });
