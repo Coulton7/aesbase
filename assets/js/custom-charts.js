@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     legend: {
                         display: true,
-                        position: 'top',
+                        position: 'bottom',
                         labels: {
                             color: '#fff'
                         },
