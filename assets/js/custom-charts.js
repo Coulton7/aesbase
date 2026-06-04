@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     stacked: true,
                     grid: {
                         borderColor: '#fff',
+                        borderWidth: 2,
                         color: '#fff'
                     },
                     ticks: {
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     stacked: true,
                     grid: {
                         borderColor: '#fff',
+                        borderWidth: 2,
                         color: '#fff'
                     },
                     ticks: {
@@ -66,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
+                                borderWidth: 2,
                                 color: '#fff'
                         },
                         ticks: {
@@ -76,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
+                                borderWidth: 2,
                                 color: '#fff'
                         },
                         ticks: {
