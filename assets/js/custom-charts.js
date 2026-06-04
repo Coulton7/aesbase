@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
-                                fontColor: '#fff'
+                                color: '#fff'
                         },
                         ticks: {
                             color: '#fff'
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         stacked: true,
                         grid: {
                                 borderColor: '#fff',
-                                fontColor: '#fff'
+                                color: '#fff'
                         },
                         ticks: {
                             color: '#fff'
