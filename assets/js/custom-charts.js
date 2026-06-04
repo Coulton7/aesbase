@@ -60,14 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
             datasets: [{
                 data: [49.55],
+                label: 'Live Automation',
                 backgroundColor: "#03943e",
                 hoverBackgroundColor: "#027631"
             },{
                 data: [18.04],
+                label: 'In Development Automations',
                 backgroundColor: "#004a8c",
                 hoverBackgroundColor: "#003b70"
             },{
                 data: [32.41],
+                label: 'Remaining Target',
                 backgroundColor: "#e98531",
                 hoverBackgroundColor: "#d26b16"
             }]
@@ -130,44 +133,54 @@ document.addEventListener("DOMContentLoaded", function() {
 
             datasets: [{
                 data: [18.50],
+                label: 'DTF Team',
                 backgroundColor: "rgba(63,103,126,1)",
                 hoverBackgroundColor: "rgba(50,90,100,1)"
             },{
                 data: [0.04],
-                backgroundColor: "rgba(163,103,126,1)",
-                hoverBackgroundColor: "rgba(140,85,100,1)"
+                label: 'Stores',
+                backgroundColor: "#03943e",
+                hoverBackgroundColor: "#027631"
             },{
                 data: [4.18],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+                label: 'Finance and Accounts',
+                backgroundColor: "#004a8c",
+                hoverBackgroundColor: "#003b70"
             },{
                 data: [2.10],
-                backgroundColor: "rgba(63,103,126,1)",
-                hoverBackgroundColor: "rgba(50,90,100,1)"
+                label: 'Commercial',
+                backgroundColor: "#6e2a92",
+                hoverBackgroundColor: "#501f6a"
             },{
                 data: [11.27],
-                backgroundColor: "rgba(163,103,126,1)",
-                hoverBackgroundColor: "rgba(140,85,100,1)"
+                label: 'General',
+                backgroundColor: "#0f4016",
+                hoverBackgroundColor: "#0a2b0f"
             },{
                 data: [3.08],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+                label: 'Engineering',
+                backgroundColor: "#002a5a",
+                hoverBackgroundColor: "#001e41"
             },{
                 data: [2.23],
-                backgroundColor: "rgba(63,103,126,1)",
-                hoverBackgroundColor: "rgba(50,90,100,1)"
+                label: 'Development Team',
+                backgroundColor: "#561a58",
+                hoverBackgroundColor: "#431444"
             },{
                 data: [6.85],
-                backgroundColor: "rgba(163,103,126,1)",
-                hoverBackgroundColor: "rgba(140,85,100,1)"
+                label: 'Production',
+                backgroundColor: "#03943e",
+                hoverBackgroundColor: "#027631"
             },{
                 data: [1.30],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+                label: 'AVT',
+                backgroundColor: "#004a8c",
+                hoverBackgroundColor: "#003b70"
             },{
                 data: [50.45],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+                label: 'Remaining Target',
+                backgroundColor: "#e98531",
+                hoverBackgroundColor: "#d26b16"
             }]
         },
     });
