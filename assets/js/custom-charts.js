@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Live & In- Devlopment Progress',
+                    text: 'Live & In - Devlopment Progress',
                     color: '#fff',
                     font: {
                             size: 24
