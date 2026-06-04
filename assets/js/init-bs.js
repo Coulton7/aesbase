@@ -48,19 +48,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         function hideControl() {
-            if ( itemFirst.hasClass('active') ) {
+            if ( itemFirst.classList.contains('active') ) {
                 controlLeft.classList.add('d-none');
             }
-            if ( itemLast.hasClass('active') ) {
+            if ( itemLast.classList.contains('active') ) {
                 controlRight.classList.add('d-none');
             } 
         }
 
         function showControl() {
-            if ( itemFirst.hasClass('active') ) {
+            if ( itemFirst.classList.contains('active') ) {
                 controlLeft.classList.remove('d-none');
             }
-            if ( itemLast.hasClass('active') ) {
+            if ( itemLast.classList.contains('active') ) {
                 controlRight.classList.remove('d-none');
             }
         }
