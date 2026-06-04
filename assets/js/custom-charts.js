@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     display: true,
                     text: 'Road to 50 - Live & In- Devlopment Progress',
                     color: '#fff',
+                    font: {
+                            size: 24
+                        }
                 },
                 legend: {
                     display: false
@@ -101,6 +104,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         display: true,
                         text: 'Road to 50 - Live Department Progress',
                         color: '#fff',
+                        font: {
+                            size: 24
+                        }
                     },
                     legend: {
                         display: false
