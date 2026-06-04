@@ -60,12 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
             datasets: [{
                 data: [49.55],
-                label: 'Live Automation',
+                label: 'Live AI Automations',
                 backgroundColor: "#03943e",
                 hoverBackgroundColor: "#027631"
             },{
                 data: [18.04],
-                label: 'In Development Automations',
+                label: 'AI Automations In Development',
                 backgroundColor: "#004a8c",
                 hoverBackgroundColor: "#003b70"
             },{
