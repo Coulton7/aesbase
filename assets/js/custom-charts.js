@@ -1,6 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    new Chart(document.getElementById('Chart1'),{
+    let dvpInProg = document.getElementById("developmentInProg").getContext('2d');
+    let depInProg = document.getElementById("departmentInProg").getContext('2d');
+
+    new Chart(dvpInProg,{
         type: 'bar',
         options: {
         indexAxis: 'y',
@@ -38,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    new Chart(document.getElementById('Chart2'),{
+    new Chart(depInProg,{
         type: 'bar',
         options: {
         indexAxis: 'y',
