@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     var dataset = depInProg.data.datasets[label.datasetIndex];
                                     var total = 0;
                                     for (var j = 0; j < dataset.data.length; j++) {
-                                        total += dataset.data[j].y;
+                                        total += dataset.data[j].data;
                                         label.text = dataset.label + ':' + total;
                                         return label;
                                     }
