@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return Chart.defaults.plugins.legend.labels.generateLabels(depInProg).map(function(label) {
                                     var dataset = depInProg.data.datasets[label.datasetIndex];
                                     var total = 0;
-                                    for (var j = 0; j < dataselt.data.length; j++) {
+                                    for (var j = 0; j < dataset.data.length; j++) {
                                         total += dataset.data[j].y;
                                         label.text = dataset.label + ':' + total;
                                         return label;
