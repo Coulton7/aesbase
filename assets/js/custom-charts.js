@@ -122,12 +122,23 @@ document.addEventListener("DOMContentLoaded", function() {
                         display: true,
                         position: 'bottom',
                         labels: {
-                            color: '#fff'
+                            color: '#fff',
+                            generateLabels: function(depInProg) {
+                                return Chart.defaults.plugins.legend.labels.generateLabels(depInProg).map(function(label) {
+                                    var dataset = depInProg.data.datasets[label.datasetIndex];
+                                    var total = 0;
+                                    for (var j = 0; j < dataselt.data.length; j++) {
+                                        total += dataset.data[j].y;
+                                        label.text = dataset.label + ':' + total;
+                                        return label;
+                                    }
+                                });
+                            }
                         },
                         textAlign: 'center',
-                    }
+                    },
                 },
-            },
+        },
         data: {
             labels: ["live"],
 
