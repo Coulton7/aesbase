@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         
         data: {
-            labels: ["1"],
+            labels: ["Overall Progress"],
 
             datasets: [{
                 data: [49.55],
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
         },
         data: {
-            labels: ["live"],
+            labels: ["By Departmernt"],
 
             datasets: [{
                 data: [18.50],
