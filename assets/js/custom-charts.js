@@ -123,17 +123,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         position: 'bottom',
                         labels: {
                             color: '#fff',
-                            generateLabels: function(depInProg) {
-                                return Chart.defaults.plugins.legend.labels.generateLabels(depInProg).map(function(label) {
-                                    var dataset = depInProg.data.datasets[label.datasetIndex];
-                                    var total = 0;
-                                    for (var j = 0; j < dataset.data.length; j++) {
-                                        total += dataset.data[j].data;
-                                        label.text = dataset.label + ':' + total;
-                                        return label;
-                                    }
-                                });
-                            }
                         },
                         textAlign: 'center',
                     },
