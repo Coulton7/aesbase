@@ -357,6 +357,8 @@ document.addEventListener("DOMContentLoaded", function() {
         renderSearchBox
     );
 
+    let langMapping;
+    let docLangMapping;
     let typeMapping;
     let vidMapping;
 
@@ -367,6 +369,26 @@ document.addEventListener("DOMContentLoaded", function() {
         'article' : 'Article',
         'casestudies' : 'Case Studies',
         'case_studies' : 'Case Studies'
+    }
+
+    langMapping = {
+        'en': 'English',
+        'es': 'Español',
+        'fr': 'Français',
+        'de': 'Deutsch',
+        'it': 'Italiano',
+        'pl': 'Polski',
+        'tr': 'Türkçe',
+        'zh-hans': '简体中文',
+    }
+
+    docLangMapping = {
+        'en-GB': 'English',
+        'es-ES': 'Español',
+        'fr-FR': 'Français',
+        'de-DE': 'Deutsch',
+        'it-IT': 'Italiano',
+        'pl': 'Polski',
     }
 
     if (filterLang == "en") {
