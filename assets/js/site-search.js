@@ -1385,13 +1385,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     if(window.location.search.includes('type[')){
                         return items.map(item => ({
                             ...item,
-                            label: item.label.toUpperCase(),
+                            label: langMapping[item.label](),
                         }));
                     } else {
                         if(results.query === '') return [];
                         return items.map(item => ({
                             ...item,
-                            label: item.label.toUpperCase(),
+                            label: langMapping[item.label](),
                         }));
                     }
                 },
