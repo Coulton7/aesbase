@@ -3915,8 +3915,23 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
                 }),
+
+                globalLanglistPanel({
+                container: '#docLang-list',
+                attribute: 'dclanguage',
+                templates: {
+                    header: 'Select your Language',
+                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                },
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: docLangMapping[item.label],
+                    }));
+                },
+                sortBy: ['isRefined', 'count:desc', 'name:asc']
+            }),
 
                 pagination({
                     container: '#pagination',
