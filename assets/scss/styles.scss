@@ -404,7 +404,7 @@ a.disabled {
   height: 100%;
 }
 
-#treewalkCarousel .carousel-item img, .mining-promo, .news-promo {
+#treewalkCarousel .carousel-item img, .mining-promo, .news-promo, .black-box-promo {
   height: 70vh; 
   object-fit: cover; 
 }
@@ -4321,7 +4321,7 @@ time.icon span {
     z-index: -1;
   }
 
-  .pbhd-promo .black-boxes {
+  .pbhd-promo .black-boxes, .black-box-promo .black-boxes {
     position: relative;
     max-width: 100%;
     left: 0;
