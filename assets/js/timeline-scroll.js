@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var timelineTop = timelineBounding.top;
                 var totalScrollableHeight = timeline.scrollHeight; - timeline.clientHeight;
                 var scrollPercent = ((timelineTop / totalScrollableHeight) * 100);
-                timelineImage.style.transform = 'translateX(' + Math.min(0, Math.max(-80, scrollPercent)) + '%)';
+                timelineImage.style.transform = 'translateX(' + Math.min(0, Math.max(-75, scrollPercent)) + '%)';
             }
             
         });
