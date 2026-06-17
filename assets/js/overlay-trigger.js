@@ -175,6 +175,39 @@ document.addEventListener("DOMContentLoaded", function () {
       openSearch();
     }
 
+    if(document.querySelector('.nat-res-search')){
+     navLinks.addEventListener("click", function navBtn(){
+      if (y.style.height === "100%") {
+        y.style.height = "1px";
+        y.style.top = "-1px";
+        html.classList.remove("noscroll");
+        body.classList.remove("noscroll");
+        dialogOffCanvas.classList.remove("noscroll");
+        overlaySearchBtn.classList.add("search-btn");
+        if(window.innerWidth > 992) {
+          if(scrollNav){
+            if (scrollNav.classList.contains("scrolled-up")){
+              scrollNav.classList.remove("scrolled-up");
+              scrollNav.classList.add("scrolled-down")
+            } else {
+              scrollNav.classList.add("scrolled-down")
+            }
+          }
+        }
+        if(scrollNav){
+          document.querySelector(".scroll-nav").classList.remove("shadow-back");
+        }
+        document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
+        document.querySelector('.overlay-btn').classList.remove("normText");
+        document.querySelector('.wavelogo').style.opacity = "1";
+        document.querySelector('.uppercurve').style.opacity = "1";
+        navLinks.forEach(function (navLink) {
+          navLink.classList.remove('normText');
+        });
+      }
+     }) 
+    }
+
     if(overlayTermsBtn){
       overlayTermsBtn.addEventListener("click", function termsBtn() {
         overlayTermsBtn.classList.toggle("change");
