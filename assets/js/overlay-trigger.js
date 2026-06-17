@@ -176,7 +176,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if(document.querySelector('.nat-res-search')){
-     navLinks.addEventListener("click", function navBtn(){
+     navLinks.forEach(function(navLink) {
+      navLink.addEventListener("click", function navBtn(){
       if (y.style.height === "100%") {
         y.style.height = "1px";
         y.style.top = "-1px";
@@ -205,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
           navLink.classList.remove('normText');
         });
       }
+     });
      }) 
     }
 
