@@ -390,6 +390,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'it-IT': 'Italiano',
         'pl': 'Polski',
         'cs': 'Česky',
+        'zh-cn': '简体中文',
     }
 
     if (filterLang == "en") {
