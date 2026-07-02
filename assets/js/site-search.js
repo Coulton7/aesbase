@@ -1460,8 +1460,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_link_to_content ? '' : 'd-none'} ${data.type == "Statements and Compliance" ? '' : 'd-none'}">${data.field_link_to_content}</small>
-                                <small class="${data.type == "Statements and Compliance" ? '' : 'd-none'}">https://www.aesseal.com/en/resources/statements-and-compliance/</small>
+                                <small class="${data.field_link_to_content ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'}">${data.field_link_to_content}</small>
+                                <small class="${data.type == "Statements and Compliance" ? '' : 'd-none'}">/en/resources/statements-and-compliance/</small>
 
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1471,10 +1471,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_content ? '' : 'd-none'} ${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
+                                        <a class="${data.field_link_to_content ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
                                         <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>                       
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Read More' : 'Watch Video'}</a>
-                                        <a class="${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com/en/resources/statements-and-compliance/">Read More</a>
+                                        <a class="${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="/en/resources/statements-and-compliance/">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1499,8 +1499,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Announcements" ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
-                                <small class="${data.field_link_to_content ? '' : 'd-none'} ${data.type == "Statements and Compliance" ? '' : 'd-none'}">${data.field_link_to_content}</small>
-                                <small class="${data.type == "Statements and Compliance" ? '' : 'd-none'}">https://www.aesseal.com/en/resources/statements-and-compliance/</small>
+                                <small class="${data.field_link_to_content ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'}">${data.field_link_to_content}</small>
+                                <small class="${data.type == "Statements and Compliance" ? '' : 'd-none'}">/en/resources/statements-and-compliance/</small>
 
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1510,10 +1510,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p id="vocabCat" class="lead ${data.vid ? '' : 'd-none'}">${data.vid}</p>
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                        <a class="${data.field_link_to_content ? '' : 'd-none'} ${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
+                                        <a class="${data.field_link_to_content ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Read More' : 'Watch Video'}</a>
                                         <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Read More</a>                       
                                         <a class="${data.type != "Announcements" ? '' : 'd-none'} ${data.type != "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Read More' : 'Watch Video'}</a>
-                                        <a class="${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com/en/resources/statements-and-compliance/">Read More</a>
+                                        <a class="${data.type == "Statements and Compliance" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="/en/resources/statements-and-compliance/">Read More</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
