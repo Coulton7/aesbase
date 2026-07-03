@@ -380,6 +380,9 @@ document.addEventListener("DOMContentLoaded", function() {
         'pl': 'Polski',
         'tr': 'Türkçe',
         'zh-hans': '简体中文',
+        'ar': 'عربية',
+        'sv': 'Svenska',
+        'ja': '日本語'
     }
 
     docLangMapping = {
@@ -391,6 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'pl': 'Polski',
         'cs': 'Česky',
         'zh-cn': '简体中文',
+        'ja': '日本語'
     }
 
     if (filterLang == "en") {
@@ -2949,7 +2953,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: llangMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -3249,7 +3253,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -3499,7 +3503,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -3799,7 +3803,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -3916,7 +3920,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'pdf_brochures_xml_crawler' })
+                .index({ indexName: 'pdf_brochures_xml_crawler',
+                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage: de'},
+                 })
                 .addWidgets([
 
                 instantsearch.widgets.configure({
@@ -4115,7 +4121,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -4414,7 +4420,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -4767,7 +4773,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: item.label.toUpperCase(),
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
