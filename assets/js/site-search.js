@@ -1410,7 +1410,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                     searchableNoResults(data, { html }) {
                         return html `<p>No Results</p>`
                     },
@@ -1428,9 +1428,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         label: typeMapping[item.label],
                     }));
                     }
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -2963,16 +2960,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -3263,16 +3257,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -3513,16 +3504,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -3813,16 +3801,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -4131,16 +4116,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -4430,16 +4412,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
@@ -4783,16 +4762,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#type-list',
                 attribute: 'type',
                 templates: {
-                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
                         label: typeMapping[item.label],
                     }));
-                },
-                cssClasses: {
-                    item: ['types-item']
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
