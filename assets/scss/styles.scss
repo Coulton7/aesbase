@@ -2275,6 +2275,10 @@ ul.about-us-cats {
   color: $white;
 }
 
+.lang-item:hover {
+  cursor: pointer;
+}
+
 .search-result {
   padding: 1em 0.5em;
   border-bottom: 2px solid #e5e5e7;
