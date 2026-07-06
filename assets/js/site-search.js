@@ -3947,7 +3947,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         label: docLangMapping[item.label],
                     }));
                 },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
+                sortBy: ['count:desc', 'name:asc']
             }),
 
                 pagination({
