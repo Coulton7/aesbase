@@ -1248,7 +1248,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const pagination = instantsearch.widgets.panel ({
         hidden: function(options) {
-            if (options.results.query === '' &&  !window.location.search.includes('type[')){
+            if (options.results.query === '' &&  !window.location.search.includes('type[') || options.results.nbPages === 1){
                 return [];
             } else {
                 return options.results.nbHits === 0;
@@ -1258,7 +1258,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const nationalPagination = instantsearch.widgets.panel ({
         hidden: function(options) {
-            if (options.results.query === '' &&  !window.location.search.includes('type[')){
+            if (options.results.query === '' &&  !window.location.search.includes('type[') || options.results.nbPages === 1){
                 return [];
             } else {
                 return options.results.nbHits === 0;
