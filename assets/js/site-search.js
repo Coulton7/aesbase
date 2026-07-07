@@ -1338,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: q.split('+').map(decodeURIComponent).join(' '),
+                            q: decodeURIComponent(q.split('+').map(decodeURIComponent).join(' ')),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent),
                             page
