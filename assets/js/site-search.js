@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryParameters = {};
 
                         if(routeState.q) {
-                            queryParameters.q = routeState.q;
+                            queryParameters.q = routeState.q.map(encodeURIComponent);
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
