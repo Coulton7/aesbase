@@ -1327,7 +1327,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
 
                     parseUrl({ qsModule, location }) {
-                        const { q = '', type = [], lang =[] } = qsModule.parse(
+                        const { q = '', type = [], lang =[], page } = qsModule.parse(
                             location.search.slice(1)
                         );
                         const allType = Array.isArray(type)
@@ -1339,7 +1339,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         return {
                             q: decodeURIComponent(q),
                             type: allType.map(decodeURIComponent),
-                            lang: allLang.map(decodeURIComponent)
+                            lang: allLang.map(decodeURIComponent),
+                            page
                         };
                     },
                     writeDelay: 400,
