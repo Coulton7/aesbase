@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryParameters = {};
 
                         if(routeState.q) {
-                            queryParameters.q = routeState.q;
+                            queryParameters.q = routeState.q.split(' ').map(encodeURIComponent).join('+');
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
@@ -1338,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: decodeURIComponent(q),
+                            q: q.split('+').map(decodeURIComponent).join(' '),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent),
                             page
