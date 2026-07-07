@@ -1321,6 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'indices',
+                            encodeValuesOnly: true
                         });
 
                         return `${origin}${pathname}${queryString}`;
