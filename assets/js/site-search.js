@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryParameters = {};
 
                         if(routeState.q) {
-                            queryParameters.q = encodeURIComponent(routeState.q);
+                            queryParameters.q = routeState.q;
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
@@ -1321,7 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'indices',
-                            encodeValuesOnly: true
+                            encode: true
                         });
 
                         return `${origin}${pathname}${queryString}`;
