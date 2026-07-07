@@ -1321,7 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'indices',
-                            encode: true
+                            encode: false
                         });
 
                         return `${origin}${pathname}${queryString}`;
@@ -1338,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: decodeURIComponent(q.split('%2b').map(decodeURIComponent).join(' ')),
+                            q: q.split('%+').map(decodeURIComponent).join(' '),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent),
                             page
