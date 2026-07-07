@@ -1323,10 +1323,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'indices',
                         });
 
-                        console.log(queryParameters.q);
-                        console.log(encodeURIComponent(routeState.q));
-                        console.log(routeState.q);
-
                         return `${origin}${pathname}${queryString}`;
                     },
 
