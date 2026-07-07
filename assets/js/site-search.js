@@ -1445,7 +1445,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }));
                     }
                 },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
+                sortBy: ['count:desc', 'name:asc']
             }),
 
             typelistPanel({
@@ -1471,7 +1471,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }));
                     }
                 },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
+                sortBy: ['count:desc', 'name:asc']
             }),
         
             pagination({
