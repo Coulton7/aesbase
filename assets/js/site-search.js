@@ -1323,6 +1323,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             arrayFormat: 'indices',
                         });
 
+                        console.log('queryString', queryString);
+                        console.log(routeState.q);
+
                         return `${origin}${pathname}${queryString}`;
                     },
 
