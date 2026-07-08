@@ -676,14 +676,6 @@ a.icon-link:hover {
   background-blend-mode: multiply;
 }
 
-.bg-gradient-water-savings-primary{
-  background: #002a5a;
-  background: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo2.webp), linear-gradient(180deg, rgba(62, 91, 125, 1) 0%, rgba(0, 42, 90, 1) 40%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 .btn-lightgrey {
   background-color: $lightgrey;
 }
@@ -4487,6 +4479,14 @@ time.icon span {
     background-position: center;
   }
 
+  .bg-gradient-water-savings-primary{
+    background: #002a5a;
+    background: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo2-sm.webp), linear-gradient(180deg, rgba(62, 91, 125, 1) 0%, rgba(0, 42, 90, 1) 40%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
   #gas-seal::after { 
     content: "";   
     background-image: url('https://static.aesseal.com/graphics/gascompressorseal_backcut-sm.png');
@@ -4817,6 +4817,14 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
+  }
+
+  .bg-gradient-water-savings-primary{
+    background: #002a5a;
+    background: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo2-sm.webp), linear-gradient(180deg, rgba(62, 91, 125, 1) 0%, rgba(0, 42, 90, 1) 40%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 }
 
@@ -5427,6 +5435,14 @@ time.icon span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .bg-gradient-water-savings-primary{
+    background: #002a5a;
+    background: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo2.webp), linear-gradient(180deg, rgba(62, 91, 125, 1) 0%, rgba(0, 42, 90, 1) 40%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   .virtual-tour-logo {
