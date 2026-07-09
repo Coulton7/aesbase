@@ -3957,11 +3957,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             instantsearch.widgets
-                .index({ indexName: 'pdf_brochures_xml_crawler',
-                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US',
-                        facetingAfterDistinct: true,
-                    },
-                 })
+                .index({ indexName: 'pdf_brochures_xml_crawler'})
                 .addWidgets([
 
                 instantsearch.widgets.configure({
@@ -3970,6 +3966,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
+                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US',
+                        facetingAfterDistinct: true,
+                    },
                 }),
 
                 globalLanglistPanel({
