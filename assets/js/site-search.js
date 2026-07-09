@@ -3958,7 +3958,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
             instantsearch.widgets
                 .index({ indexName: 'pdf_brochures_xml_crawler',
-                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US'},
+                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US',
+                        facetingAfterDistinct: true,
+                    },
                  })
                 .addWidgets([
 
