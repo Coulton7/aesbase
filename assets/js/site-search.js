@@ -3966,9 +3966,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    searchParams: {filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US',
-                        facetingAfterDistinct: true,
-                    },
                 }),
 
                 globalLanglistPanel({
