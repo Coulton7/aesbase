@@ -2999,7 +2999,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: llangMapping[item.label],
+                        label: langMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
