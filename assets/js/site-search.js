@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryParameters = {};
 
                         if(routeState.q) {
-                            queryParameters.q = routeState.q.split(' ').map(encodeURIComponent).join('+');
+                            queryParameters.q = routeState.q.split(' ').map().join('+');
                         }
                         if(routeState.type) {
                             queryParameters.type = routeState.type.map(encodeURIComponent);
@@ -1321,7 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const queryString = qsModule.stringify(queryParameters, {
                             addQueryPrefix: true,
                             arrayFormat: 'indices',
-                            encode: false
+                            encode: true
                         });
 
                         return `${origin}${pathname}${queryString}`;
@@ -1338,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ? lang
                             :[lang].filter(Boolean);
                         return {
-                            q: q.split('%+').map(decodeURIComponent).join(' '),
+                            q: q.split('%+').map().join(' '),
                             type: allType.map(decodeURIComponent),
                             lang: allLang.map(decodeURIComponent),
                             page
