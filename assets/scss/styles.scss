@@ -4051,6 +4051,21 @@ time.icon span {
   pointer-events: none;
 }
 
+.site-tour:hover {
+  background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp"), url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
+  background-size: 33%, 17.5%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%, 51.5% 56%;
+}
+
+.site-tour-logo {
+  max-width: 17%;
+  position: absolute;
+  top: 25%;
+  left: 43%;
+}
+
 .align-font-awesome-2x {
   vertical-align: -25%;
 }
@@ -5389,21 +5404,6 @@ time.icon span {
 
   .overlay-terms .overlay-content {
     top: 15%;
-  }
-
-  .site-tour:hover {
-    background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp"), url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
-    background-size: 33%, 17.5%;
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-position: 50% 50%, 51.5% 56%;
-  }
-
-  .site-tour-logo {
-    max-width: 17%;
-    position: absolute;
-    top: 25%;
-    left: 43%;
   }
 
   .virtual-tour:hover {
