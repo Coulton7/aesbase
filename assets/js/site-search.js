@@ -2132,7 +2132,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -2366,7 +2385,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -2601,7 +2639,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -2836,7 +2893,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -3124,7 +3200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     page: 0,
                     distinct: true,
                     facetingAfterDistinct: true,
-                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US'
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
                 }),
                 globalLanglistPanel({
                 container: '#docLang-list',
@@ -3400,7 +3476,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -3686,7 +3781,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -3987,25 +4101,25 @@ document.addEventListener("DOMContentLoaded", function() {
                     page: 0,
                     distinct: true,
                     facetingAfterDistinct: true,
-                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US'
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
                 }),
-
+                
                 globalLanglistPanel({
-                container: '#docLang-list',
-                attribute: 'dclanguage',
-                templates: {
-                    header: 'Select your Language',
-                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                },
-                sortBy: ['count:desc', 'name:asc'],
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: docLangMapping[item.label],
-                    }));
-                },
-                sortBy: ['count:desc', 'name:asc']
-            }),
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
+                }),
 
                 pagination({
                     container: '#pagination',
@@ -4302,7 +4416,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
@@ -4599,7 +4732,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     hitsPerPage: 10,
                     attributesToSnippet: ['content:80'],
                     page: 0,
-                    filters: 'dclanguage:en-GB',
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
                 }),
 
                 pagination({
