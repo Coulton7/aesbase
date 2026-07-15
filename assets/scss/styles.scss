@@ -5393,10 +5393,17 @@ time.icon span {
 
   .site-tour:hover {
     background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp"), url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
-    background-size: 34%, 18%;
+    background-size: 33%, 17.5%;
     opacity: 1;
     background-repeat: no-repeat;
-    background-position: 48% 50%, center;
+    background-position: 48% 50%, 51.5% 56%;
+  }
+
+  .site-tour-logo {
+    max-width: 33%;
+    position: absolute;
+    top: 25%;
+    left: 43%;
   }
 
   .virtual-tour:hover {
@@ -5450,10 +5457,6 @@ time.icon span {
   }
 
   .virtual-tour-logo {
-    max-width: 33%;
-  }
-
-  .site-tour-logo {
     max-width: 33%;
   }
 
