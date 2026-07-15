@@ -4066,6 +4066,10 @@ time.icon span {
   left: 43%;
 }
 
+.site-tour:hover img {
+  opacity: 0;
+}
+
 .align-font-awesome-2x {
   vertical-align: -25%;
 }
@@ -5488,7 +5492,7 @@ time.icon span {
     background-repeat: no-repeat;
   }
 
-  .banner-overlay-video:hover .virtual-tour img,.banner-overlay-video:hover .corp-video img, .site-tour:hover img {
+  .banner-overlay-video:hover .virtual-tour img,.banner-overlay-video:hover .corp-video img {
     opacity: 0;
   }
 
