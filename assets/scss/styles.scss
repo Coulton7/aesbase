@@ -6016,6 +6016,15 @@ time.icon span {
     z-index: -1;
   }
 
+  .site-tour:hover {
+    background-size: 25%, 14%;
+  }
+
+  .site-tour-logo {
+    max-width: 14%;
+    left: 44%;
+  }
+
   .home-aspect-ratio {
     --bs-aspect-ratio: 50%;
   }
