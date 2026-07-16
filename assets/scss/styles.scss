@@ -1703,6 +1703,7 @@ blockquote {
 .timeline {
   position: relative;
   width: 100%;
+  scroll-snap-type: y mandatory;
 }
 
 .timeline-container{
