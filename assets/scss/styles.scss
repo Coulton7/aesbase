@@ -4061,18 +4061,22 @@ time.icon span {
 }
 
 .site-tour-logo {
-    background-image: url("https://static.aesseal.com/graphics/360-tour-inverse-over.svg");
-    background-size: 100%;
-  }
-
-.site-tour-logo {
   max-width: 17%;
   position: absolute;
   top: 25%;
   left: 43%;
+  z-index: 2;
 }
 
-.site-tour:hover img {
+.site-tour-logo-hover {
+  max-width: 17%;
+  position: absolute;
+  top: 25%;
+  left: 43%;
+  z-index: 1;
+}
+
+.site-tour:hover .site-tour-banner, .site-tour:hover .site-tour-logo {
   opacity: 0;
 }
 
