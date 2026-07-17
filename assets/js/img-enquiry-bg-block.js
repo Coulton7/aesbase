@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var power = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Power-Generation.webp"');
     var pharmacutical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pharmaceutical.webp"');
     var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pulp-and-Paper.webp"');
+    var textiles = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Textiles-silver.webp"');
     var water = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Water-and-Waste-Water.webp"');
 
     if(automotive) {
@@ -47,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function(){
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Pharmaceutical.jpg"
     } else if (pulp) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Pulp-and-Paper.jpg"
+    } else if (textiles) {
+      indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Textiles-Industry.webp"
     } else if (water) {
       indImg = "https://static.aesseal.com/photo/wavehead/wideformatfull/Water-and-Waste-Water.jpg"
     }
