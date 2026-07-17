@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var power = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Power-Generation.webp"');
     var pharmacutical = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pharmaceutical.webp"');
     var pulp = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Pulp-and-Paper.webp"');
-    var textiles = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Textiles-silver.webp"');
+    var textiles = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Textile-silver.webp"');
     var water = document.querySelector('img[src="https://static.aesseal.com/graphics/industry/Water-and-Waste-Water.webp"');
 
     if(automotive) {
