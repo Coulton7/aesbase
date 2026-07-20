@@ -4058,6 +4058,7 @@ time.icon span {
   opacity: 1;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  animation: rotation 2s linear;
 }
 
 .site-tour-logo {
@@ -4225,6 +4226,15 @@ time.icon span {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 
