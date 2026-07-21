@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
 
     singleSlider.forEach((slider, index) => {
       const lists = slider.querySelectorAll(".marquee-single-slider-list");
-      const sensitivity = index === 1 ? 0.75 : 0.3;
+      const sensitivity = index === 1 ? 0.5 : 0.3;
       const repeatItems = true;
   
       if (repeatItems) {
