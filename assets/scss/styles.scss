@@ -671,7 +671,7 @@ a.icon-link:hover {
 .bg-water-savings {
   background-image: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo_wrap.webp);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-blend-mode: multiply;
 }
@@ -4557,7 +4557,6 @@ time.icon span {
   }
 
   .bg-water-savings{
-    background-color: $secondary-subtle;
     background: url(https://static.aesseal.com/graphics/banners/WaterSavingsWebinar_promo_wrap.webp);
     background-size: contain;
     background-repeat: repeat;
