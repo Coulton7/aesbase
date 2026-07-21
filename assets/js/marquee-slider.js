@@ -111,7 +111,7 @@ window.addEventListener("load", function () {
         }
   
         lists.forEach((list, listIndex) => {
-          const direction = listIndex % 5 === 0 ? -1 : 1;
+          const direction = listIndex % 10 === 0 ? -1 : 1;
           const translateValue = scrollPosition * direction;
           list.style.transform = `translate3d(${translateValue}%, 0, 0)`;
         });
