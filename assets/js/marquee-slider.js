@@ -89,7 +89,7 @@ window.addEventListener("load", function () {
           });
   
           const containerWidth = slider.offsetWidth;
-          const itemsToRepeat = Math.ceil(containerWidth / totalItemsWidth) + 2;
+          const itemsToRepeat = Math.ceil(containerWidth / totalItemsWidth) + 3;
   
           for (let i = 0; i < itemsToRepeat; i++) {
             sliderItems.forEach((item) => {
