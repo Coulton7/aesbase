@@ -80,7 +80,7 @@ window.addEventListener("load", function () {
   
       if (repeatItems) {
         lists.forEach((list) => {
-          const sliderItems = Array.from(list.querySelectorAll(".marquee-single-slider-list-item"));
+          const sliderItems = Array.from(list.querySelectorAll(".marquee-single-slider-list--item"));
   
           // Calculate total width
           let totalItemsWidth = 0;
