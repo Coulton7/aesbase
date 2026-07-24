@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var imgUrl = document.querySelector('.views-view-responsive-grid--horizontal .views-view-responsive-grid__item:nth-child(1) img').getAttribute('src');
     var prodImg;
 
-    if(imgUrl == null){
+    if(imgUrl == undefined){
       prodImg = document.querySelector('#enqImg').getAttribute('src');
     } else {
       prodImg = imgUrl
