@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(){
 
   if(document.querySelectorAll('.block-productenquiry').length > 0) {
-    var prodImg = document.querySelector('.views-view-responsive-grid--horizontal .views-view-responsive-grid__item:nth-child(1) img').getAttribute('src');
+
+    var imgUrl = document.querySelector('.views-view-responsive-grid--horizontal .views-view-responsive-grid__item:nth-child(1) img').getAttribute('src');
+    var prodImg;
+
+    if(imgUrl){
+      prodImg = imgUrl
+    } else {
+      prodImg = document.querySelector('#enqImg').getAttribute('src');
+    }
 
     document.querySelector('.block-productenquiry').style.backgroundImage = "url('" + prodImg + "')"
   }
