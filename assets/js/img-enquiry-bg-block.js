@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
     var imgUrl = document.querySelector('.views-view-responsive-grid--horizontal .views-view-responsive-grid__item:nth-child(1) img').getAttribute('src');
     var prodImg;
 
-    if(imgUrl){
-      prodImg = imgUrl
-    } else {
+    if(imgUrl == null){
       prodImg = document.querySelector('#enqImg').getAttribute('src');
+    } else {
+      prodImg = imgUrl
     }
 
     document.querySelector('.block-productenquiry').style.backgroundImage = "url('" + prodImg + "')"
