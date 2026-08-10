@@ -4061,13 +4061,15 @@ document.addEventListener("DOMContentLoaded", function() {
                             revealForm();
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            </div>`;
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                         }
                         else if(filterLang == '') {
                             revealForm();
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            </div>`;
+                            </div>
+                            <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
                         }
                         else if (filterLang == 'fr') {
                             revealForm();
