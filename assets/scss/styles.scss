@@ -954,6 +954,30 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.argentina-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/Argentina-aesseal-header.jpg);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.china-banner-background, .中国-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/China-aesseal-header.jpg);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.czechia-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/Czechia-aesseal-header.jpg);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .austria-banner-background, .österreich-banner-background {
   background-image: url(/sites/aesseal.int/files/content-image/Austria-aesseal-header.jpg);
   background-size: cover;
@@ -986,6 +1010,14 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.poland-banner-background, .polska-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Poland-aesseal-header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .spain-banner-background, .españa-banner-background {
   background-image: url(/sites/aesseal.int/files/content-image/location/Spain_aesseal_header.webp);
   background-size: cover;
@@ -1002,8 +1034,32 @@ blockquote.transparent-50:after {
   background-repeat: no-repeat;
 }
 
+.singapore-banner-background, .新加坡-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Singapore_aesseal_header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.switzerland-banner-background, .schweiz-banner-background, .suisse-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Switzerland-aesseal-header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .turkey-banner-background, .türkiye-banner-background {
   background-image: url(/sites/aesseal.int/files/content-image/location/Turkey_aesseal_header.webp);
+  background-size: cover;
+  background-color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.uruguay-banner-background {
+  background-image: url(/sites/aesseal.int/files/content-image/location/Uruguay-aesseal-header.webp);
   background-size: cover;
   background-color: $primary;
   background-position: center;
