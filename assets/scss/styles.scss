@@ -237,9 +237,10 @@ a.disabled {
 }
 
 .search-overlay .nav-tabs .nav-link, .search-overlay .nav-tabs .nav-link.normText {
-  color: $gray-600;
+  color: $white;
   background-color: $black;
   border: 1px solid $gray-200;
+  cursor: pointer;
 }
 
 .search-overlay .nav-tabs .nav-link span {
