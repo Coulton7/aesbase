@@ -247,8 +247,8 @@ a.disabled {
 }
 
 .search-overlay .nav-tabs .nav-link.active, .search-overlay .nav-tabs .nav-link.active span {
-  color: $white;
-  background-color: transparent;
+  color: $gray-600;
+  background-color: $white;
 }
 
 .highlight-tab {
