@@ -4060,9 +4060,10 @@ document.addEventListener("DOMContentLoaded", function() {
                         if(filterLang == 'en'){
                             revealForm();
                             return html`<div class="no-result"><p class="h3">No results found matching ${results.query} on CA Site</p>
+                            <p class ="lead text-white">Have you looked at our product document search tab above? You may find what you are looking for there.</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                                 <div class="text-center  py-5">
-                                    <p class="h3">Would you like to search our Global site?</p>
+                                    <p class="lead text-white">Would you like to search our Global site?</p>
                                     <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
                                 </div>
                             </div>
@@ -4070,10 +4071,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                         else if(filterLang == '') {
                             revealForm();
-                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                            return html`<div class="no-result"><p class="h3">No results found matching ${results.query} on CA Site</p>
+                            <p class ="lead text-white">Have you looked at our product document search tab above? You may find what you are looking for there.</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             <div class="text-center  py-5">
-                                    <p class="h3">Would you like to search our Global site?</p>
+                                    <p class="lead text-white">Would you like to search our Global site?</p>
                                     <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
                                 </div>
                             </div>
@@ -4081,10 +4083,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                         else if (filterLang == 'fr') {
                             revealForm();
-                            return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
+                            return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query} sur le site CA</p>
+                            <p class ="lead text-white">Avez-vous consulté l'onglet Recherche de fiches produits ci-dessus ? Vous y trouverez peut-être ce que vous cherchez.</p>
                             <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
                             <div class="text-center  py-5">
-                                    <p class="h3">Souhaitez-vous effectuer une recherche sur notre site international?</p>
+                                    <p class="lead text-white">Souhaitez-vous effectuer une recherche sur notre site international?</p>
                                     <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Rechercher sur notre site international</a>
                                 </div>
                             </div>
