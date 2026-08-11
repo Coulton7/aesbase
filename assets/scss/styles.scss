@@ -104,7 +104,9 @@ html {
 }
 
 p a[target="_blank"]:after, .btn[target="_blank"]:after, .external-link:after {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "  \f08e";
   font-weight: 900;
   position: relative;
@@ -2659,7 +2661,9 @@ ul.about-us-cats a {
 .change:after, .loc-close:after {
   display: block;
   content: "\f00d";
-  font-family: "Font Awesome 6 Free"; 
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; 
   font-weight: 900;
   color: $white;
   position: fixed;
@@ -3029,14 +3033,18 @@ time.icon span {
 }
 
 .carousel-control-next-icon:after {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "\f054";
   font-weight: 900;
   font-size: 2em;
 }
 
 .carousel-control-prev-icon:after {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "\f053";
   font-weight: 900;
   font-size: 2em;
@@ -3588,19 +3596,25 @@ time.icon span {
 }
 
 .download-btn:before {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "\f019    ";
   font-weight: 900;
 }
 
 .legal-btn:before {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "\f24e    ";
   font-weight: 900;
 }
 
 .installation-btn:before {
-  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   content: "\f7d9    ";
   font-weight: 900;
 }
