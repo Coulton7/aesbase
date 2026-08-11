@@ -5019,6 +5019,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }),
 
+            numberofHits({
+                container: document.querySelector("#resResultsNum"),
+            }),
+
             customStats({
                 container: document.querySelector("#resStats"),
             }),
