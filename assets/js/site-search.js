@@ -4957,45 +4957,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
             },
         });
-
-        resourceSearch.addWidgets([{
-            init: function(options) {
-                if(filterLang == "en")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "es")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'es');
-                }
-                else if (filterLang === "fr") {
-                    options.helper.toggleRefinement('search_api_language', 'fr');
-                }
-                else if (filterLang === "de") {
-                    options.helper.toggleRefinement('search_api_language', 'de');
-                }
-                else if(filterLang == "it")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'it');
-                }
-                else if(filterLang == "pl")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'pl');
-                }
-                else if(filterLang == "tr")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'tr');
-                }
-                else if(filterLang == "zh-hans")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'zh-hans');
-                }
-            }
-        }]);
         
         resourceSearch.addWidgets([
             instantsearch.widgets.configure({
