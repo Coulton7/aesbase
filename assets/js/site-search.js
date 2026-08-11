@@ -5024,7 +5024,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }),
 
             numberOfHits({
-                container: document.querySelector("#resResultsNum"),
+                container: document.querySelector("#intResultsNum"),
             }),
         
             instantsearch.widgets.hits ({
