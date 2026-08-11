@@ -5766,45 +5766,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
             },
         });
-
-        newsSearch.addWidgets([{
-            init: function(options) {
-                if(filterLang == "en")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'en');
-                }
-                else if(filterLang == "es")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'es');
-                }
-                else if (filterLang === "fr") {
-                    options.helper.toggleRefinement('search_api_language', 'fr');
-                }
-                else if (filterLang === "de") {
-                    options.helper.toggleRefinement('search_api_language', 'de');
-                }
-                else if(filterLang == "it")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'it');
-                }
-                else if(filterLang == "pl")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'pl');
-                }
-                else if(filterLang == "tr")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'tr');
-                }
-                else if(filterLang == "zh-hans")
-                {
-                    options.helper.toggleRefinement('search_api_language', 'zh-hans');
-                }
-            }
-        }]);
         
         newsSearch.addWidgets([
             instantsearch.widgets.configure({
@@ -5816,16 +5777,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 filters: '(type:article OR type:announcements)', 
             }),
 
-            globalLanglistPanel({
-                container: '#lang-list',
-                attribute: 'search_api_language',
-                templates: {
-                    header: 'Select your Language',
-                    item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-                },
-                sortBy: ['isRefined', 'count:desc', 'name:asc']
-            }),
-        
             pagination({
                 container: '#newsPagination',
                 totalPages: 3,
