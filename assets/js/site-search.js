@@ -5004,7 +5004,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hitsPerPage: 20,
                 attributesToSnippet: ['field_summary:80', 'body:80'],
                 page: 0,
-                filters: '(type:casestudies OR type:productbrochure OR type:video OR type:industryguides OR type:corpbrochure)', 
+                filters: '(type:casestudies OR type:video OR type:industryguides OR type:corpbrochure)', 
             }),
 
             customClearRefinements({
@@ -5293,6 +5293,423 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 }
             }),
+
+            instantsearch.widgets
+                .index({ indexName: 'pdf_brochures_xml_crawler',
+                })
+                .addWidgets([
+
+                instantsearch.widgets.configure({
+                    clickAnalytics: true,
+                    userToken: 'user-1',
+                    hitsPerPage: 10,
+                    attributesToSnippet: ['content:80'],
+                    page: 0,
+                    distinct: true,
+                    facetingAfterDistinct: true,
+                    filters: 'NOT dclanguage:it AND NOT dclanguage:de AND NOT dclanguage:en-US AND NOT dclanguage:fr AND NOT dclanguage:es'
+                }),
+                
+                globalLanglistPanel({
+                    container: '#docLang-list',
+                    attribute: 'dclanguage',
+                    templates: {
+                        header: 'Select your Language',
+                        item: '<input type="checkbox" data-insights-filter="${`search_api_language:${value}`}" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                    },
+                    sortBy: ['count:desc', 'name:asc'],
+                    transformItems(items){
+                        return items.map(item => ({
+                            ...item,
+                            label: docLangMapping[item.label],
+                        }));
+                    },
+                    sortBy: ['count:desc', 'name:asc']
+                }),
+
+                pagination({
+                    container: '#pagination',
+                    totalPages: 3,
+                    scrollTo: '#resSearchbox'
+                }),
+
+                customStats({
+                    container: document.querySelector("#globalStats"),
+                }),
+
+                numberOfHits({
+                    container: document.querySelector("#globalResultsNum"),
+                }),
+
+                instantsearch.widgets.hits ({
+                    container: '#globalHits',
+                    templates:{
+                        item(hit, { html, components }){
+                            if(filterLang == 'en'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == ''){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Open PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'fr'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Ouvrir le fichier PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'de'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">PDF öffnen</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'zh-hans'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">打开 PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'it'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Apri PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'es'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Abrir PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'tr'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">PDF'yi aç</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'ar'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">فتح ملف PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'nb'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Åpne PDF-filen</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'pt-br'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Abrir PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'pt'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Abrir PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'cs'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Otevřít PDF</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'nl'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Åpne PDF-filen</a>
+                                </div>`
+                            }
+                            else if(filterLang == 'pl'){
+                                hideForm();
+                                return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
+                                        <small>${hit.url}</small>
+                                        <p class="h3 ${hit.title ? '' : 'd-none'}">${hit.title}</p>                                
+                                        <p class=${hit.content ? '' : 'd-none'}>${components.Snippet({
+                                            attribute: "content",
+                                            hit: hit,
+                                            highlightedTagName: 'strong'
+                                        })}</p>
+                                    <a class="btn btn-primary view-details align-self-end" href="${hit.url}">Otwórz plik PDF</a>
+                                </div>`
+                            }
+                        }, empty(results, { html }){
+                            if(filterLang == 'en'){
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                    <div class="text-center  py-5">
+                                        <p class="lead text-white">Would you like to search our Global site?</p>
+                                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                                    </div>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if(filterLang == '') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">No results found matching ${results.query}</p>
+                                <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Would you like to search our Global site?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                                </div>
+                                </div>
+                                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`;
+                            }
+                            else if (filterLang == 'fr') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Aucun résultat trouvé correspondant ${results.query}</p>
+                                <p>Nous sommes désolés de ne pas avoir trouvé de résultat pour votre recherche. Essayez d'effectuer une nouvelle recherche en vérifiant les fautes d'orthographe et/ou en réduisant le nombre de mots-clés utilisés. Vous pouvez également essayer d'utiliser une phrase de recherche plus large.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Souhaitez-vous effectuer une recherche sur notre site international?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Rechercher sur notre site international</a>
+                                </div>
+                                </div>
+                                <p class="h3">Vous recherchez un numéro de pièce ou un numéro de série ?</p>`;
+                            }
+                            else if(filterLang == 'de') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Es wurden keine passenden Ergebnisse gefunden ${results.query}</p>
+                                <p>Leider konnten wir kein Ergebnis für Ihre Suche finden. Versuchen Sie es bitte noch einmal, indem Sie Ihre Suchanfrage auf Rechtschreibfehler überprüfen und/oder die Anzahl der verwendeten Suchbegriffe reduzieren. Sie können auch versuchen, einen allgemeineren Suchbegriff zu verwenden.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Möchten Sie unsere globale Website durchsuchen?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Unsere globale Website durchsuchen</a>
+                                </div>
+                                </div>
+                                <p class="h3">Suchen Sie nach einer Artikelnummer oder einer Seriennummer?</p>`;
+                            }
+                            else if(filterLang == 'zh-hans') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">未找到匹配的结果 ${results.query}</p>
+                                <p>很抱歉，我们未能找到与您的搜索相符的结果。请尝试重新搜索：检查搜索词中是否有拼写错误，和/或减少使用的关键词数量。您也可以尝试使用更宽泛的搜索词。</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">您想搜索我们的全球网站吗？</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">搜索我们的全球网站</a>
+                                </div>
+                                </div>
+                                <p class="h3">您是在查找零件号还是序列号？</p>`;
+                            }
+                            else if(filterLang == 'it') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Nessun risultato trovato corrispondente a ${results.query}</p>
+                                <p>Ci dispiace, non siamo riusciti a trovare alcun risultato per la tua ricerca. Prova a effettuare nuovamente la ricerca, controllando che non ci siano errori ortografici e/o riducendo il numero di parole chiave utilizzate. Puoi anche provare a utilizzare una frase di ricerca più generica.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Vuoi effettuare una ricerca sul nostro sito globale?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Cerca nel nostro sito globale</a>
+                                </div>
+                                </div>
+                                <p class="h3">Stai cercando un codice articolo o un numero di serie?</p>`;
+                            }
+                            else if(filterLang == 'es') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">No se han encontrado resultados que coincidan con ${results.query}</p>
+                                <p>Lo sentimos, no hemos encontrado ningún resultado para tu búsqueda. Intenta volver a buscar comprobando que no haya errores ortográficos en tu búsqueda y/o reduciendo el número de palabras clave utilizadas. También puedes probar a utilizar una frase de búsqueda más amplia.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">¿Te gustaría realizar una búsqueda en nuestra página web global?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Busca en nuestra página web global</a>
+                                </div>
+                                </div>
+                                <p class="h3">¿Estás buscando un número de referencia o un número de serie?</p>`;
+                            }
+                            else if(filterLang == 'tr') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Eşleşen sonuç bulunamadı ${results.query}</p>
+                                <p>Aramanızla ilgili herhangi bir sonuç bulamadık, üzgünüz. Aramanızda yazım hatası olup olmadığını kontrol edin ve/veya kullandığınız anahtar kelime sayısını azaltarak aramayı tekrar deneyin. Ayrıca daha geniş kapsamlı bir arama ifadesi kullanmayı da deneyebilirsiniz.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Küresel sitemizde arama yapmak ister misiniz?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Küresel sitemizde arama yapın</a>
+                                </div>
+                                </div>
+                                <p class="h3">Parça numarası mı yoksa seri numarası mı arıyorsunuz?</p>`;
+                            }
+                            else if(filterLang == 'ar') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">لم يتم العثور على نتائج مطابقة ${results.query}</p>
+                                <p>عذرًا، لم نتمكن من العثور على أي نتائج لبحثك. يرجى إعادة البحث، مع التأكد من عدم وجود أخطاء إملائية في البحث و/أو تقليل عدد الكلمات المفتاحية المستخدمة. يمكنك أيضًا تجربة استخدام عبارة بحث أوسع نطاقًا.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">هل ترغب في البحث في موقعنا العالمي؟</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">ابحث في موقعنا العالمي</a>
+                                </div>
+                                </div>
+                                <p class="h3">هل تبحث عن رقم القطعة أم الرقم التسلسلي؟</p>`;
+                            }
+                            else if(filterLang == 'nb') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Det ble ikke funnet noen treff som samsvarer med ${results.query}</p>
+                                <p>Beklager, vi fant ingen treff på søket ditt. Prøv å søke på nytt ved å sjekke om det er stavefeil i søket og/eller redusere antall søkeord. Du kan også prøve å bruke et bredere søkeuttrykk.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Vil du søke på vårt globale nettsted?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Søk på vårt globale nettsted</a>
+                                </div>
+                                </div>
+                                <p class="h3">Leter du etter et varenummer eller et serienummer?</p>`;
+                            }
+                            else if(filterLang == 'pt-br') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Não foram encontrados resultados correspondentes ${results.query}</p>
+                                <p>Lamentamos, mas não foi possível encontrar nenhum resultado para a sua pesquisa. Tente pesquisar novamente, verificando se há erros ortográficos na sua pesquisa e/ou reduzindo o número de palavras-chave utilizadas. Você também pode tentar usar uma frase de pesquisa mais ampla.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Gostaria de fazer uma busca em nosso site global?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Pesquise em nosso site global</a>
+                                </div>
+                                </div>
+                                <p class="h3">Você está procurando um número de peça ou um número de série?</p>`;
+                            }
+                            else if(filterLang == 'pt') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Não foram encontrados resultados correspondentes ${results.query}</p>
+                                <p>Lamentamos não ter encontrado nenhum resultado para a sua pesquisa. Tente pesquisar novamente, verificando se a sua pesquisa contém erros ortográficos e/ou reduzindo o número de palavras-chave utilizadas. Também pode tentar utilizar uma frase de pesquisa mais abrangente.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Gostaria de pesquisar no nosso site global?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Pesquise no nosso site global</a>
+                                </div>
+                                </div>
+                                <p class="h3">Está à procura de um número de peça ou de um número de série?</p>`;
+                            }
+                            else if(filterLang == 'cs') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Nebyly nalezeny žádné výsledky odpovídající ${results.query}</p>
+                                <p>Je nám líto, ale pro váš dotaz jsme nenašli žádné výsledky. Zkuste vyhledávání zopakovat – zkontrolujte, zda ve vyhledávacím dotazu nejsou pravopisné chyby, a/nebo zmenšete počet použitých klíčových slov. Můžete také zkusit použít širší vyhledávací dotaz.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Chcete prohledat náš globální web?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Prohledejte náš globální web</a>
+                                </div>
+                                </div>
+                                <p class="h3">Hledáte číslo dílu nebo sériové číslo?</p>`;
+                            }
+                            else if(filterLang == 'nl') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Er zijn geen resultaten gevonden die overeenkomen met ${results.query}</p>
+                                <p>Helaas hebben we geen resultaten voor je zoekopdracht kunnen vinden. Probeer nog eens te zoeken door je zoekopdracht te controleren op spelfouten en/of het aantal gebruikte zoekwoorden te verminderen. Je kunt ook een bredere zoekterm gebruiken.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Wilt u onze wereldwijde website doorzoeken?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Zoek op onze wereldwijde website</a>
+                                </div>
+                                </div>
+                                <p class="h3">Bent u op zoek naar een onderdeelnummer of serienummer?</p>`;
+                            }
+                            else if(filterLang == 'pl') {
+                                revealForm();
+                                return html`<div class="no-result"><p class="h3">Nie znaleziono wyników pasujących do ${results.query}</p>
+                                <p>Przepraszamy, nie znaleźliśmy żadnych wyników dla Twojego zapytania. Spróbuj wyszukać ponownie, sprawdzając, czy w zapytaniu nie ma błędów ortograficznych, i/lub zmniejszając liczbę użytych słów kluczowych. Możesz również spróbować użyć szerszego wyrażenia wyszukiwania.</p>
+                                <div class="text-center  py-5">
+                                    <p class="lead text-white">Czy chcesz przeszukać naszą globalną stronę internetową?</p>
+                                    <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Przeszukaj naszą globalną stronę internetową</a>
+                                </div>
+                                </div>
+                                <p class="h3">Szukasz numeru katalogowego czy numeru seryjnego?</p>`;
+                            }
+                        },
+                    }
+                }),
+            ])
         ]);
         resourceSearch.start();
         document.querySelector('.ais-SearchBox-input').focus();
