@@ -5269,14 +5269,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         return items.map(item => ({
                             ...item,
                             type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
                         }))
                     } else {
                         if(results.query === '') return [];
                         return items.map(item => ({
                             ...item,
                             type: typeMapping[item.type],
-                            vid: vidMapping[item.vid]
                         }))
                     }
                     
