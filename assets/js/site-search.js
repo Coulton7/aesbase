@@ -5240,7 +5240,24 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p class="h3">Ben je op zoek naar een onderdeelnummer of serienummer?</p>`;
                         }
                     },
-                }
+                },
+                transformItems(items, { results }){
+                    if(window.location.search.includes('type[')){
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    } else {
+                        if(results.query === '') return [];
+                        return items.map(item => ({
+                            ...item,
+                            type: typeMapping[item.type],
+                            vid: vidMapping[item.vid]
+                        }))
+                    }
+                    
+                },
             }),
 
             instantsearch.widgets
