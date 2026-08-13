@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function carouselResize() {
         if(window.innerWidth >= 1800) {
             homeCarousel.classList.remove('home-aspect-ratio');
-            homeCarousel.classList.add('ratio-2x1');
+            homeCarousel.classList.add('ratio-24x10');
         } else if(window.innerWidth >= 1401 && window.innerWidth < 1800 ) {
             homeCarousel.classList.add('ratio-16x9');
             homeCarousel.classList.remove('home-aspect-ratio');
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             homeCarousel.classList.remove('home-aspect-ratio');
         } else if(window.innerWidth >= 576 && window.innerWidth < 768) {
             homeCarousel.classList.add('ratio-3x7');
-            homeCarousel.classList.remove('ratio-2x1');
+            homeCarousel.classList.remove('ratio-24x10');
         } else {
             homeCarousel.classList.add('ratio-3x7');
             homeCarousel.classList.remove('home-aspect-ratio');
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     carouselResize();
 
     window.addEventListener('resize', function() {
-        homeCarousel.classList.remove('ratio-2x1', 'ratio-16x9', 'ratio-8x5', 'ratio-1x1', 'ratio-5x8', 'ratio-3x7');
+        homeCarousel.classList.remove('ratio-24x10', 'ratio-16x9', 'ratio-8x5', 'ratio-1x1', 'ratio-5x8', 'ratio-3x7');
         carouselResize();
     });
 });
