@@ -37,30 +37,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var controlLeft  = document.querySelector('.carousel-control-prev');
     var controlRight = document.querySelector('.carousel-control-next');
     if(sustainCarousel){
-        hideControl();
+        showHideControls();
 
         sustainCarousel.addEventListener('slid.bs.carousel', function(){
-            hideControl();
+            showHideControls();
         });
 
-        sustainCarousel.addEventListener('slide.bs.carousel', function(){
-            showControl();
-        });
-
-        function hideControl() {
+        function showHideControls() {
             if ( itemFirst.classList.contains('active') ) {
                 controlLeft.classList.add('d-none');
-            }
-            if ( itemLast.classList.contains('active') ) {
-                controlRight.classList.add('d-none');
-            } 
-        }
-
-        function showControl() {
-            if ( itemFirst.classList.contains('active') ) {
+            } else {
                 controlLeft.classList.remove('d-none');
             }
             if ( itemLast.classList.contains('active') ) {
+                controlRight.classList.add('d-none');
+            } else {
                 controlRight.classList.remove('d-none');
             }
         }
