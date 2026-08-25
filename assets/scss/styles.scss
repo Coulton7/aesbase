@@ -3015,10 +3015,12 @@ time.icon span {
 
 .carousel-control-next {
   background-image: none;
+  color: transparent
 }
 
 .carousel-control-prev {
   background-image: none;
+  color: transparent
 }
 
 .carousel-control-next-icon,
@@ -3048,6 +3050,7 @@ time.icon span {
   content: "\f053";
   font-weight: 900;
   font-size: 2em;
+  vertical-align: -0.5em;
 }
 
 .thumbnail-nav {
