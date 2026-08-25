@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     var sustainCarousel = document.getElementById("sustainRes");
-    var itemFirst    = document.querySelector('.carousel-inner > .carousel-item:first-child');
-    var itemLast     = document.querySelector('.carousel-inner > .carousel-item:lastElementChild');
+    var itemFirst    = sustainCarousel.querySelector('.carousel-item');
+    var allSlides    = sustainCarousel.querySelectorAll('.carousel-item');
+    var itemLast     = allSlides[allSlides.length - 1];
     var controlLeft  = document.querySelector('.carousel-control-prev');
     var controlRight = document.querySelector('.carousel-control-next');
     if(sustainCarousel){
