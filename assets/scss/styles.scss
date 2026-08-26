@@ -808,6 +808,10 @@ a.lightblue-text {
   color: $lightblue;
 }
 
+.link-text-decoration-none a {
+  text-decoration: none
+}
+
 .darkgrey-background a {
   color: $white;
 }
