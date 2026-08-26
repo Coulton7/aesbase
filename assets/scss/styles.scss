@@ -796,6 +796,10 @@ a.text-white, .link-text-white a{
   color: $gray-200;
 }
 
+.link-text-white a:hover{
+  color: $black;
+}
+
 a.black-text {
   color: $black;
 }
