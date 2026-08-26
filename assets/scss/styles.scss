@@ -4357,16 +4357,16 @@ time.icon span {
   }
 }
 
+#carousel-fade .carousel-inner .carousel-item, #carousel-fade.za-carousel .carousel-inner .carousel-item, #carousel-fade.us-carousel .carousel-inner .carousel-item, #carousel-fade.au-carousel .carousel-inner .carousel-item, #carousel-fade.pump-carousel .carousel-inner .carousel-item, #carousel-fade.de-carousel .carousel-inner .carousel-item, #carousel-fade.in-carousel .carousel-inner .carousel-item {
+  background-color: #012e58;
+}
+
 .lazy-back {
   background-image: none;
   background-color: #efefef; 
 }
 
 @media screen and (max-width: 576px) {
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1SM.webp);
@@ -4379,10 +4379,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -4398,10 +4394,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4SM.webp);
     background-repeat: repeat;
@@ -4413,10 +4405,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -4432,10 +4420,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
     background-repeat: repeat;
@@ -4449,12 +4433,8 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-01.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1SM-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -4466,8 +4446,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -4481,10 +4496,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -4914,9 +4925,6 @@ time.icon span {
 
 /* sm */
 @media screen and (min-width: 576px) {
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1SM.webp);
@@ -4929,10 +4937,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -4948,10 +4952,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4SM.webp);
     background-repeat: repeat;
@@ -4963,10 +4963,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -4982,10 +4978,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-01.webp);
     background-repeat: repeat;
@@ -4999,12 +4991,8 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-01.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1SM-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5016,8 +5004,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4SM-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -5031,10 +5054,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -5188,10 +5207,6 @@ time.icon span {
     bottom: 0em;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1MD.webp);
     background-repeat: repeat;
@@ -5203,10 +5218,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-    #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -5222,10 +5233,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4MD.webp);
     background-repeat: repeat;
@@ -5237,10 +5244,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -5256,10 +5259,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-02.webp);
     background-repeat: repeat;
@@ -5273,12 +5272,8 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-02.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1MD-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5290,8 +5285,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2MD-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3MD-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4MD-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -5305,10 +5335,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -5325,10 +5351,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-repeat: repeat;
     background-size: cover;
@@ -5340,10 +5362,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -5544,10 +5562,6 @@ time.icon span {
     z-index: 4;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1LG.webp);
     background-repeat: repeat;
@@ -5559,10 +5573,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -5578,10 +5588,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4LG.webp);
     background-repeat: repeat;
@@ -5593,10 +5599,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -5612,10 +5614,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.de-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/Solarinstall-background-03.webp);
     background-repeat: repeat;
@@ -5629,12 +5627,8 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-03.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1LG-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5646,8 +5640,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2LG-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3LG-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4LG-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -5661,10 +5690,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade.pump-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -5681,10 +5706,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
   #carousel-fade.in-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-repeat: repeat;
     background-size: cover;
@@ -5696,10 +5717,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -5895,10 +5912,6 @@ time.icon span {
     z-index: 4;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1XL.webp);
     background-repeat: repeat;
@@ -5910,10 +5923,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -5929,10 +5938,6 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4XL.webp);
     background-repeat: repeat;
@@ -5944,10 +5949,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -5976,8 +5977,47 @@ time.icon span {
     z-index: -1;
   }
 
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1XL-US.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2XL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-04.webp);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3XL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4XL-WW.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6004,10 +6044,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -6116,10 +6152,6 @@ time.icon span {
 /* xxl */
 @media screen and (min-width: 1400px) {
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1XXL.webp);
     background-repeat: repeat;
@@ -6132,10 +6164,6 @@ time.icon span {
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -6152,10 +6180,6 @@ time.icon span {
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4XXL.webp);
     background-repeat: repeat;
@@ -6168,10 +6192,6 @@ time.icon span {
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -6202,8 +6222,8 @@ time.icon span {
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-05.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1XXL-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6215,8 +6235,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2XXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3XXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4XXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -6230,10 +6285,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
@@ -6364,10 +6415,6 @@ time.icon span {
 
 @media screen and (min-width: 1800px) {
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(1) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(1):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/1XXXL.webp);
     background-repeat: repeat;
@@ -6380,10 +6427,6 @@ time.icon span {
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(2) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(2):before {
@@ -6400,10 +6443,6 @@ time.icon span {
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-  #carousel-fade .carousel-inner .carousel-item:nth-child(4) {
-    background-color: #012e58;
-  }
-
   #carousel-fade .carousel-inner .carousel-item:nth-child(4):before {
     background-image: url(https://static.aesseal.com/graphics/heroslide/4XXXL.webp);
     background-repeat: repeat;
@@ -6416,10 +6455,6 @@ time.icon span {
     content:'';
     z-index: -1;
     animation: fadeIn 7s ease-in-out forwards;
-  }
-
-  #carousel-fade .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
   }
 
   #carousel-fade .carousel-inner .carousel-item:nth-child(3):before {
@@ -6450,8 +6485,8 @@ time.icon span {
     animation: fadeIn 7s ease-in-out forwards;
   }
 
-#carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/graphics/heroslide/us/Rockford-Ordering-Background-06.webp);
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/1XXXL-US.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6463,8 +6498,43 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/2XXXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/3XXXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.us-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/us/4XXXL-WW.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
   }
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
@@ -6478,10 +6548,6 @@ time.icon span {
     right: 0;
     content:'';
     z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item {
-    background-color: #012e58;
   }
 
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
