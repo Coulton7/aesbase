@@ -4483,6 +4483,62 @@ time.icon span {
     z-index: -1;
   }
 
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1SM-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   .caption-header {
     position: absolute;
     top: 15%;
@@ -4594,23 +4650,6 @@ time.icon span {
     background-repeat: repeat;
     background-size: cover;
     background-position: top;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content:'';
-    z-index: -1;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
-    background-color: #012e58;
-  }
-
-  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
-    background-repeat: repeat;
-    background-size: cover;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -4994,6 +5033,62 @@ time.icon span {
     z-index: -1;
   }
 
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1SM-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3SM.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   .caption-header {
     position: absolute;
     top: 15%;
@@ -5247,12 +5342,51 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
     background-color: #012e58;
   }
 
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1MD-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1MD.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2MD.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3MD.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5564,12 +5698,51 @@ time.icon span {
     z-index: -1;
   }
 
-  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3) {
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
     background-color: #012e58;
   }
 
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1LG-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1LG.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
-    background-image: url(https://static.aesseal.com/photo/wavehead/SA-isoslide-1440.jpg);
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2LG.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3LG.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -5833,6 +6006,62 @@ time.icon span {
     z-index: -1;
   }
 
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XL-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2XL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3XL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
   .site-tour:hover {
     background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp");
     background-size: 33.5%;
@@ -5992,6 +6221,62 @@ time.icon span {
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/photo/wavehead/mining-industry-feature.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XXL-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XXL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2XXL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3XXL.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
@@ -6184,6 +6469,62 @@ time.icon span {
 
   #carousel-fade.au-carousel .carousel-inner .carousel-item:nth-child(3):before {
     background-image: url(https://static.aesseal.com/photo/wavehead/mining-industry-feature.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item {
+    background-color: #012e58;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(1):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XXXL-ZA-S.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(2):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/1XXXL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(3):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/2XXXL.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:'';
+    z-index: -1;
+  }
+
+  #carousel-fade.za-carousel .carousel-inner .carousel-item:nth-child(4):before {
+    background-image: url(https://static.aesseal.com/graphics/heroslide/3XXXL.webp);
     background-repeat: repeat;
     background-size: cover;
     position: absolute;
