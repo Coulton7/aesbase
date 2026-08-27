@@ -32,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     var sustainCarousel = document.getElementById("sustainRes");
-    var itemFirst    = sustainCarousel.querySelector('.carousel-item');
-    var allSlides    = sustainCarousel.querySelectorAll('.carousel-item');
-    var itemLast     = allSlides[allSlides.length - 1];
-    var controlLeft  = document.querySelector('.carousel-control-prev');
-    var controlRight = document.querySelector('.carousel-control-next');
     if(sustainCarousel){
+
+        var itemFirst    = sustainCarousel.querySelector('.carousel-item');
+        var allSlides    = sustainCarousel.querySelectorAll('.carousel-item');
+        var itemLast     = allSlides[allSlides.length - 1];
+        var controlLeft  = document.querySelector('.carousel-control-prev');
+        var controlRight = document.querySelector('.carousel-control-next');
+
         showHideControls();
 
         sustainCarousel.addEventListener('slid.bs.carousel', function(){
