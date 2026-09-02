@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         document.getElementById('tech-icon').addEventListener('click', function() {
             document.getElementById('tech-icon').classList.add('active');
-            pillarslider.goTo(5);
+            pillarslider.goTo(6);
             document.getElementById('esg-icon').classList.remove('active');
             document.getElementById('cust-icon').classList.remove('active');
         });
