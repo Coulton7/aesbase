@@ -92,13 +92,13 @@ document.addEventListener("DOMContentLoaded", function() {
         pillarslider.events.on('transitionEnd', function(info) {
             activeSlide = info.displayIndex;        
         
-            if (activeSlide >= 1 && activeSlide <= 5) {
+            if (activeSlide >= 1 && activeSlide <= 6) {
                 document.getElementById('esg-icon').classList.add('active');
                 document.getElementById('tech-icon').classList.remove('active');
                 document.getElementById('cust-icon').classList.remove('active');
             }
         
-            else if (activeSlide >= 6 && activeSlide <= 10) {
+            else if (activeSlide >= 7 && activeSlide <= 10) {
                 document.getElementById('esg-icon').classList.remove('active');
                 document.getElementById('tech-icon').classList.add('active');
                 document.getElementById('cust-icon').classList.remove('active');
