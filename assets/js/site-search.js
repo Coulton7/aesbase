@@ -59,9 +59,17 @@ document.addEventListener("DOMContentLoaded", function() {
             const input = document.createElement('input');
             input.classList.add('ais-SearchBox-input');
             input.classList.add('form-control');
-            input.setAttribute("type", "text")
-            input.setAttribute("placeholder", "Enter your search here");
-
+            input.setAttribute("type", "text");
+            if (filterLang == 'en') {
+                input.setAttribute("placeholder", "Enter your search here");
+            } else if (filterLang == '') {
+                input.setAttribute("placeholder", "Enter your search here");
+            } else if (filterLang == 'es') {
+                input.setAttribute("placeholder", "Introduce aquí tu búsqueda");
+            } else {
+                input.setAttribute("placeholder", "Enter your search here");
+            }
+            
             const searchButton = document.createElement('button');
             searchButton.classList.add('ais-SearchBox-submit');
             searchButton.classList.add('btn');
