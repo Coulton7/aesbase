@@ -66,6 +66,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 input.setAttribute("placeholder", "Enter your search here");
             } else if (filterLang == 'es') {
                 input.setAttribute("placeholder", "Introduce aquí tu búsqueda");
+            } else if (filterLang == 'fr') {
+                input.setAttribute("placeholder", "Saisissez votre recherche ici");
+            } else if (filterLang == 'de') {
+                input.setAttribute("placeholder", "Geben Sie hier Ihren Suchbegriff ein");
+            } else if (filterLang == 'it') {
+                input.setAttribute("placeholder", "Inserisci qui la tua ricerca");
+            } else if (filterLang == 'pl') {
+                input.setAttribute("placeholder", "Wpisz tutaj szukane hasło");
+            } else if (filterLang == 'tr') {
+                input.setAttribute("placeholder", "Aramanızı buraya girin");
+            } else if (filterLang == 'zh-hans') {
+                input.setAttribute("placeholder", "请在此处输入搜索内容");
+            } else if (filterLang == 'ar') {
+                input.setAttribute("placeholder", "أدخل كلمة البحث هنا");
+            } else if (filterLang == 'pt-br') {
+                input.setAttribute("placeholder", "Digite aqui o que você deseja pesquisar");
+            } else if (filterLang == 'pt') {
+                input.setAttribute("placeholder", "Introduza aqui a sua pesquisa");
+            } else if (filterLang == 'cz') {
+                input.setAttribute("placeholder", "Zadejte zde svůj vyhledávací dotaz");
+            } else if (filterLang == 'nl') {
+                input.setAttribute("placeholder", "Voer hier je zoekopdracht in");
+            } else if (filterLang == 'ja') {
+                input.setAttribute("placeholder", "ここに検索語を入力してください");
+            } else if (filterLang == 'sv') {
+                input.setAttribute("placeholder", "Skriv in din sökning här");
             } else {
                 input.setAttribute("placeholder", "Enter your search here");
             }
