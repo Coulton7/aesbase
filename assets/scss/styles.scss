@@ -794,6 +794,16 @@ a.text-white, .link-text-white a{
   color: $black;
 }
 
+.link-text-light a {
+  color: $gray-100;
+  text-decoration-color: $gray-100;
+}
+
+.link-text-light a:hover {
+  color: $gray-200;
+  text-decoration-color: $gray-200;
+}
+
 a.black-text {
   color: $black;
 }
