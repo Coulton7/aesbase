@@ -2125,7 +2125,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#usHits',
                 templates:{
                     item(data, { html, components }){ 
-                        hideForm();
                         return html`
                         <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                             <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
