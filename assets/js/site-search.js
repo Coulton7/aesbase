@@ -2142,7 +2142,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                     <div class="text-center  py-5">
                         <p class="h3">Would you like to search our Global site?</p>
-                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger me-3" target="_blank" rel="noopener">Search our Global site</a>
+                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger mb-3" target="_blank" rel="noopener">Search our Global site</a>
                         <p class="h3">Are you searching for a Part Number or Serial Number?</p>
                         <button id="prodEnq" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
                     </div>`;
@@ -2221,7 +2221,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             <div class="text-center  py-5">
                                 <p class="h3">Would you like to search our Global site?</p>
-                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger mb-3" target="_blank" rel="noopener">Search our Global site</a>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>
                                 <button id="prodEnq" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
                             </div>`;
