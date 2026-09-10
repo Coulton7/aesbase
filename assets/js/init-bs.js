@@ -1,9 +1,10 @@
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-var nav = document.querySelector('.main-menu');
-var nationalFlag = document.querySelector(".navbar-flag")
-
 document.addEventListener("DOMContentLoaded", function() {
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    var nav = document.querySelector('.main-menu');
+    var nationalFlag = document.querySelector(".navbar-flag")
+
     var resourceSearchTriegger = document.querySelector("#global-overlay-search");
     if(resourceSearchTriegger){
         resourceSearchTriegger.addEventListener('click', function(){
