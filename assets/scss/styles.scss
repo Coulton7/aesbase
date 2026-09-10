@@ -5334,7 +5334,8 @@ time.icon span {
     opacity: 1;
     background-repeat: no-repeat;
     background-position: center top;
-    margin-top: 1.5rem;
+    position: relative;
+    top: 1.5rem;
   }
 
   .banner-overlay-video:hover .virtual-tour img,.banner-overlay-video:hover .corp-video img {
