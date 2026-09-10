@@ -2144,8 +2144,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="text-center  py-5">
                         <p class="h3">Would you like to search our Global site?</p>
                         <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
-                    </div>
-                    <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
+                        <button id="prodEnq" type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#partsForm">Are you searching for a Part Number or Serial Number?</button>
+                        <a 
+                    </div>`;
                     },
                 },
                 transformItems(items){
@@ -2221,10 +2222,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             <div class="text-center  py-5">
-                                <p class="h3">Would you like to search our Global site?</p>
-                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
-                            </div>
-                            <p class="h3 pt-4">Are you searching for a Part Number or Serial Number?</p>`;
+                        <p class="h3">Would you like to search our Global site?</p>
+                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger" target="_blank" rel="noopener">Search our Global site</a>
+                        <button id="prodEnq" type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#partsForm">Are you searching for a Part Number or Serial Number?</button>
+                        <a 
+                    </div>`;
                         },
                     }
                 }),
