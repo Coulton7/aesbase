@@ -4190,12 +4190,14 @@ time.icon span {
   top: 50%;
   left: 50%;
   z-index: 2;
+  position: relative
 }
 
 .corp-video-camera-hover {
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 0%;
   z-index: 1;
+  position: absolute;
 }
 
 .site-tour:hover .site-tour-banner, .site-tour:hover .site-tour-logo, .corp-video:hover .corp-video-camera {
