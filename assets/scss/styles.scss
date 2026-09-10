@@ -4170,14 +4170,6 @@ time.icon span {
   pointer-events: none;
 }
 
-.site-tour:hover {
-  background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp");
-  background-size: 33%;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
 .site-tour-logo {
   max-width: 17%;
   position: absolute;
@@ -4194,7 +4186,19 @@ time.icon span {
   z-index: 1;
 }
 
-.site-tour:hover .site-tour-banner, .site-tour:hover .site-tour-logo {
+.corp-video-camera {
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+.corp-video-camera-hover {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.site-tour:hover .site-tour-banner, .site-tour:hover .site-tour-logo, .corp-video:hover .corp-video-camera {
   opacity: 0;
 }
 
