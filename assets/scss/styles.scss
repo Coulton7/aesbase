@@ -3391,6 +3391,10 @@ time.icon span {
   color: #006ba2;
 }
 
+.body-white-gradient {
+  background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, $white 50%, $white 100%);
+}
+
 .primary-iceberg-white {
   background: linear-gradient(to bottom, $primary 0%, $primary 50%, #fbfbfb 50%, #fbfbfb 100%);
   display: flex;
