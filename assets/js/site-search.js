@@ -2139,7 +2139,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     empty(results, { html }){
                         revealForm();
-                        return html`<p class="h3">Please refine search for ${results.query}</p>
+                        return html`<p class="h3 mt-7">Please refine the search for ${results.query}</p>
                     <p>Have you looked at our product document search tab above? You may find what you are looking for there.</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                     <div class="pt-2">
@@ -2220,7 +2220,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         }, empty(results, { html }){
                             revealForm();
-                                return html`<p class="h3 mt-3">Please refine search for ${results.query}</p>
+                                return html`<p class="h3 mt-7">Please refine the search for ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                             <div class="pt-2">
                                 <p class="h3">Would you like to search our Global site?</p>
