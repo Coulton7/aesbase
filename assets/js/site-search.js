@@ -2140,7 +2140,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     empty(results, { html }){
                         revealForm();
                         return html`<p class="h3 mt-7">Please refine the search for ${results.query}</p>
-                    <p>Sorry we couldn’t find a result for your search. Have you tried using the product document search tab above?</p>
+                    <p>Sorry we couldn’t find a result for your search. Have you tried using the product brochure search tab above?</p>
                     <p>Alternatively please try again by checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
                     <div class="pt-2">
                         <p class="h3">Would you like to search our Global site?</p>
