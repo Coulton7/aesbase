@@ -2139,14 +2139,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     empty(results, { html }){
                         revealForm();
-                        return html`<p class="h3">No results found matching ${results.query}</p>
+                        return html`<p class="h3">Please refine search for ${results.query}</p>
                     <p class="lead text-white">Have you looked at our product document search tab above? You may find what you are looking for there.</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                    <div class="text-center  py-5">
+                    <div class="py-5">
                         <p class="h3">Would you like to search our Global site?</p>
-                        <a href="https://www.aesseal.com/en/search" class="btn btn-danger mb-3" target="_blank" rel="noopener">Search our Global site</a>
+                        <a href="https://www.aesseal.com/en/search" class="btn btn-outline-light mb-3" target="_blank" rel="noopener">Search our Global site</a>
                         <p class="h3">Are you searching for a Part Number or Serial Number?</p>
-                        <button id="prodEnq" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
+                        <button id="prodEnq" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
                     </div>`;
                     },
                 },
@@ -2220,13 +2220,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         }, empty(results, { html }){
                             revealForm();
-                                return html`<p class="h3 mt-3">No results found matching ${results.query}</p>
+                                return html`<p class="h3 mt-3">Please refine search for ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            <div class="text-center  py-5">
+                            <div class="  py-5">
                                 <p class="h3">Would you like to search our Global site?</p>
-                                <a href="https://www.aesseal.com/en/search" class="btn btn-danger mb-3" target="_blank" rel="noopener">Search our Global site</a>
+                                <a href="https://www.aesseal.com/en/search" class="btn btn-outline-light mb-3" target="_blank" rel="noopener">Search our Global site</a>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>
-                                <button id="prodEnq" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
+                                <button id="prodEnq" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#partsForm">Fill in the Form</button>
                             </div>`;
                         },
                     }
