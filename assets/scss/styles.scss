@@ -2453,7 +2453,9 @@ ul.about-us-cats {
 .change:hover,
 .change:focus,
 .loc-close:focus,
-.loc-close:hover {
+.loc-close:hover,
+.overlayClose:hover,
+.overlayClose:focus {
   color: transparent;
   border-bottom: none;
   pointer-events: none;
@@ -2668,7 +2670,7 @@ ul.about-us-cats a {
   line-height: 1.3em;
 }
 
-.change:after, .loc-close:after {
+.change:after, .loc-close:after, .overlayClose:after {
   display: block;
   content: "\f00d";
   font: var(--fa-font-solid);
@@ -2763,7 +2765,8 @@ ul.about-us-cats a {
 }
 
 .change:hover:after,
-.loc-close:hover:after {
+.loc-close:hover:after,
+.overlayClose:hover:after {
   color: $danger;
 }
 
@@ -4689,7 +4692,7 @@ time.icon span {
     top: 21%;
   }
 
-  .change:after {
+  .change:after, .overlayClose:after {
     right: 0;
   }
 
@@ -4750,7 +4753,7 @@ time.icon span {
     margin-bottom: 0;
   }
 
-  .change:after {
+  .change:after, .overlayClose:after {
     top: 1.5em
     }
     
@@ -4769,7 +4772,7 @@ time.icon span {
     margin-bottom: 0;
   }
 
-  .change:after {
+  .change:after, .overlayClose:after {
     top: 1.5em
   }
     
@@ -5142,7 +5145,7 @@ time.icon span {
     transition: all 0.3s ease-in-out;
   }
 
-  .change:after{
+  .change:after, .overlayClose:after {
     top: 3em;
   }
     
