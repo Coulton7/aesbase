@@ -290,14 +290,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(overlayCasesBtn) {
       overlayCasesBtn.addEventListener("click", function casesBtn() {
-        overlayCasesBtn.classList.toggle("change");
         if (c.style.height === "100%") {
           c.style.height = "1px";
           c.style.bottom = "-1px";
           html.classList.remove("noscroll");
           body.classList.remove("noscroll");
           dialogOffCanvas.classList.remove("noscroll");
-          overlayCasesBtn.classList.add("cases-btn");
         } else {
           c.style.height = "100%";
           c.style.bottom = "0";
@@ -316,7 +314,6 @@ document.addEventListener("DOMContentLoaded", function () {
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
-          overlayCasesBtn.classList.remove("cases-btn");
         }
       });
     }
