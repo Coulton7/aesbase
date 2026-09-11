@@ -2142,7 +2142,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         return html`<p class="h3">Please refine search for ${results.query}</p>
                     <p class="lead text-white">Have you looked at our product document search tab above? You may find what you are looking for there.</p>
                     <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                    <div class="py-5">
+                    <div class="pt-2">
                         <p class="h3">Would you like to search our Global site?</p>
                         <a href="https://www.aesseal.com/en/search" class="btn btn-outline-light mb-3" target="_blank" rel="noopener">Search our Global site</a>
                         <p class="h3">Are you searching for a Part Number or Serial Number?</p>
@@ -2222,7 +2222,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             revealForm();
                                 return html`<p class="h3 mt-3">Please refine search for ${results.query}</p>
                             <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>
-                            <div class="  py-5">
+                            <div class="pt-2">
                                 <p class="h3">Would you like to search our Global site?</p>
                                 <a href="https://www.aesseal.com/en/search" class="btn btn-outline-light mb-3" target="_blank" rel="noopener">Search our Global site</a>
                                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>
