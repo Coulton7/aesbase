@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var overlayTermsBtn = document.getElementById("overlayTerms");
   var overlayDocumentBtn = document.getElementById("overlayDocument");
   var overlayCasesBtn = document.getElementById("overlayCases");
+  var overlayCloseBtn = document.querySelector(".overlayClose");
   var expandingSearch = document.querySelector("#search-icon");
   var footerOverlayBtn = document.querySelector("#footer-overlay-btn");
   var footerTermsBtn = document.querySelector("#footer-terms");
@@ -290,13 +291,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(overlayCasesBtn) {
       overlayCasesBtn.addEventListener("click", function casesBtn() {
-        if (c.style.height === "100%") {
-          c.style.height = "1px";
-          c.style.bottom = "-1px";
-          html.classList.remove("noscroll");
-          body.classList.remove("noscroll");
-          dialogOffCanvas.classList.remove("noscroll");
-        } else {
           c.style.height = "100%";
           c.style.bottom = "0";
           c.style.top = "0";
@@ -314,9 +308,20 @@ document.addEventListener("DOMContentLoaded", function () {
           html.classList.add("noscroll");
           body.classList.add("noscroll");
           dialogOffCanvas.classList.add("noscroll");
+        });
+      };
+
+    if(overlayCloseBtn){
+      overlayCloseBtn.addEventListener("click", function closeBtn() {
+        if (c.style.height === "100%") {
+          c.style.height = "1px";
+          c.style.bottom = "-1px";
+          html.classList.remove("noscroll");
+          body.classList.remove("noscroll");
+          dialogOffCanvas.classList.remove("noscroll");
         }
       });
-    }
+    };
 
     if(overlayLegalBtn){
       overlayLegalBtn.addEventListener("click", function legalBtn() {
