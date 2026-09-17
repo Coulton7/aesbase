@@ -4195,6 +4195,13 @@ time.icon span {
   z-index: 1;
 }
 
+.virtual-tour-banner {
+  background-image: url(https://static.aesseal.com/graphics/banners/360-tour-banner-background-supercell.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .corp-video-camera {
   z-index: 2;
   position: relative
@@ -4568,13 +4575,6 @@ time.icon span {
   .navbar-collapse nav {
     text-align: center;
     width: 100%;
-  }
-
-  .virtual-tour-banner {
-    background-image: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .bg-water-savings{
@@ -5074,13 +5074,6 @@ time.icon span {
     bottom: -1em;
   }
 
-  .virtual-tour-banner {
-    background-image: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .site-tour:hover {
     background-image: url("https://static.aesseal.com/graphics/banners/360-tour-promo-lg.webp");
     background-size: 59%;
@@ -5363,13 +5356,6 @@ time.icon span {
 
   .virtual-tour:hover img {
     opacity: 0;
-  }
-
-  .virtual-tour-banner {
-    background-image: url("https://static.aesseal.com/graphics/360tour-lg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .bg-gradient-water-savings-primary{
