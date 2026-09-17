@@ -67,6 +67,40 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
 
+    if (document.querySelectorAll('.tour-slider').length > 0){
+        var tour_slider = tns ({
+            container: ".tour-slider",
+            speed: 0,
+            loop: false,
+            nav: false,
+            controlsContainer: "#arrow-nav",
+            gutter: 20,
+            lazyload: true,
+            autoplay: false,
+            responsive: {
+                1 : {
+                items: 2 
+                },
+        
+                600 : {
+                items: 2
+                },
+        
+                768: {
+                    items: 2
+                },
+        
+                992: {
+                    itmes: 3
+                },
+        
+                1200: {
+                    items: 3
+                }
+            },
+        })
+    }
+
     if (document.querySelectorAll('.third-slider').length > 0){
         var third_slider = tns ({
             container: ".third-slider",
