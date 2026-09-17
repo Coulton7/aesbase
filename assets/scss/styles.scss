@@ -4202,6 +4202,17 @@ time.icon span {
   background-repeat: no-repeat;
 }
 
+.virtual-tour-cut-out {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.virtual-tour-content {
+  position:relative;
+  z-index: 2;
+}
+
 .corp-video-camera {
   z-index: 2;
   position: relative
