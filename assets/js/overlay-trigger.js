@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
     };
 
-    if(hash === "#documents" &&overlayDocumentBtn) {
+    if(hash === "#documents" && overlayDocumentBtn) {
       overlayDocumentBtn.addEventListener("click", function documentBtn() {
         overlayDocumentBtn.classList.toggle("change");
         if (d.style.height === "100%") {
