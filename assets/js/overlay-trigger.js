@@ -288,8 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
       window.addEventListener("hashchange", function(event) {
-        console.log(window.location.hash);
-        if(hash === "#documents") {
+        if(window.location.hash === "#documents") {
           overlayDocumentBtn.classList.toggle("change");
           if (d.style.height === "100%") {
             d.style.height = "1px";
