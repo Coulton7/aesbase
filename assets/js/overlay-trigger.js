@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var query = 'q';
   var popSearch = document.querySelector("#popular-search-bar");
   var prefillBtns = document.querySelectorAll(".prefill-btn");
-  const hash = window.location.hash;
+  const hash = location.hash;
   var popSearchInput = document.querySelector("#popular-search-input");
   var popSearchButton = document.querySelector(".pop-search-button");
 
