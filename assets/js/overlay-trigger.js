@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
           overlayDocumentBtn.classList.remove("document-btn");
         }
       });
-      window.addEventListener("hashchange", function(event) {
+      window.addEventListener("popstate", function(event) {
         console.log(hash);
         if(hash === "documents") {
           overlayDocumentBtn.classList.toggle("change");
