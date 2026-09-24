@@ -805,6 +805,14 @@ a.text-white, .link-text-white a{
   text-decoration-color: $gray-200;
 }
 
+.tag-link a {
+  color: #667f9c;
+}
+
+.tag-link a:hover {
+  color: $white;
+}
+
 a.black-text {
   color: $black;
 }
