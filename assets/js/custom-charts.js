@@ -212,34 +212,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         },
         data: {
+            labels: [
+                'Seal System', 'Operations', 'Bearing', 'Workshop', 'Install/Align', 'Process', 'Seal'
+            ],
             datasets: [{
-                data: [22],
+                data: [22, 37, 13, 7, 5, 12, 4],
                 label: 'Seal Support',
-                backgroundColor: '#dd1e25',
-            },{
-                data: [37],
-                label: 'Operations',
-                backgroundColor: '#e5e5e7'
-            },{
-                data: [13],
-                label: 'Bearing',
-                backgroundColor: '#b5b6b9'
-            },{
-                data: [7],
-                label: 'Workshop',
-                backgroundColor: '#004a8c'
-            },{
-                data: [5],
-                label: 'Install/Align',
-                backgroundColor: '#888c8f'
-            },{
-                data: [12],
-                label: 'Process',
-                backgroundColor:'#002a5b', 
-            },{
-                data: [4],
-                label: 'Seal',
-                backgroundColor:'#667f9c'
+                backgroundColor:[ '#dd1e25', '#e5e5e7', '#b5b6b9', '#004a8c', '#888c8f', '#002a5b', '#667f9c' ],
             }]
         }
     });
