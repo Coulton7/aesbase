@@ -40,7 +40,7 @@ function aesbase_page_attachments_alter(&$page) {
     if($alias == '/contact-us' || '/contactez-nous' || '/location' || '/localisation') {
       $page['#attached']['library'][] = 'aesbase/svg-map';
     }
-    if($alias == '/about-us/technology-and-innovation/road-to-50') {
+    if($alias == '/about-us/technology-and-innovation/road-to-50' || '/product/seal-support') {
       $page['#attached']['library'][] = 'aesbase/chartjs';
     }
   }

@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
     });
 
-    let sealSupport = document.getElementById("sealSupport");
+    let sealSupport = document.getElementById("sealSupportChart");
 
     newChart(sealSupport, {
         type: 'pie',
