@@ -184,4 +184,63 @@ document.addEventListener("DOMContentLoaded", function() {
             }]
         },
     });
+
+    let sealSupport = document.getElementById("sealSupport");
+
+    newChart(sealSupport, {
+        type: 'pie',
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Seal Support',
+                    color: '#535354',
+                    font: {
+                        size: 24
+                    }
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        color: '#535354'
+                    },
+                    textAlign: 'center',
+                }
+            }
+        },
+        data: {
+            datasets: [{
+                data: [22],
+                label: 'Seal Support',
+                backgroundColor: '#dd1e25',
+            },{
+                data: [37],
+                label: 'Operations',
+                backgroundColor: '#e5e5e7'
+            },{
+                data: [13],
+                label: 'Bearing',
+                backgroundColor: '#b5b6b9'
+            },{
+                data: [7],
+                label: 'Workshop',
+                backgroundColor: '#004a8c'
+            },{
+                data: [5],
+                label: 'Install/Align',
+                backgroundColor: '#888c8f'
+            },{
+                data: [12],
+                label: 'Process',
+                backgroundColor:'#002a5b', 
+            },{
+                data: [4],
+                label: 'Seal',
+                backgroundColor:'#667f9c'
+            }]
+        }
+    });
 });
