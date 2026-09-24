@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let sealSupport = document.getElementById("sealSupportChart");
 
-    newChart(sealSupport, {
+    new Chart(sealSupport, {
         type: 'pie',
         options: {
             responsive: true,
