@@ -58,17 +58,17 @@ document.addEventListener("DOMContentLoaded", function() {
             labels: ["Overall Progress"],
 
             datasets: [{
-                data: [49.55],
+                data: [65.69],
                 label: 'Live AI Automations',
                 backgroundColor: "#0bb305",
                 hoverBackgroundColor: "#058D00"
             },{
-                data: [18.04],
+                data: [13.54],
                 label: 'AI Automations In Development',
                 backgroundColor: "#14bcdc",
                 hoverBackgroundColor: "#1096b0"
             },{
-                data: [32.41],
+                data: [20.77],
                 label: 'Remaining Target',
                 backgroundColor: "#e98431",
                 hoverBackgroundColor: "#d26b16"
