@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             ({
                                 text: `${chart.data.labels[i]} ${data}%`,
                                 fillStyle: datasets[0].backgroundColor[i],
+                                fontColor: '#535354',
                                 index: i
                             }))
                         }),
