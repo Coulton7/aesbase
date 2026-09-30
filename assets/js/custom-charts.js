@@ -100,8 +100,19 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     textAlign: 'center',
                 }
+            },
+            datalabels: {
+                formatter: (value, context) => {
+                    let percentage =(value/context.chart._metasets[context.datasetIndex].total * 100).toFixed(2) + '%';
+                    return percentage;
+                },
+                color: '#fff',
+                font: {
+                    size: 14
+                }
             }
         },
+        plugins: [ChartDataLabels],
         data: {
             labels: [
                 'Seal System', 'Operations', 'Bearing', 'Workshop', 'Install/Align', 'Process', 'Seal'
@@ -111,6 +122,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 label: 'Seal Support',
                 backgroundColor:[ '#dd1e25', '#e5e5e7', '#b5b6b9', '#004a8c', '#888c8f', '#002a5b', '#667f9c' ],
             }]
-        }
+        },
     });
 });
