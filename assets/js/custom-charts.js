@@ -59,7 +59,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 title: {
                     display: true,
                     text: 'Live & In - Devlopment Progress',
+                    labels: {
                     color: '#fff',
+                    },
                     font: {
                             size: 24
                         }
@@ -67,19 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 legend: {
                     display: true,
                     position: 'top',
-                    labels: {
-                        generateLabels: (chart => {
-                            const datasets = chart.data.datasets;
-                            return datasets[0].data.map(( data, i) =>
-                            ({
-                                text: `${chart.data.labels[i]} ${data}%`,
-                                fillStyle: datasets[0].backgroundColor[i],
-                                fontColor: '#ffffff',
-                                index: i
-                            }))
-                        }),
-                        color: '#ffffff'
-                    },
+                    color: ' #fff',
                     textAlign: 'center',
                 },
                 tooltip: {
