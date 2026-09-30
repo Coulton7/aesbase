@@ -68,14 +68,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     display: true,
                     position: 'top',
                     labels: {
-                        color: '#fff'
+                        generateLabels: (chart => {
+                            const datasets = chart.data.datasets;
+                            return datasets[0].data.map(( data, i) =>
+                            ({
+                                text: `${chart.data.labels[i]} ${data}%`,
+                                fillStyle: datasets[0].backgroundColor[i],
+                                fontColor: '#ffffff',
+                                index: i
+                            }))
+                        }),
+                        color: '#ffffff'
                     },
                     textAlign: 'center',
                 },
                 tooltip: {
                     callbacks: {
                         label: function(context){
-                            let label = context.label || '';
+                            let label = context.dataset.label || '';
                             let value = context.raw || 0;
                             return label + ': ' + value + '%';
                         }
