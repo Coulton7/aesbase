@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             const datasets = chart.data.datasets;
                             return datasets[0].data.map(( data, i) =>
                             ({
-                                text: `${chart.data.labels[i]} ${data}`,
+                                text: `${chart.data.labels[i]} ${data}%`,
                                 fillStyle: datasets[0].backgroundColor[i],
                                 index: i
                             }))
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             let label = context.label || '';
                             let value = context.raw || 0;
                             let total = context.dataset.data.reduce((acc, curr)=> acc+curr, 0);
-                            let percentage =(value/total * 100).toFixed(2) + '%';
+                            let percentage =(value/total * 100).toFixed(0) + '%';
                             return label + ': ' + percentage + '';
                         }
                     }
