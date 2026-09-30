@@ -1273,7 +1273,7 @@ blockquote.transparent-50:after {
   color: #efefef;
 }
 
-.background-11 {
+.background-11, .background-richard {
   background-image: url(https://static.aesseal.com/photo/staff/quotes/Richard_Hunt.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1300,8 +1300,7 @@ blockquote.transparent-50:after {
 .background-31 .quote-placement,
 .background-29 .quote-placement,
 .background-27 .quote-placement,
-.background-25 .quote-placement,
-.background-patrick .quote-placement {
+.background-25 .quote-placement {
   width: 50%;
   margin-left: 50%;
   text-align: right;
@@ -1315,7 +1314,8 @@ blockquote.transparent-50:after {
 .background-12 .quote-placement,
 .us-background-62 .quote-placement,
 .us-background-63 .quote-placement,
-.background-11 .quote-placement {
+.background-11 .quote-placement,
+.background-patrick .quote-placement {
   width: 50%;
 }
 
