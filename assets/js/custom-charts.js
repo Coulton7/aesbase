@@ -108,6 +108,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     display: true,
                     position: 'right',
                     labels: {
+                        generateLabels: (chart => {
+                            const datasets = chart.data.datasets;
+                            return datasets[0].data.map(( data, i) =>
+                            ({
+                                text: `${chart.data.labels[i]} ${data}`,
+                                fillStyle: datasets[0].backgroundColor[i],
+                                index: i
+                            }))
+                        }),
                         color: '#535354'
                     },
                     textAlign: 'center',
