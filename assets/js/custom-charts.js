@@ -3,11 +3,22 @@ document.addEventListener("DOMContentLoaded", function() {
     let dvpInProg = document.getElementById("developmentInProg").getContext('2d');
 
     const develData = {
-        labels: ["Live AI Automations", "AI Automations In Development", "Remaining Target"],
+        labels: ["Overall Progress"],
         datasets: [{
-            data: [65.69, 13.54, 20.77],
-            backgroundColor: ["#0bb305", "#14bcdc", "#e98431"],
-            hoverBackgroundColor: ["#058D00", "#1096b0", "#d26b16"]
+            data: [65.69],
+            label: 'Live AI Automations',
+            backgroundColor: "#0bb305",
+            hoverBackgroundColor: "#058D00"
+        },{
+            data: [13.54],
+            label: 'AI Automations In Development',
+            backgroundColor: "#14bcdc",
+            hoverBackgroundColor: "#1096b0"
+        },{
+            data: [20.77],
+            label: 'Remaining Target',
+            backgroundColor: "#e98431",
+            hoverBackgroundColor: "#d26b16"
         }]
     }
 
@@ -66,9 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         label: function(context){
                             let label = context.label || '';
                             let value = context.raw || 0;
-                            let total = context.dataset.data.reduce((acc, curr)=> acc+curr, 0);
-                            let percentage =(value/total * 100).toFixed(2) + '%';
-                            return label + ': ' + percentage + '';
+                            return label + ': ' + value + '%';
                         }
                     }
                 }
