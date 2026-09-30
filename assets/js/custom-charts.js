@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 tooltip: {
                     callbacks: {
                         label: function(context){
+                            let title = context.label || '';
                             let label = context.dataset.label || '';
                             let value = context.raw || 0;
                             return label + ': ' + value + '%';
