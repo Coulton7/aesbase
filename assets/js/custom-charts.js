@@ -78,10 +78,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let sealSupport = document.getElementById("sealSupportChart");
 
-    new Chart(sealSupport, {
-        type: 'pie',
-         data: {
-            labels: [
+    const sealSupportData = {
+        labels: [
                 'Seal System', 'Operations', 'Bearing', 'Workshop', 'Install/Align', 'Process', 'Seal'
             ],
             datasets: [{
@@ -89,7 +87,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 label: 'Seal Support',
                 backgroundColor:[ '#dd1e25', '#e5e5e7', '#b5b6b9', '#004a8c', '#888c8f', '#002a5b', '#667f9c' ],
             }]
-        },
+    };
+
+    new Chart(sealSupport, {
+        type: 'pie',
+         data: sealSupportData,
         options: {
             responsive: true,
             maintainAspectRatio: false,
@@ -109,20 +111,19 @@ document.addEventListener("DOMContentLoaded", function() {
                         color: '#535354'
                     },
                     textAlign: 'center',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context){
+                            let label = context.label || '';
+                            let value = context.raw || 0;
+                            let total = context.dataset.data.reduce((acc, curr)=> acc+curr, 0);
+                            let percentage =(value/total * 100).toFixed(2) + '%';
+                            return label + ': ' + percentage + '';
+                        }
+                    }
                 }
             },
-            datalabels: {
-                formatter: (value, context) => {
-                    let percentage =(value/context.chart._metasets[context.datasetIndex].total * 100).toFixed(2) + '%';
-                    return percentage;
-                },
-                color: '#fff',
-                font: {
-                    size: 14
-                }
-            }
-        },
-        plugins: [ChartDataLabels],
-       
+        },       
     });
 });
