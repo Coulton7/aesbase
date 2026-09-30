@@ -50,6 +50,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         color: '#fff'
                     },
                     textAlign: 'center',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context){
+                            let label = context.label || '';
+                            let value = context.raw || 0;
+                            let total = context.dataset.data.reduce((acc, curr)=> acc+curr, 0);
+                            let percentage =(value/total * 100).toFixed(2) + '%';
+                            return label + ': ' + percentage + '';
+                        }
+                    }
                 }
             },
         },
