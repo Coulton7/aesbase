@@ -2,8 +2,29 @@
 document.addEventListener("DOMContentLoaded", function() {
     let dvpInProg = document.getElementById("developmentInProg").getContext('2d');
 
+    const develData = {
+        labels: ["Overall Progress"],
+        datasets: [{
+            data: [65.69],
+            label: 'Live AI Automations',
+            backgroundColor: "#0bb305",
+            hoverBackgroundColor: "#058D00"
+        },{
+            data: [13.54],
+            label: 'AI Automations In Development',
+            backgroundColor: "#14bcdc",
+            hoverBackgroundColor: "#1096b0"
+        },{
+            data: [20.77],
+            label: 'Remaining Target',
+            backgroundColor: "#e98431",
+            hoverBackgroundColor: "#d26b16"
+        }]
+    }
+
     new Chart(dvpInProg,{
         type: 'bar',
+        data: develData,
         options: {
             responsive: true,
             maintainAspectRatio: false,
@@ -63,27 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             },
-        },
-        
-        data: {
-            labels: ["Overall Progress"],
-
-            datasets: [{
-                data: [65.69],
-                label: 'Live AI Automations',
-                backgroundColor: "#0bb305",
-                hoverBackgroundColor: "#058D00"
-            },{
-                data: [13.54],
-                label: 'AI Automations In Development',
-                backgroundColor: "#14bcdc",
-                hoverBackgroundColor: "#1096b0"
-            },{
-                data: [20.77],
-                label: 'Remaining Target',
-                backgroundColor: "#e98431",
-                hoverBackgroundColor: "#d26b16"
-            }]
         },
     });
 
