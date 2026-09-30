@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let dvpInProg = document.getElementById("developmentInProg").getContext('2d');
 
     const develData = {
+        labels: ["Overall Progress"],
         datasets: [{
             data: [65.69],
             label: 'Live AI Automations',
