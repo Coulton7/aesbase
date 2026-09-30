@@ -59,9 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 title: {
                     display: true,
                     text: 'Live & In - Devlopment Progress',
-                    labels: {
                     color: '#fff',
-                    },
                     font: {
                             size: 24
                         }
@@ -69,13 +67,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 legend: {
                     display: true,
                     position: 'top',
-                    color: ' #fff',
+                    labels: {
+                        color: '#ffffff'
+                    },
                     textAlign: 'center',
                 },
                 tooltip: {
                     callbacks: {
                         label: function(context){
-                            let title = context.label || '';
                             let label = context.dataset.label || '';
                             let value = context.raw || 0;
                             return label + ': ' + value + '%';
