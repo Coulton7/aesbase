@@ -3244,6 +3244,17 @@ time.icon span {
   width: 100%;
 }
 
+.hs-overlay-form .hs-input[type="radio"] {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 3px 5px 3px 0px;
+}
+
+.hs-overlay-form legend {
+  font-size: 0.8rem;
+}
+
 .hsfc-Button {
   background-color: $primary!important;
   color: $white!important;
