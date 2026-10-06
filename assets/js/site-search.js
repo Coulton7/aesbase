@@ -4850,6 +4850,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 numberOfHits({
                     container: document.querySelector("#globalResultsNum"),
             }),
+
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
