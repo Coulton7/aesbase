@@ -398,14 +398,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let natTypeMapping
 
-    natTypeMapping = {
-        'page' : 'Web Page',
-        'article' : 'Article',
-        'casestudies' : 'Case Studies',
-        'case_studies' : 'Case Studies',
-        'productbrochures' : 'Product Brochure',
-    }
-
     langMapping = {
         'en': 'English',
         'es': 'Español',
@@ -462,6 +454,13 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'Video',
             'whitepaper': 'Whitepaper',
         }
+        natTypeMapping = {
+        'page' : 'Web Page',
+        'article' : 'Article',
+        'casestudies' : 'Case Studies',
+        'case_studies' : 'Case Studies',
+        'productbrochures' : 'Product Brochure',
+        }
         vidMapping = {
             'resourcescontenttypes': 'Content Index',
             'producttypes': 'Product Types',
@@ -508,6 +507,13 @@ document.addEventListener("DOMContentLoaded", function() {
             'technicaldrawings': 'Technical Drawing',
             'video': 'Video',
             'whitepaper': 'Whitepaper',
+        }
+        natTypeMapping = {
+        'page' : 'Web Page',
+        'article' : 'Article',
+        'casestudies' : 'Case Studies',
+        'case_studies' : 'Case Studies',
+        'productbrochures' : 'Product Brochure',
         }
         vidMapping = {
             'resourcescontenttypes': 'Content Index',
@@ -1037,6 +1043,13 @@ document.addEventListener("DOMContentLoaded", function() {
             'technicaldrawings': '技術図面',
             'video': 'ビデオ',
             'whitepaper': 'Whitepaper',
+        }
+        natTypeMapping = {
+        'page' : 'ウェブページ',
+        'article' : '記事',
+        'casestudies' : 'ケーススタディ',
+        'case_studies' : 'ケーススタディ',
+        'productbrochures' : '製品パンフレット',
         }
     } else {
         typeMapping = {
