@@ -4800,7 +4800,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
