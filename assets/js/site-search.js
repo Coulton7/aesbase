@@ -4775,12 +4775,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}${data.type != "製品パンフレット" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "ケーススタディ" ? '' : 'd-none'}${data.type != "製品パンフレット" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'}${data.type != "製品パンフレット" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
+                                <a class="${data.type != "ケーススタディ" ? '' : 'd-none'}${data.type != "製品パンフレット" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">続きを読む</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">PDFを開く</a>
                             </div>`
 
