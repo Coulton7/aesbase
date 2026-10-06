@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'article' : 'Article',
         'casestudies' : 'Case Studies',
         'case_studies' : 'Case Studies',
-        'product_brochures' : 'Product Brochure',
+        'productbrochures' : 'Product Brochure',
     }
 
     langMapping = {
@@ -453,7 +453,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'page': 'Web Page',
             'policies': 'Policies',
             'productbrochure': 'Product Brochure',
-            'product_brochures': 'Product Brochure',
+            'productbrochures': 'Product Brochure',
             'productcertificates': 'Product Certificates',
             'servicesbrochure' : 'Services Brochure',
             'sealsupportsystems': 'Seal Support Systems',
@@ -1031,7 +1031,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'page': 'ウェブページ',
             'policies': 'ポリシー',
             'productbrochure': '製品パンフレット',
-            'product_brochures': '製品パンフレット',
+            'productbrochures': '製品パンフレット',
             'productcertificates': '製品証明書',
             'sealsupportsystems': 'シール・サポート・システム',
             'technicaldrawings': '技術図面',
@@ -4704,7 +4704,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates: {
                     item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
-                
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        label: typeMapping[item.label],
+                    }));
+                },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
 
@@ -4792,7 +4797,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                 },
-                
+                transformItems(items){
+                    return items.map(item => ({
+                        ...item,
+                        type: typeMapping[item.type],
+                    }))
+                },
             }),
 
             instantsearch.widgets
