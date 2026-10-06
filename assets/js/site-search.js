@@ -4704,12 +4704,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 templates: {
                     item: '<input type="checkbox" data-insights-filter="${`type:${value}`}" class="ais-refinement-list--checkbox types-item" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        label: typeMapping[item.label],
-                    }));
-                },
+                
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
             }),
 
@@ -4797,12 +4792,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     },
                 },
-                transformItems(items){
-                    return items.map(item => ({
-                        ...item,
-                        type: typeMapping[item.type],
-                    }))
-                },
+                
             }),
 
             instantsearch.widgets
@@ -4850,7 +4840,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 numberOfHits({
                     container: document.querySelector("#globalResultsNum"),
             }),
-
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
