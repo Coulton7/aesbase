@@ -402,7 +402,8 @@ document.addEventListener("DOMContentLoaded", function() {
         'page' : 'Web Page',
         'article' : 'Article',
         'casestudies' : 'Case Studies',
-        'case_studies' : 'Case Studies'
+        'case_studies' : 'Case Studies',
+        'product_brochures' : 'Product Brochure',
     }
 
     langMapping = {
