@@ -4734,8 +4734,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#jaHits',
                 templates:{
                     item(data, { html, components }){
-                        hideForm();
                         if(filterLang == 'en'){
+                            hideForm();
                             return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
@@ -4852,6 +4852,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 instantsearch.widgets.hits ({
                     container: '#globalHits',
                     templates:{
+                        
                         item(hit, { html, components }){
                             return html `<div class="search-result" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-insights-query-id="${hit.__queryID}">
                                     <small>${hit.url}</small>
