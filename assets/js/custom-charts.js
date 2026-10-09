@@ -108,14 +108,6 @@ document.addEventListener("DOMContentLoaded", function() {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
-                title: {
-                    display: true,
-                    text: 'Seal Support',
-                    color: '#535354',
-                    font: {
-                        size: 24
-                    }
-                },
                 legend: {
                     display: true,
                     position: 'right',
