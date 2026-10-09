@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
+    if(document.getElementById("developmentInProg")){
     let dvpInProg = document.getElementById("developmentInProg").getContext('2d');
 
     const develData = {
@@ -84,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },
     });
+    }
 
+    if(document.getElementById("sealSupportChart")){
     let sealSupport = document.getElementById("sealSupportChart");
 
     const sealSupportData = {
@@ -145,4 +148,5 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },       
     });
+    }
 });
