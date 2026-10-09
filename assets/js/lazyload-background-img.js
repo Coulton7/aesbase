@@ -1,48 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages;
+    const lazyloadImages = document.querySelectorAll(".lazy-back");
   
-    if ("IntersectionObserver" in window) {
-      lazyloadImages = document.querySelectorAll(".lazy-back");
-      var imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var image = entry.target;
-            image.classList.remove("lazy-back");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
-  
-      lazyloadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-    } else {
-      var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".lazy-back");
-  
-      function lazyload () {
-        if(lazyloadThrottleTimeout) {
-          clearTimeout(lazyloadThrottleTimeout);
+    const elementObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry)=> {
+        if(entry.isIntersecting) {
+          entry.target.classList.remove("lazy-back");
+          observer.unobserve(entry.target);
         }
-  
-        lazyloadThrottleTimeout = setTimeout(function() {
-          var scrollTop = window.scrollY;
-          lazyloadImages.forEach(function(img) {
-              if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy-back');
-              }
-          });
-          if(lazyloadImages.length == 0) {
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-        }, 20);
-      }
-  
-      document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
+      });
+    },
+    {
+      root: null,
+      rootMargin: "200px 0px",
+      threshold: 0
     }
-  });
+  );
+
+  lazyloadImages.forEach((image) => elementObserver.observe(image));
+});
