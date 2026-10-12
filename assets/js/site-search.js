@@ -502,6 +502,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'policies': 'Policies',
             'productbrochure': 'Product Brochure',
             'productcertificates': 'Product Certificates',
+            'servicesbrochure' : 'Services Brochure',
             'sealsupportsystems': 'Seal Support Systems',
             'statementsandcompliance': 'Statements and Compliance',
             'technicaldrawings': 'Technical Drawing',
