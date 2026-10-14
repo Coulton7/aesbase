@@ -1535,6 +1535,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#searchbox'),
+                autofocus: false,
                 searchAsYouType: false,
                 queryHook(query, search) {
                     if(query.length >=3) {
@@ -2126,6 +2127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#usSearchbox'),
+                autofocus: false,
                 searchAsYouType: false,
                 placeholder: "Enter your keywords",
             }),
@@ -2383,6 +2385,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#inSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -2637,6 +2640,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#zaSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -2892,6 +2896,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#mySearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -3159,6 +3164,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#deSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -3475,6 +3481,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#aeSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -3742,6 +3749,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#frSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -4074,6 +4082,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#caSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -4419,6 +4428,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#seSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -4735,6 +4745,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#jaSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
             }),
 
@@ -5074,6 +5085,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#resSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
                  queryHook(query, search) {
                     if(query.length >=3) {
@@ -5879,6 +5891,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             mainSearchBox({
                 container: document.querySelector('#newsSearchbox'),
+                autofocus: false,
                  searchAsYouType: false,
                  queryHook(query, search) {
                     if(query.length >=3) {
