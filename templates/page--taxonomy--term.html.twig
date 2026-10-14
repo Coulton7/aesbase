@@ -103,7 +103,7 @@
     {% endblock %}
   {% endif %}
 
-  <div class="row no-padding g-0">
+  <div class="row g-0">
 	  <div class="preface preface-flex-margin text-bg-primary">
     {% if not is_front %}
       <div class="row pt-10 {{ node.label|lower|replace({' ':'-'}) }}-banner-background">
@@ -180,7 +180,7 @@
       {% endif %}
 
       {# Content #}
-      <section class="col-sm-12 g-0 pt-5">
+      <section class="col-sm-12 g-md-0 pt-5">
 
         {# Highlighted #}
         {% if page.highlighted %}
