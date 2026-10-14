@@ -170,7 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
           if(document.querySelector('.black-boxes-right')){
             document.querySelector('.black-boxes-right').classList.add("overlay-btn-allow");
           }
-          document.querySelector('.ais-SearchBox-input').focus();
         }
       });
     }
