@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }]
         }
 
-        newChart(dmsfChart, {
+        new Chart(dmsfChart, {
             type: 'bar',
             data: dmsfData,
             options: {
