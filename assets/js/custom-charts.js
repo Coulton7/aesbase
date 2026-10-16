@@ -174,6 +174,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         position : 'left',
                         max: 6,
                         min: 0,
+                        grid: {
+                            drawOnChartArea: false,
+                        },
                     },
                     y1: {
                         beginAtZero: true,
