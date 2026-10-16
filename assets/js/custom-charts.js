@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     }
 
-    if(docment.getElementById("dmsfChart")){
+    if(document.getElementById("dmsfChart")){
         let dmsfChart = document.getElementById("dmsfChart").getContext('2d');
         var dmsfData = {
             labels: ['1.375"(35mm)', '4.000(100mm)'],
