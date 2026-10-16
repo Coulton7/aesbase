@@ -141,4 +141,52 @@ document.addEventListener("DOMContentLoaded", function() {
         },       
     });
     }
+
+    if(docment.getElementById("dmsfChart")){
+        let dmsfChart = document.getElementById("dmsfChart").getContext('2d');
+        var dmsfData = {
+            labels: ['1.375"(35mm)', '4.000(100mm)'],
+            datasets: [{
+                label: 'AESSEAL',
+                backgroundColor: '#002a5a',
+                data: [2, 1.1],
+            }, {
+                label: 'Competitor 1',
+                backgroundColor: '#dd1e25',
+                data: [0.05, 0.05],
+            },{
+                label: 'Competitor 2',
+                backgroundColor: '#888c8f',
+                data: [1, 0.3],
+            }]
+        }
+
+        newChart(dmsfChart, {
+            type: 'bar',
+            data: dmsfData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        type: 'linear',
+                        position : 'left',
+                        max: 6,
+                        min: 0,
+                    },
+                    y1: {
+                        beginAtZero: true,
+                        type: 'linear',
+                        position : 'right',
+                        max: 1.4,
+                        min: 0,
+                        grid: {
+                            drawOnChartArea: false,
+                        },
+                    },
+                },
+            }
+        });
+    }
 });
