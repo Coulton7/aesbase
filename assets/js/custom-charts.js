@@ -186,6 +186,24 @@ document.addEventListener("DOMContentLoaded", function() {
                         },
                     },
                 },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Typical Comparative Barrier Fluid Flow Rates for Dual Seals',
+                        color: '#535354',
+                        font: {
+                                size: 18
+                            }
+                    },
+                    legend: {
+                        display: true,
+                        position: 'right',
+                        labels: {
+                            color: '#535354'
+                        },
+                        textAlign: 'center',
+                    },
+                }
             }
         });
     }
