@@ -147,17 +147,15 @@ document.addEventListener("DOMContentLoaded", function() {
         var dmsfData = {
             labels: ['1.375"(35mm)', '4.000(100mm)'],
             datasets: [{
-                label: 'AESSEAL',
-                backgroundColor: '#002a5a',
-                data: [2, 1.1],
+                data: [2.0, 0.05, 0.5],
+                backgroundColor: ['#002a5a', '#dd1e25', '#888c8f'],
+                label: ['AESSEAL', 'Competitor 1', 'Competitor 2'],
+                yAxisID: 'lMin',
             }, {
-                label: 'Competitor 1',
-                backgroundColor: '#dd1e25',
-                data: [0.05, 0.05],
-            },{
-                label: 'Competitor 2',
-                backgroundColor: '#888c8f',
-                data: [1, 0.3],
+                data: [1.1, 0.05, 0.3],
+                backgroundColor: ['#002a5a', '#dd1e25', '#888c8f'],
+                label: ['AESSEAL', 'Competitor 1', 'Competitor 2'],
+                yAxisID: 'gMin',
             }]
         }
 
