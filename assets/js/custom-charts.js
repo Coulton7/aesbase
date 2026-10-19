@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 maintainAspectRatio: false,
                 scales: {
                     y: {
+                        yAxisID: 'lMin',
                         beginAtZero: true,
                         type: 'linear',
                         position : 'left',
@@ -179,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         },
                     },
                     y1: {
+                        yAxisID: 'gMin',
                         beginAtZero: true,
                         type: 'linear',
                         position : 'right',
