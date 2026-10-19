@@ -396,8 +396,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let typeMapping;
     let vidMapping;
 
-    let natTypeMapping
-
     langMapping = {
         'en': 'English',
         'es': 'Español',
@@ -454,13 +452,6 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'Video',
             'whitepaper': 'Whitepaper',
         }
-        natTypeMapping = {
-        'page' : 'Web Page',
-        'article' : 'Article',
-        'casestudies' : 'Case Studies',
-        'case_studies' : 'Case Studies',
-        'productbrochures' : 'Product Brochure',
-        }
         vidMapping = {
             'resourcescontenttypes': 'Content Index',
             'producttypes': 'Product Types',
@@ -509,7 +500,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'Video',
             'whitepaper': 'Whitepaper',
         }
-        natTypeMapping = {
+        typeMapping = {
         'page' : 'Web Page',
         'article' : 'Article',
         'casestudies' : 'Case Studies',
@@ -1045,7 +1036,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'ビデオ',
             'whitepaper': 'Whitepaper',
         }
-        natTypeMapping = {
+        typeMapping = {
         'page' : 'ウェブページ',
         'article' : '記事',
         'casestudies' : 'ケーススタディ',
@@ -2172,7 +2163,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -2427,7 +2418,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -2683,7 +2674,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -2938,7 +2929,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -3244,7 +3235,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -3523,7 +3514,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -3844,7 +3835,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -4177,7 +4168,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -4508,7 +4499,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
@@ -4731,7 +4722,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        label: natTypeMapping[item.label],
+                        label: typeMapping[item.label],
                     }));
                 },
                 sortBy: ['isRefined', 'count:desc', 'name:asc']
@@ -4825,7 +4816,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 transformItems(items){
                     return items.map(item => ({
                         ...item,
-                        type: natTypeMapping[item.type],
+                        type: typeMapping[item.type],
                     }))
                 },
             }),
