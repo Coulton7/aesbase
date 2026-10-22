@@ -43,9 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       html.classList.remove("noscroll");
       body.classList.remove("noscroll");
       dialogOffCanvas.classList.remove("noscroll");
-      if(overlaySearchBtn){
-        overlaySearchBtn.classList.add("search-btn");
-      }
+      overlaySearchBtn.classList.add("search-btn");
       if(window.innerWidth > 992) {
         if(scrollNav){
           if (scrollNav.classList.contains("scrolled-up")){
