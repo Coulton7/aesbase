@@ -1008,7 +1008,6 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'Video',
             'whitepaper': 'Whitepaper',
         }
-        
     } else if (filterLang =="ja") {
         typeMapping = {
             '3dmodels': '3Dモデル',
@@ -1019,6 +1018,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'bearingprotection': 'ベアリング保護',
             'cartridgemechanicalseals': 'カートリッジ・メカニカルシール',
             'casestudies': 'ケーススタディ',
+            'case_studies' : 'ケーススタディ',
             'componentseals': 'コンポーネント・シール',
             'corpbrochure': '会社案内',
             'elastomers': 'Elastomers',
@@ -1036,12 +1036,33 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'ビデオ',
             'whitepaper': 'Whitepaper',
         }
+    } else if (filterLang =="sv") {
         typeMapping = {
-        'page' : 'ウェブページ',
-        'article' : '記事',
-        'casestudies' : 'ケーススタディ',
-        'case_studies' : 'ケーススタディ',
-        'productbrochures' : '製品パンフレット',
+            '3dmodels': '3D-modeller',
+            'academy': 'Akademi',
+            'announcements': 'Meddelanden',
+            'apiplans': 'API Plans',
+            'article': 'Artikel',
+            'bearingprotection': 'Lager skydd',
+            'cartridgemechanicalseals': 'Patronmekaniska tätningar',
+            'casestudies': 'Fallstudier',
+            'case_studies' : 'Fallstudier',
+            'componentseals': 'Komponenttätningar',
+            'corpbrochure': 'Företagsbroschyr',
+            'elastomers': 'Elastomers',
+            'gasseals': 'Gastätningar',
+            'glandpacking': ' Packning av gland',
+            'industryguides': 'Branschguider',
+            'locations': 'Plats',
+            'page': 'Webbsida',
+            'policies': 'Policyer',
+            'productbrochure': 'Produktbroschyrer',
+            'productbrochures': 'Produktbroschyrer',
+            'productcertificates': 'Produktcertifikat',
+            'sealsupportsystems': 'Stödsystem för tätningar',
+            'technicaldrawings': 'Tekniska ritningar',
+            'video': 'Videon',
+            'whitepaper': 'Vitböcker',
         }
     } else {
         typeMapping = {
@@ -1624,8 +1645,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'es'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Anuncios" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Ubicaciones" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1636,8 +1657,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Seguir leyendo' : 'Ver vídeo'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Seguir leyendo' : 'Ver vídeo'}</a>
+                                        <a class="${data.type != "Ubicaciones" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Seguir leyendo</a>                       
+                                        <a class="${data.type != "Anuncios" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Seguir leyendo' : 'Ver vídeo'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1660,8 +1681,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'fr'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Annonces" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Emplacement" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1672,8 +1693,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'En savoir plus' : 'Regarder la vidéo'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'En savoir plus' : 'Regarder la vidéo'}</a>
+                                        <a class="${data.type != "Emplacement" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">En savoir plus</a>                       
+                                        <a class="${data.type != "Annonces" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'En savoir plus' : 'Regarder la vidéo'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1696,8 +1717,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'de'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Ankündigungen" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Standort" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1708,8 +1729,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Mehr lesen' : 'Video ansehen'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Mehr lesen' : 'Video ansehen'}</a>
+                                        <a class="${data.type != "Standort" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Mehr lesen</a>                       
+                                        <a class="${data.type != "Ankündigungen" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Mehr lesen' : 'Video ansehen'}</a>
                                         
                                     </div>
                                     <div class="col-md-3 col-4">
@@ -1733,8 +1754,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'it'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Annunci" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Luoghi" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1745,8 +1766,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Per saperne di più' : 'Guarda il video'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Per saperne di più' : 'Guarda il video'}</a>
+                                        <a class="${data.type != "Luoghi" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Per saperne di più</a>                       
+                                        <a class="${data.type != "Annunci" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Per saperne di più' : 'Guarda il video'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1769,8 +1790,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'pl'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Ogłoszenia" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Lokalizacje" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1781,8 +1802,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Czytaj więcej' : 'Obejrzyj film'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Czytaj więcej' : 'Obejrzyj film'}</a>
+                                        <a class="${data.type != "Lokalizacje" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Czytaj więcej</a>                       
+                                        <a class="${data.type != "Ogłoszenia" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Czytaj więcej' : 'Obejrzyj film'}</a>
                                         </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1805,8 +1826,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'tr'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Duyurular" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Konumlar" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1817,8 +1838,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? 'Daha Fazla Oku' : 'Videoyu izle'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Daha Fazla Oku' : 'Videoyu izle'}</a>
+                                        <a class="${data.type != "Konumlar" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">Daha Fazla Oku</a>                       
+                                        <a class="${data.type != "Duyurular" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? 'Daha Fazla Oku' : 'Videoyu izle'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -1841,8 +1862,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         } else if(filterLang == 'zh-hans'){
                             hideForm();
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "公告" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "地点" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -1853,8 +1874,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.field_summary ? '' : 'd-none'}>${data.field_summary}</p>
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_link_to_content}">${data.field_post_type != "youtube" ? '更多信息' : '观看视频'}</a>
-                                        <a class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>                       
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? '更多信息' : '观看视频'}</a>
+                                        <a class="${data.type != "地点" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.field_website_link}">更多信息</a>                       
+                                        <a class="${data.type != "公告" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">${data.type != "Video" ? '更多信息' : '观看视频'}</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.api_plan_image_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.api_plan_image_uri}" height="420" width="420" alt="${data.title}" />
@@ -3197,12 +3218,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Fallstudien" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
+                                <a class="${data.type != "Fallstudien" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Mehr lesen</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">PDF öffnen</a>
                             </div>`
 
@@ -3808,12 +3829,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Études de cas" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                <a class="${data.type != "Études de cas" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Ouvrir le PDF</a>
                             </div>`
 
@@ -4141,12 +4162,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Études de cas" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                <a class="${data.type != "Études de cas" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Ouvrir le PDF</a>
                             </div>`
 
@@ -4487,12 +4508,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             hideForm();
                             return html`
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.type != "Fallstudier" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">CLäs mer om</a>
+                                <a class="${data.type != "Fallstudier" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">CLäs mer om</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Öppna PDF</a>
                             </div>`
 
@@ -5963,7 +5984,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'es'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "Anuncios" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
@@ -5973,7 +5994,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">Seguir leyendo</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">Seguir leyendo</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
+                                        <a class="${data.type != "Anuncios" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Seguir leyendo</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -5982,8 +6003,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'fr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Annonces" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "Emplacement" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -5992,7 +6013,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">En savoir plus</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">En savoir plus</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">En savoir plus</a>
+                                        <a class="${data.type != "Annonces" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">En savoir plus</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -6001,8 +6022,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'de'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Ankündigungen" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "Standort" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -6011,7 +6032,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">Mehr lesen</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">Mehr lesen</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
+                                        <a class="${data.type != "Ankündigungen" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Mehr lesen</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -6020,8 +6041,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'it'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Annunci" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "Luoghi" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -6030,7 +6051,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">Per saperne di più</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">Per saperne di più</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
+                                        <a class="${data.type != "Annunci" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Per saperne di più</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -6039,8 +6060,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'tr'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "Duyurular" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "Konumlar" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -6049,7 +6070,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">Daha Fazla Oku</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">Daha Fazla Oku</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
+                                        <a class="${data.type != "Duyurular" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">Daha Fazla Oku</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
@@ -6058,8 +6079,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>`
                         } else if(filterLang == 'zh-hans'){
                             return html `<div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                                <small class="${data.type != "Announcements" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
-                                <small class="${data.type != "Locations" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
+                                <small class="${data.type != "公告" ? '' : 'd-none'}">https://www.aesseal.com${data.url}</small>
+                                <small class="${data.type != "地点" ? '' : 'd-none'} ${data.field_website_link ? '' : 'd-none'}">${data.field_website_link}</small>
                                 <small class="${data.field_link_to_content ? '' : 'd-none'}">${data.field_link_to_content}</small>
                                 <div class="row">
                                     <div class="col-md-9 col-8 d-flex flex-column">
@@ -6068,7 +6089,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                         <a class="${data.field_link_to_content ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_link_to_content}">更多信息</a>
                                         <a class="${data.field_website_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_website_link}">更多信息</a>
-                                        <a class="${data.type != "Announcements" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">更多信息</a>
+                                        <a class="${data.type != "公告" ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="https://www.aesseal.com${data.url}">更多信息</a>
                                     </div>
                                     <div class="col-md-3 col-4">
                                         <img class="${data.news_node_thumb_uri ? '' : 'd-none'} img-fluid ratio ratio-1x1 overflow-hidden" src="${data.news_node_thumb_uri}" height="420" width="420" alt="${data.title}" />
