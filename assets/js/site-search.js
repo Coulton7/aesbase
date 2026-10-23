@@ -3521,8 +3521,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                                <a class="${data.type != "دراسات الحالة" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
+                                <a class="${data.type != "دراسات الحالة" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">اقرأ المزيد</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}"> انقر للتنزيل</a>
                             </div>`
                         }
                     },
