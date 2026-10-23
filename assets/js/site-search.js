@@ -3488,17 +3488,43 @@ document.addEventListener("DOMContentLoaded", function() {
                 container: '#aeHits',
                 templates:{
                     item(data, { html, components }){ 
-                        hideForm();
-                        return html`
-                        <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
-                            <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
-                            <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                            <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
-                            <p class="lead">${data.type}</p>
-                            <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
-                            <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
-                            <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
-                        </div>`
+                        if(filterLang == 'en'){
+                            hideForm();
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if (filterLang == ''){
+                            hideForm();
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        } else if(filterLang =='ar'){
+                            hideForm();
+                            return html`
+                            <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
+                                <small class="${data.type != "دراسات الحالة" ? '' : 'd-none'}">${data.url}</small>
+                                <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
+                                <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
+                                <p class="lead">${data.type}</p>
+                                <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
+                                <a class="${data.type != "دراسات الحالة" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
+                            </div>`
+                        }
                     },
                     empty(results, { html }){
                         revealForm();
