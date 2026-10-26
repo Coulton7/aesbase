@@ -52,8 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         footerSearchBtn.classList.add("search-btn");
       }
-      if(window.innerWidth > 992) {
-        if(scrollNav){
+      
+      if(scrollNav){
+        scrollNav.classList.remove("shadow-back");
+        if(window.innerWidth > 992) {
           if (scrollNav.classList.contains("scrolled-up")){
             scrollNav.classList.remove("scrolled-up");
             scrollNav.classList.add("scrolled-down")
@@ -61,9 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollNav.classList.add("scrolled-down")
           }
         }
-      }
-      if(scrollNav){
-        document.querySelector(".scroll-nav").classList.remove("shadow-back");
       }
       document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
       document.querySelector('.overlay-btn').classList.remove("normText");
@@ -94,18 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         footerSearchBtn.classList.remove("search-btn");
       }
-      if(window.innerWidth > 992) {
         if(scrollNav){
-          if (scrollNav.classList.contains("scrolled-down")){
-            scrollNav.classList.remove("scrolled-down");
-            scrollNav.classList.add("scrolled-up")
-          } else {
+          scrollNav.classList.add("shadow-back");
+          if(window.innerWidth > 992) {
+            if (scrollNav.classList.contains("scrolled-down")){
+              scrollNav.classList.remove("scrolled-down");
+              scrollNav.classList.add("scrolled-up")
+            } else {
             scrollNav.classList.add("scrolled-up")
           }
         }
-      }
-      if(scrollNav){
-        document.querySelector(".scroll-nav").classList.add("shadow-back");
       }
       document.querySelector('#autocollapse .navbar-collapse').classList.add("bg-white");
       document.querySelector('.overlay-btn').classList.add("normText");
@@ -196,36 +193,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if(document.querySelector('.nat-res-search')){
-     navLinks.forEach(function(navLink) {
-      navLink.addEventListener("click", function navBtn(){
-      if (y.style.height === "100%") {
-        y.style.height = "1px";
-        y.style.top = "-1px";
-        html.classList.remove("noscroll");
-        body.classList.remove("noscroll");
-        dialogOffCanvas.classList.remove("noscroll");
-        overlaySearchBtn.classList.add("search-btn");
-        if(window.innerWidth > 992) {
-          if(scrollNav){
-            if (scrollNav.classList.contains("scrolled-up")){
-              scrollNav.classList.remove("scrolled-up");
-              scrollNav.classList.add("scrolled-down")
-            } else {
-              scrollNav.classList.add("scrolled-down")
+      navLinks.forEach(function(navLink) {
+        navLink.addEventListener("click", function navBtn(){
+          if (y.style.height === "100%") {
+            y.style.height = "1px";
+            y.style.top = "-1px";
+            html.classList.remove("noscroll");
+            body.classList.remove("noscroll");
+            dialogOffCanvas.classList.remove("noscroll");
+            overlaySearchBtn.classList.add("search-btn");
+            if(scrollNav){
+              scrollNav.classList.remove("shadow-back");
+              if(window.innerWidth > 992) {
+                if (scrollNav.classList.contains("scrolled-up")){
+                  scrollNav.classList.remove("scrolled-up");
+                  scrollNav.classList.add("scrolled-down")
+                } else {
+                  scrollNav.classList.add("scrolled-down")
+                }
+              }
             }
+            document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
+            document.querySelector('.wavelogo').style.opacity = "1";
+            document.querySelector('.uppercurve').style.opacity = "1";
+            navLinks.forEach(function (navLink) {
+              navLink.classList.remove('normText');
+            });
           }
-        }
-        if(scrollNav){
-          document.querySelector(".scroll-nav").classList.remove("shadow-back");
-        }
-        document.querySelector('#autocollapse .navbar-collapse').classList.remove("bg-white");
-        document.querySelector('.wavelogo').style.opacity = "1";
-        document.querySelector('.uppercurve').style.opacity = "1";
-        navLinks.forEach(function (navLink) {
-          navLink.classList.remove('normText');
         });
-      }
-     });
      }) 
     }
 
