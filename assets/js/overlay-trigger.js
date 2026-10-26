@@ -36,14 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
   var popSearchButton = document.querySelector(".pop-search-button");
 
   function openSearch() {
-    overlaySearchBtn.classList.toggle("change");
+    if(overlaySearchBtn){
+      overlaySearchBtn.classList.toggle("change");
+    } else {
+      footerSearchBtn.classList.toggle("change");
+    }
     if (y.style.height === "100%") {
       y.style.height = "1px";
       y.style.top = "-1px";
       html.classList.remove("noscroll");
       body.classList.remove("noscroll");
       dialogOffCanvas.classList.remove("noscroll");
-      overlaySearchBtn.classList.add("search-btn");
+      if(overlaySearchBtn){
+        overlaySearchBtn.classList.add("search-btn");
+      } else {
+        footerSearchBtn.classList.add("search-btn");
+      }
       if(window.innerWidth > 992) {
         if(scrollNav){
           if (scrollNav.classList.contains("scrolled-up")){
@@ -70,13 +78,22 @@ document.addEventListener("DOMContentLoaded", function () {
       if (x.style.height == "100%") {
         x.style.height = "1px";
         x.style.bottom = "-1px";
-        overlaySearchBtn.classList.remove("change");
-        overlaySearchBtn.classList.add("overlay-btn");
+        if(overlaySearchBtn){
+          overlaySearchBtn.classList.remove("change");
+          overlaySearchBtn.classList.add("overlay-btn");
+        } else {
+          footerSearchBtn.classList.remove("change");
+          footerSearchBtn.classList.add("overlay-btn");
+        }
       }
       html.classList.add("noscroll");
       body.classList.add("noscroll");
       dialogOffCanvas.classList.add("noscroll");
-      overlaySearchBtn.classList.remove("search-btn");
+      if(overlaySearchBtn){
+        overlaySearchBtn.classList.remove("search-btn");
+      } else {
+        footerSearchBtn.classList.remove("search-btn");
+      }
       if(window.innerWidth > 992) {
         if(scrollNav){
           if (scrollNav.classList.contains("scrolled-down")){
