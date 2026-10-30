@@ -4141,7 +4141,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
@@ -4153,7 +4153,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             return html ` <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Case Studies" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
@@ -4167,7 +4167,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <div class="search-result" data-insights-object-id="${data.objectID}" data-insights-position="${data.__position}" data-insights-query-id="${data.__queryID}">
                                 <small class="${data.type != "Études de cas" ? '' : 'd-none'}">${data.url}</small>
                                 <small class="${data.field_s3_link ? '' : 'd-none'}">${data.field_s3_link}</small>
-                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}https://www.aesseal.com${data.url}</small>
+                                <small class="${data.field_global_article = "1" ? "0" : 'd-none'}">https://www.aesseal.com${data.url}</small>
                                 <p class="h3 ${data.title ? '' : 'd-none'}">${data.title}</p>
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
