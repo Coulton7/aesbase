@@ -4146,6 +4146,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class="lead">${data.type}</p>
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_global_article = "1" ? "0" : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
                         } else if (filterLang == ''){
@@ -4159,6 +4160,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <p>${data.field_global_article}</p>
                                 <a class="${data.type != "Case Studies" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Read More</a>
+                                <a class="${data.field_global_article = "1" ? "0" : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Read More</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Open PDF</a>
                             </div>`
                         } else if(filterLang == 'fr'){
@@ -4173,6 +4175,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p class=${data.summary ? '' : 'd-none'}>${data.summary}</p>
                                 <p>${data.field_global_article}</p>
                                 <a class="${data.type != "Études de cas" ? '' : 'd-none'} btn btn-primary view-details align-self-end" href="${data.url}">Lire la suite</a>
+                                <a class="${data.field_global_article = "1" ? "0" : 'd-none'} btn btn-primary view-details align-self-end" href="https://www.aesseal.com${data.url}">Lire la suite</a>
                                 <a class="${data.field_s3_link ? '' : 'd-none'} btn btn-primary view-details align-self-end" rel="nofollow" href="${data.field_s3_link}">Ouvrir le PDF</a>
                             </div>`
 
