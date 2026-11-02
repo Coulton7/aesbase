@@ -482,6 +482,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'bearingprotection': 'Bearing Protection',
             'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
             'casestudies': 'Case Studies',
+            'case_studies' : 'Case Studies',
             'componentseals': 'Component Seals',
             'corpbrochure': 'Corporate Brochure',
             'elastomers': 'Elastomers',
@@ -492,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'page': 'Web Page',
             'policies': 'Policies',
             'productbrochure': 'Product Brochure',
+            'productbrochures' : 'Product Brochure',
             'productcertificates': 'Product Certificates',
             'servicesbrochure' : 'Services Brochure',
             'sealsupportsystems': 'Seal Support Systems',
@@ -499,13 +501,6 @@ document.addEventListener("DOMContentLoaded", function() {
             'technicaldrawings': 'Technical Drawing',
             'video': 'Video',
             'whitepaper': 'Whitepaper',
-        }
-        typeMapping = {
-        'page' : 'Web Page',
-        'article' : 'Article',
-        'casestudies' : 'Case Studies',
-        'case_studies' : 'Case Studies',
-        'productbrochures' : 'Product Brochure',
         }
         vidMapping = {
             'resourcescontenttypes': 'Content Index',
