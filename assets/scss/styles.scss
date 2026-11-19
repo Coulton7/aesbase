@@ -673,6 +673,9 @@ a.icon-link:hover {
 .bg-graident-360-watersavings{
   background: #FAFAFA;
   background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(250, 252, 254, 1) 50%);
+  height: 80vh;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 .bg-water-savings {
