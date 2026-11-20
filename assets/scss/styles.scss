@@ -673,7 +673,7 @@ a.icon-link:hover {
 .bg-graident-360-watersavings{
   background: #FAFAFA;
   background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(250, 252, 254, 1) 50%);
-  height: 80vh;
+  height: 70vh;
   overflow-y: visible;
   overflow-x: hidden;
 }
@@ -4861,6 +4861,10 @@ time.icon span {
   .overlay-content {
     top: 30%
   }
+
+  .bg-graident-360-watersavings {
+    height: 70vh;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -4989,6 +4993,10 @@ time.icon span {
     background-size: contain;
     background-repeat: repeat;
     background-position: center top;
+  }
+
+  .bg-graident-360-watersavings {
+    height: 70vh;
   }
 
   .site-tour:hover {
@@ -5230,6 +5238,10 @@ time.icon span {
     overflow-y: scroll; /* Add vertical scroll if content exceeds the height */
     padding: 0;
     margin: 0;
+  }
+
+  .bg-graident-360-watersavings {
+    height: 70vh;
   }
 
   .footer-curve {
@@ -5495,6 +5507,10 @@ time.icon span {
     background-position: center top;
   }
 
+  .bg-graident-360-watersavings {
+    height: 75vh;
+  }
+
   .virtual-tour-logo {
     max-width: 33%;
   }
@@ -5669,6 +5685,10 @@ time.icon span {
     top: 64%;
     height: 45%;
   }
+
+  .bg-graident-360-watersavings {
+    height: 60vh;
+  }
 }
 
 /* xxl */
@@ -5836,6 +5856,10 @@ time.icon span {
   .video-overlay {
     top: 62%;
     height: 45%;
+  }
+
+  .bg-graident-360-watersavings {
+    height: 60vh;
   }
 }
 
